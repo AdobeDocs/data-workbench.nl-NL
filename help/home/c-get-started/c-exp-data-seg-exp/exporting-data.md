@@ -53,8 +53,7 @@ Om de de uitvoerconfiguratie te plaatsen, werden twee nieuwe dossiers van de de 
    >
    >Voorbeeld voor het genereren van SSH-sleutels met behulp van keygen:
    >
-   >
-   ```
+   >```
    >ssh-keygen -t rsa -b 4096 -C "<label>"
    >```
 
