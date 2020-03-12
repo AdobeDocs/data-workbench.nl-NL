@@ -34,7 +34,7 @@ De lijstkolommen van de soort alfabetisch of door verordeningen.
 
 Om elementen in een lijst van de Dimensie beter te selecteren, kunt u tot de eerste kolom alfabetisch of door verordeningen opdracht geven door de **[!UICONTROL Sort]** menuoptie te selecteren.
 
-# karakter zal tonen wanneer een kolom door verordeningen (het gebrek) wordt gesorteerd.
+&#x200B;# karakter zal tonen wanneer een kolom door verordeningen (het gebrek) wordt gesorteerd.
 
 **Optie Sorteren selecteren**
 
