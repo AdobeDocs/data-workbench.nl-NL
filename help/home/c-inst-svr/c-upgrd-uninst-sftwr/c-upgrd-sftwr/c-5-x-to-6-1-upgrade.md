@@ -180,8 +180,7 @@ De installatie van de rapportserver is nu volledig.
    >
    >Bijvoorbeeld, om Vereenvoudigd Chinees te lanceren, creeer een kortere weg die in bevel-lijn het plaatsen overgaat.
    >
-   >
-   ```
+   >```
    >Insight.exe -zh-cn
    >```
    >
