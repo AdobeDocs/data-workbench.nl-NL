@@ -1,49 +1,50 @@
 ---
-description: Servercomponenten voor Data Workbench 6.3 upgraden.
-title: DWB-serverupgrade 6.2 naar 6.3
+description: Servercomponenten bijwerken voor Data Workbench 6.3.
+title: DWB Server upgrade 6.2 tot 6.3
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 79d5a2f44ade88f25f7621a4738d14c43777fc9f
 
 ---
 
 
-# DWB-serverupgrade: 6.2 t/m 6.3{#dwb-server-upgrade-to}
+# Upgrade van DWB-server: 6.2 t/m 6.3{#dwb-server-upgrade-to}
 
-Servercomponenten voor Data Workbench 6.3 upgraden.
+Servercomponenten bijwerken voor Data Workbench 6.3.
 
-**Upgrademeserver**
+**Upgradeserver**
 
-Als u profielen hebt aangepast die belangrijkheid over de standaarddossiers nemen die in het [!DNL Base] pakket worden verstrekt, dan zult u deze aangepaste dossiers moeten bijwerken:
+Als u aangepaste profielen hebt die voorrang hebben op de standaardbestanden in het [!DNL Base] pakket, moet u deze aangepaste bestanden bijwerken:
 
-* **Werk het Meta.cfg- dossier** bij ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]om bijgewerkte wachtwoordencryptie voor de Eenheid van het Systeem van het Dossier (server FSU) te plaatsen, en om ingangen voor de transformaties van het Paar van de Waarde van de Naam toe te voegen om uit de groeperingen [van het Koord van de](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0)Vraag voordeel te halen.
+* **Werk het Meta.cfg- dossier** bij ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]om bijgewerkte wachtwoordencryptie voor de Eenheid van het Systeem van het Dossier (server FSU) te plaatsen, en ingangen voor de Transformaties van het Paar van de Waarde van de Naam toe te voegen om uit de groeperingen [van het Koord van de](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0)Vraag voordeel te halen.
 
    1. Open het [!DNL meta.cfg] bestand op de FSU.
-   1. Verander het gegevenstype voor **[!UICONTROL Proxy Password]** van &quot; [!DNL string"] in &quot; [!DNL EncryptedString]&quot;in de sectie van de Configuratie van het *Werkstation* .
+   1. Wijzig het gegevenstype voor **[!UICONTROL Proxy Password]** van &quot; [!DNL string"] in &quot; [!DNL EncryptedString]&quot; in de sectie *Werkstationconfiguratie* .
 
       ```
-      Proxy User Name = string: 
-      Proxy Password = EncryptedString:   ( 
-      
-<i>van het Wachtwoord van de Volmacht = Koord</i>) het Dossier van het Adres van het gebruik = bool: waar&quot;
+        Proxy User Name = string: 
+        Proxy Password = EncryptedString:   ( 
+        from Proxy Password = String) 
+        Use Address File = bool: true
+      ```
 
-    1. Voeg nieuwe ingangen toe om de nieuwe transformaties van het Paar van de Waarde van de Naam toe te laten: *BuildNameValuePair* en *ExtractNameValuePairs*.
-    
-    Open een werkruimte en klik met de rechtermuisknop op **Admin** > **Profielbeheer**.
-    
-    Klik onder **Context** op het **meta.cfg** bestand in de kolom **Base** en klik op **Make Local**. Klik in de kolom Gebruikerslijst met de rechtermuisknop op en selecteer **Open** > **in Werkstation**.
-    
-    ![](assets/meta_cfg.png)
-    
-    * In het nieuwe venster, klik **meta-gegevens*** en voeg aanvaardbare kindmalplaatjes toe.
-    
-    ![](assets/meta_cfg_child.png)
-    
-    * Open **transformation** en voeg nieuwe sjablonen toe.
-    
-    ![assets/meta_cfg_template.png]
+   1. Voeg nieuwe ingangen toe om de nieuwe transformaties van het Paar van de Waarde van de Naam toe te laten: *BuildNameValuePair* en *ExtractNameValueParen*.
 
-* **Update voor de Snelle verbeteringen** van de Fusie. Voeg parameters of veranderingswaarden aan de volgende configuratiedossiers toe om uit snelheidsverbeteringen in de Werkbank van Gegevens tijdens een transformatie voordeel te halen.
+      Open een werkruimte en klik met de rechtermuisknop op **Beheer** > **Profielbeheer**.
+
+      Klik onder **Context** op het **bestand meta.cfg** in de kolom **Basis** en klik vervolgens op Lokaal **** maken. Klik in de tabelkolom Gebruiker met de rechtermuisknop en selecteer **Openen** > **in werkstation**.
+
+      ![](assets/meta_cfg.png)
+
+      * Klik in het nieuwe venster op **metagegevens** en voeg acceptabele onderliggende sjablonen toe.
+
+         ![](assets/meta_cfg_child.png)
+
+      * Open **transformatie** en voeg nieuwe sjablonen toe.
+
+         ![](assets/meta_cfg_template.png)
+
+* **Update voor snelle verbeteringen** in de samenvoeging. Voeg parameters toe of verander waarden aan de volgende configuratiedossiers om uit snelheidsverbeteringen in de Workbench van Gegevens tijdens een transformatie voordeel te halen.
 
    * **Communications.cfg** ( [!DNL E:\Server\Components\Communications.cfg])
 
@@ -54,7 +55,7 @@ Als u profielen hebt aangepast die belangrijkheid over de standaarddossiers neme
       <new>)
       ```
 
-   * **Disk Files.cfg** (bij [!DNL E:\Server\Components] en [!DNL E:\Server\Components for Processing Servers])
+   * **Disk Files.cfg** (at [!DNL E:\Server\Components] en [!DNL E:\Server\Components for Processing Servers])
 
       ```
       Disk Cache Size (MB) = double: 1024  
@@ -63,7 +64,7 @@ Als u profielen hebt aangepast die belangrijkheid over de standaarddossiers neme
       <(new)>
       ```
 
-   * **Logverwerkingsmodus.cfg** ( [!DNL E:\Server\Profiles\<your profile>\Dataset\Log Processing Mode.cfg])
+   * **Modus voor logboekverwerking.cfg** ( [!DNL E:\Server\Profiles\<your profile>\Dataset\Log Processing Mode.cfg])
 
       ```
       <(changed) 
@@ -92,9 +93,9 @@ Als u profielen hebt aangepast die belangrijkheid over de standaarddossiers neme
    >
    >Om uit de Snelle verbeteringen van de Fusie voordeel te halen, zorg ervoor u minstens 8 GBs van RAM per DPU hebt.
 
-* **Het Doel van Adobe met DWB integratieupdate**. Een nieuw de uitvoerdossier, [!DNL ExportIntegration.exe], vervangt het bestaande [!DNL TnTSend.exe] dossier op de Server van het Inzicht (`E:\Server\Scripts\TnTSend.exe`). Dit nieuwe de uitvoerdossier steunt zowel de integratie van het Doel [van](https://www.adobe.com/marketing/target.html) Adobe als de coördinatie met het nieuwe HoofdProfiel van de Marketing (MMP) en de Manager [van het Publiek van](https://www.adobe.com/analytics/audience-manager.html)Adobe.
+* **Adobe Target met DWB-integratieupdate**. Een nieuw exportbestand vervangt het bestaande [!DNL ExportIntegration.exe]bestand op de Insight Server ( [!DNL TnTSend.exe]`E:\Server\Scripts\TnTSend.exe`). Dit nieuwe exportbestand ondersteunt zowel [Adobe Target](https://www.adobe.com/marketing/target.html) -integratie als coördinatie met het nieuwe Master Marketing Profile (MMP) en [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html).
 
-   U zult de volgende bevelen voor de uitvoer van het Doel van Adobe moeten bijwerken.
+   U moet de volgende opdrachten bijwerken voor Adobe Target-exportbewerkingen.
 
    `Command = string: TnTSend.exe`
 
@@ -108,18 +109,18 @@ Als u profielen hebt aangepast die belangrijkheid over de standaarddossiers neme
 
    >[!NOTE]
    >
-   >Dit zal slechts de uitvoer beïnvloeden die vóór versie 6.3 wordt gecreeerd.
+   >Dit is alleen van invloed op exportbewerkingen die vóór versie 6.3 zijn gemaakt.
 
-   U kunt het volgende ook proberen om het oude de uitvoerproces aan te wenden:
+   U kunt ook het volgende proberen om het oude exportproces te gebruiken:
 
-   * Creeer een nieuwe Test en de Uitvoer van het Doel in het werkstation.
-   * Wijzig de oude die Test en de uitvoer van het Doel in wordt gevonden [!DNL Server/Profiles/`<your profile>`/uitvoert.]
+   * Maak een nieuwe test- en doelexport in het werkstation.
+   * Wijzig de oude test en de uitvoer van het Doel die in [!DNL Server/Profiles/`<your profile>`/de Uitvoer wordt gevonden.]
 
-* **Werk het profiel van Adobe SC bij.** De veranderingen in het [!DNL Exclude Hit.cfg] dossier vereisen dat een gebied in het bijbehorende [!DNL Decoding Instructions.cfg] dossier wordt verklaard.
+* **Werk het Adobe SC-profiel bij.** Voor wijzigingen in het [!DNL Exclude Hit.cfg] bestand moet een veld worden gedeclareerd in het bijbehorende [!DNL Decoding Instructions.cfg] bestand.
 
    >[!NOTE]
    >
-   >Als uw profiel van Adobe SC een aangepast [!DNL Decoding Instructions.cfg] dossier omvat, zult u een [!DNL DelimitedDecoder] parameter aan uw aangepast dossier moeten omvatten.
+   >Als uw Adobe SC-profiel een aangepast [!DNL Decoding Instructions.cfg] bestand bevat, moet u een [!DNL DelimitedDecoder] parameter aan uw aangepaste bestand toevoegen.
 
    ```
    0 = DelimitedDecoder: 
@@ -132,4 +133,4 @@ Als u profielen hebt aangepast die belangrijkheid over de standaarddossiers neme
    5 = string: x-hit_source
    ```
 
-   Het toevoegen van het [!DNL DelimitedDecoder] gebied staat u toe om uit eigenschapupdates voordeel te halen en mogelijke problemen van de Verwerking van het Logboek te vermijden die uit deze updates voortvloeien.
+   Als u het [!DNL DelimitedDecoder] veld toevoegt, kunt u gebruikmaken van de functie-updates en kunt u mogelijke problemen met de logverwerking als gevolg van deze updates voorkomen.
