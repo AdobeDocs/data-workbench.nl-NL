@@ -1,33 +1,33 @@
 ---
-description: Dit hoofdstuk verstrekt de stappen om gegevensworkbenchGeography op een server van de gegevenswerkbank te installeren.
+description: In dit hoofdstuk worden de stappen beschreven voor het installeren van gegevens op WorkbenchGeography op een gegevenswerkbankserver.
 solution: Analytics
-title: Geografie van gegevenswerkbank installeren
+title: Geografie van Data Workbench installeren
 topic: Data workbench
 uuid: 2c3d2e4a-97a7-4afc-b72d-c012db77e535
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: fd3afa80250d5ae20b7758ba840fd4d436545cf2
 
 ---
 
 
-# Geografie van gegevenswerkbank installeren{#installing-data-workbench-geography}
+# Geografie van Data Workbench installeren{#installing-data-workbench-geography}
 
-Dit hoofdstuk verstrekt de stappen om gegevensworkbenchGeography op een server van de gegevenswerkbank te installeren.
+In dit hoofdstuk worden de stappen beschreven voor het installeren van gegevens op WorkbenchGeography op een gegevenswerkbankserver.
 
 Om deze stappen te voltooien, moet u toegang tot de dossiers op de server van de gegevenswerkbank hebben.
 
-Als u aan één van de twee facultatieve datadiensten hebt ingetekend, moet u ook het profiel van de datadienst en zijn raadplegingsdossiers installeren. Voor meer informatie over deze diensten, zie het [Werken met de Diensten](../../../home/c-geo-oview/c-wk-data-svcs/c-wk-data-svcs.md)van Gegevens.
+Als u zich hebt geabonneerd op een van de twee optionele gegevensservices, moet u ook het profiel voor de gegevensservice en de opzoekbestanden installeren.
 
-Voor informatie over de systeemvereisten voor het installeren, het vormen, en de werkende werkbank van gegevens, zie het document van de [!DNL Geography]MinimumVereisten ** van het Systeem.
+Raadpleeg het document [!DNL Geography]Minimale systeemvereisten ** voor informatie over de systeemvereisten voor het installeren, configureren en gebruiken van de werkbank voor gegevens.
 
-Adobe verdeelt het de [!DNL Geography] softwareproduct van de gegevenswerkbank als [!DNL .zip] dossier. Dit dossier bevat twee omslagen (Raadplegingen en Profielen). Om gegevenswerkbank [!DNL Geography] op een server van de gegevenswerkbank te installeren, moet u de volgende stappen uitvoeren:
+Adobe verspreidt het [!DNL Geography] softwareproduct van de gegevenswerkbank als een [!DNL .zip] bestand. Dit bestand bevat twee mappen (zoekopdrachten en profielen). Voer de volgende stappen uit om de gegevenswerkbank [!DNL Geography] op een gegevenswerkbankserver te installeren:
 
-* Installeer het [!DNL Geography] profiel. Zie Het [geografische profiel](../../../home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)installeren.
+* Installeer het [!DNL Geography] profiel. Zie [Geografisch profiel](../../../home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)installeren.
 
-* Installeer de [!DNL Geography] raadplegingen. Zie [het Installeren van de Dossiers](../../../home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md)van de Raadpleging van de Geografie.
+* Installeer de [!DNL Geography] zoekopdrachten. Zie De bestanden [met geografische zoekopdrachten](../../../home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md)installeren.
 
-* (Facultatief) installeer het [!DNL Terrain Images.cfg] dossier. Zie [Het Terrain Images.cfg-bestand](../../../home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md)installeren.
+* (Optioneel) Installeer het [!DNL Terrain Images.cfg] bestand. Zie Het bestand Terrain Images.cfg [installeren](../../../home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md).
 
 >[!NOTE]
 >
->U moet de dossiers voor gegevenswerkbank [!DNL Geography] op de de servermachine van de gegevenswerkbank installeren waarop u verwerkt en uw datasetprofiel in werking stelt. Als u een servercluster van de gegevenswerkbank in werking stelt, moet u de dossiers op de hoofdserver installeren. Voor informatie over datasetprofielen, zie de Gids *van de Configuratie van de* Dataset.
+>U moet de bestanden voor de gegevenswerkbank installeren [!DNL Geography] op de computer van de gegevenswerkbank waarop u het gegevenssetprofiel verwerkt en uitvoert. Als u een servercluster van de gegevenswerkbank in werking stelt, moet u de dossiers op de hoofdserver installeren. Voor informatie over datasetprofielen, zie de Gids *van de Configuratie van de* Dataset.
