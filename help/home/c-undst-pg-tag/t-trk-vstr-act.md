@@ -1,24 +1,24 @@
 ---
-description: De websites die gebruikend Flits worden ontworpen vereisen speciale aandacht met betrekking tot de vangst van bezoekersacties die binnen de rijke media inhoud worden uitgevoerd.
+description: Websites die zijn gemaakt met Flash vereisen speciale aandacht voor het vastleggen van bezoekersacties die worden uitgevoerd in de rich media-inhoud.
 solution: Analytics
-title: Het volgen van de Activiteit van de Bezoeker binnen de Inhoud van de Media van de Flits Rich
+title: Bezoekersactiviteiten bijhouden binnen Flash-inhoud voor veeleisende media
 topic: Data workbench
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 48892b1b4fc9e9fdeacee8ca318025f43f2d0064
 
 ---
 
 
-# Het volgen van de Activiteit van de Bezoeker binnen de Inhoud van de Media van de Flits Rich{#tracking-visitor-activity-within-flash-rich-media-content}
+# Bezoekersactiviteiten bijhouden binnen Flash-inhoud voor veeleisende media{#tracking-visitor-activity-within-flash-rich-media-content}
 
-De websites die gebruikend Flits worden ontworpen vereisen speciale aandacht met betrekking tot de vangst van bezoekersacties die binnen de rijke media inhoud worden uitgevoerd.
+Websites die zijn gemaakt met Flash vereisen speciale aandacht voor het vastleggen van bezoekersacties die worden uitgevoerd in de rich media-inhoud.
 
-Gebruikend [!DNL Flash] ActionScript, kunt u eenvoudige veranderingen in uw bestaande [!DNL Flash] films aanbrengen om het volgen van alle bezoekersinteractie met de film, zoals knoopkliks of muisbewegingen toe te staan.
+Met [!DNL Flash] ActionScript kunt u eenvoudige wijzigingen aanbrengen in uw bestaande [!DNL Flash] films, zodat alle bezoekersinteracties met de film kunnen worden bijgehouden, zoals knopklikken of muisbewegingen.
 
-Volg onderstaande stappen om het volgen van bezoekersactiviteiten in uw [!DNL Flash] film te vergemakkelijken:
+Volg onderstaande stappen om bezoekersactiviteiten in uw [!DNL Flash] film te volgen:
 
-1. Voeg de volgende code ActionScript aan uw film toe. Deze code vertegenwoordigt een functie die door gebeurtenissen binnen de [!DNL Flash] film kan worden geroepen die u wilt volgen.
+1. Voeg de volgende ActionScript-code toe aan uw film. Deze code vertegenwoordigt een functie die kan worden aangeroepen door gebeurtenissen binnen de [!DNL Flash] film die u wilt bijhouden.
 
    ```
    // FLASH TAG CODE BEGIN 
@@ -29,50 +29,50 @@ Volg onderstaande stappen om het volgen van bezoekersactiviteiten in uw [!DNL Fl
    // FLASH TAG CODE END
    ```
 
-1. Creeer een leeg dossier genoemd [!DNL flashtag.txt] en plaats het dossier op uw Webservers.
-1. Binnen de functie in Stap 1, vervang [!DNL [PATH_TO_WEB_SERVER]] placeholder met volledig - gekwalificeerde of relatieve weg aan de plaats van het [!DNL flashtag.txt] dossier. Bijvoorbeeld:
+1. Maak een leeg bestand met de naam [!DNL flashtag.txt] en plaats het bestand op uw webservers.
+1. Vervang binnen de functie in Stap 1 de tijdelijke aanduiding \[[!DNL PATH_TO_WEB_SERVER]\] door het volledig gekwalificeerde of relatieve pad naar de locatie van het [!DNL flashtag.txt] bestand. Bijvoorbeeld:
 
    ```
    var FLASHTAGURI = http://www.mysite.com/flashtag/flashtag.txt”;
    ```
 
-1. Voeg de volgende code ActionScript aan alle te volgen gebeurtenissen toe. Deze code vertegenwoordigt een functievraag die wordt gebruikt om gegevens over de gebeurtenis te vangen:
+1. Voeg de volgende ActionScript-code toe aan alle gebeurtenissen die moeten worden bijgehouden. Deze code vertegenwoordigt een functieaanroep die wordt gebruikt om gegevens over de gebeurtenis vast te leggen:
 
    ```
    on(release) {tag("[PUT_PAGE_NAME_HERE]","[PUT_ADDITIONAL_VAR_HERE]");}
    ```
 
-   Dit voorbeeld illustreert het gebruik van de on(versie) gebeurtenis; nochtans, kan de markering () functie door om het even welke gebeurtenis worden van verwijzingen voorzien die u, zoals een on (pers), op (het omvergooien), op (uitlooptraject), of op (keypress) gebeurtenis kunt willen volgen.
+   In dit voorbeeld wordt het gebruik van de gebeurtenis on(release) getoond. nochtans, kan de markering () functie door om het even welke gebeurtenis worden van verwijzingen voorzien die u kunt willen volgen, zoals on (pers), on (rollover), on (rollout), of on (keypress) gebeurtenis.
 
-   [!DNL [PUT_PAGE_NAME_HERE]] placeholder zou met een koord moeten worden vervangen dat de naam van de pagina of de gebeurtenis vertegenwoordigt die u volgt. De [!DNL [PUT_PAGE_NAME_HERE]]variabele kan of manueel of door veranderlijke verwijzing worden gewijzigd om een unieke naam voor de pagina of de gebeurtenis binnen de [!DNL Flash] toepassing aan te duiden. De waarde die [!DNL [PUT_PAGE_NAME_HERE]] vervangt placeholder kan uit een eenvoudige naam bestaan of kan worden gestructureerd om een hiërarchische structuur te vertegenwoordigen gelijkend op volledige URI. Bijvoorbeeld:
+   De tijdelijke aanduiding \[[!DNL PUT_PAGE_NAME_HERE]\] moet worden vervangen door een tekenreeks die de naam vertegenwoordigt van de pagina of gebeurtenis die u bijhoudt. De variabele \[[!DNL PUT_PAGE_NAME_HERE]\] kan of manueel of door veranderlijke verwijzing worden gewijzigd om een unieke naam voor de pagina of de gebeurtenis binnen de [!DNL Flash] toepassing aan te duiden. De waarde die de tijdelijke aanduiding \[[!DNL PUT_PAGE_NAME_HERE]\] vervangt, kan bestaan uit een eenvoudige naam of kan zodanig zijn gestructureerd dat deze een hiërarchische structuur vertegenwoordigt die lijkt op een volledige URI. Bijvoorbeeld:
 
    ```
    on(release) {tag(“/about_us/index.swf","[PUT_ADDITIONAL_VAR_HERE]");}
    ```
 
-   Adobe adviseert dat, voorafgaand aan codeplaatsing, u een geschreven specificatie voor paginanamen en gebeurtenisnamen compileert om de groepering van bedrijfsvereisten en ontwikkelingstaken te vergemakkelijken en het potentieel voor extra ontwikkelingscycli te verminderen.
+   Adobe raadt u aan om vóór de implementatie van code een schriftelijke specificatie voor paginanamen en gebeurtenisnamen samen te stellen om de afstemming van bedrijfsvereisten en ontwikkelingstaken te vergemakkelijken en het potentieel voor extra ontwikkelingscycli te beperken.
 
-1. Indien gewenst, kunnen de extra variabelen worden verzameld en met pagina&#39;s of gebeurtenissen in de [!DNL Flash] film worden geassocieerd. Om dit te doen, vervang [!DNL [PUT_ADDITIONAL_VAR_HERE]] placeholder met een reeks naam=value paren die door een ampersand (&amp;) worden gescheiden. Bijvoorbeeld:
+1. Indien gewenst kunnen extra variabelen worden verzameld en gekoppeld aan pagina&#39;s of gebeurtenissen in de [!DNL Flash] film. Hiervoor vervangt u de tijdelijke aanduiding \[[!DNL PUT_ADDITIONAL_VAR_HERE]\] door een set naam=waarde-paren, gescheiden door een en-teken (&amp;). Bijvoorbeeld:
 
    ```
    on(release) {tag(“/about_us/index.swf"," var1=value1&var2=value2");}
    ```
 
-   De variabelen kunnen of manueel of door veranderlijke verwijzing worden gewijzigd om extra attributen aan te duiden die met de pagina of de gebeurtenis moeten worden verzameld en worden geassocieerd. Als er geen toepasselijke extra te verzamelen variabelen zijn, verwijder [!DNL [PUT_ADDITIONAL_VAR_HERE]].
+   De variabelen kunnen handmatig of via een verwijzing naar een variabele worden gewijzigd om extra kenmerken aan te duiden die moeten worden verzameld en gekoppeld aan de pagina of gebeurtenis. Als er geen toepasselijke aanvullende variabelen zijn om te verzamelen, verwijdert u \[[!DNL PUT_ADDITIONAL_VAR_HERE]\].
 
-   Uw opstelling van bezoeker het volgen binnen [!DNL Flash] rijke media inhoud is nu volledig. Wanneer de gebeurtenis wordt aangehaald, zal de markeringsfunctie worden geroepen, resulterend in een HTTP- verzoek dat voor het volgende dossier wordt ingediend. [!DNL (PAGENAME,VARIABLES)] Deze functie zal naast andere functies worden geroepen die kunnen worden teweeggebracht zoals die binnen uw [!DNL Flash] film worden bepaald:
+   Uw instelling voor het bijhouden van bezoekers in [!DNL Flash] rich media-inhoud is nu voltooid. Wanneer de gebeurtenis wordt aangeroepen, wordt de tagfunctie [!DNL (PAGENAME,VARIABLES)] aangeroepen, wat resulteert in een HTTP-aanvraag voor het volgende bestand. Deze functie wordt aangeroepen naast andere functies die kunnen worden geactiveerd zoals gedefinieerd in uw [!DNL Flash] film:
 
    ```
    http://www.mysite.com/flashtag/flashtag.txt?PAGENAME=/about_us/index.swf&var1=value1&var2=value2
    ```
 
-Het HTTP- verzoek dat uit de functie van ActionScript van de [!DNL Flash] Markering voortvloeit resulteert in de volgende informatie die met betrekking tot elke gebeurtenis binnen de [!DNL Flash] film wordt verzameld. De laatste rij in de lijst (de naam van W3C cs-uri-vraag) vertegenwoordigt de informatie die voor de extra variabelen wordt verzameld die in uw functievraag worden gespecificeerd.
+De HTTP-aanvraag die voortvloeit uit de ActionScript-functie [!DNL Flash] Tag, leidt ertoe dat de volgende informatie wordt verzameld met betrekking tot elke gebeurtenis in de [!DNL Flash] film. De laatste rij in de tabel (W3C-naam cs-uri-query) vertegenwoordigt de informatie die wordt verzameld voor de extra variabelen die in de functieaanroep zijn opgegeven.
 
 <table id="table_A7ED9D38F36B4405947B2F48EA94D3C4"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> W3C-naam </th> 
-   <th colname="col2" class="entry"> Verzamelde gegevens </th> 
+   <th colname="col2" class="entry"> Gegevens verzameld </th> 
    <th colname="col3" class="entry"> Toelichting </th> 
    <th colname="col4" class="entry"> Voorbeeld </th> 
   </tr> 
@@ -80,68 +80,68 @@ Het HTTP- verzoek dat uit de functie van ActionScript van de [!DNL Flash] Marker
  <tbody> 
   <tr> 
    <td colname="col1"> x-trackingid </td> 
-   <td colname="col2"> Tracking Identifier (unieke bezoeker) </td> 
-   <td colname="col3"> Herkenningsteken dat van een koekje wordt gelezen dat in browser van de gebruiker door <span class="wintitle"> </span> Sensor op het aanvankelijke verzoek van de Bezoeker wordt geplaatst </td> 
+   <td colname="col2"> Tracking-id (unieke bezoeker) </td> 
+   <td colname="col3"> Id gelezen van een cookie die door <span class="wintitle"> </span> Sensor op eerste verzoek van Bezoeker in de browser van de gebruiker is geplaatst </td> 
    <td colname="col4"> v1st=3C94007B4E01F9C2 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Datum </p> <p>Tijd </p> </td> 
    <td colname="col2"> Tijdstempel </td> 
-   <td colname="col3"> Tijdstip waarop het verzoek door server (bij precisie 100ns werd verwerkt; nauwkeurigheid hangt van servermilieu en NTP af) </td> 
+   <td colname="col3"> Tijdstip waarop het verzoek door de server werd verwerkt (bij precisie 100 ns; nauwkeurigheid is afhankelijk van serveromgeving en NTP) </td> 
    <td colname="col4"> 2002-11-21 17:21:45.123 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> SC (inhoudstype) </td> 
-   <td colname="col2"> Content type </td> 
-   <td colname="col3"> Type voorwerp dat van server is teruggekeerd </td> 
+   <td colname="col1"> sc (inhoudstype) </td> 
+   <td colname="col2"> Inhoudstype </td> 
+   <td colname="col3"> Type object dat door server wordt geretourneerd </td> 
    <td colname="col4"> Tekst/html </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> SC-status </td> 
-   <td colname="col2"> HTTP-responsstatuscode </td> 
-   <td colname="col3"> Numerieke code die door de server wordt geproduceerd die nota neemt van het statuut van de reactie van de server van HTTP </td> 
+   <td colname="col1"> sc-status </td> 
+   <td colname="col2"> HTTP Response Status Code </td> 
+   <td colname="col3"> Numerieke code die is gegenereerd door de server die de status van de reactie van de HTTP-server aangeeft </td> 
    <td colname="col4"> 200 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs-uri-stengel </td> 
+   <td colname="col1"> cs-uri-stem </td> 
    <td colname="col2"> URI Stem </td> 
-   <td colname="col3"> Het stamgedeelte van URI dat door de cliënt wordt gevraagd </td> 
+   <td colname="col3"> Het stamgedeelte van de URI die door de client wordt aangevraagd </td> 
    <td colname="col4"> /flashtag/flashtag.txt </td> 
   </tr> 
   <tr> 
    <td colname="col1"> c-ip </td> 
-   <td colname="col2"> IP client </td> 
+   <td colname="col2"> Client IP </td> 
    <td colname="col3"> IP-adres van de verzoekende client </td> 
    <td colname="col4"> 127.0.0.1 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> s-dns </td> 
-   <td colname="col2"> Serverdomeinnaam </td> 
-   <td colname="col3"> De naam van het domein van de Webserver die het verzoek verwerkt </td> 
+   <td colname="col2"> Domeinnaam server </td> 
+   <td colname="col3"> Domeinnaam van de webserver die de aanvraag verwerkt </td> 
    <td colname="col4"> www.mysite.com </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs (referentie) </td> 
+   <td colname="col1"> cs(referentie) </td> 
    <td colname="col2"> URL verwijzen </td> 
-   <td colname="col3"> Inhoud van het de verwijzingsgebied van HTTP dat door de cliënt wordt verzonden </td> 
+   <td colname="col3"> Inhoud van het veld HTTP-referentie die door de client is verzonden </td> 
    <td colname="col4"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs (gebruikersagent) </td> 
+   <td colname="col1"> cs (user-agent) </td> 
    <td colname="col2"> Gebruikersagent </td> 
-   <td colname="col3"> Apparaat dat wordt gebruikt om een verzoek aan de server van HTTP in te dienen </td> 
+   <td colname="col3"> Apparaat dat wordt gebruikt om een aanvraag bij de HTTP-server in te dienen </td> 
    <td colname="col4"> Mozilla/4.0+(compatibel;+MSIE+6.0; +Windows+NT+5.1) </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs (cookie) </td> 
+   <td colname="col1"> cs(cookie) </td> 
    <td colname="col2"> Clientcookies van domein </td> 
-   <td colname="col3"> Inhoud van alle koekjes van de gebruiker voor de plaats </td> 
+   <td colname="col3"> Inhoud van alle cookies van de gebruiker voor de site </td> 
    <td colname="col4"> <p>KL_TC1 1038058778312 </p> <p>KL972x1038058778312282052 </p> <p>KL_PVKL972 0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-query </td> 
-   <td colname="col2"> Query-tekenreeks </td> 
-   <td colname="col3"> Het gedeelte van het vraagkoord, als om het even welk, van URI gevraagd door de cliënt </td> 
+   <td colname="col2"> Tekenreeks query </td> 
+   <td colname="col3"> Het gedeelte van de querytekenreeks, indien aanwezig, van de URI die door de client wordt aangevraagd </td> 
    <td colname="col4"> PAGENAME=/about_us/index.swf&amp;var1=value1&amp;var2=value2 </td> 
   </tr> 
  </tbody> 
