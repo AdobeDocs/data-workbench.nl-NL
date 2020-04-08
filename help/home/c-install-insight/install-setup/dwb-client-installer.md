@@ -1,48 +1,48 @@
 ---
-description: De Werkbank van gegevens verstrekt een opstellingstovenaar om de werkstation (cliënt) toepassing te installeren.
+description: Data Workbench biedt een installatiewizard om de workstationtoepassing (client) te installeren.
 title: Wizard Werkstation instellen
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
 
 # Wizard Werkstation instellen{#workstation-setup-wizard}
 
-De Werkbank van gegevens verstrekt een opstellingstovenaar om de werkstation (cliënt) toepassing te installeren.
+Data Workbench biedt een installatiewizard om de workstationtoepassing (client) te installeren.
 
-## Het installeren van het Werkstation dat de Tovenaar van de Opstelling gebruikt {#section-58da9bb6196c46eab3b54146913fdcb8}
+## Het werkstation installeren met de wizard Setup {#section-58da9bb6196c46eab3b54146913fdcb8}
 
-Lanceer uitvoerbaar de installatietovenaar en loop door elke stap om het programma van de werkstationcliënt te installeren. Na installatie van het werkstation kunt u verbinding maken met servers en profielen.
+Start het uitvoerbare bestand van de installatiewizard en doorloop elke stap om het clientprogramma van het werkstation te installeren. Nadat u het werkstation hebt geïnstalleerd, kunt u verbinding maken met servers en profielen.
 
-1. Dubbelklik op het uitvoerbare uitvoerbare werkstationinstallatieprogramma.
-1. Klik **ja** om het programma toe te staan om op Vensters te installeren.
+1. Dubbelklik op het uitvoerbare bestand van het installatieprogramma van het werkstation.
+1. Klik op **Ja** om het programma in Windows te laten installeren.
 1. Selecteer een **Taal** voor de opstellingstovenaar.
 
-   De tovenaar zal openen:
+   De wizard wordt geopend:
 
    ![](assets/6_4_workstation_wizard.png)
 
-1. Klik **daarna** op het **Onthaal aan de dialoog van de Tovenaar** van de Opstelling van de Werkbank van Gegevens.
+1. Klik op **Volgende** in het dialoogvenster **Welkom bij Wizard** Data Workbench Setup.
 
-1. Selecteer deze optie om een **nieuwe installatie** te installeren of een bestaande installatie te **upgraden of te repareren** .
+1. Selecteer deze optie om een **nieuwe installatie** te installeren of om een bestaande installatie te **upgraden of te herstellen** .
 
-   **De nieuwe Installatie** beschrijft om het even welke eerder geïnstalleerde dossiers.
+   **Met Nieuwe installatie** worden eerder geïnstalleerde bestanden overschreven.
 
-   **De verbetering** werkt uw Werkstation aan de recentste versie bij of laat u een bestaande installatie herstellen. De Werkbank van gegevens zal geïnstalleerde **dossiers vergelijken Insight.exe** en zal de Tovenaar van de Opstelling van het Werkstation in werking stellen als een nieuwere versie van de cliënt beschikbaar is.
+   **Met de upgrade** wordt uw werkstation bijgewerkt naar de nieuwste versie of kunt u een bestaande installatie repareren. De Werkbank van gegevens zal geïnstalleerde **Insight.exe** dossiers vergelijken en zal de Tovenaar van de Opstelling van het Werkstation in werking stellen als een nieuwere versie van de cliënt beschikbaar is.
 
 1. Selecteer installatielocatie:
 
-   **Typisch** installeert aan een standaardomslag en een plaats.
+   **De standaardmap en -locatie worden standaard** geïnstalleerd.
 
-   * De dossiers van het programma worden opgeslagen door gebrek aan:
+   * Programmabestanden worden standaard opgeslagen in:
 
       ```
       C:\Program Files\Adobe\Adobe Analytics\Data Workbench
       ```
 
-   * De Dossiers van gegevens (profielen, certificaten, spoorlogboeken, en gebruikersdossiers) worden opgeslagen door gebrek aan:
+   * Gegevensbestanden (profielen, certificaten, traceringslogbestanden en gebruikersbestanden) worden standaard opgeslagen in:
 
       ```
       C:\Users\<username>\AppData\Local\Adobe\Adobe Analytics\Data Workbench\
@@ -50,42 +50,42 @@ Lanceer uitvoerbaar de installatietovenaar en loop door elke stap om het program
 
       >[!IMPORTANT]
       >
-      >Een generisch ***Insight.cfg*** - dossier zonder serverdetails zal aanvankelijk worden geïnstalleerd. Men adviseert dat u het onlangs geïnstalleerde dossier ***Insight.cfg*** gebruikt en het aanpast eerder dan het bewegen van een dossier van een vorige installatie. Omdat de weg voor het installeren van het werkstation is veranderd, wordt de toevoeging van doopvonten, de verwijdering van de Omslag *van de* Gebruiker, en de verwijdering van *TraceFileComponent * geadviseerd.
+      >Een algemeen ***Insight.cfg*** - dossier zonder serverdetails zal aanvankelijk worden geïnstalleerd. U wordt aangeraden het zojuist geïnstalleerde bestand ***Insight.cfg*** te gebruiken en het aan te passen in plaats van een bestand van een vorige installatie te verplaatsen. Omdat het pad voor de installatie van het werkstation is gewijzigd, wordt aanbevolen lettertypen toe te voegen, de *gebruikersmap* te verwijderen en de *TraceFileComponent * te verwijderen.
 
-1. (facultatief) Selecteer** Aangepast** om het taalpakket en de locatie van het programma en de gegevensbestanden te kiezen.
-1. Selecteer plaats voor **kortere weg in het Menu** van het Begin.
+1. (Optioneel) Selecteer **Aangepast** om het taalpakket en de locatie van het programma en gegevensbestanden te kiezen.
+1. Selecteer locatie voor **sneltoetsen in het menu** Start.
 
    ![](assets/6_4_workstation_wizard_folder.png)
 
-   Klik **creëren geen omslag** van het Menu van het Begin om geen kortere weg op het Menu van het Begin van Vensters te installeren.
+   Klik **creeer geen omslag** van het Menu van het Begin om geen kortere weg op het Menu van het Begin van Vensters te installeren.
 
-1. Klik op **Volgende.** Een samenvatting van geselecteerde wegen en talen van de dossierplaats zal tonen. Klik op **Installeren.**
+1. Klik op **Volgende.** Er wordt een overzicht weergegeven van de paden en talen van de geselecteerde bestandslocatie. Klik op **Installeren.**
 
-1. Zoek het **Data Workbench Certificate**.
+1. Zoek het **Data Workbench-certificaat**.
 
-   Als de opstellingstovenaar niet het certificaat van de Werkbank van Gegevens tijdens installatie kan vinden, zal het een dialoog openen om aan de plaats van het certificaat te doorbladeren (een **.pem** dossier dat door gebrek in de omslag van de **Certificaten** van de cliënt wordt gevestigd), of **Skip** te klikken om het certificaat na installatie te vinden.
+   Als de installatiewizard het Data Workbench-certificaat niet kan vinden tijdens de installatie, wordt een dialoogvenster geopend waarin u naar de locatie van het certificaat kunt bladeren (een bestand **.pem** dat standaard in de map met clientcertificaten **staat), of u klikt op** Overslaan **** om het certificaat na de installatie te zoeken.
 
-   Klik **installeren** na de plaats van het certificaat.
+   Klik op **Installeren** nadat u het certificaat hebt gevonden.
 
-1. Nadat de opstellingstovenaar volledig is en de Werkbank van Gegevens geïnstalleerd, klik **Afwerking** om opstelling te voltooien.
+1. Nadat de installatiewizard is voltooid en Data Workbench is geïnstalleerd, klikt u op **Voltooien** om de installatie te voltooien.
 
    >[!NOTE]
    >
-   >De standaardlogboekplaats voor de Tovenaar van de Opstelling van het Werkstation in **[!DNL C:\Users\&quot;<userName>\AppData\Local\Temp.]**
+   >De standaardlogboekplaats voor de Tovenaar van de Opstelling van het Werkstation in **[!DNL C:\Users\`<userName>&quot;\AppData\Local\Temp.]**
 
-   Selecteer checkbox van de toepassing **van de** Lancering om de werkbank na opstelling te openen.
+   Schakel het selectievakje Toepassing **** starten in om de werkbank na installatie te openen.
 
-1. **Vorm verbindingen** aan servers in **[!DNL Insight.cfg]** dossier.
+1. **Verbindingen** met servers in **[!DNL Insight.cfg]** bestand configureren.
 
-   Na installatie van het werkstation, zal de Verbeterde werkruimte van de Ervaring van de Configuratie van het Werkstation met extra informatie over het [ingaan van de informatie](/help/home/c-get-started/c-insght-config-param.md) van de serververbinding in het *Insight.cfg* - dossier en een optie openen om een profiel van drop-down te selecteren. U kunt de verbindingsstatus aan uw servers ook bekijken.
+   Na installatie van het werkstation, zal de Verbeterde werkruimte van de Ervaring van de Configuratie van het Werkstation met extra informatie over het [ingaan van de informatie](/help/home/c-get-started/c-insght-config-param.md) van de serververbinding in het *Insight.cfg* - dossier en een optie openen om een profiel van drop-down te selecteren. U kunt de verbindingsstatus ook weergeven op uw servers.
 
    ![](assets/6_4_workstation_install_conf_conn.png)
 
 ## Installatiemappen {#section-b5ea5a3b3ecb4622aef713972f3f8ebd}
 
-De de omslagstructuur van de Werkbank van Gegevens heeft twee installatielocaties:
+De mapstructuur van Data Workbench heeft twee installatielocaties:
 
-* **De Dossiers** van het programma **Insight.exe** en het steunen van cliëntdossiers (**Insight.ini**) worden nu gevestigd door gebrek bij
+* **De Dossiers** van het programma **Insight.exe** en het steunen cliëntdossiers (**Insight.ini**) worden nu gevestigd door gebrek bij
 
    ```
    C:\Program Files\Adobe\Analytics\DataWorkbench
@@ -93,13 +93,13 @@ De de omslagstructuur van de Werkbank van Gegevens heeft twee installatielocatie
 
 * De map **Appdata** .
 
-   **Insight.cfg**, de profielen, de certificaten, de spoorlogboeken, en de gebruikersdossiers worden nu gevestigd door gebrek bij
+   **Insight.cfg**, de profielen, de certificaten, de spoorlogboeken, en de gebruikersdossiers worden nu door gebrek gevestigd
 
    ```
    C:\Users\<Winuser>\AppData\Adobe\Analytics\DataWorkbench\ 
    ```
 
-   U kunt de weg voor de omslag **Appdata** in het `Insight.ini` dossier plaatsen:
+   U kunt het pad instellen voor de map **Appdata** in het `Insight.ini` bestand:
 
    ```
    [InitialSettings] 
@@ -109,10 +109,10 @@ De de omslagstructuur van de Werkbank van Gegevens heeft twee installatielocatie
 
 ## Het werkstation verwijderen {#section-5ce2e233fe4348469ef1b3c451dd5b70}
 
-De Werkbank van gegevens omvat nu uitvoerbaar om het werkstation (dat door gebrek bij **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**) wordt gevestigd te desinstalleren.
+Data Workbench bevat nu een uitvoerbaar bestand voor het verwijderen van het werkstation (dat zich standaard op **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**) bevindt.
 
-Start en volg stappen om de gegevenswerkstationbestanden van uw harde schijf te verwijderen.
+Start en voer de stappen uit om de bestanden voor het werkstation Data Workbench van de vaste schijf te verwijderen.
 
 >[!NOTE]
 >
->U kunt uitvoerbaar **unins000.exe** van de omslag lanceren, gebruikend de kortere weg van de Werkbank **van de Gegevens van de** Desinstallatie van het Menu van het Begin, of van **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
+>U kunt het uitvoerbare bestand **unins00.exe** vanuit de map starten met de snelkoppeling Gegevens Workbench **verwijderen in het menu Start of vanuit** > **[!UICONTROL Control Panel]** **[!UICONTROL Program and Features]**.
