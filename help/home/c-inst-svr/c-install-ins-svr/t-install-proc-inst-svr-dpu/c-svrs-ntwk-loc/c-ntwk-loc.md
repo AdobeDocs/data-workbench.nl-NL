@@ -1,17 +1,17 @@
 ---
-description: Conceptueel, dient het adresdossier het zelfde doel zoals het ETC \ HOSTS- dossier op een genetwerkte machine.
+description: Conceptueel, dient het adresdossier het zelfde doel zoals ETC&bsol;HOSTS dossier op een genetwerkte machine.
 solution: Insight
 title: Netwerklocaties
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: f6ec885266de6b6d99615d73fad2a1c22897424b
+source-git-commit: e8612fab1c13ca5262816dde7deaa6fd8bedbc62
 
 ---
 
 
 # Netwerklocaties{#network-locations}
 
-Conceptueel, dient het adresdossier het zelfde doel zoals het ETC \ HOSTS- dossier op een genetwerkte machine.
+Conceptueel, dient het adresdossier het zelfde doel zoals ETC&amp;bsol;HOSTS dossier op een genetwerkte machine.
 
 Nochtans, in tegenstelling tot het dossier van HOSTS, dat één enkele inzameling van namen beschrijft, bevat het adresdossier veelvoudige inzamelingen van namen genoemd netwerkplaatsen.
 
