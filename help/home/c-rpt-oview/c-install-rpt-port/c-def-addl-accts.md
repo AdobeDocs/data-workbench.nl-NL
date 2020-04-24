@@ -1,37 +1,37 @@
 ---
-description: De gebruikers moeten een geldige rekening hebben en een rekeningsnaam en een wachtwoord verstrekken wanneer zij tot het Portaal van het Rapport toegang hebben.
+description: Gebruikers moeten over een geldig account beschikken en een accountnaam en wachtwoord opgeven wanneer zij het rapportportaal openen.
 solution: Analytics
-title: Extra accounts definiëren
+title: Aanvullende accounts definiëren
 topic: Data workbench
 uuid: 5ad98b52-267c-4c36-b43a-ae6ad415de8e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: e4f2c653c00c21180b14bf67cc116d832bddd028
 
 ---
 
 
-# Extra accounts definiëren{#define-additional-accounts}
+# Aanvullende accounts definiëren
 
-De gebruikers moeten een geldige rekening hebben en een rekeningsnaam en een wachtwoord verstrekken wanneer zij tot het Portaal van het Rapport toegang hebben.
+Gebruikers moeten over een geldig account beschikken en een accountnaam en wachtwoord opgeven wanneer zij het rapportportaal openen.
 
-Door gebrek, wordt de gebruikersauthentificatie toegelaten binnen [!DNL Report Portal].
+Gebruikersverificatie is standaard ingeschakeld in [!DNL Report Portal].
 
-De lijst van geldige rekeningen voor [!DNL Report Portal] wordt gehandhaafd in het gegevensbestanddossier, [!DNL portal.mdb]. [!DNL Report Portal] is geïnstalleerd met één account met beheerdersrechten:
+De lijst met geldige accounts voor [!DNL Report Portal] wordt bijgehouden in het databasebestand, [!DNL portal.mdb]. [!DNL Report Portal] wordt geïnstalleerd met één account met beheerdersrechten:
 
 * Accountnaam: test
-* Wachtwoord: gebruiker
+* Wachtwoord: user
 
 >[!NOTE]
 >
->Om veiligheidsredenen, adviseert Adobe dat u het wachtwoord voor deze rekening verandert nadat u installeert [!DNL Report Portal].
+>Om veiligheidsredenen raadt Adobe u aan het wachtwoord voor dit account te wijzigen nadat u het hebt geïnstalleerd [!DNL Report Portal].
 
-Om gebruikersrekeningen aan toe te voegen [!DNL Report Portal] of informatie te veranderen met betrekking tot bestaande rekeningen, gebruikt u het [!DNL Admin] lusje op het [!DNL Report Portal] gebruikersinterface.
+Als u gebruikersaccounts wilt toevoegen aan [!DNL Report Portal] of gegevens wilt wijzigen die betrekking hebben op bestaande accounts, gebruikt u het [!DNL Admin] tabblad in de [!DNL Report Portal] gebruikersinterface.
 
-Telkens als u een nieuwe rekening toevoegt of een bestaande rekening uitgeeft, wordt een bevestigingse-mail verzonden zoals die in het [!DNL email.asp] dossier in de omslag \*PortalName* \ PortalASP wordt gespecificeerd. Voor meer informatie, zie het E.asp- Dossier [](../../../home/c-rpt-oview/c-install-rpt-port/t-email-file.md#task-d9f4f306d38e435aa7effab3d94f690b)uitgeven.
+Telkens wanneer u een nieuwe account toevoegt of een bestaande account bewerkt, wordt een bevestigingse-mail verzonden zoals opgegeven in het [!DNL email.asp] bestand in de map \*PortalName*\PortalASP. Zie Het bestand [Email.asp](../../../home/c-rpt-oview/c-install-rpt-port/t-email-file.md#task-d9f4f306d38e435aa7effab3d94f690b)bewerken voor meer informatie.
 
-Voor stappen om extra gebruikers toe te voegen, zie het [Werken met Rekeningen](../../../home/c-rpt-oview/c-admin-rpt/c-work-accts/c-work-accts.md#concept-c933a1940bda4a3489d61d8af315e45d).
+Zie [Werken met accounts](../../../home/c-rpt-oview/c-admin-rpt/c-work-accts/c-work-accts.md#concept-c933a1940bda4a3489d61d8af315e45d)voor stappen om extra gebruikers toe te voegen.
 
 >[!NOTE]
 >
->Naar keuze, kunt u gebruikersauthentificatie onbruikbaar maken en anonieme toegang tot verlenen [!DNL Report Portal]. Voor stappen om dit te doen, zie de informatie over de Zitting (&quot;In&quot;) parameter in [geef het Dossier](../../../home/c-rpt-oview/c-install-rpt-port/t-edit-sess-config-file.md#task-cf11c3a780bd4936afd3f64a6b30afc7)van de Configuratie van de Zitting uit.
+>Naar keuze, kunt u gebruikersauthentificatie onbruikbaar maken en anonieme toegang tot toestaan [!DNL Report Portal]. Voor stappen om dit te doen, zie de informatie over de Sessie (&quot;In&quot;) parameter in [geef het Dossier](../../../home/c-rpt-oview/c-install-rpt-port/t-edit-sess-config-file.md#task-cf11c3a780bd4936afd3f64a6b30afc7)van de Configuratie van de Zitting uit.
 
