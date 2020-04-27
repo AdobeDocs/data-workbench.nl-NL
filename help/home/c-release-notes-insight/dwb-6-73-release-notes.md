@@ -1,48 +1,44 @@
 ---
-description: Nieuwe eigenschappen en moeilijke situaties in Werkbank 6.73 van Gegevens.
-title: Gegevens Workbench 6.73 Release Notes
+description: Nieuwe functies en correcties in Data Workbench 6.73.
+title: Opmerkingen bij de release Data Workbench 6.73
 uuid: bba63a8c-9cb7-4334-b66a-22db92153066
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: 9552a2f9fe4e450b1e212b38a09f77252a009419
 
 ---
 
 
-# Gegevens Workbench 6.73 Release Notes{#data-workbench-release-notes}
+# Opmerkingen bij de release Data Workbench 6.73{#data-workbench-release-notes}
 
-Nieuwe eigenschappen en moeilijke situaties in Werkbank 6.73 van Gegevens.
+Nieuwe functies en correcties in Data Workbench 6.73.
 
-## Gegevens Workbench 6.73 Release Notes {#topic-7655534554ac4a4b816af1bd73b06aad56757}
+## Oplossingen {#section-160baf6ea04c45a993777ee4260691ed}
 
-Nieuwe eigenschappen en moeilijke situaties in Werkbank 6.73 van Gegevens.
+* Probleem verholpen in Workstation waarbij gebruikers zich niet konden aanmelden op een hardware met hoge resolutie en hoge DPI.
+* Probleem verholpen waarbij e-mail ontbrak in bestandsnamen archiveren bij gebruik van IMS-aanmelding.
+* Bijgewerkte OpenSSL naar versie 1.1.0h, die verscheidene kwetsbaarheidsmoeilijke situaties en nieuwe SSL CIFERS omvat.
+* De onderstaande opensource-bibliotheken bijgewerkt met de nieuwste stabiele versies
 
-## Fixes {#section-160baf6ea04c45a993777ee4260691ed}
-
-* Vaste een probleem in Werkstation waar gebruikers niet konden inloggen op bepaalde hardware met hoge resolutie en hoge DPI.
-* Vast een kwestie in de server aan waar E-mail in de dossiernamen van het Archief toen het gebruiken van login IMS ontbrak.
-* Bijgewerkt OpenSSL aan versie 1.1.0h die verscheidene kwetsbaarheidsmoeilijke situaties en nieuwe SSL Ciphers omvat.
-* Bijgewerkt de hieronder vermelde open bronbibliotheken aan de recentste stabiele versies
-
-   * libssh2 1,8,0
+   * libssh2 1.8.0
    * Apache Xerces 3.2.1
-   * Apache Xalan 1,11
-   * libpng 1,6,34
-   * libarchief 3.3.2
+   * Apache Xalan 1.11
+   * libpng 1.6.34
+   * libarchive 3.3.2
    * zlib 1.2.11
-   * pm 8.42
+   * pcre 8.42
 
-* Toegevoegde fout registreren wanneer de telling van de de dossierrij van de Raadpleging meer dan gesteunde 357913908 rijen overschrijdt.
+* Toegevoegde foutenregistratie wanneer het aantal rijen van de het dossierrij van de Opzoeken meer dan gesteunde 357913908 rijen overschrijdt.
 
-## Bekende kwestie {#section-f2cb932f6225457a872fb916a78df89a}
+## Bekend probleem {#section-f2cb932f6225457a872fb916a78df89a}
 
-* Versie van het Werkstation van de Werkbank van gegevens 6.73 verbindt niet met versies van de Servers van de Werkbank van Gegevens 6.61 en ouder. De reden is, de oudere serverversies gebruiken een zwakke vorm van ciphers niet die in versie 6.73 worden gesteund. Om steun voor oudere versies toe te laten
+* Data Workbench Workstation versie 6.73 maakt geen verbinding met Data Workbench Servers versie 6.61 en ouder. De reden hiervoor is dat oudere serverversies een zwakke vorm van ciphers gebruiken die niet wordt ondersteund in versie 6.73. Ondersteuning voor oudere versies inschakelen
 
-   1. De standaardSSL van de opheffing lijst van CIFERS op de server met een sterke die cijferlijst door OpenSSL versie 1.0.1h wordt gesteund. Om met voeten te treden, voeg zeer belangrijke &quot;SSL CIFERS&quot;in de dossiers &quot;Communications.cfg&quot;beschikbaar in &quot;Componenten&quot;en &quot;Componenten voor de Verwerking van Servers&quot;folders toe. Bijvoorbeeld: `SSL Ciphers = string: !aNULL:AESGCM`
+   1. Overschrijf de standaard-SSL-ciphers-lijst op de server met een sterke lijst van citeurs die wordt ondersteund door OpenSSL-versie 1.0.1h. Als u de code wilt overschrijven, voegt u de sleutel &quot;SSL-ciphers&quot; toe aan de bestanden &quot;Communications.cfg&quot; in de mappen &quot;Components&quot; en &quot;Components for Processing Servers&quot;. Bijvoorbeeld: `SSL Ciphers = string: !aNULL:AESGCM`
 
       >[!NOTE]
       >
-      >Zorg ervoor dat de sleutel op het zelfde niveau wordt geplaatst zoals de SSL Haven. Voor details verwijs naar de Montages van de [Communicatie Configuratie](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/config-settings/c-comm-cfg-stgs.html)
+      >Zorg ervoor dat de sleutel op het zelfde niveau wordt geplaatst zoals de SSL Haven. Voor details verwijs naar de Montages van de Configuratie van de [Mededelingen](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/config-settings/c-comm-cfg-stgs.html)
 
-   1. Plaats het recentste trust_ca_cert.pem- dossier op de server 6.61 en oudere servers. Dit het plaatsen is toepasselijk op al Werkstation 6.7x versies.
+   1. Plaats het nieuwste bestand trust_ca_cert.pem op de server 6.61 en oudere servers. Deze instelling is van toepassing op alle 6,7x-werkstations.
 
-Zie de [gearchiveerde versienota&#39;s](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html) voor Werkbank van Gegevens 5.3 tot 5.52.
+Zie [gearchiveerde releaseopmerkingen](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html) voor Data Workbench 5.3 tot en met 5.52.
