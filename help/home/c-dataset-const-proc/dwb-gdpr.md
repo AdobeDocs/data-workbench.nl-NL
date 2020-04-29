@@ -4,7 +4,7 @@ solution: Analytics
 title: Ondersteuning voor Data Workbench voor GDPR
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
 
 ---
 
@@ -21,7 +21,7 @@ In de GDPR-verordening worden de rollen en verplichtingen van de verschillende p
 * Adobe is de **gegevensverwerker** die de software en services levert voor het implementeren van GDPR-vereisten op basis van uw overeenkomst met Adobe.
 * Na integratie van Data Workbench met de GDPR-service en volgens de GDPR-standaarden kunnen bezoekers van een site (de **betrokkenen**) hun &quot;recht om te worden vergeten&quot; uitoefenen door Adobe, de gegevensverwerker. Om het recht te bereiken om te worden vergeten, kunt u als gegevenscontroller uitgevochten bezoeker-id&#39;s uploaden van een interface of API naar Adobe. Raadpleeg de documentatie bij de GDPR-workflow [van](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) Adobe Analytics voor meer informatie, zoals de sectie [Verzendings- en verwijderingsverzoeken](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html) .
 
->[!Nofferte]
+>[!NOTE]
 >
 >Voor andere gegevensbronnen, zal uw organisatie voor het schoonmaken van uitgedaagde bezoeker IDs van andere logboekbronnen, zoals CRM, POS, IVR, en andere ruwe gegevensbronnen verantwoordelijk zijn. Pakketten met aangepaste services zijn beschikbaar om organisaties te ondersteunen door een volledige vervangende set bestanden voor elke gegevensbron _of andere aangepaste opties_ te bieden.
 
