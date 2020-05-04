@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Help bij Data Workbench
 translation-type: tm+mt
-source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
+source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
 
 ---
 
@@ -966,6 +966,6 @@ source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
       + [Wijzigingen in configuratie voor nieuw schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Instellingen van afgeleide afmetingen](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Query-API](https://www.adobe.io/)
-+ [Data Workbench met de gegevensfeed Analytics](https://marketing.adobe.com/resources/help/en_US/insight/insight_sc_implementation.pdf)
++ [Data Workbench met de gegevensfeed Analytics](home/assets/insight_sc_implementation.pdf)
 + [Integratie van Data Workbench met Adobe Target](home/dwb-adobe-target.md)
 + [Woordenlijst gegevenswerkbank](dwb-glossary.md)
