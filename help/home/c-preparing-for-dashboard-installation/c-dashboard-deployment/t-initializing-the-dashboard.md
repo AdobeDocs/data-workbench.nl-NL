@@ -1,39 +1,41 @@
 ---
-description: De definitieve stap is het dashboard voor het eerst in werking te stellen om het toe te staan om te initialiseren.
+description: De laatste stap bestaat uit het voor het eerst uitvoeren van het dashboard, zodat het kan worden geïnitialiseerd.
 solution: Analytics
 title: Het dashboard initialiseren
 topic: Data workbench
 uuid: 847ba63e-29d8-4950-aa74-22d825388e2b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 4b39a42285c39e26f097b91309c269c05a9475bd
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 0%
 
 ---
 
 
 # Het dashboard initialiseren{#initializing-the-dashboard}
 
-De definitieve stap is het dashboard voor het eerst in werking te stellen om het toe te staan om te initialiseren.
+De laatste stap bestaat uit het voor het eerst uitvoeren van het dashboard, zodat het kan worden geïnitialiseerd.
 
-1. Open Webbrowser en ga URL aan de onlangs opgestelde plaats (bijvoorbeeld, http://localhost/dashboard) in.
-1. Het verbinden voor het eerst zal opstelling de gegevensbestandlijsten, zodat kunt u een lichte vertraging ervaren.
-1. De aanvankelijke openings van een sessiegeloofsbrieven zijn:
+1. Open een webbrowser en voer de URL in naar de nieuwe site (bijvoorbeeld http://localhost/dashboard).
+1. Als u voor het eerst verbinding maakt, worden de databasetabellen ingesteld, zodat u mogelijk een kleine vertraging hebt.
+1. De aanvankelijke aanmeldingsreferenties zijn:
 
-* **[!UICONTROL Username]**: admin
-* **[!UICONTROL Password]**: wachtwoord
+   * **[!UICONTROL Username]**: beheerder
+   * **[!UICONTROL Password]**: password
 
-1. Voor uw eerste login, ga naar **[!UICONTROL User]** > **[!UICONTROL Account Settings]** en selecteer **[!UICONTROL Change Password]** om uw beheerderwachtwoord te veranderen.
->De dashboardinstallatie is nu voltooid. Als u niet reeds, gebruik de instructies in > worden gedetailleerd
-><!-->
->Gegevensworkshop voorbereiden>
->-->
->nch sectie van deze gids om uw communicatie met de servers van de gegevenswerkbank te vormen en gebruikers en groepen te beheren. >
->>[!NOTE]
->>
->>De fouten en de controlelogboeken van het dashboard kunnen in de [!DNL logs] folder binnen de installatiepad worden gevonden.
+1. Ga bij de eerste aanmelding naar **[!UICONTROL User]** > **[!UICONTROL Account Settings]** en selecteer **[!UICONTROL Change Password]** om het beheerderswachtwoord te wijzigen.
+
+De dashboardinstallatie is nu voltooid. Gebruik, indien u dat nog niet hebt gedaan, de instructies in de sectie Gegevenswerkbench voorbereiden van deze handleiding om de communicatie met de servers van de gegevenswerkbank te configureren en gebruikers en groepen te beheren.
+
 >[!NOTE]
-Als u de identiteit van de toepassingspool in een verschillende rekening moet veranderen, zorg ervoor om toegang tot het gegevensbestand te verlenen en de identiteit te geven lees-schrijf toegang tot de omslag in de installatiepad. [!DNL logs]
+>
+>Logbestanden voor dashboardfouten en -controles vindt u in de [!DNL logs] map in het installatiepad.
+
 >[!NOTE]
-Als u ooit het verbindingskoord voor het gegevensbestand moet veranderen, geef eenvoudig de waarde uit gebruikend **[!UICONTROL IIS Management Console]**.
 >
+>Als u de identiteit van de toepassingspool in een verschillende rekening moet veranderen, zorg ervoor om toegang tot het gegevensbestand te verlenen en de identiteit lees-schrijf toegang tot de [!DNL logs] omslag in de installatiepad te geven.
+
+>[!NOTE]
 >
->
+>Als u ooit de verbindingstekenreeks voor het gegevensbestand moet veranderen, geef eenvoudig de waarde uit gebruikend **[!UICONTROL IIS Management Console]**.
