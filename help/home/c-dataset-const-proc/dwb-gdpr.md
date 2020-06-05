@@ -4,7 +4,10 @@ solution: Analytics
 title: Ondersteuning voor Data Workbench voor GDPR
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
+source-git-commit: 279e71f3da3f0ebc29091e88b87666a22a36a8d6
+workflow-type: tm+mt
+source-wordcount: '525'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ In de GDPR-verordening worden de rollen en verplichtingen van de verschillende p
 
 >[!NOTE]
 >
->Voor andere gegevensbronnen, zal uw organisatie voor het schoonmaken van uitgedaagde bezoeker IDs van andere logboekbronnen, zoals CRM, POS, IVR, en andere ruwe gegevensbronnen verantwoordelijk zijn. Pakketten met aangepaste services zijn beschikbaar om organisaties te ondersteunen door een volledige vervangende set bestanden voor elke gegevensbron _of andere aangepaste opties_ te bieden.
+>Voor andere gegevensbronnen, zal uw organisatie voor het schoonmaken van uitgedaagde bezoeker IDs van andere logboekbronnen, zoals CRM, POS, IVR, en andere ruwe gegevensbronnen verantwoordelijk zijn. Aangepast-scoped de dienstenpakketten zullen beschikbaar zijn om steun aan organisaties te verlenen door een volledige vervangingsreeks dossiers voor elke gegevensbron _te_ verstrekken die de aan de gang zijnde dienstbewaarders moeten steunen of handhaven.
 
 ## DWB bijwerken voor GDPR-implementatie
 
