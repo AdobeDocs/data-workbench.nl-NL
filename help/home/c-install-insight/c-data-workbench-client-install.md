@@ -1,49 +1,52 @@
 ---
-description: Het volgende is vereisten en aanbevelingen voor het installeren van het Werkstation (Cliënt) in de Werkbank van Gegevens.
+description: Hieronder vindt u vereisten en aanbevelingen voor het installeren van het werkstation (client) in Data Workbench.
 solution: Analytics
-title: Vereisten voor werkstations
+title: Workstationvereisten
 topic: Data workbench
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 
 
-# Vereisten voor werkstations{#workstation-requirements}
+# Workstationvereisten{#workstation-requirements}
 
-Het volgende is vereisten en aanbevelingen voor het installeren van het Werkstation (Cliënt) in de Werkbank van Gegevens.
+Hieronder vindt u vereisten en aanbevelingen voor het installeren van het werkstation (client) in Data Workbench.
 
-Zie [Serversysteemvereisten](https://docs.adobe.com/help/en/data-workbench/using/server-admin-install/c-msr-server.html) voor aanvullende systeemvereisten voor een werkbank.
+Zie [Serversysteemvereisten](https://docs.adobe.com/help/en/data-workbench/using/server-admin-install/c-msr-server.html) voor aanvullende systeemvereisten voor Data Workbench.
 
 >[!IMPORTANT]
 >
->De server, de rapportserver, en de cliëntcomponenten worden bevorderd om op de werkende systemen met 64 bits van Vensters te lopen.
+>De server, de rapportserver, en de cliëntcomponenten worden bevorderd om op werkende systemen met 64 bits van Vensters te lopen.
 
 **Voordat u begint**
 
-Zorg ervoor dat u de volgende taken hebt voltooid voordat u het werkstation van de Data Workbench (client) installeert:
+Zorg ervoor u deze voltooide taken hebt alvorens het Werkstation van de Data Workbench (Cliënt) te installeren:
 
-* **Voeg** ***Uitgesloten Processen*** voor de Bescherming van het Eindpunt van het Centrum van het Systeem van *MS in de Servers* van Vensters 2012 voor de volgende executables toe:
+* **Voeg** ***Uitgesloten Processen*** voor de Bescherming van het Eindpunt van het Centrum van het *Systeem van MS in Vensters 2012 Servers* voor de volgende uitvoerbare lijnen toe:
 
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   Dit zal &quot;witte lijst&quot;rechten voor deze het omzetten uitvoerbare voorwerpen toestaan.
+   Dit zal allowlist rechten voor deze interface uitvoerbare voorwerpen toelaten.
 
-* **Installeer Microsoft Excel om analysegegevens uit te voeren.** Om gegevens van werkruimten als dossiers van Microsoft Excel ( [!DNL .xls] of [!DNL .xlsx]) uit te voeren, moet de computer waarop u de Werkbank van Gegevens installeert Excel geïnstalleerd en geregistreerd hebben. Als Excel niet is geregistreerd en de Werkbank van Gegevens probeert om tot het voor het eerst toegang te hebben, toont Excel een vakje van de registratiegroep. Als u niet zeker bent of het exemplaar wordt geregistreerd, begin manueel Excel, en als een doos van de registratiedialoog verschijnt, voltooi het registratieproces.
+* **Installeer Microsoft Excel om analysegegevens te exporteren.** Als u gegevens uit werkruimten wilt exporteren als Microsoft Excel-bestanden ( [!DNL .xls] of [!DNL .xlsx]), moet Excel zijn geïnstalleerd en geregistreerd op de computer waarop u Data Workbench installeert. Als Excel niet is geregistreerd en de Data Workbench probeert om tot het voor het eerst toegang te hebben, toont Excel een registratiedialoogdoos. Als u niet zeker weet of de kopie is geregistreerd, start u Excel handmatig en als er een dialoogvenster voor registratie wordt weergegeven, voltooit u het registratieproces.
 
    >[!NOTE]
    >
-   >Met de versie van Werkbank 6.4 van Gegevens, is de steun voor Excel 2007 stopgezet. Ook, omdat de Werkbank van Gegevens slechts op Microsoft Windows voor architectuur met 64 bits loopt, adviseert men dat u ook een versie met 64 bits van Microsoft Excel installeert.
+   >Met de versie van Data Workbench 6.4, is de steun voor Excel 2007 gestopt. Ook, omdat de Data Workbench slechts op Microsoft Windows voor architectuur met 64 bits loopt, wordt het geadviseerd dat u ook een versie met 64 bits van Microsoft Excel installeert.
 
-* **Het installeren van Adobe[!DNL Acrobat]voor druk schraapte werkruimten aan PDF.** Om geschraapte werkruimten aan het formaat van Adobe PDF te drukken, moet de computer waarop u de Werkbank van Gegevens installeerde Adobe hebben [!DNL Acrobat] geïnstalleerd.
+* **Adobe installeren[!DNL Acrobat]voor het afdrukken van geschaalde werkruimten naar PDF.** Als u geschaalde werkruimten wilt afdrukken naar de Adobe PDF-indeling, moet Adobe zijn [!DNL Acrobat] geïnstalleerd op de computer waarop u Data Workbench hebt geïnstalleerd.
 
-* **Het verlenen van toegang tot een printer voor drukwerkruimten.** Om werkruimten van de Werkbank van Gegevens te drukken, moet de computer waarop u de Werkbank van Gegevens installeert toegang tot een printer hebben. De Werkbank van gegevens kan werkruimten aan kleur of zwart-wit printers drukken en vereist postscript of andere geavanceerde printereigenschappen niet. Voor optimale resultaten, adviseert Adobe drukwerkruimten in kleur.
-* **Veiligheidsmaatregelen uitvoeren.** U zou het normale beleid van de ondernemingsveiligheid van uw bedrijf voor de computers van de Werkbank van Gegevens moeten volgen. Om zijn primaire doeleinden te dienen, vereist de Werkbank van Gegevens slechts de capaciteit om met een server (via havens 80 en 443) en aan om het even welke servers te verbinden die gegevens verzamelen. U kunt de hardware van de Werkbank van Gegevens voor een ander doel gebruiken zolang u de software van de Werkbank van Gegevens handhaaft en minstens 10 GB van opslagruimte voor de Werkbank van Gegevens toewijst.
-* Om visualisaties nauwkeurig terug te geven, moet de computer waarop u de werkbank installeert een aangewezen geïnstalleerde **grafiekadapter** hebben (zie de vereisten van de Grafische Adapter hieronder).
+* **Toegang tot een printer bieden voor het afdrukken van werkruimten.** Voor het afdrukken van werkruimten vanuit Data Workbench, moet de computer waarop u Data Workbench installeert, toegang hebben tot een printer. Data Workbench kunnen werkruimten afdrukken op kleuren- of monochrome printers en hebben geen postscript- of andere geavanceerde printerfuncties nodig. Voor optimale resultaten raadt Adobe aan werkruimten in kleur af te drukken.
+* **Beveiligingsmaatregelen uitvoeren.** U zou het normale beleid van de ondernemingsveiligheid voor de computers van de Data Workbench van uw bedrijf moeten volgen. Om zijn primaire doeleinden te dienen, vereist de Data Workbench slechts de capaciteit om met een server (via havens 80 en 443) en aan om het even welke servers te verbinden die gegevens verzamelen. U kunt de hardware van de Data Workbench voor elk ander doel gebruiken zolang u de software van de Data Workbench handhaaft en minstens 10 GB opslagruimte voor Data Workbench toewijst.
+* Voor een nauwkeurige weergave van visualisaties moet op de computer waarop u de werkbank installeert een geschikte **grafische adapter** zijn geïnstalleerd (zie hieronder de vereisten voor grafische adapters).
 
-**Vereisten voor datacWorkbench-client**
+**Vereisten voor Data Workbench-client**
 
 **Besturingssysteem**
 
@@ -53,22 +56,22 @@ Zorg ervoor dat u de volgende taken hebt voltooid voordat u het werkstation van 
 
 >[!NOTE]
 >
->Windows XP wordt niet gesteund voor Werkbank 6.1 van Gegevens en recentere versies.
+>Windows XP wordt niet ondersteund voor Data Workbench 6.1 en latere versies.
 
 **Resolutie**
 
-* Vereist: 1.024 x 768 (XGA)
+* Vereist: 1024 x 768 (XGA)
 * Aanbevolen: 1.920 x 1.200 (WUXGA)
 
 **Grafische adapter**
 
-* Vereist: OpenGL hardwareversnelling voor ondersteuning van OpenGL 3.2
-* Aanbevolen: Specifieke videoadapter (bijvoorbeeld NVIDIA- of ATI-adapter)
+* Vereist: OpenGL-hardwareversnelling ter ondersteuning van OpenGL 3.2
+* Aanbevolen: Speciale grafische kaart (bijvoorbeeld NVIDIA- of ATI-adapter)
 
 **Processor**
 
 * Vereist: 1,2 GHz of hoger Intel of AMD
-* Aanbevolen: ICore 2 Duo-klasse
+* Aanbevolen: ICore 2 duo-klasse
 
 **RAM**
 
@@ -77,7 +80,7 @@ Zorg ervoor dat u de volgende taken hebt voltooid voordat u het werkstation van 
 
 **Connectiviteit**
 
-* Vereist: 512 Kbps verbinding met DPU
+* Vereist: 512 Kbps verbinding aan DPU
 * Aanbevolen: 2Mbps of snellere verbinding aan DPU
 
 **Bestandssysteem**
@@ -86,15 +89,15 @@ NTFS
 
 **Schijfopslag**
 
-Ten minste tien (10) GB of meer vrije ruimte op de vaste schijf
+Minimaal tien (10) GB of meer vrije ruimte op de vaste schijf
 
 **Afdrukken**
 
-Printertoegang (kleurenprinters of grijsschaalprinters) voor het afdrukken van werkruimten en rapporten
+Printertoegang (kleuren- of grijswaardenprinters) voor het afdrukken van werkruimten en rapporten
 
 **Overige**
 
 * Speciale muis
-* Arbeidsomgeving met weinig licht
+* Lage-glare werkomgeving
 * Matte monitor
 
