@@ -3,8 +3,12 @@ cloud: experience-cloud
 product: analytics
 audience: end-user
 user-guide-title: Help bij Data Workbench
+user-guide-description: Learn about the multi-channel capabilities of Data Workbench. Includes Data Workbench Client, Installation, Dataset Configuration guides, and more.
 translation-type: tm+mt
-source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
+source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
+workflow-type: tm+mt
+source-wordcount: '3518'
+ht-degree: 0%
 
 ---
 
@@ -14,20 +18,20 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 + [Help bij Data Workbench](home/home.md)
 + Releaseopmerkingen {#release-notes}
    + [Overzicht van opmerkingen bij de release](home/c-release-notes-insight/release-notes.md)
-   + [Opmerkingen bij de release Data Workbench 6.74](home/c-release-notes-insight/dwb-6-74-release-notes.md)
-   + [Opmerkingen bij de release Data Workbench 6.73](home/c-release-notes-insight/dwb-6-73-release-notes.md)
-   + [Opmerkingen bij de release Data Workbench 6.72](home/c-release-notes-insight/dwb-6-72-release-notes.md)
+   + [Data Workbench 6.74 Opmerkingen bij de release](home/c-release-notes-insight/dwb-6-74-release-notes.md)
+   + [Opmerkingen bij de release van Data Workbench 6.73](home/c-release-notes-insight/dwb-6-73-release-notes.md)
+   + [Opmerkingen bij de release van Data Workbench 6.72](home/c-release-notes-insight/dwb-6-72-release-notes.md)
    + [Opmerkingen bij de release Data Workbench 6.7](home/c-release-notes-insight/dwb-6-7-release-notes.md)
-   + [Data Workbench Report Portal 2.1](home/c-release-notes-insight/reportserver-2-1.md)
-   + [Opmerkingen bij de release Data Workbench 6.61](home/c-release-notes-insight/c-6-6-1.md)
+   + [Rapport Data Workbench Portal 2.1](home/c-release-notes-insight/reportserver-2-1.md)
+   + [Data Workbench 6.61 Opmerkingen bij de release](home/c-release-notes-insight/c-6-6-1.md)
    + [Opmerkingen bij de release Data Workbench 6.6](home/c-release-notes-insight/c-6-6.md)
-   + [Data Workbench 6.52-update](home/c-release-notes-insight/c-6-52.md)
+   + [Data Workbench 6.52 Bijwerken](home/c-release-notes-insight/c-6-52.md)
    + [Data Workbench 6.51-update](home/c-release-notes-insight/c-6-51.md)
    + [Opmerkingen bij de release Data Workbench 6.5](home/c-release-notes-insight/c-6-5.md)
-   + [Opmerkingen bij de release Data Workbench 6.4](home/c-release-notes-insight/c-6-4/c-6-4.md)
-   + [Data Workbench 6.31-update](home/c-release-notes-insight/c-6-3-1.md)
-   + [Opmerkingen bij de release Data Workbench 6.3](home/c-release-notes-insight/c-6-3/c-6-3.md)
-   + [Data Workbench 6.21-update](home/c-release-notes-insight/c-6-2-1.md)
+   + [Data Workbench 6.4 Opmerkingen bij de release](home/c-release-notes-insight/c-6-4/c-6-4.md)
+   + [Data Workbench 6.31 Bijwerken](home/c-release-notes-insight/c-6-3-1.md)
+   + [Data Workbench 6.3 Opmerkingen bij de release](home/c-release-notes-insight/c-6-3/c-6-3.md)
+   + [Data Workbench 6.21 Bijwerken](home/c-release-notes-insight/c-6-2-1.md)
    + [Opmerkingen bij de release Data Workbench 6.2](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Data Workbench 6.11-update](home/c-release-notes-insight/c-6-1-1.md)
    + [Data Feeds Update for April MR 2014](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
@@ -45,7 +49,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Het digitale certificaat downloaden en installeren](home/c-install-insight/install-setup/c-dgtl-crtf.md)
       + [De verbinding met Insight Server configureren](home/c-install-insight/install-setup/c-conn-isvr.md)
       + [Verbindingsproblemen oplossen](home/c-install-insight/install-setup/t-conn-trbsh.md)
-   + GegevensWorkbench upgraden {#upgrade-dwb}
+   + Data Workbench bijwerken {#upgrade-dwb}
       + [Overzicht van Data Workbench bijwerken](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [Upgrade van 6.4 naar 6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [Upgrade van 6.3 naar 6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
@@ -76,7 +80,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Een werkruimte ontgrendelen](home/c-get-started/c-work-worksp/c-unlock-wksp.md)
       + [Werkruimten verwijderen](home/c-get-started/c-work-worksp/c-del-wksp.md)
       + [Het menu Venster van de werkruimte gebruiken](home/c-get-started/c-work-worksp/c-wksp-win-menu.md)
-   + [Sneltoetsen voor de Data Workbench-client](home/c-get-started/analytics-quick-keys-for-dataworkbench.md)
+   + [Sneltoetsen voor de Data Workbench Client](home/c-get-started/analytics-quick-keys-for-dataworkbench.md)
    + Werken met vensters in een werkruimte {#working-with-windows-workspace}
       + [Werken met vensters in een werkruimte - overzicht](home/c-get-started/c-wk-win-wksp/c-wk-win-wksp.md)
       + [Vensters bewerken in een werkruimte](home/c-get-started/c-wk-win-wksp/c-man-win-wksp.md)
@@ -93,9 +97,9 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Een segment exporteren met S/FTP-levering](home/c-get-started/c-exp-data-seg-exp/exporting-data.md)
       + [Profielen en soorten publiek exporteren](home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
       + [Exporteren naar Analytics Core Services](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
-      + [Exporteren naar Adobe-doel](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
+      + [Exporteren naar Adobe Target](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
       + [wizard Segment exporteren](home/c-get-started/c-exp-data-seg-exp/segment-export.md)
-   + [Analyserapporten](home/c-get-started/c-template-report-types.md)
+   + [Analytics-rapporten](home/c-get-started/c-template-report-types.md)
    + Attributierapporten {#attribution-reports}
       + [Kenmerkrapporten gebruiken](home/c-get-started/c-attribution-profiles/c-attribution-profiles.md)
       + [Overzicht van Attributieprofiel](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
@@ -359,12 +363,12 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 + Configuratie gegevensset {#dataset}
    + [Werken met gegevenssetconstructie](home/c-dataset-const-proc/c-dataset-constr.md)
    + [Datasetconfiguratie begrijpen](home/c-dataset-const-proc/c-dataset-config.md)
-   + [Ondersteuning voor Data Workbench voor GDPR](home/c-dataset-const-proc/dwb-gdpr.md)
+   + [Ondersteuning van Data Workbench voor GDPR](home/c-dataset-const-proc/dwb-gdpr.md)
    + Logboekverwerkingsconfiguratiebestand {#log-proc-config-file}
       + [Het configuratiebestand voor logbestanden verwerken](home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)
       + [Het configuratiebestand voor logbestanden verwerken bewerken](home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md)
       + [Logbronnen](home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md)
-      + [Een gegevensWorkbench Server-bestandsservereenheid configureren](home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md)
+      + [Een Data Workbench Server File Server-eenheid configureren](home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md)
       + [Parameters voor logverwerking](home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md)
       + [ODBC-gegevensbronnen](home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md)
       + [Overwegingen voor het configuratiebestand van de logbestandverwerking](home/c-dataset-const-proc/c-log-proc-config-file/c-cons-log-proc-config-file.md)
@@ -453,7 +457,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + Transform.cfg, bestand {#transform-cfg-file}
             + [Het bestand Transform.cfg](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md)
             + [Exporters definiëren](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-def-exp.md)
-            + [Voorbeeldgegevens Workbench Transform.cfg-bestanden](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md)
+            + [Voorbeeld van Data Workbench Transform.cfg-bestanden](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md)
          + [Het bestand Transform Mode.cfg](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-transf-mode-file.md)
          + [Het bestand Required field Definition.cfg](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/c-req-field-def-file.md)
    + Opwerking en heromzetting {#reproc-retrans}
@@ -500,7 +504,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + [De rapportset configureren](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/t-config-rpt-set.md)
          + [Rapporten genereren als Microsoft Excel-bestanden](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-gen-rpts-ex-files.md)
          + [Rapporten dynamisch genereren](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-dyn-gen-rpts.md)
-         + [Publiceer het Rapport dat aan de Server van de Werkbank van Gegevens wordt geplaatst](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-pub-rpt-set.md)
+         + [Publiceer het Rapport dat aan de Server van de Data Workbench wordt geplaatst](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-pub-rpt-set.md)
       + [Status van rapportset bekijken](home/c-rpt-oview/c-work-rpt-sets/c-rev-rpt-set-stat.md)
       + Bestaand Report.cfg-bestanden bewerken {#edit-existing-report-files}
          + [Bestaand Report.cfg-bestanden bewerken](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md)
@@ -521,7 +525,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + [Installatieprocedures voor digitale certificaten](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/t-dig-cert-install-proc.md)
       + [De verbinding met de Insight Server configureren](home/c-rpt-oview/c-inst-rpt/t-config-conn-ins-svr.md)
       + [Rapportserver bijwerken met een taalbestand (.zbin-bestand)](home/c-rpt-oview/c-inst-rpt/c-zbin-file-update.md)
-      + [Toegang tot de Data Workbench-server inschakelen](home/c-rpt-oview/c-inst-rpt/t-en-acc-ins-svr.md)
+      + [Toegang tot de server van de Data Workbench inschakelen](home/c-rpt-oview/c-inst-rpt/t-en-acc-ins-svr.md)
       + [Status rapportserver weergeven](home/c-rpt-oview/c-inst-rpt/t-display-svr-st-rpt.md)
       + [Rapportserver registreren als Windows-service](home/c-rpt-oview/c-inst-rpt/t-reg-rpt-win-svc.md)
       + [Rapportserver upgraden en verwijderen](home/c-rpt-oview/c-inst-rpt/c-upgrade-uninstall-rpt.md)
@@ -594,7 +598,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [P3P Overwegingen bij paginatags van derden](home/c-undst-pg-tag/c-cons-thrd-pty-pg-tag.md)
    + [Werkblad Paginatabelvariabele toewijzing](home/c-undst-pg-tag/c-pg-tag-wkst.md)
 + Metriek, afmetingen en filters {#metrics}
-   + [Informatie over gegevens Workbench Metrics, Dimensions en Filters](home/c-about/c-about.md)
+   + [Informatie over Data Workbench, afmetingen en filters](home/c-about/c-about.md)
    + [Metriek, afmetingen en filters uitbreiden](home/c-about/c-expand-capabilities.md)
    + [Dimensietypen](home/c-about/c-dimension-types.md)
    + [wizard Metrische grijswaarden](home/c-about/metric-dim.md)
@@ -611,9 +615,9 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Afmetingen waardeprofiel](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
       + [Afmetingen marketingprofiel](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
 + Geografie {#geography}
-   + [Info over Data Workbench Geography](home/c-geo-oview/c-geo-oview.md)
-   + Geografie van Data Workbench installeren {#install-geography}
-      + [Geografie van Data Workbench installeren](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
+   + [Info Data Workbench Geography](home/c-geo-oview/c-geo-oview.md)
+   + Data Workbench Geography installeren {#install-geography}
+      + [Data Workbench Geography installeren](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
       + [Het geografische profiel installeren](home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)
       + [De bestanden voor geografische opzoekopdrachten installeren](home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md)
       + [Het bestand Terrain Images.cfg installeren](home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md)
@@ -641,15 +645,15 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + Gegevensservices {#data-services}
       + [Over de Data Services](home/c-geo-oview/c-wk-data-svcs/c-abt-data-svcs.md)
       + Een gegevensservice installeren {#install-data-service}
-         + [Een gegevensservice installeren op een Data Workbench-server](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-install-data-svc.md)
+         + [De installatie van een Dienst van Gegevens op een Server van de Data Workbench](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-install-data-svc.md)
          + [Het profiel voor de gegevensservice installeren](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md)
          + [Opzoekbestanden voor de gegevensservice installeren](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/t-inst-data-svc-lkp-files.md)
       + [Gegevensservicebestanden bijwerken](home/c-geo-oview/c-wk-data-svcs/c-updt-data-svc-files.md)
    + Data Workbench Geography upgraden en verwijderen {#upgrade-uninstall-geo}
-      + [Geografie van gegevensWorkbench upgraden](home/c-geo-oview/c-upgrd-uninst-geo/t-upgrd-geo.md)
+      + [Verbetering van de geografische Data Workbench](home/c-geo-oview/c-upgrd-uninst-geo/t-upgrd-geo.md)
       + [Data Workbench Geography verwijderen](home/c-geo-oview/c-upgrd-uninst-geo/t-uninst-geo.md)
 + Gecontroleerde experimenten {#experiments}
-   + [Informatie over door Data Workbench beheerde experimenten](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
+   + [Informatie over door Data Workbench gecontroleerde experimenten](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
    + [Hoe kunnen bezoekers van de site worden geïdentificeerd?](home/c-undst-ctrld-exp/c-id-vstrs.md)
    + [Hoe werken gecontroleerde experimenten?](home/c-undst-ctrld-exp/c-ctrld-exp-wk.md)
    + [Wat moet ik testen?](home/c-undst-ctrld-exp/c-wht-test-.md)
@@ -704,8 +708,8 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + Een Insight Server-cluster installeren {#install-insight-server-cluster}
             + [Een Insight Server-cluster installeren](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-ins-svr-clstr.md)
             + [Installatieprocedures voor een cluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-inst-proc-clstr.md)
-            + [De server voor het hoofdtoezicht installeren](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-ins-mstr-ins-svr.md)
-            + [De hoofdserver voor het inzicht in clusters configureren](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md)
+            + [De Master Insight Server installeren](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-ins-mstr-ins-svr.md)
+            + [Het vormen van de Master Server van het Inzicht voor het Groeperen](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md)
             + [De servers van het Inzicht van de Verwerking installeren en Vormen](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-inst-proc-ins-svrs.md)
             + [Een profiel configureren om op een cluster uit te voeren](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-prof-run-clstr.md)
          + Inzichtsservers toevoegen aan een bestaande cluster {#add-server-cluster}
@@ -747,7 +751,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + Configureren {#configure}
          + [Repeater-functionaliteit configureren](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-cnfg-rptr-fntly.md)
          + [Het vormen van een Server FSU van het Inzicht voor Repeater](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-fsu-rptr.md)
-         + [Toegangsbeheer voor doelapparaten configureren](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
+         + [Toegangsbeheer voor Target-computers configureren](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
          + [Het creëren van een Verbinding tussen Insight en Repeater](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md)
          + [Volgende stappen](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-nxt-stps-reptr.md)
       + [Beheerder](home/c-inst-svr/c-rptr-fntly/c-admin-rptr.md)
@@ -806,7 +810,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Bevestigend dat de Collector van Gegevens loopt](home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md)
       + [Bevestigend dat de Transmitter van Gegevens loopt](home/c-snsr-ovrvw/admin-sensor/c-data-trmtr-rng.md)
       + [Bewaking van administratieve gebeurtenissen](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
-      + [De doelgegevensWorkbench-server wijzigen](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
+      + [Target Data Workbench Server wijzigen](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
       + Offlinesensoren {#offline}
          + [Omgaan met offlinesensoren](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-ofln-snsrs.md)
          + [&#39;Vanaf&#39;-tijd begrijpen](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-as-of-tm.md)
@@ -829,16 +833,16 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 + Het controleprofiel installeren {#monitor}
    + [Het controleprofiel installeren](home/monitoring-installation/monitoring-installation.md)
    + Werkruimten {#workspace}
-      + [Werkruimten voor het bewaken van de Data Workbench-server](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
-      + [De werkruimte Gegevens Workbench Historisch](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
-      + [Status van gegevenswerkbank](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
-      + [Workspace Status van gegevenswerkbank](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
-   + Afmetingen en afmetingen van gegevenswerkbench-profiel {#monitoring-appendix}
-      + [Afmetingen en afmetingen van gegevenswerkbench-profiel](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
-      + [Afmetingen in het historisch profiel van de gegevenswerkbank](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
-      + [Afmetingen in het statusprofiel van het gegevenswerkbench-profiel](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
-      + [Dimensies in het statusprofiel van de Data Workbench-server](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
-      + [Metriek in het historisch controleprofiel van de Werkbank van Gegevens](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
+      + [Werkruimten voor het bewaken van de Data Workbench Server](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
+      + [De werkruimte Historisch van Data Workbench](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
+      + [De werkruimte Status profiel Data Workbench](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
+      + [Data Workbench Server Status werkruimte](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
+   + Afmetingen en afmetingen van profiel Data Workbench {#monitoring-appendix}
+      + [Afmetingen en afmetingen van profiel Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
+      + [Afmetingen in het historisch profiel van de Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
+      + [Afmetingen in het statusprofiel van het profiel Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
+      + [Afmetingen in het statusprofiel van de Server van de Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
+      + [Metriek in het historisch controleprofiel van de Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
 + Dashboard {#dashboard}
    + [Zakelijke mogelijkheden](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
    + [Functies](home/c-adobe-data-workbench-dashboard/c-features.md)
@@ -905,7 +909,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [IIS inschakelen](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-enabling-iis.md)
       + [Vereiste componenten installeren](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-installing-required-components.md)
    + Servercommunicatie {#servers-communication}
-      + [Dashboard naar Data Workbench Servers Communication](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
+      + [Communicatie tussen dashboard en Data Workbench Servers](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [Inschakelen van Query API controleren](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
       + [Toegangsbeheer configureren](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + Implementatie van dashboard {#dashboard-deployment}
@@ -935,7 +939,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Een gebruikersaccount bewerken](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-editing-a-user-account.md)
       + [Gebruikerswachtwoord opnieuw instellen](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-resetting-a-users-password.md)
       + [Een gebruikersaccount verwijderen](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-removing-a-user-account.md)
-   + Gebruikersgroepen {#user-groups}
+   + User Groups {#user-groups}
       + [Gebruikersgroepen beheren](home/c-preparing-for-dashboard-installation/c-managing-user-groups/c-managing-user-groups.md)
       + [Gebruikersgroepen maken](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-creating-a-user-group.md)
       + [Een gebruikersgroep bewerken](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-editing-a-user-group.md)
@@ -946,9 +950,9 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [Detectie en vereisten van Data Workbench](home/dwb-implement-overview/dwb-implement-discovery.md)
    + [Installatie en provisioning van Data Workbench](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
    + [Basisinstructies aan boord voor DWB Managed Services](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md)
-   + [Data Workbench-architectuur](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
+   + [Architectuur van Data Workbench](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
    + [Telbare structuren voor schemaontwerp](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md)
-   + [Data Workbench-beheer](home/dwb-implement-overview/dwb-implement-admin.md)
+   + [Data Workbench](home/dwb-implement-overview/dwb-implement-admin.md)
    + Configuratie en implementatie {#implement-configure}
       + [Configuratie en implementatie van Data Workbench](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-configure.md)
       + [Tijd van gebeurtenis instellen](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-event-time.md)
@@ -962,9 +966,9 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Query API instellen](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-query-api.md)
       + [Gegevensverwerking - Primaire sleutel voor het bouwen van gegevens](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-primary-key.md)
    + Implementatie van functies {#feature-implemenatation}
-      + [Data Workbench-implementatie van functies](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
+      + [Implementatie van functies voor Data Workbench](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
       + [Wijzigingen in configuratie voor nieuw schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Instellingen van afgeleide afmetingen](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Query-API](https://www.adobe.io/)
 + [Integratie van Data Workbench met Adobe Target](home/dwb-adobe-target.md)
-+ [Woordenlijst gegevenswerkbank](dwb-glossary.md)
++ [Woordenlijst Data Workbench](dwb-glossary.md)
