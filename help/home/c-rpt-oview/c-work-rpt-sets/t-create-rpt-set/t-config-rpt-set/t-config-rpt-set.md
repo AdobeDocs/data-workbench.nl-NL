@@ -32,6 +32,6 @@ U moet in het [!DNL Report.cfg] dossier voor het geplaatste rapport specificeren
    >
    >De steekproef die in dit voorbeeld wordt [!DNL Report.cfg] getoond bevat slechts de parameters inbegrepen in het [!DNL Report.cfg] dossier door gebrek. Als u extra parameters aan een [!DNL Report.cfg] dossier moet toevoegen, moet u dit doen gebruikend een tekstredacteur. Voor stappen om dit te doen, zie het [Uitgeven van Bestaande Dossiers](../../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#concept-96fd57159f454defa09bd18655a12887)Report.cfg.
 
-1. Sparen het dossier door **[!UICONTROL Report.cfg (modified)]** bij de bovenkant van het dossier met de rechtermuisknop aan te klikken en te klikken **[!CONTROL sparen als Rapporten\]***&lt;**[!UICONTROL ReportSetName]**>***[!UICONTROL \Report.cfg]**.
+1. Sparen het dossier door **[!UICONTROL Report.cfg (modified)]** bij de bovenkant van het dossier met de rechtermuisknop aan te klikken en te klikken **[!UICONTROL sparen als Rapporten\]***&lt;**[!UICONTROL ReportSetName]**>***[!UICONTROL \Report.cfg]**.
 1. Sluit het bestand.
 1. Klik in het [!DNL Profile Manager]dialoogvenster met de rechtermuisknop op het vinkje in de [!DNL User] kolom voor het nieuwe [!DNL Report.cfg] bestand en selecteer **[!UICONTROL Save to]***&lt; **[!UICONTROL profile name]**>*.
