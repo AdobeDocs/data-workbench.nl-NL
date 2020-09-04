@@ -5,7 +5,7 @@ title: Bladwijzers toevoegen
 topic: Data workbench
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
 translation-type: tm+mt
-source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
@@ -33,7 +33,7 @@ U kunt bladwijzers maken voor belangrijke werkruimten en zo snel mogelijk schake
 
 **Een bladwijzer verwijderen:**
 
-* Klik in het venster Bladwijzer met de rechtermuisknop en selecteer **[!UICONTROL Verwijderen<bookmark title>]**als u een geselecteerde bladwijzer wilt verwijderen of alle bladwijzers wilt verwijderen.**[!UICONTROL Clear All Bookmarks]**
+* Klik in het venster Bladwijzer met de rechtermuisknop en selecteer **Verwijderen`<bookmark title>`** om een geselecteerde bladwijzer te verwijderen of selecteer **[!UICONTROL Clear All Bookmarks]** om alle bladwijzers te verwijderen.
 
 * U kunt ook met de rechtermuisknop op de werkruimte in de miniatuurweergave in de werkbalk klikken en selecteren **[!UICONTROL Clear Bookmark]**.
 
