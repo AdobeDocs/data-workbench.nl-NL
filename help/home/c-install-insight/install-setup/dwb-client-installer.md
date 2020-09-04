@@ -3,7 +3,10 @@ description: Data Workbench biedt een installatiewizard om de workstationtoepass
 title: Wizard Werkstation instellen
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 0%
 
 ---
 
@@ -24,13 +27,13 @@ Start het uitvoerbare bestand van de installatiewizard en doorloop elke stap om 
 
    ![](assets/6_4_workstation_wizard.png)
 
-1. Klik op **Volgende** in het dialoogvenster **Welkom bij Wizard** Data Workbench Setup.
+1. Klik op **Volgende** in het dialoogvenster **Welkom bij Wizard** Data Workbench instellen.
 
 1. Selecteer deze optie om een **nieuwe installatie** te installeren of om een bestaande installatie te **upgraden of te herstellen** .
 
    **Met Nieuwe installatie** worden eerder geïnstalleerde bestanden overschreven.
 
-   **Met de upgrade** wordt uw werkstation bijgewerkt naar de nieuwste versie of kunt u een bestaande installatie repareren. De Werkbank van gegevens zal geïnstalleerde **Insight.exe** dossiers vergelijken en zal de Tovenaar van de Opstelling van het Werkstation in werking stellen als een nieuwere versie van de cliënt beschikbaar is.
+   **Met de upgrade** wordt uw werkstation bijgewerkt naar de nieuwste versie of kunt u een bestaande installatie repareren. De Data Workbench zal geïnstalleerde **Insight.exe** dossiers vergelijken en zal de Tovenaar van de Opstelling van het Werkstation in werking stellen als een nieuwere versie van de cliënt beschikbaar is.
 
 1. Selecteer installatielocatie:
 
@@ -63,15 +66,15 @@ Start het uitvoerbare bestand van de installatiewizard en doorloop elke stap om 
 
 1. Zoek het **Data Workbench-certificaat**.
 
-   Als de installatiewizard het Data Workbench-certificaat niet kan vinden tijdens de installatie, wordt een dialoogvenster geopend waarin u naar de locatie van het certificaat kunt bladeren (een bestand **.pem** dat standaard in de map met clientcertificaten **staat), of u klikt op** Overslaan **** om het certificaat na de installatie te zoeken.
+   Als de opstellingstovenaar niet het certificaat van de Data Workbench tijdens installatie kan vinden, zal het een dialoog openen om aan de plaats van het certificaat (een **.pem** dossier dat door gebrek in de omslag van de **Certificaten** van de cliënt wordt gevestigd) te doorbladeren, of **Skip** te klikken om het certificaat na installatie te vinden.
 
    Klik op **Installeren** nadat u het certificaat hebt gevonden.
 
-1. Nadat de installatiewizard is voltooid en Data Workbench is geïnstalleerd, klikt u op **Voltooien** om de installatie te voltooien.
+1. Nadat de installatiewizard is voltooid en de Data Workbench is geïnstalleerd, klikt u op **Voltooien** om de installatie te voltooien.
 
    >[!NOTE]
    >
-   >De standaardlogboekplaats voor de Tovenaar van de Opstelling van het Werkstation in **[!DNL C:\Users\`<userName>&quot;\AppData\Local\Temp.]**
+   >De standaardlogboekplaats voor de Tovenaar van de Opstelling van het Werkstation bij `C:\Users\<userName>\AppData\Local\Temp`.
 
    Schakel het selectievakje Toepassing **** starten in om de werkbank na installatie te openen.
 
@@ -83,7 +86,7 @@ Start het uitvoerbare bestand van de installatiewizard en doorloop elke stap om 
 
 ## Installatiemappen {#section-b5ea5a3b3ecb4622aef713972f3f8ebd}
 
-De mapstructuur van Data Workbench heeft twee installatielocaties:
+De de omslagstructuur van de Data Workbench heeft twee installatielocaties:
 
 * **De Dossiers** van het programma **Insight.exe** en het steunen cliëntdossiers (**Insight.ini**) worden nu gevestigd door gebrek bij
 
@@ -111,8 +114,8 @@ De mapstructuur van Data Workbench heeft twee installatielocaties:
 
 Data Workbench bevat nu een uitvoerbaar bestand voor het verwijderen van het werkstation (dat zich standaard op **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**) bevindt.
 
-Start en voer de stappen uit om de bestanden voor het werkstation Data Workbench van de vaste schijf te verwijderen.
+Start en voer de stappen uit om de Data Workbench Workstation-bestanden van de vaste schijf te verwijderen.
 
 >[!NOTE]
 >
->U kunt het uitvoerbare bestand **unins00.exe** vanuit de map starten met de snelkoppeling Gegevens Workbench **verwijderen in het menu Start of vanuit** > **[!UICONTROL Control Panel]** **[!UICONTROL Program and Features]**.
+>U kunt het uitvoerbare bestand **unins00.exe** vanuit de map starten met de snelkoppeling Data Workbench **** verwijderen in het menu Start of vanuit **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
