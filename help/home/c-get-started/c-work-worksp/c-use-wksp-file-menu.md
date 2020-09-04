@@ -1,73 +1,76 @@
 ---
-description: Informatie over de menuopties beschikbaar in het het dossiermenu van de Werkruimte.
+description: Informatie over de menuopties beschikbaar in het menu van het dossier van de Werkruimte.
 solution: Analytics
-title: Menu Werkruimte-bestand
+title: Menu Werkruimtebestand
 topic: Data workbench
 uuid: abbdb2db-d918-4edf-977c-1daaf8a71721
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '518'
+ht-degree: 0%
 
 ---
 
 
-# Menu Werkruimte-bestand{#workspace-file-menu}
+# Menu Werkruimtebestand{#workspace-file-menu}
 
-Informatie over de menuopties beschikbaar in het het dossiermenu van de Werkruimte.
+Informatie over de menuopties beschikbaar in het menu van het dossier van de Werkruimte.
 
-In de werkruimte, klik **[!UICONTROL File]**.
+Klik in de werkruimte op **[!UICONTROL File]**.
 
 ![](assets/mnu_file.png)
 
-De volgende lijst verstrekt beschrijvingen van elk menupunt.
+De volgende tabel bevat beschrijvingen van elk menu-item.
 
 **Opslaan**
 
-Bewaart de werkruimte. Zie Werkruimten [opslaan](../../../home/c-get-started/c-work-worksp/c-save-wksp.md#concept-e0c34e75cc194e57bd02d1f02316a606).
+Hiermee slaat u de werkruimte op. Zie [Werkruimten](../../../home/c-get-started/c-work-worksp/c-save-wksp.md#concept-e0c34e75cc194e57bd02d1f02316a606)opslaan.
 
 **Kopie opslaan als**
 
-Bewaart de werkruimte met een verschillende naam of in een verschillende plaats. Zie Werkruimten [opslaan](../../../home/c-get-started/c-work-worksp/c-save-wksp.md#concept-e0c34e75cc194e57bd02d1f02316a606).
+Hiermee slaat u de werkruimte op onder een andere naam of op een andere locatie. Zie [Werkruimten](../../../home/c-get-started/c-work-worksp/c-save-wksp.md#concept-e0c34e75cc194e57bd02d1f02316a606)opslaan.
 
-**Omkeren**
+**Vorige versie**
 
-Keert aan de laatste bewaarde versie van de huidige werkruimte terug.
+Hiermee keert u terug naar de laatst opgeslagen versie van de huidige werkruimte.
 
 **Werkruimte verfijnen**
 
-Resize visualisaties aan de vertoningsresolutie u gebruikt. Dit is handig om uw weergave snel aan te passen voor presentaties.
+Hiermee wijzigt u de grootte van visualisaties in de weergaveresolutie die u gebruikt. Dit is handig als u de weergave voor presentaties snel wilt aanpassen.
 
 **Paginaformaat**
 
-Plaatst een het werk paginagrootte voor een werkruimte. U kunt het Volledige Scherm, Norm, of om het even welke specifieke grootte voor computerschermen, gedrukte pagina&#39;s, en rapporten selecteren. Het volledige Scherm vult uw bepaald scherm en de Norm is het plaatsen die kan worden gevormd om het standaardhet schermgrootte van uw organisatie te passen. Standaard het plaatsen vult het scherm wanneer het gebruiken van resolutie 1024 x 768.
+Hiermee stelt u het werkpaginaformaat voor een werkruimte in. U kunt Volledig scherm, Standaard of een van de specifieke formaten selecteren voor computerschermen, afgedrukte pagina&#39;s en rapporten. Met Volledig scherm vult u uw specifieke scherm en met Standaard past u de standaardschermgrootte van uw organisatie aan. De standaardinstelling Standaard vult het scherm wanneer u de resolutie van 1024 x 768 gebruikt.
 
-De werkruimten die worden gekopieerd, opgeslagen als [!DNL .png] dossiers, of gedrukt gebruiken ook deze paginagrootte voor output. De grootte van de pagina groter dan de visualisatie van de Werkbank van Gegevens gebruikt rolbars, terwijl de kleinere grootte op het scherm wordt gecentreerd en een lichtgrijze grens rond de werkruimte toont.
+De werkruimten die als [!DNL .png] dossiers worden gekopieerd, worden opgeslagen, of gedrukt gebruiken ook deze paginagrootte voor output. Paginaformaten die groter zijn dan de Data Workbench visualisatie gebruiken schuifbalken, terwijl kleinere formaten op het scherm worden gecentreerd en een lichtgrijze rand rond de werkruimte weergeven.
 
 **Beschrijving**
 
-Laat u toe om een tekstuele beschrijving van de werkruimte tot stand te brengen of uit te geven. Deze tekst verschijnt op de [!DNL Worktop] onder de duimnagel. Zie een beschrijving [toevoegen aan een werkruimte](../../../home/c-get-started/c-work-worksp/t-add-wksp-desc.md#task-163734487e8848dfa0a4d8da6323a963).
+Hiermee kunt u een tekstuele beschrijving van de werkruimte maken of bewerken. Deze tekst wordt weergegeven op het [!DNL Worktop] onderste gedeelte van de miniatuur. Zie Een beschrijving [toevoegen aan een werkruimte](../../../home/c-get-started/c-work-worksp/t-add-wksp-desc.md#task-163734487e8848dfa0a4d8da6323a963).
 
-**Compute in Background**
+**Berekenen op achtergrond**
 
-(Wordt alleen weergegeven wanneer u online werkt.) Houdt de vragen in de geselecteerde werkruimte die op de achtergrond lopen terwijl u blijft werkend. Wanneer geselecteerd, toont de duimnagel de volgende informatie, die op de vooruitgang van de vragen wijst:
+(Wordt alleen weergegeven wanneer u online werkt.) Hiermee blijven de query&#39;s in de geselecteerde werkruimte op de achtergrond actief terwijl u doorgaat met werken. Als deze optie is geselecteerd, wordt in de miniatuur de volgende informatie weergegeven die de voortgang van de query&#39;s aangeeft:
 
-* Werken: *n%* - wijst erop dat de vraag en het percentage van de verwerking verwerkt is die volledig is.
-* *n* MB de Lading van de Vraag - totale grootte van het vraagresultaat. De lading van de vraag is proportioneel aan de totale geheugenlading van uw server van de Werkbank van Gegevens, maar correleert niet direct. Als richtlijn, kan een 10 MB of hogere vraaglading uw systeem verrekken. De vermelde vraaglading neemt het groeperen zich niet in rekening.
+* Werken: *n%* - geeft aan dat de query wordt verwerkt en welk percentage van de verwerking is voltooid.
+* *De Lading van de Vraag van n* MB - totale grootte van het vraagresultaat. De Lading van de vraag is evenredig aan de totale geheugenlading van uw server van de Data Workbench, maar correleert niet direct. Als richtlijn, kan een 10 MB of hogere vraaglading uw systeem belasten. De vermelde vraaglading neemt geen groepering in aanmerking.
 
 >[!NOTE]
 >
->Als Compute in Achtergrond blijft geselecteerd, worden de vragen in de geselecteerde werkruimte staande vragen, die blijven worden bijgewerkt en geheugenlading gebruiken. Zorg ervoor om de selectie voor Compute in Achtergrond te ontruimen wanneer u klaar bent met het werken in de werkruimte.
+>Als Berekenen op achtergrond geselecteerd blijft, worden de vragen in de geselecteerde werkruimte staande vragen, die verder worden bijgewerkt en geheugenbelasting gebruiken. Wis de selectie voor Berekenen op achtergrond wanneer u klaar bent met werken in de werkruimte.
 
 **Sluiten**
 
-Sluit de werkruimte. Klik **[!UICONTROL Close]** > **[!UICONTROL Save]** om de veranderingen te bewaren u in de werkruimte hebt aangebracht, of klik **[!UICONTROL Close]** > **[!UICONTROL Don’t Save]** om aan het [!DNL Worktop] zonder de veranderingen terug te keren u in de werkruimte hebt aangebracht te bewaren.
+Sluit de werkruimte. Klik **[!UICONTROL Close]** > **[!UICONTROL Save]** om de wijzigingen op te slaan die u in de werkruimte hebt aangebracht, of klik **[!UICONTROL Close]** > **[!UICONTROL Don’t Save]** om terug te keren naar de werkruimte [!DNL Worktop] zonder de wijzigingen op te slaan die u in de werkruimte hebt aangebracht.
 
-U kunt uw veranderingen ook bewaren, de werkruimte sluiten, en aan het [!DNL Worktop] gebruiken van om het even welke volgende methodes terugkeren:
+U kunt uw wijzigingen ook opslaan, de werkruimte sluiten en terugkeren naar de werkruimte [!DNL Worktop] met een van de volgende methoden:
 
-* Klik het embleem van de Werkbank van Gegevens in de upper-left hoek van de werkruimte.
-* Als uw muis navigatieknopen heeft, klik de achterknoop op uw muis.
+* Klik op het logo van de Data Workbench in de linkerbovenhoek van de werkruimte.
+* Als uw muis navigatieknoppen heeft, klik de achterknoop op uw muis.
 
-U kunt uw veranderingen ook leegmaken door de werkruimte te sluiten zonder te sparen door te drukken **[!UICONTROL `<Ctrl>`+<Backspace>]**.
+U kunt uw wijzigingen ook voorkomen door de werkruimte te sluiten zonder op te slaan door op **Ctrl+Backspace** te drukken.
 
-**Uitvoer naar Excel van Malplaatje**
+**Exporteren naar Excel vanuit sjabloon**
 
-Als Microsoft Excel op de machine van de Werkbank van Gegevens wordt geïnstalleerd, begint automatisch Microsoft Excel en voert de gegevens uit bepaalde visualisaties, bepaalde legends, en tekstannotaties aan het dossier van malplaatjeExcel ( [!DNL .xls]of [!DNL .xlsx]) uit dat u selecteert. Zie het [Uitvoeren aan een Dossier](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302)van Excel van het Malplaatje.
+Als Microsoft Excel op de machine van de Data Workbench wordt geïnstalleerd, begint automatisch Microsoft Excel en voert de gegevens van bepaalde visualisaties, bepaalde legends, en tekstannotaties aan het dossier van malplaatjeExcel ( [!DNL .xls]of [!DNL .xlsx]) uit dat u selecteert. Zie [Exporteren naar een Excel-sjabloonbestand](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302).
