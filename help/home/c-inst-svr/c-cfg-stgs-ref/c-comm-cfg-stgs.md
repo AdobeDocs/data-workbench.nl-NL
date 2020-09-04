@@ -1,25 +1,28 @@
 ---
-description: Instructies om mededelingen voor de Server of de Repeater van het Inzicht te vormen.
+description: Instructies om mededelingen voor de Server of Repeater van het Inzicht te vormen.
 solution: Insight
-title: Instellingen voor communicatie-configuratie
+title: Configuratie-instellingen voor communicatie
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 0%
 
 ---
 
 
-# Instellingen voor communicatie-configuratie{#communications-configuration-settings}
+# Configuratie-instellingen voor communicatie{#communications-configuration-settings}
 
-Instructies om mededelingen voor de Server of de Repeater van het Inzicht te vormen.
+Instructies om mededelingen voor de Server of Repeater van het Inzicht te vormen.
 
-Voltooi de parameters in het volgende dossier:
+Voltooi de parameters in het volgende bestand:
 
 [!DNL Product Name installation directory\Components\Communications.cfg]
 
 >[!NOTE]
 >
->Alvorens om het even welke parameters te wijzigen die niet in deze lijst worden vermeld, gelieve Adobe te contacteren.
+>Neem contact op met Adobe voordat u parameters wijzigt die niet in deze tabel worden vermeld.
 
 <table id="table_C87F1150E53548F484A8C0CFE91F1079"> 
  <thead> 
@@ -30,16 +33,16 @@ Voltooi de parameters in het volgende dossier:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Access Control File </td> 
-   <td colname="col2"> <p>Plaats van het <span class="filepath"> Access Control.cfg- </span> bestand. De standaardplaats is de <span class="filepath"> omslag van het Toegangsbeheer </span> binnen de de installatiefolder van de Server van het <span class="keyword"> Inzicht </span> of van de <span class="wintitle"> Repeater </span> . </p> <p>Voorbeeld: <filepath></filepath> </p> </td> 
+   <td colname="col1"> Toegangscontrolebestand </td> 
+   <td colname="col2"> <p>Locatie van het <span class="filepath"> </span> bestand Access Control.cfg. De standaardplaats is de <span class="filepath"> omslag van het Toegangsbeheer binnen de </span> de installatiemap van de Server <span class="keyword"> of van de </span> Repeater van het Inzicht <span class="wintitle"> </span> . </p> <p>Voorbeeld: <filepath></filepath> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Access Log Directory </td> 
-   <td colname="col2"> <p>Omslag waaraan u de controlelogboeken wilt in kaart brengen. </p> <p>Voorbeeld: <filepath></filepath> </p> <p> <p>Opmerking:  U kunt controlelogboeken aan een andere lokale aandrijving in kaart brengen (voorbeeld: <span class="filepath"> string: P:\\Audit\\ </span>), maar breng geen controlelogboeken aan een netwerkaandrijving in kaart. </p> </p> </td> 
+   <td colname="col2"> <p>Map waaraan u de controlelogboeken wilt toewijzen. </p> <p>Voorbeeld: <filepath></filepath> </p> <p> <p>Opmerking:  U kunt controlelogboeken toewijzen aan een ander lokaal station (voorbeeld: <span class="filepath"> tekenreeks: P:\\Audit\\ </span>), maar wijs geen controlelogboeken aan een netwerkaandrijving toe. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Verboden voor toegangslog </td> 
-   <td colname="col2"> Deze parameter kan aan waar of vals worden geplaatst. Het wordt gebruikt om het filtreren van het controlelogboek toe te laten en onbruikbaar te maken. Om ervoor te zorgen dat elk verzoek wordt geregistreerd, plaats de parameter aan Waar. </td> 
+   <td colname="col1"> Toegangslogbestand is volledig </td> 
+   <td colname="col2"> Deze parameter kan worden ingesteld op true of false. Het wordt gebruikt om het filtreren van het controlelogboek toe te laten en onbruikbaar te maken. Om ervoor te zorgen dat elk verzoek wordt geregistreerd, plaats de parameter aan Waar. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> IP-interface </td> 
@@ -47,43 +50,42 @@ Voltooi de parameters in het volgende dossier:
   </tr> 
   <tr> 
    <td colname="col1"> Poort </td> 
-   <td colname="col2"> <p>De niet veilige (HTTP) haven waarop de Server van het <span class="keyword"> Inzicht </span> of de <span class="wintitle"> Repeater </span> luistert. De standaardhaven is 80. Het ingaan van een waarde van 0 maakt niet veilige verbindingen onbruikbaar. </p> <p>Voorbeeld: <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Niet-veilige (HTTP) haven waarop de Server van het <span class="keyword"> Inzicht </span> of <span class="wintitle"> Repeater </span> luistert. De standaardpoort is 80. Als u de waarde 0 invoert, worden niet-beveiligde verbindingen uitgeschakeld. </p> <p>Voorbeeld: <filepath></filepath> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL-CIFERS </td> 
-   <td colname="col2"> Sommige milieu's vereisen sterkere communicatie veiligheid dan anderen. Als u een specifieke SSL cijferreeks wilt gebruiken, kunt u het met deze parameter specificeren. <p>Voorbeeld: <filepath></filepath> </p> </td> 
+   <td colname="col2"> Sommige omgevingen vereisen een sterkere communicatiebeveiliging dan andere. Als u een specifieke SSL cipher reeks wilt gebruiken, kunt u het met deze parameter specificeren. <p>Voorbeeld: <filepath></filepath> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL-poort </td> 
-   <td colname="col2"> <p>Beveilig (via SSL) haven waarop de <span class="keyword"> Server van het Inzicht </span> of de <span class="wintitle"> Repeater </span> luistert. De standaardhaven is 443. Het ingaan van een waarde van 0 maakt veilige verbindingen onbruikbaar. </p> <p>Voorbeeld: <span class="filepath"></span> </p> <filepath></filepath> </td> 
+   <td colname="col2"> <p>Veilige (via SSL) poort waarop de <span class="keyword"> Insight Server </span> of <span class="wintitle"> Repeater </span> luistert. De standaardpoort is 443. Als u de waarde 0 invoert, worden beveiligde verbindingen uitgeschakeld. </p> <p>Voorbeeld: <span class="filepath"></span> </p> <filepath></filepath> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
-   <td colname="col2"> Rubriek voor de montages van de Server van het Registreren. </td> 
+   <td colname="col2"> Rubriek voor instellingen van Logging Server. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Naam klant </td> 
-   <td colname="col2"> <p>De naam van de klant om voor Niet gespecificeerde klanten in administratieve alarm, zoals in het volgende voorbeeld te verschijnen: </p> <p>"Geen gegevens ontvangen van sensor XYZ voor klant "Niet gespecificeerd"in 15." </p> <p>Voorbeeld: <code> 1&nbsp;=&nbsp;LoggingServer:&nbsp; 
-      &nbsp;&nbsp;Customer&nbsp;Name&nbsp;=&nbsp;string:&nbsp;CompanyAB </code> </p> <p>Gebruikend het voorbeeld hierboven, zouden de administratieve alarm voor Niet gespecificeerde klanten nu als volgt lezen: </p> <p>"Geen gegevens ontvangen van sensor XYZ voor klant "CompanyAB" in 15." </p> </td> 
+   <td colname="col2"> <p>Naam van klant die wordt weergegeven voor niet-opgegeven klanten in administratieve waarschuwingen, zoals in het volgende voorbeeld: </p> <p>"Geen gegevens ontvangen van sensor XYZ voor klant "Niet gespecificeerd"in 15." </p> <p>Voorbeeld: <code> 1&nbsp;=&nbsp;LoggingServer:&nbsp; 
+      &nbsp;&nbsp;Customer&nbsp;Name&nbsp;=&nbsp;string:&nbsp;CompanyAB </code> </p> <p>In het bovenstaande voorbeeld zouden administratieve waarschuwingen voor niet-opgegeven klanten nu als volgt luiden: </p> <p>"Geen gegevens ontvangen van sensor XYZ voor klant "CompanyAB" in 15." </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Lokaal pad = tekenreeks: Aanmelden\\\ </p> </td> 
-   <td colname="col2"> <p>Omslag waarin u de logboekdossiers wilt opslaan. </p> <p>Voorbeeld: </p> <code> 9&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>Om tot deze omslag van de Manager van de Dossiers van de <span class="wintitle"> Server toegang te hebben </span>, moet de plaats die in deze parameter wordt gespecificeerd de plaats aanpassen die u in de parameter van de Wegen van het Logboek in het <span class="filepath"> Logboek Processing.cfg- </span> dossier specificeert. Voor meer informatie over het wijzigen van de folder van Logboeken in het <span class="filepath"> Logboek Processing.cfg- </span> dossier, zie het hoofdstuk van het Dossier van de Configuratie van de Logboekverwerking van de Gids van de Configuratie van de <i>Dataset</i>. </p> </td> 
+   <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Lokaal pad = tekenreeks: Logbestanden\\ </p> </td> 
+   <td colname="col2"> <p>Map waarin u de logbestanden wilt opslaan. </p> <p>Voorbeeld: </p> <code> 9&nbsp;=&nbsp;FileServer:&nbsp; 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>Als u deze map wilt kunnen openen vanuit het <span class="wintitle"> Server Files Manager </span>, moet de locatie die in deze parameter is opgegeven, overeenkomen met de locatie die u opgeeft in de parameter Log Paths in het <span class="filepath"> Log Processing.cfg- </span> bestand. Voor meer informatie over het wijzigen van de folder van Logboeken in het <span class="filepath"> Logboek Processing.cfg- </span> dossier, zie het hoofdstuk van het Dossier van de Configuratie van de Verwerking van het Logboek van de Gids <i>van de Configuratie van de</i>Dataset. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Lokaal pad = tekenreeks: Audit\\\\\ </p> </td> 
-   <td colname="col2"> <p>Omslag waaraan u de controlelogboeken wilt in kaart brengen. </p> <p>Voorbeeld: </p> <code> 5&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Opmerking:  <p>U kunt controlelogboeken aan een andere lokale aandrijving in kaart brengen (voorbeeld: <span class="filepath"> string: P:\\Audit\\ </span>), maar breng geen controlelogboeken aan een netwerkaandrijving in kaart. </p> <p>Om tot deze omslag van de Manager van de Dossiers van de <span class="wintitle"> Server toegang te kunnen hebben </span>, moet de plaats die in deze parameter wordt gespecificeerd de plaats aanpassen die u in de parameter van de Folder van het Logboek van de Toegang in dit dossier. </p> </p> </td> 
+   <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Lokaal pad = tekenreeks: Audit\\ </p> </td> 
+   <td colname="col2"> <p>Map waaraan u de controlelogboeken wilt toewijzen. </p> <p>Voorbeeld: </p> <code> 5&nbsp;=&nbsp;FileServer:&nbsp; 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Opmerking:  <p>U kunt controlelogboeken toewijzen aan een ander lokaal station (voorbeeld: <span class="filepath"> tekenreeks: P:\\Audit\\ </span>), maar wijs geen controlelogboeken aan een netwerkaandrijving toe. </p> <p>Als u toegang tot deze map wilt krijgen vanuit de <span class="wintitle"> Server Files Manager </span>, moet de locatie die in deze parameter is opgegeven, overeenkomen met de locatie die u in de parameter Directory van het Access Log in dit bestand hebt opgegeven. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>NormalizeServer: </td> 
-   <td colname="col2"> <p>Deze parameter is slechts op de Server van het <span class="keyword"> Inzicht van toepassing </span>. </p> <p>Voor meer informatie over het specificeren van de Gecentraliseerde Server van de Normalisatie voor uw <span class="keyword"> cluster van de Server van het Inzicht, zie het hoofdstuk van het Dossier van de Configuratie van de Configuratie van het Logboek van de Gids </span> van de Configuratie van de <i></i>Dataset. </p> </td> 
+   <td colname="col2"> <p>Deze parameter is slechts op de Server van het <span class="keyword"> Inzicht van toepassing </span>. </p> <p>Voor meer informatie over het specificeren van de Gecentraliseerde Server van de Normalisatie voor uw <span class="keyword"> cluster van de Server van het Inzicht, zie het hoofdstuk van het Dossier van de Configuratie van de Logverwerking van de </span> Gids <i></i>van de Configuratie van de Dataset. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <i>n=</i>ReportStatusServer: </p> <p> URI = string: /ReportStatus.vsp </p> </td> 
+   <td colname="col1"> <p> <i>n=</i>ReportStatusServer: </p> <p> URI = tekenreeks: /ReportStatus.vsp </p> </td> 
    <td colname="col2"> <p>Deze parameter is slechts op de Server van het <span class="keyword"> Inzicht van toepassing </span>. </p> <p>Laat u toe om de <span class="keyword"> status van het Rapport in de Gedetailleerde interface van de Status voor de Server van het </span> Inzicht te bekijken <span class="keyword"> </span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
