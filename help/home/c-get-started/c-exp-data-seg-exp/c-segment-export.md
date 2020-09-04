@@ -1,49 +1,52 @@
 ---
-description: Creeer de de uitvoerkopballen van de douanekolom voor uw dossiers van de segmentuitvoer om gemakkelijk begrepen beschrijvingen voor uitgevoerde segmenten toe te voegen. Deze de uitvoereigenschap laat u ook output als TSV en Csv- dossiers.
-title: De Uitvoer van het segment met de Kopballen van de Douane
+description: Creeer de de uitvoerkopballen van de douanekolom voor uw segment de dossiers van de segmentuitvoer om gemakkelijk begrepen beschrijvingen voor uitgevoerde segmenten toe te voegen. Met deze exportfunctie kunt u ook uitvoeren als CSV- en TSV-bestanden.
+title: Segment exporteren met aangepaste koppen
 uuid: 186e7868-13b2-42e1-b83f-5a752ee9b407
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
 
-# De Uitvoer van het segment met de Kopballen van de Douane{#segment-export-with-custom-headers}
+# Segment exporteren met aangepaste koppen{#segment-export-with-custom-headers}
 
-Creeer de de uitvoerkopballen van de douanekolom voor uw dossiers van de segmentuitvoer om gemakkelijk begrepen beschrijvingen voor uitgevoerde segmenten toe te voegen. Deze de uitvoereigenschap laat u ook output als TSV en Csv- dossiers.
+Creeer de de uitvoerkopballen van de douanekolom voor uw segment de dossiers van de segmentuitvoer om gemakkelijk begrepen beschrijvingen voor uitgevoerde segmenten toe te voegen. Met deze exportfunctie kunt u ook uitvoeren als CSV- en TSV-bestanden.
 
-De nieuwe functionaliteit is toegevoegd aan de Uitvoer van het Segment, met inbegrip van de capaciteit om met een kopbal uit te voeren, of in formaten CSV en TSV.
+De nieuwe functionaliteit is toegevoegd aan de Uitvoer van het Segment, met inbegrip van de capaciteit om met een kopbal uit te voeren, of in Csv en formaat TSV.
 
-U kunt kolomkopballen voor uw de uitvoerdossiers tot stand brengen.
+U kunt kolomkoppen maken voor uw exportbestanden.
 
-## Het creëren van een Nieuwe Uitvoer van het Segment {#section-cffff55855f8467ea468b71393ab7676}
+## Exporteren van nieuw segment maken {#section-cffff55855f8467ea468b71393ab7676}
 
 1. Open een werkruimte en klik met de rechtermuisknop **[!UICONTROL Tools]** > **[!UICONTROL Detail Table]**.
 
-1. Klik met de rechtermuisknop en selecteer **[!UICONTROL Add Level > Extended]** > Kies een item.
-1. Klik titel met de rechtermuisknop aan en selecteer **[!UICONTROL Add Attribute.]** selecteer selecteren een afmeting van het menu.
+1. Klik met de rechtermuisknop en selecteer **[!UICONTROL Add Level > Extended]** > Een item kiezen.
+1. Klik met de rechtermuisknop op de titel en selecteer **[!UICONTROL Add Attribute.]** Een dimensie selecteren in het menu.
 
-1. Klik titel met de rechtermuisknop aan en selecteer **[!UICONTROL Add Metric.]** selecteren metrisch van het menu.
+1. Klik met de rechtermuisknop op de titel en selecteer **[!UICONTROL Add Metric.]** Een metrische waarde selecteren in het menu.
 
-1. Klik titel met de rechtermuisknop aan en selecteer **[!UICONTROL New Segment Export]**.
+1. Klik met de rechtermuisknop op de titel en selecteer **[!UICONTROL New Segment Export]**.
 
    ![](assets/segment_export_headers.png)
 
-   **[!UICONTROL New Segment Export with Header]** bevolkt automatisch de Naam van de Kolom met de naam van metrisch. **[!UICONTROL New Segment Export]** vereist u om een douanenaam te plaatsen. ![](assets/segment_export_with_headers.png)
+   **[!UICONTROL New Segment Export with Header]** De naam van de kolom wordt automatisch ingevuld met de naam van de metrische waarde. **[!UICONTROL New Segment Export]** moet u een aangepaste naam instellen. ![](assets/segment_export_with_headers.png)
 
    >[!NOTE]
    >
-   >Het gebied van de Naam van de Kolom kan niet leeg worden verlaten of de kopbal zal niet aanwezig zijn.
+   >Het veld Kolomnaam mag niet leeg zijn of de koptekst is niet aanwezig.
 
-1. Klik en noem het segment met de rechtermuisknop aan en klik dan **[!UICONTROL Save Export File]**.
+1. Klik met de rechtermuisknop, geef het segment een naam en klik op **[!UICONTROL Save Export File]**.
 
    Er wordt een exportvenster geopend.
 
-1. Klik met de rechtermuisknop op de exportnaam en klik op **[!UICONTROL Opslaan als<export filename>]**.
+1. Klik met de rechtermuisknop op de exportnaam en klik op **Opslaan als`<export filename>`**.
 
    ![](assets/segment_export_headers_7.png)
 
-1. Klik met de rechtermuisknop [!DNL Admin] > [!DNL Profile Manager] > [!DNL Expand Export]. Vind het de uitvoerdossier u enkel creeerde en bewaar het aan een bestaand profiel.
+1. Klik met de rechtermuisknop [!DNL Admin] > [!DNL Profile Manager] > [!DNL Expand Export]. Zoek het exportbestand dat u net hebt gemaakt en sla het op in een bestaand profiel.
 
    ![](assets/segment_export_headers_8.png)
 
