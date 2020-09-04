@@ -4,9 +4,9 @@ solution: Insight
 title: Configuratie-instellingen voor communicatie
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+source-git-commit: 638eca495223fc9d5326bf9462a9c289d6fe2d9e
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -34,11 +34,11 @@ Voltooi de parameters in het volgende bestand:
  <tbody> 
   <tr> 
    <td colname="col1"> Toegangscontrolebestand </td> 
-   <td colname="col2"> <p>Locatie van het <span class="filepath"> </span> bestand Access Control.cfg. De standaardplaats is de <span class="filepath"> omslag van het Toegangsbeheer binnen de </span> de installatiemap van de Server <span class="keyword"> of van de </span> Repeater van het Inzicht <span class="wintitle"> </span> . </p> <p>Voorbeeld: <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Locatie van het <span class="filepath"> </span> bestand Access Control.cfg. De standaardplaats is de <span class="filepath"> omslag van het Toegangsbeheer binnen de </span> de installatiemap van de Server <span class="keyword"> of van de </span> Repeater van het Inzicht <span class="wintitle"> </span> . </p> <p>Voorbeeld: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Access Log Directory </td> 
-   <td colname="col2"> <p>Map waaraan u de controlelogboeken wilt toewijzen. </p> <p>Voorbeeld: <filepath></filepath> </p> <p> <p>Opmerking:  U kunt controlelogboeken toewijzen aan een ander lokaal station (voorbeeld: <span class="filepath"> tekenreeks: P:\\Audit\\ </span>), maar wijs geen controlelogboeken aan een netwerkaandrijving toe. </p> </p> </td> 
+   <td colname="col2"> <p>Map waaraan u de controlelogboeken wilt toewijzen. </p> <p>Voorbeeld: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Opmerking:  U kunt controlelogboeken toewijzen aan een ander lokaal station (voorbeeld: <span class="filepath"> tekenreeks: P:\\Audit\\ </span>), maar wijs geen controlelogboeken aan een netwerkaandrijving toe. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Toegangslogbestand is volledig </td> 
@@ -46,19 +46,19 @@ Voltooi de parameters in het volgende bestand:
   </tr> 
   <tr> 
    <td colname="col1"> IP-interface </td> 
-   <td colname="col2"> <p>IP adres aan gebruik wanneer twee netwerkkaarten voor de toegang tot van twee verschillende netwerken beschikbaar zijn. </p> <p>Voorbeeld: I <filepath></filepath><i>&lt; <span class="filepath"> IP-adres </span>&gt;</i> </p> </td> 
+   <td colname="col2"> <p>IP adres aan gebruik wanneer twee netwerkkaarten voor de toegang tot van twee verschillende netwerken beschikbaar zijn. </p> <p>Voorbeeld: <code>IP Interface = string: &lt; IP Address &gt;</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Poort </td> 
-   <td colname="col2"> <p>Niet-veilige (HTTP) haven waarop de Server van het <span class="keyword"> Inzicht </span> of <span class="wintitle"> Repeater </span> luistert. De standaardpoort is 80. Als u de waarde 0 invoert, worden niet-beveiligde verbindingen uitgeschakeld. </p> <p>Voorbeeld: <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Niet-veilige (HTTP) haven waarop de Server van het <span class="keyword"> Inzicht </span> of <span class="wintitle"> Repeater </span> luistert. De standaardpoort is 80. Als u de waarde 0 invoert, worden niet-beveiligde verbindingen uitgeschakeld. </p> <p>Voorbeeld: <code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL-CIFERS </td> 
-   <td colname="col2"> Sommige omgevingen vereisen een sterkere communicatiebeveiliging dan andere. Als u een specifieke SSL cipher reeks wilt gebruiken, kunt u het met deze parameter specificeren. <p>Voorbeeld: <filepath></filepath> </p> </td> 
+   <td colname="col2"> Sommige omgevingen vereisen een sterkere communicatiebeveiliging dan andere. Als u een specifieke SSL cipher reeks wilt gebruiken, kunt u het met deze parameter specificeren. <p>Voorbeeld: <code>SSL Ciphers = string: AES256-SHA256</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL-poort </td> 
-   <td colname="col2"> <p>Veilige (via SSL) poort waarop de <span class="keyword"> Insight Server </span> of <span class="wintitle"> Repeater </span> luistert. De standaardpoort is 443. Als u de waarde 0 invoert, worden beveiligde verbindingen uitgeschakeld. </p> <p>Voorbeeld: <span class="filepath"></span> </p> <filepath></filepath> </td> 
+   <td colname="col2"> <p>Veilige (via SSL) poort waarop de <span class="keyword"> Insight Server </span> of <span class="wintitle"> Repeater </span> luistert. De standaardpoort is 443. Als u de waarde 0 invoert, worden beveiligde verbindingen uitgeschakeld. </p> <p>Voorbeeld: <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
