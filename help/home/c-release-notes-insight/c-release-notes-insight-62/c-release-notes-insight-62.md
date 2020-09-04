@@ -3,7 +3,7 @@ description: Data Workbench 6.2 de versienota's omvat nieuwe eigenschappen, verb
 title: Opmerkingen bij de release Data Workbench 6.2
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 0%
@@ -52,7 +52,7 @@ U kunt nu bladwijzers maken voor belangrijke werkruimten, zodat u snel kunt scha
 
 **Een bladwijzer verwijderen:**
 
-* Klik in het venster Bladwijzer met de rechtermuisknop en selecteer **[!UICONTROL Verwijderen<bookmark title>]**als u een geselecteerde bladwijzer wilt verwijderen of alle bladwijzers wilt verwijderen.**[!UICONTROL Clear All Bookmarks]**
+* Klik in het venster Bladwijzer met de rechtermuisknop en selecteer **Verwijderen`<bookmark title>`** om een geselecteerde bladwijzer te verwijderen of selecteer **[!UICONTROL Clear All Bookmarks]** om alle bladwijzers te verwijderen.
 
 * U kunt ook met de rechtermuisknop op de werkruimte in de miniatuurweergave in de werkbalk klikken en selecteren **[!UICONTROL Clear Bookmark]**.
 
@@ -153,7 +153,7 @@ Met de nieuwe sneltoetsen kunt u de grootte en de grootte van de werkruimten wij
 * Fouten in gebruikersinterface van client voor Vereenvoudigd Chinees opgelost.
 * Adobe Analytics heeft de gegevensfeed bijgewerkt die Data Workbench in staat stelt gebruik te maken van profielen en soorten publiek die kunnen worden geïntegreerd met de Adobe Experience Cloud. Alle gebruikers van de Data Workbench moesten hun omgeving voor deze overgang voor 21 april 2014 voorbereiden.
 
-   Profielen en soorten publiek zijn geïntroduceerd om een volledige weergave van klanten in Adobe Analytics te bieden. Deze nieuwe service is beschikbaar in de Adobe Experience Cloud om meer waarde te bieden aan alle analytische hulpmiddelen en de basis voor deze functies in Analytics te leggen. De nieuwe bezoeker-id van de Experience Cloud wordt toegevoegd aan de gegevensfeed, samen met andere verbeteringen en verbeteringen om aan te passen aan de nieuwe gegevensfeed en de algemene bezoeker-id.
+   Profielen en soorten publiek zijn geïntroduceerd om een volledige weergave van klanten in Adobe Analytics te bieden. Deze nieuwe service is beschikbaar in de Adobe Experience Cloud om meer waarde te bieden aan alle analysemogelijkheden om de basis voor deze functies in Analytics te leggen. De nieuwe bezoeker-id van de Experience Cloud wordt toegevoegd aan de gegevensfeed, samen met andere verbeteringen en verbeteringen om aan te passen aan de nieuwe gegevensfeed en de algemene bezoeker-id.
 * Tijdens het importeren van een werkruimte wordt een foutbericht weergegeven, ook al is het importeren gelukt.
 
 ## Upgrade vereist {#section-3cc74d08f7454d698b5a6d3f1dcde282}
@@ -174,7 +174,7 @@ Met de nieuwe sneltoetsen kunt u de grootte en de grootte van de werkruimten wij
 * De werkruimte voor afdrukken met gebruik van de zijbalk en beide opties bevatten geen copyrightinformatie op de afgedrukte pagina.
 * Het gebruik van Workstation in een externe desktopsessie loopt vast bij het wijzigen van de naam van werkruimten.
 * (In de Vereenvoudigde Chinese versie) Werkelijke rapportuitvoer is geldig in de Server van het Rapport maar de e-mailonderwerpregel en de namen van gehechtheidsdossiers zijn verstoord.
-* (In de versie Vereenvoudigd Chinees) Wanneer tekstomloop wordt gebruikt in de werkbladvisualisatie, worden gelokaliseerde woorden niet correct omwikkeld, wat leidt tot ongewenste tekens die aan de tekenreeks worden toegevoegd.
+* (In de versie Vereenvoudigd Chinees) Als u tekstomloop gebruikt in de werkbladvisualisatie, worden gelokaliseerde woorden niet correct omwikkeld, waardoor junktekens aan de tekenreeks worden toegevoegd.
 * (In de versie Vereenvoudigd Chinees) Insight.exe kan niet worden gestart als de installatiemap een naam heeft met niet-Engelse tekens.
 
    Oplossing: Bewaar standaardnamen of wijzig de naam met alleen Engelse tekens in het mappad om uitvoerbare bestanden te starten.
