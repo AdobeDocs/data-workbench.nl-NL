@@ -1,73 +1,76 @@
 ---
-description: Om de fouten van de Sensor zo snel mogelijk te ontdekken en hen te herstellen alvorens zij belangrijke problemen of stroomonderbrekingen veroorzaken, zou u uw logboeken van de Gebeurtenis regelmatig moeten controleren.
-solution: Insight
-title: Toezicht op administratieve gebeurtenissen
+description: Als u Sensorfouten zo snel mogelijk wilt detecteren en deze wilt herstellen voordat ze grote problemen of storingen veroorzaken, moet u regelmatig uw gebeurtenissenlogboeken controleren.
+solution: Analytics
+title: Bewaking van administratieve gebeurtenissen
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1092'
+ht-degree: 0%
 
 ---
 
 
-# Toezicht op administratieve gebeurtenissen{#monitoring-administrative-events}
+# Bewaking van administratieve gebeurtenissen{#monitoring-administrative-events}
 
-Om de fouten van de Sensor zo snel mogelijk te ontdekken en hen te herstellen alvorens zij belangrijke problemen of stroomonderbrekingen veroorzaken, zou u uw logboeken van de Gebeurtenis regelmatig moeten controleren.
+Als u Sensorfouten zo snel mogelijk wilt detecteren en deze wilt herstellen voordat ze grote problemen of storingen veroorzaken, moet u regelmatig uw gebeurtenissenlogboeken controleren.
 
-**Aanbevolen frequentie:** Minstens uur
+**Aanbevolen frequentie:** Ten minste één uur
 
-U kunt deze gebeurtenissen controleren gebruikend de Kijker van de Gebeurtenis van Vensters of het dossier van Unix Syslog en de [!DNL *.sensor-log] dossiers die door gebrek in de [!DNL Logs] omslag binnen de [!DNL Sensor] installatiefolder worden gevestigd. Deze dossiers wijzen op de aanwezigheid van fouten tijdens gegevensinzameling, vooral als a [!DNL Sensor] niet met het doel kan verbinden [!DNL data workbench server] en begint een rij vormend gegevens.
+U kunt deze gebeurtenissen controleren met het Windows Event Viewer- of Unix Syslog-bestand en de [!DNL *.sensor-log] bestanden die standaard in de [!DNL Logs] map in de [!DNL Sensor] installatiemap staan. Deze bestanden geven aan dat er fouten optreden tijdens het verzamelen van gegevens, vooral als een toepassing [!DNL Sensor] geen verbinding kan maken met het doel [!DNL data workbench server] en een wachtrij voor gegevens opent.
 
-## De Gebeurtenissen van de controle op Vensters {#section-7c0443a356af4381bf22259654f5cd17}
+## Gebeurtenissen controleren in Windows {#section-7c0443a356af4381bf22259654f5cd17}
 
-De sensor registreert fouten aan het Logboek van de Toepassing van de Kijker van de Gebeurtenis van Vensters met een bron van &quot;Adobe.&quot;
+Sensor registreert fouten aan het Logboek van de Toepassing van de Kijker van de Gebeurtenis van Vensters met een bron van &quot;Adobe.&quot;
 
-De berichten worden geregistreerd als &quot;Informatie,&quot;Waarschuwing,&quot;of &quot;Fout&quot;afhankelijk van hun strengheid.
+Berichten worden, afhankelijk van hun ernst, als &quot;Informatie&quot;, &quot;Waarschuwing&quot; of &quot;Fout&quot; geregistreerd.
 
-**De Windows Event Viewer** openen:
+**U opent als volgt de Windows Event Viewer**:
 
-* Klik op **Start > Configuratiescherm > Systeembeheer > Event Viewer**.
+* Klik op **Start > Configuratiescherm > Systeembeheer > Gebeurtenisviewer**.
 
-## Monitoring van gebeurtenissen op Unix {#section-5de3947891fb47ac88b7c855e545d54a}
+## Gebeurtenissen controleren op Unix {#section-5de3947891fb47ac88b7c855e545d54a}
 
-De sensor registreert fouten aan de [!DNL syslog] daemon.
+Sensor registreert fouten aan de [!DNL syslog] daemon.
 
-syslog daemon schrijft foutenmeldingen aan logboekdossiers die op de regels worden gebaseerd u in uw syslog.conf- dossier specificeerde. De fouten worden geregistreerd met de vlaggen &quot;LOG_DAEMON&quot;en of &quot;LOG_NOTICE&quot;of &quot;LOG_ERR,&quot;afhankelijk van strengheid.
+De syslog daemon schrijft foutenmeldingen aan logboekdossiers die op de regels worden gebaseerd u in uw syslog.conf- dossier specificeerde. Fouten worden geregistreerd met de markeringen &quot;LOG_DAEMON&quot; en &quot;LOG_NOTICE&quot; of &quot;LOG_ERR&quot;, afhankelijk van de ernst.
 
-**Om de Unix syslog te openen**
+**Unix syslog openen**
 
 Unix syslog wordt typisch gevestigd in [!DNL /var/adm/messages] of [!DNL /var/log/messages].
 
-Doorblader aan de aangewezen plaats en open syslog.
+Blader naar de juiste locatie en open de syslog.
 
-## Het begrip van de Formaten van het Bericht {#section-a0899add30fd4b2da58a23b9e3324693}
+## Berichtindelingen {#section-a0899add30fd4b2da58a23b9e3324693}
 
 Alle berichten van de Sensor bevatten het koord &quot;Sensor&quot;en genummerd om op het belang van het bericht te wijzen dat wordt getoond.
 
-| Berichtnummer | Betekenis bericht | Message String |
+| Berichtnummer | Betekenis van bericht | Berichttekenreeks |
 |---|---|---|
-| 1xxx | Voorlichting | Sensorinfo # |
-| 2xxx | Waarschuwing | Sensorwaarschuwing # |
-| 3xxx | Configuratiefout | Sensor-fout # |
-| 4xxx | Operationele fout | Sensor-fout # |
-| 5xxx | Interne fout | Sensor-fout # |
+| 1xxx | Informatief | Sensorinfo nr. |
+| 2xxx | Waarschuwing | Sensorwaarschuwing nr. |
+| 3xxx | Configuratiefout | Sensorfout nummer |
+| 4xxx | Operationele fout | Sensorfout nummer |
+| 5xxx | Interne fout | Sensorfout nummer |
 
 >[!NOTE]
 >
->De waarschuwingen (2xxx) zijn momenteel niet in gebruik. Deze aantallen zijn gereserveerd voor toekomstig gebruik.
+>Waarschuwingen (2xxx) zijn momenteel niet in gebruik. Deze nummers zijn gereserveerd voor toekomstig gebruik.
 
-Uw hulpmiddel van het netwerkbeheer kan worden geplaatst om uw berichten om de 5-10 minuten voor fouten met de bron van de &quot;Sensor&quot;te controleren en aangewezen personeel over kwesties te alarmeren die interventie kunnen vereisen. U kunt verkiezen om het systeem voor slechts bepaalde types van de berichten van de Gebeurtenis, zoals het koord van de Fout van de &quot;Sensor&quot;te controleren. Alternatief, kunt u verschillende regels op gebeurtenissen toepassen die met &quot;Info van de Sensor,&quot;&quot;de Waarschuwing van de Sensor,&quot;en de koorden van de Fout van de &quot;Sensor&quot;worden voorgevuld.
+Uw hulpmiddel van het netwerkbeheer kan worden geplaatst om uw berichten om de 5-10 minuten voor fouten met de &quot;Sensor&quot;bron te controleren en aangewezen personeel over kwesties te waarschuwen die interventie kunnen vereisen. U kunt ervoor kiezen het systeem alleen te controleren voor bepaalde typen gebeurtenisberichten, zoals de tekenreeks &quot;Sensor Error&quot;. U kunt ook verschillende regels toepassen op gebeurtenissen die worden voorafgegaan door de tekenreeksen &quot;Sensor Info&quot;, &quot;Sensorwaarschuwing&quot; en &quot;Sensorfout&quot;.
 
 ## Belangrijke berichten identificeren {#section-5a20f5dc18ca4012931d194db855e54e}
 
-Binnen uw gebeurtenislogboeken, zou u speciale aandacht aan moeten besteden en onmiddellijk om het even welke berichten betreffende rijgrootte richten.
+In uw gebeurtenislogboeken, zou u speciale aandacht aan moeten besteden en onmiddellijk om het even welke berichten betreffende rijgrootte richten.
 
-Bijvoorbeeld, hebben de berichten zoals &quot; [!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot;aandacht nodig.
+Berichten zoals &quot; [!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; hebben bijvoorbeeld aandacht nodig.
 
-## Reageren op berichten van de Gebeurtenis van de Sensor {#section-0004c4a169dc4a8882d9bd87dd326ad4}
+## Reageren op Sensor-gebeurtenisberichten {#section-0004c4a169dc4a8882d9bd87dd326ad4}
 
-Lijsten die de gebeurtenissen van de Sensor beschrijven en acties voor de gesteunde platforms van de Webserver voorstellen.
+Tabellen die Sensor-gebeurtenissen beschrijven en acties voorstellen voor de ondersteunde webserverplatforms.
 
-**Alle platforms**
+**Alle Platforms**
 
 <table id="table_F8835AC0AD8F43E2B4494D8D35EBC0FD"> 
  <thead> 
@@ -78,104 +81,104 @@ Lijsten die de gebeurtenissen van de Sensor beschrijven en acties voor de gesteu
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Sensor Info 1010: Sensor geïnitialiseerd. </td> 
+   <td colname="col1"> Sensorinfo 1010: Sensor geïnitialiseerd. </td> 
    <td colname="col2"> Geen actie vereist. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensor Info 1011: Sensor beëindigd. Totale geijkte kliks ## </td> 
+   <td colname="col1"> Sensorinfo 1011: Sensor beëindigd. Totaal aantal klikken in de wachtrij ## </td> 
    <td colname="col2"> Geen actie vereist. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensor Info 1012: De schijfrij van Adobe is #% volledig </td> 
-   <td colname="col2"> Dit bericht wordt geregistreerd telkens als het gebruik van de schijfrij een 10% drempel kruist. Als dit percentage blijft groeien, zou de actie moeten worden genomen alvorens de rij volledig is en het gegeven wordt verloren. Het waarschijnlijkste probleem is dat de Sensor met het communiceren met de Server van het Inzicht heeft tegengehouden. Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorinfo 1012: Adobe schijfwachtrij is #% vol </td> 
+   <td colname="col2"> Dit bericht wordt geregistreerd telkens als het gebruik van de schijfrij een drempel van 10% kruist. Als dit percentage blijft groeien, zou de actie moeten worden ondernomen alvorens de rij volledig is en de gegevens worden verloren. Het meest waarschijnlijke probleem is dat de Sensor gestopt is met het communiceren met de Server van het Inzicht. Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensor Info 1013: De configuratie van de sensor veranderde </td> 
-   <td colname="col2"> Geen actie vereist. De sensor ontdekte een verandering in één van zijn configuratiedossiers en zal herladen. </td> 
+   <td colname="col1"> Sensorinfo 1013: Sensorconfiguratie gewijzigd </td> 
+   <td colname="col2"> Geen actie vereist. De sensor heeft een wijziging in een van de configuratiebestanden gedetecteerd en zal deze opnieuw laden. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensor Info 1014: Probleem met het zaaien van een willekeurige-aantalgenerator </td> 
-   <td colname="col2"> Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorinfo 1014: Probleem met het zaaien van een willekeurige-getalgenerator </td> 
+   <td colname="col2"> Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensor Info 1016: Bestandsnaam van configuratiebestand geladen </td> 
-   <td colname="col2"> Geen actie vereist. De sensor laadde met succes het vermelde configuratiedossier. </td> 
+   <td colname="col1"> Sensorinfo 1016: Naam van configuratiebestand geladen </td> 
+   <td colname="col2"> Geen actie vereist. De sensor heeft het vermelde configuratiebestand geladen. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensor Info 1017: Experimentele bestandsnaam geladen </td> 
-   <td colname="col2"> Geen actie vereist. De sensor laadde met succes het vermelde experimentele dossier. </td> 
+   <td colname="col1"> Sensorinfo 1017: Naam van experimenteel bestand is geladen </td> 
+   <td colname="col2"> Geen actie vereist. De sensor heeft het vermelde experimentele bestand geladen. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 3016: Kan configuratiebestand /mypath/myfile niet laden </td> 
-   <td colname="col2"> Bevestig dat het de configuratiedossier van de Sensor in de configuratie van de Webserver wordt gespecificeerd bestaat en de vereiste toestemmingen heeft die door het proces van de Webserver moeten worden gelezen. </td> 
+   <td colname="col1"> Sensorfout 3016: Kan configuratiebestand /mypath/mijnbestand niet laden </td> 
+   <td colname="col2"> Bevestig dat het Sensor-configuratiebestand dat is opgegeven in de configuratie van de webserver, bestaat en over de vereiste machtigingen beschikt om door het webserverproces te worden gelezen. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Sensor 3017: Onbekwaam om gecontroleerd dossier van de experimentconfiguratie /mypath/myfile te laden </p> </td> 
-   <td colname="col2"> <p>Bevestig dat het gecontroleerde experimentdossier dat in txlogd.conf wordt gespecificeerd bestaat en dat het tekstproces de noodzakelijke toestemmingen heeft om het dossier te lezen. </p> </td> 
+   <td colname="col1"> <p>Sensor 3017: Kan het gecontroleerde configuratiebestand voor experimenten /mypath/myfile niet laden </p> </td> 
+   <td colname="col2"> <p>Bevestig dat het gecontroleerde experimentele bestand dat in txlogd.conf is opgegeven, bestaat en dat het tekstproces de benodigde machtigingen heeft om het bestand te lezen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 3018: Kan lijsten met inhoudsfilters niet ontleden. Het dossier van de de configuratievorm van de controle </td> 
-   <td colname="col2"> Verifieer de syntaxis van de ingangen ContentFilterInclude en ContentFilterExclude in txlogd.conf. </td> 
+   <td colname="col1"> Sensorfout 3018: Kan lijsten met inhoudsfilters niet parseren. Configuratiebestand van tekstveld controleren </td> 
+   <td colname="col2"> Controleer de syntaxis van de vermeldingen ContentFilterInclude en ContentFilterExclude in txlogd.conf. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 3023: Slot kan niet worden gemaakt (g_lockThrottle) </td> 
-   <td colname="col2"> Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 3023: Failed to create lock (g_lockThrottle) </td> 
+   <td colname="col2"> Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 3024: Slot kan niet worden gemaakt (g_lockConfigCheck) </td> 
-   <td colname="col2"> Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 3024: Failed to create lock (g_lockConfigCheck) </td> 
+   <td colname="col2"> Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 4014: Kon geen schijfrij openen. </td> 
-   <td colname="col2"> Verifieer het dossier van QueueFile - noem in txlogd.conf en indien verondersteld om correct te zijn, contacteer Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 4014: Kan de schijfwachtrij niet openen. </td> 
+   <td colname="col2"> Controleer de bestandsnaam van het bestand QueueFile in txlogd.conf en neem contact op met Adobe ClientCare als dit correct wordt geacht. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 4020: Geen wachtrijbestand </td> 
-   <td colname="col2"> Verifieer het dossier van QueueFile - noem in txlogd.conf en indien verondersteld om correct te zijn, contacteer Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 4020: Geen wachtrij-bestand </td> 
+   <td colname="col2"> Controleer de bestandsnaam van het bestand QueueFile in txlogd.conf en neem contact op met Adobe ClientCare als dit correct wordt geacht. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 4021: De rij is volledig </td> 
-   <td colname="col2"> Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 4021: Wachtrij is vol </td> 
+   <td colname="col2"> Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 4022: Onbekwaam om geheugenblok van lengte &lt;x&gt; bij compensatie &lt;y&gt; in kaart te brengen </td> 
-   <td colname="col2"> Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 4022: Kan geheugenblok met lengte &lt;x&gt; niet toewijzen bij offset &lt;y&gt; </td> 
+   <td colname="col2"> Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 5012: Kan geen mutex maken. </td> 
-   <td colname="col2"> Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 5012: Kan mutex niet maken. </td> 
+   <td colname="col2"> Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 5013: Kan geen mutex krijgen. </td> 
-   <td colname="col2"> Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 5013: Kan mutex niet ophalen. </td> 
+   <td colname="col2"> Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 5030: Fork-fout in de zonsopgang. </td> 
-   <td colname="col2"> Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 5030: Forkfout met spinnervork. </td> 
+   <td colname="col2"> Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 5031: ingesteld is mislukt. </td> 
-   <td colname="col2"> Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 5031: set failed. </td> 
+   <td colname="col2"> Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 5032: Fork-fout in de zonsopgang. </td> 
-   <td colname="col2"> Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 5032: Forkfout met spinnervork. </td> 
+   <td colname="col2"> Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 5033: chdir is mislukt. </td> 
-   <td colname="col2"> Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 5033: chdir failed. </td> 
+   <td colname="col2"> Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 5034: Ontvangen signaal </td> 
-   <td colname="col2"> Het programma werd waarschijnlijk beëindigd door een extern signaal. Als de bron van dit signaal niet kan worden bepaald, contacteer Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 5034: Signaal ontvangen </td> 
+   <td colname="col2"> Het programma werd waarschijnlijk geëindigd door een extern signaal. Als de bron van dit signaal niet kan worden bepaald, contacteer Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 5035: Uitgang geroepen van buitenhoofd </td> 
-   <td colname="col2"> Contact opnemen met Adobe ClientCare. </td> 
+   <td colname="col1"> Sensorfout 5035: Afsluiten aangeroepen vanuit externe hoofdmap </td> 
+   <td colname="col2"> Neem contact op met de Adobe ClientCare. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sensorfout 5036: txlogd loopt al </td> 
-   <td colname="col2"> Een ander geval van de txlogd daemon loopt reeds. Stop eerst de andere instantie als u een nieuwe wilt in werking stellen. </td> 
+   <td colname="col1"> Sensorfout 5036: txlogd is al gestart </td> 
+   <td colname="col2"> Er is al een andere instantie van de sxlogd daemon actief. Stop eerst de andere instantie als u een nieuwe wilt uitvoeren. </td> 
   </tr> 
  </tbody> 
 </table>
@@ -184,24 +187,24 @@ Lijsten die de gebeurtenissen van de Sensor beschrijven en acties voor de gesteu
 
 | Gebeurtenisbericht | Voorgestelde actie |
 |---|---|
-| Sensorfout 3015: De richtlijn VisualSciencesConfig mist van httpd.conf. | Dit is een configuratiefout. De richtlijn VisualSciencesConfig moet in httpd.conf met een parameter zijn die de plaats van txlogd.conf is. |
-| Sensorfout 3019: vys-cookie werd niet opgeroepen voor vys-log. Neem contact op met ondersteuning. | Contact opnemen met Adobe ClientCare. |
-| Sensorfout 3025: Subverzoek wijst terug naar zich | Contact opnemen met Adobe ClientCare. |
+| Sensorfout 3015: De VisualSciencesConfig richtlijn mist van httpd.conf. | Dit is een configuratiefout. De richtlijn VisualSciencesConfig moet in httpd.conf met een parameter zijn die de plaats van txlogd.conf is. |
+| Sensorfout 3019: vys-cookie is niet aangeroepen vóór vys-log. Neem contact op met de technische ondersteuning. | Neem contact op met de Adobe ClientCare. |
+| Sensorfout 3025: Subaanvraag verwijst terug naar zichzelf | Neem contact op met de Adobe ClientCare. |
 
 **AOL-server**
 
 | Gebeurtenisbericht | Voorgestelde actie |
 |---|---|
-| Sensorfout 3015: ns/server/[server]/module/[module] de sectie mist in AOLServer config- dossier. | Dit is een configuratiefout. Correct zoals bij vergissing vermeld. |
-| Sensorfout 3019: vys-cookie werd niet opgeroepen voor vys-log. Neem contact op met ondersteuning. Contact opnemen met Adobe ClientCare. | Neem contact op met ondersteuning. Contact opnemen met Adobe ClientCare. |
-| Sensorfout 3020: VisualSciencesConfig mist als eerste ingang in [sectie] sectie in AOLServer config- dossier. | Dit is een configuratiefout. Correct zoals bij vergissing vermeld. |
-| Sensorfout 3021: VisualSciencesConfig mist een waarde in [sectiesectie] in AOLServer config- dossier. | Dit is een configuratiefout. Correct zoals bij vergissing vermeld. |
+| Sensorfout 3015: De sectie ns/server/[server]/module/[module] ontbreekt in het configuratiebestand van AOLServer. | Dit is een configuratiefout. Correct zoals aangegeven in fout. |
+| Sensorfout 3019: vys-cookie is niet aangeroepen vóór vys-log. Neem contact op met de technische ondersteuning. Neem contact op met de Adobe ClientCare. | Neem contact op met de technische ondersteuning. Neem contact op met de Adobe ClientCare. |
+| Sensorfout 3020: VisualSciencesConfig mist als eerste ingang in [sectie] sectie in AOLServer configuratiedossier. | Dit is een configuratiefout. Correct zoals aangegeven in fout. |
+| Sensorfout 3021: VisualSciencesConfig mist een waarde in [sectie] sectie in AOLServer configuratiedossier. | Dit is een configuratiefout. Correct zoals aangegeven in fout. |
 
-**iPlanet en Java System Web Servers**
+**iPlanet- en Java System Web Servers**
 
 | Gebeurtenisbericht | Voorgestelde actie |
 |---|---|
-| Sensorfout 3011: Init-richtlijn vereist. Zoals Init fn=vys-init config-file=&quot;/mypath/myfile&quot; | Dit is een configuratiefout. De iPlanet-richtlijn ontbreekt. |
-| Sensorfout 3015: config-dossier wordt niet gespecificeerd in de richtlijn van het Punt van de iPlanet | Dit is een configuratiefout. De weg aan het configuratiedossier werd niet geleverd in de iPlanet richtlijn van het Punt. |
-| Sensorfout 3019: vys-cookie werd niet opgeroepen voor vys-log. Controleer het configuratiebestand | vys-cookie moet worden opgegeven als de first NameTrans-richtlijn voor elke virtuele softwareserver. |
+| Sensorfout 3011: Init-instructie vereist. Bijvoorbeeld Init fn=vys-init config-file=&quot;/mypath/myfile&quot; | Dit is een configuratiefout. De iPlanet init-richtlijn ontbreekt. |
+| Sensorfout 3015: config-file is niet gespecificeerd in de richtlijn van de Inzet van iPlanet | Dit is een configuratiefout. Het pad naar het configuratiebestand is niet opgegeven in de iPlanet Init-instructie. |
+| Sensorfout 3019: vys-cookie is niet aangeroepen vóór vys-log. Controleer het configuratiebestand | vys-koekje moet als eerste NameTrans richtlijn voor elke software virtuele server worden gespecificeerd. |
 
