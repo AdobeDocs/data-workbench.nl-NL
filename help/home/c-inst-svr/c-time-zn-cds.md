@@ -1,56 +1,59 @@
 ---
-description: De instructies van het formaat over op tijd-gebaseerde parameters in de Server van het Inzicht.
-solution: Insight
-title: Code tijdzone
+description: Instructies van het formaat over op tijd-gebaseerde parameters in de Server van het Inzicht.
+solution: Analytics
+title: Tijdzonecodes
 uuid: dcc8aa15-5846-4f24-8b82-e25ff89871ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 2%
 
 ---
 
 
-# Code tijdzone{#time-zone-codes}
+# Tijdzonecodes{#time-zone-codes}
 
-De instructies van het formaat over op tijd-gebaseerde parameters in de Server van het Inzicht.
+Instructies van het formaat over op tijd-gebaseerde parameters in de Server van het Inzicht.
 
-De meeste op tijd-gebaseerde parameters in [!DNL Insight Server] worden gespecificeerd in het volgende formaat:
+De meeste op tijd gebaseerde parameters in [!DNL Insight Server] worden gespecificeerd in het volgende formaat:
 
-*Maand DD, JJJJ UU:MM:SS TimeZone*
+*DD maand, YYYY HH:MM:SS TimeZone*
 
 Voorbeeld: 13 augustus 2013 22:30:00 EST
 
-De tijdzones worden uitgedrukt in een systeem-onafhankelijk formaat van de tijdzone (gecoördineerde Universele Tijd) van het volgende formaat:
+Tijdzones worden uitgedrukt in een systeemonafhankelijk tijdzoneformaat (Coordinated Universal Time) met de volgende notatie:
 
-UTC + *hhmm dstrules*
+UTC + *humstrules*
 
-Het teken (+) kan of plus (+) of een minus (-) teken zijn, en *hhmm* is de compensatie van UTC in uren en notulen. De facultatieve variabele *modules* specificeren een reeks regels om de Tijd van de Besparing van het Daglicht of een gelijkaardig klok-veranderend beleid uit te voeren.
+Het teken (+) kan een plusteken (+) of een minteken (-) zijn, en *hhm* is de verschuiving van UTC in uren en minuten. De facultatieve veranderlijke *variabelen* specificeren een reeks regels om de Tijd van de Besparing van het Daglicht of een gelijkaardig klok-veranderende beleid uit te voeren.
 
-Als u *parameters* specificeert, moet een lusje-afgebakend dossier genoemd *&lt;[!DNL dstrules]>* [!DNL .dst] aanwezig zijn binnen de folder van de Dataset \ TimeZone van of het profiel van de Basis (voor configuratiedossiers die niet met een bepaalde dataset worden geassocieerd) of het datasetprofiel (voor configuratiedossiers die dataset-specifiek zijn). Het dossier specificeert een tijdzone onafhankelijke reeks regels voor de Tijd van de Besparing van het Daglicht. Je kunt verschillende regels hebben voor verschillende jaren. Het [!DNL DST.dst] dossier dat door Adobe in het profiel van de Basis wordt verstrekt specificeert de standaardregels van de V.S. die door de Akte van het Beleid van de Energie van 2005 (in feite beginnend 2007) worden vastgesteld en de regels van de V.S. voor voorafgaande jaren.
+Als u *termijnen* specificeert, een lusje-afgebakend dossier genoemd *&lt;[!DNL dstrules]>* [!DNL .dst] moet binnen de folder van Dataset \ TimeZone van of het profiel van de Basis (voor configuratiedossiers die niet met een bepaalde dataset worden geassocieerd) of het datasetprofiel (voor configuratiedossiers aanwezig zijn die dataset-specifiek zijn). In het bestand wordt een tijdzoneonafhankelijke set regels voor zomertijd opgegeven. Je kunt verschillende regels hebben voor verschillende jaren. In het [!DNL DST.dst] bestand dat door Adobe in het basisprofiel wordt verschaft, worden de standaardregels van de VS vastgelegd in de Energy Policy Act van 2005 (in feite vanaf 2007) en de regels van de VS voor voorgaande jaren.
 
-De ingangen van de de tijdzone van de steekproef zijn hieronder vermeld:
+Hier worden voorbeelden van tijdzone-items vermeld:
 
-* US Eastern Daylight Time: Tijdzone = tekenreeks: UTC -0500 DST
-* UTC-tijd zonder offset en zonder *ondergrond* (overeenkomend met GMT): Tijdzone = tekenreeks: UTC -0000
+* U.S. Eastern Daylight Time: Tijdzone = tekenreeks: UTC -0500 DST
+* UTC-tijd zonder verschuiving en zonder *details* (overeenkomend met GMT): Tijdzone = tekenreeks: UTC -0000
 
-Wanneer dit formaat wordt gebruikt, te hoeven de de systeemtijdzone van, [!DNL Insight Server][!DNL Insight][!DNL Report] en machines niet het zelfde te zijn als de gespecificeerde tijdzone. Bovendien hoeven alle actieve datasetprofielen op een [!DNL Insight Server] machine niet de zelfde tijdzone het plaatsen te hebben.
+Wanneer deze indeling wordt gebruikt, hoeft de tijdzone van het systeem [!DNL Insight Server], [!DNL Insight]en de [!DNL Report] machines niet gelijk te zijn aan de opgegeven tijdzone. Bovendien hoeven voor alle actieve gegevenssetprofielen op een [!DNL Insight Server] computer niet dezelfde tijdzone-instelling te gelden.
 
-De volgende lijst bevat de lijst van codes u kunt gebruiken om tijdstreken in op tijd-gebaseerde parameters te specificeren.
+De volgende tabel bevat de lijst met codes die u kunt gebruiken om tijdzones op te geven in op tijd gebaseerde parameters.
 
-## Tabel met tijdzonecode {#section-3cab225b864f4e54ac4f5bd83ab4ed36}
+## Tijdzonecode tabel {#section-3cab225b864f4e54ac4f5bd83ab4ed36}
 
 >[!NOTE]
 >
->Als u de Tijd van de Besparing van het Daglicht of een gelijkaardig klok-verschuivend beleid uitvoert, moet u het [!DNL .dst] dossier bewaren dat de aangewezen regels in de *profielnaam*\Dataset\Timezone directory on the [!DNL Insight Server] machine bevat.
+>Als u de Tijd van de Besparing van het Daglicht of een gelijkaardig klok-veranderende beleid uitvoert, moet u het [!DNL .dst] dossier opslaan dat de aangewezen regels in de *profielnaam*\Dataset\Timezone directory on the [!DNL Insight Server] machine bevat.
 
-| Code | Tijdzone | Compensatie van GMT |
+| Code | Tijdzone | Verschuiving vanaf GMT |
 |---|---|---|
-| grip | Greenwich Mean | 0 |
-| testen | Oostelijke standaard | 5 |
-| edt | Oostelijk daglicht | 5 |
-| verknallen | Centrale standaard | 6 |
-| cit | Centraal daglicht | 6 |
-| mest | Mountain Standard | 7 |
-| mdt | Berg Daylight | 7 |
-| pesten | Pacifische standaard | 8 |
-| pdt | Pacifische daglicht | 8 |
+| gmt | Greenwich Mean | 0 |
+| testen | Eastern Standard | 5 |
+| edt | Oosters daglicht | 5 |
+| cst | Centrale standaard | 6 |
+| cdt | Centraal daglicht | 6 |
+| mst | Mountain Standard | 7 |
+| mdt | Berg daglicht | 7 |
+| pst | Pacific Standard | 8 |
+| pdt | Pacific Daylight | 8 |
 
