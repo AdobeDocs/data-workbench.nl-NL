@@ -1,10 +1,10 @@
 ---
-description: De machines van de Server van het Inzicht van Target die de Dienst van de Replicatie van de Server van het Inzicht in werking stellen moeten de logboekdossiers op deze repeaterserver kunnen lezen.
-solution: Insight
-title: Toegangsbeheer voor Target-computers configureren
+description: De machines van de Server van het Inzicht van het doel die de Dienst van de Replicatie van de Server van het Inzicht in werking stellen moeten de logboekdossiers op deze repeaterserver kunnen lezen.
+solution: Analytics
+title: Toegangsbeheer voor doelapparaten configureren
 uuid: 35e032cf-6c1d-4348-88ce-4f4a6a30b16f
 translation-type: tm+mt
-source-git-commit: 0276701151d1403926ce184069526ebdf3e28e36
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -12,9 +12,9 @@ ht-degree: 0%
 ---
 
 
-# Toegangsbeheer voor Target-computers configureren{#configuring-access-control-for-target-machines}
+# Toegangsbeheer voor doelapparaten configureren{#configuring-access-control-for-target-machines}
 
-De machines van de Server van het Inzicht van Target die de Dienst van de Replicatie van de Server van het Inzicht in werking stellen moeten de logboekdossiers op deze repeaterserver kunnen lezen.
+De machines van de Server van het Inzicht van het doel die de Dienst van de Replicatie van de Server van het Inzicht in werking stellen moeten de logboekdossiers op deze repeaterserver kunnen lezen.
 
 Toegang tot de doelapparaten wordt verleend gebruikend het [!DNL Access Control.cfg] dossier.
 
