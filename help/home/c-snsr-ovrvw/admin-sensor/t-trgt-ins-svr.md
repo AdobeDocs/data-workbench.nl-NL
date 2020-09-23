@@ -1,35 +1,38 @@
 ---
-description: Om de server van de gegevenswerkbank te veranderen waarmee een Sensor (de doelserver) communiceert, moet u het txlogd.conf- dossier op elk van de Webservers uitgeven waarop de Sensor geïnstalleerd is.
-solution: Insight
-title: Het veranderen van de Server van de Werkbank van de Gegevens van het Doel
+description: Om de server van de gegevenswerkbank te veranderen waarmee een Sensor (de doelserver) communiceert, moet u het txlogd.conf- dossier op elk van de Webservers uitgeven waarop Sensor wordt geïnstalleerd.
+solution: Analytics
+title: De doelserver voor Data Workbench wijzigen
 uuid: 931d376d-8622-4858-8290-19ce91538570
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 0%
 
 ---
 
 
-# Het veranderen van de Server van de Werkbank van de Gegevens van het Doel{#changing-the-target-data-workbench-server}
+# De doelserver voor Data Workbench wijzigen{#changing-the-target-data-workbench-server}
 
-Om de server van de gegevenswerkbank te veranderen waarmee een Sensor (de doelserver) communiceert, moet u het txlogd.conf- dossier op elk van de Webservers uitgeven waarop de Sensor geïnstalleerd is.
+Om de server van de gegevenswerkbank te veranderen waarmee een Sensor (de doelserver) communiceert, moet u het txlogd.conf- dossier op elk van de Webservers uitgeven waarop Sensor wordt geïnstalleerd.
 
-**Om te veranderen in doel[!DNL data workbench server]**
+**Wijzigen in doel[!DNL data workbench server]**
 
-1. Stop zowel de originele doelserver als de nieuwe doelserver.
-1. Kopieer het huidigste [!DNL .vsl] dossier van de originele doelserver aan de nieuwe doelserver. Wanneer u de nieuwe doelserver in een recentere stap opnieuw begint, veroorzaakt dit dat alle nieuwe [!DNL Sensor] gegevens worden toegevoegd aan het huidige, bestaande [!DNL .vsl] dossier in plaats van het creëren van een nieuw [!DNL .vsl] dossier. Voer daartoe de volgende stappen uit:
+1. Stop zowel de oorspronkelijke doelserver als de nieuwe doelserver.
+1. Kopieer het meest recente [!DNL .vsl] bestand van de oorspronkelijke doelserver naar de nieuwe doelserver. Wanneer u de nieuwe doelserver later opnieuw opstart, worden alle nieuwe [!DNL Sensor] gegevens toegevoegd aan het huidige, bestaande [!DNL .vsl] bestand in plaats van een nieuw [!DNL .vsl] bestand te maken. Voer daartoe de volgende stappen uit:
 
-   1. Voor de originele doelserver, doorblader aan de [!DNL \Logs] omslag in de [!DNL data workbench server] installatiefolder.
+   1. Blader op de oorspronkelijke doelserver naar de [!DNL \Logs] map in de [!DNL data workbench server] installatiemap.
 
-   1. Kopieer het huidigste [!DNL .vsl] dossier in de omslag.
-   1. Voor de nieuwe doelserver, doorblader aan de [!DNL \Logs] omslag in de [!DNL data workbench server] installatiefolder en kleef het [!DNL .vsl] dossier aan deze omslag.
+   1. Kopieer het meest recente [!DNL .vsl] bestand in de map.
+   1. Blader op de nieuwe doelserver naar de [!DNL \Logs] map in de [!DNL data workbench server] installatiemap en plak het [!DNL .vsl] bestand in deze map.
 
-1. Op één van de Webservers waarop geïnstalleerd [!DNL Sensor] is, open en geef het [!DNL txlogd.conf] dossier uit. Voer daartoe de volgende stappen uit:
+1. Open en bewerk het [!DNL Sensor] bestand op een van de webservers waarop het [!DNL txlogd.conf] is geïnstalleerd. Voer daartoe de volgende stappen uit:
 
-   1. Doorblader aan de [!DNL Sensor] installatiefolder en open het [!DNL txlogd.conf] dossier in een tekstredacteur.
+   1. Blader naar de [!DNL Sensor] installatiemap en open het [!DNL txlogd.conf] bestand in een teksteditor.
 
    1. Bepaal de plaats van de parameter ServerAddress en verander het om op het adres van de nieuwe doelserver te wijzen.
-   1. Sparen en sluit het dossier.
+   1. Sla het bestand op en sluit het.
 
-1. Herhaal stappen 2-3 op alle resterende Webservers waarop [!DNL Sensor] wordt geïnstalleerd.
-1. Start de oorspronkelijke doelserver (als deze nog moet worden gebruikt) en de nieuwe doelserver opnieuw op.
-1. De gegevens zullen beginnen overbrengend aan de nieuwe doelserver die u hebt gespecificeerd.
+1. Herhaal stap 2-3 op alle resterende webservers waarop [!DNL Sensor] is geïnstalleerd.
+1. Start de oorspronkelijke doelserver (als deze nog moet worden gebruikt) en de nieuwe doelserver opnieuw.
+1. Gegevens worden verzonden naar de nieuwe doelserver die u hebt opgegeven.
