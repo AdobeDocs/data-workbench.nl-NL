@@ -1,20 +1,23 @@
 ---
-description: Plan voor twee scenario's met betrekking tot de Sensor die offline gaat.
-solution: Insight
-title: Het behandelen van Off-line Sensors
+description: Plan voor twee scenario's met betrekking tot de Sensor die off-line gaan.
+solution: Analytics
+title: Omgaan met offlinesensoren
 uuid: a8be847d-e506-4fbc-9d57-a28ff0cbeff2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '71'
+ht-degree: 0%
 
 ---
 
 
-# Het behandelen van Off-line Sensors{#dealing-with-offline-sensors}
+# Omgaan met offlinesensoren{#dealing-with-offline-sensors}
 
-Plan voor twee scenario&#39;s met betrekking tot de Sensor die offline gaat.
+Plan voor twee scenario&#39;s met betrekking tot de Sensor die off-line gaan.
 
-**Aanbevolen frequentie:** Zo nodig
+**Aanbevolen frequentie:** Indien nodig
 
-Deze scenario&#39;s zijn de Webserver die uit omwenteling van andere servers wordt gehaald, en de Webserver die volledig wegens een mislukking gaat neer.
+Deze scenario&#39;s zijn de webserver die wordt opgehaald uit rotatie van andere servers, en de webserver die volledig wordt ingekort als gevolg van een fout.
 
-Het eerste concept om te begrijpen is de &quot;Vanaf&quot;tijd in de tijd in [!DNL data workbench server].
+Het eerste concept dat moet worden begrepen, is de &#39;Vanaf&#39;-tijd in de [!DNL data workbench server].
