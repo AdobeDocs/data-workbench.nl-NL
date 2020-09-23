@@ -1,22 +1,25 @@
 ---
-description: De dienst van de Replicatie van de Server van het Inzicht laat u toe om de gebeurtenisgegevens over te brengen die op één machine van de Server van het Inzicht worden verzameld en worden opgeslagen aan een andere machine van de Server van het Inzicht.
-solution: Insight
+description: De dienst van de Replicatie van ServerReplication van het Inzicht laat u toe om de gebeurtenisgegevens over te brengen die op één machine van de Server van het Inzicht worden verzameld en worden opgeslagen aan een andere machine van de Server van het Inzicht.
+solution: Analytics
 title: De replicatieservice installeren
 uuid: a6467d5f-ca1c-4368-ba83-0b6bcabbe511
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '184'
+ht-degree: 0%
 
 ---
 
 
 # De replicatieservice installeren{#installing-the-replication-service}
 
-De dienst van de Replicatie van de Server van het Inzicht laat u toe om de gebeurtenisgegevens over te brengen die op één machine van de Server van het Inzicht worden verzameld en worden opgeslagen aan een andere machine van de Server van het Inzicht.
+De dienst van de Replicatie van ServerReplication van het Inzicht laat u toe om de gebeurtenisgegevens over te brengen die op één machine van de Server van het Inzicht worden verzameld en worden opgeslagen aan een andere machine van de Server van het Inzicht.
 
-Typisch, wordt de machine waarop het gegeven wordt verzameld en opgeslagen gevormd om als [!DNL Repeater] machine te lopen. Zie [Repeater Functionaliteit](../../../home/c-inst-svr/c-rptr-fntly/c-rptr-fntly.md). Het [!DNL Replication Service], dat door het [!DNL Replicate.cfg] dossier wordt gevormd, laat een [!DNL Insight Server] machine toe om gegevens van de [!DNL Repeater] machine terug te winnen en het plaatselijk op te slaan. De [!DNL Insight Server] machine wordt bedoeld als doelmachine. De veelvoudige [!DNL Insight Server] DPUs kan met één enkel verbinden [!DNL Repeater] om exemplaren van de gebeurtenisgegevens voor opneming in veelvoudige datasets te verzoeken.
+De computer waarop de gegevens worden verzameld en opgeslagen, is doorgaans geconfigureerd om als een [!DNL Repeater] computer te worden uitgevoerd. Zie [Repeater-functionaliteit](../../../home/c-inst-svr/c-rptr-fntly/c-rptr-fntly.md). Met [!DNL Replication Service]dit bestand, dat door het [!DNL Replicate.cfg] bestand wordt geconfigureerd, kan een [!DNL Insight Server] computer gegevens ophalen van de [!DNL Repeater] computer en deze lokaal opslaan. De [!DNL Insight Server] machine wordt de doelmachine genoemd. De veelvoudige [!DNL Insight Server] DPUs kan met één enkele verbinding verbinden [!DNL Repeater] om exemplaren van de gebeurtenisgegevens voor opneming in veelvoudige datasets te verzoeken.
 
-U kunt [!DNL Replication Service] in netwerkinfrastructuur met veelvoudige lagen van het firewalling gebruiken om enig-haven aan enig-havenmededelingen tussen componenten te bereiken die door firewalls worden gescheiden.
+U kunt [!DNL Replication Service] in netwerkinfrastructuur met veelvoudige lagen van het vuurwerk gebruiken om enig-haven aan enig-haven mededelingen tussen componenten te bereiken die door firewalls worden gescheiden.
 
-**Om het[!DNL Replication Service]**
+**Als u het dialoogvenster[!DNL Replication Service]**
 
-Het [!DNL Replicate.cfg] dossier zou als deel van uw [!DNL Insight Server] installatie moeten worden geïnstalleerd. U kunt het dossier binnen de [!DNL Components] omslag van uw [!DNL Insight Server] installatiefolder vinden. Als u dit dossier niet hebt, contacteer Adobe.
+Het [!DNL Replicate.cfg] bestand moet als onderdeel van de [!DNL Insight Server] installatie worden geïnstalleerd. U kunt het bestand vinden in de [!DNL Components] map van de [!DNL Insight Server] installatiemap. Neem contact op met Adobe als u dit bestand niet hebt.
