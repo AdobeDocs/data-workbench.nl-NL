@@ -1,17 +1,20 @@
 ---
-description: Informatie over de recordvelden van de basisgebeurtenis, zoals geregistreerd door de sensor.
-solution: Insight
-title: Gegevensrecordvelden voor basisgebeurtenissen
+description: Informatie over recordvelden voor basislijngebeurtenissen, zoals vastgelegd door de sensor.
+solution: Analytics
+title: Gegevensrecordvelden basislijngebeurtenis
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 0%
 
 ---
 
 
-# Gegevensrecordvelden voor basisgebeurtenissen{#baseline-event-data-record-fields}
+# Gegevensrecordvelden basislijngebeurtenis{#baseline-event-data-record-fields}
 
-Informatie over de recordvelden van de basisgebeurtenis, zoals geregistreerd door de sensor.
+Informatie over recordvelden voor basislijngebeurtenissen, zoals vastgelegd door de sensor.
 
 <table id="table_E29606BB010E4DB48C463979B7BEC769"> 
  <thead> 
@@ -23,61 +26,61 @@ Informatie over de recordvelden van de basisgebeurtenis, zoals geregistreerd doo
  <tbody> 
   <tr> 
    <td colname="col1"> c-ip </td> 
-   <td colname="col2"> <p>Het IP adres van de cliënt zoals inbegrepen in het verzoek dat aan de server wordt gemaakt. </p> <p>Voorbeeld: 207 68 146 68 </p> </td> 
+   <td colname="col2"> <p>Het IP-adres van de client, zoals opgenomen in het verzoek aan de server. </p> <p>Voorbeeld: 207 68 146,68 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs (cookie) </td> 
-   <td colname="col2"> <p>De koekjes die door de cliënt met het verzoek worden verzonden. </p> <p>Voorbeeld: v1st=42FDF66DE610CF36; ASPSESSIONIDQCATDAQC=GPIBKEIBFIPLOJMKCAAEPM; </p> </td> 
+   <td colname="col1"> cs(cookie) </td> 
+   <td colname="col2"> <p>De cookies die door de client met de aanvraag worden verzonden. </p> <p>Voorbeeld: v1st=42FDF66DE610CF36; ASPSESSIONIDQCATDAQC=GPIBKEIBFIPLOJMKCAAEPM; </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs (referentie) </td> 
-   <td colname="col2"> <p>Het de verwijzingskoord van HTTP dat door de cliënt naar de server met het verzoek wordt verzonden. </p> <p>Voorbeeld: http://www.mysite.net/cgi-bin/websearch?qry </p> <p>Als u paginabags gebruikt, is cs (referrer) de volledige URL van het document met de tagafbeelding, inclusief HTTP of HTTP's. </p> <p>Ook, kunt u Apache (1.3, 2.0, en 2.2) en sensoren vormen IIS om de haven te vangen die voor het verzoek wordt gebruikt, die HTTP vs. HTTPS- verzoeken kan identificeren. </p> </td> 
+   <td colname="col1"> cs(referentie) </td> 
+   <td colname="col2"> <p>De tekenreeks van de HTTP-referentie die door de client bij de aanvraag naar de server is verzonden. </p> <p>Voorbeeld: http://www.mysite.net/cgi-bin/websearch?qry </p> <p>Als u paginatags gebruikt, is cs(reference) de volledige URL van het document met de tagafbeelding, inclusief HTTP of HTTP. </p> <p>Ook, kunt u Apache (1.3, 2.0, en 2.2) en sensoren vormen IIS om de haven te vangen die voor het verzoek wordt gebruikt, die HTTP tegenover HTTPS verzoeken kan identificeren. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs (gebruikersagent) </td> 
-   <td colname="col2"> <p>Het koord dat door de cliënt met zijn verzoek wordt verzonden naar de server die op welk type van gebruikersagent wijst de cliënt is. </p> <p>Voorbeeld: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-VS; Rv.1.7) Gecko/20040707 Firefox/0.9.2 </p> </td> 
+   <td colname="col1"> cs (user-agent) </td> 
+   <td colname="col2"> <p>De tekenreeks die door de client met zijn verzoek naar de server wordt verzonden en die aangeeft welk type gebruikersagent de client is. </p> <p>Voorbeeld: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7) Gecko/20040707 Firefox/0.9.2 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs-methode </td> 
-   <td colname="col2"> <p>Het methodetype van het HTTP- verzoek </p> <p>Voorbeeld: KRIJGEN </p> <p>Referentie: http://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </p> </td> 
+   <td colname="col1"> cs-method </td> 
+   <td colname="col2"> <p>Het methodetype van het HTTP- verzoek </p> <p>Voorbeeld: GET </p> <p>Referentie: http://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-query </td> 
-   <td colname="col2"> <p>Het gedeelte van het vraagkoord van URI (stem + vraagkoord = URI) </p> <p>Dit wordt voorafgegaan door een vraagteken (?) en kan één of meerdere naam-waarde paren bevatten die door ampersands (&amp;) worden gescheiden. </p> <p>Voorbeeld: page=homepage </p> </td> 
+   <td colname="col2"> <p>Het gedeelte van de querytekenreeks van URI (stem + querytekenreeks = URI) </p> <p>Dit wordt voorafgegaan door een vraagteken (?) en kan een of meer naam-waardeparen bevatten die door ampersands (&amp;) worden gescheiden. </p> <p>Voorbeeld: page=homepage </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> cs-uri-stengel </td> 
-   <td colname="col2"> <p>Het stamgedeelte van URI (stam + vraagkoord = URI) </p> <p>De stam is de daadwerkelijke of logische weg aan het gevraagde middel op de server. </p> <p>Voorbeeld: /index.asp </p> </td> 
+   <td colname="col1"> cs-uri-stem </td> 
+   <td colname="col2"> <p>Het stamgedeelte van URI (stem + query string = URI) </p> <p>De stam is de daadwerkelijke of logische weg aan het gevraagde middel op de server. </p> <p>Voorbeeld: /index.asp </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> SC(inhoudstype) </td> 
-   <td colname="col2"> <p>Het inhoudstype van het middel dat door de cliënt wordt gevraagd zoals die door de server wordt gemeld. </p> <p>Voorbeelden: tekst/html, beeld/png, beeld/gif, video/mpeg </p> </td> 
+   <td colname="col1"> sc (inhoudstype) </td> 
+   <td colname="col2"> <p>Het inhoudstype van het middel dat door de cliënt wordt gevraagd zoals die door de server wordt gemeld. </p> <p>Voorbeelden: text/html, image/png, image/gif, video/mpeg </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> sc-bytes </td> 
-   <td colname="col2"> <p>Het aantal bytes van gegevens die van de server naar de cliënt in antwoord op het verzoek worden verzonden. </p> <p>Voorbeeld: 4996 </p> </td> 
+   <td colname="col2"> <p>Het aantal bytes aan gegevens dat door de server naar de client is verzonden als reactie op de aanvraag. </p> <p>Voorbeeld: 4996 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> SC-status </td> 
-   <td colname="col2"> <p>De statuscode die door de server aan de cliënt is teruggekeerd. </p> <p>Voorbeeld: 200 </p> <p>Referentie: http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html </p> </td> 
+   <td colname="col1"> sc-status </td> 
+   <td colname="col2"> <p>De statuscode die door de server aan de client wordt geretourneerd. </p> <p>Voorbeeld: 200 </p> <p>Referentie: http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> s-dns </td> 
-   <td colname="col2"> <p>Volledig - gekwalificeerde domeinnaam of IP adres van de gastheer van het gevraagde middel. </p> <p>Voorbeeld: www.omniture.com </p> </td> 
+   <td colname="col2"> <p>Het volledig - gekwalificeerde domeinnaam of IP adres van de gastheer van het gevraagde middel. </p> <p>Voorbeeld: www.omniture.com </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-experiment </td> 
-   <td colname="col2"> <p>De lijst van alle gecontroleerde experimentele namen en groepen waarvan de cliënt een lid op het tijdstip van het verzoek is. </p> <p>Voorbeeld: Home_Exp.Group_1,Registration_Exp.Group_2 </p> </td> 
+   <td colname="col2"> <p>De lijst met alle gecontroleerde experimentele namen en groepen waarvan de client lid is op het moment van de aanvraag. </p> <p>Voorbeeld: Home_Exp.Group_1,registration_exp.group_2 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-timestamp </td> 
-   <td colname="col2"> <p>De datum en de tijd (GMT) waarop het verzoek door de server werd ontvangen. </p> <p>De tijd wordt uitgedrukt als het aantal van 100 nanoseconden sinds 1 januari 1600. </p> <p>Voorbeeld: 12771098932000000 zou de x-timestamp waarde zijn voor 11:28:52.00000 op dinsdag 13 september 2005. </p> </td> 
+   <td colname="col2"> <p>De datum en tijd (GMT) waarop het verzoek door de server is ontvangen. </p> <p>De tijd wordt uitgedrukt als het aantal 100 nanoseconden sinds 1 januari 1600. </p> <p>Voorbeeld: 127710989320000000 is de x-timestamp waarde voor 11:28:52.0000000 op dinsdag 13 september 2005. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-trackingid </td> 
-   <td colname="col2"> <p>De hexadecimale waarde met 64 bits van het unieke browser herkenningsteken dat in een blijvend koekje wordt gevonden zoals die door een <span class="wintitle"> Sensor wordt geplaatst </span> en door de cliënt met een verzoek aan een server wordt verstrekt. </p> <p>Voorbeeld: 42FDF66DE610CF36 </p> </td> 
+   <td colname="col2"> <p>De hexadecimale 64-bits waarde van de unieke browser-id die wordt gevonden in een permanente cookie, zoals ingesteld door een <span class="wintitle"> Sensor </span> en verstrekt door de client met een aanvraag aan een server. </p> <p>Voorbeeld: 42FDF66DE610CF36 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Het [!DNL data workbench server] kan een aantal variabelen uit de het gegevensverslaggebieden van de basislijngebeurtenis afleiden. Voor meer informatie, zie de Gids *van de Configuratie van de* Dataset.
+De code [!DNL data workbench server] kan een aantal variabelen afgeleid zijn van de recordvelden voor basislijngebeurtenissen. Voor meer informatie, zie de Gids *van de Configuratie van de* Dataset.
