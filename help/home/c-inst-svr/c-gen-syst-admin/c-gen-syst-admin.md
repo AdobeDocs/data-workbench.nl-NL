@@ -1,21 +1,24 @@
 ---
-description: Adobe adviseert dat u en controleert regelmatig de algemene gezondheid van elke server beheert waarop een de softwareproduct van Adobe geïnstalleerd is.
-solution: Insight
+description: Adobe raadt u aan de algemene status van elke server waarop een Adobe-softwareproduct is geïnstalleerd, regelmatig te beheren en te controleren.
+solution: Analytics
 title: Algemeen systeembeheer
 uuid: 36f87f65-3791-41fd-a4fb-b94f7fa32fac
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 0%
 
 ---
 
 
 # Algemeen systeembeheer{#general-systems-administration}
 
-Adobe adviseert dat u en controleert regelmatig de algemene gezondheid van elke server beheert waarop een de softwareproduct van Adobe geïnstalleerd is.
+Adobe raadt u aan de algemene status van elke server waarop een Adobe-softwareproduct is geïnstalleerd, regelmatig te beheren en te controleren.
 
-De algemene aanbevelingen en de instructies voor het controleren van en het toedienen van elk van uw machines van Adobe worden verstrekt.
+Algemene aanbevelingen en instructies voor het controleren en toedienen van al uw Adobe machines worden gegeven.
 
-Voor informatie over het beheren van specifieke de softwareproducten van Adobe, zie de individuele hoofdstukken in deze gids.
+Zie de afzonderlijke hoofdstukken in deze handleiding voor informatie over het beheer van specifieke Adobe-softwareproducten.
 
 >[!NOTE]
 >
