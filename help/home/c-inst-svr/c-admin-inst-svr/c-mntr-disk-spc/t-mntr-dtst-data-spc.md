@@ -1,62 +1,65 @@
 ---
-description: Informatie over datasetcontrole en het toevoegen van nieuwe plaatsen voor gegevensopslag van de dataset.
-solution: Insight
-title: Gegevensverzameling bewaken Gegevensruimte
+description: Informatie over datasetcontrole en het toevoegen van nieuwe plaatsen voor gegevensopslag.
+solution: Analytics
+title: Gegevensruimte controleren
 uuid: 0b7b95e7-b1bb-49cf-b465-fdbdc4ee214e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 0%
 
 ---
 
 
-# Gegevensverzameling bewaken Gegevensruimte{#monitoring-dataset-data-space}
+# Gegevensruimte controleren{#monitoring-dataset-data-space}
 
-Informatie over datasetcontrole en het toevoegen van nieuwe plaatsen voor gegevensopslag van de dataset.
+Informatie over datasetcontrole en het toevoegen van nieuwe plaatsen voor gegevensopslag.
 
-**Aanbevolen frequentie:** Om de 5-10 minuten
+**Aanbevolen frequentie:** Elke 5-10 minuten
 
-Door gebrek, [!DNL Insight Server] schrijft zijn dataset aan het [!DNL temp.db] dossier op de zelfde aandrijving zoals de [!DNL Insight Server] programmadossiers op de Eenheid van de Gegevensverwerking. De hoeveelheid gegevens van de dataset per [!DNL Insight Server] machine is beperkt tot het volgende, welke eerst voorkomt:
+Door gebrek, [!DNL Insight Server] schrijft zijn dataset aan het [!DNL temp.db] dossier op de zelfde aandrijving zoals de [!DNL Insight Server] programmadossiers op de Eenheid van de Gegevensverwerking. De hoeveelheid gegevenssetgegevens per [!DNL Insight Server] machine is beperkt tot het volgende, afhankelijk van wat zich het eerst voordoet:
 
-* 500 (500) miljoen records van gegevensinvoer voor die dataset
-* Vijfhonderd (500) GB opgeslagen datasetgegevens
-* Één (1) MB van datasetgegevens die per om het even welke wortel-vlakke afmeting worden opgeslagen (bijvoorbeeld, 5.000 verslagen per Bezoeker bij een gemiddelde 200 bytes per verslag)
+* 500 (500) miljoen records van gegevensinvoer voor die gegevensset
+* Vijfhonderd (500) GB opgeslagen gegevenssetgegevens
+* Één (1) MB gegevens van datasets die per om het even welke één wortel-vlakke afmeting worden opgeslagen (bijvoorbeeld, 5.000 verslagen per Bezoeker bij een gemiddelde 200 bytes per verslag)
 
-Als u de dataset op een verschillende schijf wilt onderhouden of als de hoeveelheid gegevens die u wilt verzamelen het gebruik van meerdere stations vereist, moet u het configuratiebestand Schijfbestanden ( [!DNL Insight Server] ) bijwerken om te specificeren waar u de [!DNL Disk Files.cfg]bestanden wilt [!DNL Insight Server] [!DNL temp.db] schrijven. Het [!DNL Disk Files.cfg] dossier maakt een lijst van de schijfdossiers (een vector van koorden) en specificeert de plaats van de datasetgegevens die door [!DNL Insight Server] tijdens opwerking en verrichting worden gebruikt. Er is gewoonlijk één dossier per fysieke aandrijving.
+Als u de dataset op een verschillende aandrijving wilt handhaven, of als de hoeveelheid gegevens u verwacht te verzamelen het gebruik van veelvoudige aandrijving vereist, moet u het de configuratiedossier van de Dossiers van de Schijf ( [!DNL Insight Server] ) bijwerken om te specificeren waar u [!DNL Disk Files.cfg]het [!DNL Insight Server] [!DNL temp.db] (a)dossier(en) wilt schrijven. Het [!DNL Disk Files.cfg] bestand bevat een lijst met de schijfbestanden (een vector met tekenreeksen) en geeft de locatie op van de gegevenssetgegevens die worden gebruikt door [!DNL Insight Server] tijdens het opnieuw verwerken en bewerken. Er is meestal één bestand per fysieke schijf.
 
 >[!NOTE]
 >
->De inhoud van het [!DNL Disk Files.cfg] bestand kan tijdens het installeren zijn gewijzigd [!DNL Insight Server]. Voor meer informatie, zie het [Vormen van de Plaats van de Dataset (temp.db)](../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-cfg-loc-dtst.md#task-f645eefecb154e679acbb480a07c1f0e).
+>De inhoud van het [!DNL Disk Files.cfg] bestand kan tijdens de installatie zijn gewijzigd [!DNL Insight Server]. Voor meer informatie, zie het [Vormen van de Plaats van de Dataset (temp.db)](../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-cfg-loc-dtst.md#task-f645eefecb154e679acbb480a07c1f0e).
 
-**Om nieuwe plaatsen voor de opslag van gegevensreeksen toe te voegen**
+**Nieuwe locaties toevoegen voor gegevensopslag van gegevenssets**
 
-1. In [!DNL Insight], op het [!DNL Admin] > [!DNL Dataset and Profile] lusje, klik de **[!UICONTROL Servers Manager]** duimnagel om de werkruimte van de Manager van Servers te openen.
-1. Klik het pictogram van het pictogram met de rechtermuisknop aan [!DNL Insight Server] u wilt vormen en klikken **[!UICONTROL Server Files]**.
-1. In [!DNL Server Files Manager], klik **[!UICONTROL Components]** om zijn inhoud te bekijken. Het [!DNL Disk Files.cfg] dossier wordt gevestigd binnen deze folder.
-1. Klik het vinkje in de kolom van de *servernaam* voor met de rechtermuisknop aan [!DNL Disk Files.cfg] en klik **[!UICONTROL Make Local]**. Een vinkje verschijnt in de [!DNL Temp] kolom voor [!DNL Disk Files.cfg].
-1. Klik het pas gecreëerde vinkje in de [!DNL Temp] kolom met de rechtermuisknop aan en klik **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
-1. In het [!DNL Disk Files.cfg] venster, klik **[!UICONTROL component]** om zijn inhoud te bekijken.
+1. Klik in [!DNL Insight]het tabblad [!DNL Admin] > op de [!DNL Dataset and Profile] **[!UICONTROL Servers Manager]** miniatuur om de werkruimte van Servers Manager te openen.
+1. Klik met de rechtermuisknop op het pictogram van het [!DNL Insight Server] object dat u wilt configureren en klik op **[!UICONTROL Server Files]**.
+1. Klik in de [!DNL Server Files Manager]werkruimte **[!UICONTROL Components]** om de inhoud weer te geven. Het [!DNL Disk Files.cfg] bestand bevindt zich in deze map.
+1. Klik met de rechtermuisknop op het vinkje in de kolom *Servernaam* voor [!DNL Disk Files.cfg] en klik op **[!UICONTROL Make Local]**. In de [!DNL Temp] kolom voor [!DNL Disk Files.cfg].
+1. Klik met de rechtermuisknop op het nieuwe vinkje in de [!DNL Temp] kolom en klik op **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
+1. Klik in het [!DNL Disk Files.cfg] venster **[!UICONTROL component]** om de inhoud weer te geven.
 
-   ![Stapgegevens](assets/cfg_diskfiles_examplevalues.png)
-
-   >[!NOTE]
-   >
-   >De parameter van de Corruptie van de Schijf detecteert wordt geplaatst aan waar door gebrek. De parameter van de Grootte van het Geheime voorgeheugen van de Schijf (MB) controleert de hoeveelheid geheugen die [!DNL Insight Server] gebruikt om de snelheid van de schijftoegang te verhogen en aan 128 door gebrek geplaatst. Tevreden om Adobe te contacteren alvorens één van beiden van deze parameters te veranderen.
-
-1. Als u de schijfbestanden op het [!DNL Insight Server] systeem wilt wijzigen, klikt u met de rechtermuisknop **[!UICONTROL Disk Files]** en klikt u op **[!UICONTROL Add new]** > **[!UICONTROL Disk File]**.
-
-   Om een schijfdossier te schrappen, klik het aantal van het schijfdossier met de rechtermuisknop aan en klik **[!UICONTROL Remove]**.
-
-1. Voor het nieuwe schijfdossier, ga de folder en de naam van het dossier in dat door tijdens [!DNL Insight Server] opwerking en verrichting moet worden gebruikt.
-
-   ![Stapgegevens](assets/cfg_diskfiles_exampleNewValues.png)
+   ![Stapinfo](assets/cfg_diskfiles_examplevalues.png)
 
    >[!NOTE]
    >
-   >De parameter van de Corruptie van de Schijf detecteert wordt geplaatst aan waar door gebrek. De parameter van de Grootte van het Geheime voorgeheugen van de Schijf (MB) controleert de hoeveelheid geheugen die [!DNL Insight Server] gebruikt om de snelheid van de schijftoegang te verhogen en aan 128 door gebrek geplaatst. Tevreden om Adobe te contacteren alvorens één van beiden van deze parameters te veranderen.
+   >De parameter Schijfbeschadiging detecteren is standaard ingesteld op true. De parameter van de Grootte van het Geheime voorgeheugen van de Schijf (MB) controleert de hoeveelheid geheugen die [!DNL Insight Server] gebruikt om de snelheid van de schijftoegang te verhogen en aan 128 door gebrek wordt geplaatst. Neem contact op met Adobe voordat u een van deze parameters wijzigt.
 
-1. Sparen uw veranderingen in de server door het volgende te doen:
+1. Als u de schijfbestanden op de [!DNL Insight Server] computer wilt wijzigen, klikt u met de rechtermuisknop **[!UICONTROL Disk Files]** en klikt u op **[!UICONTROL Add new]** > **[!UICONTROL Disk File]**.
 
-   1. Klik **[!UICONTROL (modified)]** bij de bovenkant van het venster met de rechtermuisknop aan en klik **[!UICONTROL Save]**.
+   Als u een schijfbestand wilt verwijderen, klikt u met de rechtermuisknop op het nummer van het schijfbestand en klikt u op **[!UICONTROL Remove]**.
+
+1. Voer voor het nieuwe schijfbestand de map en de naam in van het bestand dat tijdens de [!DNL Insight Server] verwerking en bewerking moet worden gebruikt.
+
+   ![Stapinfo](assets/cfg_diskfiles_exampleNewValues.png)
+
+   >[!NOTE]
+   >
+   >De parameter Schijfbeschadiging detecteren is standaard ingesteld op true. De parameter van de Grootte van het Geheime voorgeheugen van de Schijf (MB) controleert de hoeveelheid geheugen die [!DNL Insight Server] gebruikt om de snelheid van de schijftoegang te verhogen en aan 128 door gebrek wordt geplaatst. Neem contact op met Adobe voordat u een van deze parameters wijzigt.
+
+1. Sla de wijzigingen op de server op door het volgende te doen:
+
+   1. Klik met de rechtermuisknop **[!UICONTROL (modified)]** boven in het venster en klik op **[!UICONTROL Save]**.
 
    1. Klik in het [!DNL Server Files Manager]dialoogvenster met de rechtermuisknop op het vinkje voor het bestand in de [!DNL Temp] kolom en selecteer **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
 
