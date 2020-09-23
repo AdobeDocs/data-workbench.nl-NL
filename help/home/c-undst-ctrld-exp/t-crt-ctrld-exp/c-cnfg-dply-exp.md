@@ -1,42 +1,45 @@
 ---
-description: Nadat u uw doel, hypothese, en experimentele details evenals creeerde uw testinhoud hebt bepaald, moet u Sensor vormen om het gecontroleerde experiment op te stellen.
-solution: Insight,Analytics
-title: Het vormen van en het Opstellen van de Experiment
+description: Nadat u uw doel, hypothese, en experimentdetails evenals creeerde uw testinhoud hebt bepaald, moet u Sensor vormen om het gecontroleerde experiment op te stellen.
+solution: Analytics,Analytics
+title: Het vormen en het Opstellen van de Experimenteer
 topic: Data workbench
 uuid: 460d3ea4-a6c8-4ac4-9a3f-eab71f65b096
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '1486'
+ht-degree: 0%
 
 ---
 
 
-# Het vormen van en het Opstellen van de Experiment{#configuring-and-deploying-the-experiment}
+# Het vormen en het Opstellen van de Experimenteer{#configuring-and-deploying-the-experiment}
 
-Nadat u uw doel, hypothese, en experimentele details evenals creeerde uw testinhoud hebt bepaald, moet u Sensor vormen om het gecontroleerde experiment op te stellen.
+Nadat u uw doel, hypothese, en experimentdetails evenals creeerde uw testinhoud hebt bepaald, moet u Sensor vormen om het gecontroleerde experiment op te stellen.
 
-## Het vormen van het Experimentele Dossier van de Configuratie {#section-037fe7dea9c94aee9cdc354dafdb7c03}
+## Het configuratiebestand voor experimenten configureren {#section-037fe7dea9c94aee9cdc354dafdb7c03}
 
-Om het experiment te vormen, moet u de spreadsheet voltooien van de experimentele configuratie die door Adobe ( [!DNL TestExperiment.xls] door gebrek wordt genoemd) wordt verstrekt. Dit dossier vormt [!DNL Sensor] om het experiment uit te voeren en is de versie van Excel van het tekstdossier dat u in het [Wijzigen van de Parameter](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)ExpFile specificeerde.
+Om het experiment te vormen, moet u het spreadsheet voltooien van de proefconfiguratie die door Adobe wordt verstrekt ( [!DNL TestExperiment.xls] door gebrek wordt genoemd). Dit dossier vormt [!DNL Sensor] om het experiment uit te voeren en is de versie van Excel van het tekstdossier dat u in het [Wijzigen van de Parameter](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)ExpFile specificeerde.
 
-Dit dossier kan informatie over veelvoudige experimenten bevatten, die op het zelfde of op verschillende tijden kunnen lopen en verschillende groepen en percentages gebruiken, maar deze experimenten zijn gecorreleerd op geen enkele manier.
+Dit bestand kan informatie bevatten over meerdere experimenten, die op hetzelfde of op verschillende tijdstippen kunnen worden uitgevoerd en verschillende groepen en percentages gebruiken, maar deze experimenten zijn op geen enkele manier gecorreleerd.
 
-De gebruikers worden geplaatst in een groep voor elk experiment dat in het dossier wordt vermeld dat wordt gevormd om op dit ogenblik te lopen.
+De gebruikers worden geplaatst in een groep voor elk experiment dat in het dossier wordt vermeld dat om op dit ogenblik wordt gevormd te lopen.
 
 >[!NOTE]
 >
->Elk experiment is onafhankelijk van alle andere experimenten. De veranderingen die u in één experiment aanbrengt beïnvloeden geen ander experiment, en hoewel de bezoekers in veelvoudige experimenten kunnen zijn, hebben de resultaten niet op elkaar betrekking. Als u denkt bestaat een correlatie tussen de veranderingen in veelvoudige experimenten, moet u een nieuw experiment tot stand brengen dat deze veranderingen samen test.
+>Elk experiment staat los van alle andere experimenten. Wijzigingen die u aanbrengt in het ene experiment hebben geen invloed op andere experimenten en hoewel bezoekers wellicht meerdere experimenten uitvoeren, hebben de resultaten geen betrekking op elkaar. Als u denkt dat er een correlatie bestaat tussen de veranderingen in meerdere experimenten, moet u een nieuw experiment maken dat deze veranderingen samen test.
 
-**Om uw experiment te vormen**
+**Uw experiment configureren**
 
-U zou dit dossier moeten voltooien alvorens het experiment begint en niet de informatie wijzigen terwijl het experiment loopt.
+U moet dit bestand voltooien voordat het experiment begint en de informatie niet wijzigen terwijl het experiment wordt uitgevoerd.
 
 >[!NOTE]
 >
 >Elk experiment is onmiddellijk ongeldig als de definitie van het experiment verandert nadat het experiment is begonnen.
 
-1. Als u beheerderstoegang tot uw Web of toepassingsservers hebt, navigeer aan de [!DNL Sensor] installatiemap op om het even welk [!DNL Sensor] systeem in uw Webcluster om tot het [!DNL TestExperiment.xls] dossier toegang te hebben. Als u beheerderstoegang niet hebt, contacteer uw de rekeningsmanager van Adobe om het [!DNL TestExperiment.xls] dossier te verzoeken.
+1. Als u beheerderstoegang hebt tot uw web- of toepassingsservers, navigeert u naar de [!DNL Sensor] installatiemap op een willekeurige [!DNL Sensor] computer in uw webcluster om het [!DNL TestExperiment.xls] bestand te openen. Als u geen beheerdersrechten hebt, neemt u contact op met uw Adobe-accountmanager om het [!DNL TestExperiment.xls] bestand aan te vragen.
 
-1. Open het [!DNL TestExperiment.xls] dossier (u kunt dit dossier anders noemen indien gewenst) en voltooi de volgende gebieden:
+1. Open het [!DNL TestExperiment.xls] bestand (u kunt desgewenst de naam van dit bestand wijzigen) en vul de volgende velden in:
 
 <table id="table_FDD6AE631C614F97AD7AE8829E53CCAC"> 
  <thead> 
@@ -47,85 +50,85 @@ U zou dit dossier moeten voltooien alvorens het experiment begint en niet de inf
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Experimenteren </td> 
-   <td colname="col2"> <p>Een beschrijvende naam voor het experiment. Elke naam van het experiment moet uniek zijn en kan geen ruimten bevatten. </p> <p>De namen van het experiment worden gebruikt wanneer het tonen van de resultaten van experimenten in <span class="keyword"> Insight </span>. De namen verschijnen als eerste helft van de elementennamen in de gecontroleerde experimentele dimensie. De tweede helft van de elementennaam is de groepsnaam van het gebied van de Groep in dit dossier. Elke groep wordt genoemd in het volgende formaat gebruikend de experimentnaam die door de groepsnaam wordt gevolgd: </p> <p><i>Naam van ExperimentName.Group</i> </p> <p>Bijvoorbeeld: <span class="filepath"> New_Homepage.Control </span> </p> </td> 
+   <td colname="col1"> Experimenteer </td> 
+   <td colname="col2"> <p>Een beschrijvende naam voor het experiment. Elke naam van het experiment moet uniek zijn en mag geen spaties bevatten. </p> <p>Bij de weergave van de resultaten van experimenten in <span class="keyword"> Insight worden namen van experimenten gebruikt </span>. De namen worden weergegeven als de eerste helft van de elementnamen in de gecontroleerde experimentele dimensie. De tweede helft van de elementnaam is de groepsnaam van het veld Groep in dit bestand. Elke groep krijgt een naam in de volgende notatie met de naam van het experiment gevolgd door de naam van de groep: </p> <p><i>Naam ExperimentName.Group</i> </p> <p>Bijvoorbeeld: <span class="filepath"> new_homepage.control </span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Start </td> 
-   <td colname="col2"> <p>De datum en het tijdstip waarop het experiment moet beginnen. Als u geen waarden ingaat, begint het experiment onmiddellijk nadat het dossier wordt opgesteld. </p> <p>Formaat: MM/DD/JJJJ H:MM </p> 
+   <td colname="col2"> <p>De datum en het tijdstip waarop het experiment moet beginnen. Als u geen waarden opgeeft, begint het experiment direct nadat het bestand is geïmplementeerd. </p> <p>Indeling: DD-MM-YYYY H:MM </p> 
     <ul id="ul_FB8B50C688584683AC2226FCBED40AF9"> 
-     <li id="li_223EF962CFC64454965444E66284F670">Als je de start- en stoptijden leeg laat, loopt het experiment voor onbepaalde tijd. </li> 
-     <li id="li_0544C9A98635418CAECD85B67F345772">U kunt begin en ophouden tijden ruim vooraf bepalen van tevoren; daarom kunt u elk van uw experimenten voor het volgende jaar meteen vormen indien gewenst. </li> 
-     <li id="li_BDFBB74B1D134E57B37DC5C3457AA1A9">De tijden van het begin en van het einde zijn gebaseerd op de systeemtijd van de Webserver. Als die klok om het even welke reden verandert, kan uw experiment onverwacht beginnen of ophouden. </li> 
-     <li id="li_3295FE5B2AC64B6CA90CC7F31B808EB9">Als u een experiment als ingang van het configuratiedossier zou willen toevoegen maar niet het experiment in de nabije toekomst wilt lopen, kunt u de experimentele informatie opmerken gebruikend het aantalteken "#"of begin en eindetijden in het verleden bepalen. </li> 
+     <li id="li_223EF962CFC64454965444E66284F670">Als je de start- en stoptijden leeg laat, loopt het experiment oneindig. </li> 
+     <li id="li_0544C9A98635418CAECD85B67F345772">U kunt begin- en stoptijden lang van tevoren definiëren; daarom kunt u al uw experimenten voor het volgende jaar in één keer vormen indien gewenst. </li> 
+     <li id="li_BDFBB74B1D134E57B37DC5C3457AA1A9">De begin- en eindtijd zijn gebaseerd op de systeemtijd van de webserver. Als die klok om welke reden dan ook verandert, kan uw experiment onverwacht starten of stoppen. </li> 
+     <li id="li_3295FE5B2AC64B6CA90CC7F31B808EB9">Als u een experiment als ingang van het configuratiedossier zou willen toevoegen maar niet het experiment in de nabije toekomst wilt lopen, kunt u uit de experimentinformatie commentaren gebruikend het aantalteken "#"of begin en ophoudtijden in het verleden bepalen. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Stoppen </td> 
-   <td colname="col2"> <p>De datum en het tijdstip waarop het experiment moet worden beëindigd. Wanneer de eindedatum en de tijd voorkomen, <span class="wintitle"> </span> zal de Sensor ophouden verzendend de koekjeswaarden die als testgroep aan de test URIs worden geïdentificeerd en zal alle koekjes naar de controlegroep URIs verzenden. </p> <p>Formaat: MM/DD/JJJJ H:MM </p> <p>Zie de nota's voor het <span class="wintitle"> Begin </span> - gebied. </p> </td> 
+   <td colname="col2"> <p>De datum en tijd waarop het experiment moet worden beëindigd. Wanneer de einddatum en de tijd voorkomen, <span class="wintitle"> </span> zal de Sensor ophouden verzendend de koekjeswaarden die als testgroep aan de test URIs worden geïdentificeerd en zal alle koekjes naar de controlegroep URIs verzenden. </p> <p>Indeling: DD-MM-YYYY H:MM </p> <p>Zie de notities voor het <span class="wintitle"> veld </span> Start. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Groep </td> 
-   <td colname="col2"> <p>Een beschrijvende naam voor elke groep bezoekers in het experiment. De namen van de groep kunnen geen ruimten bevatten. </p> <p>De namen van de groep worden gebruikt wanneer het tonen van de resultaten van experimenten in <span class="keyword"> Inzicht </span>. Voor meer informatie, zie de het gebiedsbeschrijving van het Experiment. </p> <p>Een controlegroep kan impliciet of uitdrukkelijk worden bepaald gebaseerd op de waarde ingegaan op het gebied van het Percentage. </p> <p> <p>Opmerking:  Om te voldoen aan het aantal bezoekers dat nodig is gedurende de vastgestelde periode voor het experiment om statistisch geldig te zijn, kan het nodig zijn om het betrouwbaarheidsniveau te verlagen of de tijdsperiode te verlengen. Bijvoorbeeld, als uw tijdkader vijf dagen is, is uw betrouwbaarheidsniveau 98%, en uw nodig aantal bezoekers overschrijdt het aantal dat voor die tijdspanne wordt verwacht, moet u of de tijdspanne verhogen of het betrouwbaarheidsniveau verminderen tot het aantal bezoekers dat wordt verwacht het aantal overschrijdt nodig om een statistisch geldig experiment uit te voeren. </p> </p> </td> 
+   <td colname="col2"> <p>Een beschrijvende naam voor elke groep bezoekers in het experiment. Groepsnamen mogen geen spaties bevatten. </p> <p>De namen van de groep worden gebruikt wanneer het tonen van de resultaten van experimenten in <span class="keyword"> Inzicht </span>. Zie de beschrijving in het veld Experimenteren voor meer informatie. </p> <p>Een controlegroep kan impliciet of uitdrukkelijk worden bepaald gebaseerd op de waarde ingegaan op het gebied van het Percentage. </p> <p> <p>Opmerking:  Om te voldoen aan het aantal bezoekers dat nodig is gedurende de vastgestelde periode voor het statistisch geldige experiment, moet u het betrouwbaarheidsniveau verlagen of de periode verlengen. Als uw tijdsperiode bijvoorbeeld vijf dagen is, is uw betrouwbaarheidsniveau 98% en het aantal bezoekers dat u nodig hebt, overschrijdt het voor die periode verwachte aantal, moet u de tijdsperiode verlengen of het betrouwbaarheidsniveau verlagen totdat het aantal bezoekers dat wordt verwacht, het aantal bezoekers overschrijdt dat nodig is om een statistisch geldig experiment uit te voeren. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Percentage </td> 
-   <td colname="col2"> <p>Het percentage websitebezoekers om in elke bepaalde groep te omvatten. Deze waarden kunnen als of percentages of decimale waarden worden uitgedrukt. Bovendien moeten beide waarden of groter of minder dan één zijn. </p> <p>Bijvoorbeeld: </p> <p>33,3% en 66,7% </p> <p>.99 en .01 </p> <p>Als de som voor alle groepen minder dan 100 is, blijft de niet gedefiniëerde bovenmatige gebreken aan een controlegroep. </p> </td> 
+   <td colname="col2"> <p>Het percentage websitebezoekers dat in elke gedefinieerde groep moet worden opgenomen. Deze waarden kunnen als percentages of decimale waarden worden uitgedrukt. Bovendien moeten beide waarden groter dan of kleiner dan één zijn. </p> <p>Bijvoorbeeld: </p> <p>33,3% en 66,7% </p> <p>.99 en .01 </p> <p>Als de som voor alle groepen minder dan 100 is, blijft het niet bepaalde overtollige gebrek aan een controlegroep. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Originele URL </td> 
-   <td colname="col2"> <p>URI van de inhoud die moet worden opnieuw in kaart gebracht, door $ wordt gevolgd. Deze waarde is case-sensitive. </p> <p>Formaat: index.asp$ </p> <p>Originele URIs kan worden gespecificeerd gebruikend een dollarteken ($) aan het eind van URI om aan te geven dat een nauwkeurige gelijke van het dossier - naam wordt vereist. Bijvoorbeeld, past de uitdrukking <span class="filepath"> /product/product_view.asp$ </span> die nauwkeurige pagina slechts aan, terwijl <span class="filepath"> /product om het even welke pagina in de </span> /product <span class="filepath"> folder </span> aanpast en kon worden gebruikt om die volledige subboom opnieuw in kaart te brengen. De originele Url- ingangen die niet het $ karakter aan het eind van het dossier specificeren - de naam wordt genegeerd door het experiment tenzij de parameter ExpPartialMatch aan "op is geplaatst." Voor meer informatie over deze parameter, zie het <a href="../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md#concept-9c817c4c49b74287b0f70d6a1a37655e"> Wijzigen van de Parameter ExpPartialMatch (Facultatief) </a>. </p> <p>De gecontroleerde experimentele functionaliteit negeert om het even welke vraagkoorden die aan de stam van URI worden toegevoegd. Bijvoorbeeld de pagina </p> <p> <span class="filepath"> /product/product_view.asp?production=53982 </span> is geen geldig URI, maar de pagina <span class="filepath"> /product/product_view.asp </span> is een geldige URI. </p> </td> 
+   <td colname="col1"> Oorspronkelijke URL </td> 
+   <td colname="col2"> <p>De URI van de inhoud die opnieuw moet worden toegewezen, gevolgd door $. Deze waarde is hoofdlettergevoelig. </p> <p>Indeling: index.asp$ </p> <p>Oorspronkelijke URI's kunnen worden opgegeven met een dollarteken ($) aan het einde van de URI, om aan te geven dat een exacte overeenkomst met de bestandsnaam vereist is. De expressie <span class="filepath"> /product/product_view.asp$ </span> komt bijvoorbeeld alleen overeen met die exacte pagina, terwijl <span class="filepath"> /product </span> overeenkomt met elke pagina in de map <span class="filepath"> </span> /product en kan worden gebruikt om die volledige substructuur opnieuw toe te wijzen. Oorspronkelijke URL-items die het $-teken aan het einde van de bestandsnaam niet opgeven, worden door het experiment genegeerd, tenzij de parameter ExpPartialMatch is ingesteld op "on." Zie <a href="../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md#concept-9c817c4c49b74287b0f70d6a1a37655e"> De parameter ExpPartialMatch wijzigen (optioneel) voor meer informatie over deze parameter </a>. </p> <p>De gecontroleerde experimentfunctionaliteit negeert vraagkoorden die aan de stem van URI worden toegevoegd. De pagina </p> <p> <span class="filepath"> /product/product_view.asp?production=53982 </span> is not a valid URI, but the page <span class="filepath"> /product/product_view.asp </span> is a valid URI. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Aangepaste URL </td> 
-   <td colname="col2"> <p>URI van de afwisselende inhoud. </p> <p>Formaat: index2.asp </p> <p>Zie de nota's voor het Originele Url- gebied. </p> </td> 
+   <td colname="col1"> Opnieuw toegewezen URL </td> 
+   <td colname="col2"> <p>De URI van de alternatieve inhoud. </p> <p>Indeling: index2.asp </p> <p>Zie de opmerkingen voor het veld Oorspronkelijke URL. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Het volgende is een voorbeeld van een voltooide [!DNL TextExperiment.xls] spreadsheet:
+Hieronder ziet u een voorbeeld van een voltooide [!DNL TextExperiment.xls] spreadsheet:
 
 ![](assets/TestExperimentSpreadsheet.png)
 
 >[!NOTE]
 >
->Wijzig de kolomposities in de spreadsheet niet.
+>Wijzig de kolomposities in het werkblad niet.
 
-Dit voorbeeld wijst erop dat het &quot;New_Homepage&quot;experiment op 1 Juni, 2006 begint, op 30 Juni eindigt, 2006, en bevat een controlegroep met 50% van de bezoekers en een testgroep met 50% van de bezoekers, die verschillende inhoud voor één URI zien.
+Dit voorbeeld geeft aan dat het experiment New_Homepage begint op 1 juni 2006, eindigt op 30 juni 2006, en bevat een controlegroep met 50% van de bezoekers en een testgroep met 50% van de bezoekers, die verschillende inhoud voor één URI zien.
 
 >[!NOTE]
 >
->Hoewel het steekproefdossier hierboven een expliciete bepaalde controlegroep heeft, is het niet noodzakelijk om een controlegroep uitdrukkelijk te bepalen — het experiment leidt automatisch tot de controlegroep. Als de som van de percentages voor alle groepen in een experiment minder dan 100% is, wordt een impliciete controlegroep toegewezen aan gebruikers die niet in één van de expliciete groepen vallen.
+>Hoewel in het voorbeeldbestand hierboven een expliciete controlegroep is gedefinieerd, is het niet nodig om expliciet een controlegroep te definiëren. Het experiment maakt dan automatisch de controlegroep. Als de som van de percentages voor alle groepen in een experiment minder dan 100% is, wordt een impliciete controlegroep toegewezen aan gebruikers die niet in één van de expliciete groepen vallen.
 
-1. Om commentaren op te nemen om extra informatie over specifieke experimenten te verstrekken, begin de cel met een aantalteken (#) en volg met uw commentaren. De commentaren kunnen overal in het dossier worden opgenomen.
-1. Nadat u de variabelen in de spreadsheet van de experimentele configuratie hebt voltooid, sparen de veranderingen, dan sparen het dossier in lusje-afgebakende tekstformaat ( [!DNL *.txt]) gebruikend de naam die u in de parameter ExpFile in het [!DNL Sensor] configuratiedossier specificeerde. Zie het [Wijzigen van de Parameter](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)ExpFile.
+1. Als u opmerkingen wilt invoegen voor aanvullende informatie over specifieke experimenten, begint u met een hekje (#) in de cel en volgt u de opmerkingen. Opmerkingen kunnen overal in het bestand worden ingevoegd.
+1. Nadat u de variabelen in de spreadsheet van de experimentconfiguratie hebt voltooid, sparen de veranderingen, dan sparen het dossier in lusje-afgebakende tekstformaat ( [!DNL *.txt]) gebruikend de naam die u in de parameter ExpFile in het [!DNL Sensor] configuratiedossier specificeerde. Zie De parameter [ExpFile](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)wijzigen.
 
-   Het volgende is een voorbeeld van een de tekstdossier van de experimentele configuratie:
+   Hieronder ziet u een voorbeeld van een tekstbestand voor een testconfiguratie:
 
    ![](assets/testexperiment.png)
 
    >[!NOTE]
    >
-   >Wegens de lusjes die in dit dossier worden vereist, geef niet het de tekstdossier van de experimentele configuratie door hand uit. Als u veranderingen in het dossier moet aanbrengen, breng de veranderingen in het dossier van Excel van de experimentele configuratie aan en sla het dossier als lusje-afgebakend tekstdossier opnieuw op.
+   >Bewerk het tekstbestand voor de testconfiguratie niet handmatig, omdat dit bestand over de tabbladen moet beschikken. Als u wijzigingen in het bestand wilt aanbrengen, brengt u de wijzigingen aan in het Excel-bestand voor de experimentele configuratie en slaat u het bestand opnieuw op als een tekstbestand met tabs als scheidingsteken.
 
-Als u de tijden van het Begin en van het Einde hebt bepaald, is er geen reden om een experiment van het dossier van de experimentele configuratie ooit te schrappen. Het houden van al uw experimenten die in het dossier van de experimentconfiguratie worden vermeld is eigenlijk een goede manier om een verslag bij te houden van hoe u elk van uw experimenten bepaalde.
+Als u begin- en stoptijden hebt gedefinieerd, is er geen reden om ooit een experiment uit het configuratiebestand van het experiment te verwijderen. Het houden van al uw experimenten die in het dossier van de experimentconfiguratie worden vermeld is eigenlijk een goede manier om een verslag van te houden hoe u elk van uw experimenten bepaalde.
 
 ## Het opstellen van het Dossier van de Configuratie en de Inhoud van de Test {#section-34ff29649f584b93bc6129b75084b37c}
 
-U moet het dossier van de experimentele configuratie aan elke machine in uw Webcluster opstellen die een [!DNL Sensor] en het dienen van de pagina&#39;s in werking stelt betrokken bij het experiment. U kunt dit doen gebruikend of een handprocedure of uw bestaand systeem van het inhoudsbeheer.
+U moet het dossier van de experimentconfiguratie aan elke machine in uw Webcluster opstellen die een programma in werking stelt [!DNL Sensor] en de pagina&#39;s te dienen betrokken bij het experiment. U kunt dit doen door een handmatige procedure of uw bestaande contentbeheersysteem te gebruiken.
 
-**Om uw testinhoud op te stellen**
+**Uw testinhoud implementeren**
 
-* Voor elke toepassing of Webserver die een [!DNL Sensor] die pagina&#39;s in werking stelt betrokken bij het experiment in werking stelt, gebruik uw bestaand het publiceren proces om de testinhoud aan de aangewezen plaats op te stellen.
+* Op elke toepassing of webserver waarop een [!DNL Sensor] server wordt uitgevoerd die pagina&#39;s aanbiedt die bij het experiment betrokken zijn, gebruikt u het bestaande publicatieproces om de testinhoud op de juiste locatie te plaatsen.
 
-   Bijvoorbeeld, als u de pagina van de testgroep [!DNL index2.asp] aan de testomslag voor uw website ( [!DNL mysite.com]) wilt publiceren, zou u het dossier aan publiceren [!DNL www.mysite.com/test].
+   Als u bijvoorbeeld de pagina met testgroepen wilt publiceren [!DNL index2.asp] naar de testmap voor uw website ( [!DNL mysite.com]), publiceert u het bestand naar [!DNL www.mysite.com/test].
 
    >[!NOTE]
    >
-   >Koppel niet rechtstreeks vanaf een pagina op uw website naar een van uw testbestanden. Het doen maakt dit uw testresultaten en uw indexscores ongeldig.
+   >Koppel niet rechtstreeks vanuit een pagina op uw website naar een van uw testbestanden. Als u dit doet, worden de testresultaten en de indexscores ongeldig.
 
-**Om uw experiment te implementeren**
+**Uw experiment implementeren**
 
-* Voor elke toepassing of Webserver die een [!DNL Sensor] die pagina&#39;s in werking stelt betrokken bij het experiment in werking stelt, plaats het de tekstdossier van de experimentele configuratie in de folder die u in de parameter ExpFile in het [!DNL Sensor] configuratiedossier specificeerde. Zie het [Wijzigen van de Parameter](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)ExpFile.
+* Voor elke toepassing of Webserver die pagina&#39;s in werking stelt betrokken bij het experiment, plaats het dossier van de proefconfiguratie in de folder die u in de parameter ExpFile in het [!DNL Sensor] [!DNL Sensor] configuratiedossier specificeerde. Zie De parameter [ExpFile](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)wijzigen.
 
-[!DNL Sensor] selecteert willekeurig websitebezoekers voor elke groep die op de percentages wordt gebaseerd die u in het dossier bepaalde en dient de test of inhoud van de controlegroep aan hen zoals aangewezen.
+[!DNL Sensor] selecteert willekeurig websitebezoekers voor elke groep op basis van de percentages die u in het bestand hebt gedefinieerd en dient de inhoud van de test- of controlegroep waar nodig bij hen.
