@@ -1,26 +1,29 @@
 ---
-description: Wanneer een Webserver wegens een mislukking offline gaat, is de oplossing eenvoudige die een gebruiker van de Werkbank van Gegevens met aangewezen voorrechten vereist om het dossier van de Verwerking van het Logboek te openen Mode.cfg en identiteitskaart van de Sensor (in ons voorbeeld, WEB2) toe te voegen aan de "Off-line Bronnen"sectie.
-solution: Insight
+description: Wanneer een Webserver offline wegens een mislukking gaat, is de oplossing eenvoudig die een gebruiker van de Data Workbench met aangewezen voorrechten vereist om het dossier van de Verwerkingsmodus van het Logboek te openen Mode.cfg en identiteitskaart van de Sensor (in ons voorbeeld, WEB2) aan de "Off-line sectie van Bronnen"toe te voegen.
+solution: Analytics
 title: Het probleem oplossen
 uuid: 19d47b06-be12-4adf-9eac-b16cf7131834
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 0%
 
 ---
 
 
 # Het probleem oplossen{#solving-the-problem}
 
-Wanneer een Webserver wegens een mislukking offline gaat, is de oplossing eenvoudige die een gebruiker van de Werkbank van Gegevens met aangewezen voorrechten vereist om het dossier van de Verwerking van het Logboek te openen Mode.cfg en identiteitskaart van de Sensor (in ons voorbeeld, WEB2) toe te voegen aan de &quot;Off-line Bronnen&quot;sectie.
+Wanneer een Webserver offline wegens een mislukking gaat, is de oplossing eenvoudig die een gebruiker van de Data Workbench met aangewezen voorrechten vereist om het dossier van de Verwerkingsmodus van het Logboek te openen Mode.cfg en identiteitskaart van de Sensor (in ons voorbeeld, WEB2) aan de &quot;Off-line sectie van Bronnen&quot;toe te voegen.
 
-Deze sectie van het dossier vertelt [!DNL data workbench server] dat het niet meer om het even welke gegevens van deze bron zou moeten verwachten omdat het, in feite, off-line is.
+Deze sectie van het dossier vertelt het [!DNL data workbench server] dat het geen gegevens van deze bron meer zou moeten verwachten omdat het, in feite, off-line is.
 
 >[!NOTE]
 >
->Deze verandering te hoeven niet door een Adviseur van Adobe worden uitgevoerd. Iedereen die de aangewezen voorrechten heeft om het [!DNL Log Processing Mode.cfg] dossier te openen kan deze verandering aanbrengen.
+>Deze wijziging hoeft niet te worden uitgevoerd door een Adobe Consultant. Iedereen die de juiste rechten heeft om het [!DNL Log Processing Mode.cfg] bestand te openen, kan deze wijziging doorvoeren.
 
-Als WEB2 begint om gegevens opnieuw te verzenden, [!DNL data workbench server] brengt de bron terug online en past op tijd aan om op de laatste tijd te wijzen het gegevens van alle bronnen ontving waarvan het zich bewust is. Met andere woorden, de nieuwe gegevens die in het systeem komen nemen belangrijkheid over wat in geschreven in het [!DNL Log Processing Mode.cfg file].
+Als WEB2 begint gegevens opnieuw te verzenden, [!DNL data workbench server] brengt de bron terug online en past vanaf tijd aan om op de laatste tijd te wijzen het gegevens van alle bronnen te wijzen waarvan het zich bewust is. Met andere woorden, nieuwe gegevens die in het systeem komen krijgen voorrang boven wat in het [!DNL Log Processing Mode.cfg file]systeem wordt geschreven.
 
-Als WEB2 opnieuw offline gaat, zal van tijd opnieuw ophouden, en u zult het [!DNL Log Processing Mode.cfg] dossier moeten opnieuw uitgeven alhoewel het WEB2 reeds zou kunnen hebben die als off-line bron wordt vermeld. Dit is een artefact van het ontwerp van het product dat in overeenstemming is met de definitie van het begrip &quot;op tijd&quot;: de laatste keer dat het systeem over gegevens voor alle bekende bronnen beschikt .
+Als WEB2 opnieuw offline gaat, zal van tijd opnieuw ophouden, en u zult het [!DNL Log Processing Mode.cfg] dossier opnieuw moeten uitgeven alhoewel het WEB2 reeds als off-line bron zou kunnen hebben vermeld. Dit is een artefact van het ontwerp van het product in overeenstemming met de definitie van het &quot;vanaf de tijd&quot;: de laatste keer dat het systeem gegevens voor alle bekende bronnen heeft.
 
-Wanneer u meer Webservers (WEB4, WEB5, WEB6) toevoegt, en zij beginnen verzendend gegevens naar de [!DNL data workbench server], te hoeven u om het even wat te doen niet om te hebben de nieuwe bronnen [!DNL data workbench server] erkennen. Het systeem wordt zich er simpelweg van bewust dat het gegevens van deze nieuwe bronnen zou moeten verwachten, zoals hierboven beschreven.
+Wanneer u meer Webservers (WEB4, WEB5, WEB6) toevoegt, en zij beginnen gegevens naar de [!DNL data workbench server]te verzenden, te hoeven u om niets te doen om de nieuwe bronnen te hebben [!DNL data workbench server] herkennen. Het systeem wordt zich er eenvoudigweg van bewust dat het gegevens van deze nieuwe bronnen zou moeten verwachten, zoals hierboven beschreven.
