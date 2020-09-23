@@ -1,25 +1,28 @@
 ---
-description: Om systeem en toepassingsfouten te ontdekken zo spoedig mogelijk en hen te richten alvorens zij belangrijke problemen of stroomonderbrekingen veroorzaken, zou u uw gebeurtenislogboeken regelmatig moeten controleren.
-solution: Insight
-title: De Gebeurtenissen van de controle voor Fouten
+description: Als u systeem- en toepassingsfouten zo snel mogelijk wilt detecteren en deze wilt verhelpen voordat ze grote problemen of storingen veroorzaken, moet u regelmatig uw gebeurtenislogboeken controleren.
+solution: Analytics
+title: Gebeurtenissen controleren op fouten
 uuid: 09bb34db-e24d-4bc5-84d2-7fc37df60681
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '148'
+ht-degree: 0%
 
 ---
 
 
-# De Gebeurtenissen van de controle voor Fouten{#monitoring-events-for-errors}
+# Gebeurtenissen controleren op fouten{#monitoring-events-for-errors}
 
-Om systeem en toepassingsfouten te ontdekken zo spoedig mogelijk en hen te richten alvorens zij belangrijke problemen of stroomonderbrekingen veroorzaken, zou u uw gebeurtenislogboeken regelmatig moeten controleren.
+Als u systeem- en toepassingsfouten zo snel mogelijk wilt detecteren en deze wilt verhelpen voordat ze grote problemen of storingen veroorzaken, moet u regelmatig uw gebeurtenislogboeken controleren.
 
-**Aanbevolen frequentie:** Om de 5-10 minuten
+**Aanbevolen frequentie:** Elke 5-10 minuten
 
-Om uw producten van de de serversoftware van Adobe te controleren, kan uw geautomatiseerd beheersinstrument worden geplaatst om uw gebeurtenislogboek voor fouten met de bron &quot;Adobe&quot;te controleren en dan aangewezen personeel aan kwesties te waakzaam te zijn die interventie kunnen vereisen.
+Als u de softwareproducten van uw Adobe-server wilt controleren, kunt u uw geautomatiseerde beheertool zo instellen dat het gebeurtenissenlogboek op fouten met de bron &quot;Adobe&quot; wordt gecontroleerd en dat het juiste personeel wordt gewaarschuwd voor problemen die mogelijk interventie vereisen.
 
-In Vensters, zijn de berichten van de toepassingsfout output aan het Logboek van de Gebeurtenis van de Toepassing in Vensters, dat u tot het gebruiken van de Kijker van de Gebeurtenis van Vensters kunt toegang hebben. In Unix, zijn de berichten van de toepassingsfout output aan Unix syslog gebruikend de faciliteit LOG_DAEMON.
+In Windows worden foutberichten van de toepassing uitgevoerd naar het logboek Toepassingsgebeurtenis in Windows, dat u kunt openen met de Windows Event Viewer. In Unix, worden de berichten van de toepassingsfout output aan Unix syslog gebruikend de faciliteit LOG_DAEMON.
 
-**Om de Kijker van de Gebeurtenis van Vensters te openen**
+**De Windows Event Viewer openen**
 
 * Klik op **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Event Viewer]**.
 
