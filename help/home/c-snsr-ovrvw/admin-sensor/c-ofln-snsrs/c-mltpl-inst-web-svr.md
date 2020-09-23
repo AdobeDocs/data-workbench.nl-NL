@@ -1,35 +1,38 @@
 ---
-description: Informatie over de algemene configuratie van de Sensor met één instantie die van de Webserver op een Webserver loopt.
-solution: Insight
-title: Het werken met Veelvoudige Instanties van een Server van het Web
+description: Informatie over de algemene configuratie van de Sensor met één instantie van de Webserver die op een Webserver loopt.
+solution: Analytics
+title: Werken met meerdere instanties van een webserver
 uuid: 778ea95f-e0f2-4c2a-b7ed-7e323fea1e48
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 0%
 
 ---
 
 
-# Het werken met Veelvoudige Instanties van een Server van het Web{#working-with-multiple-instances-of-a-web-server}
+# Werken met meerdere instanties van een webserver{#working-with-multiple-instances-of-a-web-server}
 
-Informatie over de algemene configuratie van de Sensor met één instantie die van de Webserver op een Webserver loopt.
+Informatie over de algemene configuratie van de Sensor met één instantie van de Webserver die op een Webserver loopt.
 
 ![](assets/web_inst.png)
 
-In dit scenario, schrijft één enkele instantie van de Webserver gegevens aan het geheugen in kaart gebrachte rijdossier, dat door de zender wordt gelezen en naar [!DNL data workbench server]wordt verzonden.
+In dit scenario schrijft één webserverinstantie gegevens naar het in geheugen toegewezen rijbestand, dat door de zender wordt gelezen en naar de [!DNL data workbench server]server wordt verzonden.
 
-Wanneer [!DNL Sensor] is geïnstalleerd op een Webserver die veelvoudige inzamelaarinstanties in werking stelt, kunt u het één van twee manieren vormen:
+Wanneer [!DNL Sensor] het programma is geïnstalleerd op een webserver waarop meerdere verzamelaarinstanties worden uitgevoerd, kunt u het op twee manieren configureren:
 
 * U kunt alle inzamelaarmodules hebben één rijdossier delen.
 
-   Wanneer het gebruiken van één enkel rijdossier, worden het beheer, de configuratie, en het beleid enigszins vereenvoudigd omdat de architectuur zelf minder complex is. Nochtans, met één enkel rijdossier, wordt de volledige Webserver, ongeacht het aantal instanties, geïdentificeerd als WEB1.
+   Wanneer het gebruiken van één enkel rijdossier, wordt het beheer, de configuratie, en het beleid enigszins vereenvoudigd omdat de architectuur zelf minder complex is. Nochtans, met één enkel rijdossier, wordt de volledige Webserver, ongeacht het aantal instanties, geïdentificeerd als WEB1.
 
-* U kunt de bovengenoemde architectuur veelvoudige tijden herhalen en elke instantie van de Webserver hebben een afzonderlijk rijdossier hebben.
+* U kunt de bovenstaande architectuur meerdere keren repliceren en elke instantie van de webserver een afzonderlijk rijdossier hebben.
 
-   Dit laat u toe om elk van de instanties van de Webserver uniek te identificeren. Met andere woorden, is de identificatie van de Webserver (en overeenkomstige SensorID in de [!DNL Sensor] configuratie) een functie van deze configuratie.
+   Hierdoor kunt u elk exemplaar van de webserver afzonderlijk identificeren. Met andere woorden, de identificatie van de Webserver (en overeenkomstige SensorID in de [!DNL Sensor] configuratie) is een functie van deze configuratie.
 
-In elk geval, heeft het gegeven nog alle informatie van de gastheernaam zodat u tussen kunt onderscheiden [!DNL www.client.com], [!DNL www2.client.com]enzovoort. De correcte configuratie wordt bepaald door de analysedoelstellingen en of de analisten de gegevens moeten segmenteren die op een specifieke instantie worden gebaseerd die op een Webserver loopt.
+In elk geval, hebben de gegevens nog alle informatie van de gastheernaam zodat u tussen [!DNL www.client.com], [!DNL www2.client.com]etc. kunt onderscheiden. De correcte configuratie wordt bepaald door de analysedoelstellingen en of de analisten de gegevens moeten segmenteren die op een specifieke instantie worden gebaseerd die op een Webserver loopt.
 
 >[!NOTE]
 >
->Dit type van segmentatie wordt typisch gebruikt slechts in operationele analyse en verstrekt niet veel praktisch gebruik buiten dat gebied.
+>Dit soort segmentatie wordt doorgaans alleen gebruikt voor operationele analyse en wordt buiten dat gebied niet veel praktisch gebruikt.
 
