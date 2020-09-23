@@ -1,42 +1,45 @@
 ---
-description: Informatie over de ruimte van de controlegebeurtenisgegevens en het veranderen van de logboekfolder voor de gegevens van de Sensor.
-solution: Insight
-title: Bewaking van gebeurtenisgegevensruimte
+description: Informatie over het controleren van de ruimte van gebeurtenisgegevens en het veranderen van de logboekfolder voor de gegevens van de Sensor.
+solution: Analytics
+title: Gegevensruimte van gebeurtenissen controleren
 uuid: e514e8fb-e735-4003-ab21-17470c73af37
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '582'
+ht-degree: 0%
 
 ---
 
 
-# Bewaking van gebeurtenisgegevensruimte{#monitoring-event-data-space}
+# Gegevensruimte van gebeurtenissen controleren{#monitoring-event-data-space}
 
-Informatie over de ruimte van de controlegebeurtenisgegevens en het veranderen van de logboekfolder voor de gegevens van de Sensor.
+Informatie over het controleren van de ruimte van gebeurtenisgegevens en het veranderen van de logboekfolder voor de gegevens van de Sensor.
 
-**Aanbevolen frequentie:** Om de 5-10 minuten
+**Aanbevolen frequentie:** Elke 5-10 minuten
 
-[!DNL Insight Server] slaat één logboekdossier per [!DNL Sensor] per dag op of de Eenheid van de Gegevensverwerking of van de Server van het Dossier, afhankelijk van uw configuratie op. De grootte van de logboekdossiers en de hoeveelheid ruimte van de gegevensopslag die voor hen wordt vereist hangt van vele variabelen, met inbegrip van, bijvoorbeeld, het aantal websites af die worden geregistreerd en het aantal verzoeken uw Webservers per seconde ontvangen.
+[!DNL Insight Server] slaat één logboekdossier per [!DNL Sensor] per dag op of de Eenheid van de Gegevensverwerking of van de Server van het Dossier, afhankelijk van uw configuratie. De grootte van de logbestanden en de hoeveelheid gegevensopslagruimte die voor deze bestanden nodig is, zijn afhankelijk van vele variabelen, zoals het aantal websites dat wordt geregistreerd en het aantal aanvragen dat uw webservers per seconde ontvangen.
 
-Een typische installatie van [!DNL Insight Server] (of een [!DNL Insight Server] cluster) kan veelvoudige terabytes van gegevens opslaan, veronderstellend dat de implementatie de hardware gebruikt die door Adobe voor de [!DNL Insight Server] machine(s) wordt geadviseerd.
+Een standaardinstallatie van [!DNL Insight Server] (of een [!DNL Insight Server] cluster) kan meerdere terabytes aan gegevens opslaan, ervan uitgaande dat de implementatie de hardware gebruikt die door Adobe voor de [!DNL Insight Server] machine(s) wordt aanbevolen.
 
-Typisch, blijven alle logboekgegevens aanwezig op de [!DNL Insight Server] machine. Als het noodzakelijk wordt om meer ruimte van de gegevensopslag beschikbaar te maken op de machine, kunt u alle - behalve de het logboekdossiers van de huidigste dag naar een andere machine of gegevensopslagmiddel (zip aandrijving, band, etc.) verplaatsen. Het bewegen van de gegevens vereist u niet om op te houden [!DNL Insight Server], en het beïnvloedt niet de functionaliteit beschikbaar in om het even welk [!DNL Insights] die met [!DNL Insight Server] en het werken met ononderbroken gegevens kan worden verbonden. Op voorwaarde dat u geen analysedataset verwerkt of opnieuw verwerkt, behoudt u toegang tot alle vorige gegevens en de nieuwe gegevens blijven beschikbaar in [!DNL Insight]. Als u verwerkt of een analysedataset opnieuw verwerkt, kunt u niet tot de gegevens toegang hebben tot de verwerking volledig is.
+Doorgaans blijven alle loggegevens op de [!DNL Insight Server] computer aanwezig. Als het nodig is om meer opslagruimte voor gegevens beschikbaar te maken op de computer, kunt u alle logbestanden van de meest recente dag verplaatsen naar een andere computer of een ander opslagmedium (ZIP-station, tape enzovoort). Als u de gegevens verplaatst, hoeft u niet te stoppen [!DNL Insight Server]en heeft dit geen invloed op de functionaliteit die beschikbaar is in [!DNL Insights] bestanden die zijn verbonden met [!DNL Insight Server] en werken met ononderbroken gegevens. Op voorwaarde dat u een analysetgegevensset niet verwerkt of opnieuw verwerkt, behoudt u toegang tot alle vorige gegevens en blijven de nieuwe gegevens beschikbaar in [!DNL Insight]. Als u een dataset van de analyse verwerkt of opnieuw verwerkt, kunt u tot de gegevens niet toegang hebben tot tot de verwerking volledig is.
 
-Door gebrek, worden de gebeurtenisgegevens die door worden geproduceerd [!DNL Sensor] en aan [!DNL Insight Server] worden overgebracht opgeslagen in de [!DNL Logs] omslag binnen de [!DNL Insight Server] installatiefolder. Het Communicatie configuratiedossier, [!DNL Communications.cfg], specificeert de plaats van de dossiers van het logboek van gebeurtenisgegevens die langs worden gelezen [!DNL Insight Server].
+Standaard worden gebeurtenisgegevens die door [!DNL Sensor] en naar [!DNL Insight Server] worden verzonden, opgeslagen in de [!DNL Logs] map in de [!DNL Insight Server] installatiemap. Het Communicatie configuratiedossier, [!DNL Communications.cfg], specificeert de plaats van de dossiers van het logboek van gebeurtenisgegevens die door worden gelezen [!DNL Insight Server].
 
-**Om de logboekfolder voor[!DNL Sensor]gegevens te veranderen**
+**De logmap voor[!DNL Sensor]gegevens wijzigen**
 
-1. In [!DNL Insight], op het [!DNL Admin] > [!DNL Dataset and Profile] lusje, klik de **[!UICONTROL Servers Manager]** duimnagel om de werkruimte van de Manager van Servers te openen.
-1. Klik het pictogram van het pictogram met de rechtermuisknop aan [!DNL Insight Server] u wilt vormen en klikken **[!UICONTROL Server Files]**.
-1. In [!DNL Server Files Manager], klik **[!UICONTROL Components]** om zijn inhoud te bekijken. Het [!DNL Communications.cfg] dossier wordt gevestigd binnen deze folder.
-1. Klik het vinkje in de kolom van de *servernaam* voor met de rechtermuisknop aan [!DNL Communications.cfg] en klik **[!UICONTROL Make Local]**. Een vinkje verschijnt in de [!DNL Temp] kolom voor [!DNL Communications.cfg].
-1. Klik het pas gecreëerde vinkje in de [!DNL Temp] kolom met de rechtermuisknop aan en klik **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
-1. In het [!DNL Communications.cfg] venster, klik **[!UICONTROL component]** om zijn inhoud te bekijken.
-1. In het [!DNL Communications.cfg] venster, klik **[!UICONTROL Servers]** om zijn inhoud te bekijken. Verscheidene types van servers kunnen verschijnen: Bestandsservers, logboekservers, IP-servers, statusservers, servers verzenden of servers repliceren.
-1. Vind LoggingServer, die is waar zijn logboekdossiers [!DNL Sensor] [!DNL Insight Server]schrijft die langs moeten worden verwerkt, en zijn aantal klikken om het menu te bekijken.
+1. Klik in [!DNL Insight]het tabblad [!DNL Admin] > op de [!DNL Dataset and Profile] **[!UICONTROL Servers Manager]** miniatuur om de werkruimte van Servers Manager te openen.
+1. Klik met de rechtermuisknop op het pictogram van het [!DNL Insight Server] object dat u wilt configureren en klik op **[!UICONTROL Server Files]**.
+1. Klik in de [!DNL Server Files Manager]werkruimte **[!UICONTROL Components]** om de inhoud weer te geven. Het [!DNL Communications.cfg] bestand bevindt zich in deze map.
+1. Klik met de rechtermuisknop op het vinkje in de kolom *Servernaam* voor [!DNL Communications.cfg] en klik op **[!UICONTROL Make Local]**. In de [!DNL Temp] kolom voor [!DNL Communications.cfg].
+1. Klik met de rechtermuisknop op het nieuwe vinkje in de [!DNL Temp] kolom en klik op **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
+1. Klik in het [!DNL Communications.cfg] venster **[!UICONTROL component]** om de inhoud weer te geven.
+1. Klik in het [!DNL Communications.cfg] venster **[!UICONTROL Servers]** om de inhoud weer te geven. Er kunnen verschillende typen servers worden weergegeven: Bestandsservers, Logging Servers, Init Servers, Statusservers, Send Servers of Replicate Servers.
+1. Vind LoggingServer, die is waar zijn logboekdossiers [!DNL Sensor] schrijft door worden verwerkt, [!DNL Insight Server]en zijn aantal klikken om het menu te bekijken.
 
-   ![Stapgegevens](assets/cfg_communications_examplevalues_logging.png)
+   ![Stapinfo](assets/cfg_communications_examplevalues_logging.png)
 
-   De standaardlogboekfolder is de [!DNL Logs] omslag binnen de [!DNL Insight Server] installatiefolder.
+   De standaardlogmap is de [!DNL Logs] map in de [!DNL Insight Server] installatiemap.
 
 1. Geef de parameter van de Folder van het Logboek uit om op de gewenste plaats van de logboekdossiers te wijzen.
 
@@ -46,19 +49,19 @@ Door gebrek, worden de gebeurtenisgegevens die door worden geproduceerd [!DNL Se
 
    ![](assets/cfg_communicates_logslocalpath_egvalues.png)
 
-   Verscheidene FileServers kunnen onder de knoop van Servers worden vermeld, zodat kunt u de inhoud van vele van hen (door hun aantallen in de [!DNL Servers] lijst te klikken) moeten bekijken om de server met een Lokale Weg van Logboeken te vinden \ om worden gewijzigd.
+   Meerdere FileServers kunnen onder de knoop van Servers worden vermeld, zodat kunt u de inhoud van vele van hen (door hun aantallen in de [!DNL Servers] lijst te klikken) moeten bekijken om de server met een Lokale Weg van Logs te vinden \ om worden gewijzigd.
 
-1. Geef de Lokale Weg uit om op de gewenste plaats van de [!DNL .vsl] dossiers te wijzen.
+1. Bewerk het lokale pad om de gewenste locatie van de [!DNL .vsl] bestanden weer te geven.
 
    >[!NOTE]
    >
    >Wijzig geen andere parameters voor FileServer.
 
-   Hoewel de plaats van de logboekdossiers in het [!DNL Communications.cfg] dossier is veranderd, kunt u deze dossiers aan de folder van Logboeken van in kaart brengen [!DNL Server Files Manager] door /Logs/ als URI voor FileServer te specificeren.
+   Hoewel de locatie van de logbestanden is gewijzigd in het [!DNL Communications.cfg] bestand, kunt u deze bestanden toewijzen aan de map Logs van het bestand [!DNL Server Files Manager] door /Logs/ op te geven als de URI voor de FileServer.
 
-1. Sparen uw veranderingen in de server door het volgende te doen:
+1. Sla de wijzigingen op de server op door het volgende te doen:
 
-   1. Klik **[!UICONTROL (modified)]** bij de bovenkant van het venster met de rechtermuisknop aan en klik **[!UICONTROL Save]**.
+   1. Klik met de rechtermuisknop **[!UICONTROL (modified)]** boven in het venster en klik op **[!UICONTROL Save]**.
 
    1. Klik in het [!DNL Server Files Manager]dialoogvenster met de rechtermuisknop op het vinkje voor het bestand in de [!DNL Temp] kolom en selecteer **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
 
