@@ -1,28 +1,31 @@
 ---
-description: Door gebrek, luistert de Server van het Inzicht op havens 80 (voor HTTP) en 443 (voor HTTPS).
-solution: Insight
+description: Standaard luistert Insight Server op poort 80 (voor HTTP) en poort 443 (voor HTTPS).
+solution: Analytics
 title: De poortinstellingen controleren
 uuid: 1adad226-5891-4498-80b6-1bb4d67f5bbb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '114'
+ht-degree: 0%
 
 ---
 
 
 # De poortinstellingen controleren{#checking-the-port-settings}
 
-Door gebrek, luistert de Server van het Inzicht op havens 80 (voor HTTP) en 443 (voor HTTPS).
+Standaard luistert Insight Server op poort 80 (voor HTTP) en poort 443 (voor HTTPS).
 
 Als deze havens reeds door een ander proces op de machine worden toegewezen waar u hebt geïnstalleerd [!DNL Insight Server], gebruik de volgende procedure om [!DNL Insight Server’s] haventaken te veranderen.
 
-**Om de haventaken te veranderen**
+**De poorttoewijzingen wijzigen**
 
-1. Navigeer aan de [!DNL Components] omslag in de folder waar u installeerde [!DNL Insight Server].
+1. Navigeer naar de [!DNL Components] map in de map waarin u hebt geïnstalleerd [!DNL Insight Server].
 
    Voorbeeld: [!DNL C:\Adobe\Server\Components]
 
-1. Open het [!DNL Communications.cfg] dossier in een tekstredacteur zoals Blocnote.
-1. Bepaal de plaats van de Haven en de SSL ingangen van de Haven, zoals hieronder getoond:
+1. Open het [!DNL Communications.cfg] bestand in een teksteditor, zoals Kladblok.
+1. Zoek de Poort en de SSL Poort ingangen, zoals hieronder getoond:
 
    ```
    component = CommServer: 
