@@ -1,22 +1,25 @@
 ---
-description: Wanneer de Sensor gebeurtenisgegevens van een Webserver verzamelt, plaatst automatisch een blijvend koekje voor elke bezoeker die een klein willekeurig herkenningsteken bevat, zonder om het even welke persoonlijk identificerende informatie te vangen.
-solution: Insight
-title: Hoe identificeert de sensor Bezoekers en Zittingen?
+description: Bij het verzamelen van gebeurtenisgegevens van een webserver stelt Sensor automatisch een permanente cookie in voor elke bezoeker die een kleine willekeurige id bevat, zonder persoonlijke identificatiegegevens vast te leggen.
+solution: Analytics
+title: Hoe identificeert Sensor bezoekers en sessies?
 uuid: 3735ed2d-67c4-469b-8b3e-0fac90cc4c09
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 0%
 
 ---
 
 
-# Hoe identificeert de sensor Bezoekers en Zittingen?{#how-does-sensor-identify-visitors-and-sessions}
+# Hoe identificeert Sensor bezoekers en sessies?{#how-does-sensor-identify-visitors-and-sessions}
 
-Wanneer de Sensor gebeurtenisgegevens van een Webserver verzamelt, plaatst automatisch een blijvend koekje voor elke bezoeker die een klein willekeurig herkenningsteken bevat, zonder om het even welke persoonlijk identificerende informatie te vangen.
+Bij het verzamelen van gebeurtenisgegevens van een webserver stelt Sensor automatisch een permanente cookie in voor elke bezoeker die een kleine willekeurige id bevat, zonder persoonlijke identificatiegegevens vast te leggen.
 
-Dit koekje van Adobe wordt gebruikt om de unieke bezoeker en elk van zijn verwante zittingen te identificeren.
+Dit Adobe-cookie wordt gebruikt om de unieke bezoeker en alle bijbehorende sessies te identificeren.
 
-Door gebrek, [!DNL Sensor] vangt alle W3C Uitgebreide gebieden van het Formaat van het Dossier van het Logboek van elke HTTP- kopbal, maar u kunt vormen [!DNL Sensor] om het even welke kopbal te vangen die tussen de cliënt en de server wordt overgebracht. Voor informatie over de gebieden van gebeurtenisgegevens die door [!DNL Sensor] in [!DNL .vsl] dossiers worden verzameld, zie de Gebieden van het Verslag van de Gegevens van de [Gebeurtenis](../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-evnt-data-rcd-flds.md#concept-ed2a8797cb5b4995b55ffd50a9f12a44).
+Door gebrek, [!DNL Sensor] vangt alle gebieden van het Formaat van het Dossier van het Logboek W3C Uitgebreid van elke kopbal van HTTP, maar u kunt vormen [!DNL Sensor] om het even welke kopbal te vangen die tussen de cliënt en de server wordt overgebracht. Voor informatie over de gebieden van gebeurtenisgegevens die door [!DNL Sensor] in [!DNL .vsl] dossiers worden verzameld, zie de Gebieden [van het Verslag van](../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-evnt-data-rcd-flds.md#concept-ed2a8797cb5b4995b55ffd50a9f12a44)Gebeurtenisgegevens.
 
-In de browsers van sommige bezoekers worden cookies niet permanent opgeslagen, en een zeer klein aantal bezoekersbrowsers accepteert geen cookies (zelfs sessiecookies). Alhoewel zij slechts een fractie van het totale verkeer van een plaats rekenschap geven, kunnen zij in significante mistelling resulteren als elke paginamening door zulk een bezoeker verkeerd als volledige zitting wordt geteld, zoals door één of andere software van de logboekdossieranalyse wordt gedaan. Adobe behandelt dit probleem door u toe te laten om bezoekers met en zonder koekjes te analyseren.
+In sommige browsers van bezoekers worden cookies niet permanent opgeslagen en in een zeer klein aantal browsers van bezoekers worden cookies helemaal niet geaccepteerd (zelfs sessiecookies). Hoewel zij slechts een fractie van het totale verkeer van een plaats vertegenwoordigen, kunnen zij in significante misrekening resulteren als elke paginamening door zulk een bezoeker verkeerd als volledige zitting wordt geteld, zoals door sommige software van de logboekdossieranalyse wordt gedaan. Adobe lost dit probleem op door bezoekers met en zonder cookies te kunnen analyseren.
 
-Voor meer informatie over de Broken Filter van Zittingen, zie de Gids van de Sensor van de *Werkbank van Gegevens*.
+Zie de *Data Workbench Sensor Guide* voor meer informatie over het filter Verbroken sessies.
