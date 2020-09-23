@@ -1,34 +1,37 @@
 ---
-description: Het dossier van Access Control.cfg beheert toegang tot bepaalde eigenschappen in de Server van het Inzicht.
-solution: Insight
-title: Het bijwerken van het Dossier van het Toegangsbeheer
+description: Het bestand Access Control.cfg beheert de toegang tot bepaalde functies in Insight Server.
+solution: Analytics
+title: Het Access Control-bestand bijwerken
 uuid: f73651e5-6a8b-45fc-8f36-6751304dc53c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 1%
 
 ---
 
 
-# Het bijwerken van het Dossier van het Toegangsbeheer{#updating-the-access-control-file}
+# Het Access Control-bestand bijwerken{#updating-the-access-control-file}
 
-Het dossier van Access Control.cfg beheert toegang tot bepaalde eigenschappen in de Server van het Inzicht.
+Het bestand Access Control.cfg beheert de toegang tot bepaalde functies in Insight Server.
 
-Het bepaalt entiteiten genoemd AccessGroups. Een AccessGroup identificeert een groep gebruikers die toestemming hebben om bepaalde eigenschappen van de server te gebruiken.
+Het bepaalt entiteiten genoemd Accessgroups. Een AccessGroup identificeert een groep gebruikers die toestemming hebben om bepaalde eigenschappen van de server te gebruiken.
 
-Alvorens u kunt verbinden met [!DNL Insight Server] , moet u de Beheerders AccessGroup bijwerken om één van de [!DNL Insight][!DNL Insight] vergunningen te omvatten die Adobe aan uw organisatie heeft uitgegeven. Deze AccessGroup identificeert gebruikers die worden toegelaten om administratieve functies door uit te voeren [!DNL Insight].
+Voordat u verbinding kunt maken [!DNL Insight Server] met [!DNL Insight], moet u de beheerdersAccessGroup bijwerken en een van de [!DNL Insight] licenties opnemen die Adobe aan uw organisatie heeft uitgegeven. This AccessGroup identificeert gebruikers die worden toegelaten om administratieve functies door uit te voeren [!DNL Insight].
 
-De volgende procedure beschrijft hoe te om een vergunning aan Beheerders AccessGroup toe te voegen. Om deze taak te voltooien, moet u bepalen welke [!DNL Insight] vergunning administratieve voorrechten voor uw organisatie heeft. (Voor aanvankelijke opstelling en configuratie, volstaat het verlenen van administratieve voorrechten aan één enkel vergunning. U kunt administratieve voorrechten aan extra vergunningen later verlenen.) U moet ook de &quot;gemeenschappelijke naam&quot;kennen die aan deze vergunning wordt toegewezen. Om deze waarde te verkrijgen, kunt u de vergunningscertificaten voor uw rekening in [https://aap.adobe.com](https://aap.adobe.com)onderzoeken.
+De volgende procedure beschrijft hoe te om een vergunning aan de Beheerders AccessGroup toe te voegen. Om deze taak te voltooien, moet u bepalen welke [!DNL Insight] vergunning administratieve voorrechten voor uw organisatie heeft. (Voor de eerste configuratie en configuratie volstaat het verlenen van administratieve bevoegdheden aan één licentie. U kunt later beheerrechten toekennen aan extra licenties.) U moet ook de &quot;algemene naam&quot; weten die aan deze licentie is toegewezen. Om deze waarde te verkrijgen, kunt u de licentiecertificaten voor uw account bekijken op [https://aap.adobe.com](https://aap.adobe.com).
 
-Het doel van deze procedure is eenvoudig een vergunning gegeven exemplaar van te identificeren [!DNL Insight] dat u aan opstelling kunt aanvankelijk gebruiken en vormen [!DNL Insight Server]. Zodra u deze vergunning identificeert, kunt u alle verdere serverconfiguratie (met inbegrip van extra configuratie AccessGroup) uitvoeren gebruikend het vergunning gegeven exemplaar van [!DNL Insight]. Voor extra informatie over het controleren van toegang tot de server die AccessGroups gebruikt, zie het [Vormen Toegangsbeheer](../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md#concept-ac385e870dbe4b57a72bf7266b60f93d).
+Het doel van deze procedure is eenvoudig een vergunning gegeven exemplaar van te identificeren [!DNL Insight] dat u aan opstelling en vorm aanvankelijk kunt gebruiken [!DNL Insight Server]. Zodra u deze vergunning identificeert, kunt u alle verdere serverconfiguratie (met inbegrip van extra configuratie AccessGroup) uitvoeren gebruikend het vergunning gegeven exemplaar van [!DNL Insight]. Voor extra informatie over het controleren van toegang tot de server gebruikend Accessgroups, zie het [Vormen Toegangsbeheer](../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md#concept-ac385e870dbe4b57a72bf7266b60f93d).
 
-**Om het dossier van de toegangscontrole bij te werken**
+**Het toegangsbeheerbestand bijwerken**
 
-1. Navigeer aan de [!DNL Access Control] omslag in de folder waar u installeerde [!DNL Insight Server].
+1. Navigeer naar de [!DNL Access Control] map in de map waarin u hebt geïnstalleerd [!DNL Insight Server].
 
    Voorbeeld: [!DNL C:\Adobe\Server\Access Control]
 
-1. Open het [!DNL Access Control.cfg] dossier in een tekstredacteur zoals Blocnote.
-1. Bepaal de plaats van de ingang van CN in de Beheerders AccessGroup en vervang de bestaande waarde van deze ingang met de gemeenschappelijke naam die identificeert [!DNL Insight] dat u aan aanvankelijk opstelling zult gebruiken en zult beheren [!DNL Insight Server]. Het volgende dossierfragment illustreert waar u de gemeenschappelijke naam in het [!DNL Access Control.cfg] dossier opneemt.
+1. Open het [!DNL Access Control.cfg] bestand in een teksteditor, zoals Kladblok.
+1. Bepaal de plaats van het ingang van CN in Beheerders AccessGroup en vervang de bestaande waarde van deze ingang met de gemeenschappelijke naam die identificeert [!DNL Insight] die u aan aanvankelijk opstelling en beheer zult gebruiken [!DNL Insight Server]. Het volgende bestandsfragment illustreert waar u de algemene naam in het [!DNL Access Control.cfg] bestand invoegt.
 
    ```
    Access Control Groups = vector: 5 items 
@@ -46,18 +49,19 @@ Het doel van deze procedure is eenvoudig een vergunning gegeven exemplaar van te
 
    Als u op geloofsbrieven-gebaseerde authentificatie gebruikt, zullen een paar extra ingangen voor configuratie beschikbaar zijn. Deze vermeldingen zijn:
 
-   * O (Organisatie-ID): Deze ingang vertegenwoordigt identiteitskaart van de organisatie. Bijvoorbeeld, `1 = string: O:46F582D4582596B40A45491@ExampleOrg`. Deze ID is te vinden in de beheerdersconsole.
-   * PLC - Deze ingang verleent toegang tot de gebruikers die voor een bepaalde productconfiguratie worden voorzien. Het kan in formaat worden gebruikt `Organization_Id-PLC`. Bijvoorbeeld, `1 = string: PLC:46F582D4582596B40A45491@ExampleOrg-DataworkbenchAdminUsers`. De gebruikers provisioned voor de Werkbank van Gegevens die PLC gebruiken `DataworkbenchAdminUsers` zullen toegang op hun servers krijgen.
-   * E-mail - Deze ingang verleent toegang tot om het even welke individuele gebruiker. Zijn waarde zou het e-mailadres van de geleverde gebruiker moeten zijn. Bijvoorbeeld, `1 = string: Email:kim@exampleorg.com`.
+   * O (Organisatie-id): Dit item vertegenwoordigt de id van de organisatie. Bijvoorbeeld, `1 = string: O:46F582D4582596B40A45491@ExampleOrg`. Deze id is te vinden in de Admin Console.
+   * PLC - Deze ingang verleent toegang tot de gebruikers die voor een bepaalde productconfiguratie worden voorzien. De notatie kan worden gebruikt `Organization_Id-PLC`. Bijvoorbeeld, `1 = string: PLC:46F582D4582596B40A45491@ExampleOrg-DataworkbenchAdminUsers`. De gebruikers die voor Data Workbench gebruikend PLC worden voorzien `DataworkbenchAdminUsers` zullen toegang op hun servers krijgen.
+   * E-mail - Met dit bericht hebt u toegang tot elke afzonderlijke gebruiker. Zijn waarde zou het e-mailadres van de geleverde gebruiker moeten zijn. Bijvoorbeeld, `1 = string: Email:kim@exampleorg.com`.
+
    >[!NOTE]
    >
    >
    >    
    >    
-   >    * De ingangen zijn gevoelig geval. U moet ervoor zorgen dat de waarden die voor O, PLC, en E-mail worden gespecificeerd precies het zelfde zijn zoals die in de Console Admin worden getoond.
-   >    * Typ precies de gemeenschappelijke naam aangezien het op het certificaat verschijnt.
-   >    * Gebruik niet de sleutel van het Lusje om whitespace in het [!DNL Access Control.cfg] dossier (of in een ander configuratiedossier voor een component van Adobe te produceren) te produceren. Gebruik alleen spaties om whitespace te maken. Een lusjekarakter verhindert het systeem het dossier correct te lezen.
+   >    * De items zijn hoofdlettergevoelig. U moet ervoor zorgen dat de waarden die voor O, PLC en E-mail worden opgegeven exact gelijk zijn aan de waarden die in de Admin Console worden weergegeven.
+   >    * Typ de algemene naam exact zoals deze op het certificaat wordt weergegeven.
+   >    * Gebruik de Tab-toets niet om witruimte te genereren in het [!DNL Access Control.cfg] bestand (of in een ander configuratiebestand voor een Adobe-component). Gebruik alleen spaties om witruimte te maken. Een tabteken voorkomt dat het systeem het bestand correct leest.
 
 
-1. Sparen en sluit het dossier.
+1. Sla het bestand op en sluit het.
 
