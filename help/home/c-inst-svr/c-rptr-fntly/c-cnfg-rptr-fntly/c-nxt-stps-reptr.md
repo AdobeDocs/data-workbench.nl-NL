@@ -1,19 +1,22 @@
 ---
-description: Instructies om uw installatie van de repeaterfunctionaliteit te voltooien.
-solution: Insight
+description: Instructies om de installatie van de herhalingsfunctionaliteit te voltooien.
+solution: Analytics
 title: Volgende stappen
 uuid: 74ac9ef3-11c2-4af0-9901-edbbcc8ac0fb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '70'
+ht-degree: 0%
 
 ---
 
 
-# Volgende stappen{#next-steps}
+# Next Steps{#next-steps}
 
-Instructies om uw installatie van de repeaterfunctionaliteit te voltooien.
+Instructies om de installatie van de herhalingsfunctionaliteit te voltooien.
 
-* Op de servers waarvan u gegevens wilt verzamelen, installeert u de installatie [!DNL Sensors] zoals beschreven in de * [!DNL Insight] Sensor Guide* en laat u deze gegevens doorgeven aan de repeaterserver.
+* Installeer op de servers van waaruit u gegevens wilt verzamelen, zoals beschreven in de *- [!DNL Sensors] [!DNL Insight] Sensor Guide*, en zorg ervoor dat deze gegevens naar de herhalingsserver verzenden.
 
-* Als u geen opstelling [!DNL Replication Service] voor hebt, zie de Dienst [!DNL Insight Server]van de Replicatie van de Server van het [Inzicht voor instructies om de dienst op een](../../../../home/c-inst-svr/c-ins-svr-rep-svc/c-ins-svr-rep-svc.md#concept-926e654e80d943a0b6ac44a82a510d92) [!DNL Insight Server] FSU te installeren.
+* Als u niet opstelling de [!DNL Replication Service] voor [!DNL Insight Server], zie de Dienst [van de Replicatie van de Server van het](../../../../home/c-inst-svr/c-ins-svr-rep-svc/c-ins-svr-rep-svc.md#concept-926e654e80d943a0b6ac44a82a510d92) Insight voor instructies om de dienst op [!DNL Insight Server] FSU te installeren.
 
