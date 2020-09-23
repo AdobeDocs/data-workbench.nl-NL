@@ -1,10 +1,13 @@
 ---
 description: Door gebrek, schrijft de Server van het Inzicht zijn dataset (temp.db) aan de zelfde aandrijving zoals de het programmadossiers van de Server van het Inzicht.
-solution: Insight
+solution: Analytics
 title: Het vormen van de Plaats van de Dataset (temp.db)
 uuid: a6884cad-70ed-4bc6-853c-700d301fb178
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 0%
 
 ---
 
@@ -15,17 +18,17 @@ Door gebrek, schrijft de Server van het Inzicht zijn dataset (temp.db) aan de ze
 
 Bijvoorbeeld, als u [!DNL Insight Server] op aandrijving C installeert, schrijft het de dataset aan aandrijving C.
 
-Als u de dataset op een verschillende aandrijving wilt handhaven, of als de hoeveelheid gegevens u verwacht te verzamelen het gebruik van veelvoudige aandrijving vereist, moet u het [!DNL Insight Server] dossier bijwerken om te specificeren waar u het [!DNL Disk Files.cfg] dossier wilt [!DNL Insight Server] [!DNL temp.db] schrijven.
+Als u de dataset op een verschillende aandrijving wilt handhaven, of als de hoeveelheid gegevens u verwacht te verzamelen het gebruik van veelvoudige aandrijving vereist, moet u het [!DNL Insight Server] dossier bijwerken om te specificeren waar u het [!DNL Disk Files.cfg] dossier [!DNL Insight Server] [!DNL temp.db] wilt schrijven.
 
-**Om de plaats van temp.db te vormen**
+**De locatie van temp.db configureren**
 
-1. Navigeer aan de [!DNL Components] omslag in de folder waar u installeerde [!DNL Insight Server].
+1. Navigeer naar de [!DNL Components] map in de map waarin u hebt geïnstalleerd [!DNL Insight Server].
 
    Voorbeeld: [!DNL C:\Adobe\Server\Components]
 
-1. Open het [!DNL Disk Files.cfg] dossier in een tekstredacteur zoals Blocnote.
+1. Open het [!DNL Disk Files.cfg] bestand in een teksteditor, zoals Kladblok.
 
-   Door gebrek, bevat dit dossier één enkele ingang in de structuur van de Dossiers van de Schijf zoals hieronder getoond.
+   Standaard bevat dit bestand één item in de schijfbestandsstructuur, zoals hieronder wordt weergegeven.
 
    ```
    component = DiskSpaceManagerComponent:
@@ -34,7 +37,7 @@ Als u de dataset op een verschillende aandrijving wilt handhaven, of als de hoev
      Detect Disk Corruption = bool: true
    ```
 
-1. Om de plaats van te veranderen, wijzig de definitie van de Dossiers van de Schijf [!DNL temp.db]. Het volgende voorbeeld illustreert hoe u de configuratie zou uitgeven om het [!DNL temp.db] dossier over aandrijving C, D, en E uit te spreiden:
+1. Wijzig de definitie Schijfbestanden om de locatie van [!DNL temp.db]de bestanden te wijzigen. In het volgende voorbeeld ziet u hoe u de configuratie kunt bewerken om het [!DNL temp.db] bestand over de stations C, D en E te verspreiden:
 
    ```
    component = DiskSpaceManagerComponent:
@@ -47,5 +50,5 @@ Als u de dataset op een verschillende aandrijving wilt handhaven, of als de hoev
 
    >[!NOTE]
    >
-   >Neem nota van het gebruik van de dubbele backslashes in de dossiernamen hierboven. In [!DNL Insight Server] configuratiedossiers, is het backslash karakter een vluchtkarakter. Het wordt gebruikt om speciale controleopeenvolgingen (bijvoorbeeld, \ t voor een lusjekarakter) in tekst uit te drukken. Om een daadwerkelijk backslash karakter te vertegenwoordigen, moet u backslash tweemaal typen (bijvoorbeeld, \ \) om de vluchtfunctie met voeten te treden. Dit is van toepassing slechts wanneer het uitgeven van configuratiedossiers in een tekstredacteur zoals Blocnote.
+   >Let op het gebruik van de dubbele backslashes in de bovenstaande bestandsnamen. In [!DNL Insight Server] configuratiebestanden is de backslash een escape-teken. Deze wordt gebruikt om speciale controlereeksen (bijvoorbeeld \t voor een tabteken) in tekst uit te drukken. Als u een backslash wilt weergeven, moet u de backslash tweemaal typen (bijvoorbeeld \\) om de functie escape te overschrijven. Dit is alleen van toepassing wanneer u configuratiebestanden bewerkt in een teksteditor, zoals Kladblok.
 
