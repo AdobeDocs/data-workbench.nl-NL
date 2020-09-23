@@ -1,34 +1,37 @@
 ---
-description: Vijf pre-gebouwde toegangsbeheergroepen zijn beschikbaar, maar u kunt extra groepen tot stand brengen en leiden zoals vereist.
-solution: Insight
-title: Het begrip van de Groepen van het Toegangsbeheer
+description: Er zijn vijf vooraf gebouwde toegangsbeheergroepen beschikbaar, maar u kunt desgewenst extra groepen maken en beheren.
+solution: Analytics
+title: Toegangsbeheergroepen
 uuid: ff783078-6d2f-4a64-ab11-8083e35d765f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 1%
 
 ---
 
 
-# Het begrip van de Groepen van het Toegangsbeheer{#understanding-access-control-groups}
+# Toegangsbeheergroepen{#understanding-access-control-groups}
 
-Vijf pre-gebouwde toegangsbeheergroepen zijn beschikbaar, maar u kunt extra groepen tot stand brengen en leiden zoals vereist.
+Er zijn vijf vooraf gebouwde toegangsbeheergroepen beschikbaar, maar u kunt desgewenst extra groepen maken en beheren.
 
-U kunt de leden van elke toegangsbeheergroep, evenals de folders bepalen waaraan elke groep read-only of read-Write toegang heeft.
+U kunt de leden van elke groep van de toegangscontrole, evenals de folders bepalen waaraan elke groep read-Only of Read-Write toegang heeft.
 
 De vooraf gedefinieerde groepen worden als volgt gedefinieerd:
 
 | Groep | Beschrijving |
 |---|---|
-| Administrateurs | Staat toegang tot alle folders en dossiers toe. Het standaardIP adres is 127.0.0.1 (lokale gastheer). |
-| Sensoren | Staat toegang tot slechts die dossiers toe die door worden gebruikt om gegevens over [!DNL Sensor] te brengen. |
-| Gebruikers | Staat read-only toegang tot de elementen toe die voor een [!DNL Insight] gebruiker worden vereist om fundamentele analysetaken uit te voeren. |
-| Energiegebruikers | Staat read-only toegang tot de elementen toe die voor een [!DNL Insight] [!DNL Profiles] gebruiker worden vereist om basisanalysetaken uit te voeren, plus gelezen en schrijf toegang tot de omslag voor het wijzigen van profielen. |
-| Clusterservers | Staat toegang tot toe [!DNL Insight Servers] die als clusterservers worden aangewezen. |
-| Rapportservers | Staat toegang tot [!DNL Report] machines toe die met het verbinden [!DNL Insight Server]. |
+| Beheerders | Hiermee krijgt u toegang tot alle mappen en bestanden. Het standaardIP adres is 127.0.0.1 (lokale gastheer). |
+| Sensoren | Hiermee hebt u alleen toegang tot de bestanden die door [!DNL Sensor] te sturen gegevens worden gebruikt. |
+| Gebruikers | Staat read-only toegang tot de elementen toe die voor een [!DNL Insight] gebruiker worden vereist om basisteanalystaken uit te voeren. |
+| Energiegebruikers | Hiermee geeft u alleen-lezen toegang tot de elementen die een [!DNL Insight] gebruiker nodig heeft om elementaire analysetaken uit te voeren, plus lees- en schrijftoegang tot de [!DNL Profiles] map voor het wijzigen van profielen. |
+| Clusterservers | Hiermee wordt toegang toegestaan tot [!DNL Insight Servers] die zijn aangewezen als clusterservers. |
+| Rapportservers | Hiermee krijgt u toegang tot [!DNL Report] computers die verbinding maken met de [!DNL Insight Server]computer. |
 
 De leden van een toegangsbeheergroep worden bepaald gebruikend hun IP adressen of SSL certificaatinformatie.
 
-Als een SSL certificaat niet beschikbaar is, kan een IP adres worden gebruikt om een groepslid te bepalen. De typische installatie van [!DNL Insight] omvat een SSL certificaat, terwijl het gebruik van certificaten voor [!DNL Sensor(s)] facultatief is. Voor [!DNL Insight Server], worden de Servers van de Cluster bepaald gebruikend IP adressen in plaats van SSL certificaten.
+Als er geen SSL-certificaat beschikbaar is, kan een IP-adres worden gebruikt om een groepslid te definiëren. De standaardinstallatie van [!DNL Insight] bevat een SSL-certificaat, terwijl het gebruik van certificaten voor [!DNL Sensor(s)] optioneel is. Clusterservers worden bijvoorbeeld gedefinieerd met IP-adressen in plaats van SSL-certificaten. [!DNL Insight Server]
 
 De volgende codes kunnen worden gebruikt om groepsleden te definiëren:
 
@@ -36,9 +39,9 @@ De volgende codes kunnen worden gebruikt om groepsleden te definiëren:
 |---|---|
 | O | Organisatie |
 | GN | Algemene naam |
-| L | Localiteit |
+| L | Locatie |
 | ST | Staat of provincie |
 | C | Land |
 | OU | Organisatorische eenheid |
-| E-mailen | E-mailadres |
+| E-mail | E-mailadres |
 
