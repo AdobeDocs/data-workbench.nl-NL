@@ -1,45 +1,48 @@
 ---
-description: Na het uitvoeren van het experiment tot het vereiste minimumaantal bezoekers aan het experiment heeft deelgenomen, kunt u verzekerd zijn van voldoende statistisch vertrouwen om de resultaten van uw experiment te evalueren.
-solution: Insight,Analytics
-title: Evaluatie van het experiment
+description: Nadat u het experiment hebt uitgevoerd totdat het vereiste minimumaantal bezoekers aan het experiment heeft deelgenomen, kunt u verzekerd zijn van voldoende statistisch vertrouwen om de resultaten van het experiment te evalueren.
+solution: Analytics,Analytics
+title: Het experiment evalueren
 topic: Data workbench
 uuid: 88fd81bc-b944-48ea-bd4d-8716979ec69e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
 
-# Evaluatie van het experiment{#evaluating-the-experiment}
+# Het experiment evalueren{#evaluating-the-experiment}
 
-Na het uitvoeren van het experiment tot het vereiste minimumaantal bezoekers aan het experiment heeft deelgenomen, kunt u verzekerd zijn van voldoende statistisch vertrouwen om de resultaten van uw experiment te evalueren.
+Nadat u het experiment hebt uitgevoerd totdat het vereiste minimumaantal bezoekers aan het experiment heeft deelgenomen, kunt u verzekerd zijn van voldoende statistisch vertrouwen om de resultaten van het experiment te evalueren.
 
-Vergelijk [!DNL Insight]met behulp van welke maatstaven of prestatiekernindicatoren als onderdeel van de hypothese werd gedefinieerd om te bepalen of het experiment een succes was (d.w.z. dat de hypothese met het gespecificeerde vertrouwen werd gevalideerd).
+Vergelijk [!DNL Insight]aan de hand van welke maatstaven of belangrijkste prestatie-indicatoren als onderdeel van de hypothese werden gedefinieerd om te bepalen of het experiment succesvol was (de hypothese werd met het opgegeven vertrouwen gevalideerd).
 
-In ons voorbeeldexperiment is onze hypothese juist gebleken als de bezoekersconversie met minstens 1,5 procent stijgt, wat het succescriterium is dat we eerder hebben gedefinieerd.
+In ons voorbeeldexperiment is onze hypothese juist gebleken als de bezoekersconversie met minstens 1,5 procent stijgt. Dat is het succescriterium dat we eerder hebben gedefinieerd.
 
 Het volgende werkruimtevoorbeeld toont aan dat de Omzetting voor de index2 testgroep eigenlijk 1.8% hoger was dan voor de controlegroep, die onze hypothese bewijst.
 
 ![](assets/experimentresults.png)
 
 * [Samenvatting van de resultaten van het experiment](../../../home/c-undst-ctrld-exp/c-vw-rslts/c-ev-exp.md#section-24a496c080a04e929764094acb00bab7)
-* [Actie ondernemen op basis van de resultaten](../../../home/c-undst-ctrld-exp/c-vw-rslts/c-ev-exp.md#section-1623e26ced524fd9beab48ac1f9165d9)
+* [Handeling op basis van resultaten](../../../home/c-undst-ctrld-exp/c-vw-rslts/c-ev-exp.md#section-1623e26ced524fd9beab48ac1f9165d9)
 * [Uw acties controleren](../../../home/c-undst-ctrld-exp/c-vw-rslts/c-ev-exp.md#section-1954311950c34637800cbd7c0711983f)
 
 ## Samenvatting van de resultaten van het experiment {#section-24a496c080a04e929764094acb00bab7}
 
-Gebruikend [!DNL Insight], kunt u gedetailleerde rapporten tot stand brengen om de resultaten van uw experiment samen te vatten en te illustreren.
+Met [!DNL Insight]behulp van gedetailleerde rapporten kunt u de resultaten van uw experiment samenvatten en illustreren.
 
-U kunt uw rapporten, zoals aangetoond in het volgende voorbeeld dan gebruiken, om aanbevelingen te maken die op de resultaten worden gebaseerd, die door de visuele informatie worden gesteund u in uw rapporten hebt verstrekt:
+Vervolgens kunt u uw rapporten gebruiken, zoals in het volgende voorbeeld wordt getoond, om aanbevelingen te doen die op de resultaten worden gebaseerd, die door de visuele informatie worden gesteund u in uw rapporten hebt verstrekt:
 
 ![](assets/experimentresults2.png)
 
-## Actie ondernemen op basis van de resultaten {#section-1623e26ced524fd9beab48ac1f9165d9}
+## Handeling op basis van resultaten {#section-1623e26ced524fd9beab48ac1f9165d9}
 
 Nadat de resultaten duidelijk zijn, bent u bereid om op die resultaten te handelen door productie-vlakke veranderingen in de geteste pagina&#39;s aan te brengen, deze zelfde veranderingen op andere gebieden van uw website toe te passen, en ervoor te zorgen om de test, zijn resultaten, en de veranderingen volledig te documenteren die u hebt aangebracht.
 
 ## Uw acties controleren {#section-1954311950c34637800cbd7c0711983f}
 
-Nadat het gecontroleerde experiment volledig is en u de aangewezen veranderingen hebt uitgevoerd, zorg ervoor om de veranderingen te blijven controleren die u door, bijvoorbeeld, het bekijken van bevestigingsmetriek aanbracht, tot controlegrafieken, en het verstrekken van dashboardmetriek creeert.
+Nadat het gecontroleerde experiment volledig is en u de aangewezen veranderingen hebt uitgevoerd, zorg ervoor om de veranderingen te blijven volgen die u, bijvoorbeeld, het bekijken van bevestigingsmetriek, het creëren van controlegrafieken, en het verstrekken van dashboardmetriek aanbracht.
 
-Wees altijd bereid om uw hypothese opnieuw te testen als u denkt dat de veranderingen die u hebt getest en aangebracht, niet de oorspronkelijke resultaten opleveren.
+Wees altijd bereid om uw hypothese opnieuw te testen als u denkt dat de veranderingen die u hebt getest en aangebracht, de oorspronkelijke resultaten niet beïnvloeden.
