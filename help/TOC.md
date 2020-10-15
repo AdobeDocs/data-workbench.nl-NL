@@ -3,11 +3,11 @@ cloud: experience-cloud
 product: analytics
 audience: end-user
 user-guide-title: Help bij Data Workbench
-user-guide-description: Learn about the multi-channel capabilities of Data Workbench. Includes Data Workbench Client, Installation, Dataset Configuration guides, and more.
+user-guide-description: Meer informatie over de mogelijkheden van Data Workbench met meerdere kanalen. Omvat de Cliënt van de Data Workbench, Installatie, gidsen van de Configuratie van de Dataset, en meer.
 translation-type: tm+mt
 source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
 workflow-type: tm+mt
-source-wordcount: '3518'
+source-wordcount: '3536'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 0%
       + [Exporteren naar Analytics Core Services](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
       + [Exporteren naar Adobe Target](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
       + [wizard Segment exporteren](home/c-get-started/c-exp-data-seg-exp/segment-export.md)
-   + [Analytics-rapporten](home/c-get-started/c-template-report-types.md)
+   + [Analyserapporten](home/c-get-started/c-template-report-types.md)
    + Attributierapporten {#attribution-reports}
       + [Kenmerkrapporten gebruiken](home/c-get-started/c-attribution-profiles/c-attribution-profiles.md)
       + [Overzicht van Attributieprofiel](home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
@@ -146,7 +146,7 @@ ht-degree: 0%
          + [Clustering 2.0](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-clustering-2.md)
          + [Clusters samenstellen](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-defining-clusters.md)
          + [Clusters verkennen](home/c-get-started/c-analysis-vis/c-visitor-cluster/c-exploring-clusters.md)
-      + [Woordvisualisatie](home/c-get-started/c-analysis-vis/c-chord-visualization.md)
+      + [Visualisatie kord](home/c-get-started/c-analysis-vis/c-chord-visualization.md)
       + Correlatiematrix {#correlation-analysis}
          + [Overzicht van correlatiematrix](home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md)
          + [De Correlatiecoëfficiënt Pearson](home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-pearsons.md)
@@ -187,7 +187,7 @@ ht-degree: 0%
       + Analyse met instructies {#guided-analysis}
          + [Overzicht van geleide analyse](home/c-get-started/c-analysis-vis/c-guided-analysis/c-guided-analysis.md)
          + [Statistische maatregelen](home/c-get-started/c-analysis-vis/c-guided-analysis/c-stat-measures.md)
-         + [Het menu Dimensie weergeven](home/c-get-started/c-analysis-vis/c-guided-analysis/t-disp-menu.md)
+         + [Het menu Dimension weergeven](home/c-get-started/c-analysis-vis/c-guided-analysis/t-disp-menu.md)
       + [Latentieanalyse](home/c-get-started/c-analysis-vis/c-latency.md)
       + [Latentietabellen](home/c-get-started/c-analysis-vis/c-lat-tbls.md)
       + Legenda {#legends}
@@ -348,7 +348,7 @@ ht-degree: 0%
       + [Een padbrowser configureren](home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md)
       + [Een proceskaart configureren](home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md)
       + [Vorm de Interface van het Schema van de Dataset](home/c-get-started/c-intf-anlys-ftrs/t-dataset-schema-intf.md)
-      + [Tijdafmetingen lokaliseren](home/c-get-started/c-intf-anlys-ftrs/dwb-format-time-dimensions.md)
+      + [Dimension voor tijd lokaliseren](home/c-get-started/c-intf-anlys-ftrs/dwb-format-time-dimensions.md)
    + [Configuratieparameters](home/c-get-started/c-insght-config-param.md)
    + Syntaxis querytaal {#qry-lang-syntx}
       + [Syntaxis querytaal](home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md)
@@ -439,17 +439,17 @@ ht-degree: 0%
          + [Opzoekgegevens integreren](home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-int-lookup-data.md)
          + [De opzoektabel vullen](home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-pop-lookup-table.md)
          + [Opzoektransformaties definiëren](home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-def-lookup-transf.md)
-   + Uitgebreide afmetingen {#extended-dimensions}
-      + [Uitgebreide afmetingen](home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)
-      + [Uitgebreide afmetingen definiëren](home/c-dataset-const-proc/c-ex-dim/t-def-ex-dim.md)
-      + Typen uitgebreide afmetingen {#extended-dimensions-types}
-         + [Typen uitgebreide afmetingen](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-types-ex-dim.md)
-         + [Afmetingen telbaar](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-count-dim.md)
-         + [Eenvoudige afmetingen](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-simple-dim.md)
-         + [Vele-aan-Vele Dimensies](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-many-dim.md)
-         + [Numerieke afmetingen](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md)
-         + [Denormale afmetingen](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-denormal-dim.md)
-         + [Tijdafmetingen](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-time-dim.md)
+   + Uitgebreide Dimension {#extended-dimensions}
+      + [Uitgebreide Dimension](home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)
+      + [Uitgebreide Dimension definiëren](home/c-dataset-const-proc/c-ex-dim/t-def-ex-dim.md)
+      + Typen uitgebreide Dimension {#extended-dimensions-types}
+         + [Typen uitgebreide Dimension](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-types-ex-dim.md)
+         + [Vertelbare Dimension](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-count-dim.md)
+         + [Eenvoudige Dimension](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-simple-dim.md)
+         + [Veel-tot-veel Dimension](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-many-dim.md)
+         + [Numerieke Dimension](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md)
+         + [Denormale Dimension](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-denormal-dim.md)
+         + [Dimension tijd](home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-time-dim.md)
    + Transformatiefunctionaliteit {#transform-functionality}
       + [Informatie over transformatiefunctionaliteit](home/c-dataset-const-proc/c-transf-func/c-abt-transf-func.md)
       + Configuratiebestanden voor transformatie {#config-files-transform}
@@ -472,7 +472,7 @@ ht-degree: 0%
          + [Veldviewers](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-field-viewers.md)
       + Dataset-componenten verbergen {#hide-dataset-comp}
          + [Dataset-componenten verbergen](home/c-dataset-const-proc/c-dataset-config-tools/c-hide-dataset-comp/c-hide-dataset-comp.md)
-         + [Uitgebreide afmetingen verbergen](home/c-dataset-const-proc/c-dataset-config-tools/c-hide-dataset-comp/c-hide-ex-dim.md)
+         + [Uitgebreide Dimension verbergen](home/c-dataset-const-proc/c-dataset-config-tools/c-hide-dataset-comp/c-hide-ex-dim.md)
          + [Gegevenssetconfiguratiebestanden verbergen](home/c-dataset-const-proc/c-dataset-config-tools/c-hide-dataset-comp/t-hide-dataset-config-files.md)
    + Voorwaarden {#conditions}
       + [Informatie over voorwaarden](home/c-dataset-const-proc/c-conditions/c-abt-cond.md)
@@ -594,26 +594,26 @@ ht-degree: 0%
          + [Invoer van formulierveld ophalen](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-frm-fld-inpt/c-acq-frm-fld-inpt.md)
          + [Algemene informatie](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-frm-fld-inpt/c-gen-info.md)
          + [ASP-specifieke informatie](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-frm-fld-inpt/c-asp.md)
-   + [Bezoekersactiviteiten bijhouden binnen Flash-inhoud voor veeleisende media](home/c-undst-pg-tag/t-trk-vstr-act.md)
+   + [Bezoekersactiviteit bijhouden binnen inhoud van Flash-rijke media](home/c-undst-pg-tag/t-trk-vstr-act.md)
    + [P3P Overwegingen bij paginatags van derden](home/c-undst-pg-tag/c-cons-thrd-pty-pg-tag.md)
    + [Werkblad Paginatabelvariabele toewijzing](home/c-undst-pg-tag/c-pg-tag-wkst.md)
 + Metriek, afmetingen en filters {#metrics}
-   + [Informatie over Data Workbench, afmetingen en filters](home/c-about/c-about.md)
-   + [Metriek, afmetingen en filters uitbreiden](home/c-about/c-expand-capabilities.md)
-   + [Dimensietypen](home/c-about/c-dimension-types.md)
+   + [Informatie over Data Workbench, Dimension en filters](home/c-about/c-about.md)
+   + [Metriek, Dimension en filters uitbreiden](home/c-about/c-expand-capabilities.md)
+   + [Dimension-typen](home/c-about/c-dimension-types.md)
    + [wizard Metrische grijswaarden](home/c-about/metric-dim.md)
-   + Ingebouwde metriek, Afmetingen, en Filters {#built-in-metrics}
-      + [Ingebouwde metriek, Afmetingen en Filters](home/c-about/c-builtin-metrics-dims/c-builtin-metrics-dims.md)
+   + Ingebouwde metriek, Dimension, en Filters {#built-in-metrics}
+      + [Ingebouwde metriek, Dimension en filters](home/c-about/c-builtin-metrics-dims/c-builtin-metrics-dims.md)
       + [Ingebouwde metriek](home/c-about/c-builtin-metrics-dims/c-builtin-metrics.md)
-      + [Ingebouwde afmetingen](home/c-about/c-builtin-metrics-dims/c-builtin-dims.md)
+      + [Ingebouwde Dimension](home/c-about/c-builtin-metrics-dims/c-builtin-dims.md)
       + [Ingebouwde profielfilters](home/c-about/c-builtin-metrics-dims/c-builtin-filters.md)
    + Basislijnprofielen {#baseline-profiles}
       + [Overzicht basislijnprofielen](home/c-about/c-about-baseline-profiles/c-about-baseline-profiles.md)
       + [Metrische gegevens verkeersprofiel](home/c-about/c-about-baseline-profiles/c-traffic-profile.md)
-      + [Afmetingen verkeersprofiel](home/c-about/c-about-baseline-profiles/c-traffic-profile-dims.md)
+      + [Dimension verkeersprofiel](home/c-about/c-about-baseline-profiles/c-traffic-profile-dims.md)
       + [Waardeprofielcijfers](home/c-about/c-about-baseline-profiles/c-value-profile-metrics.md)
-      + [Afmetingen waardeprofiel](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
-      + [Afmetingen marketingprofiel](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
+      + [Dimension waardeprofiel](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
+      + [Dimension voor marketingprofielen](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
 + Geografie {#geography}
    + [Info Data Workbench Geography](home/c-geo-oview/c-geo-oview.md)
    + Data Workbench Geography installeren {#install-geography}
@@ -751,7 +751,7 @@ ht-degree: 0%
       + Configureren {#configure}
          + [Repeater-functionaliteit configureren](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-cnfg-rptr-fntly.md)
          + [Het vormen van een Server FSU van het Inzicht voor Repeater](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-fsu-rptr.md)
-         + [Toegangsbeheer voor Target-computers configureren](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
+         + [Toegangsbeheer voor doelapparaten configureren](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
          + [Het creëren van een Verbinding tussen Insight en Repeater](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md)
          + [Volgende stappen](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-nxt-stps-reptr.md)
       + [Beheerder](home/c-inst-svr/c-rptr-fntly/c-admin-rptr.md)
@@ -810,7 +810,7 @@ ht-degree: 0%
       + [Bevestigend dat de Collector van Gegevens loopt](home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md)
       + [Bevestigend dat de Transmitter van Gegevens loopt](home/c-snsr-ovrvw/admin-sensor/c-data-trmtr-rng.md)
       + [Bewaking van administratieve gebeurtenissen](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
-      + [Target Data Workbench Server wijzigen](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
+      + [De doelserver voor Data Workbench wijzigen](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
       + Offlinesensoren {#offline}
          + [Omgaan met offlinesensoren](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-ofln-snsrs.md)
          + [&#39;Vanaf&#39;-tijd begrijpen](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-as-of-tm.md)
@@ -837,11 +837,11 @@ ht-degree: 0%
       + [De werkruimte Historisch van Data Workbench](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
       + [De werkruimte Status profiel Data Workbench](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
       + [Data Workbench Server Status werkruimte](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
-   + Afmetingen en afmetingen van profiel Data Workbench {#monitoring-appendix}
-      + [Afmetingen en afmetingen van profiel Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
-      + [Afmetingen in het historisch profiel van de Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
-      + [Afmetingen in het statusprofiel van het profiel Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
-      + [Afmetingen in het statusprofiel van de Server van de Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
+   + Dimension en cijfers voor profiel Data Workbench {#monitoring-appendix}
+      + [Dimension en cijfers voor profiel Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
+      + [Dimension in het historisch profiel van de Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
+      + [Dimension in het statusprofiel van het profiel Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
+      + [Dimension in het statusprofiel van de Server van de Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
       + [Metriek in het historisch controleprofiel van de Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
 + Dashboard {#dashboard}
    + [Zakelijke mogelijkheden](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
@@ -946,7 +946,7 @@ ht-degree: 0%
       + [Een gebruikersgroep verwijderen](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-removing-a-user-group.md)
    + [Systeemlogboeken](home/c-preparing-for-dashboard-installation/c-system-logs.md)
 + Data Workbench implementeren {#implement}
-   + [Adobe Data Workbench implementeren](home/dwb-implement-overview/dwb-implement-overview.md)
+   + [Adobe-Data Workbench implementeren](home/dwb-implement-overview/dwb-implement-overview.md)
    + [Detectie en vereisten van Data Workbench](home/dwb-implement-overview/dwb-implement-discovery.md)
    + [Installatie en provisioning van Data Workbench](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
    + [Basisinstructies aan boord voor DWB Managed Services](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md)
@@ -956,7 +956,7 @@ ht-degree: 0%
    + Configuratie en implementatie {#implement-configure}
       + [Configuratie en implementatie van Data Workbench](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-configure.md)
       + [Tijd van gebeurtenis instellen](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-event-time.md)
-      + [Dimensie instellen](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-dim-setup.md)
+      + [Dimension instellen](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-dim-setup.md)
       + [Metrische instelling](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-metric-setup.md)
       + [Validatie van interne en externe FTP-servers](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-validation-ftp.md)
       + [Historische gegevensfeeds valideren](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-datafeeds-historical.md)
@@ -968,7 +968,7 @@ ht-degree: 0%
    + Implementatie van functies {#feature-implemenatation}
       + [Implementatie van functies voor Data Workbench](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
       + [Wijzigingen in configuratie voor nieuw schema](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
-      + [Instellingen van afgeleide afmetingen](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
+      + [Instellingen van afgeleide Dimension](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Query-API](https://www.adobe.io/)
 + [Integratie van Data Workbench met Adobe Target](home/dwb-adobe-target.md)
 + [Woordenlijst Data Workbench](dwb-glossary.md)
