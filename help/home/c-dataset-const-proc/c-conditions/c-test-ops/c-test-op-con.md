@@ -5,9 +5,9 @@ title: Testomstandigheden
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+source-git-commit: 1630f34588e4984226b70c963618856496b42346
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1115'
 ht-degree: 2%
 
 ---
@@ -199,7 +199,7 @@ De parameters van de [!DNL Regular Expression] voorwaarde worden beschreven in d
  </tbody> 
 </table>
 
-Dit voorbeeld illustreert het gebruik van de [!DNL Regular Expression] voorwaarde om een gebied van gegevens aan te passen die van websiteverkeer worden verzameld. De voorwaarde retourneert alleen true als het veld cs(reference-query) een tekenreeks bevat die overeenkomt met de reguliere expressie `campaign=C[1-9][0-9]{4}`. Deze reguliere expressie komt overeen met elke tekenreeks die &quot;campagne=C12345&quot; bevat. Het patroon komt echter niet overeen met de tekenreeks &#39;campagne=C0123&amp;&#39; omdat het eerste teken na de letter &#39;C&#39; zich niet binnen het bereik 1-9 bevindt.
+Dit voorbeeld illustreert het gebruik van de [!DNL Regular Expression] voorwaarde om een gebied van gegevens aan te passen die van websiteverkeer worden verzameld. De voorwaarde retourneert alleen true als het veld cs(reference-query) een tekenreeks bevat die overeenkomt met de reguliere expressie `campaign=C[1-9][0-9]{4}`. Deze reguliere expressie komt overeen met elke tekenreeks die deze bevat `campaign=C12345`. Het patroon komt echter niet overeen met de tekenreeks `campaign=C0123&` omdat het eerste teken na de letter &quot;C&quot; zich niet in het bereik 1-9 bevindt.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
