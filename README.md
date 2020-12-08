@@ -1,16 +1,12 @@
 ---
-source-git-commit: fd80aec422f07806a734475c9c1cabb70596bb80
+source-git-commit: 60494215e7f4be3af8b5b9f81ea7ef128eb4581d
 workflow-type: tm+mt
 translation-type: tm+mt
-source-wordcount: '517'
-ht-degree: 5%
+source-wordcount: '435'
+ht-degree: 6%
 
 ---
 # Contribute-artikel
-
-| EXL-PR | EXL | Voorvertoning | Activeren | Gepubliceerd | Help |
-|--- |--- |--- |--- |--- |--- |
-| [![Status samenstellen](https://docs.ci.corp.adobe.com/view/exl-pr/job/data-workbench.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/data-workbench.en_pr-exl/lastBuild/) | [![Status samenstellen](https://docs.ci.corp.adobe.com/view/exl-pr/job/data-workbench.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/data-workbench.en_exl/lastBuild/lastBuild) | [Voorbeeld-URL](https://experienceleague.corp.adobe.com/docs/data-workbench/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live URL](https://experienceleague.adobe.com/docs/data-workbench/using/home.html?lang=en) | [Ontwerphandleiding](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 Wij verwelkomen de bijdragen van onze gemeenschap en van Adobe werknemers van buiten de documentatieteams.
 
