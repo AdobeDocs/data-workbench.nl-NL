@@ -49,7 +49,7 @@ ht-degree: 0%
       + [Het digitale certificaat downloaden en installeren](home/c-install-insight/install-setup/c-dgtl-crtf.md)
       + [De verbinding met Insight Server configureren](home/c-install-insight/install-setup/c-conn-isvr.md)
       + [Verbindingsproblemen oplossen](home/c-install-insight/install-setup/t-conn-trbsh.md)
-   + Data Workbench bijwerken {#upgrade-dwb}
+   + Data Workbench {#upgrade-dwb} bijwerken
       + [Overzicht van Data Workbench bijwerken](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [Upgrade van 6.4 naar 6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [Upgrade van 6.3 naar 6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
@@ -66,7 +66,7 @@ ht-degree: 0%
    + [Bestandsversie](home/c-get-started/c-unstd-file-ver.md)
    + [Het menu Bureaubladminiatuur gebruiken](home/c-get-started/c-wktp-thumb-menu.md)
    + [De zijbalk configureren](home/c-get-started/c-config-sidebar.md)
-   + Werkruimten weergeven {#display-workspaces}
+   + Werkruimten {#display-workspaces} weergeven
       + [Overzicht van werkruimten weergeven](home/c-get-started/c-work-worksp/c-work-worksp.md)
       + [Een werkruimte weergeven](home/c-get-started/c-work-worksp/c-dis-worksp.md)
       + [Een werkruimte maken](home/c-get-started/c-work-worksp/c-create-worksp.md)
@@ -87,7 +87,7 @@ ht-degree: 0%
       + [Werken met tekst in vensters](home/c-get-started/c-wk-win-wksp/c-work-text-win.md)
       + [Het menu Besturingselementen voor vensters](home/c-get-started/c-wk-win-wksp/c-win-ctrls-menu.md)
       + [Venstergegevens exporteren](home/c-get-started/c-wk-win-wksp/c-exp-win-data.md)
-   + Gegevens exporteren {#export-data}
+   + Gegevens {#export-data} exporteren
       + [Gegevens exporteren met behulp van segmentexport](home/c-get-started/c-exp-data-seg-exp/c-exp-data-seg-exp.md)
       + [Segment exporteren](home/c-get-started/c-exp-data-seg-exp/c-sgmt-expt.md)
       + [Uitvoerindeling](home/c-get-started/c-exp-data-seg-exp/c-abt-otpt-frmt.md)
@@ -134,7 +134,7 @@ ht-degree: 0%
       + [Overzicht van analytische visualisaties](home/c-get-started/c-analysis-vis/c-analysis-vis.md)
       + [2D-spreidingspunten](home/c-get-started/c-analysis-vis/c-scat-plots.md)
       + [3D-verstrooiingspunten](home/c-get-started/c-analysis-vis/c-3d-scatterplots.md)
-      + Annotations {#annotations}
+      + Annotaties {#annotations}
          + [Overzicht van annotaties](home/c-get-started/c-analysis-vis/c-annots/c-annots.md)
          + [Tekstannotaties](home/c-get-started/c-analysis-vis/c-annots/c-text-annots.md)
          + [Afbeeldingsannotaties](home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md)
@@ -221,7 +221,7 @@ ht-degree: 0%
          + [Een kleurkoppeling activeren](home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md)
          + [Een metrische hoeveelheid weergeven](home/c-get-started/c-analysis-vis/c-proc-maps/c-disp-metric-quantities.md)
          + [Een bijschrift toevoegen](home/c-get-started/c-analysis-vis/c-proc-maps/c-add-callouts.md)
-      + Score volheid {#visitor-propensity}
+      + Score van volheid {#visitor-propensity}
          + [Overzicht van het scorebord voor volheid](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-visitor-propensity.md)
          + [Correctie van volheid instellen](home/c-get-started/c-analysis-vis/c-visitor-propensity/t-propensity-steps.md)
          + [Correctie berekenen](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-confusion-matrix.md)
@@ -320,7 +320,7 @@ ht-degree: 0%
    + Interface- en analysefuncties {#ui-analysis-features}
       + [Interface- en analysefuncties](home/c-get-started/c-intf-anlys-ftrs/c-intf-anlys-ftrs.md)
       + [Data Workbench lokaal aanpassen](home/c-get-started/c-intf-anlys-ftrs/c-cstm-lcl.md)
-      + Menu&#39;s aanpassen {#custom-menus}
+      + Menu&#39;s {#custom-menus} aanpassen
          + [Een menu aanpassen](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-ctm-menus.md)
          + [Een werkruimtemenu en menu-item maken](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-wksp-menus-itms.md)
          + [Een menu aanpassen met de bestanden order.txt](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md)
@@ -328,7 +328,7 @@ ht-degree: 0%
          + [Profielbeheer en serverbestandsbeheer aanpassen](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-cstm-prof-files-mgrs.md)
          + [Profielbeheer maken](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-prof-mgrs.md)
          + [Serverbestandsbeheer maken](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-svr-files-mgrs.md)
-      + Een tabblad van een werkbalk aanpassen {#cstm-wktp-tabs}
+      + Tabbladen van werkbalken aanpassen {#cstm-wktp-tabs}
          + [Een tabblad van een werkbalk aanpassen](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)
          + [Een tabblad toevoegen aan de werkbalk](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-add-tabs.md)
          + [De tabvolgorde wijzigen](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-chg-ordr-tabs.md)
@@ -350,7 +350,7 @@ ht-degree: 0%
       + [Vorm de Interface van het Schema van de Dataset](home/c-get-started/c-intf-anlys-ftrs/t-dataset-schema-intf.md)
       + [Dimension voor tijd lokaliseren](home/c-get-started/c-intf-anlys-ftrs/dwb-format-time-dimensions.md)
    + [Configuratieparameters](home/c-get-started/c-insght-config-param.md)
-   + Syntaxis querytaal {#qry-lang-syntx}
+   + Syntaxis van querytaal {#qry-lang-syntx}
       + [Syntaxis querytaal](home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md)
       + [Syntaxis voor elke expressie](home/c-get-started/c-qry-lang-syntx/c-syntx-exp.md)
       + [Syntaxis voor id&#39;s](home/c-get-started/c-qry-lang-syntx/c-syntx-id.md)
@@ -360,11 +360,11 @@ ht-degree: 0%
       + [Syntaxis voor wiskundige expressies](home/c-get-started/c-qry-lang-syntx/c-math-expressions.md)
       + [Statistische bijschriften](home/c-get-started/c-qry-lang-syntx/c-statistical-callouts.md)
       + [Reguliere expressies](home/c-get-started/c-qry-lang-syntx/c-search-regex.md)
-+ Configuratie gegevensset {#dataset}
++ Datasetconfiguratie {#dataset}
    + [Werken met gegevenssetconstructie](home/c-dataset-const-proc/c-dataset-constr.md)
    + [Datasetconfiguratie begrijpen](home/c-dataset-const-proc/c-dataset-config.md)
    + [Ondersteuning van Data Workbench voor GDPR](home/c-dataset-const-proc/dwb-gdpr.md)
-   + Logboekverwerkingsconfiguratiebestand {#log-proc-config-file}
+   + Logverwerkingsconfiguratiebestand {#log-proc-config-file}
       + [Het configuratiebestand voor logbestanden verwerken](home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)
       + [Het configuratiebestand voor logbestanden verwerken bewerken](home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md)
       + [Logbronnen](home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md)
@@ -372,7 +372,7 @@ ht-degree: 0%
       + [Parameters voor logverwerking](home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md)
       + [ODBC-gegevensbronnen](home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md)
       + [Overwegingen voor het configuratiebestand van de logbestandverwerking](home/c-dataset-const-proc/c-log-proc-config-file/c-cons-log-proc-config-file.md)
-   + Configuratiebestand transformatie {#trans-config-file}
+   + Transformatieconfiguratiebestand {#trans-config-file}
       + [Informatie over het configuratiebestand voor transformatie](home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md)
       + [Het configuratiebestand voor transformatie bewerken](home/c-dataset-const-proc/c-trans-config-file/t-edit-trans-config-file.md)
       + Specifieke transformatieparameters {#specific-trans-param}
@@ -381,18 +381,18 @@ ht-degree: 0%
          + [Tijdzones](home/c-dataset-const-proc/c-trans-config-file/c-spec-trans-param/c-time-zones.md)
       + [Overwegingen bij het configuratiebestand van de transformatie](home/c-dataset-const-proc/c-trans-config-file/c-con-tran-config-file.md)
       + [DeviceAtlas-distributie](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
-   + Gegevensset met bestanden {#dataset-include-files}
+   + Gegevensset bevat bestanden {#dataset-include-files}
       + [Info Gegevensset Include-bestanden](home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)
       + [Werken met include-bestanden voor gegevensset](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/c-work-dataset-inc-files.md)
       + [Bestaande gegevensset met include-bestanden bewerken](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md)
       + [Nieuwe gegevensset maken met include-bestanden](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-create-new-dataset-inc-files.md)
-      + Typen gegevensset inclusief bestanden {#types-dataset-inc-files}
+      + Typen gegevensset met bestanden {#types-dataset-inc-files}
          + [Typen gegevensset inclusief bestanden](home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-types-dataset-inc-files.md)
          + [Gegevensset logbestandsverwerking inclusief bestanden](home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md)
          + [Decoderingsgroepen tekstbestand](home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md)
          + [XML-decoderingsgroepen](home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-xml-dec-grps.md)
          + [Gegevensset transformatie bevat bestanden](home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md)
-      + Parameters definiëren in gegevensset met include-bestanden {#def-param-dataset-inc-files}
+      + Parameters definiëren in gegevensset omvat bestanden {#def-param-dataset-inc-files}
          + [Parameters definiëren in gegevensset met include-bestanden](home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md)
          + [Tekenreeks en numerieke parameters](home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-string-num-param.md)
          + [Vectorparameters](home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-vector-param.md)
@@ -454,16 +454,16 @@ ht-degree: 0%
       + [Informatie over transformatiefunctionaliteit](home/c-dataset-const-proc/c-transf-func/c-abt-transf-func.md)
       + Configuratiebestanden voor transformatie {#config-files-transform}
          + [Configuratiebestanden voor transformatie](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/c-config-files-transf.md)
-         + Transform.cfg, bestand {#transform-cfg-file}
+         + Transform.cfg-bestand {#transform-cfg-file}
             + [Het bestand Transform.cfg](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md)
             + [Exporters definiëren](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-def-exp.md)
             + [Voorbeeld van Data Workbench Transform.cfg-bestanden](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md)
          + [Het bestand Transform Mode.cfg](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-transf-mode-file.md)
          + [Het bestand Required field Definition.cfg](home/c-dataset-const-proc/c-transf-func/c-config-files-transf/c-req-field-def-file.md)
-   + Opwerking en heromzetting {#reproc-retrans}
+   + {#reproc-retrans}
       + [Inzicht in opwerking en heromzetting](home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)
       + [Voorbereiden op opwerking of hertransformatie](home/c-dataset-const-proc/c-reproc-retrans/t-prep-reproc-retrans.md)
-   + Hulpprogramma&#39;s voor gegevensverzameling {#dataset-config-tools}
+   + Hulpprogramma&#39;s voor configuratie van gegevensset {#dataset-config-tools}
       + [Hulpprogramma&#39;s voor gegevensverzameling](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md)
       + Dataset Configuration Interfaces {#dataset-config-ui}
          + [Werken met de interfaces van de Configuratie van Dataset](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-config-int.md)
@@ -500,13 +500,13 @@ ht-degree: 0%
          + [Een rapportset maken](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-create-rpt-set.md)
          + [Creeer een Nieuwe Omslag voor de Reeks van het Rapport](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-new-fldr-rpt-set.md)
          + [De werkruimten van de rapportserver maken](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-create-rpt-wrksp.md)
-      + De rapportset configureren {#config-report-set}
+      + De rapportset {#config-report-set} configureren
          + [De rapportset configureren](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/t-config-rpt-set.md)
          + [Rapporten genereren als Microsoft Excel-bestanden](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-gen-rpts-ex-files.md)
          + [Rapporten dynamisch genereren](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-dyn-gen-rpts.md)
          + [Publiceer het Rapport dat aan de Server van de Data Workbench wordt geplaatst](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-pub-rpt-set.md)
       + [Status van rapportset bekijken](home/c-rpt-oview/c-work-rpt-sets/c-rev-rpt-set-stat.md)
-      + Bestaand Report.cfg-bestanden bewerken {#edit-existing-report-files}
+      + Bestaand Report.cfg-bestanden {#edit-existing-report-files} bewerken
          + [Bestaand Report.cfg-bestanden bewerken](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md)
          + [Rapporten terugsturen via e-mail](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-res-rpts-email.md)
          + [E-mailmelding van voltooid rapport](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-email-not-comp-rpt.md)
@@ -514,7 +514,7 @@ ht-degree: 0%
       + [Het gebruiken van het Portaal van het Rapport](home/c-rpt-oview/c-rpt-portal/c-rpt-portal.md)
       + [De rapportportal openen](home/c-rpt-oview/c-rpt-portal/t-open-rpt-port.md)
    + [Geavanceerd zoeken in de rapportportal](home/c-rpt-oview/c-search-adv.md)
-   + Rapportserver installeren {#install-report-server}
+   + Rapportserver {#install-report-server} installeren
       + [Rapportserver installeren](home/c-rpt-oview/c-inst-rpt/c-inst-rpt.md)
       + [Voordat u begint](home/c-rpt-oview/c-inst-rpt/c-before-begin.md)
       + [Overzicht van installatie](home/c-rpt-oview/c-inst-rpt/t-install-oview.md)
@@ -529,7 +529,7 @@ ht-degree: 0%
       + [Status rapportserver weergeven](home/c-rpt-oview/c-inst-rpt/t-display-svr-st-rpt.md)
       + [Rapportserver registreren als Windows-service](home/c-rpt-oview/c-inst-rpt/t-reg-rpt-win-svc.md)
       + [Rapportserver upgraden en verwijderen](home/c-rpt-oview/c-inst-rpt/c-upgrade-uninstall-rpt.md)
-   + Rapportserver beheren {#admin-report-server}
+   + Rapportserver {#admin-report-server} beheren
       + [Rapportserver beheren](home/c-rpt-oview/c-admin-rpt/c-admin-rpt.md)
       + [Report.cfg-bestanden configureren](home/c-rpt-oview/c-admin-rpt/c-config-rpt-files.md)
       + [Het digitale certificaat opnieuw valideren](home/c-rpt-oview/c-admin-rpt/c-reval-dig-cert.md)
@@ -542,10 +542,10 @@ ht-degree: 0%
          + [Accounts weergeven](home/c-rpt-oview/c-admin-rpt/c-work-accts/c-view-accts.md)
          + [Nieuwe accounts toevoegen](home/c-rpt-oview/c-admin-rpt/c-work-accts/t-add-new-accts.md)
          + [Bestaande gebruikers bewerken](home/c-rpt-oview/c-admin-rpt/c-work-accts/t-edit-ex-users.md)
-   + Het rapportportaal installeren {#install-report-portal}
+   + De rapportportal {#install-report-portal} installeren
       + [Het rapportportaal installeren](home/c-rpt-oview/c-install-rpt-port/c-install-rpt-port.md)
       + [Installeer de Poorttoepassingsbestanden van het Rapport](home/c-rpt-oview/c-install-rpt-port/t-install-rpt-portal-app.md)
-      + Poortpagina&#39;s van Rapport toewijzen {#mapping-report-portal-pages}
+      + Rapportportpagina&#39;s toewijzen {#mapping-report-portal-pages}
          + [Wijs de Poortpagina&#39;s van het Rapport aan Virtuele Folders toe](home/c-rpt-oview/c-install-rpt-port/c-virtual-dir/c-virtual-dir.md)
          + [Het Portaal van het Rapport van de toewijzing aan een Virtuele Folder (IIS 7.0 of hoger)](home/c-rpt-oview/c-install-rpt-port/c-virtual-dir/c-map-rpt-port-vdir-7.md)
          + [Het Portaal van het Rapport van de toewijzing aan een Virtuele Folder (IIS 6.0)](home/c-rpt-oview/c-install-rpt-port/c-virtual-dir/c-map-rpt-port-vdir-6.md)
@@ -565,17 +565,17 @@ ht-degree: 0%
       + [Index voorbeeldrapport](home/c-rpt-oview/c-rpt-sample-files/c-sample-rpt-ind.md)
       + [Voorbeeld-XSL-stijlblad](home/c-rpt-oview/c-rpt-sample-files/c-sample-xsl-st-sheet.md)
       + [Voorbeeld van XSL-stijlpagina voor e-mail](home/c-rpt-oview/c-rpt-sample-files/c-sample-mail-style-sheet.md)
-+ Paginalabels {#page-tagging}
++ Paginatags {#page-tagging}
    + [Wat voor soort gegevens kan ik ophalen?](home/c-undst-pg-tag/c-acq-data.md)
    + [Hoe verkrijg ik deze Data_](home/c-undst-pg-tag/t-how-acq-data-.md)
-   + Referentiepagina-tags implementeren {#implement-ref-page-tags}
+   + Referentiepagina-tags {#implement-ref-page-tags} implementeren
       + [Referentiepagina-tags implementeren](home/c-undst-pg-tag/c-imp-ref-pg-tags/c-imp-ref-pg-tags.md)
       + [Het script voor de uitvoering van de referentiepagina-tag bewerken](home/c-undst-pg-tag/c-imp-ref-pg-tags/t-edit-ref-pg-tag-ex-scrpt.md)
       + [Aanroepen tot uitvoering van referentiepagina-tag toevoegen](home/c-undst-pg-tag/c-imp-ref-pg-tags/c-ref-pg-tag-ex-calls.md)
       + [De v1st-cookie begrijpen](home/c-undst-pg-tag/c-imp-ref-pg-tags/c-undst-v1st-ck.md)
    + Basislijnmetingen ophalen {#acquire-base-measures}
       + [Overzicht basislijnmetingen ophalen](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-bsln-msmts.md)
-      + Aanvraaggegevens van pagina ophalen {#acquire-page-request}
+      + Gegevens van paginaverzoek ophalen {#acquire-page-request}
          + [Gegevensoverzicht van paginaaanvraag ophalen](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-acq-pg-req-data.md)
          + [De queryreeks begrijpen](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-undst-qry-strg.md)
          + [Filteren op inhoudstype](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-fltr-cnt-type.md)
@@ -597,7 +597,7 @@ ht-degree: 0%
    + [Bezoekersactiviteit bijhouden binnen inhoud van Flash-rijke media](home/c-undst-pg-tag/t-trk-vstr-act.md)
    + [P3P Overwegingen bij paginatags van derden](home/c-undst-pg-tag/c-cons-thrd-pty-pg-tag.md)
    + [Werkblad Paginatabelvariabele toewijzing](home/c-undst-pg-tag/c-pg-tag-wkst.md)
-+ Metriek, afmetingen en filters {#metrics}
++ Metrisch, afmetingen en filters {#metrics}
    + [Informatie over Data Workbench, Dimension en filters](home/c-about/c-about.md)
    + [Metriek, Dimension en filters uitbreiden](home/c-about/c-expand-capabilities.md)
    + [Dimension-typen](home/c-about/c-dimension-types.md)
@@ -616,12 +616,12 @@ ht-degree: 0%
       + [Dimension voor marketingprofielen](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
 + Geografie {#geography}
    + [Info Data Workbench Geography](home/c-geo-oview/c-geo-oview.md)
-   + Data Workbench Geography installeren {#install-geography}
+   + Installeren van Data Workbench Geography {#install-geography}
       + [Data Workbench Geography installeren](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
       + [Het geografische profiel installeren](home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)
       + [De bestanden voor geografische opzoekopdrachten installeren](home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md)
       + [Het bestand Terrain Images.cfg installeren](home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md)
-   + Afbeeldingslagen {#imagery-layers}
+   + Beeldlagen {#imagery-layers}
       + [Werken met afbeeldingslagen](home/c-geo-oview/c-wk-img-lyrs/c-undst-img-lyrs.md)
       + Terrain Image Layers {#terrain-image-layers}
          + [Werken met Terrain Image Layers](home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-trn-img-lyrs.md)
@@ -642,14 +642,14 @@ ht-degree: 0%
          + [Vectorlagen definiëren die verwijzen naar vectorbestanden](home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-def-vctr-files.md)
          + [Vectorlagen die verwijzen naar via tabs gescheiden waardebestanden](home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md)
          + [Een nieuwe vectorlaag beschikbaar maken](home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/t-mk-new-vctr-lyr-avail.md)
-   + Gegevensservices {#data-services}
+   + Data Services {#data-services}
       + [Over de Data Services](home/c-geo-oview/c-wk-data-svcs/c-abt-data-svcs.md)
-      + Een gegevensservice installeren {#install-data-service}
+      + Een gegevensservice {#install-data-service} installeren
          + [De installatie van een Dienst van Gegevens op een Server van de Data Workbench](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-install-data-svc.md)
          + [Het profiel voor de gegevensservice installeren](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md)
          + [Opzoekbestanden voor de gegevensservice installeren](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/t-inst-data-svc-lkp-files.md)
       + [Gegevensservicebestanden bijwerken](home/c-geo-oview/c-wk-data-svcs/c-updt-data-svc-files.md)
-   + Data Workbench Geography upgraden en verwijderen {#upgrade-uninstall-geo}
+   + Data Workbench Geography {#upgrade-uninstall-geo} upgraden en verwijderen
       + [Verbetering van de geografische Data Workbench](home/c-geo-oview/c-upgrd-uninst-geo/t-upgrd-geo.md)
       + [Data Workbench Geography verwijderen](home/c-geo-oview/c-upgrd-uninst-geo/t-uninst-geo.md)
 + Gecontroleerde experimenten {#experiments}
@@ -658,12 +658,12 @@ ht-degree: 0%
    + [Hoe werken gecontroleerde experimenten?](home/c-undst-ctrld-exp/c-ctrld-exp-wk.md)
    + [Wat moet ik testen?](home/c-undst-ctrld-exp/c-wht-test-.md)
    + [Wat zijn de vereisten?](home/c-undst-ctrld-exp/c-reqs-.md)
-   + Gecontroleerde experimenten {#controlled-experimentation}
+   + Gecontroleerde experimentatie {#controlled-experimentation}
       + [Gecontroleerde experimenten inschakelen](home/c-undst-ctrld-exp/t-en-ctrld-exp/t-en-ctrld-exp.md)
       + [De parameter ExpFile wijzigen](home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md)
       + [Het parameter ExpCookieURL wijzigen (optioneel)](home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md)
       + [De parameter ExpPartialMatch wijzigen (optioneel)](home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md)
-   + Een gecontroleerde experiment maken {#create-controlled-experiment}
+   + Een gecontroleerde experimenteer maken {#create-controlled-experiment}
       + [Een gecontroleerde experiment maken](home/c-undst-ctrld-exp/t-crt-ctrld-exp/t-crt-ctrld-exp.md)
       + [De doelstelling definiëren](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-dfn-obj.md)
       + [Een hypothese opmaken](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-frm-hyp.md)
@@ -671,7 +671,7 @@ ht-degree: 0%
       + [De testinhoud maken](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-crt-test-cnt.md)
       + [Het vormen en het Opstellen van de Experimenteer](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md)
    + [Het experiment valideren](home/c-undst-ctrld-exp/c-val-exp.md)
-   + De resultaten bekijken {#view-results}
+   + Resultaten weergeven {#view-results}
       + [De resultaten bekijken](home/c-undst-ctrld-exp/c-vw-rslts/c-vw-rslts.md)
       + [Logverwerking wijzigen.cfg](home/c-undst-ctrld-exp/c-vw-rslts/t-mod-lg-proc.md)
       + [Transformatie wijzigen.cfg](home/c-undst-ctrld-exp/c-vw-rslts/t-mod-trfmtn.md)
@@ -680,10 +680,10 @@ ht-degree: 0%
    + [Werkblad Experimenteel ontwerp](home/c-undst-ctrld-exp/t-exp-dsn-spst.md)
 + Serverbeheer en installatie {#server-admin-install}
    + [Serversysteemvereisten](home/c-inst-svr/c-msr-server/c-msr-server.md)
-   + Data Workbench-servers installeren {#install-servers}
+   + Installeren van Data Workbench Servers {#install-servers}
       + [Data Workbench-servers installeren](home/c-inst-svr/c-install-ins-svr/c-install-ins-svr.md)
       + [Informatie over Insight Server-licentiecomponenten](home/c-inst-svr/c-install-ins-svr/c-abt-inst-svr-lic-units.md)
-      + DPU van de Server van het inzicht {#insight-server-dpu}
+      + DPU {#insight-server-dpu} van de Server van het inzicht
          + [Installatieprocedures voor een DPU van een Insight Server](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-install-proc-inst-svr-dpu.md)
          + [De bestanden van het Insight Server-programma installeren](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-install-prgm-files.md)
          + Digitale certificaten {#dig-certs}
@@ -693,7 +693,7 @@ ht-degree: 0%
             + [Windows-certificaatarchief](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/crypto-api.md)
          + [De poortinstellingen controleren](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-chk-pt-stgs.md)
          + [Het Access Control-bestand bijwerken](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-updt-accss-ctrl-file.md)
-         + Netwerklocatie server {#server-network-location}
+         + Servernetwerklocatie {#server-network-location}
             + [De netwerklocatie van de server definiëren](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-svrs-ntwk-loc/c-svrs-ntwk-loc.md)
             + [Netwerklocaties](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-svrs-ntwk-loc/c-ntwk-loc.md)
             + [Meerdere IP-adressen voor een Insight Server](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-svrs-ntwk-loc/c-mltpl-ip-addr.md)
@@ -703,7 +703,7 @@ ht-degree: 0%
          + [Insight Server registreren als Windows-service](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-reg-wdws-svc.md)
       + [Installatieprocedures voor een Insight Server FSU](home/c-inst-svr/c-install-ins-svr/t-inst-proc-fsu.md)
       + [Volgende stappen](home/c-inst-svr/c-install-ins-svr/c-nxt-stps.md)
-      + Insight Server Clusters {#insight-server-clusters}
+      + Serverclusters {#insight-server-clusters} van het Inzicht
          + [Over Insight Server Clusters](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-abt-ins-svr-clsters.md)
          + Een Insight Server-cluster installeren {#install-insight-server-cluster}
             + [Een Insight Server-cluster installeren](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-ins-svr-clstr.md)
@@ -716,7 +716,7 @@ ht-degree: 0%
             + [Inzichtsservers toevoegen aan een bestaande cluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-ins-svrs-ex-clstr.md)
             + [Een Insight Server DPU toevoegen aan een bestaande cluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-dpu-ex-clstr.md)
             + [Een Insight Server FSU toevoegen aan een bestaande cluster](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-fsu-ex-clstr.md)
-   + Data Workbench-server beheren {#admin-dwb-server}
+   + Server {#admin-dwb-server} van Data Workbench beheren
       + [Data Workbench-server beheren](home/c-inst-svr/c-admin-inst-svr/c-admin-inst-svr.md)
       + [Het digitale certificaat opnieuw valideren](home/c-inst-svr/c-admin-inst-svr/c-reval-dgtl-cert.md)
       + [Bevestigend dat de Dienst loopt](home/c-inst-svr/c-admin-inst-svr/c-cfrm-svc-rng.md)
@@ -725,7 +725,7 @@ ht-degree: 0%
          + [Toegangsbeheergroepen](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-ctrl-grps.md)
          + [Toegangsniveaus](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-lvls.md)
          + [Gebruikersbeheer van toegang groepslid](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/dwb-self-admin-member-access.md)
-      + Schijfruimte controleren {#monitor-disk-space}
+      + Schijfruimte {#monitor-disk-space} controleren
          + [Schijfruimte controleren](home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/c-mntr-disk-spc.md)
          + [Gegevensruimte controleren](home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/t-mntr-dtst-data-spc.md)
          + [Gegevensruimte van gebeurtenissen controleren](home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/t-mntr-evt-data-spc.md)
@@ -746,9 +746,9 @@ ht-degree: 0%
       + [De replicatieservice installeren](home/c-inst-svr/c-ins-svr-rep-svc/c-inst-rep-svc.md)
       + [De replicatieservice configureren](home/c-inst-svr/c-ins-svr-rep-svc/t-config-rep-svc.md)
       + [Volgende stappen](home/c-inst-svr/c-ins-svr-rep-svc/c-nxt-stps-rep-svc.md)
-   + Repeater {#repeater}
+   + Herhalen {#repeater}
       + [Repeater-functionaliteit](home/c-inst-svr/c-rptr-fntly/c-rptr-fntly.md)
-      + Configureren {#configure}
+      + {#configure} configureren
          + [Repeater-functionaliteit configureren](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-cnfg-rptr-fntly.md)
          + [Het vormen van een Server FSU van het Inzicht voor Repeater](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-fsu-rptr.md)
          + [Toegangsbeheer voor doelapparaten configureren](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
@@ -760,9 +760,9 @@ ht-degree: 0%
       + [Bevestigen dat uw systemen gezond zijn](home/c-inst-svr/c-gen-syst-admin/c-cnfm-syst-hlthy.md)
       + [Gebeurtenissen controleren op fouten](home/c-inst-svr/c-gen-syst-admin/c-mntr-errs.md)
       + [Poorten en toepassingen bewaken](home/c-inst-svr/c-gen-syst-admin/t-mntr-prts-apps.md)
-   + Bijwerken en verwijderen {#upgrade-uninstall}
+   + {#upgrade-uninstall} upgraden en verwijderen
       + [Adobe-software upgraden en verwijderen](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-uninst-sftwr.md)
-      + Insight Server upgraden {#upgrade-insight-server}
+      + Bezig met bijwerken van Insight Server {#upgrade-insight-server}
          + [Insight Server upgraden](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
          + [Upgrade van DWB-server: 6.2 t/m 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
          + [Upgrade van DWB-server: 6.1 t/m 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
@@ -786,7 +786,7 @@ ht-degree: 0%
    + [Hoe werkt het gegevensverzamelingsproces?](home/c-snsr-ovrvw/c-data-col-proc.md)
    + [Wat zijn basiscomponenten](home/c-snsr-ovrvw/c-basic-comp.md)
    + [Hoe identificeert Sensor bezoekers en sessies?](home/c-snsr-ovrvw/c-id-vstrs-sess.md)
-   + Installeren {#install}
+   + {#install} installeren
       + [Sensor installeren](home/c-snsr-ovrvw/c-inst-snsr/c-inst-snsr.md)
       + [Microsoft IIS op Windows Server 2000 of hoger](home/c-snsr-ovrvw/c-inst-snsr/c-install-iis.md)
       + [Lotus Sametime op Windows Server 2000 of hoger](home/c-snsr-ovrvw/c-inst-snsr/c-install-lotus-win.md)
@@ -803,7 +803,7 @@ ht-degree: 0%
       + [Netscape Enterprise op Linux of Solaris](home/c-snsr-ovrvw/c-inst-snsr/c-install-netscape.md)
       + [Sun Java Server op Windows Server 2000 of hoger](home/c-snsr-ovrvw/c-inst-snsr/c-install-java-win.md)
       + [WebSphere op AIX](home/c-snsr-ovrvw/c-inst-snsr/c-wbsr.md)
-   + Beheer {#admin-sensor}
+   + Beheren {#admin-sensor}
       + [Beheerssensor](home/c-snsr-ovrvw/admin-sensor/admin-sensor.md)
       + [Het bestand Sensor txlogd.conf bewerken](home/c-snsr-ovrvw/admin-sensor/t-edit-snsr-file.md)
       + [Het pad naar de Java-bibliotheek wijzigen](home/c-snsr-ovrvw/admin-sensor/modify-java-lib-path.md)
@@ -817,7 +817,7 @@ ht-degree: 0%
          + [Begrijpen wat de oorzaken zijn](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-unstd-cause.md)
          + [Het probleem oplossen](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-slv-pblm.md)
          + [Werken met meerdere instanties van een webserver](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-mltpl-inst-web-svr.md)
-   + Sensor Txlogd.conf, bestand {#sensor-txlogd-params}
+   + Sensor Txlogd.conf-bestand {#sensor-txlogd-params}
       + [Sensor Txlogd.conf, bestandsparameters](home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md)
       + [Vereiste parameters](home/c-snsr-ovrvw/sensor-txlogd-params/c-rqrd-prmtrs.md)
       + [Optionele parameters](home/c-snsr-ovrvw/sensor-txlogd-params/c-opt-pmtrs.md)
@@ -825,12 +825,12 @@ ht-degree: 0%
       + [Gebeurtenisgegevensrecordvelden](home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-evnt-data-rcd-flds.md)
       + [Gegevensrecordvelden basislijngebeurtenis](home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-bsln-evnt-data.md)
       + [Uitbreidbare velden](home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md)
-   + Voorbeeldconfiguratiebestanden {#sample-configs}
+   + Voorbeelden van configuratiebestanden {#sample-configs}
       + [Voorbeeldconfiguratiebestanden](home/c-snsr-ovrvw/sensor-sample-configs/sensor-sample-configs.md)
       + [Voorbeelden van Txlogd.conf-bestanden](home/c-snsr-ovrvw/sensor-sample-configs/txlogd-conf-samples.md)
    + [Sensor Transmitter Command-Line Opties](home/c-snsr-ovrvw/sensor-transmitter-options.md)
    + [UNIX-bestandsmachtigingen instellen](home/c-snsr-ovrvw/sensor-unix-permissions.md)
-+ Het controleprofiel installeren {#monitor}
++ Bewakingsprofiel {#monitor} installeren
    + [Het controleprofiel installeren](home/monitoring-installation/monitoring-installation.md)
    + Werkruimten {#workspace}
       + [Werkruimten voor het bewaken van de Data Workbench Server](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
@@ -863,7 +863,7 @@ ht-degree: 0%
          + [RTF](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-rich-text.md)
       + [Visualisaties maken](home/c-adobe-data-workbench-dashboard/c-visualizations/t-creating-visualizations.md)
       + [Visualisaties configureren](home/c-adobe-data-workbench-dashboard/c-visualizations/c-configuring-visualizations.md)
-      + Visualisaties bewerken {#manipulating-visualizations}
+      + Bezig met bewerken van visualisaties {#manipulating-visualizations}
          + [Visualisaties bewerken](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-manipulating-visualizations.md)
          + [Visualisaties vergrendelen en ontgrendelen](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-locking-and-unlocking-visualizations.md)
          + [Invouwen en uitvouwen van visualisaties](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-collapsing-and-expanding-visualizations.md)
@@ -874,10 +874,10 @@ ht-degree: 0%
          + [Bewegende visualisatie](home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
    + Dashboards {#dashboards}
       + [Dashboards](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboards.md)
-      + Dashboards weergeven {#viewing-dashboards}
+      + Het bekijken dashboards {#viewing-dashboards}
          + [Dashboards openen en weergeven](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-opening-and-viewing-dashboards.md)
          + [Menu Snelle toegang](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-quick-access-menu.md)
-         + Dashboardbrowser] {#dashboard-browser}
+         + Dashboard Browser] {#dashboard-browser}
             + [Dashboardbrowser](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser.md)
             + [Weergaven dashboardbrowser](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser-views.md)
             + [Zoeken in de dashboardbrowser](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-searching-within-the-dashboard-browser.md)
@@ -889,7 +889,7 @@ ht-degree: 0%
       + [Een kopie van een dashboard maken](home/c-adobe-data-workbench-dashboard/c-dashboards/t-making-a-copy-of-a-dashboard.md)
       + [Overige dashboardfuncties](home/c-adobe-data-workbench-dashboard/c-dashboards/c-other-dashboard-functions.md)
       + [Besturingselementen voor delen en toegang van dashboard](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboard-sharing-and-access-controls.md)
-   + Selecteren {#select}
+   + {#select} selecteren
       + [Selecties maken in het dashboard](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-making-selections-within-the-dashboard.md)
       + [Vergrendelde selecties](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-locked-selections.md)
       + [Selecties toepassen](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/t-applying-selections.md)
@@ -939,13 +939,13 @@ ht-degree: 0%
       + [Een gebruikersaccount bewerken](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-editing-a-user-account.md)
       + [Gebruikerswachtwoord opnieuw instellen](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-resetting-a-users-password.md)
       + [Een gebruikersaccount verwijderen](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-removing-a-user-account.md)
-   + User Groups {#user-groups}
+   + Gebruikersgroepen {#user-groups}
       + [Gebruikersgroepen beheren](home/c-preparing-for-dashboard-installation/c-managing-user-groups/c-managing-user-groups.md)
       + [Gebruikersgroepen maken](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-creating-a-user-group.md)
       + [Een gebruikersgroep bewerken](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-editing-a-user-group.md)
       + [Een gebruikersgroep verwijderen](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-removing-a-user-group.md)
    + [Systeemlogboeken](home/c-preparing-for-dashboard-installation/c-system-logs.md)
-+ Data Workbench implementeren {#implement}
++ Data Workbench {#implement} implementeren
    + [Adobe-Data Workbench implementeren](home/dwb-implement-overview/dwb-implement-overview.md)
    + [Detectie en vereisten van Data Workbench](home/dwb-implement-overview/dwb-implement-discovery.md)
    + [Installatie en provisioning van Data Workbench](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
