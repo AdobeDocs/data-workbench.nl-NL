@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Help bij Data Workbench
 user-guide-description: Meer informatie over de mogelijkheden van Data Workbench met meerdere kanalen. Omvat de Cliënt van de Data Workbench, Installatie, gidsen van de Configuratie van de Dataset, en meer.
 translation-type: tm+mt
-source-git-commit: cfa391f4238bac43fdf2539baa8e038a79110200
+source-git-commit: 3fc9ad4411438afe50c0e20d807234176480e2b3
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3493'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 # Help bij Data Workbench {#using}
 
 + [Help bij Data Workbench](home/home.md)
-+ Releaseopmerkingen {#release-notes}
++ Aanvullende informatie {#release-notes}
    + [Overzicht van opmerkingen bij de release](home/c-release-notes-insight/release-notes.md)
    + [Data Workbench 6.74 Opmerkingen bij de release](home/c-release-notes-insight/dwb-6-74-release-notes.md)
    + [Opmerkingen bij de release van Data Workbench 6.73](home/c-release-notes-insight/dwb-6-73-release-notes.md)
@@ -53,7 +53,6 @@ ht-degree: 0%
       + [Overzicht van Data Workbench bijwerken](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [Upgrade van 6.4 naar 6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [Upgrade van 6.3 naar 6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
-      + [Upgrade van DWB-server: 6.2 t/m 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
       + [Upgrade van DWB-server: 6.1 t/m 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
       + [Data Workbench 6.0 tot 6.1-upgrade](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
       + [Data Workbench 5.5 tot 6.1-upgrade](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
@@ -269,7 +268,6 @@ ht-degree: 0%
       + Werken met vectorlagen {#vector-layers}
          + [Werken met vectorlagen](home/c-get-started/c-im-layers/c-vctr-layers/c-vctr-layers.md)
          + [Vectorlagen definiëren die verwijzen naar vectorbestanden](home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md)
-         + [Vectorlagen die verwijzen naar via tabs gescheiden waardebestanden](home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md)
          + [Nieuwe vectorlaag beschikbaar maken](home/c-get-started/c-im-layers/c-vctr-layers/t-make-new-vctr-layer-av.md)
    + Administratieve interfaces {#admin-ui}
       + [Administratieve interfaces](home/c-get-started/c-admin-intrf/c-admin-intrf.md)
@@ -334,7 +332,6 @@ ht-degree: 0%
          + [De tabvolgorde wijzigen](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-chg-ordr-tabs.md)
          + [Submappen weergeven als subtabbladen](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-sbfldrs-sbtabs.md)
          + [Een tab verbergen of verwijderen](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-hide-rmv-tabs.md)
-      + [De Invoermethode-editor installeren](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
       + [Gelokaliseerde talen instellen](home/c-get-started/c-intf-anlys-ftrs/c-localized-ime/c-localized-ime-config.md)
       + Een vergrendelde werkruimte configureren {#config-locked-wkspc}
          + [Een vergrendelde werkruimte configureren](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md)
@@ -380,7 +377,6 @@ ht-degree: 0%
          + [Nieuwe voorwaarde bezoeker](home/c-dataset-const-proc/c-trans-config-file/c-spec-trans-param/c-new-vstr-con.md)
          + [Tijdzones](home/c-dataset-const-proc/c-trans-config-file/c-spec-trans-param/c-time-zones.md)
       + [Overwegingen bij het configuratiebestand van de transformatie](home/c-dataset-const-proc/c-trans-config-file/c-con-tran-config-file.md)
-      + [DeviceAtlas-distributie](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
    + Gegevensset bevat bestanden {#dataset-include-files}
       + [Info Gegevensset Include-bestanden](home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)
       + [Werken met include-bestanden voor gegevensset](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/c-work-dataset-inc-files.md)
@@ -468,7 +464,6 @@ ht-degree: 0%
       + Dataset Configuration Interfaces {#dataset-config-ui}
          + [Werken met de interfaces van de Configuratie van Dataset](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-config-int.md)
          + [Dataset-schema](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md)
-         + [Afhankelijkheidstoewijzingen](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dep-maps.md)
          + [Veldviewers](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-field-viewers.md)
       + Dataset-componenten verbergen {#hide-dataset-comp}
          + [Dataset-componenten verbergen](home/c-dataset-const-proc/c-dataset-config-tools/c-hide-dataset-comp/c-hide-dataset-comp.md)
@@ -765,12 +760,6 @@ ht-degree: 0%
       + Bezig met bijwerken van Insight Server {#upgrade-insight-server}
          + [Insight Server upgraden](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
          + [Upgrade van DWB-server: 6.2 t/m 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
-         + [Upgrade van DWB-server: 6.1 t/m 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
-         + Data Workbench 6.0 tot 6.1-upgrade {#upgrade-6-0-to-6-1}
-            + [Data Workbench 6.0 tot 6.1-upgrade](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
-            + [De Invoermethode-editor installeren](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
-            + [DeviceAtlas-distributie](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
-         + [Data Workbench 5.5 tot 6.1-upgrade](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
          + [Upgrade van DWB-server: 5,4 t/m 5,5](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md)
          + [Transformatie bijwerken](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-trfm.md)
          + [Repeater bijwerken](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md)
