@@ -1,16 +1,15 @@
 ---
 description: Informatie over recordvelden voor basislijngebeurtenissen, zoals vastgelegd door de sensor.
-solution: Analytics
 title: Gegevensrecordvelden basislijngebeurtenis
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
+exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
 
 ---
-
 
 # Gegevensrecordvelden basislijngebeurtenis{#baseline-event-data-record-fields}
 
@@ -78,9 +77,9 @@ Informatie over recordvelden voor basislijngebeurtenissen, zoals vastgelegd door
   </tr> 
   <tr> 
    <td colname="col1"> x-trackingid </td> 
-   <td colname="col2"> <p>De hexadecimale 64-bits waarde van de unieke browser-id die wordt gevonden in een permanente cookie, zoals ingesteld door een <span class="wintitle"> Sensor </span> en verstrekt door de client met een aanvraag aan een server. </p> <p>Voorbeeld: 42FDF66DE610CF36 </p> </td> 
+   <td colname="col2"> <p>De hexadecimale 64-bits waarde van de unieke browser-id die wordt gevonden in een permanente cookie, zoals ingesteld door een <span class="wintitle">-sensor </span> en verstrekt door de client met een aanvraag aan een server. </p> <p>Voorbeeld: 42FDF66DE610CF36 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-De code [!DNL data workbench server] kan een aantal variabelen afgeleid zijn van de recordvelden voor basislijngebeurtenissen. Voor meer informatie, zie de Gids *van de Configuratie van de* Dataset.
+De [!DNL data workbench server] kan een aantal variabelen van de gebieden van het de verslagverslag van de basislijngebeurtenis afleiden. Voor meer informatie, zie *de Gids van de Configuratie van de Dataset*.
