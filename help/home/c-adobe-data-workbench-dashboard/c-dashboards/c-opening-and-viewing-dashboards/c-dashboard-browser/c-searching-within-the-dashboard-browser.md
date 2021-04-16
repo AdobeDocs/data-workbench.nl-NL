@@ -1,31 +1,32 @@
 ---
-description: Browser van het Dashboard staat u ook toe om onderzoeken uit te voeren om bestaande dashboards te vinden.
-solution: Analytics
-title: Zoeken in de Dashboard-browser
-topic: Data workbench
+description: Met de dashboardbrowser kunt u ook zoeken naar bestaande dashboards.
+title: Zoeken in de dashboardbrowser
 uuid: b11b024e-3876-48f2-85e2-a4af047e4985
+exl-id: f6dd923c-f98b-4ca0-a109-88b3988b9c95
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '224'
+ht-degree: 0%
 
 ---
 
+# Zoeken in de dashboardbrowser{#searching-within-the-dashboard-browser}
 
-# Zoeken in de Dashboard-browser{#searching-within-the-dashboard-browser}
+Met de dashboardbrowser kunt u ook zoeken naar bestaande dashboards.
 
-Browser van het Dashboard staat u ook toe om onderzoeken uit te voeren om bestaande dashboards te vinden.
-
-Om een onderzoek uit te voeren, gebruik de onderzoeksdoos in de toolbar van Browser van het Dashboard. Uw onderzoeksresultaten zullen in Browser Dashboard verschijnen aangezien u typt. U kunt een onderzoek op elk ogenblik ontruimen door de onderzoekstekst te schrappen of het **[!UICONTROL X]** pictogram in het onderzoeksvakje te klikken.
+Als u een zoekopdracht wilt uitvoeren, gebruikt u het zoekvak op de werkbalk van de Dashboard-browser. Terwijl u typt, worden de zoekresultaten weergegeven in de dashboardbrowser. U kunt een zoekopdracht op elk gewenst moment wissen door de zoektekst te verwijderen of op het pictogram **[!UICONTROL X]** in het zoekvak te klikken.
 
 ![](assets/search.png)
 
-U kunt uw resultaten ook sorteren gebruikend de soortfuncties in elke kolomkopbal. Het klikken op een kolomkopbal zal het sorteren op die kolom van een knevel voorzien. U kunt tot de sorterende opties ook toegang hebben gebruikend het drop-down menu op elke kolomkopbal.
+U kunt de resultaten ook sorteren met de sorteerfuncties in elke kolomkop. Als u op een kolomkop klikt, wordt het sorteren van die kolom in- en uitgeschakeld. U kunt de sorteeropties ook gebruiken in het keuzemenu in elke kolomkop.
 
 ![](assets/sorting.png)
 
-Dit **[!UICONTROL Columns]** menu staat u ook toe om zichtbare kolommen in de dashboardlijstmening te wijzigen. Hier kunt u het zicht van kolommen van een knevel voorzien door de kolom(men) van keus te selecteren of te schrappen.
+Met dit menu kunt u ook zichtbare kolommen in de lijstweergave van het dashboard wijzigen. **[!UICONTROL Columns]** Hier kunt u de zichtbaarheid van kolommen in- of uitschakelen door de gewenste kolom(men) te selecteren of uit te schakelen.
 
 ![](assets/sorting_columns.png)
 
-## Details-veld {#section-e1e5a5a0f9cc4eb89b0b94764587ae9c}
+## Deelvenster Details {#section-e1e5a5a0f9cc4eb89b0b94764587ae9c}
 
-Het paneel van de Details van het Dashboard toont de gedetailleerde informatie van een dashboard samen met een duimnagelversie van het dashboard. De informatie in het paneel bevat de naam van het dashboard, een korte beschrijving, de eigenaar en de datum van oprichting, de laatste datum waarop het werd gewijzigd en het profiel of de profielen die werden gebruikt om het dashboard te maken. Het zicht van het dashboard (of het privé of gedeeld is) is ook beschikbaar in dit paneel.
+In het deelvenster Dashboard Details wordt gedetailleerde informatie over een dashboard weergegeven, samen met een miniatuurversie van het dashboard. De informatie in het deelvenster bevat de naam van het dashboard, een korte beschrijving, de eigenaar en de aanmaakdatum, de laatste datum waarop het is gewijzigd en de profielen die zijn gebruikt om het dashboard te maken. De zichtbaarheid van het dashboard (privé of gedeeld) is ook beschikbaar in dit deelvenster.
