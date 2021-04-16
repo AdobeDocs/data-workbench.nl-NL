@@ -1,24 +1,24 @@
 ---
-description: U moet Sensor op elke Webserver installeren en in werking stellen die de inhoud voor uw plaats dient om alle verzoeken te verzamelen die door die servers worden gezien.
-solution: Analytics
+description: U moet Sensor installeren en uitvoeren op elke webserver die de inhoud voor uw site levert om alle aanvragen te verzamelen die door deze servers worden bekeken.
 title: Hoe verkrijg ik deze Data_
-topic: Data workbench
 uuid: c0d8b01e-a135-4ef7-8159-811766929f62
+exl-id: 1c886f60-eae9-48c2-b641-396c622035d4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
 
-
 # Hoe verkrijg ik deze Data_{#how-do-i-acquire-this-data}
 
-U moet Sensor op elke Webserver installeren en in werking stellen die de inhoud voor uw plaats dient om alle verzoeken te verzamelen die door die servers worden gezien.
+U moet Sensor installeren en uitvoeren op elke webserver die de inhoud voor uw site levert om alle aanvragen te verzamelen die door deze servers worden bekeken.
 
-Deze verzoeken vormen 90% of meer van de verzoeken die aan uw plaats worden gedaan en 90% of meer van de gegevens die voor de volledige analyse van het verkeer van uw plaats nodig zijn. [!DNL Page Tags] zou dan moeten worden gebruikt om de resterende 10% of minder verkeersgegevens te verzamelen die niet aan uw Webservers bekend zijn. Het volgende, echter, zijn geldige configuraties voor de inzameling van de gegevens van het Webverzoek van uw plaats, in volgorde van voorkeur, die op onze operationele ervaring wordt gebaseerd:
+Deze verzoeken betreffen 90% of meer van de aanvragen die op uw site zijn ingediend en 90% of meer van de gegevens die nodig zijn voor de volledige analyse van het verkeer van uw site. [!DNL Page Tags] moet vervolgens worden gebruikt om de resterende 10% of minder van de verkeersgegevens te verzamelen die niet bekend zijn bij uw webservers. De volgende, echter, zijn geldige configuraties voor de inzameling van de gegevens van het Webverzoek van uw plaats, in volgorde van voorkeur, die op onze operationele ervaring wordt gebaseerd:
 
-1. [!DNL Sensor] is geïnstalleerd op elke Webserver die u controleert en die uw plaats steunt. De inhoud van derdeplaatsen, inhoud die van geheim voorgeheugen wordt gediend, en bepaalde types van dynamische inhoud zou moeten worden geëtiketteerd, en dergelijke paginarabels zouden de gegevens moeten verzenden die zij aan een Webserver bij uw plaats verzamelen die loopt [!DNL Sensor]. U kunt een extra Webserver toevoegen als het niveau van het verkeer van het de verzoekverkeer van de paginarag dergelijk rechtvaardigt, of in speciale gevallen, een Webserver wijdt om deze verzoeken van de paginarag te verzamelen.
-1. [!DNL Sensor] is geïnstalleerd op twee Webservers, die ook als servers van de gegevensinzameling in deze gids worden bedoeld, bij uw plaats die aan het verzamelen van de gegevens van het de verzoekverzoek van de paginarag van geëtiketteerde pagina&#39;s gewijd zijn. Alle inhoud op uw plaats wordt geëtiketteerd en alle paginarabels worden geleid aan de twee servers van de gegevensinzameling.
-1. [!DNL Sensor’s] de diensten van de gegevensinzameling worden verleend door een outsourcer die de servers van de gegevensinzameling in werking stelt om elk van uw gegevens van het Webverzoek te verzamelen. In dit geval, wordt al inhoud op uw plaats geëtiketteerd en de paginamarkeringen verzenden hun gegevens naar de outsourced servers van de gegevensinzameling.
+1. [!DNL Sensor] is geïnstalleerd op elke webserver die u beheert en die uw site ondersteunt. Inhoud van externe sites, inhoud die wordt aangeboden vanuit cache en bepaalde typen dynamische inhoud moeten worden gecodeerd. Dergelijke paginatags moeten de gegevens die ze verzamelen verzenden naar een webserver op uw locatie waarop [!DNL Sensor] wordt uitgevoerd. U kunt een extra webserver toevoegen als het niveau van het aanvraagverkeer voor paginatags dit rechtvaardigt, of in speciale gevallen een webserver toewijzen om deze aanvragen voor paginatags te verzamelen.
+1. [!DNL Sensor] wordt geïnstalleerd op twee webservers, ook wel gegevensverzamelingsservers genoemd in deze handleiding, op uw locatie die zijn bestemd voor het verzamelen van aanvraaggegevens voor paginatags van gecodeerde pagina&#39;s. Alle inhoud op uw site is gelabeld en alle paginatags worden naar de twee servers voor gegevensverzameling geleid.
+1. [!DNL Sensor’s] de diensten van de gegevensinzameling worden verleend door een outsourcer die de servers van de gegevensinzameling in werking stelt om al uw gegevens van het Webverzoek te verzamelen. In dit geval wordt alle inhoud op uw site gelabeld en verzenden de paginatags de gegevens naar de servers voor outsourced gegevensverzameling.
 
-   Voor meer informatie over [!DNL Sensor], zie de *Gids[!DNL Sensor]van de Werkbank van* Gegevens.
-
+   Voor meer informatie over [!DNL Sensor], zie *Data Workbench [!DNL Sensor] Gids*.
