@@ -1,43 +1,43 @@
 ---
-description: De analytische rapporten worden verstrekt voor gebruikers van het profiel van Adobe SC. Deze gegevenswerkbank rapporteert-paginaMeningen, Verkeer, Unieke Bezoekers, Verwijzend Domein en ander significant rapport type-zijn standaardrapporten in de Analyse van Adobe.
-solution: Analytics
+description: Voor gebruikers van het Adobe SC-profiel worden analytische rapporten weergegeven. Deze gegevens werkbank rapporten-de meningen van de Pagina, Verkeer, Unieke Bezoekers, Verwijzend Domein en ander significant rapport types-zijn standaardrapporten in Adobe Analytics.
 title: Analyserapporten
-topic: Data workbench
 uuid: 5fc26922-0687-464f-8c5d-d72d2a6078f0
+exl-id: 03bbf4a0-767c-4258-9512-2887f346bf0e
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 9%
 
 ---
 
-
 # Analyserapporten{#analytics-reports}
 
-De analytische rapporten worden verstrekt voor gebruikers van het profiel van Adobe SC. Deze gegevenswerkbank rapporteert-paginaMeningen, Verkeer, Unieke Bezoekers, Verwijzend Domein en ander significant rapport type-zijn standaardrapporten in de Analyse van Adobe.
+Voor gebruikers van het Adobe SC-profiel worden analytische rapporten weergegeven. Deze gegevens werkbank rapporten-de meningen van de Pagina, Verkeer, Unieke Bezoekers, Verwijzend Domein en ander significant rapport types-zijn standaardrapporten in Adobe Analytics.
 
-Voor de gebruikers van de Analyse van Adobe, staan deze malplaatjes gebruikers toe die het profiel van Adobe gebruiken SC (dat het de gegevensvoer van SC/van het Inzicht) gebruiken om rapporten te bekijken die van de Werkbank van Gegevens worden geproduceerd gebruikend malplaatjes gelijkend op het vermogen van de Rapporten van de [Marketing van Adobe &amp; van de Analyse](http://www.adobe.com/solutions/digital-analytics/marketing-reports-analytics.html?promoid=KAUCM) . De gebruikers kunnen tot deze pre-gevormde rapporten toegang hebben gebruikend de malplaatjes van de gegevenswerkbank.
+Voor gebruikers van Adobe Analytics, staan deze malplaatjes gebruikers toe die het profiel van Adobe SC gebruiken (dat SC/Insight gegevensvoer gebruikt) om rapporten te bekijken die van Data Workbench worden geproduceerd gebruikend malplaatjes gelijkend op de Adobe [Rapporten &amp; Analytics ](http://www.adobe.com/solutions/digital-analytics/marketing-reports-analytics.html?promoid=KAUCM) capaciteit. Gebruikers kunnen deze vooraf geconfigureerde rapporten openen met behulp van gegevenswerkbench-sjablonen.
 
 >[!NOTE]
 >
->Dit menu zal slechts voor die gebruikers verschijnen die het profiel van Adobe SC hebben uitgevoerd.
+>Dit menu wordt alleen weergegeven voor gebruikers die het Adobe SC-profiel hebben geïmplementeerd.
 
-**Om Rapporten te openen**
+**Rapporten openen**
 
-Voor de werktop, klik en selecteer **[!UICONTROL New]** aan mening en open rapportmalplaatjes met de rechtermuisknop aan.
+Klik op de werkbalk met de rechtermuisknop en selecteer **[!UICONTROL New]** om rapportsjablonen weer te geven en te openen.
 
 ![](assets/template_reports.png)
 
-Het volgende is een lijst van Analytische rapporten:
+Hieronder volgt een lijst met analytische rapporten:
 
 | Rapporten | Beschrijving |
 |---|---|
-| [Paginaweergaven](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-page-views.html) | Een trending rapport dat het aantal tijden toont uw websitepagina&#39;s werden bekeken voor de geselecteerde tijdspanne (uur, dag, week, maand, kwartaal, of jaar). Dit rapport staat u toe om paginameningen voor elke pagina op uw plaats, evenals een totaal van paginameningen voor uw volledige plaats te volgen. |
-| [Belangrijkste statistieken](https://docs.adobe.com/help/en/analytics/components/variables/dimensions-reports/reports-key-metrics.html) | Het belangrijkste Rapport van Metriek laat u metriek vergelijken om te zien of zij samen trend. Bijvoorbeeld, aangezien uw paginameningen stijgen, stijgt uw bezoekerstelling? |
-| [Unieke bezoekers](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-unique-visitors-v15-dsc.html) | Toont u het aantal unieke bezoekers die tot uw plaats toegang hadden. Elke bezoeker wordt één keer geteld, ongeacht hoeveel keer de persoon uw website bezoekt. |
-| [Pagina&#39;s](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-pages.html) | Hiermee worden de pagina&#39;s op uw site gewenteld op basis van de pagina&#39;s die het meeste verkeer ontvangen. Als uw bedrijfsvraag kwantitatieve gegevens voor pagina&#39;s behandelt, kunt u dit rapport gebruiken om die vraag te beantwoorden door de juiste metriek toe te voegen. |
-| [Verkeer](https://docs.adobe.com/help/en/analytics/components/variables/dimensions-reports/reports-traffic.html) | De rapporten van het verkeer geven u diepgaand inzicht in hoe de bezoekers met uw website in wisselwerking staan. |
-| [Omzetting](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-conversion.html) | Verstrek uitvoerige, nauwkeurige, en gedetailleerde analyse van klantenactiviteit. De metriek zoals campagnebeheer, verkoopcyclus, klantenreserve, en klantenomzetting laten u e-handelstransacties, bronnen van verkoop, reclamedoeltreffendheid, klantenloyaliteit, en meer meten. |
-| [Campagne](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-campaigns.html) | De informatie van vertoningen over de doeltreffendheid van uw reclameinspanningen. U kunt zien welke soorten reclame-inspanningen u het meeste verkeer geven en welke van uw werknemers verantwoordelijk is voor het drijven van die inspanningen. |
-| [Product](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-products.html) | Identificeert hoe de individuele producten en de groepen producten (categorieën) tot uw diverse omzettingsmetriek, zoals Inkomsten of Controles bijdragen. |
-| [Refererend Domein](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-referring-domains.html) | Toont de domeinen die de klanten doorverwezen die het meest beïnvloedden de succesmetriek van uw plaats. De verwijzingen vallen in twee hoofdcategorieën: Domeinen en URL&#39;s. De domeinen verwijzen naar de domeinnaam, en verschijnen als basisdomein zonder het vraagkoord of subdirectories in bijlage. URLs omvat de naam van het basisdomein, evenals om het even welke vraagkoorden of subdirectories. |
-| [Zoektrefwoord](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-search-keywords.html) | Rapporten die een uitsplitsing van onderzoekssleutelwoorden tonen. |
-
+| [Paginaweergaven](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-page-views.html) | Een uitgelijnd rapport waarin het aantal keer wordt weergegeven dat uw websitepagina&#39;s gedurende de geselecteerde tijdsperiode (uur, dag, week, maand, kwartaal of jaar) zijn weergegeven. Met dit rapport kunt u paginaweergaven bijhouden voor elke pagina op uw site en een overzicht van paginaweergaven voor uw gehele site. |
+| [Belangrijkste cijfers](https://docs.adobe.com/help/en/analytics/components/variables/dimensions-reports/reports-key-metrics.html) | Met het rapport Belangrijkste metriek kunt u metingen vergelijken om te zien of ze samen evolueren. Naarmate uw paginaweergaven toenemen, neemt het aantal bezoekers bijvoorbeeld toe? |
+| [Unieke bezoekers](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-unique-visitors-v15-dsc.html) | Hier ziet u het aantal unieke bezoekers dat uw site heeft geopend. Elke bezoeker wordt één keer geteld, ongeacht hoe vaak de persoon uw website bezoekt. |
+| [Pagina&#39;s](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-pages.html) | Voert de pagina&#39;s op uw plaats opnieuw samen die op de pagina&#39;s wordt gebaseerd die het meeste verkeer ontvangen. Als uw bedrijfsvraag kwantitatieve gegevens voor pagina&#39;s behandelt, kunt u dit rapport gebruiken om die vraag te beantwoorden door de juiste metriek toe te voegen. |
+| [Verkeer](https://docs.adobe.com/help/en/analytics/components/variables/dimensions-reports/reports-traffic.html) | Verkeersrapporten geven u diepgaand inzicht in hoe bezoekers met uw website werken. |
+| [Conversie](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-conversion.html) | Verstrek uitvoerige, nauwkeurige, en gedetailleerde analyse van klantenactiviteit. Met meetgegevens zoals campagnebeheer, verkoopcyclus, uitval van klanten en omzetting van klanten kunt u e-commercetransacties, verkoopbronnen, reclamesnelheid, klantenloyaliteit en nog veel meer meten. |
+| [Campaign](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-campaigns.html) | Hier wordt informatie weergegeven over de doeltreffendheid van uw advertentieactiviteiten. U kunt zien welke soorten reclame-inspanningen u het meeste verkeer geven en welke van uw werknemers verantwoordelijk is voor het aansturen van deze inspanningen. |
+| [Product](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-products.html) | Bepaalt hoe afzonderlijke producten en productgroepen (categorieën) bijdragen aan de diverse conversiecijfers zoals omzet of aantal betalingen. |
+| [Referentiedomein](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-referring-domains.html) | Geeft de domeinen weer die verwijzen naar de klanten die de succesmaatstaven van uw site het meest beïnvloeden. Referenties vallen in twee hoofdcategorieën: Domeinen en URL&#39;s. Domeinen verwijzen naar de domeinnaam en worden weergegeven als het basisdomein zonder de queryreeks of submappen. URL&#39;s bevatten de basisdomeinnaam en eventuele querytekenreeksen of submappen. |
+| [Trefwoord zoeken](https://docs.adobe.com/content/help/en/analytics/components/variables/dimensions-reports/reports-search-keywords.html) | Rapporten die een uitsplitsing van zoektrefwoorden weergeven. |
