@@ -1,19 +1,20 @@
 ---
-description: ongeldig
-solution: Analytics
+description: Systeemlogboeken
 title: Systeemlogboeken
-topic: Data workbench
 uuid: 8413702b-e3a3-465a-990c-10e4b81a7294
+exl-id: 6125df64-c831-4481-82a2-61a8fb9956a6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '53'
+ht-degree: 0%
 
 ---
 
+# Systeemlogbestanden{#system-logs}
 
-# Systeemlogboeken{#system-logs}
+Logbestanden van fouten en audits vindt u in de map **[!UICONTROL Logs]** in het installatiepad. Deze logboeken zijn waardevol voor controle van het dashboardsysteem en het zuiveren van om het even welke problemen u kunt ontmoeten. De logbestanden worden opgeslagen in bestanden met de huidige datum van de server:
 
-Fout- en auditlogboeken kunnen worden gevonden in de **[!UICONTROL Logs]** directory binnen het installatiepad. Deze logboeken zijn waardevol voor het controleren van het dashboardsysteem en het zuiveren van om het even welke problemen u kunt ontmoeten. De logboeken worden opgeslagen in dossiers gebruikend de huidige datum van de server:
+Foutlogboeken: [!DNL thinclientweb-yyyy-mm-dd.log]
 
-Foutenlogboeken: [!DNL thinclientweb-yyyy-mm-dd.log]
-
-Controlelogs: [!DNL thinclientweb-audit-yyyy-mm-dd.log]
+Controlelogboeken: [!DNL thinclientweb-audit-yyyy-mm-dd.log]
