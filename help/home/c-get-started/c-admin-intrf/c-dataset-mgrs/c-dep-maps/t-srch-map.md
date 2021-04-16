@@ -1,22 +1,23 @@
 ---
-description: Stappen aan onderzoek naar componenten die specifieke teksten bevatten.
-solution: Analytics
-title: Zoeken in een map
-topic: Data workbench
+description: Stappen om te zoeken naar componenten die specifieke tekst bevatten.
+title: Zoeken in een kaart
 uuid: 87fa8c69-f1f1-4977-b60c-050ddaacaab2
+exl-id: fb04aedb-aa31-45d0-9225-66d8fd2f7810
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '61'
+ht-degree: 0%
 
 ---
 
+# Zoeken in een kaart{#search-within-a-map}
 
-# Zoeken in een map{#search-within-a-map}
+Stappen om te zoeken naar componenten die specifieke tekst bevatten.
 
-Stappen aan onderzoek naar componenten die specifieke teksten bevatten.
+1. Klik met de rechtermuisknop in de afhankelijkheidskaart en klik op **[!UICONTROL Search]**.
+1. Typ in het tekstvak de tekst waarnaar u wilt zoeken.
 
-1. Klik binnen de gebiedsdeelkaart met de rechtermuisknop aan en klik **[!UICONTROL Search]**.
-1. In het tekstvakje, typ de tekst waarvoor aan onderzoek.
+   ![Stapinfo](assets/vis_DependencyMap_Search.png)
 
-   ![Stapgegevens](assets/vis_DependencyMap_Search.png)
-
-De kaart benadrukt de knopen voor de componenten de waarvan namen of parametermontages de onderzoekstekst bevatten.
+De kaart markeert de knopen voor de componenten waarvan de namen of parametermontages de onderzoekstekst bevatten.
