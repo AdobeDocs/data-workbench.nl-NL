@@ -1,40 +1,41 @@
 ---
-description: Stappen om gegevenswerkbankGeography te desinstalleren.
-solution: Analytics
-title: Geografie van gegevenswerkbank verwijderen
-topic: Data workbench
+description: Stappen om data workbenchGeography te verwijderen.
+title: Data Workbench Geography verwijderen
 uuid: 038b2dfb-4db2-42c6-85c3-bc5d776e7736
+exl-id: e3898423-3b28-4786-834a-1d1ff9deb7c6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 0%
 
 ---
 
+# Data Workbench Geography{#uninstalling-data-workbench-geography} verwijderen
 
-# Geografie van gegevenswerkbank verwijderen{#uninstalling-data-workbench-geography}
-
-Stappen om gegevenswerkbankGeography te desinstalleren.
+Stappen om data workbenchGeography te verwijderen.
 
 >[!NOTE]
 >
->Als het profiel waarmee u een gegevenswerkbank gebruikt op een servercluster van de gegevenswerkbank [!DNL Geography] wordt uitgevoerd, desinstalleert u het [!DNL Geography] profiel van de server van de hoofdgegevenswerkbank in het cluster.
+>Als het profiel waarmee u gegevenswerkbank [!DNL Geography] gebruikt, wordt uitgevoerd op een gegevenswerkbankservercluster, verwijdert u het [!DNL Geography]-profiel van de master gegevenswerkbankserver in de cluster.
 
-1. Gebruik de volgende stappen om het [!DNL profile.cfg] dossier voor elk profiel bij te werken waarmee u gegevenswerkbank gebruikte [!DNL Geography].
+1. Gebruik de volgende stappen om het [!DNL profile.cfg] dossier voor elk profiel bij te werken waarmee u gegevenswerkbank [!DNL Geography] gebruikte.
 
-   1. Open de [!DNL Profile Manager].
-   1. Klik het vinkje naast met de rechtermuisknop aan [!DNL profile.cfg] en klik **[!UICONTROL Make Local]**. Een vinkje voor dit dossier verschijnt in de [!DNL User] kolom.
+   1. Open [!DNL Profile Manager].
+   1. Klik met de rechtermuisknop op het vinkje naast [!DNL profile.cfg] en klik **[!UICONTROL Make Local]**. Er wordt een vinkje voor dit bestand weergegeven in de kolom [!DNL User].
 
-   1. Klik het pas gecreëerde vinkje met de rechtermuisknop aan en klik **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. Het [!DNL profile.cfg] venster wordt weergegeven.
+   1. Klik met de rechtermuisknop op het nieuwe vinkje en klik op **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. Het venster [!DNL profile.cfg] verschijnt.
 
-   1. In het [!DNL profile.cfg] venster, schrap de [!DNL Geography] profielingang van de [!DNL Directories] vector.
+   1. Verwijder in het [!DNL profile.cfg]-venster het [!DNL Geography]-profielitem uit de [!DNL Directories]-vector.
 
-   1. Als u een datadienst hebt gebruikt, schrap de [!DNL IP Geo-intelligence] of [!DNL IP Geo-location] profielingang van de [!DNL Directories] vector.
+   1. Als u een gegevensservice hebt gebruikt, verwijdert u de [!DNL IP Geo-intelligence]- of [!DNL IP Geo-location]-profielvermelding uit de [!DNL Directories]-vector.
 
-   1. Klik **[!UICONTROL (modified)]** bij de bovenkant van het venster met de rechtermuisknop aan en klik **[!UICONTROL Save]**.
+   1. Klik met de rechtermuisknop **[!UICONTROL (modified)]** boven in het venster en klik **[!UICONTROL Save]**.
 
-   1. Klik in de [!DNL Profile Manager], rechtsklik op het vinkje voor [!DNL profile.cfg] in de [!DNL User] kolom en klik vervolgens op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
+   1. Klik in [!DNL Profile Manager] met de rechtermuisknop op het vinkje voor [!DNL profile.cfg] in de kolom [!DNL User] en klik vervolgens op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
 
-1. Schrap de omslag van de Geografie van de omslag van Profielen in uw folder van de de serverinstallatie van de gegevenswerkbank.
-1. Als u de datadienst hebt gebruikt, schrap IP Geo-intelligence of IP Geo-location omslag van de omslag van Profielen in uw folder van de de serverinstallatie van de gegevenswerkbank.
-1. Schrap de omslag van de Geografie van de omslag van Raadplegingen in uw folder van de de serverinstallatie van de gegevenswerkbank.
-1. Als u de datadienst hebt gebruikt, schrap IP Geo-intelligentie of IP Geo-Locatieomslag van de omslag van Raadplegingen in uw folder van de de serverinstallatie van de gegevenswerkbank.
-1. Als u nieuwe terreinbeelden creeerde, schrap het [!DNL Terrain Images.cfg] dossier van de omslag van Componenten in uw de installatiefolder van de gegevenswerkbank server.
+1. Verwijder de map Geografie uit de map Profielen in de installatiemap van de gegevenswerkbank.
+1. Als u een datadienst hebt gebruikt, schrap IP Geo-intelligentie of IP Geo-location omslag van de omslag van Profielen in uw de installatiemap van de gegevenswerkbankserver.
+1. Verwijder de map Geography uit de map Lookups in de installatiemap van de gegevenswerkbank.
+1. Als u een datadienst hebt gebruikt, schrap IP Geo-intelligentie of IP Geo-location omslag van de omslag van Lookups in uw folder van de de serverinstallatie van de gegevenswerkbank.
+1. Als u nieuwe terreinbeelden creeerde, schrap het [!DNL Terrain Images.cfg] dossier van de omslag van Componenten in uw folder van de de serverinstallatie van de gegevenswerkbank.
