@@ -1,25 +1,26 @@
 ---
-description: Om de profielen te specificeren die u in het Portaal van het Rapport beschikbaar wilt zijn, moet u het profile.xml- dossier vormen.
-solution: Analytics
-title: Geef het Profiles.xml- Dossier uit
-topic: Data workbench
+description: Om de profielen te specificeren die u in het Portaal van het Rapport beschikbaar wilt zijn, moet u het profiel.xml- dossier vormen.
+title: Het bestand Profiles.xml bewerken
 uuid: 3640552b-bc46-4b4f-8524-e021b0ca2bfc
+exl-id: 7a3900e4-e472-4295-80f7-ce755958bc18
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 0%
 
 ---
 
+# Het bestand Profiles.xml bewerken{#edit-the-profiles-xml-file}
 
-# Geef het Profiles.xml- Dossier uit{#edit-the-profiles-xml-file}
-
-Om de profielen te specificeren die u in het Portaal van het Rapport beschikbaar wilt zijn, moet u het profile.xml- dossier vormen.
+Om de profielen te specificeren die u in het Portaal van het Rapport beschikbaar wilt zijn, moet u het profiel.xml- dossier vormen.
 
 Het [!DNL profiles.xml] dossier verblijft in de omslag u voor output hebt aangewezen. Door gebrek verblijft het in \*PortalName*\PortalFiles\Output folder.
 
-**Om profielnamen aan het profiel.xml- dossier toe te voegen**
+**Profielnamen toevoegen aan het bestand profiles.xml**
 
-1. Voor de machine waar IIS loopt, open het [!DNL profiles.xml] dossier in een tekstredacteur zoals Blocnote.
-1. Voeg een profielelement en een markering voor elk [!DNL Profile] in uw portaal, zoals in het volgende voorbeeld toe:
+1. Op de machine waar IIS loopt, open het [!DNL profiles.xml] dossier in een tekstredacteur zoals Blocnote.
+1. Voeg een profielelement en markering voor elke [!DNL Profile] in uw portaal, zoals in het volgende voorbeeld toe:
 
    ```
    <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
@@ -33,4 +34,4 @@ Het [!DNL profiles.xml] dossier verblijft in de omslag u voor output hebt aangew
    </PROFILES>
    ```
 
-1. Sparen en sluit het dossier.
+1. Sla het bestand op en sluit het.
