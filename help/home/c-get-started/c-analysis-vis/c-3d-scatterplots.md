@@ -1,39 +1,40 @@
 ---
-description: Een 3D Plot van de Drager grafieken de elementen van een gegevensdimensie (zoals Dagen of de Plaats van de Verwijzing) op een driedimensionaal net waar de x, y, en z assen diverse metriek vertegenwoordigen.
-solution: Analytics
-title: 3D-sccatterpercelen
-topic: Data workbench
+description: Een 3D-spreidingsgrafiek geeft de elementen van een gegevensdimensie (zoals dagen of Referral-site) weer op een driedimensionaal raster waar de x-, y- en z-as verschillende metriek vertegenwoordigen.
+title: 3D-verstrooiingspunten
 uuid: 5e23547c-dbb4-490c-94bc-0731deee612e
+exl-id: 18f18cab-a31b-4ffe-89c5-412a5645af2e
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 0%
 
 ---
 
+# 3D-verstrooiingsplokken{#d-scatter-plots}
 
-# 3D-sccatterpercelen{#d-scatter-plots}
+Een 3D-spreidingsgrafiek geeft de elementen van een gegevensdimensie (zoals dagen of Referral-site) weer op een driedimensionaal raster waar de x-, y- en z-as verschillende metriek vertegenwoordigen.
 
-Een 3D Plot van de Drager grafieken de elementen van een gegevensdimensie (zoals Dagen of de Plaats van de Verwijzing) op een driedimensionaal net waar de x, y, en z assen diverse metriek vertegenwoordigen.
+Net als bij [Spreidingspal 2D](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Scatter_Plots) is deze visualisatie handig wanneer u probeert de relatie te begrijpen tussen grote aantallen ongelijksoortige items die verschillende meetwaarden gebruiken.
 
-Net als het [Scatter Plot 2D](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Scatter_Plots), is deze visualisatie handig wanneer je probeert de relatie te begrijpen tussen grote aantallen ongelijksoortige items die verschillende maatstaven gebruiken.
-
-**Om de visualisatie van het 3D Scatter Plot aan te wenden:**
+**U kunt als volgt de visualisatie voor 3D-spreidingspunten gebruiken:**
 
 1. Open een nieuwe werkruimte.
 
-   Na het openen van een nieuwe werkruimte, kunt u moeten klikken **toevoegt** > **tijdelijk opent**.
-1. Klik met de rechtermuisknop en selecteer **Visualisatie** > **3D Scatter Plot**.
+   Nadat u een nieuwe werkruimte hebt geopend, moet u mogelijk **Toevoegen** > **Tijdelijk ontgrendelen** klikken.
+1. Klik met de rechtermuisknop en selecteer **Visualisatie** > **3D-verstrooiingsperceel**.
 
-   Een menulijst **[!UICONTROL Dimensions]** wordt geopend.
+   Er wordt een menu geopend met **[!UICONTROL Dimensions]**.
 
 1. Selecteer een dimensie voor de vraag.
 
-   Het 3D Plot van de Scatter zal de standaardmetriek voor die dimensie openen.
+   Met het 3D-spotje worden de standaardmeetgegevens voor die dimensie geopend.
 
    ![](assets/3D_main.png)
 
-   Het selecteren van het **[!UICONTROL Days]** menu toont het volgende 3D Plot van de Scatter met deze standaardmetriek op de volgende assen: **[!UICONTROL x=Visits]**, **[!UICONTROL y=Retention]**, en **[!UICONTROL z=Visits]**.
+   Als u het menu **[!UICONTROL Days]** selecteert, wordt het volgende 3D-diagram met deze standaardwaarden weergegeven op de volgende assen: **[!UICONTROL x=Visits]**, **[!UICONTROL y=Retention]** en **[!UICONTROL z=Visits]**.
 
-1. De metriek van de verandering. Klik op het metrische etiket in de x, y, of zas met de rechtermuisknop aan en selecteer **[!UICONTROL Change Metric]**. Dan selecteer verschillende metrisch voor de geselecteerde as.
+1. Metriek wijzigen. Klik met de rechtermuisknop op het metrische label in de x-, y- of z-as en selecteer **[!UICONTROL Change Metric]**. Selecteer vervolgens een andere metrische waarde voor de geselecteerde as.
 
    ![](assets/3D_change.png)
 
@@ -43,28 +44,27 @@ Net als het [Scatter Plot 2D](https://docs.adobe.com/content/help/en/data-workbe
    >    
    >    
    >    * Sleep metrisch aan één van de drie asetiketten en laat vallen het om de geselecteerde as in gelaten vallen metrisch te veranderen.
-   >    * Sleep overal metrisch anders op de visualisatie en laat vallen het om de straal metrisch voor die as te veranderen.
-   >    * Sleep een afmeting aan overal op de visualisatie en laat vallen het om de afmeting voor de visualisatie te veranderen.
+   >    * Sleep metrisch overal anders op visualisatie en laat vallen het om straal metrisch voor die as te veranderen.
+   >    * Sleep een dimensie naar een willekeurige locatie op de visualisatie en zet deze neer om de dimensie voor de visualisatie te wijzigen.
 
 
-1. Verander de metrische Straal. Klik de titel bij de bovenkant van de pagina met de rechtermuisknop aan (titel na de geselecteerde afmeting) en selecteer **[!UICONTROL Change Radius Metric]**.
+1. Wijzig de Straal. Klik met de rechtermuisknop op de titel boven aan de pagina (na de geselecteerde dimensie) en selecteer **[!UICONTROL Change Radius Metric]**.
 
-   De metrische straal bepaalt de grootte van het plotselinge punt dat op de metrische selectie wordt gebaseerd. De relatieve positie van de punten verandert niet in het verspreidingsperceel, maar de uitgezette puntgrootte binnen de visualisatieverhoging op basis van de metrische waarde.
+   De straalmetrische waarde bepaalt de grootte van het geplot punt dat op de metrische selectie wordt gebaseerd. De relatieve positie van punten verandert niet in het verstrooiingsperceel, maar de uitgezette puntgrootten binnen de visualisatie nemen toe op basis van de metrische waarde.
 
    ![](assets/3D_change_radius.png)
 
-1. Gebruik de **[!UICONTROL Orthographic Camera]**. Deze optie laat u de plotselinge punten met betrekking tot hun ware perspectief identificeren dat op de metrische straal wordt gebaseerd om driedimensionale vervorming te vermijden.
+1. Pas **[!UICONTROL Orthographic Camera]** toe. Met deze optie kunt u de uitgezette punten identificeren in verhouding tot hun werkelijke perspectief op basis van de meetstraal om driedimensionale vervorming te voorkomen.
 
-   Wanneer het 3D-scatterdiagram voor het eerst wordt weergegeven, wordt het weergegeven in een driedimensionale roterende projectie, die enige vervorming veroorzaakt voor punten die dichter bij het perspectief worden uitgezet, of een virtuele &quot;camera&quot;. (De percelen dichtbij de camera verschijnen veel groter dan de punten die verder van de camera roteren.)
+   Wanneer het 3D-spreidingspad voor het eerst wordt weergegeven, wordt het weergegeven in een driedimensionale draaiende projectie, die enige vervorming veroorzaakt voor punten die dichter bij het perspectief worden geplaatst, of in een virtuele &quot;camera&quot;. (De plots die zich dichter bij de camera bevinden, worden veel groter weergegeven dan de punten die verder van de camera worden geroteerd.)
 
-   Om deze perspectiefvervorming te vermijden, kunt u de **[!UICONTROL Orthographic Camera]** optie selecteren door op de titel met de rechtermuisknop te klikken en van het menu te selecteren. Dit staat u toe om de driedimensionale voorwerpen in twee-afmetingen te vertegenwoordigen. Dit geeft de plotselinge punten als vlak terug en toont de punten met betrekking tot metrische straal, verminderend de driedimensionale compensatie.
+   U voorkomt deze perspectiefvervorming door met de rechtermuisknop op de titel te klikken en een optie in het menu te selecteren. **[!UICONTROL Orthographic Camera]** Hierdoor kunt u de driedimensionale objecten in tweedimensionale dimensies weergeven. Hierdoor worden de uitgezette punten als vlak weergegeven en worden de punten ten opzichte van de straal weergegeven, waarbij de driedimensionale verschuivingen worden verminderd.
 
-1. Selecteer punten van het verspreidingsplot.
+1. Selecteer punten in het spreidingsperceel.
 
-   * **Om een punt of een groep punten** te verwijderen: Klik op het punt.
-   * **Om een ander punt of een groep punten aan uw selectie** toe te voegen: **CTRL** + **klik** een punt of **CTRL** + **belemmering** over veelvoudige punten.
+   * **Een punt of groep punten** verwijderen: Klik op het punt.
+   * **Een ander punt of een groep punten aan de selectie** toevoegen:  **Ctrl** +  **** Klikpunt of  **Ctrl** +  **** slepen over meerdere punten.
 
-   * **Om een punt of een groep punten uit uw selectie** te verwijderen: **Verschuiving** + **klik** een punt of **Verschuiving** **+** **belemmering** over verscheidene punten.
+   * **Een punt of groep punten uit de selectie** verwijderen:  **Houd Shift**  ingedrukt en  **** klik met het  **muispunt of houd** **Shift** ****  ingedrukt ensleep over verschillende punten.
 
 <!-- <a id="section_9C30F9799F1440F09278327002E6B47A"></a> -->
-
