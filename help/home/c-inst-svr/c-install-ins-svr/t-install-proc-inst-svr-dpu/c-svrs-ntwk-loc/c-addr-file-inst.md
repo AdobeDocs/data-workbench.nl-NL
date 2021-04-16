@@ -1,18 +1,17 @@
 ---
 description: Het adresdossier dat op de Server van het Inzicht wordt geïnstalleerd bevat vier vooraf bepaalde netwerkplaatsen.
-solution: Analytics
 title: Het adresdossier dat op de Server van het Inzicht wordt geïnstalleerd
 uuid: a58d36d8-e1a3-43e7-91c5-c57351e1be49
+exl-id: 12e9bfa2-99ac-4584-b761-38401d1bc3d1
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
 
 ---
 
-
-# Het adresdossier dat op de Server van het Inzicht wordt geïnstalleerd{#the-address-file-installed-on-insight-server}
+# Het adresbestand geïnstalleerd op Insight Server{#the-address-file-installed-on-insight-server}
 
 Het adresdossier dat op de Server van het Inzicht wordt geïnstalleerd bevat vier vooraf bepaalde netwerkplaatsen.
 
@@ -42,22 +41,22 @@ Locations = vector: 4 items
 ```
 
 * NetworkLocation 0 is een lege, naamloze netwerkplaats die u uitgeeft om de gemeenschappelijke naam van uw [!DNL Insight Server] aan zijn IP adres te associëren. Als de server veelvoudige IP adressen heeft, creeert u extra NetworkLocations.
-* NetworkLocation 1 is de [!DNL Insight] netwerkplaats. Als u niet uitdrukkelijk de parameter NetworkLocation plaatst, [!DNL Insight] lost gemeenschappelijke namen door deze netwerkplaats op.
+* NetworkLocation 1 is de [!DNL Insight] netwerklocatie. Als u niet expliciet de parameter NetworkLocation instelt, [!DNL Insight] lost gemeenschappelijke namen door deze netwerkplaats op.
 
-* NetworkLocation 2 is de [!DNL Insight Server] netwerkplaats. Wanneer zij in een cluster [!DNL Insight Servers] werken, gebruiken zij deze netwerkplaats om gemeenschappelijke namen voor inter-servermededeling op te lossen.
+* NetworkLocation 2 is de [!DNL Insight Server] netwerklocatie. Wanneer [!DNL Insight Servers] in een cluster werkt, gebruiken zij deze netwerkplaats om gemeenschappelijke namen voor interservermededeling op te lossen.
 
-* NetworkLocation 3 is de het netwerkplaats van de [!DNL Report] Server. Als u niet uitdrukkelijk de parameter NetworkLocation plaatst, [!DNL Report] lost gemeenschappelijke namen door deze netwerkplaats op.
+* NetworkLocation 3 is de [!DNL Report] netwerklocatie van de server. Als u niet expliciet de parameter NetworkLocation instelt, [!DNL Report] lost gemeenschappelijke namen door deze netwerkplaats op.
 
-## Om het Dossier van het Adres te vormen {#section-10caab9854a244e39b09071946f7bd27}
+## Om het Dossier van het Adres {#section-10caab9854a244e39b09071946f7bd27} te vormen
 
-De volgende procedure beschrijft hoe te om het adresdossier te vormen om een netwerkplaats (of netwerkplaatsen) voor uw te bepalen [!DNL Insight Server].
+De volgende procedure beschrijft hoe te om het adresdossier te vormen om een netwerkplaats (of netwerkplaatsen) voor uw [!DNL Insight Server] te bepalen.
 
-1. Navigeer naar de [!DNL Addresses] map in de map waarin u hebt geïnstalleerd [!DNL Insight Server] (bijvoorbeeld [!DNL C:\Adobe\Server\Addresses)].
+1. Navigeer naar de map [!DNL Addresses] in de map waarin u [!DNL Insight Server] hebt geïnstalleerd (bijvoorbeeld [!DNL C:\Adobe\Server\Addresses)].
 
-1. Zoek het [!DNL server.address] bestand en wijzig de naam van dit bestand in de algemene naam van de server. Als de algemene naam bijvoorbeeld [!DNL server.mycompany.com]is, wordt de naam van het bestand gewijzigd [!DNL server.mycompany.com.address].
+1. Zoek het bestand [!DNL server.address] en geef dit bestand een andere naam om de algemene naam van de server weer te geven. Als de algemene naam bijvoorbeeld [!DNL server.mycompany.com] was, zou u de naam van het bestand [!DNL server.mycompany.com.address] wijzigen.
 
 1. Open het hernoemde bestand in een teksteditor, zoals Kladblok.
-1. Bewerk NetworkLocation 0 om de algemene naam en het IP-adres van het netwerk op te geven, [!DNL Insight Server] zoals hieronder wordt weergegeven. Als uw server veelvoudige IP adressen heeft, gebruik NetworkLocation 0 om het IP van de server adres op het lokale, niet routable netwerk (bijvoorbeeld, zijn plaats op het interne netwerk) te specificeren.
+1. Bewerk NetworkLocation 0 om de algemene naam en het IP-adres van [!DNL Insight Server] op te geven, zoals hieronder wordt weergegeven. Als uw server veelvoudige IP adressen heeft, gebruik NetworkLocation 0 om het IP van de server adres op het lokale, niet routable netwerk (bijvoorbeeld, zijn plaats op het interne netwerk) te specificeren.
 
    ```
    Locations = vector: 3 items 
@@ -80,14 +79,14 @@ De volgende procedure beschrijft hoe te om het adresdossier te vormen om een net
  <tbody> 
   <tr> 
    <td colname="col1"> <i>IP-adres</i> </td> 
-   <td colname="col2"> <p>Het numerieke IP adres van de <span class="keyword"> </span> machine van de Server van het Inzicht. </p> <p>Voorbeeld: 192 168 124 176 </p> </td> 
+   <td colname="col2"> <p>Het numerieke IP-adres van de <span class="keyword"> Insight Server </span>-computer. </p> <p>Voorbeeld: 192 168 124 176 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>Algemene naam </i> </td> 
-   <td colname="col2"> <p>De algemene naam die aan het digitale certificaat voor de Server van het <span class="keyword"> Inzicht wordt toegewezen </span>. </p> <p>Voorbeeld: <span class="filepath"> server.mijnbedrijf.com </span></p> <p>Opmerking: Zorg ervoor dat u deze naam precies zo typt als op het certificaat wordt weergegeven. </p> </td> 
+   <td colname="col1"> <i>Algemene naam  </i> </td> 
+   <td colname="col2"> <p>De algemene naam die is toegewezen aan het digitale certificaat voor <span class="keyword"> Insight Server </span>. </p> <p>Voorbeeld: <span class="filepath"> server.mijnbedrijf.com </span></p> <p>Opmerking: Zorg ervoor dat u deze naam precies zo typt als op het certificaat wordt weergegeven. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>Naam netwerklocatie </i> </td> 
+   <td colname="col1"> <i>Naam netwerklocatie  </i> </td> 
    <td colname="col2"> <p>De naam u aan de inzameling van gemeenschappelijke namen en IP adressen wilt toewijzen die dit NetworkLocation vertegenwoordigt. De naam moet uniek zijn in het adresbestand. </p> <p>Voorbeeld: Bedrijfsintranet </p> </td> 
   </tr> 
  </tbody> 
@@ -95,7 +94,7 @@ De volgende procedure beschrijft hoe te om het adresdossier te vormen om een net
 
 1. Als uw [!DNL Insight Server] extra IP adressen heeft, creeer een extra NetworkLocation voor elk adres. (Een gemakkelijke manier om dit te doen is een exemplaar van NetworkLocation te maken u hierboven creeerde en het IP adres in het exemplaar bij te werken.)
 
-   U kunt nieuwe NetworkLocation aan het eind van het adresdossier toevoegen of het tussen bestaande definities opnemen NetworkLocation. (De positie van een NetworkLocation binnen het adresdossier is niet significant; nochtans, worden [!DNL Insight], [!DNL Insight Server], en [!DNL Report] Server NetworkLocations typisch geplaatst aan het eind van het dossier.)
+   U kunt nieuwe NetworkLocation aan het eind van het adresdossier toevoegen of het tussen bestaande definities opnemen NetworkLocation. (De positie van een NetworkLocation binnen het adresdossier is niet significant; echter, [!DNL Insight], [!DNL Insight Server], en [!DNL Report] de Netwerkplaatsen van de Server worden typisch geplaatst aan het eind van het dossier.)
 
    Nadat u noodzakelijke NetworkLocations hebt toegevoegd, doe het volgende de punten in het dossier opnieuw nummeren:
 
@@ -106,9 +105,9 @@ De volgende procedure beschrijft hoe te om het adresdossier te vormen om een net
       ```
 
    1. Werk de NetworkLocation puntaantallen bij zodat NetworkLocations achtereenvolgens (die van 0 beginnen) worden genummerd.
-   Een voorbeeld van een adresdossier dat een [!DNL Insight Server] met twee IP adressen bepaalt, zie het voorbeeld in deze sectie.
+   Voor een voorbeeld van een adresdossier dat [!DNL Insight Server] met twee IP adressen bepaalt, zie het voorbeeld in deze sectie.
 
-1. In de het netwerkplaatsen van de [!DNL Insight] Server en [!DNL Report] Server, geef de parameter van de Ouder zoals hieronder getoond uit om de naam van NetworkLocation te specificeren die [!DNL Insight] en [!DNL Report] gebruik als hun standaardnetwerkplaatsen. (Zie het voorbeeld in deze sectie voor een voorbeeld van hoe de parameter Bovenliggend eruitziet wanneer deze is geconfigureerd.)
+1. Bewerk in de netwerklocaties [!DNL Insight] en [!DNL Report] de parameter Parent, zoals hieronder wordt weergegeven, om de naam op te geven van de NetworkLocation die [!DNL Insight] en [!DNL Report] als hun standaardnetwerklocaties gebruiken. (Zie het voorbeeld in deze sectie voor een voorbeeld van hoe de parameter Bovenliggend eruitziet wanneer deze is geconfigureerd.)
 
    ```
    1 = NetworkLocation:  
@@ -122,9 +121,9 @@ De volgende procedure beschrijft hoe te om het adresdossier te vormen om een net
      Parent = string: ClientDefaultNetworkLocation
    ```
 
-   Als uw één enkel IP adres [!DNL Insight Server] heeft en, daarom, slechts één NetworkLocation heeft, richt de parameter van de Ouder aan die NetworkLocation. Als uw veelvoudige IP adressen [!DNL Insight Server] heeft, richt de parameter van de Ouder aan NetworkLocation die het adres bepaalt waaraan uw [!DNL Insight] en [!DNL Report] cliënten het vaakst verbinden.
+   Als uw [!DNL Insight Server] één enkel IP adres heeft en daarom slechts één NetworkLocation heeft, richt de parameter van de Ouder aan die NetworkLocation. Als uw [!DNL Insight Server] veelvoudige IP adressen heeft, richt de parameter van de Ouder aan NetworkLocation die het adres bepaalt waaraan uw [!DNL Insight] en [!DNL Report] cliënten het vaakst verbinden.
 
-1. In de [!DNL Insight Server] netwerkplaats, geef de parameter van de Ouder zoals hieronder getoond uit om aan NetworkLocation te richten die de server gebruikt om gemeenschappelijke namen van andere op te lossen [!DNL Insight Servers] wanneer het in een cluster werkt. (Hoewel deze netwerkplaats niet wordt gebruikt tenzij een netwerk in een cluster [!DNL Insight Server] werkt, is het een goede praktijk, zelfs in één enkele serverconfiguratie, om de parameter van de Ouder aan een netwerkplaats te richten die het interne IP van de server adres. identificeert)
+1. Bewerk in de netwerklocatie [!DNL Insight Server] de parameter Bovenliggend, zoals hieronder wordt weergegeven, om naar de NetworkLocation te verwijzen die de server gebruikt om algemene namen van andere [!DNL Insight Servers] op te lossen wanneer deze in een cluster werkt. (Hoewel deze netwerklocatie niet wordt gebruikt tenzij een [!DNL Insight Server] in een cluster werkt, is het een goede praktijk, zelfs in één serverconfiguratie, om de parameter Bovenliggende naar een netwerklocatie te richten die het interne IP-adres van de server identificeert.)
 
    ```
    2 = NetworkLocation:  
@@ -136,11 +135,11 @@ De volgende procedure beschrijft hoe te om het adresdossier te vormen om een net
 In het volgende voorbeeld wordt een voltooid adresbestand getoond. Dit bestand definieert vijf netwerklocaties.
 
 * De punten 0 en 1 van NetworkLocation bepalen netwerkplaatsen genoemd &quot;MyCorporateIntranet&quot;en &quot;Internet.&quot; Deze netwerklocaties definiëren twee verschillende IP-adressen voor een server met de naam [!DNL VS01.myCompany.com].
-* NetworkLocation punt 2 is de [!DNL Insight] netwerkplaats. Dit is de standaardnetwerklocatie die door wordt gebruikt [!DNL Insight]. In dit voorbeeld, erft de [!DNL Insight] netwerkplaats zijn AddressDefinitions van &quot;Internet&quot;NetworkLocation.
+* NetworkLocation punt 2 is de [!DNL Insight] netwerkplaats. Dit is de standaardnetwerklocatie die wordt gebruikt door [!DNL Insight]. In dit voorbeeld, erft [!DNL Insight] netwerkplaats zijn AddressDefinitions van &quot;Internet&quot;NetworkLocation.
 
-* NetworkLocation punt 3 is de [!DNL Insight Server] netwerkplaats. Dit is de standaardnetwerklocatie die [!DNL Insight Server] wordt gebruikt wanneer deze communiceert met andere servers in een cluster. In dit voorbeeld, erft de [!DNL Insight Server] netwerkplaats zijn AddressDefinitions van &quot;MyCorporate Intranet&quot;NetworkLocation.
+* NetworkLocation-item 3 is de netwerklocatie [!DNL Insight Server]. Dit is de standaardnetwerklocatie die [!DNL Insight Server] gebruikt wanneer deze communiceert met andere servers in een cluster. In dit voorbeeld, erft [!DNL Insight Server] netwerkplaats zijn AddressDefinitions van &quot;MyCorporate Intranet&quot;NetworkLocation.
 
-* NetworkLocation punt 4 is de het netwerkplaats van de [!DNL Report] Server. Dit is de standaardnetwerklocatie die door wordt gebruikt [!DNL Report]. In dit voorbeeld, erft de het netwerkplaats van de [!DNL Report] Server zijn AddressDefinitions van &quot;Internet&quot;NetworkLocation.
+* NetworkLocation-item 4 is de locatie van het [!DNL Report]-servernetwerk. Dit is de standaardnetwerklocatie die wordt gebruikt door [!DNL Report]. In dit voorbeeld overerft de [!DNL Report] netwerklocatie van de server zijn AddressDefinitions van de &quot;Internet&quot;NetworkLocation.
 
    ```
    Locations = vector: 5 items 
@@ -175,4 +174,3 @@ In het volgende voorbeeld wordt een voltooid adresbestand getoond. Dit bestand d
        Name = string: Report Server 
        Parent = string: Internet
    ```
-
