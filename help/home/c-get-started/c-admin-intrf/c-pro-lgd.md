@@ -1,18 +1,19 @@
 ---
-description: De Legende van de Verwerking verstrekt gedetailleerde informatie over de gegevensverwerking en de transformatie van een bepaalde server, toelatend u om de vooruitgang van gegevens te volgen die worden opnieuw verwerkt en herverwerkt.
-solution: Analytics
-title: Verwerkingslegger
-topic: Data workbench
+description: De Verwerkingslegenda verstrekt gedetailleerde informatie over de gegevensverwerking en de transformatie van een bepaalde server, toelatend u om de vooruitgang van gegevens te volgen die opnieuw verwerkt en wordt getransformeerd.
+title: Legenda verwerken
 uuid: 6c082c8f-fbb3-4e48-a249-2a13345fda86
+exl-id: a83ce514-c92b-4cf8-a3cc-bff4e2ba63f1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 0%
 
 ---
 
+# Legenda{#processing-legend} verwerken
 
-# Verwerkingslegger{#processing-legend}
-
-De Legende van de Verwerking verstrekt gedetailleerde informatie over de gegevensverwerking en de transformatie van een bepaalde server, toelatend u om de vooruitgang van gegevens te volgen die worden opnieuw verwerkt en herverwerkt.
+De Verwerkingslegenda verstrekt gedetailleerde informatie over de gegevensverwerking en de transformatie van een bepaalde server, toelatend u om de vooruitgang van gegevens te volgen die opnieuw verwerkt en wordt getransformeerd.
 
 ![](assets/vis_ProcessingLegend.png)
 
@@ -21,27 +22,26 @@ De volgende lijst maakt een lijst van de taken die kunnen worden voltooid gebrui
 <table id="table_6149250C44B14C44A3CB1CEF68B280C6"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Om deze taak uit te voeren... </th> 
+   <th colname="col1" class="entry"> Deze taak uitvoeren... </th> 
    <th colname="col2" class="entry"> Doe dit... </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Om de totale grootte van al uw gegevens te bekijken </p> </td> 
-   <td colname="col2"> <p>Herzie de waarden in de <span class="wintitle"> Totale Ingangen</span> van het Logboek en de <span class="wintitle"> Totalegebieden van Bytes van het Logboek</span> . </p> </td> 
+   <td colname="col1"> <p>De totale grootte van al uw gegevens weergeven </p> </td> 
+   <td colname="col2"> <p>Controleer de waarden in de velden <span class="wintitle"> Totaal aantal logitems</span> en <span class="wintitle"> Totaal aantal logbytes</span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Om te controleren of het filtreren werkt </p> </td> 
-   <td colname="col2"> <p>Herzie de waarden op de <span class="wintitle"> Totale Gefilterde gebieden van de Ingangen</span> van het Logboek. Als de waarde 0 is, werkt het filtreren niet en u moet uw configuratie controleren om het probleem te richten. </p> </td> 
+   <td colname="col1"> <p>Controleren of het filteren werkt </p> </td> 
+   <td colname="col2"> <p>Controleer de waarden in de velden <span class="wintitle"> Totaal gefilterde logitems</span>. Als de waarde 0 is, werkt het filtreren niet en u moet uw configuratie controleren om het probleem te richten. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Om de vooruitgang van logboekverwerking te controleren </p> </td> 
-   <td colname="col2"> <p>Herzie de waarde op het gebied van de Voortgang <span class="wintitle"> van de Verwerking van het</span> Logboek. Dit percentage wijst op hoeveel van de opwerking volledig is. </p> <p>Wanneer het opwerken om uw dataset te raffineren, kunt u een oog op het aantal <span class="wintitle"> Totale Gedecodaliseerde Ingangen</span> van het Logboek tegenover het aantal <span class="wintitle"> Totale Gefilterde Ingangen</span>van het Logboek willen houden. </p> </td> 
+   <td colname="col1"> <p>De voortgang van de logverwerking controleren </p> </td> 
+   <td colname="col2"> <p>Controleer de waarde in het <span class="wintitle"> gebied van de Verwerking van het Logboek </span>. Dit percentage geeft aan hoeveel van de opwerking is voltooid. </p> <p>Wanneer het herverwerken om uw dataset te verfijnen, kunt u een oog op het aantal <span class="wintitle"> Totale Gedecodeerde Logboekingangen</span> tegenover het aantal <span class="wintitle"> Totale Gefilterde Ingangen van het Logboek willen houden</span>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Om de voortgang van de transformatie te controleren </p> </td> 
-   <td colname="col2"> <p>Herzie de waarde op het gebied van de Vooruitgang van de <span class="wintitle"> Transformatie</span> . Dit percentage wijst op hoeveel van de transformatie volledig is. </p> </td> 
+   <td colname="col1"> <p>De voortgang van de transformatie controleren </p> </td> 
+   <td colname="col2"> <p>Controleer de waarde in het <span class="wintitle"> gebied van de Voortgang van de Transformatie</span>. Dit percentage geeft aan hoeveel van de transformatie is voltooid. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
