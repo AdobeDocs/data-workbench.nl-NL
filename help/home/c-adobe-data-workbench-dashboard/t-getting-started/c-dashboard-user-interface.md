@@ -1,49 +1,49 @@
 ---
-description: Het dashboard van de gegevenswerkbank omvat een Sidebar en een Toolbar met eigenschapmenu's en een Canvas van het Dashboard waar u gegevensvisualisaties toont.
-solution: Analytics
-title: Dashboard-gebruikersinterface
-topic: Data workbench
+description: Het dashboard voor de gegevenswerkbank bevat een zijbalk en werkbalk met functiemenu's en een dashboardcanvas waar u gegevensvisualisatie kunt weergeven.
+title: Gebruikersinterface dashboard
 uuid: cfa6c553-e223-4b0e-8b4a-255afa85c999
+exl-id: f80da6c7-02cb-4916-b139-617703cf27b6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '276'
+ht-degree: 1%
 
 ---
 
+# Dashboard User Interface{#dashboard-user-interface}
 
-# Dashboard-gebruikersinterface{#dashboard-user-interface}
-
-Het dashboard van de gegevenswerkbank omvat een Sidebar en een Toolbar met eigenschapmenu&#39;s en een Canvas van het Dashboard waar u gegevensvisualisaties toont.
+Het dashboard voor de gegevenswerkbank bevat een zijbalk en werkbalk met functiemenu&#39;s en een dashboardcanvas waar u gegevensvisualisatie kunt weergeven.
 
 ![](assets/dashboard_ui.png)
 
-## Dashboard Canvas {#section-39c9352f5e8d407e8d76c7f2e6267b3d}
+## Dashboardcanvas {#section-39c9352f5e8d407e8d76c7f2e6267b3d}
 
-Het canvas van het Dashboard is het gebied van de interface die wordt gebruikt om met visualisaties tot stand te brengen en in wisselwerking te staan.
+Het dashboardcanvas is het gebied van de interface dat wordt gebruikt voor het maken van en werken met visualisaties.
 
-| Termijn | Definitie |
+| Term | Definitie |
 |---|---|
-| Visualisaties | De teruggegeven die gegevens grafisch op een reeks gevormde criteria worden bepaald worden bepaald. Veelvoudige visualisaties vormen een dashboard. |
+| Visualisaties | Gerenderde gegevens grafisch bepaald die op een reeks gevormde criteria worden gebaseerd. Meerdere visualisaties vormen een dashboard. |
 
-## Sidebar {#section-12e155c782e74851b0dbaa00c40deb8c}
+## Zijbalk {#section-12e155c782e74851b0dbaa00c40deb8c}
 
-De linkerzijbalk biedt snelle toegang en zichtbaarheid voor gedefinieerde menu&#39;s:
+De linkerzijbalk biedt snel toegang tot en zichtbaarheid voor gedefinieerde menu&#39;s:
 
 | Menu | Definitie |
 |---|---|
-| Menu Snel toegang | Een vlucht-uit menu om dashboards snel te openen. |
-| Menu Selecties | Maakt een lijst van om het even welke huidige selecties binnen het dashboard, die extra details verstrekken en de capaciteit om selecties op elk ogenblik te verwijderen. |
-| Menu Exporteren | Maakt een lijst van om het even welke hangende of voltooide uitvoer, die de capaciteit verstrekken om de uitvoer terug te winnen wanneer volledig. |
+| Menu Snelle toegang | Een vlieg-uit menu om dashboards snel te openen. |
+| Menu Selecties | Hiermee geeft u een overzicht van de huidige selecties in het dashboard, met aanvullende details en de mogelijkheid om selecties op elk gewenst moment te verwijderen. |
+| Menu Exporteren | Hiermee geeft u een overzicht van alle in behandeling zijnde of voltooide exportbewerkingen, waarbij u de exportbewerking kunt ophalen wanneer deze is voltooid. |
 
 ## Werkbalk {#section-f1c7d5b7fb37473f93cc533a7376c167}
 
-De hoogste toolbar verleent toegang tot deze specifieke menu&#39;s. Het toont ook de titel van het dashboard momenteel open.
+De bovenste werkbalk biedt toegang tot deze specifieke menu&#39;s. Ook wordt de titel van het dashboard weergegeven dat momenteel is geopend.
 
 | Menu | Definitie |
 |---|---|
-| Menu Dashboard | Een drop-down menu voor het openen van, het creëren van, het bewaren van, en het uitvoeren van dashboards. |
-| Menu Visualisatie toevoegen | Een drop-down menu voor het toevoegen van visualisaties aan het dashboard. |
-| Dashboard-titel | Toont de titel van het huidige dashboard. |
-| Menu Update | Het klikken van de **[!UICONTROL Update]** indicator zal het huidige dashboard bijwerken, rekening houdend met om het even welke nieuwe selecties en/of configuratieveranderingen. Het menu verstrekt de capaciteit om de **[!UICONTROL Query-to]** parameter, samen met sommige geavanceerde functies voor beheerders aan te passen. |
-| Menu Help | Dit drop-down menu wordt gebruikt om tot de Gids van de Gebruiker, FAQ, en tot ongeveer sectie van de toepassing toegang te hebben. |
-| Menu Gebruiker | Een drop-down menu voor het programma openen van, de toegang tot van rekeningsmontages, en de toegang tot van het beleidsgebied (voor beheerders slechts). |
-
+| Menu Dashboard | Een vervolgkeuzemenu voor het openen, maken, opslaan en exporteren van dashboards. |
+| Menu Visualisatie toevoegen | Een vervolgkeuzemenu voor het toevoegen van visualisaties aan het dashboard. |
+| Dashboardtitel | Hiermee geeft u de titel van het huidige dashboard weer. |
+| Menu Bijwerken | Als u op de indicator **[!UICONTROL Update]** klikt, wordt het huidige dashboard bijgewerkt, rekening houdend met nieuwe selecties en/of configuratiewijzigingen. Het menu biedt de mogelijkheid om de parameter **[!UICONTROL Query-to]** aan te passen, samen met enkele geavanceerde functies voor beheerders. |
+| Menu Help | Dit vervolgkeuzemenu wordt gebruikt voor toegang tot de sectie Gebruikershandleiding, Veelgestelde vragen en Over van de toepassing. |
+| Menu Gebruiker | Een vervolgkeuzemenu voor het afmelden, het openen van accountinstellingen en het openen van het beheergebied (alleen voor beheerders). |
