@@ -1,16 +1,17 @@
 ---
 description: Stappen om de vereiste componenten van Microsoft te installeren.
-solution: Analytics
-title: Vereiste onderdelen installeren
-topic: Data workbench
+title: Vereiste componenten installeren
 uuid: e23fba09-4684-4daf-8426-ea91169b3348
+exl-id: d39cb14e-7cce-4088-8301-8ff566c0bde4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 0%
 
 ---
 
-
-# Vereiste onderdelen installeren{#installing-required-components}
+# Vereiste componenten installeren{#installing-required-components}
 
 Stappen om de vereiste componenten van Microsoft te installeren.
 
@@ -18,16 +19,16 @@ Stappen om de vereiste componenten van Microsoft te installeren.
 
    >[!NOTE]
    >
-   >Dit moet worden geïnstalleerd slechts na het installeren van en het vormen van de Rol van het Web IIS.
+   >Dit moet slechts na het installeren en het vormen van de Rol van het Web IIS worden geïnstalleerd.
 
-1. Volg de tovenaar en kies gebreken waar ertoe aangezet om de installatie te voltooien.
-1. Zodra geïnstalleerd, verifieer dat de ASP.NET v.4.0 toepassingspool binnen de **[!UICONTROL Application Pools]** lijst in IIS werd toegevoegd.
-1. Installeer het Gegevensbestand van de Server van Microsoft SQL.
+1. Volg de wizard en kies de standaardinstellingen als u hierom wordt gevraagd om de installatie te voltooien.
+1. Zodra geïnstalleerd, verifieer dat de ASP.NET v.4.0 toepassingspool binnen **[!UICONTROL Application Pools]** lijst in IIS werd toegevoegd.
+1. Installeer de Microsoft SQL Server-database.
 
-   Gebruik om het even welke versie van SQL Server 2008 of 2008 R2 (Uitdrukkelijk wordt gesteund) met de Hulpmiddelen van het Beheer (Adobe adviseert SQL Server 2008 R2 SP1 - Uitdrukkelijke Uitgave). 1. Voor generische installeer zonder de bestaande SQL instanties die van de Server voor tijd lopen, te selecteren gelieve de **[!UICONTROL Default Instance]** optie op het **[!UICONTROL Instance Configuration]** scherm.
-1. Voor de rest configuratieopties, volg de tovenaar en kies gebreken wanneer ertoe aangezet om de installatie te voltooien.
-1. Microsoft Web installeren Implementatie v2.0.
+   Gebruik om het even welke versie van SQL Server 2008 of 2008 R2 (Uitdrukkelijke wordt gesteund) met de Hulpmiddelen van het Beheer (Adobe adviseert SQL Server 2008 R2 SP1 - Uitdrukkelijke Uitgave). 1. Voor een generieke installatie zonder bestaande SQL Server-instanties die van tevoren worden uitgevoerd, selecteert u de optie **[!UICONTROL Default Instance]** op het **[!UICONTROL Instance Configuration]**-scherm.
+1. Voor de rest van de configuratieopties, volg de tovenaar en kies gebreken wanneer ertoe aangezet om de installatie te voltooien.
+1. Microsoft Web Deploy v2.0 installeren.
 
-   Voor de meeste installaties, is de **[!UICONTROL Typical]** installatie in orde. Als, echter, u van plan bent om verre plaatsingen uit te voeren, zult u volledig moeten doen installeren (kies **[!UICONTROL Complete]**).
+   Voor de meeste installaties is de **[!UICONTROL Typical]** installatie in orde. Als u echter externe implementaties wilt uitvoeren, moet u een volledige installatie uitvoeren (kies **[!UICONTROL Complete]**).
 
-   Zodra alle eerste vereisten behoorlijk geïnstalleerd zijn, bent u bereid om de servers van de gegevenswerkbank voor te bereiden om met het dashboard te communiceren.
+   Als alle voorwaarden correct zijn geïnstalleerd, kunt u de gegevensworkbench-servers voorbereiden op communicatie met het dashboard.
