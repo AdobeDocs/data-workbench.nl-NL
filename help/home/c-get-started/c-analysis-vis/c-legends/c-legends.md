@@ -1,17 +1,18 @@
 ---
-description: De legends verstrekken verklarende details over de visualisaties die binnen een werkruimte worden getoond, toelatend u om de gegevens te onderzoeken die in uw visualisaties worden vertegenwoordigd.
-solution: Analytics
+description: Legenda biedt uitleg over de visualisaties die in een werkruimte worden weergegeven, zodat u de gegevens in uw visualisaties beter kunt verkennen.
 title: Legenda
-topic: Data workbench
 uuid: c2e7c43f-2e9d-41ac-bb18-08d00776e8b2
+exl-id: e1cb5cdc-27df-4f29-a840-0e2e5ca34a44
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '92'
+ht-degree: 0%
 
 ---
 
-
 # Legenda{#legends}
 
-De legends verstrekken verklarende details over de visualisaties die binnen een werkruimte worden getoond, toelatend u om de gegevens te onderzoeken die in uw visualisaties worden vertegenwoordigd.
+Legenda biedt uitleg over de visualisaties die in een werkruimte worden weergegeven, zodat u de gegevens in uw visualisaties beter kunt verkennen.
 
-Bijvoorbeeld, laten de kleurenlegenden u toe om prestatiesmaatregelen zoals omzetting of behoudtarief te beoordelen door een kleurenkaart voor de visualisatie te verstrekken. Op dezelfde manier tonen de metrische legenden de waarden voor standaardmetriek die op de selecties (vragen) wordt gebaseerd die u binnen de werkruimte maakt.
+Met kleurlegends kunt u bijvoorbeeld prestatiemetingen zoals conversie- of retentiesnelheid beoordelen door een kleurenkaart voor visualisatie te maken. Op dezelfde manier, metrische legenda tonen de waarden voor standaardmetriek die op de selecties (vragen) worden gebaseerd die u binnen de werkruimte maakt.
