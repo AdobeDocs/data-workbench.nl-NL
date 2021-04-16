@@ -1,21 +1,22 @@
 ---
-description: ongeldig
-solution: Analytics
+description: Een gebruikersaccount bewerken
 title: Een gebruikersaccount bewerken
-topic: Data workbench
 uuid: 60c79258-bb6e-42fc-9d6b-4381057e3c50
+exl-id: fa80efa0-7af7-4ec9-826c-ea24bb51dae8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '54'
+ht-degree: 0%
 
 ---
 
-
 # Een gebruikersaccount bewerken{#editing-a-user-account}
 
-1. Klik het vistuigpictogram ![](assets/edit_icon.png) aan het eind van de rij voor de gebruiker u wenst uit te geven
+1. Klik op het tandwielpictogram ![](assets/edit_icon.png) aan het einde van de rij voor de gebruiker die u wilt bewerken
 
    ![](assets/edit_user_account.png)
 
-1. Geef de de rekeningsmontages van de gebruiker uit en klik **[!UICONTROL Save]**.
+1. Bewerk de accountinstellingen van de gebruiker en klik op **[!UICONTROL Save]**.
 
-   Als de verrichting succesvol was, zult u een bericht zien erop wijzend dat de gebruikersgroep met succes werd bewaard.
+   Als de bewerking succesvol was, wordt een bericht weergegeven dat aangeeft dat de gebruikersgroep is opgeslagen.
