@@ -1,19 +1,17 @@
 ---
 description: Het vertrouwen legends helpt u om de waarschijnlijkheid te bepalen dat de aantallen u zien toe te schrijven aan toeval zijn en om de mogelijke afwijkingen in de gegevens te begrijpen.
-solution: Analytics
 title: Vertrouwelijke legenda
-topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
+exl-id: 9aab169a-98b8-4e71-b74d-28e385c5c424
 translation-type: tm+mt
-source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
 
 ---
 
-
-# Vertrouwelijke legenda{#confidence-legends}
+# Betrouwbaarheidslegenda{#confidence-legends}
 
 Het vertrouwen legends helpt u om de waarschijnlijkheid te bepalen dat de aantallen u zien toe te schrijven aan toeval zijn en om de mogelijke afwijkingen in de gegevens te begrijpen.
 
@@ -35,7 +33,7 @@ De volgende vertrouwenslegenda toont vertrouwensdetails over metrisch Conversie,
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Metrisch of Formule </p> </td> 
-   <td colname="col2"> <p>De metrische naam of metrische uitdrukking waarvoor u vertrouwensinformatie wilt bekijken. Alle selecties die u in de werkruimte maakt, worden weerspiegeld in de legenda. In dit voorbeeld worden details over de metrische conversie weergegeven. </p> <p>Voor informatie over syntaxisregels voor het ingaan van een uitdrukking, zie de Syntaxis <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"></a>van de Taal van de Vraag. </p> </td> 
+   <td colname="col2"> <p>De metrische naam of metrische uitdrukking waarvoor u vertrouwensinformatie wilt bekijken. Alle selecties die u in de werkruimte maakt, worden weerspiegeld in de legenda. In dit voorbeeld worden details over de metrische conversie weergegeven. </p> <p>Voor informatie over syntaxisregels voor het ingaan van een uitdrukking, zie <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> de Syntaxis van de Taal van de Vraag</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Gemeten waarde </p> </td> 
@@ -62,10 +60,10 @@ De volgende vertrouwenslegenda toont vertrouwensdetails over metrisch Conversie,
 >
 Als u meer nauwkeurige aantallen nodig hebt, zou u een deskundige in statistieken moeten raadplegen.
 
-## Metriek of formules wijzigen {#section-7f09ff84c3514f26b78d29294e1f03d9}
+## Metriek of formules {#section-7f09ff84c3514f26b78d29294e1f03d9} wijzigen
 
-* Klik in de betrouwbaarheidsverklaring in het **[!UICONTROL Metric or Formula]** veld en typ de gewenste metrische waarde of expressie. Voor de regels van de uitdrukkingssyntaxis, zie de Syntaxis [van de Taal van de](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)Vraag.
+* Klik in de betrouwbaarheidsverklaring op het veld **[!UICONTROL Metric or Formula]** en typ de gewenste metrische waarde of expressie. Voor de regels van de uitdrukkingssyntaxis, zie [Syntaxis van de Taal van de Vraag](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 ## Exporteren naar Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 
-Zie Venstergegevens [exporteren voor informatie over het exporteren van vensters](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Zie [Venstergegevens exporteren](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349) voor informatie over het exporteren van vensters.
