@@ -1,36 +1,37 @@
 ---
-description: U kunt een vectorlaag tot stand brengen die verwijzingen één of meerdere vectordossiers (.vec), die de gegevens bevat die de vectoren die op de bol moeten worden getrokken bepalen.
-solution: Analytics
+description: U kunt een vectorlaag maken die verwijst naar een of meer vectorbestanden (.vec), die de gegevens bevat die de vectoren definiëren die op de wereld moeten worden getekend.
 title: Vectorlagen definiëren die verwijzen naar vectorbestanden
-topic: Data workbench
 uuid: 162d4ecc-d305-42e3-a5d4-0c1609a40f29
+exl-id: c6da3cd9-f42a-4e9c-ae48-9f4ffdc42f7b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 0%
 
 ---
 
-
 # Vectorlagen definiëren die verwijzen naar vectorbestanden{#defining-vector-layers-referencing-vector-files}
 
-U kunt een vectorlaag tot stand brengen die verwijzingen één of meerdere vectordossiers (.vec), die de gegevens bevat die de vectoren die op de bol moeten worden getrokken bepalen.
+U kunt een vectorlaag maken die verwijst naar een of meer vectorbestanden (.vec), die de gegevens bevat die de vectoren definiëren die op de wereld moeten worden getekend.
 
-Om een vectorlaag te bepalen die verwijzingen één of meerdere [!DNL .vec]dossiers, moet u het volgende hebben:
+Als u een vectorlaag wilt definiëren die verwijst naar een of meer [!DNL .vec]bestanden, moet u het volgende hebben:
 
-* Één of meerdere [!DNL .vec]dossiers die de gegevens bevatten die worden gebruikt om de vectoren op de aardbol te trekken.
-
-   >[!NOTE]
-   >
-   >Om [!DNL .vec] dossiers te verkrijgen om met uw vectorlagen te gebruiken, contacteer Adobe.
-
-* Een laagdossier dat de plaats van de [!DNL .vec] dossiers specificeert. Voor meer informatie over het vereiste formaat van het laagdossier, zie het Formaat [van het Dossier van de](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-def-vctr-files.md#section-530d03f41ede4a339aebbb680e15240a)VectorLaag.
+* Een of meer [!DNL .vec]bestanden die de gegevens bevatten die worden gebruikt om de vectoren op de wereld te tekenen.
 
    >[!NOTE]
    >
-   >Het [!DNL Boundaries.layer] dossier, dat van het [!DNL Geography] profiel wordt voorzien, is een vectorlaag die verwijzingen de [!DNL mwnation.vec], [!DNL mwstate.vec], [!DNL mwcoast.vec], [!DNL mwlake.vec], en [!DNL mwisland.vec] dossiers.
+   >Neem contact op met Adobe om [!DNL .vec] bestanden op te halen die u met uw vectorlagen wilt gebruiken.
 
-## Vector Layer File Format {#section-530d03f41ede4a339aebbb680e15240a}
+* Een laagbestand dat de locatie van de [!DNL .vec]-bestanden aangeeft. Zie [Vectorlaagbestandsindeling](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-def-vctr-files.md#section-530d03f41ede4a339aebbb680e15240a) voor meer informatie over de vereiste indeling van het laagbestand.
 
-Elk vectorlaagdossier dat van verwijzingen voorziet [!DNL .vec]dossiers moet worden geformatteerd gebruikend het volgende malplaatje:
+   >[!NOTE]
+   >
+   >Het [!DNL Boundaries.layer]-bestand met het profiel [!DNL Geography] is een vectorlaag die verwijst naar de bestanden [!DNL mwnation.vec], [!DNL mwstate.vec], [!DNL mwcoast.vec], [!DNL mwlake.vec] en [!DNL mwisland.vec].
+
+## Bestandsindeling vectorlaag {#section-530d03f41ede4a339aebbb680e15240a}
+
+Elk vectorlaagbestand dat verwijst naar [!DNL .vec]bestanden, moet worden opgemaakt met de volgende sjabloon:
 
 ```
 Layer = VectorLayer:
@@ -47,13 +48,13 @@ Layer = VectorLayer:
 
 | Parameter | Beschrijving |
 |---|---|
-| Vec-bestanden | Pad(en) naar het (de) [!DNL .vec] bestand(en) dat (die) de vectorgegevens bevat (bevatten). |
-| Kleur | De RGB kleurenvector, die als (rood, groen, blauw) wordt uitgedrukt. Voor elke kleur in de vector, kunt u een waarde van 0.0 tot 1.0 ingaan. Bijvoorbeeld, (1.0, 0.0, 0.0) is fel rood, en (0.5, 0.5, 0.5, 0.5) is grijs. |
-| Alpha | Controleert de transparantie van de vectoren die op de wereld worden getoond. De waaier is 0 tot 1, met 0 die het meest transparant zijn. |
-| Breedte | Optioneel. Plaatst de breedte van de gegevens in pixel. Het aanbevolen bereik is 1 tot 4. |
-| Foutfactor | Controleert hoe nauwkeurig de vectoren worden getrokken. Voor grotere waarden, worden de vectoren minder nauwkeurig maar sneller getrokken. De standaardwaarde is 5. |
+| Vec-bestanden | Pad(en) naar het [!DNL .vec]-bestand(en) met de vectorgegevens. |
+| Kleur | De RGB-kleurvector, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. |
+| Alfa | Hiermee regelt u de transparantie van de vectoren die op de wereldbol worden weergegeven. Het bereik loopt van 0 tot en met 1, waarbij 0 het meest transparant is. |
+| Breedte | Optioneel. Hiermee stelt u de breedte van de gegevens in pixels in. Het aanbevolen bereik is 1 tot 4. |
+| Foutfactor | Bepaalt hoe nauwkeurig de vectoren worden getekend. Voor grotere waarden worden de vectoren minder nauwkeurig maar sneller getekend. De standaardwaarde is 5. |
 
-Het [!DNL Boundaries.layer] bestand is als volgt geformatteerd:
+Het [!DNL Boundaries.layer]-bestand is als volgt opgemaakt:
 
 ```
  Boundaries.layer file is formatted as follows:
@@ -68,4 +69,3 @@ Layer = VectorLayer:
   Alpha = double: .5
   Error Factor = double: 4
 ```
-
