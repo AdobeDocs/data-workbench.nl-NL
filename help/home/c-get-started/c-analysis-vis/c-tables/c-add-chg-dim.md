@@ -1,39 +1,39 @@
 ---
-description: U kunt veelvoudige dimensies aan een lijst toevoegen om een meer gedetailleerde dwars-lijst van de gegevens te bereiken.
-solution: Analytics
-title: Voeg, verander, en beweeg een afmeting toe
-topic: Data workbench
+description: U kunt meerdere dimensies aan een tabel toevoegen om een gedetailleerdere cross-tablatie van de gegevens te verkrijgen.
+title: Dimensies toevoegen, wijzigen en verplaatsen
 uuid: d8e67374-3b2b-4548-9322-e83c52941331
+exl-id: d2249f39-f4ab-4ec6-a2fb-90f8ecb2e3d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 0%
 
 ---
 
+# Dimensies toevoegen, wijzigen en verplaatsen{#add-change-and-move-a-dimension}
 
-# Voeg, verander, en beweeg een afmeting toe{#add-change-and-move-a-dimension}
+U kunt meerdere dimensies aan een tabel toevoegen om een gedetailleerdere cross-tablatie van de gegevens te verkrijgen.
 
-U kunt veelvoudige dimensies aan een lijst toevoegen om een meer gedetailleerde dwars-lijst van de gegevens te bereiken.
+U kunt dimensies toevoegen aan beide assen van de tabel.
 
-U kunt afmetingen aan één van beide as van de lijst toevoegen.
+**Een nieuwe dimensie toevoegen**
 
-**Om een nieuwe dimensie toe te voegen**
+* Klik met de rechtermuisknop op een element of het label van een willekeurige dimensie of het label van een willekeurige meting en klik op **[!UICONTROL Add Dimension]** > *&lt;**[!UICONTROL dimension name]**>.* De dimensie wordt toegevoegd aan de visualisatie op de gekozen as.
 
-* Klik een element of het etiket van om het even welke afmeting of het etiket van om het even welke metrisch met de rechtermuisknop aan en klik **[!UICONTROL Add Dimension]** > *&lt;**[!UICONTROL dimension name]**>.* De dimensie wordt toegevoegd aan de visualisatie op de gekozen as.
-
-Het volgende voorbeeld toont de metrische Zittingen die over de Dag van Week dimensie (in de hoogste lijst) en de zelfde lijst met een tweede afmeting, Deze Maand worden grafisch geschetst, die aan de hoogste as (in de bodemlijst) wordt toegevoegd.
+In het volgende voorbeeld ziet u welke sessies metrisch worden weergegeven over de dimensie Dag van week (in de bovenste tabel) en dezelfde tabel met een tweede dimensie, Deze maand, toegevoegd aan de bovenste as (in de onderste tabel).
 
 ![](assets/vis_Table_CrossTab.png)
 
-**Om een dimensie te veranderen**
+**Een dimensie wijzigen**
 
-* Klik een element of het etiket van de afmeting met de rechtermuisknop aan u wilt veranderen en **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>* klikken.
+* Klik met de rechtermuisknop op een element of het label van de dimensie die u wilt wijzigen en klik op **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*.
 
-**Om een afmeting naar een andere plaats te verplaatsen**
+**Een dimensie verplaatsen naar een andere locatie**
 
-U kunt een afmeting naar een verschillende positie op de zelfde as of naar de tegengestelde as verplaatsen.
+U kunt een dimensie naar een andere positie op dezelfde as of naar de tegenoverliggende as verplaatsen.
 
-* Klik met de rechtermuisknop op een element of het label van de dimensie die u wilt verplaatsen, klik op **[!UICONTROL Move]***&lt; **[!UICONTROL dimension name]**>*en voltooi vervolgens de juiste stap:
+* Klik met de rechtermuisknop op een element of op het label van de dimensie die u wilt verplaatsen, klik op **[!UICONTROL Move]***&lt; **[!UICONTROL dimension name]**>*en voer de gewenste stap uit:
 
-   * Om een afmeting naar de tegengestelde as te verplaatsen, klik aan hoogste as of aan linkeras.
-   * Om plaatsen met een andere afmeting op de zelfde as te ruilen, klik **[!UICONTROL (move here)]**.
-
+   * Als u een dimensie naar de tegenoverliggende as wilt verplaatsen, klikt u op de bovenste of de linkeras.
+   * Als u locaties wilt omwisselen met een andere dimensie op dezelfde as, klikt u op **[!UICONTROL (move here)]**.
