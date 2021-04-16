@@ -1,25 +1,25 @@
 ---
-description: Stappen om het dossier van Terrain Images.cfg op de server van de gegevenswerkbank te installeren.
-solution: Analytics
-title: Het Terrain Images.cfg-bestand installeren
-topic: Data workbench
+description: Stappen om het bestand Terrain Images.cfg te installeren op de gegevenswerkbankserver.
+title: Het bestand Terrain Images.cfg installeren
 uuid: b692bff9-9356-4047-a2f7-f44310bf85fa
+exl-id: 4cc91839-ea36-4476-846a-59af4c5f684c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 0%
 
 ---
 
+# Het bestand Terrain Images.cfg{#installing-the-terrain-images-cfg-file} installeren
 
-# Het Terrain Images.cfg-bestand installeren{#installing-the-terrain-images-cfg-file}
-
-Stappen om het dossier van Terrain Images.cfg op de server van de gegevenswerkbank te installeren.
+Stappen om het bestand Terrain Images.cfg te installeren op de gegevenswerkbankserver.
 
 >[!NOTE]
 >
->U moet het [!DNL Terrain Images.cfg] dossier installeren slechts als u nieuwe lagen van het terreinbeeld aan vertoning op de globe visualisatie wilt maken.
+>U moet het [!DNL Terrain Images.cfg] dossier slechts installeren als u nieuwe gebiedsafbeeldingslagen wilt maken om op wereldvisualisatie te tonen.
 
-1. Kopieer het [!DNL Terrain Images.cfg] dossier van het [!DNL .zip] dossier dat aan u door Adobe wordt verstrekt.
-1. Kleef het dossier in de omslag van Componenten in uw folder van de de serverinstallatie van de gegevenswerkbank server.
+1. Kopieer het [!DNL Terrain Images.cfg]-bestand uit het [!DNL .zip]-bestand dat u van Adobe hebt ontvangen.
+1. Plak het bestand in de map Components in de installatiemap van de gegevenswerkbank.
 
-   Voor informatie over het vormen [!DNL Terrain Images.cfg], zie het [Werken met de Lagen](../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-trn-img-lyrs.md#concept-8a0a16013e824ac29f35a0349b5d8ccf)van het Beeld van het Terrein.
-
+   Voor informatie over het vormen [!DNL Terrain Images.cfg], zie [Werken met de Lagen van het Beeld van het Terrein](../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-trn-img-lyrs.md#concept-8a0a16013e824ac29f35a0349b5d8ccf).
