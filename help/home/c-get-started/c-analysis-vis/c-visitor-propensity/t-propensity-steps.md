@@ -1,28 +1,29 @@
 ---
-description: Volg deze stappen om de Propensity Scoring visualisatie te gebruiken.
-solution: Analytics
-title: Propensiteitscores instellen
-topic: Data workbench
+description: Voer de volgende stappen uit om de visualisatie voor waardenscores te gebruiken.
+title: Correctie van volheid instellen
 uuid: afc9aada-3bf9-4ce6-8c43-a955771065b4
+exl-id: e16a7062-636e-44a9-a07d-343d48bf1b4c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
 
 ---
 
-
 # Propensiteitscores instellen{#setting-up-propensity-scoring}
 
-Volg deze stappen om de Propensity Scoring visualisatie te gebruiken.
+Voer de volgende stappen uit om de visualisatie voor waardenscores te gebruiken.
 
 1. Open een nieuwe werkruimte en klik **[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Predictive Analytics]** > **[!UICONTROL Scoring]** > **[!UICONTROL Propensity Score]**.
 
    ![](assets/propensity_visualization.png)
 
-1. Plaats de **[!UICONTROL Target]** (afhankelijke variabele).
+1. Stel de **[!UICONTROL Target]** (de afhankelijke variabele) in.
 
-   Plaats de afhankelijke variabele door te selecteren:
+   Stel de afhankelijke variabele in door te selecteren:
 
-* **Afmetingen**: Klik in de werkruimte met de rechtermuisknop aan en selecteer **[!UICONTROL Table]**. Dan selecteer een elementen van de Dimensie als uw afhankelijke variabele.
+* **Dimension-elementen**: Klik met de rechtermuisknop in de werkruimte en selecteer  **[!UICONTROL Table]**. Selecteer vervolgens een Dimension-element als afhankelijke variabele.
 
    OF
 
@@ -30,52 +31,52 @@ Volg deze stappen om de Propensity Scoring visualisatie te gebruiken.
 
    ![](assets/propensity_visualization_filter_editor.png)
 
-   Na het selecteren van een element of een Filter van de Dimensie als afhankelijke variabele, klik **[!UICONTROL Set Target]**, ga een naam in om de afhankelijke variabele te beschrijven. Dan klik **[!UICONTROL OK]** (en zorg ervoor de filterdoos) wordt benadrukt om het Doel te plaatsen.
+   Nadat u een Dimension-element of -filter als afhankelijke variabele hebt geselecteerd, klikt u op **[!UICONTROL Set Target]** en voert u een naam in om de afhankelijke variabele te beschrijven. Klik vervolgens op **[!UICONTROL OK]** (en controleer of het filtervak is gemarkeerd) om het doel in te stellen.
 
    ![](assets/propensity_visualization_setTarget.png)
 
    De naam u het doel geeft is de afhankelijke variabele die in de linkerruit zal verschijnen.
-1. Voeg onafhankelijke variabelen toe.
+1. Onafhankelijke variabelen toevoegen.
 
-   Voeg de onafhankelijke variabelen toe gebruikend Metriek of de Elementen van de Dimensie.
+   Voeg de onafhankelijke variabelen toe met Metriek of Dimension Elements.
 
    ![](assets/propensity_visualization_metrics.png)
 
-* **Metriek**. Van de Hoogte die toolbar rangschikt, selecteer metrisch van het **[!UICONTROL Metrics]** menu.
+* **Cijfers**. Selecteer een metrische waarde in het menu **[!UICONTROL Metrics]** op de werkbalk Volheid scoren.
 
-* **Afmetingen**: Klik in de werkruimte met de rechtermuisknop aan en selecteer **[!UICONTROL Table]**. Selecteer één of meerdere elementen van de Afmeting en sleep aan de linkerkolom onder **[!UICONTROL Independent Variables]** of aan de **[!UICONTROL Element]** doos gebruikend de `<Ctrl>` + `<Alt>` sleutels.
+* **Dimension-elementen**: Klik met de rechtermuisknop in de werkruimte en selecteer  **[!UICONTROL Table]**. Selecteer een of meer Dimension-elementen en sleep deze naar de linkerkolom onder **[!UICONTROL Independent Variables]** of naar het vak **[!UICONTROL Element]** met de toetsen `<Ctrl>` + `<Alt>`.
 
-1. Reeks **[!UICONTROL Training Filter]**. U kunt de reeks bezoekers bepalen die u wilt scoren door te klikken **[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]** van de het Scoreren van de Dichtheid toolbar. Dit zal een ondergroep van gegevens verstrekken die gebruikend slechts de bezoekers worden gebouwd die u wilt scoren. Bijvoorbeeld, die in de afgelopen maand bezocht, bezoekers die in Australië verblijven, of bezoekers die specifieke producten bekeken.
+1. **[!UICONTROL Training Filter]** instellen. U kunt de set bezoekers definiëren die u wilt scoren door op **[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]** te klikken op de werkbalk voor het scoren van eigenschappen. Dit zal een ondergroep gegevens verstrekken die slechts de bezoekers worden gebouwd die u wilt scoren. Bijvoorbeeld: bezoekers die de afgelopen maand een bezoek hebben gebracht, bezoekers die in Australië wonen of bezoekers die bepaalde producten hebben bekeken.
 
-   De standaardfilter is **[!UICONTROL Train on Everyone]**, maar u kunt het veranderen door **[!UICONTROL Dimension Elements]** in een lijst te activeren of een filter te bouwen gebruikend **[!UICONTROL Filter Editor]**.
+   Het standaardfilter is **[!UICONTROL Train on Everyone]**, maar u kunt het veranderen door **[!UICONTROL Dimension Elements]** in een lijst te activeren of een filter te bouwen gebruikend **[!UICONTROL Filter Editor]**.
 
-   Na het selecteren van een element van de Dimensie of het bouwen van een filter en terwijl geactiveerd, klik **Opties** > de **Vastgestelde Filter** van de Opleiding, ga een naam in om de filter te beschrijven, en klik dan **[!UICONTROL OK]**.
-1. Zodra u al uw input hebt geïdentificeerd, druk op **[!UICONTROL Go]**.
+   Nadat u een Dimension-element hebt geselecteerd of een filter hebt gemaakt, klikt u op **Opties** > **Trainingsfilter instellen**, voert u een naam in om het filter te beschrijven en klikt u op **[!UICONTROL OK]**.
+1. Wanneer u al uw invoer hebt geïdentificeerd, drukt u op **[!UICONTROL Go]**.
 
    ![](assets/propensity_visualization_GO.png)
 
-   Het het noteren proces zal beginnen door de gegevens veelvoudige tijden over te gaan. Het zal dan de resultaten als bargrafieken over een percentagelijn tonen.
-1. Sparen de Score van de Propensiteit.
+   Het scoringsproces begint door de gegevens meerdere keren door te geven. Vervolgens worden de resultaten als staafdiagrammen over een percentastregel weergegeven.
+1. Score voor volheid opslaan.
 
-   Beginnend met 6.1, hebt u nu een optie wanneer het gebruiken van sparen de Score van de Volheid:
+   Vanaf 6.1 hebt u nu een optie wanneer u de Score voor volheid opslaan gebruikt:
 
-* Afmetingen
-* Afmetingen en metrisch
+* Dimension
+* Dimension en metrisch
 
-   U kunt omhoog met twee bewaarde dossiers, zowel een afmeting als bepaald metrisch beëindigen.
+   U kunt uiteindelijk twee opgeslagen bestanden gebruiken, zowel een dimensie als een gedefinieerde metrische waarde.
 
    >[!NOTE]
    >
-   >Als u de Score van de Volheid voor verwerking voorlegt zult u een slechts afmeting krijgen.
+   >Als u de Score van de Volheid voor verwerking indient, zult u een dimensie slechts krijgen.
 
-   De afgeleide metrisch is de bijbehorende gemiddelde metrische score.
-1. Controleer de nauwkeurigheid.
+   De afgeleide metrische waarde is de bijbehorende gemiddelde metrische score.
+1. Controleren op nauwkeurigheid.
 
-   Het systeem zal een het noteren model tonen **[!UICONTROL Model Complete]** en produceren wanneer het proces volledig is.
+   Het systeem geeft **[!UICONTROL Model Complete]** weer en genereert een scoremodel wanneer het proces is voltooid.
 
-   Als u met de rechtermuisknop op klikt, **[!UICONTROL Model Complete]** wordt de nauwkeurigheid van het scoremodel, zoals gedefinieerd door het systeem, vastgesteld. De waarden die zich van 0 percenten aan 100 percenten uitstrekken zullen de waarschijnlijkheid van de bezoekers identificeren die de **[!UICONTROL Target]** variabele aanpassen.
+   Als u met de rechtermuisknop op **[!UICONTROL Model Complete]** klikt, wordt de nauwkeurigheid van het scoremodel, zoals gedefinieerd door het systeem, vastgesteld. Waarden tussen 0 en 100 procent geven de waarschijnlijkheid aan dat bezoekers de variabele **[!UICONTROL Target]** gebruiken.
 
-   De fusiematrix geeft vier tellingen door de combinatie van Actual Positive (AP), Actual Negative (AN), Predicted Positive (PP), en Voorspeld Negatief (PN). Deze aantallen worden verkregen door het resulterende scoremodel toe te passen op de 20% ingehouden testgegevens waarvan wij het ware antwoord kennen. Als de score groter is dan 50%, wordt het voorspeld als positief geval (aanpassend de bepaalde gebeurtenis).
+   De fusiematrix geeft vier tellingen door de combinatie van Actual Positive (AP), Actual Negative (AN), Predicted Positive (PP), en Predicted Negative (PN). Deze aantallen worden verkregen door het resulterende scoremodel toe te passen op de 20% ingehouden testgegevens waarvan we het ware antwoord kennen. Als de score groter is dan 50%, wordt deze voorspeld als een positief geval (overeenkomend met de gedefinieerde gebeurtenis).
 
    ![](assets/propensity_lift_gain_1.png)
 
@@ -83,19 +84,19 @@ Volg deze stappen om de Propensity Scoring visualisatie te gebruiken.
  <tbody> 
   <tr> 
    <td colname="col1"><b> Nauwkeurigheid</b> </td> 
-   <td colname="col2"> Wijst erop hoe nauwkeurig het model door de correcte voorspellingen over alle voorspellingen te identificeren is. <p>(TP + TN)/(TP + FP + TN + FN) </p> </td> 
+   <td colname="col2"> Geeft aan hoe nauwkeurig het model is door de juiste voorspellingen voor alle voorspellingen te identificeren. <p>(TP + TN)/(TP + FP + TN + FN) </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b> terugroepen</b> </td> 
-   <td colname="col2"> Identificeert de capaciteit om het het noteren model opnieuw te identificeren. <p><b>TP / (TP + FN)</b> </p> </td> 
+   <td colname="col1"><b> Herstellen</b> </td> 
+   <td colname="col2"> Hiermee wordt aangegeven of het scoremodel opnieuw kan worden geïdentificeerd. <p><b>TP / (TP + FN)</b> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b> Nauwkeurigheid</b> </td> 
-   <td colname="col2">Identificeert het niveau van discrepantie. <p>TP / (TP + FP) </p> </td> 
+   <td colname="col1"><b> Precisie</b> </td> 
+   <td colname="col2">Hiermee wordt het discrepantieniveau aangegeven. <p>TP / (TP + FP) </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-1. Open een Grafiek van de [Lift of van de Aanwinst](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a), of de [ModelKijker](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9).
+1. Open een [Lift- of versterkingsdiagram](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a) of de [Modelviewer](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9).
 
-   Klik met de rechtermuisknop op het **model Volledige** visualisatie en selecteer **[!UICONTROL Lift Chart]**, **[!UICONTROL Gain Chart]** of **[!UICONTROL Model Viewer.]**
+   Klik met de rechtermuisknop op **Model Volledig** en selecteer **[!UICONTROL Lift Chart]**, **[!UICONTROL Gain Chart]** of **[!UICONTROL Model Viewer.]**
