@@ -1,28 +1,29 @@
 ---
-description: De kaarten van het proces kunnen worden gevormd om met om het even welke combinatie basisafmeting, groepsafmeting, niveauafmeting, en metrisch te werken die voor uw toepassing en dataset steek houdt.
-solution: Analytics
-title: Vorm een proceskaart
-topic: Data workbench
+description: De kaarten van het proces kunnen worden gevormd om met om het even welke combinatie basisdimensie, groepsdimensie, niveaudimensie, en metrisch te werken die voor uw toepassing en dataset zinvol is.
+title: Een proceskaart configureren
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
+exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
+# Een proceskaart configureren{#configure-a-process-map}
 
-# Vorm een proceskaart{#configure-a-process-map}
-
-De kaarten van het proces kunnen worden gevormd om met om het even welke combinatie basisafmeting, groepsafmeting, niveauafmeting, en metrisch te werken die voor uw toepassing en dataset steek houdt.
+De kaarten van het proces kunnen worden gevormd om met om het even welke combinatie basisdimensie, groepsdimensie, niveaudimensie, en metrisch te werken die voor uw toepassing en dataset zinvol is.
 
 Nadat u een proceskaart vormt, is het vermeld met andere proceskaarten in [!DNL Add Visualization menu].
 
-1. In [!DNL Profile Manager], klik **[!UICONTROL Menu]**, klik **[!UICONTROL Add Visualization]**, dan klik het type van type van proceskaart dat u (2D Metrische Kaart, 2D Kaart van het Proces, of 3D Kaart van het Proces) wilt vormen.
+1. Klik in [!DNL Profile Manager] op **[!UICONTROL Menu]**, klik op **[!UICONTROL Add Visualization]** en klik vervolgens op het type proceskaart dat u wilt configureren (2D-metrische kaart, 2D-proceskaart of 3D-proceskaart).
 
-   Minstens één [!DNL *.vw] dossier verblijft in de folder.
+   Ten minste één [!DNL *.vw]-bestand bevindt zich in de map.
 
-1. Klik het vinkje voor het gewenste dossier met de rechtermuisknop aan en klik **[!UICONTROL Make Local]**.
-1. Klik het vinkje voor het dossier in de [!DNL User] kolom met de rechtermuisknop aan en klik **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
-1. Geef de parameters van het dossier uit gebruikend het volgende steekproefdossier en de lijst als gidsen:
+1. Klik met de rechtermuisknop op het vinkje voor het gewenste bestand en klik op **[!UICONTROL Make Local]**.
+1. Klik met de rechtermuisknop op het vinkje voor het bestand in de kolom [!DNL User] en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Bewerk de parameters van het bestand met behulp van het volgende voorbeeldbestand en de volgende tabel als hulplijnen:
 
    ```
    window = simpleBorderWindow: 
@@ -51,7 +52,7 @@ Nadat u een proceskaart vormt, is het vermeld met andere proceskaarten in [!DNL 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Voor deze parameter... </th> 
-   <th colname="col2" class="entry"> Verstrek deze informatie... </th> 
+   <th colname="col2" class="entry"> Deze informatie opgeven... </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -60,34 +61,34 @@ Nadat u een proceskaart vormt, is het vermeld met andere proceskaarten in [!DNL 
    <td colname="col2"> <p>De naam van metrisch de waarvan waarde voor een bepaalde knoop aan de grootte van de knoop evenredig is. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><i>Naam van de basisdimensie</i> </p> </td> 
-   <td colname="col2"> <p>De naam van de afmeting de waarvan elementen als knopen op de proceskaart verschijnen. </p> </td> 
+   <td colname="col1"> <p><i>Naam van basisdimensie</i> </p> </td> 
+   <td colname="col2"> <p>De naam van de dimensie waarvan de elementen als knopen op de proceskaart verschijnen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><i>Naam dimensie niveau</i> </p> </td> 
-   <td colname="col2"> <p>De naam van het niveau (ouder) van de basisdimensie de waarvan elementen u aan de proceskaart sleept. </p> </td> 
+   <td colname="col1"> <p><i>Naam van niveaudimensie</i> </p> </td> 
+   <td colname="col2"> <p>De naam van het niveau (ouder) van de basisdimensie waarvan elementen u aan de proceskaart sleept. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><i>Naam groepsdimensie</i> </p> </td> 
-   <td colname="col2"> <p>De naam van de afmeting die bepaalt hoe de elementen van de niveauafmeting worden gegroepeerd om de verbindingen tussen knopen te vormen. Een verbinding tussen twee knopen kan niet meer dan één element van een groepsdimensie overspannen. Wanneer u een selectie maakt die op een knoop binnen een proceskaart wordt gebaseerd, selecteert u alle elementen van de groepsdimensie die die knoop impliceerde. </p> </td> 
+   <td colname="col1"> <p><i>Naam van groepsdimensie</i> </p> </td> 
+   <td colname="col2"> <p>De naam van de dimensie die bepaalt hoe de elementen van de niveaudimensie worden gegroepeerd om de verbindingen tussen knopen te vormen. Een verbinding tussen twee knooppunten kan niet meer dan één element van een groepsdimensie beslaan. Wanneer u een selectie maakt die op een knoop binnen een proceskaart wordt gebaseerd, selecteert u alle elementen van de groepsdimensie die dat knoop impliceert. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>Metrische naam voor metrische kaart</i> </p> </td> 
-   <td colname="col2"> <p>Deze parameter is op 2D metrische slechts kaarten van toepassing. </p> <p>De naam van metrisch de waarvan waarde de horizontale positie van de knopen op de kaart bepaalt. </p> </td> 
+   <td colname="col2"> <p>Deze parameter is alleen van toepassing op 2D-metrische kaarten. </p> <p>De naam van metrisch waarvan waarde de horizontale positie van de knopen op de kaart bepaalt. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Voor meer informatie over de basisdimensie, groepsdimensie, niveaudimensie, en metrisch voor een proceskaart, zie de Kaarten van het [Proces](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
+>Voor meer informatie over de basisdimensie, groepsdimensie, niveaudimensie, en metrisch voor een proceskaart, zie [Proceskaarten](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
 
-1. In Blocnote, klik **[!UICONTROL File]** > **[!UICONTROL Save As]** om het dossier met een nieuwe naam op te slaan die op de basisafmeting wordt gebaseerd, namelijk de afmetingsnaam *.vw van de* Basis.
+1. Klik in Kladblok op **[!UICONTROL File]** > **[!UICONTROL Save As]** om het bestand op te slaan met een nieuwe naam op basis van de basisdimensie, dat wil zeggen *Naam van basisdimensie*.vw.
 
-   (Als u een 2D metrische kaart vormt, zou u het dossier met een naam moeten bewaren die op de metrische naam voor de metrische kaart wordt gebaseerd, namelijk de *Metrische naam voor metrische map*.vw.) Zorg ervoor dat u sparen het dossier aan de aangewezen folder van de proceskaart.
+   (Als u een metrische kaart 2D vormt, zou u het dossier met een naam moeten opslaan die op de metrische naam voor de metrische kaart wordt gebaseerd, namelijk *Metrische naam voor metrische kaart*.vw.) Zorg ervoor dat u het bestand opslaat in de juiste map met proceskaarten.
 
    >[!NOTE]
    >
    >Om ervoor te zorgen dat uw proceskaart als [!DNL *.vw] dossier, in het [!DNL Save As] venster wordt bewaard, plaats sparen als type aan Alle Dossiers.
 
-1. (Facultatief) om de veranderingen ter beschikking te stellen van alle gebruikers van het het werkprofiel, in het [!DNL Profile Manager], klik het vinkje voor het dossier in de [!DNL User] kolom met de rechtermuisknop aan en klik **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. (Optioneel) Als u de wijzigingen beschikbaar wilt maken voor alle gebruikers van het werkprofiel, klikt u in [!DNL Profile Manager] met de rechtermuisknop op het vinkje voor het bestand in de kolom [!DNL User] en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
