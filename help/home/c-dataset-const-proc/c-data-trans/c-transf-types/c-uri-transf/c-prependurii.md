@@ -1,38 +1,39 @@
 ---
-description: Gelijkaardig aan de transformatie AppendURI, beïnvloedt de transformatie PrependURI het interne gebied dat door de server van de gegevenswerkbank wordt gebruikt om de dimensie van URI te construeren.
-solution: Analytics
+description: Net als bij de AppendURI-transformatie beïnvloedt de PrependURI-transformatie het interne veld dat door de gegevenswerkbench-server wordt gebruikt om de URI-dimensie te maken.
 title: PrependURI
-topic: Data workbench
 uuid: 3f2fb1a7-83f7-481e-b892-0937acd379f9
+exl-id: c39d9241-ed66-446e-b59d-fdb11942d0e8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 2%
 
 ---
 
-
 # PrependURI{#prependuri}
 
-Gelijkaardig aan de transformatie AppendURI, beïnvloedt de transformatie PrependURI het interne gebied dat door de server van de gegevenswerkbank wordt gebruikt om de dimensie van URI te construeren.
+Net als bij de AppendURI-transformatie beïnvloedt de PrependURI-transformatie het interne veld dat door de gegevenswerkbench-server wordt gebruikt om de URI-dimensie te maken.
 
-De [!DNL PrependURI] transformatie werkt door de waarde op het geïdentificeerde inputgebied aan de voorzijde van de waarde momenteel in URI toe te voegen.
+De transformatie [!DNL PrependURI] werkt door de waarde in het geïdentificeerde inputgebied aan de voorzijde van de waarde momenteel in URI toe te voegen.
 
 | Parameter | Beschrijving | Standaard |
 |---|---|---|
-| Naam | Beschrijvende naam van de transformatie. U kunt om het even welke naam hier ingaan. |  |
+| Naam | Beschrijvende naam van de transformatie. U kunt hier elke naam invoeren. |  |
 | Opmerkingen | Optioneel. Opmerkingen over de transformatie. |  |
-| Toestand | De omstandigheden waaronder deze transformatie wordt toegepast. |  |
-| Standaard | De standaardwaarde om te gebruiken als aan de voorwaarde wordt voldaan en de inputwaarde niet beschikbaar is. |  |
-| Invoer | De naam van het gebied de waarvan waarde aan URI wordt voorbereid. |  |
+| Voorwaarde | De omstandigheden waaronder deze transformatie wordt toegepast. |  |
+| Standaard | De standaardwaarde die moet worden gebruikt als aan de voorwaarde is voldaan en de invoerwaarde niet beschikbaar is. |  |
+| Invoer | De naam van het veld waarvan de waarde aan de URI wordt toegevoegd. |  |
 
-Het volgende voorbeeld stelt eenvoudig het s-dns gebied op URI voor, die de vertegenwoordiging van de dimensie van URI uitbreidt om het domein te omvatten dat door het cliëntapparaat wordt gevraagd.
+In het volgende voorbeeld wordt het veld s-dns eenvoudig toegevoegd aan de URI, waarbij de representatie van de URI-dimensie wordt uitgebreid met het domein dat door het clientapparaat wordt aangevraagd.
 
 ![](assets/cfg_TransformationType_PrependURI.png)
 
-In dit voorbeeld, die het s-dns- gebied aan URI vooraf instelt
+In dit voorbeeld wordt het veld s-dns vooraf ingesteld op de URI
 
 * [!DNL /modelview.asp&id=login]
 
-resulteert in volgende URL:
+resulteert in de volgende URL:
 
 * [!DNL www.adobe.com/modelview.asp?id=login]
 
