@@ -1,32 +1,30 @@
 ---
-description: Adobe Data Workbench biedt gereedschappen en processen waarmee u uw gegevens kunt voorbereiden op naleving van de algemene gegevensbeschermingsregels (GDPR).
-solution: Analytics
-title: Ondersteuning voor Data Workbench voor GDPR
-topic: Data workbench
+description: Adobe Data Workbench biedt tools en processen om uw gegevens gereed te maken om te voldoen aan de algemene gegevensbeschermingsvoorschriften (GDPR).
+title: Ondersteuning van Data Workbench voor GDPR
+exl-id: fdc43567-0c57-4851-9073-e295258a8074
 translation-type: tm+mt
-source-git-commit: 279e71f3da3f0ebc29091e88b87666a22a36a8d6
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '525'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
+# Ondersteuning van Data Workbench voor GDPR
 
-# Ondersteuning voor Data Workbench voor GDPR
+De Data Workbench van Adobe verstrekt hulpmiddelen en processen om uw gegevens klaar te maken om aan [!DNL General Data Protection Regulations] (GDPR) te voldoen.
 
-Adobe Data Workbench biedt gereedschappen en processen om ervoor te zorgen dat uw gegevens voldoen aan de [!DNL General Data Protection Regulations] (GDPR).
+Net als alle Adobe Analytics-oplossingen biedt Data Workbench ondersteuning voor GDPR door analytische variabelen tijdens de verwerking van de Adobe Analytics-gegevensfeed op te schonen, te verwijderen en te labelen. Ter ondersteuning van GDPR-implementaties kunt u met Adobe processen voor GDPR instellen in overeenstemming met de machtigingen van uw bedrijf die zijn vastgelegd in uw overeenkomst met Adobe. Zie [Adobe Analytics en GDPR voor aanvullende informatie](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
 
-Net als alle andere Adobe Analytics-oplossingen biedt Data Workbench ondersteuning voor GDPR door analytische variabelen tijdens de verwerking van de gegevensfeed van Adobe Analytics op te schonen, te verwijderen en te labelen. Ter ondersteuning van GDPR-implementaties kunt u met Adobe processen voor GDPR instellen in overeenstemming met de machtigingen van uw bedrijf die zijn vastgelegd in uw overeenkomst met Adobe. Zie [Adobe Analytics en GDPR voor meer informatie](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
+In de GDPR-verordening worden de rollen en verplichtingen van de verschillende partijen die verantwoordelijk zijn voor GDPR-activering vastgesteld (zie [GDPR en Uw bedrijf](https://www.adobe.com/nl/privacy/general-data-protection-regulation.html)).
 
-In de GDPR-verordening worden de rollen en verplichtingen van de verschillende partijen die verantwoordelijk zijn voor GDPR-activering (zie [GDPR en Uw bedrijf](https://www.adobe.com/privacy/general-data-protection-regulation.html)) vastgesteld.
-
-* Uw organisatie fungeert als de **gegevenscontroller** om de context en het bewaren van persoonsgegevens te bepalen op basis van uw behoeften en beperkingen. Adobe verwerkt en slaat deze gegevens vervolgens namens u op.
-* Adobe is de **gegevensverwerker** die de software en services levert voor het implementeren van GDPR-vereisten op basis van uw overeenkomst met Adobe.
-* Na integratie van Data Workbench met de GDPR-service en volgens de GDPR-standaarden kunnen bezoekers van een site (de **betrokkenen**) hun &quot;recht om te worden vergeten&quot; uitoefenen door Adobe, de gegevensverwerker. Om het recht te bereiken om te worden vergeten, kunt u als gegevenscontroller uitgevochten bezoeker-id&#39;s uploaden van een interface of API naar Adobe. Raadpleeg de documentatie bij de GDPR-workflow [van](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) Adobe Analytics voor meer informatie, zoals de sectie [Verzendings- en verwijderingsverzoeken](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html) .
+* Uw organisatie fungeert als **gegevenscontroller** om de context en het bewaren van persoonlijke gegevens te bepalen op basis van uw behoeften en beperkingen. Adobe verwerkt en slaat deze gegevens vervolgens namens u op.
+* Adobe fungeert als de **gegevensprocessor** om de software en services te leveren voor het implementeren van GDPR-vereisten op basis van uw overeenkomst met Adobe.
+* Na integratie van de Data Workbench met de GDPR-service en volgens de GDPR-normen kunnen bezoekers van een site (de **betrokkenen**) hun &quot;recht om te worden vergeten&quot; uitoefenen door Adobe, de gegevensverwerker. Om het recht te verwezenlijken om te worden vergeten, kunt u als gegevenscontroller uitgevochten bezoeker-id&#39;s uploaden naar Adobe vanuit een gebruikersinterface of API. Zie de [Adobe Analytics GDPR Workflow](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) documentatie voor meer informatie, met inbegrip van [voorlegt toegang en schrapt verzoeken](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html) sectie.
 
 >[!NOTE]
 >
->Voor andere gegevensbronnen, zal uw organisatie voor het schoonmaken van uitgedaagde bezoeker IDs van andere logboekbronnen, zoals CRM, POS, IVR, en andere ruwe gegevensbronnen verantwoordelijk zijn. Aangepast-scoped de dienstenpakketten zullen beschikbaar zijn om steun aan organisaties te verlenen door een volledige vervangingsreeks dossiers voor elke gegevensbron _te_ verstrekken die de aan de gang zijnde dienstbewaarders moeten steunen of handhaven.
+>Voor andere gegevensbronnen, zal uw organisatie voor het schoonmaken van uitgedaagde bezoeker IDs van andere logboekbronnen, zoals CRM, POS, IVR, en andere ruwe gegevensbronnen verantwoordelijk zijn. Pakketten met aangepaste services zijn beschikbaar om organisaties te ondersteunen door _een volledige vervangende set bestanden te bieden voor elke gegevensbron_ die doorlopende servicereinders moeten ondersteunen of onderhouden.
 
 ## DWB bijwerken voor GDPR-implementatie
 
@@ -34,9 +32,9 @@ De raadpleging zal u adviseren over het aangewezen dienstenpakket om bestaande i
 
 Indien vereist:
 
-* [Voer een upgrade uit naar de nieuwste versie](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html) van Data Workbench. Voor de hoogste veiligheid, werden de nieuwe certificaten en veiligheidseigenschappen toegevoegd in DWB 6.7 versies die voor GDPR integratie worden vereist.
-* Als u de logbestanden van gebeurtenissen met betrekking tot TSV-analyse gebruikt, voert u een upgrade uit naar de [Avro-gegevensfeed](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/log-proc-config-file/c-log-sources.html#section-9a824b4c3d5549e7952a7111232035b2).
-* Als het gebruiken van erfenis UCP (het Verenigde Proces van de Klant) met Transformatie om bestaande logboeken bij te werken, bevorder aan het huidige proces. Het bijgewerkte proces produceert direct een hoofdraadplegingsdossier voor het in kaart brengen van bezoeker IDs over bronnen.
+* [Voer een upgrade uit naar de nieuwste ](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html) versie van Data Workbench. Voor de hoogste veiligheid, werden de nieuwe certificaten en veiligheidseigenschappen toegevoegd in DWB 6.7 versies die voor GDPR integratie worden vereist.
+* Als het gebruiken van de gebeurtenislogboeken van de Analyse van de erfenisTSV, bevorder aan [Avro gegevensvoer](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/log-proc-config-file/c-log-sources.html#section-9a824b4c3d5549e7952a7111232035b2).
+* Als het gebruiken van erfenis UCP (het Verenigde Proces van de Klant) met Transformatie om bestaande logboeken bij te werken, bevorder aan het huidige proces. Het bijgewerkte proces produceert direct een master raadplegingsdossier voor het in kaart brengen van bezoeker IDs over bronnen.
 * De gegevensstroom standaardiseren voor de GDPR-service.
 * Vestig een douane-scoped de dienstenpakket om andere logboekbronnen zoals CRM, POS, IVR, en andere ruwe gegevensbronnen te beheren.
 * Bevestig de bewaarperiode voor standaardgegevens van 25 maanden of meer in het Analytics-contract.
