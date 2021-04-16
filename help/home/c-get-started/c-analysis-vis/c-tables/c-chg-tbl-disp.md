@@ -1,27 +1,28 @@
 ---
-description: Informatie om het vertoningstype te selecteren.
-solution: Analytics
+description: Informatie om het weergavetype te selecteren.
 title: De tabelweergave wijzigen
-topic: Data workbench
 uuid: 45c8fa62-616e-4233-accc-920b4772ef1b
+exl-id: 12210a73-1f13-4742-9701-c4924b2d0f61
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '46'
+ht-degree: 0%
 
 ---
 
-
 # De tabelweergave wijzigen{#change-the-table-display}
 
-Informatie om het vertoningstype te selecteren.
+Informatie om het weergavetype te selecteren.
 
-* Klik de hoogste grens van de visualisatie met de rechtermuisknop aan en klik één van de volgende opties:
+* Klik met de rechtermuisknop op de bovenste rand van de visualisatie en klik op een van de volgende opties:
 
    * **[!UICONTROL Display As]** > **[!UICONTROL Table]**
 
-   * **[!UICONTROL Display As]** > **[!UICONTROL Bar Graph]**
+   * **[!UICONTROL Display As]** >  **[!UICONTROL Bar Graph]**
 
-   * **[!UICONTROL Display As]** > **[!UICONTROL Both]** (standaard)
+   * **[!UICONTROL Display As]** >  **[!UICONTROL Both]** (standaard)
+
    ![](assets/mnu_Table_Bar_Display.png)
 
-   Een X verschijnt links van de actieve vertoningswijze.
-
+   Er verschijnt een X links van de actieve weergavemodus.
