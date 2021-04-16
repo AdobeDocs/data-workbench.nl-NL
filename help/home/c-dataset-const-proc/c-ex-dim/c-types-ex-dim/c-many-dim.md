@@ -1,20 +1,21 @@
 ---
-description: Een vele-aan-vele dimensie heeft een vele-aan-vele verhouding met zijn ouder telbare dimensie.
-solution: Analytics
-title: Vele-aan-Vele Afmetingen
-topic: Data workbench
+description: Een vele-aan-vele dimensie heeft een vele-aan-vele verhouding met zijn oudertelbare dimensie.
+title: Veel-tot-veel Dimension
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
+exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 1%
 
 ---
 
+# Vele-aan-Vele Dimension{#many-to-many-dimensions}
 
-# Vele-aan-Vele Afmetingen{#many-to-many-dimensions}
+Een vele-aan-vele dimensie heeft een vele-aan-vele verhouding met zijn oudertelbare dimensie.
 
-Een vele-aan-vele dimensie heeft een vele-aan-vele verhouding met zijn ouder telbare dimensie.
-
-U kunt aan een vele-aan-vele dimensie als vertegenwoordiging van een reeks waarden voor elk element in zijn ouderafmeting denken. Bijvoorbeeld, is de vele-aan-vele Weg van het afmetingsOnderzoek een zitting-vlakke afmeting (het heeft een ouder van Zitting). Het vertegenwoordigt de reeks onderzoeksuitdrukkingen verbonden aan elke zitting in de dimensie van de Zitting. Één enkele onderzoeksuitdrukking kan in om het even welk aantal zittingen worden gebruikt, en één enkele zitting kan nul of meer onderzoeksuitdrukkingen omvatten. Daarom heeft de dimensie van de Woorden van het Onderzoek een veel-aan-vele verhouding met de dimensie van de Zitting.
+U kunt een vele-aan-vele dimensie als vertegenwoordiging van een reeks waarden voor elk element in zijn ouderafmeting denken. Bijvoorbeeld, is de vele-aan-vele dimensieDoorzoekzin een zitting-vlakke dimensie (het heeft een ouder van Zitting). Het vertegenwoordigt de reeks onderzoeksuitdrukkingen verbonden aan elke zitting in de dimensie van de Zitting. Er kan één zoekfrase worden gebruikt in een willekeurig aantal sessies en één sessie kan nul of meer zoekzinnen bevatten. Daarom heeft de dimensie van de Woorden van het Onderzoek een vele-aan-vele verhouding met de dimensie van de Zitting.
 
 Vele-aan-vele dimensies worden bepaald door de volgende parameters:
 
@@ -29,7 +30,7 @@ Vele-aan-vele dimensies worden bepaald door de volgende parameters:
  <tbody> 
   <tr> 
    <td colname="col1"> Naam </td> 
-   <td colname="col2"> Beschrijvende naam van de afmeting aangezien het aan de gebruiker in gegevenswerkbank verschijnt. De afmetingsnaam kan geen koppelteken (-) omvatten. </td> 
+   <td colname="col2"> Beschrijvende naam van de dimensie zoals deze voor de gebruiker in de gegevenswerkbank wordt weergegeven. De naam van de dimensie mag geen afbreekstreepje (-) bevatten. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -38,30 +39,30 @@ Vele-aan-vele dimensies worden bepaald door de volgende parameters:
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Toestand </td> 
-   <td colname="col2"> De voorwaarden waaronder de verhouding tussen de ouder en de waarde van het inputgebied zou moeten worden gecreeerd. </td> 
+   <td colname="col1"> Voorwaarde </td> 
+   <td colname="col2"> De voorwaarden waaronder de relatie tussen de waarde van het bovenliggende veld en van het invoerveld moet worden gemaakt. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Verborgen </td> 
-   <td colname="col2"> Bepaalt of de afmeting in de interface van de gegevenswerkbank verschijnt. Door gebrek, wordt deze parameter geplaatst aan vals. Als, bijvoorbeeld, de afmeting slechts als basis van metrisch moet worden gebruikt, kunt u deze parameter aan waar plaatsen om de afmeting van de vertoning van de gegevenswerkbank te verbergen. </td> 
-   <td colname="col3"> vals </td> 
+   <td colname="col2"> Hiermee wordt bepaald of de dimensie wordt weergegeven in de interface van de gegevenswerkbank. Deze parameter is standaard ingesteld op false. Als de afmeting bijvoorbeeld alleen als basis van een metrische waarde moet worden gebruikt, kunt u deze parameter instellen op true om de afmeting te verbergen in de weergave op de werkbank. </td> 
+   <td colname="col3"> false </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Invoer </td> 
-   <td colname="col2"> <p>De waarde die met de ouderdimensie (Ouder) verwant is. Als dit gebied een vector van koorden is, dan heeft elk element van de vector zijn eigen verhouding met de ouder. </p> <p> <p>Opmerking:  Als de inputwaarde voor elke logboekingang voor een element van de ouderdimensie leeg is, zal geen element van de vele-aan-vele dimensie op dat element van de ouderdimensie betrekking hebben. </p> </p> </td> 
+   <td colname="col2"> <p>De waarde die gerelateerd is aan de bovenliggende dimensie (parent). Als dit veld een vector met tekenreeksen is, heeft elk element van de vector zijn eigen relatie met het bovenliggende element. </p> <p> <p>Opmerking:  Als de inputwaarde voor elke logboekingang voor een element van de ouderafmeting leeg is, zal geen element van de vele-aan-vele afmeting op dat element van de ouderafmeting betrekking hebben. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Ouder </td> 
-   <td colname="col2"> De naam van de ouderafmeting. Om het even welke telbare afmeting kan een ouderafmeting zijn. </td> 
+   <td colname="col1"> Bovenliggend </td> 
+   <td colname="col2"> De naam van de bovenliggende dimensie. Elke aftelbare dimensie kan een bovenliggende dimensie zijn. </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Dit voorbeeld illustreert de definitie van een vele-aan-vele dimensie gebruikend gebeurtenisgegevens die van websiteverkeer worden verzameld. Deze vele-aan-vele dimensie, genoemd &quot;Geselecteerd Product,&quot;heeft zittingen betrekking op de producten die door de bezoeker tijdens die zitting worden gekocht. Het x-productgebied bevat een vector van waarden, elk waarvan met een paginamening wordt geassocieerd, die, beurtelings, met een zitting wordt geassocieerd.
+Dit voorbeeld illustreert de definitie van een vele-aan-vele dimensie gebruikend gebeurtenisgegevens die van websiteverkeer worden verzameld. Deze vele-aan-vele dimensie, genoemd &quot;Geselecteerd Product,&quot;heeft zittingen betrekking op de producten die door de bezoeker tijdens die zitting worden gekocht. Het veld x-products bevat een vector met waarden, die elk zijn gekoppeld aan een paginaweergave en die op hun beurt aan een sessie is gekoppeld.
 
 ![](assets/cfg_Transformation_Dim_ManytoMany.png)
 
-Door zulk een transformatie tot stand te brengen, kunt u een visualisatie in gegevenswerkbank tot stand brengen die het verband tussen de geselecteerde productdimensie en het aantal zittingen toont die elk van de producten impliceren.
+Door een dergelijke transformatie te maken, kunt u een visualisatie maken in de gegevenswerkbank die de relatie weergeeft tussen de geselecteerde productdimensie en het aantal sessies dat betrekking heeft op elk van de producten.
