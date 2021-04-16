@@ -1,35 +1,35 @@
 ---
-description: Informatie over het tonen van, het verbergen van, en het veranderen van het etiket van een knoop.
-solution: Analytics
-title: Een node labelen
-topic: Data workbench
+description: Informatie over het weergeven, verbergen en wijzigen van het label van een knooppunt.
+title: Een knooppunt labelen
 uuid: ded00cc8-2958-4aca-9d45-92afc441e9e2
+exl-id: e234aa1b-2f5d-42ec-bad7-2ada0db38702
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
 
+# Een knooppunt labelen{#label-a-node}
 
-# Een node labelen{#label-a-node}
+Informatie over het weergeven, verbergen en wijzigen van het label van een knooppunt.
 
-Informatie over het tonen van, het verbergen van, en het veranderen van het etiket van een knoop.
+**Een label van een knooppunt weergeven**
 
-**Om het etiket van een knoop te tonen**
+* Klik met de rechtermuisknop op het knooppunt en klik op **[!UICONTROL Label]***&lt; **[!UICONTROL node name]**>*. Het label van het knooppunt wordt weergegeven. Deze menuoptie is alleen beschikbaar als het knooppunt geen label heeft.
 
-* Klik de knoop met de rechtermuisknop aan en klik **[!UICONTROL Label]***&lt; **[!UICONTROL node name]**>*. De het etiketvertoningen van de knoop. Deze menuoptie is beschikbaar slechts als de knoop niet wordt geëtiketteerd.
+**Het label van een knooppunt verbergen**
 
-**Om het etiket van een knoop te verbergen**
+* Klik met de rechtermuisknop op het knooppunt en klik op **[!UICONTROL Unlabel]***&lt; **[!UICONTROL node name]**>*. Het label van het knooppunt wordt verwijderd. Deze menuoptie is alleen beschikbaar als het knooppunt al een label heeft.
 
-* Klik de knoop met de rechtermuisknop aan en klik **[!UICONTROL Unlabel]***&lt; **[!UICONTROL node name]**>*. Het label van de node wordt verwijderd. Deze menuoptie is beschikbaar slechts als de knoop reeds wordt geëtiketteerd.
-
-**Om het etiket van een knoop te veranderen**
+**Het label van een knooppunt wijzigen**
 
 >[!NOTE]
 >
->Het veranderen van het etiket van een knoop beïnvloedt slechts het etiket dat in de proceskaart wordt getoond. Het beïnvloedt niet de naam van het element dat de knoop vertegenwoordigt.
+>Het wijzigen van het label van een knooppunt heeft alleen invloed op het label dat wordt weergegeven in de procesafbeelding. Het heeft geen invloed op de naam van het element dat het knooppunt vertegenwoordigt.
 
-1. Klik de knoop met de rechtermuisknop aan. Het etiket van de knoop wordt getoond bij de bovenkant van het knoopmenu.
-1. Klik het knoopetiket om binnen te gaan uitgeven wijze en het etiket van de knoop te veranderen zoals gewenst.
+1. Klik met de rechtermuisknop op het knooppunt. Het label van het knooppunt wordt boven in het knooppuntmenu weergegeven.
+1. Klik op het label van het knooppunt om de bewerkingsmodus te activeren en wijzig desgewenst het label van het knooppunt.
 
 ![](assets/mnu_2DProcessMap_label.png)
-
