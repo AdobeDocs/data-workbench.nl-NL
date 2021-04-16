@@ -1,19 +1,20 @@
 ---
-description: Gebruikend de Server van het Rapport voor de Werkbank van Gegevens, kunt u rapportreeksen plannen en automatisch produceren en aan anderen verdelen.
-solution: Analytics
+description: Gebruikend de Server van het Rapport voor Data Workbench, kunt u rapportreeksen plannen en automatisch produceren en aan anderen verdelen.
 title: Data Workbench Report Server
-topic: Data workbench
 uuid: eac678de-58bf-46d2-aa09-592696c01fb2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 0%
 
 ---
 
 
 # Data Workbench Report Server{#data-workbench-report-server}
 
-Gebruikend de Server van het Rapport voor de Werkbank van Gegevens, kunt u rapportreeksen plannen en automatisch produceren en aan anderen verdelen.
+Gebruikend de Server van het Rapport voor Data Workbench, kunt u rapportreeksen plannen en automatisch produceren en aan anderen verdelen.
 
-Bijvoorbeeld, kunt u een statusrapport tot stand brengen dat de bijzondere visualisaties bevat die de leden van bovenleiding in het zien geinteresseerd zijn en dan het resulterende rapport aan de aangewezen managers verdelen.
+Bijvoorbeeld, kunt u een statusrapport tot stand brengen dat de bijzondere visualisaties bevat die de leden van hoger beheer in het zien van en dan het resulterende rapport aan de aangewezen managers geinteresseerd zijn.
 
-U kunt rapporten ook tot stand brengen die u alarmeren wanneer metrisch een bepaalde drempel binnen een gespecificeerd tijdkader heeft bereikt. Bijvoorbeeld, kunt u een rapport tot stand brengen dat u alarmeert wanneer het aantal orden voor de vorige dag minder dan 10 of groter was dan 100.
+U kunt ook rapporten maken die u waarschuwen wanneer een metrische waarde een gedefinieerde drempel binnen een opgegeven tijdsperiode heeft bereikt. U kunt bijvoorbeeld een rapport maken dat u waarschuwt wanneer het aantal bestellingen voor de vorige dag kleiner was dan 10 of groter dan 100.
