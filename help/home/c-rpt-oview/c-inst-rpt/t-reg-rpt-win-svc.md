@@ -1,56 +1,57 @@
 ---
 description: Stappen om de Server van het Rapport te registreren en in werking te stellen.
-solution: Analytics
 title: Rapportserver registreren als Windows-service
-topic: Data workbench
 uuid: 01fc0bbf-9f4a-487e-b1cb-16bf6974a541
+exl-id: 46ea5dd4-7041-451e-91e5-f927873fc7d7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 0%
 
 ---
 
-
-# Rapportserver registreren als Windows-service{#registering-report-server-as-a-windows-service}
+# Rapportserver registreren als een Windows-service{#registering-report-server-as-a-windows-service}
 
 Stappen om de Server van het Rapport te registreren en in werking te stellen.
 
-Alvorens u deze procedure uitvoert, identificeer de rekening van Vensters waaronder de [!DNL Report Server] dienst zal lopen. Zorg ervoor dat deze rekening de juiste toestemmingen heeft om tot de plaats toegang te hebben waar de geproduceerde rapporten worden opgeslagen (namelijk gebruik niet [!DNL Local System Account]).
+Alvorens u deze procedure uitvoert, identificeer de rekening van Vensters waaronder de [!DNL Report Server] dienst zal lopen. Zorg ervoor dat dit account de juiste machtigingen heeft om toegang te krijgen tot de locatie waar gegenereerde rapporten zijn opgeslagen (gebruik dus niet [!DNL Local System Account]).
 
-Gebruik onderstaande procedure om te starten [!DNL Report Server]. Wanneer u [!DNL Report Server] voor het eerst begint, registreert het zich automatisch als dienst van Vensters.
+Gebruik de onderstaande procedure om [!DNL Report Server] te starten. Wanneer u [!DNL Report Server] voor het eerst begint, registreert het automatisch als dienst van Vensters.
 
-Wanneer u [!DNL Report Server] voor het eerst begint, verbindt het automatisch met de Server van de Vergunning van Adobe om uw digitaal certificaat te registreren. Als u het registratieproces wilt voltooien, moet uw computer zijn verbonden met internet wanneer u de volgende stappen uitvoert.
+Wanneer u [!DNL Report Server] voor het eerst start, wordt er automatisch verbinding gemaakt met de Adobe-licentieserver om uw digitale certificaat te registreren. Om het registratieproces met succes te voltooien, moet uw computer met Internet worden verbonden wanneer u de volgende stappen uitvoert.
 
-1. In Vensters, navigeer aan de folder waar u installeerde [!DNL Report Server].
+1. Navigeer in Windows naar de map waarin u [!DNL Report Server] hebt geïnstalleerd.
 
    Voorbeeld: D:\Adobe\Report
 
-1. Dubbelklik **[!UICONTROL ReportServer.exe]**.
-1. Om te bevestigen dat [!DNL Report Server] correct loopt, klik **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Services]**. Deze bevelopeenvolging kan variëren afhankelijk van welke versie van Vensters u gebruikt.
-1. In de de dienstlijst, bepaal de plaats van de ingang voor [!DNL Report Server] en bevestig dat zijn status Begonnen is en zijn starttype Automatisch is.
-1. Voer de volgende handelingen uit om de gebruikersaccount op te geven waaronder deze [!DNL Report Server] wordt uitgevoerd:
+1. Dubbelklik op **[!UICONTROL ReportServer.exe]**.
+1. Om te bevestigen dat [!DNL Report Server] correct loopt, klik **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Services]**. Deze opdrachtvolgorde kan variëren, afhankelijk van de versie van Windows die u gebruikt.
+1. Zoek in de servicelijst de vermelding voor [!DNL Report Server] en bevestig dat de status is gestart en dat het opstarttype Automatisch is.
+1. Ga als volgt te werk om de gebruikersaccount op te geven waaronder [!DNL Report Server] wordt uitgevoerd:
 
-   1. Dubbelklik **[!UICONTROL Report Server]** om het [!DNL Properties] venster te openen.
+   1. Dubbelklik op **[!UICONTROL Report Server]** om het venster [!DNL Properties] te openen.
 
-   1. Selecteer het **[!UICONTROL Log On]** tabblad.
-   1. Selecteer de **[!UICONTROL This account]** keuzerondje.
-   1. Het type of doorbladert voor de rekeningsnaam. Deze rekening moet toestemming hebben om tot de plaats toegang te hebben waar de geproduceerde rapporten worden opgeslagen.
+   1. Selecteer het tabblad **[!UICONTROL Log On]**.
+   1. Selecteer het keuzerondje **[!UICONTROL This account]**.
+   1. Typ of blader naar de accountnaam. Dit account moet toestemming hebben om toegang te krijgen tot de locatie waar gegenereerde rapporten worden opgeslagen.
 
       >[!NOTE]
       >
       >Als [!DNL Report Server] rapporten als dossiers van Microsoft Excel ( [!DNL .xls] of [!DNL .xlsx]) verspreidt, zorg ervoor dat de rekening ook toestemming heeft om Microsoft Excel in werking te stellen.
 
-   1. Ga en bevestig het wachtwoord voor de rekening in.
+   1. Voer het wachtwoord voor de account in en bevestig dit.
    1. Klik op **[!UICONTROL OK]**.
 
-1. Klik de [!DNL Report Server] dienst met de rechtermuisknop aan en selecteer **[!UICONTROL Restart]** om de dienst onder de rekening opnieuw te beginnen u specificeerde.
-1. Om te controleren of er tijdens het opstarten fouten zijn [!DNL Report Server] opgetreden, klikt u op **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Event Viewer]**. Deze bevelopeenvolging kan variëren afhankelijk van welke versie van Vensters u gebruikt.
+1. Klik met de rechtermuisknop op de [!DNL Report Server]-service en selecteer **[!UICONTROL Restart]** om de service opnieuw te starten onder de account die u hebt opgegeven.
+1. Om te controleren of [!DNL Report Server] fouten ondervond tijdens het opstarten, klikt u op **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Event Viewer]**. Deze opdrachtvolgorde kan variëren, afhankelijk van de versie van Windows die u gebruikt.
 
-   1. In de linkerruit van het [!DNL Event Viewer] venster, selecteer het logboek van Toepassingen.
-   1. In de juiste ruit, zoek gebeurtenissen met Adobe in de [!DNL Source] kolom.
-   1. Als u een fout van Adobe vindt, klik de fout tweemaal om het [!DNL Event Properties] venster te tonen. Dit venster verstrekt gedetailleerde informatie over de fout.
+   1. Selecteer in het linkerdeelvenster van het venster [!DNL Event Viewer] het logboek Toepassingen.
+   1. Zoek in het rechterdeelvenster naar gebeurtenissen met Adobe in de kolom [!DNL Source].
+   1. Als u een fout van Adobe vindt, klik de fout tweemaal om het [!DNL Event Properties] venster te tonen. Dit venster bevat gedetailleerde informatie over de fout.
 
       >[!NOTE]
       >
-      >Nadat de [!DNL Report Server] dienst begint, [!DNL ReportServer.log] wordt het dossier gecreeerd in de [!DNL Trace] folder van de Server van het Rapport. Dit dossier is ook nuttig voor het oplossen van problemenkwesties met [!DNL Report Server].
+      >Nadat de service [!DNL Report Server] is gestart, wordt het bestand [!DNL ReportServer.log] gemaakt in de map Report Server [!DNL Trace]. Dit bestand is ook handig voor het oplossen van problemen met [!DNL Report Server].
 
-U hebt de installatie van voltooid [!DNL Report Server]. [!DNL Report Server] is ontworpen om ononderbroken te lopen. Als u het systeem opnieuw opstart, wordt het automatisch opnieuw [!DNL Report Server] opgestart. Als u moet beginnen en [!DNL Report Server] manueel ophouden, kunt u dit doen gebruikend het [!DNL Services] controlepaneel in Vensters.
+U hebt de installatie van [!DNL Report Server] voltooid. [!DNL Report Server] is ontworpen om continu te worden uitgevoerd. Als u de computer opnieuw opstart, wordt [!DNL Report Server] automatisch opnieuw opgestart. Als u [!DNL Report Server] manueel moet beginnen en ophouden, kunt u dit doen gebruikend [!DNL Services] controlepaneel in Vensters.
