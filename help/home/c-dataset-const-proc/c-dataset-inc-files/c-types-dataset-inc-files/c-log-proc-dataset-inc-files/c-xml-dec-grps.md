@@ -1,28 +1,29 @@
 ---
-description: De verwerking van de dossiers van XML als logboekbronnen om decoders te bepalen voor het halen van gegevens uit het dossier van XML.
-solution: Analytics
-title: XML-decodergroepen
-topic: Data workbench
+description: De verwerking van XML-bestanden als logbronnen om decoders te definiëren voor het extraheren van gegevens uit het XML-bestand.
+title: XML-decoderingsgroepen
 uuid: 8fc9ab80-9a71-4fe2-a646-e830ffeb67b9
+exl-id: 0b0534b7-8596-4528-a643-8a9b41dcaa33
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1295'
+ht-degree: 0%
 
 ---
 
+# XML-decoderingsgroepen{#xml-decoder-groups}
 
-# XML-decodergroepen{#xml-decoder-groups}
-
-De verwerking van de dossiers van XML als logboekbronnen om decoders te bepalen voor het halen van gegevens uit het dossier van XML.
+De verwerking van XML-bestanden als logbronnen om decoders te definiëren voor het extraheren van gegevens uit het XML-bestand.
 
 >[!NOTE]
 >
->Het bepalen van de decodergroepen van XML voor het logboekbronnen van XML vereist kennis van de structuur en de inhoud van het dossier van XML, de te halen gegevens, en de gebieden waarin dat gegeven wordt opgeslagen. Deze sectie verstrekt basisbeschrijvingen van de parameters die u voor decoders kunt specificeren. De manier waarin u om het even welke decoder gebruikt hangt van het dossier van XML af dat uw brongegevens bevat.
+>Voor het definiëren van XML-decoderingsgroepen voor XML-logbronnen is kennis vereist van de structuur en inhoud van het XML-bestand, de gegevens die moeten worden geëxtraheerd en de velden waarin die gegevens worden opgeslagen. Deze sectie bevat basisbeschrijvingen van de parameters die u kunt opgeven voor decoders. De manier waarop u een decoder gebruikt, is afhankelijk van het XML-bestand dat de brongegevens bevat.
 
-Voor informatie over formaatvereisten voor het logboekbronnen van XML, zie de [Bronnen](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea)van het Logboek. Voor hulp bij het bepalen van de decoders van XML, contacteer Adobe.
+Voor informatie over formaatvereisten voor het logboekbronnen van XML, zie [Logbronnen](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea). Neem contact op met Adobe voor hulp bij het definiëren van XML-decoders.
 
-Het hoogste niveau van een decoder van XML is een decodergroep (XMLDecoderGroup), die een reeks decoderlijsten is die u gebruikt om gegevens uit een dossier van XML van een bepaald formaat te halen. Als u de dossiers van XML van verschillende formaten hebt, dan moet u een decodergroep voor elk formaat bepalen. Elke decodergroep bestaat uit één of meerdere decoderlijsten.
+Het hoogste niveau van een decoder van XML is een decoderingsgroep (XMLDecoderGroup), die een reeks decoderingstabellen is die u gebruikt om gegevens uit een dossier van XML van een bepaald formaat te halen. Als u XML-bestanden met verschillende indelingen hebt, moet u voor elke indeling een decoderingsgroep definiëren. Elke decoderingsgroep bestaat uit een of meer decoderingstabellen.
 
-De volgende lijst beschrijft de parameter van Lijsten en alle subparameters die u moet specificeren om een de decodergroep van XML te bepalen.
+In de volgende tabel worden de parameter Tabellen en alle subparameters beschreven die u moet opgeven om een XML-decoderingsgroep te definiëren.
 
 <table id="table_06C40C5149E94548A1B0C2ED4397624B"> 
  <thead> 
@@ -34,103 +35,103 @@ De volgende lijst beschrijft de parameter van Lijsten en alle subparameters die 
  <tbody> 
   <tr> 
    <td colname="col1"> Tabellen </td> 
-   <td colname="col2"> <p>Elke lijst in een decodergroep vertegenwoordigt één niveau van gegevens die uit het dossier van XML moeten worden gehaald. Bijvoorbeeld, als u gegevens over bezoekers wilt halen, dan zou u een decoderlijst creëren die uit de informatie bestaat u voor elke bezoeker wilt halen. U kunt decoderlijsten binnen decoderlijsten ook tot stand brengen (zie Kinderen). </p> <p> <b>Om een lijst aan een decodergroep toe te voegen</b> 
+   <td colname="col2"> <p>Elke tabel in een decoderingsgroep vertegenwoordigt één gegevensniveau dat uit het XML-bestand moet worden geëxtraheerd. Als u bijvoorbeeld gegevens over bezoekers wilt extraheren, maakt u een decoderingstabel die bestaat uit de gegevens die u voor elke bezoeker wilt extraheren. U kunt ook decoderingstabellen maken in decoderingstabellen (zie Onderliggende niveaus). </p> <p> <b>Een tabel toevoegen aan een decoderingsgroep</b> 
      <ul id="ul_C73CAD77440B4465B9FCE08BF4FA0749"> 
-      <li id="li_C4B8CC5A85D942898F1EB76778105818"> Klik <span class="uicontrol"> Lijsten met de rechtermuisknop aan </span> en de klik <span class="uicontrol"> voegt nieuw </span> &gt; <span class="uicontrol"> XMLDecoderTable toe </span>. </li> 
+      <li id="li_C4B8CC5A85D942898F1EB76778105818"> Klik met de rechtermuisknop op <span class="uicontrol"> Tabellen </span> en klik op <span class="uicontrol"> Nieuwe </span> &gt; <span class="uicontrol"> XMLDecoderTable </span>. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Gebieden </td> 
-   <td colname="col2"> <p>De uitgebreide gebieden (bijvoorbeeld, x-trackingidentiteitskaart, x-e-mail) waarin het gegeven wordt opgeslagen. De gegevens die in het veld moeten worden opgeslagen, worden bepaald door de subvelden Pad en/of Verrichting. </p> <p> De weg is het niveau van het gebied binnen het gestructureerde dossier van XML. De weg van een gebied is met betrekking tot de weg van de lijst waarin het wordt bepaald. Voorbeelden zijn <span class="filepath"> tag.tag.tag </span> of <span class="filepath"> tag.tag.tag.tag.@attribuut </span>. Merk op dat de wegen case-sensitive zijn. </p> <p> Een verrichting wordt toegepast op elke lijn in de gespecificeerde weg om een output te veroorzaken. De volgende activiteiten zijn beschikbaar: 
+   <td colname="col1"> Velden </td> 
+   <td colname="col2"> <p>De uitgebreide velden (bijvoorbeeld x-trackingid, x-email) waarin de gegevens worden opgeslagen. De gegevens die in het veld moeten worden opgeslagen, worden bepaald door de subvelden Pad en/of Bewerking. </p> <p> Het pad is het niveau van het veld in het gestructureerde XML-bestand. Het pad van een veld is relatief ten opzichte van het pad van de tabel waarin het is gedefinieerd. Voorbeelden zijn <span class="filepath"> tag.tag.tag </span> of <span class="filepath"> tag.tag.tag.@attribute </span>. Paden zijn hoofdlettergevoelig. </p> <p> Een bewerking wordt toegepast op elke regel in het opgegeven pad om een uitvoerbewerking te maken. De volgende bewerkingen zijn beschikbaar: 
      <ul id="ul_B264A411D7E3446288E7E69D62150B8B"> 
-      <li id="li_5936E81C0EEF46AFB780E451A04A88E4"><b>LAATST:</b> Het gebied neemt de waarde van het laatste voorkomen van de weg in het dossier van XML. </li> 
-      <li id="li_7BC4F24F2CA84C2EB64B06FE09B4CAF6"><b>RANDOM:</b> Wijst een willekeurige waarde aan het gebied toe. Deze verrichting is nuttig als u een unieke identiteitskaart, zoals voor het x-trackingïdgebied moet produceren. </li> 
-      <li id="li_C1D34EA11BFB4859A25A275A9B63FB56"><b>INHERIT:</b> Het bepaalde gebied erft zijn waarde van het overeenkomstige gebied van de ouderlijst. </li> 
-      <li id="li_F62FB8CD962E4E1495D9A2D5B7A78E2A"><b>"<i>constante </i>":</b> De constante moet in aanhalingstekens worden ingesloten. U kunt een constante verrichting gebruiken om het bestaan van een bepaalde weg te controleren; als de weg bestaat, dan wordt het gebied toegewezen de waarde van de constante. </li> 
-     </ul> </p> <p> <b>Om een gebied aan een decoderlijst toe te voegen</b> </p> <p> 
+      <li id="li_5936E81C0EEF46AFB780E451A04A88E4"><b>LAST:</b> Het veld krijgt de waarde van de laatste instantie van het pad in het XML-bestand. </li> 
+      <li id="li_7BC4F24F2CA84C2EB64B06FE09B4CAF6"><b>RANDOM:</b> wijst een willekeurige waarde toe aan het veld. Deze bewerking is handig als u een unieke id wilt genereren, bijvoorbeeld voor het veld x-trackingid. </li> 
+      <li id="li_C1D34EA11BFB4859A25A275A9B63FB56"><b>INHERIT:</b> het gedefinieerde veld neemt de waarde over van het corresponderende veld van de bovenliggende tabel. </li> 
+      <li id="li_F62FB8CD962E4E1495D9A2D5B7A78E2A"><b>"<i>constante  </i>":</b> de constante moet tussen aanhalingstekens staan. U kunt een constante bewerking gebruiken om te controleren of een bepaald pad bestaat. Als het pad bestaat, wordt aan het veld de waarde van de constante toegewezen. </li> 
+     </ul> </p> <p> <b>Een veld toevoegen aan een decoderingstabel</b> </p> <p> 
      <ul id="ul_91D104D927424DEA9E788E43B2F6FEA9"> 
-      <li id="li_5448B01EE82349569BBFC99C9604D7B8"> Klik <span class="uicontrol"> Gebieden met de rechtermuisknop aan </span>, dan klik <span class="uicontrol"> toevoegen nieuw </span> &gt; <span class="uicontrol"> XMLDecoderField </span>. Bepaal Gebied, Verrichting en Weg zoals aangewezen. </li> 
+      <li id="li_5448B01EE82349569BBFC99C9604D7B8"> Klik met de rechtermuisknop op <span class="uicontrol"> Velden </span> en klik vervolgens op <span class="uicontrol"> Nieuwe </span> &gt; <span class="uicontrol"> XMLDecoderField </span>. Definieer het veld, de bewerking en het pad naar wens. </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Pad </td> 
-   <td colname="col2"> <p>Het niveau binnen het gestructureerde dossier van XML waarvoor de decoderlijst informatie bevat. Voor een de decoderlijst van kindXML, is de weg met betrekking tot de weg van de ouderlijst. Merk op dat de wegen case-sensitive zijn. </p> <p> Bijvoorbeeld, als uw dossier van XML de structuur bevat: </p> 
+   <td colname="col2"> <p>Het niveau binnen het gestructureerde dossier van XML waarvoor de decoderingstabel informatie bevat. Voor een onderliggende XML-decoderingstabel is het pad relatief ten opzichte van het pad van de bovenliggende tabel. Paden zijn hoofdlettergevoelig. </p> <p> Als uw XML-bestand bijvoorbeeld de structuur bevat: </p> 
 
     &amp;lt;bezoeker&amp;gt;
     
     &amp;nbsp;
     
-    ...
+    ..
     
     &amp;nbsp;
     
     &amp;lt;/bezoeker&amp;gt;
     
-    &amp;lt;/logdata&amp;gt;&amp;nbsp; &lt;/code> &lt;p> dan zou het pad &lt;span class=&quot;filepath&quot;> logdata zijn.bezoeker &lt;/span>. &lt;/p> &lt;/td>
+    &amp;lt;/logdata&amp;gt;&amp;nbsp;   &lt;p> dan zou het pad &lt;span class=&quot;filepath&quot;>logdata.bezoeker&lt;/span> zijn. &lt;/p> &lt;/td>
 </tr> 
   <tr> 
    <td colname="col1"> Tabel </td> 
-   <td colname="col2"> <p>De waarde van deze parameter zou altijd "Ingang van het Logboek moeten zijn." </p> <p> <p>Opmerking:  Verander deze waarde niet zonder Adobe te raadplegen. </p> </p> </td> 
+   <td colname="col2"> <p>De waarde van deze parameter moet altijd 'Logbestandvermelding' zijn. </p> <p> <p>Opmerking:  Wijzig deze waarde niet zonder Adobe te raadplegen. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Kinderen </td> 
-   <td colname="col2"> <p>Optioneel. Één of meerdere ingebedde decoderlijsten. Elk kind omvat de Gebieden, de Weg, en de hierboven beschreven parameters van de Lijst. </p> <p> <b>Om een kind aan een decoderlijst toe te voegen</b> </p> <p> 
+   <td colname="col2"> <p>Optioneel. Een of meer ingesloten decoderingstabellen. Elk onderliggend element bevat de hierboven beschreven parameters Velden, Pad en Tabel. </p> <p> <b>Een onderliggend element toevoegen aan een decoderingstabel</b> </p> <p> 
      <ul id="ul_902AC6CA5D66457D84CBA3194FF49BBE"> 
-      <li id="li_07B4D60E7E2E4630B4878691E575936A"> Klik <span class="uicontrol"> Kinderen met de rechtermuisknop aan </span> en de klik <span class="uicontrol"> voegt nieuw toe </span> &gt; <span class="uicontrol"> XMLDecoderTable </span>. Bepaal Gebied, Verrichting en Weg zoals aangewezen. </li> 
+      <li id="li_07B4D60E7E2E4630B4878691E575936A"> Klik met de rechtermuisknop op <span class="uicontrol"> Onderliggende items </span> en klik op <span class="uicontrol"> Nieuwe </span> &gt; <span class="uicontrol"> XMLDecoderTable </span> toevoegen. Definieer het veld, de bewerking en het pad naar wens. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Om een dossier van XML als logboekbron voor een dataset te gebruiken, moeten de de decodergroepen en lijsten van XML worden bepaald om de informatie te halen die in de dataset moet worden verwerkt. In dit voorbeeld, kunt u zien hoe te om decodergroepen en lijsten voor een het logboekbron van steekproefXML voor een Webdataset te bepalen.
+Om een dossier van XML als logboekbron voor een dataset te gebruiken, moeten de decoderingsgroepen en de lijsten van XML worden bepaald om de informatie te halen die in de dataset moet worden verwerkt. In dit voorbeeld, kunt u zien hoe te om decoderingsgroepen en lijsten voor een bron van het steekproeflogboek van XML voor een Webdataset te bepalen.
 
-Het volgende dossier van XML bevat informatie over een websitebezoeker, met inbegrip van een identiteitskaart van de Wolk van de Ervaring, e-mailadres, fysiek adres, en informatie over de de paginameningen van de bezoeker.
+Het volgende XML-bestand bevat informatie over een websitebezoeker, zoals een Experience Cloud-id, e-mailadres, fysiek adres en informatie over de paginaweergaven van de bezoeker.
 
 ![](assets/xmlFile_LogSource.png)
 
-Aangezien wij één enkel dossier van XML hebben, hebben wij slechts één decodergroep nodig, die wij &quot;het Formaat van XML van de Steekproef noemen.&quot; Deze decodergroep is op een andere dossiers van XML van het zelfde formaat van toepassing zoals dit dossier. Om te beginnen construerend de decoderlijsten van XML binnen deze decodergroep, moeten wij eerst bepalen welke informatie wij willen halen en de gebieden waarin de gegevens zullen worden opgeslagen.
+Omdat we één XML-bestand hebben, hebben we maar één decoderingsgroep nodig, die we &#39;Voorbeeld-XML-indeling&#39; noemen. Deze decoderingsgroep is van toepassing op alle andere XML-bestanden met dezelfde indeling als dit bestand. Als u XML-decoderingstabellen wilt samenstellen binnen deze decoderingsgroep, moet u eerst bepalen welke gegevens u wilt extraheren en in welke velden de gegevens worden opgeslagen.
 
-In dit voorbeeld, halen wij informatie over de bezoeker en de paginameningen verbonden aan die bezoeker. Om dit te doen, creëren wij een top-level (ouder) de decoderlijst van XML met informatie over de bezoeker en een ingebedde (kind) de decoderlijst van XML met informatie over de paginameningen van die bezoeker.
+In dit voorbeeld extraheren we informatie over de bezoeker en de paginaweergaven die aan die bezoeker zijn gekoppeld. Hiertoe maken we een XML-decoderingstabel op hoofdniveau (bovenliggend) met informatie over de bezoeker en een ingesloten (onderliggende) XML-decoderingstabel met informatie over de paginaweergaven van die bezoeker.
 
-**De informatie voor de ouder (bezoeker) lijst is als volgt**
+**De informatie voor de bovenliggende tabel (bezoeker) ziet er als volgt uit**
 
-* Een gegevenstype herkenningsteken voor elke rij van gegevens in het dossier van XML. Wij gebruiken VISITOR als onze identificator zodat wij rijen van gegevens met betrekking tot de bezoeker en niet tot de paginameningen snel kunnen identificeren. We kunnen deze waarde opslaan in het x-rowtype veld.
-* De bezoekersidentiteitskaart, die we opslaan in het x-trackingid veld.
+* Een id voor het gegevenstype van elke rij gegevens in het XML-bestand. Wij gebruiken VISITOR als onze identificatie zodat wij rijen van gegevens met betrekking tot de bezoeker en niet tot de paginameningen snel kunnen identificeren. Deze waarde kan worden opgeslagen in het veld x-rowtype.
+* De id van de bezoeker, die we opslaan in het veld x-trackingid.
 * Het e-mailadres van de bezoeker (contact.email), dat we in het veld x-email opslaan.
-* De inschrijvingsstatus van de bezoeker. Als de bezoeker een geregistreerde gebruiker is, dan kunnen wij waarde &quot;1&quot;op het x-is-geregistreerde gebied opslaan.
-* De waarde van de Weg is, [!DNL logdata.visitor]en de waarde van de Lijst is [!DNL Log Entry]. Voor informatie over deze parameters, zie de lijst XMLDecoderGroup hierboven.
+* De registratiestatus van de bezoeker. Als de bezoeker een geregistreerde gebruiker is, dan kunnen wij de waarde &quot;1&quot;op het x-is-geregistreerde gebied opslaan.
+* De waarde van de Weg is [!DNL logdata.visitor], en de waarde van de Lijst is [!DNL Log Entry]. Zie de tabel XMLDecoderGroup hierboven voor informatie over deze parameters.
 
-**De informatie voor de kind (paginameningen) lijst is als volgt:**
+**De informatie voor de onderliggende tabel (paginaweergaven) ziet er als volgt uit:**
 
-* Een gegevenstype herkenningsteken voor elke rij van gegevens in het dossier van XML. We gebruiken &quot;PAGEVIEW&quot; als onze identificator, zodat we snel rijen gegevens kunnen identificeren die betrekking hebben op de weergave van de bezoekerspagina en niet alleen op de bezoeker. We slaan deze waarde op in het x-rowtype veld.
-* De bezoekersidentiteitskaart Deze waarde wordt geërft van de ouderlijst en op het x-trackingidentiteitskaart- gebied opgeslagen.
-* De timestamp van elke paginamening, die op het x-gebeurtenis-tijd gebied wordt opgeslagen.
-* URI van elke paginamening, die op het cs-uri-stengebied wordt opgeslagen.
-* De waarde van de Weg is paginaleving, en de waarde van de Lijst is &quot;de Ingang van het Logboek.&quot; Voor informatie over deze parameters, zie de lijst XMLDecoderGroup hierboven.
+* Een id voor het gegevenstype van elke rij gegevens in het XML-bestand. We gebruiken &#39;PAGEVIEW&#39; als onze id, zodat we snel rijen met gegevens kunnen identificeren die betrekking hebben op de paginaweergaven van de bezoeker en niet alleen op de bezoeker. Deze waarde wordt opgeslagen in het veld x-rowtype.
+* De ID van de bezoeker. Deze waarde wordt overgenomen van de bovenliggende tabel en wordt opgeslagen in het veld x-trackingid.
+* De tijdstempel van elke paginaweergave, die wordt opgeslagen in het veld x-event-time.
+* De URI van elke paginaweergave, die wordt opgeslagen in het veld cs-uri-stem.
+* De waarde Pad is PadView en de waarde in Tabel is Logbestandvermelding. Zie de tabel XMLDecoderGroup hierboven voor informatie over deze parameters.
 
-De volgende het schermvangst toont een gedeelte van [!DNL Log Processing Dataset Include] dossier met de resulterende de decodergroep van XML voor het dossier van steekproefXML dat op de besproken structuur van de ouder en de decoderlijsten van kindXML wordt gebaseerd.
+De volgende het schermvangst toont een gedeelte van [!DNL Log Processing Dataset Include] dossier met de resulterende de decoderingsgroep van XML voor het dossier van steekproefXML die op de besproken structuur van de ouder en kinddecoderingstabellen van XML wordt gebaseerd.
 
 ![](assets/cft_LogProc_xmldecodergroup_top.png)
 
 ![](assets/cfg_LogProcessingInclude_XMLDecoderGroup_bottom.png)
 
-Een lijst die de output van deze decoder voor ons dossier van steekproefXML toont kijkt iets als het volgende:
+Een tabel met de uitvoer van deze decoder voor ons XML-voorbeeldbestand ziet er ongeveer als volgt uit:
 
-| x-rowtype | cs—uri-stengel | x-e-mail | x-is-geregistreerd | x-gebeurtenis-tijd | x-tracking-id |
+| x-rowtype | cs—uri-stem | x-email | x-is-geregistreerd | x-event-time | x-tracking-id |
 |---|---|---|---|---|---|
-| BEZOEKER |  | foo@bar.com | 1 |  | 1 |
-| PAGEVIEW | /index.html |  |  | 2006-01-01 08:00:00 | 1 |
+| VISITOR |  | foo@bar.com | 1 |  | 1 |
+| PAGEVIEW | /index.html |  |  | 2006-01-01 08:00:00 | 3 |
 | PAGEVIEW | / |  |  | 2006-01-01 08:00:30 | 1 |
 
-U kunt een lijst zoals hierboven in gegevenswerkbank tot stand brengen door een interface van de gebiedskijker te gebruiken. Voor informatie over de interface van de gebiedskijker, zie de Hulpmiddelen [van de Configuratie van de](../../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)Dataset.
+U kunt een tabel als de bovenstaande tabel maken in een werkbank voor gegevens met behulp van een interface voor veldviewers. Voor informatie over de interface van de gebiedskijker, zie [Hulpmiddelen van de Configuratie van de Dataset](../../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5).
 
-## Het gebruiken van #waarde op het element van XML om zijn attributenwaarde te lezen {#section-88758428afb94f0baa5a986604d53bc1}
+## De kenmerkwaarde {#section-88758428afb94f0baa5a986604d53bc1} lezen met #value op een XML-element
 
-U kunt de **[!DNL #value]** markering in de wegen van XML nu gebruiken om de waarde van een element van XML te trekken.
+U kunt nu de tag **[!DNL #value]** in XML-paden gebruiken om de waarde van een XML-element te trekken.
 
-Bijvoorbeeld, eerder specificerend een weg van **`<Hit><Page name="Home Page" index="20">home.html</Page></Hit>`** verlaten u niet de waarde van de `<Page>` markering kunt lezen. Om de waarde van een `<Page>` markering en zijn attributen te lezen, kunt u [!DNL Hit.Page.@name] en [!DNL Hit.Page.@index] respectievelijk gebruiken. U kunt de waarde van de markering ook trekken gebruikend **`Hit.Page.#value`** uitdrukking.
+Als u bijvoorbeeld eerder een pad van **`<Hit><Page name="Home Page" index="20">home.html</Page></Hit>`** hebt opgegeven, kon u de waarde van de tag `<Page>` niet lezen. Als u de waarde van een `<Page>`-tag en de bijbehorende kenmerken wilt lezen, kunt u respectievelijk [!DNL Hit.Page.@name] en [!DNL Hit.Page.@index] gebruiken. U kunt de waarde van de tag ook ophalen met de expressie **`Hit.Page.#value`**.
 
-Bijvoorbeeld, kunt u de waarde van markering lezen `<varValue>` door het volgende gebied in decoder toe te voegen:
+U kunt bijvoorbeeld de waarde van tag `<varValue>` lezen door het volgende veld in de decoder toe te voegen:
 
 ```
 7 = XMLDecoderField: 
@@ -142,7 +143,7 @@ Path = string: varValue
 Table = string: Log Entry
 ```
 
-Op dezelfde manier kunt u de waarde van markering lezen `<Rep>` door het volgende gebied in decoder toe te voegen:
+U kunt ook de waarde van tag `<Rep>` lezen door het volgende veld in de decoder toe te voegen:
 
 ```
 7 = XMLDecoderField: 
@@ -154,7 +155,7 @@ Path = string: Reps
 Table = string: Log Entry
 ```
 
-In tegenstelling, om de waarde van elementenmarkering zonder attributen te lezen, kan een `<text>` markering onder een `<line>` markering en zijn waarde direct worden gelezen door &quot; [!DNL text]&quot;in een weg te geven of te gebruiken [!DNL line.text], afhankelijk van hoe u de decoder hebt gebouwd.
+Als u daarentegen de waarde van een elementtag zonder kenmerk wilt lezen, kunt u een `<text>`-tag onder een `<line>`-tag en de bijbehorende waarde direct lezen door &quot; [!DNL text]&quot; op te geven in een pad of door [!DNL line.text] te gebruiken, afhankelijk van de manier waarop u de decoder hebt gemaakt.
 
 ```
 2 = XMLDecoderField: 
@@ -166,4 +167,3 @@ Path = string:
 <b>line</b> 
 Table = string: Log Entry
 ```
-
