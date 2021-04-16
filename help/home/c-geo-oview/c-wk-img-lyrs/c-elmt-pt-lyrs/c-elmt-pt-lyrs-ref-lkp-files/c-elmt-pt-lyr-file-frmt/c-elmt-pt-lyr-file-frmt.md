@@ -1,20 +1,21 @@
 ---
-description: Het formatteren van informatie over het de laagdossier van het elementenpunt.
-solution: Analytics
-title: Element Point Layer File Format
-topic: Data workbench
+description: Opmaakgegevens over het elementpuntlaagbestand.
+title: Laagbestandsindeling voor elementpunt
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
+exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
+# Bestandsindeling van elementpuntlaag{#element-point-layer-file-format}
 
-# Element Point Layer File Format{#element-point-layer-file-format}
+Opmaakgegevens over het elementpuntlaagbestand.
 
-Het formatteren van informatie over het de laagdossier van het elementenpunt.
-
-Elk [!DNL .layer] dossier van de elementenpuntlaag dat de verwijzingen een raadplegingsdossier moeten worden geformatteerd gebruikend het volgende malplaatje:
+Elk elementpuntbestand [!DNL .layer] dat verwijst naar een opzoekbestand, moet worden opgemaakt met de volgende sjabloon:
 
 ```
 Layer = ElementPointLayer:
@@ -41,53 +42,53 @@ Layer = ElementPointLayer:
  <tbody> 
   <tr> 
    <td colname="col1"> Gegevenspaden </td> 
-   <td colname="col2"> Weg aan het raadplegingsdossier dat breedte en lengtegegevens bevat. </td> 
+   <td colname="col2"> Pad naar het opzoekbestand met breedte- en lengtegegevens. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Lengtegronden </td> 
-   <td colname="col2"> De naam van de kolom in het raadplegingsdossier dat de lengtegegevens bevat. </td> 
+   <td colname="col1"> Lengtegraad kolom </td> 
+   <td colname="col2"> De naam van de kolom in het opzoekbestand die de longitude-gegevens bevat. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Latitude-kolom </td> 
-   <td colname="col2"> De naam van de kolom in het raadplegingsdossier dat de breedtegraad gegevens bevat. </td> 
+   <td colname="col2"> De naam van de kolom in het opzoekbestand die de breedtegraadgegevens bevat. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Naam kolom </td> 
-   <td colname="col2"> Optioneel. De naam van de kolom in het raadplegingsdossier dat de namen van de plaatsen bevat die door de breedtegraad en lengtegegevens worden vertegenwoordigd. </td> 
+   <td colname="col1"> Kolom benoemen </td> 
+   <td colname="col2"> Optioneel. De naam van de kolom in het opzoekbestand met de namen van de locaties die worden vertegenwoordigd door de breedte- en lengtegegevens. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Sleutelkolom </td> 
-   <td colname="col2"> <p>De naam van de kolom in het raadplegingsdossier dat de gemeenschappelijke zeer belangrijke gegevens bevat, die de server van de gegevenswerkbank toelaat om de gegevens in het raadplegingsdossier in de dataset te integreren. Dit moet de eerste kolom in het raadplegingsdossier zijn. </p> <p>Elke rij in deze kolom is een element van een afmeting. Deze dimensie moet in het <span class="filepath"> Transformation.cfg</span> - dossier of een transformatiedataset worden bepaald omvat dossier en gespecificeerd in de parameter van de Dimensie van dit dossier. Voor meer informatie over de dossiers van de transformatieconfiguratie, zie de Gids <i>van de Configuratie van de</i>Dataset. </p> </td> 
+   <td colname="col1"> Toetskolom </td> 
+   <td colname="col2"> <p>De naam van de kolom in het raadplegingsdossier dat de gemeenschappelijke zeer belangrijke gegevens bevat, die de server van de gegevenswerkbank toelaat om de gegevens in het raadplegingsdossier in de dataset te integreren. Dit moet de eerste kolom in het opzoekbestand zijn. </p> <p>Elke rij in deze kolom is een element van een dimensie. Deze dimensie moet worden gedefinieerd in het bestand Transformation.cfg</span> of een gegevensset voor transformatie moet bestand bevatten en worden opgegeven in de parameter Dimension van dit bestand. <span class="filepath"> Voor meer informatie over de dossiers van de transformatieconfiguratie, zie <i>de Gids van de Configuratie van de Dataset</i>. </span></p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Afmetingen </td> 
-   <td colname="col2">De naam van de afmeting (die in een dossier van de transformatieconfiguratie wordt bepaald) die elementen bevat die aan de gegevensrijen in de <span class="wintitle"> Zeer belangrijke</span> kolom beantwoorden. </td> 
+   <td colname="col1"> Dimension </td> 
+   <td colname="col2">De naam van de dimensie (die in een dossier van de transformatieconfiguratie wordt bepaald) die elementen bevat die aan de gegevensrijen in <span class="wintitle"> Sleutel</span> kolom beantwoorden. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Metrisch </td> 
-   <td colname="col2"> De naam van metrisch die over de afmeting wordt geëvalueerd die in de parameter van de Afmeting wordt gespecificeerd. </td> 
+   <td colname="col2"> De naam van metrisch die over de afmeting wordt geëvalueerd die in de parameter van Dimension wordt gespecificeerd. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Schaal </td> 
-   <td colname="col2"> Optioneel. Waarde die wordt gebruikt om de punten in de laag te rangschikken. De standaardwaarde is 100. De grotere waarden maken de punten groter, en de kleinere waarden maken hen kleiner. </td> 
+   <td colname="col1"> Schalen </td> 
+   <td colname="col2"> Optioneel. Waarde die wordt gebruikt om de punten in de laag te vergroten of te verkleinen. De standaardwaarde is 100. Bij hogere waarden worden de punten groter en bij lagere waarden worden ze kleiner. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Kleur </td> 
-   <td colname="col2"> Optioneel. De RGB kleurenvector, die als (rood, groen, blauw) wordt uitgedrukt. Voor elke kleur in de vector, kunt u een waarde van 0.0 tot 1.0 ingaan. Bijvoorbeeld, (1.0, 0.0, 0.0) is fel rood, en (0.5, 0.5, 0.5, 0.5) is grijs. </td> 
+   <td colname="col2"> Optioneel. De RGB-kleurvector, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Rendermodus </td> 
-   <td colname="col2"> <p>Optioneel. De waarde die van het geheel de teruggevende wijze vertegenwoordigt voor de laag te gebruiken. De drie beschikbare wijzen zijn als volgt: 
+   <td colname="col2"> <p>Optioneel. Geheel getal dat de renderingmodus vertegenwoordigt die voor de laag moet worden gebruikt. De drie beschikbare modi zijn als volgt: 
      <ul id="ul_CBB26B32505846A39FEB85E831E1C7AB"> 
-      <li id="li_B31528A8858C4418ABCDFF0B4EFB25D7">Rendermodus 1. De grootte van punten wordt bepaald in het schermruimte (de punten blijven een constante grootte met betrekking tot het computerscherm). De punten worden teruggegeven gebruikend veelhoeken, zodat is er geen bovengrens op puntgrootte. Dit is het gebrek dat wijze teruggeeft. </li> 
-      <li id="li_CA0C3E0DBF004ADBB4D7819C0BF192FC">Rendermodus 2. De grootte van het punt wordt bepaald in wereldruimte (de punten blijven een constante grootte met betrekking tot de bol). De punten worden teruggegeven gebruikend veelhoeken, zodat is er geen bovengrens op puntgrootte. </li> 
-      <li id="li_8F8729976DDB434D869E81D4381E2688">Rendermodus 3. De grootte van het punt wordt bepaald in het schermruimte. De punten worden teruggegeven gebruikend gladde punten OpenGL. </li> 
+      <li id="li_B31528A8858C4418ABCDFF0B4EFB25D7">Rendermethode 1. De puntgrootte wordt gedefinieerd in de schermruimte (punten blijven een constante grootte ten opzichte van het computerscherm). Punten worden met veelhoeken gerenderd, dus er is geen bovengrens voor de puntgrootte. Dit is de standaard renderingmodus. </li> 
+      <li id="li_CA0C3E0DBF004ADBB4D7819C0BF192FC">Rendermethode 2. De puntgrootte wordt gedefinieerd in de wereldruimte (punten blijven een constante grootte ten opzichte van de bol). Punten worden met veelhoeken gerenderd, dus er is geen bovengrens voor de puntgrootte. </li> 
+      <li id="li_8F8729976DDB434D869E81D4381E2688">Rendermethode 3. De puntgrootte wordt gedefinieerd in de schermruimte. Punten worden weergegeven met vloeiende OpenGL-punten. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Het [!DNL Zip Points.layer] bestand is als volgt geformatteerd:
+Het [!DNL Zip Points.layer]-bestand is als volgt opgemaakt:
 
 ```
 Layer = ElementPointLayer:
@@ -100,4 +101,3 @@ Layer = ElementPointLayer:
   Dimension = ref: wdata/model/dim/Zipcode
   Metric = ref: wdata/model/metric/Sessions
 ```
-
