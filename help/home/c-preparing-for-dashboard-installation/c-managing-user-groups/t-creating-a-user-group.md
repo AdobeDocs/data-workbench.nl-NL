@@ -1,22 +1,23 @@
 ---
-description: ongeldig
-solution: Analytics
-title: Een gebruikersgroep maken
-topic: Data workbench
+description: Gebruikersgroepen maken
+title: Gebruikersgroepen maken
 uuid: 8a474480-81fa-4a86-9937-2fb82e949436
+exl-id: 8af9d635-ff07-486f-845a-44541d577fad
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 2%
 
 ---
 
-
 # Een gebruikersgroep maken{#creating-a-user-group}
 
-1. Klik **[!UICONTROL Create Group]** om het **[!UICONTROL New Group]** formulier op te halen.
+1. Klik op **[!UICONTROL Create Group]** om het formulier **[!UICONTROL New Group]** weer te geven.
 
    ![](assets/create_user_group.png)
 
-1. Vul de noodzakelijke gebieden in om het formulier in te vullen:
+1. Vul de vereiste velden in om het formulier in te vullen:
 
    <table id="choicetable_3AE53AAC8A07471394EA993917B6AE33"> 
     <thead class="chhead sthead"> 
@@ -29,7 +30,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Beschrijving</strong></td> 
-    <td class="chdesc stentry"> Geef een korte beschrijving van de groep op (optioneel).</td> 
+    <td class="chdesc stentry"> Voer een korte beschrijving van de groep in (optioneel).</td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Profieltoegang</strong></td> 
@@ -37,14 +38,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Toestemmingen</strong></td> 
-    <td class="chdesc stentry"> <p> <span class="uicontrol"> Beheerder</span>: Sparen, bekijk, wijzig, en schrap alle dashboards voor alle profielen. De voorrechten van de beheerder staan een gebruiker toe om aan login aan het beleidsgebied en alle administratieve functies uit te voeren. </p> <p> <span class="uicontrol"> Alleen-lezen</span>: Beperk toestemmingen aan read-only voor dashboards. De gebruiker kan geen visualisaties toevoegen of wijzigen of dashboards bewaren. </p> <p> <b>Geen rechten ingeschakeld </b>(standaard): Geen gecontroleerde toestemmingen verleent regelmatige gebruikerstoestemmingen aan de groep. Deze gebruikers kunnen visualisaties, sparen dashboards tot stand brengen en wijzigen, en de dashboards bekijken zij toegang tot hebben. </p> </td> 
+    <td class="chdesc stentry"> <p> <span class="uicontrol"> Beheerder</span>: Sla alle dashboards voor alle profielen op, geef deze weer, wijzig ze en verwijder ze. Met beheerdersrechten kan een gebruiker zich aanmelden bij het beheergebied en alle beheerfuncties uitvoeren. </p> <p> <span class="uicontrol"> Alleen</span>-lezen: Beperk machtigingen tot alleen-lezen voor dashboards. De gebruiker kan geen visualisaties toevoegen of wijzigen of dashboards opslaan. </p> <p> <b>Geen machtigingen ingeschakeld  </b>(standaard): Geen toestemmingen gecontroleerd verleent regelmatige gebruikers toestemmingen aan de groep. Deze gebruikers kunnen visualisaties maken en wijzigen, dashboards opslaan en de dashboards bekijken waartoe zij toegang hebben. </p> </td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Beschikbare gebruikers/groepsleden</strong></td> 
-    <td class="chdesc stentry">De belemmering-en-dalingsgebruikers van de lijst van <span class="uicontrol"> Beschikbare Gebruikers</span> in de <span class="uicontrol"> sectie van de Leden van de </span>Groep. De groepsleden kunnen op elk ogenblik worden gewijzigd. </td> 
+    <td class="chdesc stentry">Sleep gebruikers van de lijst van <span class="uicontrol"> Beschikbare Gebruikers</span> in <span class="uicontrol"> de Leden van de Groep </span>sectie. De groepsleden kunnen op elk gewenst moment worden gewijzigd. </td> 
     </tr> 
     </table>
 
-1. Klik **[!UICONTROL Create Group]** om de gebruikersgroep te creëren.
+1. Klik **[!UICONTROL Create Group]** om de gebruikersgroep tot stand te brengen.
 
-   Als de verrichting succesvol was, zult u een bericht zien erop wijzend dat de gebruikersgroep met succes werd gecreeerd.
+   Als de bewerking succesvol was, wordt een bericht weergegeven dat aangeeft dat de gebruikersgroep is gemaakt.
