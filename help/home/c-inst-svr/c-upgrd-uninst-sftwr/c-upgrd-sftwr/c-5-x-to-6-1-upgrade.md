@@ -1,62 +1,63 @@
 ---
-description: Volg deze stappen om vanaf de installatie van Insight v5.5x bij te werken naar de gegevenswerkbank v6.1.
-solution: Analytics
-title: Data Workbench 5.5-6.1-upgrade
-topic: Data workbench
+description: Voer de volgende stappen uit om een update uit te voeren naar de gegevenswerkbank v6.1 van uw Insight v5.5x-installatie.
+title: Data Workbench 5.5 tot 6.1-upgrade
 uuid: 14e3612e-11a2-402a-9478-904ec55df23c
+exl-id: c730f6d5-2171-4d97-a967-509dc2517c86,3f25917b-b929-4e3b-84f0-1a81b30ba641
 translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 0%
 
 ---
 
+# Data Workbench 5.5 tot 6.1 Upgrade{#data-workbench-to-upgrade}
 
-# Data Workbench 5.5-6.1-upgrade{#data-workbench-to-upgrade}
+Voer de volgende stappen uit om een update uit te voeren naar de gegevenswerkbank v6.1 van uw Insight v5.5x-installatie.
 
-Volg deze stappen om vanaf de installatie van Insight v5.5x bij te werken naar de gegevenswerkbank v6.1.
+**Stap 1**:  [Upgrade van server](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md#section-08bd6fe3da8740fcb19688e8cac6f223)
 
-**Stap 1**: [Serverupgrade](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md#section-08bd6fe3da8740fcb19688e8cac6f223)
+**Stap 2**:  [Upgrade van rapportserver](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md#section-afd9560a446242e9b06490e5f98aaaec)
 
-**Stap 2**: [Report Server-upgrade](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md#section-afd9560a446242e9b06490e5f98aaaec)
-
-**Stap 3**: [Clientupgrade](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md#section-c896e57ecd2847afb18f4d8ef7cc0e06)
+**Stap 3**:  [Clientupgrade](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md#section-c896e57ecd2847afb18f4d8ef7cc0e06)
 
 >[!IMPORTANT]
 >
->De server, de rapportserver, en de cliëntcomponenten worden bevorderd om op de werkende systemen met 64 bits van Vensters te lopen.
+>De server, de rapportserver, en de cliëntcomponenten worden bevorderd om op werkende systemen met 64 bits van Vensters te lopen.
 
-## Serverupgrade {#section-08bd6fe3da8740fcb19688e8cac6f223}
+## Server-upgrade {#section-08bd6fe3da8740fcb19688e8cac6f223}
 
-Volg deze stappen om de **[!UICONTROL Server v6.1]** componenten bij te werken:
+Ga als volgt te werk om de **[!UICONTROL Server v6.1]** componenten bij te werken:
 
-1. Open met het **[!UICONTROL Software and Docs]** profiel de **[!UICONTROL Start Here]** werkruimte en download alle benodigde serverpakketten naar een lokale map.
+1. Open met het profiel **[!UICONTROL Software and Docs]** de werkruimte **[!UICONTROL Start Here]** en download alle benodigde serverpakketten naar een lokale map.
 
-   * Download **[!UICONTROL Server Packages]** \ **[!UICONTROL v6.1]** zip omslagen en haal alle dossiers.
+   * Download **[!UICONTROL Server Packages]** \ **[!UICONTROL v6.1]** ZIP-mappen en extraheer alle bestanden.
 
-      Het **[!UICONTROL Server]** pakket omvat **[!UICONTROL Lookup]** en **[!UICONTROL Profile]** omslagen met de **[!UICONTROL Base]** en **[!UICONTROL Transform]** raadplegingsdossiers om toe te voegen en te vervangen om de server bij te werken.
+      Het **[!UICONTROL Server]**-pakket bevat **[!UICONTROL Lookup]**- en **[!UICONTROL Profile]**-mappen met de opzoekbestanden **[!UICONTROL Base]** en **[!UICONTROL Transform]** die moeten worden toegevoegd en vervangen om de server bij te werken.
 
    * Download nieuwe **[!UICONTROL Profiles]** mappen.
-   * Download bijgewerkte **[!UICONTROL Lookup]** mappen.
+   * Updates **[!UICONTROL Lookup]**-mappen downloaden.
    * Download het **[!UICONTROL Report Server]** \ **[!UICONTROL v6.1]** pakket.
-   * Download extra **[!UICONTROL Sensor]**, **[!UICONTROL Documentation]**, en **[!UICONTROL Dashboard]** dossiers zoals nodig voor uw systeem.
+   * Download indien nodig extra **[!UICONTROL Sensor]**-, **[!UICONTROL Documentation]**- en **[!UICONTROL Dashboard]**-bestanden voor uw systeem.
 
 1. Stop de **[!UICONTROL Adobe Insight Server]** service.
 
    ![](assets/install_server_download1.png)
 
-1. Van het gedownloade **[!UICONTROL Server]** pakket:
+1. Vanuit het gedownloade **[!UICONTROL Server]**-pakket:
 
-   1. Vervang de [!DNL Server\Bin] omslag om de [!DNL InsightServer64.exe] en ondersteunende dossiers bij te werken.
+   1. Vervang de map [!DNL Server\Bin] om de [!DNL InsightServer64.exe] en de ondersteunende bestanden bij te werken.
 
-   1. Vervang de [!DNL Server\Profiles] omslag. U kunt alle dossiers beschrijven.
-   1. Werk de [!DNL Server\Lookups] map bij. U zult de onlangs gedownloade dossiers aan de douanedossiers willen toevoegen die reeds in de omslag worden gevestigd.
-   1. Vervang de bij te werken [!DNL Server\Software] map [!DNL Insight.exe] en [!DNL ReportServer.exe]
+   1. Vervang de map [!DNL Server\Profiles]. U kunt alle bestanden overschrijven.
+   1. Werk de map [!DNL Server\Lookups] bij. U wilt de nieuw gedownloade bestanden toevoegen aan de aangepaste bestanden die zich al in de map bevinden.
+   1. De [!DNL Server\Software]-map vervangen om [!DNL Insight.exe] en [!DNL ReportServer.exe] bij te werken
 
-   1. Werk de [!DNL Server\Scripts] omslag bij om bij te werken [!DNL TnTSend.exe].
+   1. [!DNL Server\Scripts] om [!DNL TnTSend.exe] bij te werken.
 
-1. Als u **[!UICONTROL DeviceAtlas]**, dan zult u de bundel [moeten](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) bijwerken die in de [!DNL Server\Lookups] omslag wordt gevestigd.
-1. Reeks [!DNL Directories] in het [!DNL Profile.cfg] dossier om ervoor te zorgen dat de vector wordt bijgewerkt om op het aantal punten voor elk profiel te wijzen.
+1. Als u **[!UICONTROL DeviceAtlas]** in dienst neemt, dan zult u [de bundel](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) in [!DNL Server\Lookups] omslag moeten bijwerken.
+1. Stel [!DNL Directories] in het [!DNL Profile.cfg]-bestand in om ervoor te zorgen dat de vector wordt bijgewerkt met het aantal items voor elk profiel.
 
-   Bijvoorbeeld, om het **[!UICONTROL Predictive Analytics]** profiel toe te laten zult u dit het plaatsen moeten bijwerken.
+   Als u bijvoorbeeld het profiel **[!UICONTROL Predictive Analytics]** wilt inschakelen, moet u deze instelling bijwerken.
 
    ```
    Directories = vector: 5 items 
@@ -67,53 +68,53 @@ Volg deze stappen om de **[!UICONTROL Server v6.1]** componenten bij te werken:
        4 = string: Profile Name\\
    ```
 
-1. Vorm en sla het [!DNL PAServer.cfg] dossier op om de Predictive Analytics eigenschap te bevorderen.
+1. Configureer het bestand [!DNL PAServer.cfg] en sla dit op om de functie Analytics voor voorspellingen bij te werken.
 
-   Als u de taken van de Analyse van de Predictive aan de servers wilt voorleggen, dan zult u het [!DNL Server > Predictive Analytics > Dataset > PAServer.cfg] dossier moeten vormen om server-zij groeperende voorstellingen te beheren.
+   Als u taken voor voorspellende analyse wilt indienen bij de servers, moet u het [!DNL Server > Predictive Analytics > Dataset > PAServer.cfg]-bestand configureren voor het beheer van clusteringverzendingen op de server.
 
-   Het douaneprofiel zou de montages van het Predictive de configuratieprofiel van de Analyse moeten erven, toestaand u om te vormen en te bewaren [!DNL PAServer.cfg] gebaseerd op de implementatie van uw plaats.
+   Het aangepaste profiel moet de instellingen overnemen van het configuratieprofiel voor voorspellende analyse, zodat u [!DNL PAServer.cfg] kunt configureren en opslaan op basis van de implementatie van uw site.
 
-1. Definieer het **[!UICONTROL Log Source ID]**.
+1. Definieer de **[!UICONTROL Log Source ID]**.
 
-   Het **[!UICONTROL Recording of Rows per Log Source]** werd toegevoegd in **[!UICONTROL v6.04]** en in het [!DNL Log Processing.cfg] dossier van het douaneprofiel bepaald door een uniek genoemd toe te voegen **[!UICONTROL Log Source ID]**.
+   **[!UICONTROL Recording of Rows per Log Source]** is toegevoegd in **[!UICONTROL v6.04]** en gedefinieerd in het [!DNL Log Processing.cfg]-bestand van het aangepaste profiel door een unieke naam toe te voegen **[!UICONTROL Log Source ID]**.
 
    ```
    Log Processing.cfg
    Log Source ID = string: <Name your ID Here>
    ```
 
-   Als u geen bepaalde Van het Bron logboek identiteitskaart hebt, dan zult u de volgende fout krijgen:
+   Als u geen Logbron-id hebt gedefinieerd, treedt de volgende fout op:
 
    ```
    Missing Log Source ID in log processing.cfg.  
    Log Source ID must be defined for all log sources.
    ```
 
-1. Omdat [!DNL EventMessages.dll] is bijgewerkt, wordt het vereist dat u desregistreert en dan het **[!UICONTROL Adobe Insight Server]** over de cluster registreert.
+1. Omdat [!DNL EventMessages.dll] is bijgewerkt, is het vereist dat u de registratie ongedaan maakt en vervolgens **[!UICONTROL Adobe Insight Server]** over de cluster registreert.
 
    * [!DNL InsightServer64.exe /unregserver]
    * [!DNL InsightServer64.exe /regserver]
 
-1. Begin de **[!UICONTROL Adobe Insight Server]** dienst over de cluster.
+1. Start de **[!UICONTROL Adobe Insight Server]**-service in de cluster.
 
 De serverinstallatie is nu voltooid.
 
-## Rapportserverupgrade {#section-afd9560a446242e9b06490e5f98aaaec}
+## Upgrade van rapportserver {#section-afd9560a446242e9b06490e5f98aaaec}
 
 >[!IMPORTANT]
 >
->Voordat u gaat upgraden naar **[!UICONTROL Report Server v6.1]**, moet u eerst upgraden naar **[!UICONTROL Server v6.1]**.
+>Voordat u een upgrade uitvoert naar **[!UICONTROL Report Server v6.1]**, moet u eerst een upgrade uitvoeren naar **[!UICONTROL Server v6.1]**.
 
-1. Download het **[!UICONTROL Software and Docs]** profiel **[!UICONTROL v6.1]** van het **[!UICONTROL Report Server]** pakket naar een lokale map.
-1. Kopieer **[!UICONTROL Report Server 6.1]** van het gedownloade pakket en vervang de profielpakketten.
+1. Download **[!UICONTROL Software and Docs]** met het profiel **[!UICONTROL v6.1]** van het **[!UICONTROL Report Server]**-pakket naar een lokale map.
+1. Kopieer **[!UICONTROL Report Server 6.1]** uit het gedownloade pakket en vervang de profielpakketten.
 
    >[!NOTE]
    >
-   >Het [!DNL Insight.zbin] dossier in de [!DNL install] omslag is een reservedossier dat voor localisatie wordt gebruikt, en moet in de [!DNL install] folder aanwezig zijn. Dit dossier of andere [!DNL .zbin] dossiers zullen afhankelijk van de bevel-lijn overgegaane montages worden gebruikt wanneer het beginnen.
+   >Het [!DNL Insight.zbin]-bestand in de map [!DNL install] is een back-upbestand dat wordt gebruikt voor lokalisatie en moet aanwezig zijn in de map [!DNL install]. Dit bestand of andere [!DNL .zbin] bestanden worden gebruikt, afhankelijk van de opdrachtregelinstellingen die bij het opstarten worden doorgegeven.
 
-1. (facultatief) wijzig het de configuratiedossier van de rapportserver om dubbel-bytekarakters te steunen.
+1. (optioneel) Wijzig het configuratiebestand van de rapportserver om double-bytetekens te ondersteunen.
 
-   De werkbank van gegevens steunt momenteel Engels (-en-us) en Chinees (-zh-cn). U moet een doopvont plaatsen om enige en dubbel-bytekarakters te steunen:
+   De werkbank voor gegevens biedt momenteel ondersteuning voor Engels (-en-us) en Chinees (-zh-cn). U moet een lettertype instellen ter ondersteuning van single- en double-bytetekens:
 
    ```
    Report Server.cfg - Add Fonts 
@@ -122,13 +123,13 @@ De serverinstallatie is nu voltooid.
       1 = string: Arial 
    ```
 
-   Het werkende systeem van Vensters moet de vermelde geïnstalleerde doopvonten ook hebben.
+   De vermelde lettertypen moeten ook op het Windows-besturingssysteem zijn geïnstalleerd.
 
 1. Configureren [!DNL Report Server v6.1].
 
    1. Stop de **[!UICONTROL Adobe Insight Report Server]** service.
-   1. Lanceer een bevelherinnering als &quot;Beheerder&quot;.
-   1. Navigeer aan de [!DNL install] omslag van de Server van het Rapport.
+   1. Start een opdrachtprompt als &quot;Beheerder&quot;.
+   1. Navigeer naar de map Report Server [!DNL install].
    1. Schrap de dienst van de Server van het Rapport gebruikend het volgende bevel:
 
       ```
@@ -142,28 +143,28 @@ De serverinstallatie is nu voltooid.
    ReportServer.exe -RegServer -Locale -zh-cn (Simplified Chinese)
    ```
 
-1. Om te verifiëren dat de Server van het Rapport met de correcte montages loopt, open **[!UICONTROL Windows Service Manager]** en klik met de rechtermuisknop aan **[!UICONTROL Adobe Insight Report Server - Properties]**. De weg aan uitvoerbaar zal de bijgewerkte bevel-lijn montages tonen.
+1. Om te controleren dat de Server van het Rapport met de correcte montages loopt, open **[!UICONTROL Windows Service Manager]** en klik **[!UICONTROL Adobe Insight Report Server - Properties]** met de rechtermuisknop aan. Het pad naar het uitvoerbare bestand geeft de bijgewerkte opdrachtregelinstellingen weer.
 
-De installatie van de rapportserver is nu volledig.
+De installatie van de rapportserver is nu voltooid.
 
 ## Clientupgrade {#section-c896e57ecd2847afb18f4d8ef7cc0e06}
 
 >[!IMPORTANT]
 >
->Alvorens te bevorderen aan **[!UICONTROL Client v6.1]**, moet de beheerder eerst bevorderen aan **[!UICONTROL Server v6.1.]**
+>Voordat u de upgrade naar **[!UICONTROL Client v6.1]** uitvoert, moet de beheerder eerst een upgrade uitvoeren naar **[!UICONTROL Server v6.1.]**
 
-1. Start [!DNL Insight.exe] maar maak GEEN verbinding met profielen.
-1. Geef het [!DNL Insight.cfg] dossier uit om geen software automatisch bij te werken.
+1. Start [!DNL Insight.exe], maar maak geen verbinding met profielen.
+1. Bewerk het [!DNL Insight.cfg]-bestand om de software niet automatisch bij te werken.
 
    ```
    Update Software = bool: false
    ```
 
-1. Verbind met **[!UICONTROL Software and Docs]** profiel (softdocs).
+1. Verbind met profiel **[!UICONTROL Software and Docs]** (softdocs).
 1. Download [!DNL Software\Insight Client\v6.10].
-1. (facultatief) wijzig me [!DNL insight.cfg] om dubbel-bytekarakters te steunen.
+1. (optioneel) Wijzig [!DNL insight.cfg] om double-bytetekens te ondersteunen.
 
-   De werkbank van gegevens steunt momenteel zowel Engels als Vereenvoudigd Chinees. Selecteer doopvonten om beide talen te steunen:
+   De werkbank voor gegevens ondersteunt momenteel zowel Engels als Vereenvoudigd Chinees. Selecteer lettertypen die beide talen ondersteunen:
 
    ```
    Fonts = vector: 2 items  
@@ -171,38 +172,39 @@ De installatie van de rapportserver is nu volledig.
    1 = string: Arial
    ```
 
-1. Afsluiten uit de client.
-1. Kopieer de dossiers in het gedownloade **v6.1** cliëntpakket aan de [!DNL Install] omslag.
+1. Sluit de client af.
+1. Kopieer de bestanden in het gedownloade **v6.1**-clientpakket naar de map [!DNL Install].
 
    >[!NOTE]
    >
-   >Het [!DNL Insight.zbin] dossier in installeert omslag is een reservedossier dat voor localisatie wordt gebruikt, en moet aanwezig zijn in installeert folder. Dit dossier of andere [!DNL .zbin] dossiers zullen afhankelijk van de bevel-lijn overgegaane montages worden gebruikt wanneer het beginnen.
+   >Het [!DNL Insight.zbin]-bestand in de installatiemap is een back-upbestand dat wordt gebruikt voor lokalisatie en moet aanwezig zijn in de installatiemap. Dit bestand of andere [!DNL .zbin] bestanden worden gebruikt, afhankelijk van de opdrachtregelinstellingen die bij het opstarten worden doorgegeven.
    >
-   >Bijvoorbeeld, om Vereenvoudigd Chinees te lanceren, creeer een kortere weg die in bevel-lijn het plaatsen overgaat.
+   >Als u bijvoorbeeld Vereenvoudigd Chinees wilt starten, maakt u een sneltoets die de opdrachtregelinstelling doorgeeft.
    >
-   >```
+   >
+   ```
    >Insight.exe -zh-cn
    >```
    >
-   >Als u in het Engels (gebrek) wilt lanceren, dan is geen bevel-lijn verandering noodzakelijk.
+   >Als u in het Engels wilt lanceren (gebrek), dan is geen bevel-lijn verandering noodzakelijk.
 
-1. Lancering [!DNL Insight.exe] voor het Engels of de kortere weg die u voor een andere taal creeerde.
-1. Verbind met uw profiel en sta de cliënt toe om met de server te synchroniseren.
-1. (facultatief) om IME aan te wenden, breng deze veranderingen in het [!DNL Insight.cfg] dossier aan:
+1. Start [!DNL Insight.exe] voor Engels of de sneltoets die u voor een andere taal hebt gemaakt.
+1. Maak verbinding met uw profiel en zorg dat de client kan synchroniseren met de server.
+1. (optioneel) Als u de IME wilt gebruiken, brengt u de volgende wijzigingen aan in het [!DNL Insight.cfg]-bestand:
 
    ```
    Localized IME = bool: true
    ```
 
-   De redacteur van de Methode van de Input (IME) staat u toe om internationale karakters in te voeren.
+   Met de IME (Input Method Editor) kunt u internationale tekens invoeren.
 
-1. (facultatief) geef het [!DNL Insight.cfg] dossier uit om software automatisch bij te werken:
+1. (optioneel) Bewerk het [!DNL Insight.cfg]-bestand om software automatisch bij te werken:
 
    ```
    Update Software = bool: true
    ```
 
    Zie de instructies voor het implementeren van de IME.
-1. Begin opnieuw na de profielsynchronisatie om het meest recente [!DNL .zbin] dossier aan te wenden.
+1. Start opnieuw na de profielsynchronisatie om het meest recente [!DNL .zbin]-bestand te gebruiken.
 
-De installatie van de client is nu voltooid.
+De clientinstallatie is nu voltooid.
