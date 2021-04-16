@@ -1,19 +1,20 @@
 ---
-description: ongeldig
-solution: Analytics
-title: Rijke tekst
-topic: Data workbench
+description: RTF
+title: RTF
 uuid: d4e98fd1-da1e-47d2-be17-0f8771ae6b2e
+exl-id: 6913160c-4261-40bd-b22a-4c7a7969b8a7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 0%
 
 ---
 
+# RTF{#rich-text}
 
-# Rijke tekst{#rich-text}
-
-De rijke tekstvisualisatie staat u toe om tekst-gebaseerde informatie binnen het dashboard in te bedden. Dit is nuttig om beschrijvingen, hyperlinks, of educatieve informatie te verstrekken. De tekst formatterende toolbar bij de bovenkant van het Rich Tekstvenster staat u toe om het formaat van tekst binnen het vensterlichaam te manipuleren.
+Met RTF-visualisatie kunt u op tekst gebaseerde informatie insluiten in het dashboard. Dit is nuttig om beschrijvingen, hyperlinks, of instructieinformatie te verstrekken. Met de werkbalk voor tekstopmaak boven in het venster RTF (Rich Text) kunt u de opmaak van tekst in de hoofdtekst van het venster bewerken.
 
 ![](assets/rich_text.png)
 
-Om tekst aan het rijke tekstvenster toe te voegen, plaats de curseur binnen het lichaam van het rijke tekstvenster en begin typend. Om tekst binnen het rijke tekstvenster uit te geven, gebruik de tekst formatterende toolbar bij de bovenkant van dit venster.
+Als u tekst wilt toevoegen aan het RTF-venster, plaatst u de cursor in de hoofdtekst van het RTF-venster en begint u te typen. Als u tekst in het venster met tekstopmaak wilt bewerken, gebruikt u de werkbalk voor tekstopmaak boven in dit venster.
