@@ -1,18 +1,19 @@
 ---
-description: Verbindingen met extra informatie over specifieke parameters in het dossier van het Logboek Processing.cfg.
-solution: Analytics
-title: Parameters voor logboekverwerking
-topic: Data workbench
+description: Koppelingen naar aanvullende informatie over specifieke parameters in het bestand Log Processing.cfg.
+title: Parameters voor logverwerking
 uuid: 97b25665-f588-4f44-8f71-2382600d1b6f
+exl-id: f373e954-6827-4afa-9557-73e0a884a602
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 1%
 
 ---
 
+# Parameters voor logverwerking{#log-processing-parameters}
 
-# Parameters voor logboekverwerking{#log-processing-parameters}
-
-Verbindingen met extra informatie over specifieke parameters in het dossier van het Logboek Processing.cfg.
+Koppelingen naar aanvullende informatie over specifieke parameters in het bestand Log Processing.cfg.
 
 <!--
 c_data_filters.xml
@@ -23,28 +24,28 @@ c_data_filters.xml
 De filters die in het [!DNL Log Processing.cfg] dossier worden bepaald omvatten het volgende:
 
 * Eindtijd
-* Hash Drempel
+* Hash-drempel
 * Begintijd
 
-Het filtreren dat door deze parameters wordt bepaald komt voor nadat de logboekingangen de decoders en na transformaties maar vóór hun evaluatie door [!DNL Log Entry Condition]verlaten. In het algemeen, resulteert het veranderen van om het even welk van deze parameters in veranderingen in de samenstelling van de dataset.
+Filteren die door deze parameters wordt bepaald komt voor nadat de logboekingangen de decoders en na transformaties maar vóór hun evaluatie door [!DNL Log Entry Condition] verlaten. Over het algemeen leidt het wijzigen van een van deze parameters tot wijzigingen in de samenstelling van de gegevensset.
 
-De geadviseerde techniek om [!DNL Sensor] gegevensbronnen te gebruiken om een dataset te construeren die een specifieke periode behandelt is de parameters van de Tijd van het Begin en van de Tijd van het Eind voor de dataset te gebruiken.
+De geadviseerde techniek om [!DNL Sensor] gegevensbronnen te gebruiken om een dataset te construeren die een specifieke periode behandelt is de parameters van de Tijd van het Begin en van de Eind van het Eind voor de dataset te gebruiken.
 
-Het gebruiken van de parameters van de Tijd van het Begin en van de Tijd van het Eind is aangewezen aan andere technieken, zoals het bewegen van logboekdossiers om hen door folder te scheiden. Door de begin en eindtijden voor de dataset te plaatsen, gebruikt de server van de gegevenswerkbank automatisch die logboekingangen die binnen het bepaalde interval voorkwamen. Veronderstellend dat de Tijd van het Eind in het verleden is, werkt de server van de gegevenswerkbank typisch de dataset bij gebruikend de zelfde reeks logboekingangen, zelfs als de dataset door, bijvoorbeeld, toevoegend een nieuwe transformatie wordt bijgewerkt.
+Het gebruik van de parameters Begintijd en Eindtijd heeft de voorkeur boven andere technieken, zoals het verplaatsen van logbestanden om deze op directory te scheiden. Door de begin en eindtijden voor de dataset te plaatsen, gebruikt de server van de gegevenswerkbank automatisch slechts die logboekingangen die binnen het bepaalde interval voorkwamen. Ervan uitgaande dat de Tijd van het Eind in het verleden is, werkt de server van de gegevenswerkbank typisch de dataset bij gebruikend de zelfde reeks logboekingangen, zelfs als de dataset door, bijvoorbeeld, het toevoegen van een nieuwe transformatie wordt bijgewerkt.
 
 <!--
 c_log_entry_con.xml
 -->
 
-## Logboekinvoer
+## Logboekvermelding
 
-In wezen, is het een het filtreren proces op de beschikbare logboekingangen. Als de [!DNL Log Entry Condition] winst een waarde van vals, de logboekingang uit de beschikbare reeks logboekingangen wordt gefiltreerd.
+In wezen is het een filterproces op de beschikbare logboekingangen. Als [!DNL Log Entry Condition] een waarde van vals terugkeert, wordt de logboekingang gefilterd uit de beschikbare reeks logboekingangen.
 
-Het [!DNL Log Entry Condition] wordt beschreven door het gebruik van condities (zie [Voorwaarden](../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)) en kan om het even welke inputgebieden gebruiken die door [!DNL Sensor] (zie de Gids van de Werkbank van *Gegevens[!DNL Sensor]) worden verzameld of om het even welke uitgebreide gebieden die door transformaties in het* [!DNL Log Processing.cfg] dossier worden geproduceerd om de testvoorwaarden te bepalen. [!DNL Log Entry] de omstandigheden worden toegepast tijdens de verwerking van het stamhout en kunnen desgewenst tijdens de verwerking worden toegepast.
+De [!DNL Log Entry Condition] wordt beschreven door het gebruik van voorwaardenbewerkingen (zie [Voorwaarden](../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)) en kan alle invoervelden gebruiken die worden verzameld door [!DNL Sensor] (zie de *Data Workbench [!DNL Sensor] Guide*) of alle uitgebreide velden die worden geproduceerd door transformaties in het [!DNL Log Processing.cfg]-bestand om de testvoorwaarden te definiëren. [!DNL Log Entry] de voorwaarden worden toegepast tijdens logboekverwerking en kunnen facultatief tijdens transformatie worden toegepast.
 
-Dit voorbeeld toont het gebruik van [!DNL log entry condition] voor websitegegevens aan. U kunt gebruiken [!DNL Log Entry Condition] om datasets tot stand te brengen die zich op een specifiek gedeelte van de website of bezoekers concentreren die één of andere specifieke actie op de plaats uitvoeren.
+In dit voorbeeld wordt het gebruik van de [!DNL log entry condition] voor websitegegevens getoond. Met de [!DNL Log Entry Condition] kunt u gegevenssets maken die zich richten op een specifiek gedeelte van de website of bezoekers die een bepaalde specifieke handeling op de site uitvoeren.
 
-Het [!DNL Log Entry Condition] in dit voorbeeld leidt tot een dataset die slechts die logboekingangen omvat die deel van de opslag van de plaats uitmaken. Door het [!DNL RECondition test] met het passende patroon [!DNL "/store/.*"] en het [!DNL cs-uri-stem] [!DNL "/store/"] gebied als input aan de regelmatige uitdrukking te gebruiken, slechts zijn de Web-pagina&#39;s die met het koord beginnen inbegrepen in de dataset.
+[!DNL Log Entry Condition] in dit voorbeeld leidt tot een dataset die slechts die logboekingangen omvat die deel van de opslag van de plaats uitmaken. Door [!DNL RECondition test] met het passende patroon [!DNL "/store/.*"] en het [!DNL cs-uri-stem] gebied als input aan de regelmatige uitdrukking te gebruiken, worden slechts Web-pagina&#39;s die met het koord [!DNL "/store/"] beginnen inbegrepen in de dataset.
 
 ![](assets/cfg_LogProcessing_LogEntryCondition.png)
 
@@ -52,26 +53,25 @@ Het [!DNL Log Entry Condition] in dit voorbeeld leidt tot een dataset die slecht
 c_key_split.xml
 -->
 
-## Sleutelsplitsing {#key-split}
+## Key split {#key-split}
 
-Het aantal het volgen IDs in de dataset wordt kunstmatig verhoogd, maar het totale aantal logboekingangen die door de server van de gegevenswerkbank worden verwerkt wordt niet kunstmatig verhoogd, daardoor bewarend het totale aantal telbare gebeurtenissen in de dataset. Nadat de gegevens voor één enkel element worden verdeeld, wordt het gegeven altijd geassocieerd met twee verschillende volgende IDs en kan niet worden verwant.
+Het aantal het volgen IDs in de dataset wordt kunstmatig verhoogd, maar het totale aantal logboekingangen die door de server van de gegevenswerkbank worden verwerkt wordt niet kunstmatig verhoogd, daardoor bewarend het totale aantal telbare gebeurtenissen in de dataset. Nadat de gegevens voor één element zijn gesplitst, worden de gegevens voorgoed gekoppeld aan twee verschillende id&#39;s voor reeksspatiëring en kunnen ze niet meer worden gekoppeld.
 
-Bijvoorbeeld, als u met Webgegevens werkt, vertegenwoordigt elke volgende identiteitskaart een unieke bezoeker. Als u sleutel het verdelen toelaat, worden de bezoekers in uw dataset met grote hoeveelheden gebeurtenisgegevens verdeeld in veelvoudige bezoekers. Terwijl het aantal bezoekers in de dataset kunstmatig wordt verhoogd, wordt het totale aantal telbare gebeurtenissen zoals paginameningen of reserveringen niet kunstmatig verhoogd. Na splitsing kunnen de gegevens voor de subbezoekers niet worden gerelateerd.
+Als u bijvoorbeeld met webgegevens werkt, vertegenwoordigt elke volgende-id een unieke bezoeker. Als u sleutelsplitsing inschakelt, worden de bezoekers in uw gegevensset met grote hoeveelheden gebeurtenisgegevens gesplitst in meerdere bezoekers. Hoewel het aantal bezoekers in de gegevensset kunstmatig wordt verhoogd, wordt het totale aantal telbare gebeurtenissen zoals paginaweergaven of boekingen niet kunstmatig verhoogd. Na het splitsen kunnen de gegevens voor de subbezoekers niet meer worden gerelateerd.
 
-De zeer belangrijke splitsing gebruikt een probabilistisch algoritme. Dientengevolge, is er een afweging tussen geheugengebruik, de mislukkingswaarschijnlijkheid, de belangrijkste het verdelen drempel ( [!DNL Split Key Bytes]), en de datasetgrootte. Met de geadviseerde montages (zoals hieronder vermeld), is het mislukkingstarief laag. Van de elementen waarvan de gebeurtenisgegevens de belangrijkste het splitsen drempel overschrijden, zal ongeveer 1 op 22.000 (gewoonlijk minder dan 1 per dataset) sommige van hun gegevens beknot eerder dan gesplitst hebben.
+Bij sleutelsplitsing wordt een probabilistisch algoritme gebruikt. Dientengevolge, is er een compromis tussen geheugengebruik, de mislukkingswaarschijnlijkheid, de belangrijkste het splitsen drempel ( [!DNL Split Key Bytes]), en de datasetgrootte. Met de aanbevolen instellingen (zoals hieronder vermeld) is de foutfrequentie laag. Van die elementen waarvan de gebeurtenisgegevens de belangrijkste splitsingsdrempel overschrijden, zullen ongeveer 1 op 22.000 (gewoonlijk minder dan 1 per dataset) sommige van hun gegevens afgebroken eerder dan verdeeld hebben.
 
-De geadviseerde waarden voor elke parameter (zonder en met zeer belangrijke splitsing) worden getoond in de volgende lijst.
+De aanbevolen waarden voor elke parameter (zonder en met sleutelsplitsing) worden weergegeven in de volgende tabel.
 
-| Parameter | Geen sleutelsplitsing | Key Splitsing |
+| Parameter | Geen sleutelsplitsing | Key Splitsen |
 |---|---|---|
-| Maximum aantal sleutelbytes groeperen | 1e6 | 2e6 |
-| Splitsen Key Bucket-ruimte | 6e6 | 6e6 |
+| Maximaal aantal sleutelbytes groeperen | 1e6 | 2e6 |
+| Emmertje splitsen | 6e6 | 6e6 |
 | Sleutelbytes splitsen | 0 | 1e6 |
-| Splitsing van de belangrijkste ruimteverhouding | 10 | 10 |
+| Splitsen van keyspatie | 10 | 10 |
 
-[!DNL Group Maximum Key Bytes] specificeert de maximumhoeveelheid gebeurtenisgegevens die voor één enkele volgende identiteitskaart kunnen worden verwerkt Gegevens die deze grens overschrijden, worden gefilterd uit het proces voor de samenstelling van de dataset. [!DNL Split Key Bytes] vertegenwoordigt het aantal bytes waarbij één enkele volgende identiteitskaart in veelvoudige elementen wordt gesplitst. De elementen worden verdeeld bij ongeveer dit aantal bytes volgens een kansverdeling. [!DNL Split Key Space Ratio] en [!DNL Split Key Bucket Space] controleer het geheugengebruik en de mislukkingssnelheid van zeer belangrijke splitsing.
+[!DNL Group Maximum Key Bytes] geeft de maximale hoeveelheid gebeurtenisgegevens op die voor één tracking-id kan worden verwerkt. Gegevens die deze limiet overschrijden, worden gefilterd uit het constructieproces van de gegevensset. [!DNL Split Key Bytes] vertegenwoordigt het aantal bytes waarbij één enkele het volgen identiteitskaart in veelvoudige elementen wordt gesplitst. Elementen worden bij ongeveer dit aantal bytes gesplitst op basis van een waarschijnlijkheidsverdeling. [!DNL Split Key Space Ratio] en  [!DNL Split Key Bucket Space] regelt u het geheugengebruik en de foutsnelheid van sleutelsplitsing.
 
 >[!NOTE]
 >
->[!DNL Group Maximum Key Bytes], [!DNL Split Key Bytes], [!DNL Split Key Space Ratio], en [!DNL Split Key Bucket Space] allen moet voor zeer belangrijke splitsing worden verklaard behoorlijk te werken. Verander niet de waarden van deze parameters zonder Adobe te raadplegen.
-
+>[!DNL Group Maximum Key Bytes],  [!DNL Split Key Bytes],  [!DNL Split Key Space Ratio]en  [!DNL Split Key Bucket Space] alles moet worden gedeclareerd om sleutelsplitsing naar behoren te laten werken. Wijzig de waarden van deze parameters niet zonder Adobe te raadplegen.
