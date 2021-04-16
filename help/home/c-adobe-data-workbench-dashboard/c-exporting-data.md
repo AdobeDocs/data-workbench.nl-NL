@@ -1,66 +1,67 @@
 ---
 description: Toont 3 manieren om gegevens uit te voeren, en hoe te om uitvoer terug te winnen.
-solution: Analytics
 title: Gegevens exporteren
-topic: Data workbench
 uuid: de37a60b-09db-4976-b427-f28b4697a8aa
+exl-id: b581d617-62e7-4f39-84f3-853c0424bb3b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 0%
 
 ---
-
 
 # Gegevens exporteren{#exporting-data}
 
 Toont 3 manieren om gegevens uit te voeren, en hoe te om uitvoer terug te winnen.
 
-De gegevens kunnen van het dashboard op drie manieren worden uitgevoerd.
+Gegevens kunnen op drie manieren uit het dashboard worden geëxporteerd.
 
-Eerst, kunt u gegevens van een individuele visualisatie uitvoeren. Ten tweede, kunt u uw huidig werkend dashboard, met inbegrip van om het even welke configuraties en selecties uitvoeren u hebt gemaakt. Ten derde, kunt u een bewaard dashboard uitvoeren zonder het te openen.
+Ten eerste kunt u gegevens uit een individuele visualisatie exporteren. Ten tweede kunt u het huidige werkdashboard exporteren, inclusief alle configuraties en selecties die u hebt gemaakt. Ten derde kunt u een opgeslagen dashboard exporteren zonder het te openen.
 
-De uitvoer wordt uitgevoerd gebruikend een proces in twee stappen. Eerst, wordt de uitvoer een rij gevormd op de server gebruikend één van de drie hierboven methodes. De status van de uitvoer wordt weergegeven in het **[!UICONTROL Exports]** menu terwijl de export wordt voorbereid. Daarna, wanneer de uitvoer klaar is, kunt u de gegevens in of formaat downloaden CSV of van Excel.
+De uitvoer wordt uitgevoerd gebruikend een proces in twee stappen. Eerst, wordt de uitvoer een rij gevormd op de server gebruikend één van de drie hierboven vermelde methodes. De status van het exporteren wordt tijdens de voorbereiding van het exporteren weergegeven in het menu **[!UICONTROL Exports]**. Wanneer de exportbewerkingen klaar zijn, kunt u de gegevens downloaden in de CSV- of Excel-indeling.
 
-De uitvoer kan verscheidene notulen vergen, maar u kunt de toepassing tijdens de uitvoer blijven gebruiken.
+Exporteren kan enkele minuten duren, maar u kunt de toepassing tijdens het exporteren blijven gebruiken.
 
-## Visualisaties exporteren {#section-46b74b46c2eb44129c8b85a9eabd2304}
+## Bezoekingen exporteren {#section-46b74b46c2eb44129c8b85a9eabd2304}
 
-Om gegevens van een visualisatie uit te voeren, klik **[!UICONTROL Save]** in het het hulpmiddelmenu van de visualisatie.
+Als u gegevens uit een visualisatie wilt exporteren, klikt u op **[!UICONTROL Save]** in het menu met gereedschappen van de visualisatie.
 
 ![](assets/export_visual.png)
 
-Uw uitvoer zal op de server in werking worden gesteld en een de uitvoerindicator zal aan het Menu van de Uitvoer worden toegevoegd.
+Het exporteren wordt gestart op de server en er wordt een exportindicator toegevoegd aan het menu Exporteren.
 
 ![](assets/export_queued.png)
 
-## Dashboards exporteren {#section-27329f2a5fed44b49deb26dc5164531f}
+## Bezig met exporteren van dashboards {#section-27329f2a5fed44b49deb26dc5164531f}
 
-Om een gegevensuitvoer van een werkend dashboard in werking te stellen, selecteer **[!UICONTROL Export]** van het **[!UICONTROL Dashboard]** menu.
+Selecteer **[!UICONTROL Export]** in het menu **[!UICONTROL Dashboard]** om een gegevensexport te starten vanaf een werkdashboard.
 
 ![](assets/export_dashboard.png)
 
-Uw uitvoer zal op de server in werking worden gesteld en een de uitvoerindicator zal aan het Menu van de Uitvoer worden toegevoegd.
+Het exporteren wordt gestart op de server en er wordt een exportindicator toegevoegd aan het menu Exporteren.
 
 ## Opgeslagen dashboards exporteren {#section-e989f7b16e25479ab77454f2c34471ba}
 
-Om een gegevensuitvoer van een bewaard dashboard in werking te stellen, gebruik Browser van het Dashboard. Binnen Browser van het Dashboard, doorblader aan uw gewenst dashboard en selecteer het zodat verschijnen de details van het dashboard. Selecteer in het deelvenster Details rechts onder de **[!UICONTROL Operations]** sectie **[!UICONTROL Export Data]**.
+Als u gegevens wilt exporteren vanaf een opgeslagen dashboard, gebruikt u de dashboardbrowser. Blader in de dashboardbrowser naar het gewenste dashboard en selecteer dit zodat de details van het dashboard worden weergegeven. Selecteer **[!UICONTROL Export Data]** onder de sectie **[!UICONTROL Operations]** in het deelvenster Details rechts.
 
-Uw uitvoer zal op de server in werking worden gesteld en een de uitvoerindicator zal aan het **[!UICONTROL Exports]** menu worden toegevoegd.
+Het exporteren wordt gestart op de server en er wordt een exportindicator toegevoegd aan het menu **[!UICONTROL Exports]**
+.
 
-## Het terugwinnen van Uitvoer {#section-0f03c5321c804867b7c72cf92f6f67d0}
+## Exporten {#section-0f03c5321c804867b7c72cf92f6f67d0} ophalen
 
-Wanneer de uitvoer volledig is, schijnt een popup bericht om u mee te delen dat de uitvoer klaar is.
+Wanneer een exportbewerking is voltooid, verschijnt er een pop-upmelding om u te melden dat de exportbewerking gereed is.
 
 ![](assets/export_ready.png)
 
-Om de uitvoer terug te winnen, gebruik het **[!UICONTROL Exports]** menu. Het klikken van het groene controleteken rechts van het gewenste punt van de uitvoer zal een drop-down menu tonen. Binnen dit menu, onder **[!UICONTROL Save Export As…]** submenu, selecteer de aangewezen menuoptie om de uitvoer in of formaat te downloaden CSV of van Excel.
+Gebruik het menu **[!UICONTROL Exports]** om het exporteren op te halen. Klik op het groene vinkje rechts van het gewenste exportitem om een vervolgkeuzemenu weer te geven. Selecteer in dit menu onder het submenu **[!UICONTROL Save Export As…]** de juiste menuoptie om de exportbewerking in CSV- of Excel-indeling te downloaden.
 
 ![](assets/export_save_as.png)
 
-Het proces van de het dossierdownload van uw browser nu begint.
+Het downloaden van bestanden in de browser wordt nu gestart.
 
-De uitvoer wordt niet automatisch verwijderd, zodat kunt u de uitvoer in elk formaat gemakkelijk downloaden. U kunt de uitvoer uit het **[!UICONTROL Exports]** menu in het linkernavigatiepaneel verwijderen. Anders, zullen zij automatisch worden verwijderd wanneer u logout.
+De uitvoer wordt niet automatisch verwijderd, zodat kunt u de uitvoer in elk formaat gemakkelijk downloaden. U kunt exportbewerkingen verwijderen uit het menu **[!UICONTROL Exports]** in het linkernavigatievenster. Anders worden deze automatisch verwijderd wanneer u zich afmeldt.
 
-Om de uitvoer uit te verwijderen **[!UICONTROL Export List]**, klik het controleteken rechts van de de uitvoertitel en selecteer **[!UICONTROL Remove From List]**.
+Als u een exportbewerking wilt verwijderen uit **[!UICONTROL Export List]**, klikt u op het vinkje rechts van de exporttitel en selecteert u **[!UICONTROL Remove From List]**.
 
 ![](assets/export_remove_from_list.png)
-
