@@ -1,32 +1,33 @@
 ---
-description: De toepassing van de gegevenswerkbankcliënt steunt nu Vereenvoudigd Chinees.
-solution: Analytics
+description: De gegevenswerkbank clienttoepassing ondersteunt nu Vereenvoudigd Chinees.
 title: Vereenvoudigde Chinese lokalisatie
-topic: Data workbench
 uuid: ddf4eade-7c5f-4ccf-aa9f-dd8d109a059f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '79'
+ht-degree: 0%
 
 ---
 
 
 # Vereenvoudigde Chinese lokalisatie{#simplified-chinese-localization}
 
-De toepassing van de gegevenswerkbankcliënt steunt nu Vereenvoudigd Chinees.
+De gegevenswerkbank clienttoepassing ondersteunt nu Vereenvoudigd Chinees.
 
-**Om Vereenvoudigd Chinees** te installeren:
+**Vereenvoudigd Chinees** installeren:
 
-Alvorens dossiers te vormen [!DNL Insight.exe] en te steunen, moet u de cliënttoepassing weggaan.
+Voordat u [!DNL Insight.exe] kunt configureren en bestanden kunt ondersteunen, moet u de clienttoepassing afsluiten.
 
-1. Creeer een kortere weg die in de bevel-lijn overgaat die aan het [!DNL insight.exe] dossier plaatst.
+1. Maak een sneltoets die de opdrachtregelinstelling doorgeeft aan het bestand [!DNL insight.exe].
 
    ```
    Insight.exe -zh-cn
    ```
 
-1. Vorm [!DNL Insight.cfg] om enige en dubbel-byte doopvontkarakters te steunen.
+1. Configureer [!DNL Insight.cfg] om single- en double-byte lettertypetekens te ondersteunen.
 
-   De werkbank van gegevens steunt momenteel zowel Engels als Vereenvoudigd Chinees. U kunt doopvonten selecteren om beide talen te steunen:
+   De werkbank voor gegevens ondersteunt momenteel zowel Engels als Vereenvoudigd Chinees. U kunt lettertypen selecteren die beide talen ondersteunen:
 
    ```
    Fonts = vector: 2 items 
@@ -34,5 +35,5 @@ Alvorens dossiers te vormen [!DNL Insight.exe] en te steunen, moet u de cliëntt
    1 = string: Arial 
    ```
 
-1. Start opnieuw [!DNL Insight.exe].
+1. Start [!DNL Insight.exe] opnieuw.
 
