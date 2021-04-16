@@ -1,29 +1,29 @@
 ---
-description: U kunt een werkruimte in uw werktop invoeren.
-solution: Analytics
+description: U kunt een werkruimte naar uw werkplaats importeren.
 title: Een werkruimte importeren
-topic: Data workbench
 uuid: 9f9f0da8-0806-45fe-90b4-d5bc635958e7
+exl-id: 8f589540-9f1c-4776-8815-48d4cfbc5aa6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 0%
 
 ---
 
-
 # Een werkruimte importeren{#import-a-workspace}
 
-U kunt een werkruimte in uw werktop invoeren.
+U kunt een werkruimte naar uw werkplaats importeren.
 
-**Om een werkruimte in te voeren**
+**Een werkruimte importeren**
 
-1. Klik in de Desktop (buiten een de duimnagelmening van de werkruimte) met de rechtermuisknop aan om een menu te openen.
+1. Klik met de rechtermuisknop in het bureaublad (buiten de miniatuurweergave van een werkruimte) om een menu te openen.
 
    ![](assets/import_workspace.png)
 
-1. Klik de **Invoer** om een dossier-selectie venster te openen.
-1. Selecteer een **.vw** -bestand en druk op **Openen** of **Openen als alleen-lezen**.
+1. Klik **Importeren** om een venster voor bestandsselectie te openen.
+1. Selecteer een **.vw** dossier en druk **Open** of **Open als read-only**.
 
 >[!NOTE]
 >
->De visualisaties kunnen niet als werkruimten worden ingevoerd. Wanneer u in de werktop met de rechtermuisknop klikt en selecteert **[!UICONTROL Import]**, kunt u een bestaande werkruimte invoeren maar niet een visualisatie die buiten de werkruimte verblijft. Als u probeert om een visualisatie in te voeren, zult u een &quot;geen geldige werkruimte&quot;fout ontvangen.
-
+>Visualisaties kunnen niet worden geïmporteerd als werkruimten. Wanneer u met de rechtermuisknop op de werkbalk klikt en **[!UICONTROL Import]** selecteert, kunt u een bestaande werkruimte importeren, maar geen visualisatie die zich buiten de werkruimte bevindt. Als u probeert een visualisatie te importeren, wordt de fout &#39;&#39;Geen geldige werkruimte&#39;&#39; weergegeven.
