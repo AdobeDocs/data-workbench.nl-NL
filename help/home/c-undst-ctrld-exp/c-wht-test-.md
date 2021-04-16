@@ -2,22 +2,21 @@
 description: De testresultaten moeten duidelijk en zinvol zijn, zodat u er zeker van kunt zijn dat u op basis van die resultaten beslissingen neemt die in grote hoeveelheden worden genomen.
 solution: Analytics,Analytics
 title: Wat moet ik testen?
-topic: Data workbench
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
+exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
 
 ---
 
-
 # Wat moet ik testen?{#what-should-i-test}
 
 De testresultaten moeten duidelijk en zinvol zijn, zodat u er zeker van kunt zijn dat u op basis van die resultaten beslissingen neemt die in grote hoeveelheden worden genomen.
 
-Hoewel u verschillende paginalay-outs met [!DNL Sensor] en Site kunt testen, stelt Adobe voor dat u zich richt op het testen van hoogwaardige, strategische bedrijfsinitiatieven of nieuwe of opnieuw ontworpen websitefunctionaliteit die de doelen die u voor uw website en voor uw bedrijf hebt gesteld, aanpakt. U kunt testen op problemen zoals de beste prijsgaranties, personalisatiefunctionaliteit, marktaanbiedingen (bijvoorbeeld pakketten of bundels), creatief ontwerp en toepassingsprocessen.
+Hoewel u verschillende paginalay-outs kunt testen met [!DNL Sensor] en Site, stelt Adobe voor dat u zich concentreert op het testen van hoogwaardige, strategische bedrijfsinitiatieven of nieuwe of opnieuw ontworpen websitefunctionaliteit die de doelstellingen richt die u voor uw website evenals voor uw zaken hebt geplaatst. U kunt testen op problemen zoals de beste prijsgaranties, personalisatiefunctionaliteit, marktaanbiedingen (bijvoorbeeld pakketten of bundels), creatief ontwerp en toepassingsprocessen.
 
 De volgende concepten zijn het belangrijkst wanneer het ontwikkelen van uw gecontroleerd experiment:
 
@@ -34,11 +33,11 @@ Veel typen experimenten met veel verschillende doelen kunnen worden uitgevoerd m
 
 Om deze doelstellingen te bereiken, steunt de Plaats de volgende types van methodologieën voor gecontroleerde experimenteren en het testen:
 
-* **Pagina vervangen:** Vervang statische URL X door statische URL Y. Deze methode is van beperkte toepassing in een dynamische omgeving.
-* **Dynamische URI-vervanging:** Dit is een variant van Pagina Vervanging die statische pagina X met dynamische pagina Y vervangt om dynamische inhoud terug te geven.
-* **Objectvervanging:** Vast object X vervangen door vast object Y.
-* **Inhoud vervangen:** Vervang inhoudsset X (meerdere objecten, pagina&#39;s, tabel, enzovoort) door inhoudset Y.
-* **Vervanging experimentele variabele:** Vervang het JavaScript-object /writeCookie_X.js door het JavaScript-object /writeCookie_Y.js om een cookie te schrijven die door een back-end systeem kan worden gebruikt om bepaalde inhoud te leveren.
+* **Pagina vervangen:statische URL X** vervangen door statische URL Y. Deze methode is van beperkte toepassing in een dynamische omgeving.
+* **Dynamische URI-vervanging:** dit is een variant van Paginavervanging die statische pagina X vervangt door dynamische pagina Y om dynamische inhoud te renderen.
+* **Objectvervanging:vast object X** vervangen door vast object Y.
+* **Inhoud vervangen:** inhoudset X (meerdere objecten, pagina&#39;s, tabel, enzovoort) vervangen door inhoud ingesteld op Y.
+* **Vervanging experimentele variabele:JavaScript-object** vervangen door JavaScript-object /writeCookie_Y.js om een cookie te schrijven die door een back-end systeem kan worden gebruikt om bepaalde inhoud te leveren.
 
 >[!NOTE]
 >
@@ -46,4 +45,4 @@ Om deze doelstellingen te bereiken, steunt de Plaats de volgende types van metho
 >
 >`http://www.omniture.com/index.asp?id=1`
 >
->Bijvoorbeeld, in uw gecontroleerd experiment kon u specificeren dat de controlegroep URI met de testgroep URI [!DNL index.asp] wordt vervangen [!DNL index2.asp] om te bepalen welk paginaontwerp in meer waarde zou resulteren.
+>Bijvoorbeeld, in uw gecontroleerd experiment kon u specificeren dat de controlegroep URI [!DNL index.asp] met de testgroep URI [!DNL index2.asp] wordt vervangen om te bepalen welk paginaontwerp in meer waarde zou resulteren.
