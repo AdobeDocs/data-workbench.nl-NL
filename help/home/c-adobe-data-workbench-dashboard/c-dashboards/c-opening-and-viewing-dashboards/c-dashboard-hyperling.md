@@ -1,28 +1,28 @@
 ---
-description: De derde manier dat een dashboard kan worden geopend is door de hyperlink van een dashboard te gebruiken.
-solution: Analytics
-title: Dashboard Hyperlink
-topic: Data workbench
+description: De derde manier waarop een dashboard kan worden geopend, is door de hyperlink van een dashboard te gebruiken.
+title: Hyperlink dashboard
 uuid: da27204f-64be-4ea1-8bf9-ce907e334d86
+exl-id: 05890f46-bcb6-476a-9d3b-4bfeb95b20d4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 0%
 
 ---
 
+# Hyperlink dashboard{#dashboard-hyperlink}
 
-# Dashboard Hyperlink{#dashboard-hyperlink}
+De derde manier waarop een dashboard kan worden geopend, is door de hyperlink van een dashboard te gebruiken.
 
-De derde manier dat een dashboard kan worden geopend is door de hyperlink van een dashboard te gebruiken.
+Elk dashboard heeft een unieke hyperlink die kan worden gebruikt om het dashboard via de adresbalk van de browser te openen. Hyperlinks op het dashboard kunnen ook worden gebruikt voor bladwijzers en het delen via e-mail.
 
-Elk dashboard heeft een unieke hyperlink die kan worden gebruikt om het dashboard door de browser adresbar te openen. De hyperlinks van het dashboard kunnen ook voor het reserveren en het delen via e-mail worden gebruikt.
-
-Als u hyperlink van een dashboard hebt, ga eenvoudig het in de browser adresbar in en navigeer aan de verbinding. U zult aan de dashboardplaats worden geleid en ertoe aangezet aan login (als niet reeds het programma geopend) worden ertoe aangezet. Zodra het programma geopend, zal het dashboard in de interface laden.
+Als u de hyperlink van een dashboard hebt, voert u deze in de adresbalk van de browser in en navigeert u naar de koppeling. U wordt naar de dashboardsite geleid en u wordt gevraagd u aan te melden (als u zich nog niet hebt aangemeld). Zodra het programma geopend, zal het dashboard in de interface laden.
 
 ![](assets/db_hyperlink.png)
 
 >[!NOTE]
 >
->U zal met een bericht worden veroorzaakt als het dashboard niet meer bestaat of u hebt geen juiste toestemmingen om tot het dashboard toegang te hebben.
+>Er wordt een bericht weergegeven als het dashboard niet meer bestaat of als u niet de juiste machtigingen hebt om het dashboard te openen.
 
 ![](assets/db_hyperlink2.png)
-
