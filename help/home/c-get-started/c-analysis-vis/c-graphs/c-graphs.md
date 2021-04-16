@@ -1,43 +1,43 @@
 ---
-description: Een grafiek kan één of meerdere metriek over één of twee afmetingen van gegevens tonen.
-solution: Analytics
+description: Een grafiek kan een of meer metriek over één of twee dimensies van gegevens tonen.
 title: Grafieken
-topic: Data workbench
 uuid: 6029cd1a-4fe1-41fa-9594-2c5cee1f4882
+exl-id: 39fadfd8-646b-4959-b016-87ff201c66e7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 0%
 
 ---
 
-
 # Grafieken{#graphs}
 
-Een grafiek kan één of meerdere metriek over één of twee afmetingen van gegevens tonen.
+Een grafiek kan een of meer metriek over één of twee dimensies van gegevens tonen.
 
-De grafieken zijn zeer krachtige visualisaties, en het leren om hen te gebruiken laat u toe om een grote verscheidenheid van vragen te beantwoorden.
+Grafieken zijn zeer krachtige visualisaties, en het leren om hen te gebruiken laat u toe om een grote verscheidenheid van vragen te beantwoorden.
 
-De grafieken laten u gemakkelijk tendensen in bedrijfsmetriek over ononderbroken gegevens zien omdat u een ondergroep van een afmeting kunt selecteren waarover de metriek (zoals een specifiek tijdkader) en gezoem binnen worden grafisch om de gegevens voor die periode in meer detail te bekijken. Voor instructies om in een grafiek of een lijst te zoemen, zie het [Zoomen in Visualisaties](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
+Met grafieken kunt u gemakkelijk trends in bedrijfsmetriek over doorlopende gegevens zien, omdat u een subset van een dimensie kunt selecteren waarop de metriek (zoals een specifiek tijdkader) wordt gegraveerd en inzoomd om de gegevens voor die periode gedetailleerder te bekijken. Zie [Inzoomen in visualisaties](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530) voor instructies om in te zoomen op een grafiek of tabel.
 
-In het volgende voorbeeld, ziet u een bargrafiek waarin het aantal zittingen verbonden aan elke dag door de lengte van de bar wordt getoond. Wanneer u de muiswijzer over de bar voor een bepaalde dag beweegt, de numerieke waarde die door de bar wordt vertegenwoordigd toont.
+In het volgende voorbeeld ziet u een staafgrafiek waarin het aantal sessies dat aan elke dag is gekoppeld, wordt weergegeven door de lengte van de balk. Wanneer u de muisaanwijzer gedurende een bepaalde dag over de balk beweegt, wordt de numerieke waarde van de balk weergegeven.
 
 ![](assets/vis_Graph.png)
 
-**De Bekleding van de gradiënt op een Grafiek**
+**Verloopbedekking op een grafiek**
 
-U kunt een **Verloopbekleding** van het menu met de rechtermuisknop aanklikken en selecteren aan betere elementen van de meningsgrafiek.
+U kunt met de rechtermuisknop klikken en een **Verloopbedekking** selecteren in het menu om grafiekelementen beter weer te geven.
 
 ![](assets/6_51_gradient_graph.png)
 
-* **Geen Bekleding** van de Gradiënt (gebrek). Selecteer om bars zonder toegepaste gradiëntbekleding te tonen.
-* **Achtergrond van links**. Selecteer om gradatie van kleuren over alle bars van links naar rechts te tonen.
-* **Achtergrond van rechts**. Selecteer om gradatie van kleuren over alle bars van rechts naar links te tonen.
-* **Cilinder**. Selecteer om gradatie van kleuren van het centrum van elke bar aan de rand van elke bar te tonen.
+* **Geen verloopbedekking**  (standaard). Selecteer deze optie om staven weer te geven zonder toegepaste verloopbedekking.
+* **Achtergrond van links**. Selecteer deze optie om de kleurverloop in alle balken van links naar rechts weer te geven.
+* **Achtergrond van rechts**. Selecteer deze optie om de kleurverloop in alle balken van rechts naar links weer te geven.
+* **Cilinder**. Schakel deze optie in om de kleurverloop vanaf het midden van elke balk tot de rand van elke balk weer te geven.
 
-**Het toevoegen van Callouts aan een Grafiek**
+**Bijschriften toevoegen aan een grafiek**
 
-U kunt callouts aan lineaire grafieken ook toevoegen. Zie het [Toevoegen van Callouts aan een Werkruimte](../../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0).
+U kunt ook callouts toevoegen aan lineaire grafieken. Zie [Bijschriften toevoegen aan een Werkruimte](../../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0).
 
-Om een callout aan de visualisaties van de Grafiek toe te voegen, moet u bij de bodem van de visualisatie (de basisas) met de rechtermuisknop aanklikken om een menu te openen en uitgezocht **Add Callout** toe te voegen.
+Om een callout aan Grafiekvisualisaties toe te voegen, moet u bij de bodem van visualisatie (de basisas) met de rechtermuisknop klikken om een menu te openen en **Add Callout** te selecteren.
 
 ![](assets/visualization_callout_linegraph.png)
-
