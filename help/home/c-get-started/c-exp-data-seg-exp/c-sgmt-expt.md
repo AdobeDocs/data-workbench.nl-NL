@@ -1,58 +1,59 @@
 ---
-description: U kunt een definitie van de Uitvoer van het Segment van de visualisatie van de Lijst van het Detail in de Cliënt van de Werkbank van Gegevens gemakkelijk tot stand brengen.
-solution: Analytics
-title: Uitvoer segment
-topic: Data workbench
+description: U kunt een definitie van de Uitvoer van het Segment van de visualisatie van de Lijst van het Detail in de Cliënt van de Data Workbench gemakkelijk tot stand brengen.
+title: Segment exporteren
 uuid: 85c8aa72-23fe-424b-9580-6759dc8f8681
+exl-id: 49998b46-f3a6-43a3-a76e-468894b27ee4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '498'
+ht-degree: 0%
 
 ---
 
+# Segmentexport{#segment-export}
 
-# Uitvoer segment{#segment-export}
+U kunt een definitie van de Uitvoer van het Segment van de visualisatie van de Lijst van het Detail in de Cliënt van de Data Workbench gemakkelijk tot stand brengen.
 
-U kunt een definitie van de Uitvoer van het Segment van de visualisatie van de Lijst van het Detail in de Cliënt van de Werkbank van Gegevens gemakkelijk tot stand brengen.
-
-Bovendien combineren [!DNL Segment Exports] automatisch hun resultaten aan één enkele server, eerder dan het veroorzaken van gedeeltelijke resultaten op elke DPU die u het gebruiken van een extern proces moet combineren. U kunt een dossier van de segmentuitvoer tot stand brengen, bewaart het aan, [!DNL Profile Manager]en uploadt het outputdossier aan een server van uw keus.
+Daarnaast worden de resultaten van [!DNL Segment Exports] automatisch gecombineerd tot één server, in plaats van dat deze gedeeltelijke resultaten opleveren voor elke DPU die u moet combineren met behulp van een extern proces. U kunt een segment tot stand brengen uitvoerdossier, het bewaren aan [!DNL Profile Manager], en het outputdossier uploaden aan een server van uw keus.
 
 **Om de server van de segmentuitvoer te vormen**
 
-De [!DNL Segment Export] eigenschap leidt tot één enkel outputdossier op de server van de segmentuitvoer, eerder dan afzonderlijke outputdossiers die op elke DPU worden gecreeerd. De server van de segmentuitvoer wordt gewoonlijk gevormd om op FSU te lopen.
+Met de functie [!DNL Segment Export] wordt één uitvoerbestand op de exportserver van het segment gemaakt in plaats van afzonderlijke uitvoerbestanden die op elke DPU worden gemaakt. De segment de uitvoerserver wordt gewoonlijk gevormd om op FSU in werking te stellen.
 
-In de folder van de Dataset \ in [!DNL Profile Manager], open [!DNL Segment Export.cfg] in Werkstation, en specificeer het adres van uw server. (Uw adres zou IP kunnen zijn of volledig - gekwalificeerde domeinnaam.):
+Open in de directory Gegevensset\ in [!DNL Profile Manager] de [!DNL Segment Export.cfg] in Workstation en geef het adres van uw server op. (Uw adres kan een IP-adres zijn of een volledig gekwalificeerde domeinnaam.)
 
 ![](assets/segment_export_cfg.png)
 
-Dit is IP van de server van de Werkbank van Gegevens die de resultaten van de segmentuitvoer ontvangt. Dit is een eenmalige installatie. Als de uitvoer niet aanwezig [!DNL Segment Export.cfg] is, loopt de uitvoer niet.
+Dit is IP van de server die van de Data Workbench de resultaten van de segmentuitvoer ontvangt. Dit is een eenmalige installatie. Als [!DNL Segment Export.cfg] niet aanwezig is, loopt de uitvoer niet.
 
-**Om de uitvoerfolders te vormen**
+**Exportmappen configureren**
 
-Voor veiligheidsdoeleinden, moeten de uitvoerbare lijsten of de partijdossiers die na een segmentuitvoer lopen in de configureerbare folder van Manuscripten \ van de server van de segmentuitvoer verblijven.
+Voor veiligheidsdoeleinden, moeten de uitvoerbare of partijdossiers die na een segmentuitvoer lopen in de configureerbare folder van Scripts \ van de de segmentuitvoer server verblijven.
 
-De [!DNL .part] en definitieve output moet in de configureerbare folder van Uitvoer verblijven. Het te lopen bevel bestaat in de Argumenten van het Bevel en van het Bevel. De instanties van %file% in de Argumenten van het Bevel zullen met de weg van het outputdossier worden vervangen.
+[!DNL .part] en definitieve output moet in de configureerbare folder van Uitvoer verblijven. De opdracht die moet worden uitgevoerd, bestaat in opdrachtargumenten en opdrachtargumenten. Instanties van %file% in de opdrachtargumenten worden vervangen door het pad van het uitvoerbestand.
 
 >[!NOTE]
 >
->Nieuw aan Werkbank 5.4 van Gegevens, wordt de omslag van de Uitvoer \ automatisch gecreeerd. De vorige de folderopstelling van de uitvoer vóór versie 5.4 vereiste een prefix van de Uitvoer \ vóór filename voor elke segmentuitvoer. Het toevoegen van deze prefix is nu overtollig.
+>Nieuwe Data Workbench 5.4. De map \Exports wordt automatisch gemaakt. Voor vorige exportdirectory&#39;s die waren ingesteld vóór versie 5.4 was een voorvoegsel voor Exporteren vereist vóór de bestandsnaam voor elk segment dat werd geëxporteerd. Het toevoegen van dit voorvoegsel is nu overbodig.
 
-1. In [!DNL Communications.cfg] op de bestemmingsserver voor [!DNL Segment Exports], voeg een SegmentExportServer aan de lijst van servers toe. (Voorbeeld in rood).
+1. Voeg in [!DNL Communications.cfg] op de doelserver voor [!DNL Segment Exports] een SegmentExportServer toe aan de lijst met servers. (Voorbeeld weergegeven in rood).
 
    ![](assets/communications_cfg_example.png)
 
-   Exportmap: Specificeert waar te te zetten [!DNL .part] en outputdossiers. Dit kan een gedeelde folder zijn.
+   Exportmap: Geeft aan waar [!DNL .part] en uitvoerbestanden moeten worden geplaatst. Dit kan een gedeelde map zijn.
 
-   Scripts Directory: Specificeert de folder van waar alle uitvoerbare of partijdossiers in werking worden gesteld.
+   Scriptmap: Hiermee geeft u de map op waaruit alle uitvoerbare bestanden of batchbestanden worden uitgevoerd.
 
-1. [!DNL Access Control.cfg], op de zelfde server, voeg read-write toegang tot URI /SegmentExportServer/ aan de Server AccessGroup van de Servers van de Cluster toe:
+1. [!DNL Access Control.cfg], op de zelfde server, voeg lees-schrijf toegang tot URI /SegmentExportServer/ aan de Cluster Servers AccessGroup toe:
 
    ![](assets/accesscontrol_cfg_example.png)
 
-1. Je [!DNL .export] bestanden wijzigen:
+1. Wijzig uw [!DNL .export]-bestanden:
 
    ![](assets/segment_export_query_example.png)
 
-1. Voor elk profiel, [!DNL Segment Export.cfg] wordt het gevestigd in de folder Dataset \, met de volgende inhoud:
+1. Voor elk profiel bevindt de [!DNL Segment Export.cfg] zich in de map Dataset, met de volgende inhoud:
 
    ```
    Segment Export = SegmentExport:
@@ -61,24 +62,23 @@ De [!DNL .part] en definitieve output moet in de configureerbare folder van Uitv
    Address = string: 192.168.5.128 (for example) Use SSL = bool: false
    ```
 
-1. Zorg ervoor dat de folders die in de Folder van de Uitvoer en de Folder van Manuscripten worden bedoeld bestaan.
+1. Zorg ervoor dat de folders die in de Folder van de Uitvoer en Folder van Manuscripten worden bedoeld bestaan.
 
-   Slechts kunnen uitvoerbare lijsten en partijdossiers in de folder van Manuscripten als bevel van de segmentuitvoer worden in werking gesteld.
+   Alleen uitvoerbare bestanden en batchbestanden in de map Scripts kunnen worden uitgevoerd als opdracht voor het exporteren van segmenten.
 
-**Om een dossier van de segmentuitvoer te creëren**
+**Een segmentexportbestand maken**
 
-1. In een werkruimte, creeer een Lijst die van het Detail ondergroepen van gegevens (Visualisatie > de Lijst van het Detail) toont en voeg attributen toe.
-1. Indien gewenst, maak selecties in de werkruimte. (Om het even welke selecties of filters worden toegepast op de uitvoer.)
+1. Maak in een werkruimte een detailtabel met subsets van gegevens (Visualisatie > Detailtabel) en voeg kenmerken toe.
+1. Maak desgewenst selecties in de werkruimte. (Alle selecties of filters worden toegepast op het exporteren.)
 
    ![](assets/create_segment_export_file.png)
 
-1. In de kopbal van de Lijst van het Detail, klik en selecteer met de rechtermuisknop aan **[!UICONTROL Create Segment Export File]**.
-1. In, typ [!DNL Save as]een naam voor het [!DNL .export] dossier.
-1. Voor het [!DNL .export] dossier, vorm zonodig de parameters.
+1. Klik met de rechtermuisknop in de koptekst van de tabel Details en selecteer **[!UICONTROL Create Segment Export File]**.
+1. Typ in [!DNL Save as] een naam voor het [!DNL .export]-bestand.
+1. Configureer in het [!DNL .export]-bestand de parameters naar wens.
 
-   Om het even welke selecties of filters in de werkruimte worden opgenomen in het de uitvoerdossier.
+   Alle selecties of filters in de werkruimte worden opgenomen in het exportbestand.
 
-1. Sla het [!DNL .export] bestand op.
+1. Sla het [!DNL .export]-bestand op.
 
-   Het opgeslagen dossier toont in [!DNL Profile Manager] voor u om aan de server op te slaan. Wanneer u sparen het dossier aan de server, de uitvoer begint.
-
+   Het opgeslagen bestand wordt weergegeven in de [!DNL Profile Manager] zodat u het op de server kunt opslaan. Wanneer u het bestand op de server opslaat, wordt het exporteren gestart.
