@@ -1,19 +1,20 @@
 ---
-description: De werkruimte van de vereffeningsgrootte resizes visualisaties aan de vertoningsresolutie u gebruikt.
-solution: Analytics
+description: Met Workspace verfijnen wijzigt u de grootte van de visualisaties in de weergaveresolutie die u gebruikt.
 title: Een werkruimte verfijnen
-topic: Data workbench
 uuid: bbb5cd7b-4973-419d-9a13-52b36422259a
+exl-id: a84d24db-6690-4f9a-a01e-dbc549ca13c5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '42'
+ht-degree: 0%
 
 ---
 
-
 # Een werkruimte verfijnen{#refit-a-workspace}
 
-De werkruimte van de vereffeningsgrootte resizes visualisaties aan de vertoningsresolutie u gebruikt.
+Met Workspace verfijnen wijzigt u de grootte van de visualisaties in de weergaveresolutie die u gebruikt.
 
-In een Werkruimte, klik **[!UICONTROL File]** > **[!UICONTROL Refit Workspace]**.
+Klik in een werkruimte op **[!UICONTROL File]** > **[!UICONTROL Refit Workspace]**.
 
-Dit is handig om uw weergave snel aan te passen voor presentaties.
+Dit is handig als u de weergave voor presentaties snel wilt aanpassen.
