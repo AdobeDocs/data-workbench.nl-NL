@@ -1,20 +1,21 @@
 ---
-description: De gespleten transformatie verdeelt een koord in een vector van substrings die op een bepaald afbakeningskarakter wordt gebaseerd.
-solution: Analytics
-title: Gespleten
-topic: Data workbench
+description: Met de gesplitste transformatie wordt een tekenreeks gesplitst in een vector met subtekenreeksen op basis van een opgegeven scheidingsteken.
+title: Splitsen
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
+exl-id: ea85b095-1306-4938-906d-35d421db6c98
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 1%
 
 ---
 
+# Splitsen{#split}
 
-# Gespleten{#split}
+Met de gesplitste transformatie wordt een tekenreeks gesplitst in een vector met subtekenreeksen op basis van een opgegeven scheidingsteken.
 
-De gespleten transformatie verdeelt een koord in een vector van substrings die op een bepaald afbakeningskarakter wordt gebaseerd.
-
-[!DNL Split] is bijzonder nuttig om individuele waarden uit een inzameling van waarden te halen verbonden aan één enkele waarde van de de vraagnaam van URI.
+[!DNL Split] is met name nuttig voor het extraheren van individuele waarden uit een verzameling waarden die zijn gekoppeld aan één URI-querynaamwaarde.
 
 <table id="table_C97DA4E45DA844FAB8D61AABA22FF809"> 
  <thead> 
@@ -27,7 +28,7 @@ De gespleten transformatie verdeelt een koord in een vector van substrings die o
  <tbody> 
   <tr> 
    <td colname="col1"> Naam </td> 
-   <td colname="col2"> Beschrijvende naam van de transformatie. U kunt om het even welke naam hier ingaan. </td> 
+   <td colname="col2"> Beschrijvende naam van de transformatie. U kunt hier elke naam invoeren. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -36,34 +37,34 @@ De gespleten transformatie verdeelt een koord in een vector van substrings die o
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Toestand </td> 
+   <td colname="col1"> Voorwaarde </td> 
    <td colname="col2"> De omstandigheden waaronder deze transformatie wordt toegepast. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Afbakening </td> 
-   <td colname="col2"> <p>Koord dat wordt gebruikt om het inputkoord in substrings te scheiden. Moet één enkel karakter in lengte zijn. </p> <p> Als u de sleutel van CTRL onderdrukt en binnen de parameter van de Afbakening met de rechtermuisknop klikt, verschijnt een menu van het Tussenvoegsel. Dit menu bevat een lijst van speciale karakters die vaak als afbakeningen worden gebruikt. </p> </td> 
+   <td colname="col1"> Scheidingsteken </td> 
+   <td colname="col2"> <p>Tekenreeks die wordt gebruikt om de invoertekenreeks in subtekenreeksen te scheiden. Moet één teken lang zijn. </p> <p> Als u de Ctrl-toets ingedrukt houdt en met de rechtermuisknop in de parameter Scheidingsteken klikt, wordt het menu Invoegen weergegeven. Dit menu bevat een lijst met speciale tekens die vaak als scheidingstekens worden gebruikt. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Invoer </td> 
-   <td colname="col2"> De naam van het gebied de waarvan waarde wordt gesplitst om de vector van het outputkoord tot stand te brengen. </td> 
+   <td colname="col2"> De naam van het veld waarvan de waarde wordt gesplitst om de uitvoertekenreeksvector te maken. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uitvoer </td> 
-   <td colname="col2"> De naam van het outputgebied. </td> 
+   <td colname="col2"> De naam van het uitvoerveld. </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Overweeg een website waarin de producten die door een klant worden gekocht als deel van de cs-uri-vraag waarde vermeld zijn wanneer de bevestigingspagina verbonden aan een succesvolle aankoop wordt betreden. Het volgende is een voorbeeld van zulk een koord:
+Neem bijvoorbeeld een website waar de producten die een klant heeft aangeschaft, als onderdeel van de waarde cs-uri-query worden weergegeven wanneer de bevestigingspagina die aan een geslaagde aankoop is gekoppeld, wordt geopend. Hier volgt een voorbeeld van een dergelijke tekenreeks:
 
 * /checkout/confirmed.asp?prod_selected=B57481,C46355,Z97123
 
-Het cs-uri-stenstengebied wordt gebruikt om te bepalen of de pagina die door de logboekingang wordt gevraagd de bevestigingspagina is. De codes voor de producten die de klant kocht zijn vermeld als komma-gescheiden waarden van de prod_selected naam in cs-uri-vraag. De [!DNL Split] transformatie kan worden gebruikt om deze informatie te extraheren door de productcodes op de komma te splitsen als de waarde van de cs-uri-stengel overeenkomt met de in de [!DNL String Match] toestand aangegeven waarde. Zie [Koord-overeenstemming](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). De volgende transformatie detailleert de oplossing aan dit probleem.
+Het veld cs-uri-stem wordt gebruikt om te bepalen of de pagina die door de logbestandvermelding wordt aangevraagd, de bevestigingspagina is. De codes voor de producten die de klant heeft gekocht zijn vermeld als komma-gescheiden waarden van de naam prod_selected in cs-uri-query. De [!DNL Split]-transformatie kan worden gebruikt om deze informatie te extraheren door de productcodes onder de komma te splitsen als de waarde van cs-uri-stem overeenkomt met de waarde die is opgegeven in de voorwaarde [!DNL String Match]. Zie [Tekenreeksovereenkomst](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). In de volgende transformatie wordt de oplossing voor dit probleem beschreven.
 
 ![](assets/cfg_TransformationType_Split.png)
 
-Hier, is het outputgebied x-producten, die zouden worden gebruikt om de gewenste uitgebreide dimensie tot stand te brengen die de producten in kaart brengt die aan de zittingen worden gekocht waarin de aankoop werd gemaakt.
+Hier is het uitvoerveld x-products, waarmee de gewenste uitgebreide dimensie wordt gemaakt waarmee de aangeschafte producten worden toegewezen aan de sessies waarin de aankoop is gedaan.
