@@ -1,57 +1,57 @@
 ---
-description: Een wegbrowser laat u toe om de opeenvolging te analyseren waarin de elementen van een bepaalde dimensie werden betreden.
-solution: Analytics
+description: Met een padbrowser kunt u de volgorde analyseren waarin de elementen van een bepaalde dimensie zijn benaderd.
 title: Padbrowsers
-topic: Data workbench
 uuid: 548091dc-935f-41ac-b67c-39080988f1ea
+exl-id: 563cf0e3-39d7-49b7-b808-b0233169fb1a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 0%
 
 ---
 
-
 # Padbrowsers{#path-browsers}
 
-Een wegbrowser laat u toe om de opeenvolging te analyseren waarin de elementen van een bepaalde dimensie werden betreden.
+Met een padbrowser kunt u de volgorde analyseren waarin de elementen van een bepaalde dimensie zijn benaderd.
 
-U creeert wegbrowser door een element van een afmeting te slepen en te laten vallen op een lege wegbrowser visualisatie. Het element dat u sleept en op wegbrowser laat vallen wordt de wortel van wegbrowser. De weg browser toont wegen die door de wortel overgaan, toelatend u om de opeenvolging van elementen te zien die vóór en na de wortel werden betreden.
+U maakt een padbrowser door een element van een dimensie naar een browserweergave met een leeg pad te slepen. Het element dat u naar de padbrowser sleept, wordt de basis van de padbrowser. In de padbrowser worden paden weergegeven die door de hoofdmap lopen, zodat u de reeks elementen kunt zien die voor en na de hoofdmap zijn geopend.
 
-De volgende wegbrowser toont de opeenvolging van films die de kijkers vóór en na classificatie van de film *de Afbeelder* schatten, die de wortel van wegbrowser is. Elke filmnaam is een element van de afmeting van de Film, die in een dataset wordt bepaald die uit filmgegevens bestaat die film&#39; namen en kijkers&#39; classificaties van die films omvat.
+In de volgende padbrowser wordt de volgorde van films weergegeven die de kijkers hebben beoordeeld voor en na het classificeren van de film *De filmclip*, die de basis vormt van de padbrowser. Elke filmnaam is een element van de afmetingen van de Film, die in een dataset wordt bepaald die uit filmgegevens bestaat die filmnamen en kijkers&#39; classificaties van die films omvat.
 
 ![](assets/vis_PathBrowser_Movies.png)
 
-U kunt wegbrowsers tot stand brengen om de opeenvolging te tonen waarin de elementen van om het even welke afmeting in uw dataset werden betreden. Bijvoorbeeld, als u met websitegegevens werkt, kunt u wegbrowser tot stand brengen die de opeenvolging van websitepagina&#39;s toont die vóór en na de wortel voor elke zitting werden betreden waarin de wortel of voor elke plaatsbezoeker werd bekeken die de wortel bekeken.
+U kunt wegbrowsers tot stand brengen om de opeenvolging te tonen waarin de elementen van om het even welke afmeting in uw dataset werden betreden. Als u bijvoorbeeld met websitegegevens werkt, kunt u een padbrowser maken met de volgorde van websitepagina&#39;s die voor en na de hoofdmap zijn geopend voor elke sessie waarin de hoofdmap is weergegeven of voor elke sitebezoeker die de hoofdmap heeft weergegeven.
 
 ![](assets/vis_PathBrowser_Pages.png)
 
 Elke wegbrowser heeft een bijbehorende basisafmeting, groepsafmeting, niveauafmeting, en metrisch, die sleutels verstrekken om de gegevens te interpreteren die in wegbrowser worden getoond.
 
-* **Basisdimensie:** Wanneer u sleept en een wortelelement op wegbrowser laat vallen, sleept u en laat vallen een element van de basisdimensie. Alle andere elementen die in de wegen verschijnen zijn elementen van de basisdimensie. U kunt de basisafmeting veranderen door een element van een andere afmeting op wegbrowser te slepen en te laten vallen.
-* **Niveaudimensie:** Elke dimensie in uw dataset heeft een bijbehorende niveaudimensie (die ook als ouder wordt bedoeld). De niveaudimensie voor uw wegbrowser zou het zelfde als de niveaudimensie (of ouder) voor de basisafmeting van uw wegbrowser moeten zijn. De het niveaudimensie van wegbrowser is belangrijk om twee belangrijke redenen:
+* **Basisafmetingen:** wanneer u een basiselement naar de padbrowser sleept, sleept u een element van de basisdimensie en zet u het neer. Alle andere elementen die in de paden voorkomen, zijn elementen van de basisdimensie. U kunt de basisdimensie wijzigen door een element van een andere dimensie naar de padbrowser te slepen.
+* **De dimensie van het niveau:** Elke dimensie in uw dataset heeft een bijbehorende niveaudimensie (die ook als ouder wordt bedoeld). De niveaudimensie voor uw wegbrowser zou het zelfde moeten zijn als de niveaudimensie (of ouder) voor de de basisdimensie van uw wegbrowser. De niveaudimensie van een padbrowser is belangrijk om twee belangrijke redenen:
 
-   * Aangezien u een weg van één element van de basisdimensie aan volgende volgt, beweegt u zich van één element van de niveaudimensie aan volgende. Bijvoorbeeld, veronderstel dat u wegbrowser hebt gecreeerd die pagina&#39;s van een website toont. Elke pagina is een element van de dimensie van de Pagina, en de niveaudimensie voor Pagina is de Mening van de Pagina. Aangezien u zich van één pagina aan de volgende beweegt, beweegt u zich van één paginamening aan volgende.
-   * Wanneer u een weg van de elementen van de basisafmeting binnen wegbrowser selecteert, selecteert u gegevens voor de overeenkomstige elementen van de niveauafmeting. De selectie omvat altijd de elementen van de niveaudimensie die op de wortel betrekking hebben, en het wordt verfijnd door meer elementen aan de weg toe te voegen. Bijvoorbeeld, wanneer u een weg van pagina&#39;s, zoals wortel > A > B selecteert, selecteert u gegevens voor de paginameningen verbonden aan de wortel waar de volgende pagina A is en de volgende pagina B is.
+   * Als u een pad volgt van het ene element van de basisdimensie naar het volgende, gaat u van het ene element van de niveaudimensie naar het volgende. Stel dat u een padbrowser hebt gemaakt waarin pagina&#39;s van een website worden weergegeven. Elke pagina is een element van de pagina-afmeting en de niveauafmeting voor Pagina is Paginaweergave. Als u van de ene pagina naar de andere gaat, gaat u van de ene paginaweergave naar de andere.
+   * Wanneer u een pad met basisdimensie-elementen selecteert in een padbrowser, selecteert u gegevens voor de corresponderende elementen van de niveaudimensie. De selectie bevat altijd de elementen van de niveaudimensie die betrekking hebben op de hoofdmap en wordt verfijnd door meer elementen aan het pad toe te voegen. Als u bijvoorbeeld een pad met pagina&#39;s selecteert, zoals Basis > A > B, selecteert u gegevens voor de paginaweergaven die zijn gekoppeld aan de hoofdpagina waarop de volgende pagina A staat en de volgende pagina B.
 
-      Voor informatie over het selecteren van een weg in wegbrowser, zie het [Selecteren van Wegen](../../../../home/c-get-started/c-analysis-vis/c-path-browsers/t-sel-paths.md#task-bf44d08c71954ef2adec4b82f840adeb). Voor informatie over selecties, zie het [Maken Selecties in Visualisaties](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746).
+      Zie [Paden selecteren](../../../../home/c-get-started/c-analysis-vis/c-path-browsers/t-sel-paths.md#task-bf44d08c71954ef2adec4b82f840adeb) voor informatie over het selecteren van een pad in een padbrowser. Zie [Selecties maken in visualisaties](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746) voor informatie over selecties.
    >[!NOTE]
    >
-   >De wegbrowser negeert de elementen van de niveaudimensie zonder bijbehorende elementen van de basisafmeting. Deze situatie kan voorkomen wanneer u wegbrowser van een proceskaart creeert. Zie [het Creëren van Browsers](../../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-create-path-browsers.md#concept-e120de6a740d4b6f98dda9e2b638f6ff)van de Weg.
+   >De padbrowser negeert de elementen van de niveaudimensie zonder de bijbehorende basisdimensie-elementen. Deze situatie kan zich voordoen wanneer u een padbrowser maakt op basis van een proceskaart. Zie [Padbrowsers maken](../../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-create-path-browsers.md#concept-e120de6a740d4b6f98dda9e2b638f6ff).
 
-* **Groepsdimensie:** De groepsdimensie bepaalt hoe de elementen van de niveaudimensie worden gegroepeerd om de wegen van wegbrowser te vormen. Specifiek, kunnen de elementen van de niveaudimensie verbonden aan één enkele weg in wegbrowser niet meer dan één element van een groepsdimensie overspannen.
+* **Groepsdimensie:** de groepsdimensie bepaalt hoe de elementen van de niveaudimensie worden gegroepeerd om de paden van een padbrowser te vormen. Specifiek, kunnen de elementen van de niveaudimensie verbonden aan één enkele weg in wegbrowser niet meer dan één element van een groepsdimensie overspannen.
 
-   Om dit te begrijpen, overweeg een voorbeeld gebruikend Webgegevens. Veronderstel dat de basis, het niveau, en de groepsdimensies voor uw wegbrowser Pagina, de Mening van de Pagina, en Zitting, respectievelijk zijn. Één weg in uw wegbrowser toont de paginaopeenvolging A > B > C. De groepsafmeting (Zitting) vertelt u dat de paginameningen (elementen van de afmeting van de Mening van de Pagina) verbonden aan de paginaopeenvolging A > B > C tijdens om het even welke enige zitting voorkwam. Het is belangrijk om op te merken dat er veelvoudige zittingen zouden kunnen zijn waarin er paginameningen voor de paginaopeenvolging A > B > C. waren. Daarom vertegenwoordigt de weg die de paginasequentie A > B > C toont alle individuele zittingen waarin de paginameningen voor die opeenvolging voorkwamen.
+   Om dit te begrijpen, overweeg een voorbeeld gebruikend Webgegevens. Stel dat de basis-, niveau- en groepsafmetingen voor de padbrowser respectievelijk Pagina, Paginaweergave en Sessie zijn. Eén pad in uw padbrowser toont de paginareeks A > B > C. De groepsdimensie (Sessie) geeft aan dat de paginaweergaven (elementen van de afmetingen Paginaweergave) die aan de paginareeks A > B > C zijn gekoppeld, tijdens elke sessie zijn opgetreden. Het is belangrijk om op te merken dat er meerdere sessies kunnen zijn waarin paginareeksen A > B > C werden weergegeven. Daarom vertegenwoordigt het pad met paginareeks A > B > C alle afzonderlijke sessies waarin de paginaweergaven voor die reeks plaatsvonden.
 
-* **Metrisch**: De dikte van de weg die tot een bepaald element leidt is proportioneel aan de waarde van metrisch voor dat element. De dikkere wegen wijzen op grotere metrische waarden dan dunner wegen.
+* **Metrisch**: De dikte van het pad dat naar een bepaald element leidt, is evenredig met de waarde van de metrische waarde voor dat element. Hogere paden geven hogere metrische waarden aan dan dunne paden.
 
-Het etiket in de hoogste linkerhoek van wegbrowser noemt de basis en groepsafmetingen die in de visualisatie worden vertegenwoordigd. De naam van de niveaudimensie is niet zichtbaar in de wegbrowser visualisatie. Het etiket neemt de vorm &quot;Opeenvolging van naam *+s van de* basisafmeting voor elke naam *van de* groepsafmeting.&quot; Bijvoorbeeld, vertelt de etiketopeenvolging van Films voor elke Gebruiker u dat de basisafmeting Film is en de groepsafmeting Gebruiker is.
+Het label in de linkerbovenhoek van de padbrowser geeft de basis- en groepsafmetingen aan die in de visualisatie worden weergegeven. De naam van de niveaudimensie is niet zichtbaar in de browser van de weg visualisatie. Het label heeft de vorm &quot;Reeks van *naam van de basisdimensie*+s voor elke *naam van de groepsdimensie*.&quot; Bijvoorbeeld, vertelt de etiketReeks van Films voor elke Gebruiker dat de basisafmeting Film is en de groepsafmeting Gebruiker is.
 
 ![](assets/vis_PathBrowser_Movies.png)
 
-Door om het even welk element in wegbrowser met de rechtermuisknop aan te klikken, kunt u de naam van metrisch zien verbonden aan wegbrowser en zijn waarde voor dat element.
+Door met de rechtermuisknop op een element in de padbrowser te klikken, kunt u de naam zien van de metrische waarde die is gekoppeld aan de padbrowser en de waarde ervan voor dat element.
 
 ![](assets/vis_PathBrowser_RightClick.png)
 
 >[!NOTE]
 >
->U kunt de standaardafmetingen en metrisch voor wegbrowser veranderen. Voor instructies om een wegbrowser visualisatie te vormen, zie het [Vormen Browsers](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)van de Weg.
-
+>U kunt de standaardafmetingen en de metrische waarde voor een padbrowser wijzigen. Zie [Browsers van paden configureren](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3) voor instructies voor het configureren van de visualisatie van een padbrowser.
