@@ -1,34 +1,34 @@
 ---
-description: Hoe te om een inputcel te creëren.
-solution: Analytics
+description: Een invoercel maken.
 title: Een invoercel maken
-topic: Data workbench
 uuid: 9b2883e4-b12a-4279-9894-37a1df6c34b3
+exl-id: 1e55696e-fcc8-4521-b37b-f52409229e6d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
 
-
 # Een invoercel maken{#create-an-input-cell}
 
-Hoe te om een inputcel te creëren.
+Een invoercel maken.
 
-Wanneer cel B1 geformatteerd is als een invoercel (door met de rechtermuisknop op de cel te klikken en te klikken **[!UICONTROL Format]** > **[!UICONTROL Input Cell]**) en u de visualisatie vergrendelt (door met de rechtermuisknop op de bovenste rand te klikken en te klikken **[!UICONTROL Locked]**), kunt u de waarde van de invoercel wijzigen om de resultaten &quot;on-the-fly&quot; te bekijken.
+Wanneer cel B1 is opgemaakt als een invoercel (door met de rechtermuisknop op de cel te klikken en **[!UICONTROL Format]** > **[!UICONTROL Input Cell]** te klikken) en u de visualisatie vergrendelt (door met de rechtermuisknop op de bovenste rand te klikken en op **[!UICONTROL Locked]** te klikken), kunt u de waarde van de invoercel wijzigen om de resultaten &#39;ter plekke&#39; weer te geven.
 
-Het volgende voorbeeld toont een aantekenvel die de formule voor een inputcel toont.
+In het volgende voorbeeld ziet u een werkblad met de formule voor een invoercel.
 
 ![](assets/vis_Worksheet_InputCell_formula.png)
 
-Dit voorbeeld toont het zelfde aantekenvel dat het resultaat van de formule van de inputcel toont.
+In dit voorbeeld wordt hetzelfde werkblad weergegeven met het resultaat van de invoercelformule.
 
 ![](assets/vis_Worksheet_InputCell.png)
 
-In beide voorbeelden, toont Rij 1 de verwijzende persoon die momenteel in overweging wordt genomen, Referrer A, terwijl Rij 2 het aantal bezoekers toont die van Referrer A werden doorverwezen.
+In beide voorbeelden toont Rij 1 de verwijzende persoon die momenteel wordt overwogen, Referrer A, terwijl Rij 2 het aantal bezoekers toont die van Referrer A werden verwezen.
 
-Nadat u formaat B1 en de visualisatie sluit, kunt u de waarde van de Referrer veranderen die in B1 wordt vermeld door de nieuwe waarde eenvoudig te typen:
+Nadat u B1 formatteert en de visualisatie sluit, kunt u de waarde van Referrer veranderen die in B1 door de nieuwe waarde eenvoudig te typen wordt vermeld:
 
 ![](assets/vis_Worksheet_InputCell_locked.png)
 
 ![](assets/vis_Worksheet_InputCell_locked_changed.png)
-
