@@ -1,37 +1,38 @@
 ---
-description: Nadat u de werkruimten binnen uw rapportvastgestelde omslag hebt gecreeerd en opgeslagen, moet u een nieuw dossier tot stand brengen Report.cfg.
-solution: Analytics
-title: Vorm de Reeks van het Rapport
-topic: Data workbench
+description: Nadat u de werkruimten binnen uw omslag van de rapportreeks hebt gecreeerd en bewaard, moet u een nieuw Report.cfg- dossier creëren.
+title: De rapportset configureren
 uuid: 21f8dcde-8fe1-4ba0-9eb7-39ff812dcf14
+exl-id: 780e6bb1-b332-4984-b132-df11d95b592a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '223'
+ht-degree: 0%
 
 ---
 
-
 # Vorm de Reeks van het Rapport{#configure-the-report-set}
 
-Nadat u de werkruimten binnen uw rapportvastgestelde omslag hebt gecreeerd en opgeslagen, moet u een nieuw dossier tot stand brengen Report.cfg.
+Nadat u de werkruimten binnen uw omslag van de rapportreeks hebt gecreeerd en bewaard, moet u een nieuw Report.cfg- dossier creëren.
 
-U moet in het [!DNL Report.cfg] dossier voor het geplaatste rapport specificeren wanneer en hoe de rapporten moeten worden geproduceerd en worden verdeeld.
+U moet in het [!DNL Report.cfg] dossier voor de rapportreeks specificeren wanneer en hoe de rapporten moeten worden geproduceerd en worden verdeeld.
 
-**Om een nieuw Report.cfg te creëren**
+**Een nieuw Report.cfg maken**
 
-1. In gegevenswerkbank, open de [!DNL Profile Manager] door binnen een werkruimte met de rechtermuisknop aan te klikken en **[!UICONTROL Admin]** > **[!UICONTROL Profile]** > te klikken **[!UICONTROL Profile Manager]**.
+1. Open de [!DNL Profile Manager] in de gegevenswerkbank door met de rechtermuisknop in een werkruimte te klikken en **[!UICONTROL Admin]** > **[!UICONTROL Profile]** > **[!UICONTROL Profile Manager]** te klikken.
 1. Klik **[!UICONTROL Reports]** om de [!DNL Reports] omslag te openen.
 1. Klik de omslag voor uw rapportreeks.
-1. In de [!DNL User] kolom voor uw rapportvastgestelde omslag, klik met de rechtermuisknop aan en selecteer **[!UICONTROL Create]** > **[!UICONTROL Report]**. Een nieuw [!DNL Report.cfg] dossier verschijnt in de [!DNL File]kolom.
-1. In de [!DNL User] kolom voor het nieuwe [!DNL Report.cfg] dossier, klik het vinkje voor het [!DNL Report.cfg] dossier met de rechtermuisknop aan, dan klik **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
+1. Klik in de kolom [!DNL User] voor de map met rapportsets met de rechtermuisknop en selecteer **[!UICONTROL Create]** > **[!UICONTROL Report]**. Een nieuw [!DNL Report.cfg] dossier verschijnt in [!DNL File]kolom.
+1. Klik in de kolom [!DNL User] voor het nieuwe [!DNL Report.cfg]-bestand met de rechtermuisknop op het vinkje voor het [!DNL Report.cfg]-bestand en klik vervolgens op **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
 
-   ![Stapgegevens](assets/cfg_reportcfg.png)
+   ![Stapinfo](assets/cfg_reportcfg.png)
 
-1. Geef de configuratieparameters uit zoals gewenst. Voor informatie over deze parameters, zie Parameters [Report.cfg](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
+1. Bewerk de configuratieparameters naar wens. Voor informatie over deze parameters, zie [Parameters Report.cfg](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
 
    >[!NOTE]
    >
-   >De steekproef die in dit voorbeeld wordt [!DNL Report.cfg] getoond bevat slechts de parameters inbegrepen in het [!DNL Report.cfg] dossier door gebrek. Als u extra parameters aan een [!DNL Report.cfg] dossier moet toevoegen, moet u dit doen gebruikend een tekstredacteur. Voor stappen om dit te doen, zie het [Uitgeven van Bestaande Dossiers](../../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#concept-96fd57159f454defa09bd18655a12887)Report.cfg.
+   >Het voorbeeld [!DNL Report.cfg] in dit voorbeeld bevat standaard alleen de parameters die in het [!DNL Report.cfg]-bestand zijn opgenomen. Als u extra parameters aan een [!DNL Report.cfg] dossier moet toevoegen, moet u dit doen gebruikend een tekstredacteur. Voor stappen om dit te doen, zie [Bestaand Report.cfg- Dossiers](../../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#concept-96fd57159f454defa09bd18655a12887) uitgeven.
 
-1. Sparen het dossier door **[!UICONTROL Report.cfg (modified)]** bij de bovenkant van het dossier met de rechtermuisknop aan te klikken en te klikken **[!UICONTROL sparen als Rapporten\]***&lt;**[!UICONTROL ReportSetName]**>***[!UICONTROL \Report.cfg]**.
+1. Sla het bestand op door met de rechtermuisknop op **[!UICONTROL Report.cfg (modified)]** boven aan het bestand te klikken en op **[!UICONTROL Save as Reports\]***&lt; **[!UICONTROL ReportSetName]*****[!UICONTROL \Report.cfg]**te klikken.
 1. Sluit het bestand.
-1. Klik in het [!DNL Profile Manager]dialoogvenster met de rechtermuisknop op het vinkje in de [!DNL User] kolom voor het nieuwe [!DNL Report.cfg] bestand en selecteer **[!UICONTROL Save to]***&lt; **[!UICONTROL profile name]**>*.
+1. Klik in [!DNL Profile Manager] met de rechtermuisknop op het vinkje in de kolom [!DNL User] voor het nieuwe [!DNL Report.cfg]-bestand en selecteer **[!UICONTROL Save to]***&lt; **[!UICONTROL profile name]**>*.
