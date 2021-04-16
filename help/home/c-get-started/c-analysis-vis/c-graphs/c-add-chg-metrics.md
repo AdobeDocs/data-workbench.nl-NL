@@ -1,28 +1,28 @@
 ---
 description: Stappen om nieuwe metrisch toe te voegen of metrisch te veranderen.
-solution: Analytics
-title: Een maatstaf toevoegen en wijzigen
-topic: Data workbench
+title: Metrisch toevoegen en wijzigen
 uuid: c0763e0e-081a-4f00-b655-359f5b790ead
+exl-id: b40ad2bc-410d-4c80-b9f3-bc7e7cc42407
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 0%
 
 ---
 
-
-# Een maatstaf toevoegen en wijzigen{#add-and-change-a-metrics}
+# Een metriek toevoegen en wijzigen{#add-and-change-a-metrics}
 
 Stappen om nieuwe metrisch toe te voegen of metrisch te veranderen.
 
-De volgende voorbeelden tonen de metrische Zittingen die over de Maten van de Dag (in de hoogste lijngrafiek) en de zelfde lijngrafiek met tweede metrisch worden geschetst, Waarde per Zitting, die aan de linkeras (in de bodemlijngrafiek) wordt toegevoegd.
+In de volgende voorbeelden ziet u welke sessies metrisch worden weergegeven over de dimensie Uur van dag (in de bovenste lijngrafiek) en dezelfde lijngrafiek met een tweede metrische waarde, Waarde per sessie, toegevoegd aan de linkeras (in de onderste lijngrafiek).
 
 ![](assets/vis_Line_AddMetric.png)
 
-**Om nieuwe metrisch toe te voegen**
+**Een nieuwe metrische waarde toevoegen**
 
-* Klik een element of het etiket van metrisch met de rechtermuisknop aan en klik **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*. Metrisch wordt toegevoegd onder metrisch die u oorspronkelijk selecteerde.
+* Klik met de rechtermuisknop op een element of het label van een metrische waarde en klik op **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]***. De metrische waarde wordt toegevoegd onder metrisch die u oorspronkelijk selecteerde.
 
-**Om metrisch te veranderen**
+**Een metrisch object wijzigen**
 
-* Klik een element of het etiket van metrisch met de rechtermuisknop aan dat u wilt veranderen en **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>* klikken. Nieuwe metrisch vervangt originele metrisch.
-
+* Klik met de rechtermuisknop op een element of het label van de metrische waarde die u wilt wijzigen en klik op **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*. Nieuwe metrisch vervangt originele metrisch.
