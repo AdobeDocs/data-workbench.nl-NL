@@ -1,20 +1,20 @@
 ---
-description: Stappen om een filter op een werkruimte toe te passen.
-solution: Analytics
-title: Pas een filter op een werkruimte toe
-topic: Data workbench
+description: Stappen om een filter toe te passen op een werkruimte.
+title: Een filter toepassen op een werkruimte
 uuid: e5108204-8a25-4a36-a5c6-57fc4ac9ba41
+exl-id: e8ed1693-d5af-4902-8761-400c370a81c8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '55'
+ht-degree: 0%
 
 ---
 
+# Een filter toepassen op een werkruimte{#apply-a-filter-to-a-workspace}
 
-# Pas een filter op een werkruimte toe{#apply-a-filter-to-a-workspace}
+Stappen om een filter toe te passen op een werkruimte.
 
-Stappen om een filter op een werkruimte toe te passen.
+* Klik in het venster van de filtereditor op **[!UICONTROL Apply Filter]**.
 
-* In het venster van de filterredacteur, klik **[!UICONTROL Apply Filter]**.
-
-   De grens van het venster van de filterredacteur wordt geel om erop te wijzen dat de filter een selectie op de werkruimte heeft toegepast.
-
+   De rand van het filtereditorvenster wordt geel om erop te wijzen dat de filter een selectie op de werkruimte heeft toegepast.
