@@ -1,35 +1,36 @@
 ---
-description: Tabellen die lijst van constante en douanevariabelen bevatten.
-solution: Analytics
-title: Aantekenvel voor variabele toewijzing van paginatags
-topic: Data workbench
+description: Tabellen met een lijst met constante en aangepaste variabelen.
+title: Werkblad Paginatabelvariabele toewijzing
 uuid: 1ecef047-5a04-401d-b3d5-f31fddb134e1
+exl-id: 647c6a14-58b4-4f87-bccf-fa7ac24811a5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
+# Werkblad voor variabele toewijzing paginatag{#page-tag-variable-mapping-worksheet}
 
-# Aantekenvel voor variabele toewijzing van paginatags{#page-tag-variable-mapping-worksheet}
-
-Tabellen die lijst van constante en douanevariabelen bevatten.
+Tabellen met een lijst met constante en aangepaste variabelen.
 
 ## Constante variabelen {#section-d28c9bc798314c25b4f9c9a64534b317}
 
 | Naam variabele | Variabele korte beschrijving | Aanvullende informatie |
 |---|---|---|
-| ln | constante tag | GEWIJZIGD BINNEN JS- DOSSIER |
-| cd | constant domein | GEWIJZIGD BINNEN JS- DOSSIER |
-| cu | constante buis | GEWIJZIGD BINNEN JS- DOSSIER |
-| luchten | constant eind | GEWIJZIGD BINNEN JS- DOSSIER |
+| ct | constante-tag | GEWIJZIGD BINNEN JS-BESTAND |
+| cd | constant domein | GEWIJZIGD BINNEN JS-BESTAND |
+| cu | constante uri | GEWIJZIGD BINNEN JS-BESTAND |
+| ce | constant einde | GEWIJZIGD BINNEN JS-BESTAND |
 | c | constante | NIET INSTELLEN |
-| zout | schermbreedte | NIET INSTELLEN |
-| onzin | schermhoogte | NIET INSTELLEN |
+| sw | schermbreedte | NIET INSTELLEN |
+| sh | schermhoogte | NIET INSTELLEN |
 | cd | kleurdiepte | NIET INSTELLEN |
-| d | dynamisch | NIET INSTELLEN |
+| d | dynamic | NIET INSTELLEN |
 | dt | documenttitel | NIET INSTELLEN |
 | dr | documentreferentie | NIET INSTELLEN |
-| cb | cachestopbuiging | NIET INSTELLEN |
+| cb | cache buigen | NIET INSTELLEN |
 | v | visueel aangepast | NIET INSTELLEN |
 | v_jd | visueel aangepast | NIET INSTELLEN |
 
@@ -38,17 +39,16 @@ Tabellen die lijst van constante en douanevariabelen bevatten.
 | Naam variabele | Variabele korte beschrijving | Aanvullende informatie |
 |---|---|---|
 | v_pn | Paginanaam | v_pn=&quot;Application_Form&quot; |
-| v_pc | Paginacategorie | v_pc=&quot;Application_Process&quot; |
+| v_pc | Pagina-categorie | v_pc=&quot;Application_Process&quot; |
 | v_pe | Paginafout | v_pe=&quot;Validation_Error&quot; |
-| v_c | Click-through Campaign | v_c=&quot;Campagne 1&quot; |
-| v_ca | Click-through de Activa van de Campagne | v_ca=&quot;72890ab&quot; |
-| v_cr | Klik-door de Verwijzing van de Campagne | v_cr=http://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
+| v_c | Klikdoorcampagne | v_c=&quot;Campagne 1&quot; |
+| v_ca | Campagne-element doorklikken | v_ca=&quot;72890ab&quot; |
+| v_cr | Doorklikken Campagnereferentie | v_cr=http://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
 | v_ic | Impressiecampagne | v_c=&quot;Campagne 1&quot; |
-| v_ica | Impressiecampagne | v_ca=&quot;72890ab&quot; |
-| v_icr | Verwijzer van de campagne van de onderdrukking | v_cr=http://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
-| v_ln | Naam link | v_ln=&quot;Ongeveer%20Us&quot; |
+| v_ica | Element voor campagne voor onderdrukking | v_ca=&quot;72890ab&quot; |
+| v_icr | Refersor voor campagne voor depressie | v_cr=http://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
+| v_ln | Koppelingsnaam | v_ln=&quot;About%20Us&quot; |
 | v_eurl | URL afsluiten | V_eurl=&quot;http://www.offsite.com/ |
 | v_1 | aangepaste variabele 1 |  |
 | v_2 | aangepaste variabele 2 |  |
 | v_3 | aangepaste variabele 3 |  |
-
