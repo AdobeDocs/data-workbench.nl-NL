@@ -1,17 +1,18 @@
 ---
-description: ongeldig
-solution: Analytics
+description: Profielverbindingen beheren
 title: Profielverbindingen beheren
-topic: Data workbench
 uuid: 244ced13-2185-4347-bd0a-d8471daafe7b
+exl-id: 94f302d5-ee40-41c8-9b94-811fea915ecb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '92'
+ht-degree: 0%
 
 ---
 
-
 # Profielverbindingen beheren{#managing-profile-connections}
 
-De verbindingen tussen de Server van het Dashboard van de gegevenswerkbank van de gegevenswerkbank en de gegevensprofielen van de gegevenswerkbank worden beheerd gebruikend de Manager van het Profiel binnen de Console van het Beleid. De werkbankprofielen die in het dashboard worden gebruikt, hoeven niet centraal te worden gelokaliseerd en kunnen overal worden gehost als er een geschikte verbinding is tussen de dashboardserver en de server(s) van de gegevenswerkbank waarop het profiel of de profielen zijn gehost.
+Verbindingen tussen de gegevenswerkbank Dashboard Server en gegevenswerkbench gegevensprofielen worden beheerd met behulp van Profielbeheer in de beheerconsole. De werkbankprofielen van gegevens die binnen het dashboard worden gebruikt hoeven niet centraal worden gevestigd, en kunnen overal worden ontvangen als er aangewezen connectiviteit tussen de dashboardserver en de server(s) van de gegevenswerkbank die het profiel of de profielen ontvangt (ontvangen) is.
 
-Slechts hebben de beheerders het voorrecht om profielverbindingen tot stand te brengen en te wijzigen. Om profielverbindingen te beheren, gebruik het lusje van Profielen in de Console van het Beleid.
+Alleen beheerders hebben het recht om profielverbindingen te maken en te wijzigen. Als u profielverbindingen wilt beheren, gebruikt u het tabblad Profielen in de beheerconsole.
