@@ -1,29 +1,29 @@
 ---
-description: Het dossier van het Logboek Processing.cfg controleert de fase van de logboekverwerking van datasetconstructie, waarin het ongeordende gegeven van de gegevensbronnen (die als logboekbronnen worden bedoeld) wordt gelezen, en de filters en de transformaties worden toegepast op de gegevens.
-solution: Analytics
-title: Ongeveer het Dossier van de Configuratie van de Verwerking van het Logboek
-topic: Data workbench
+description: Het dossier van Logboek Processing.cfg controleert de fase van de logboekverwerking van datasetconstructie, waarin de ongeordende gegevens van de gegevensbronnen (die als logboekbronnen worden bedoeld) worden gelezen, en de filters en de transformaties worden toegepast op de gegevens.
+title: Het configuratiebestand voor logbestanden verwerken
 uuid: 1f5f5d75-8a24-4122-adc8-8c8aef916631
+exl-id: 11ee3298-272d-46c8-bcfe-e485b01606b1
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
+# Info over het configuratiebestand {#about-the-log-processing-configuration-file} voor de logbestandverwerking
 
-# Ongeveer het Dossier van de Configuratie van de Verwerking van het Logboek{#about-the-log-processing-configuration-file}
-
-Het dossier van het Logboek Processing.cfg controleert de fase van de logboekverwerking van datasetconstructie, waarin het ongeordende gegeven van de gegevensbronnen (die als logboekbronnen worden bedoeld) wordt gelezen, en de filters en de transformaties worden toegepast op de gegevens.
+Het dossier van Logboek Processing.cfg controleert de fase van de logboekverwerking van datasetconstructie, waarin de ongeordende gegevens van de gegevensbronnen (die als logboekbronnen worden bedoeld) worden gelezen, en de filters en de transformaties worden toegepast op de gegevens.
 
 U moet het [!DNL Log Processing.cfg] dossier uitgeven om het even welke volgende taken van de datasetconfiguratie uit te voeren:
 
-* Het specificeren van logboekbronnen. Zie [Logbronnen](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md).
-* Het bepalen van welke logboekingangen de dataset tijdens logboekverwerking ingaan. Zie de Filters [van](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md) Gegevens en de Voorwaarde van de Ingang van het [Logboek](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md).
+* Logbronnen opgeven. Zie [Logbronnen](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md).
+* Bepalen welke logingangen de dataset tijdens logboekverwerking ingaan. Zie [Gegevensfilters](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md) en [Logboekinvoervoorwaarde](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md).
 
-* Toelatend de splitsing van het volgen IDs met grote hoeveelheden gebeurtenisgegevens. Zie [Belangrijkste splitsing](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md).
-* Het vormen van een server van de gegevenswerkbank om als eenheid van de dossierserver te lopen. Zie het [Vormen van een Eenheid](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md)van de Server van het Dossier van het Inzicht.
-* Het vormen van een server van de gegevenswerkbank om als gecentraliseerde normalisatieserver te lopen. Zie het [Vormen van een Eenheid](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md)van de Server van het Dossier van het Inzicht.
+* Het splitsen van tracking-id&#39;s met grote hoeveelheden gebeurtenisgegevens inschakelen. Zie [Key Splitting](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md).
+* Een gegevensworkbench-server configureren om als een bestandsservereenheid te worden uitgevoerd. Zie [Een Eenheid van de Server van het Dossier van de Server van het Inzicht vormen](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md).
+* Het vormen van een server van de gegevenswerkbank om als gecentraliseerde normalisatieserver te lopen. Zie [Een Eenheid van de Server van het Dossier van de Server van het Inzicht vormen](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md).
 
 >[!NOTE]
 >
->[!DNL Log Processing Dataset Include] de dossiers kunnen extra instructies voor de fase van de logboekverwerking van datasetconstructie bevatten. Deze dossiers bestaan binnen de folder van de Verwerking van het Logboek van de Dataset \ voor om het even welk geërft profiel. Zij bepalen typisch toepassing-specifieke parameters (zoals Web-specifieke configuratieparameters voor de toepassing van de Plaats). Voor informatie over [!DNL Log Processing Dataset Include] dossiers, zie [Dataset omvatten Dossiers](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md). Voor informatie over Web-specifieke configuratieparameters voor Plaats, zie de Montages van de [Configuratie voor de Gegevens](../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md)van het Web.
-
+>[!DNL Log Processing Dataset Include] de dossiers kunnen extra instructies voor de fase van de logboekverwerking van datasetbouw bevatten. Deze bestanden staan in de map Gegevensset\Log Processing voor een overgeërfd profiel. Zij bepalen typisch toepassing-specifieke parameters (zoals Web-specifieke configuratieparameters voor de toepassing van de Plaats). Voor informatie over [!DNL Log Processing Dataset Include] dossiers, zie [Dataset omvat Dossiers](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md). Voor informatie over web-specific configuratieparameters voor Plaats, zie [Montages van de Configuratie voor Gegevens van het Web](../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md).
