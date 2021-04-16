@@ -1,107 +1,107 @@
 ---
 description: Een filter is een uitdrukking die een ondergroep van de gegevens in een dataset bepaalt.
-solution: Analytics
 title: Syntaxis voor filterexpressies
-topic: Data workbench
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
+exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 0%
 
 ---
-
 
 # Syntaxis voor filterexpressies{#syntax-for-filter-expressions}
 
 Een filter is een uitdrukking die een ondergroep van de gegevens in een dataset bepaalt.
 
-Een filter geeft toe of verwerpt elk element van elke afmeting volgens het verband tussen afmetingen.
+Een filter geeft elk element van elke dimensie toe of wijst dit af op basis van de relaties tussen de dimensies.
 
-De filters kunnen worden uitgegeven gebruikend [!DNL Filter Editor]. Zie [Filtereditors](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
+Filters kunnen worden bewerkt met de [!DNL Filter Editor]. Zie [Editors filteren](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
 
-In de volgende lijst, omvat elke syntaxisbeschrijving een voorbeeld van een metrische uitdrukking gebruikend die filter. Bijvoorbeeld, is[SessionsTrue] metrisch bepaald gebruikend de &quot;Waar&quot;filter. Metrisch[SessionsTrue] is het zelfde als metrisch de Zittingen omdat de Waar filter elk element van de dimensie van de Zitting toelaat.
+In de volgende tabel bevat elke syntaxisbeschrijving een voorbeeld van een metrische expressie die dat filter gebruikt. Bijvoorbeeld, is Sessions[True] metrisch bepaald gebruikend de &quot;Waar&quot;filter. De metrische waarde van Sessies[True] is het zelfde als metrische Sessies omdat de True filter elk element van de dimensie van de Zitting toestaat.
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Waar </p> </td> 
-   <td colname="col2"> <p>Constante filter. Geeft elk element van elke dimensie toe </p> <p>Voorbeeld: Sessies[ True ] is hetzelfde als sessies. </p> </td> 
+   <td colname="col2"> <p>Constante filter. Hiermee wordt elk element van elke dimensie toegestaan </p> <p>Voorbeeld: Sessies[ True] is hetzelfde als sessies. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Vals </p> </td> 
-   <td colname="col2"> <p>Constante filter. Verwerpt elk element van elke dimensie. </p> <p>Voorbeeld: Zittingen[ Vals] is altijd nul. </p> </td> 
+   <td colname="col1"> <p>Onwaar </p> </td> 
+   <td colname="col2"> <p>Constante filter. Verwerpt elk element van elke dimensie. </p> <p>Voorbeeld: Sessies[ False ] is altijd nul. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>niet filteren </p> </td> 
-   <td colname="col2"> <p>Geeft elementen toe die Filter afwijst. </p> <p>Voorbeeld: Sessions[ not Page="A" ] is het aantal sessies dat pagina A niet bezocht. </p> </td> 
+   <td colname="col1"> <p>Niet filteren </p> </td> 
+   <td colname="col2"> <p>Hiermee geeft u elementen toe die door Filter worden afgewezen. </p> <p>Voorbeeld: Sessies[ not Page="A" ] is het aantal sessies dat pagina A niet heeft bezocht. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>FilterA en FilterB </p> </td> 
-   <td colname="col2"> <p>Geeft elementen toe die FilterA en FilterB toegeven. </p> <p>Voorbeeld: Sessies[ Page="A" en Page="B"] is het aantal sessies dat zowel pagina A als pagina B bezocht. </p> </td> 
+   <td colname="col2"> <p>Geeft elementen toe die door FilterA en FilterB worden geaccepteerd. </p> <p>Voorbeeld: Sessies[ Page="A" en Page="B" ] is het aantal sessies dat pagina A en pagina B heeft bezocht. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>FilterA of FilterB </p> </td> 
-   <td colname="col2"> <p>Geeft elementen toe die FilterA of FilterB toegeven. </p> <p>Voorbeeld: Sessies[ Page="A" of Page="B"] is het aantal sessies dat pagina A, pagina B of beide bezocht. </p> </td> 
+   <td colname="col2"> <p>Hiermee worden elementen toegestaan die door FilterA of FilterB worden geaccepteerd. </p> <p>Voorbeeld: Sessies[ Page="A" of Page="B" ] is het aantal sessies dat pagina A, pagina B of beide heeft bezocht. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Filteren op schijf </p> </td> 
-   <td colname="col2"> <p>Geeft de reeks elementen van de afmetingAfmeting toe die door Filter worden toegelaten. </p> <p>Voorbeeld: Zittingen[ Page="/home" door Bezoeker] is het aantal Zittingen die tot een Bezoeker behoren en de pagina "/home" zagen. </p> </td> 
+   <td colname="col1"> <p>Filteren op dimmen </p> </td> 
+   <td colname="col2"> <p>Hiermee geeft u de set elementen van de dimensie Dim toe die door Filter worden toegelaten. </p> <p>Voorbeeld: Sessies[ Page="/home" door bezoeker ] is het aantal sessies dat hoort bij een bezoeker die de pagina "/home" heeft gezien. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Identificator </p> </td> 
-   <td colname="col2"> <p>De filters van de verwijzing die anders in het profiel worden bepaald. </p> <p>Voorbeeld: Sessions[ Broken_Session_Filter] is het aantal sessies dat wordt toegelaten door de Broken Session Filter. </p> </td> 
+   <td colname="col1"> <p>Id </p> </td> 
+   <td colname="col2"> <p>Referentiefilters die anders in het profiel zijn gedefinieerd. </p> <p>Voorbeeld: Sessies[ Broken_Session_Filter ] is het aantal sessies dat door het filter Verbroken sessie wordt toegelaten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Dim = "Waarde" </p> </td> 
-   <td colname="col2"> <p>Geeft het gegeven element van de afmeting toe - afd. </p> <p>Voorbeeld: Sessies[ Page="A"] is het aantal sessies dat pagina A bezocht. </p> </td> 
+   <td colname="col2"> <p>Geeft het opgegeven element van de dimensie Dim toe. </p> <p>Voorbeeld: Sessies[ Page="A" ] is het aantal sessies dat pagina A heeft bezocht. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dim &lt;&gt; "Waarde" </p> <p>Dom!= "Waarde" </p> </td> 
-   <td colname="col2"> <p>Geeft elk ander element van de afmeting toe - Duim. </p> <p>Voorbeeld: Zittingen[ Pagina&lt;&gt;"A"] is het aantal Zittingen die om het even welke pagina buiten A bezochten. </p> </td> 
+   <td colname="col1"> <p>Dim &lt;&gt; "Value" </p> <p>Vergroten!= "Waarde" </p> </td> 
+   <td colname="col2"> <p>Hiermee geeft u elk ander element van de dimensie Dim toe. </p> <p>Voorbeeld: Sessies[ Pagina&lt;&gt;"A" ] is het aantal sessies dat een andere pagina dan A heeft bezocht. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dim = #Ordinal </td> 
-   <td colname="col2"> <p>Geeft het element van de afmetingAfmeting toe met de bepaalde normale waarde. </p> <p>Voorbeeld: De zittingen [ Month=#0] is het aantal Zittingen in de eerste maand van de dataset. </p> </td> 
+   <td colname="col2"> <p>Hiermee geeft u het element van de afmeting Afmeting Afkappen toe met de opgegeven rangtelwaarde. </p> <p>Voorbeeld: Sessies[ Month=#0] is het aantal sessies in de eerste maand van de dataset. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dim &lt;&gt; #Ordinal </p> <p>Dom!= #Ordinal </p> </td> 
-   <td colname="col2"> <p>Geeft elk ander element van de afmeting toe - Duim. </p> <p>Voorbeeld: Sessies[ Session_Value &lt;&gt; #0] is het aantal sessies met een waarde voor niet-nul sessies. </p> </td> 
+   <td colname="col1"> <p>Afm &lt;&gt; #rangtelwoord </p> <p>Vergroten!= #Ordinal </p> </td> 
+   <td colname="col2"> <p>Hiermee geeft u elk ander element van de dimensie Dim toe. </p> <p>Voorbeeld: Sessies[ Session_Value &lt;&gt; #0] is het aantal sessies met een sessiewaarde die niet gelijk is aan nul. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>De gelijken van de wijzerplaat "Expr" </p> </td> 
-   <td colname="col2"> <p>Geeft de elementen van de afmeting toe die de bepaalde regelmatige uitdrukking aanpassen. De rand mag geen denormale of aftelbare dimensie zijn. </p> <p>Voorbeeld: Sessies[ URI komt overeen met ".*/product/.*"] is het aantal Zittingen die om het even welke pagina in een productfolder bezochten. </p> </td> 
+   <td colname="col1"> <p>DIM komt overeen met "Expr" </p> </td> 
+   <td colname="col2"> <p>Geeft de elementen van de dimensie Dim toe die overeenkomen met de opgegeven reguliere expressie. Dim mag geen denormale of telbare dimensie hebben. </p> <p>Voorbeeld: Sessies[ URI komt overeen met ".*/product/.*" ] is het aantal sessies dat een pagina in een productmap heeft bezocht. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>De notaties van de rand "uitbreiden" </p> </td> 
-   <td colname="col2"> <p>Geeft de elementen van de afmeting toe die niet de bepaalde regelmatige uitdrukking aanpassen. De rand mag geen denormale of aftelbare dimensie zijn. </p> <p>Voorbeeld: Sessions[ URI-notaties ".*\.jsp"] is het aantal Zittingen die om het even welke pagina bezochten die geen JSP pagina was. </p> </td> 
+   <td colname="col1"> <p>Dim komt niet overeen met "Expr" </p> </td> 
+   <td colname="col2"> <p>Hiermee geeft u toe dat de elementen van de dimensie Dim niet overeenkomen met de opgegeven reguliere expressie. Dim mag geen denormale of telbare dimensie hebben. </p> <p>Voorbeeld: Sessies[ URI komt niet overeen met ".*\.jsp" ] is het aantal sessies dat een pagina heeft bezocht die geen JSP-pagina was. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dim &lt; "Waarde" </p> </td> 
-   <td colname="col2"> <p>Geeft de elementen van de afmetingAfmeting toe met normale waarden minder dan de normale waarde van het element "Waarde." Als "Waarde"geen element van afmeting is, dan wordt het verondersteld om groter te zijn dan om het even welk huidig element van de afmeting. </p> <p>Voorbeeld: Zittingen[ Maand &lt; "jul. 04" ] is het aantal sessies dat vóór juli 2004 heeft plaatsgevonden. </p> </td> 
+   <td colname="col1"> <p>Afm &lt; "Waarde" </p> </td> 
+   <td colname="col2"> <p>Geeft de elementen van de dimensie Dim met rangtelwoorden weer die lager zijn dan de normale waarde van het element "Waarde". Als "Waarde" geen element van afmeting is, wordt aangenomen dat het groter is dan elk huidig element van de dimensie. </p> <p>Voorbeeld: Sessies[ Maand &lt; "Juli "04" ] is het aantal sessies dat heeft plaatsgevonden vóór juli 2004. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Dim &gt; "Waarde" </p> </td> 
-   <td colname="col2"> <p>Hiermee geeft u de elementen van de afmeting Afdim toe met normale waarden die groter zijn dan de normale waarde van het element "Waarde". Als "Waarde"geen element van afmeting is, dan wordt het verondersteld om groter te zijn dan om het even welk huidig element van de afmeting. </p> <p>Voorbeeld: Zittingen[ Maand &gt; "jul "04" ] is het aantal zittingen dat na juli 2004 heeft plaatsgevonden. </p> </td> 
+   <td colname="col2"> <p>Geeft de elementen van de dimensie Dim met rangtelwoorden die groter zijn dan de normale waarde van het element "Waarde" toe. Als "Waarde" geen element van afmeting is, wordt aangenomen dat het groter is dan elk huidig element van de dimensie. </p> <p>Voorbeeld: Sessies[ Maand &gt; "Juli "04" ] is het aantal sessies dat heeft plaatsgevonden na juli 2004. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dim &lt;= "Waarde" </p> </td> 
-   <td colname="col2"> <p>Geeft de elementen van de afmetingMom met normale waarden toe minder dan of gelijk aan de normale waarde van het element "Waarde." Als "Waarde"geen element van afmeting is, dan wordt het verondersteld om groter te zijn dan om het even welk huidig element van de afmeting. </p> <p>Voorbeeld: Sessions[ Session_Number &lt;= "2" ] is het aantal sessies dat de eerste of tweede sessie voor een bezoeker was. </p> </td> 
+   <td colname="col1"> <p>Dim &lt;= "Value" </p> </td> 
+   <td colname="col2"> <p>Geeft de elementen van de dimensie Dim met rangtelwoorden aan die kleiner zijn dan of gelijk zijn aan de rangtelwoorden van de waarde van het element "Waarde". Als "Waarde" geen element van afmeting is, wordt aangenomen dat het groter is dan elk huidig element van de dimensie. </p> <p>Voorbeeld: Sessies[ Session_Number &lt;= "2" ] is het aantal sessies dat de eerste of tweede sessie voor een bezoeker was. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dim &gt;= "Waarde" </td> 
-   <td colname="col2"> <p>Geeft de elementen van de afmetingAfmeting toe met normale waarden groter dan of gelijk aan de normale waarde van het element "Waarde." Als "Waarde"geen element van afmeting is, dan wordt het verondersteld om groter te zijn dan om het even welk huidig element van de afmeting. </p> <p>Voorbeeld: Sessies[ Session_Number &gt;= "5" ] is het aantal sessies dat de vijfde of grotere sessie was voor een bezoeker. </p> </td> 
+   <td colname="col2"> <p>Geeft de elementen van de dimensie Dim met rangtelwoorden groter dan of gelijk aan de ordinale waarde van het element "Waarde" toe. Als "Waarde" geen element van afmeting is, wordt aangenomen dat het groter is dan elk huidig element van de dimensie. </p> <p>Voorbeeld: Sessies[ Session_Number &gt;= "5" ] is het aantal sessies dat de vijfde of hogere sessie voor een bezoeker was. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>om het even welke Duik </p> </td> 
-   <td colname="col2"> <p>Geeft alle elementen van de afmeting toe Afwijken. </p> <p>Voorbeeld: Zittingen[ om het even welke Page_View] is het aantal zittingen met minstens één paginamening. </p> </td> 
+   <td colname="col1"> <p>om het even welke Duim </p> </td> 
+   <td colname="col2"> <p>Hiermee geeft u alle elementen van de dimensie Dim toe. </p> <p>Voorbeeld: Sessies[ elke Page_View ] is het aantal sessies met ten minste één paginaweergave. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>geen dim </p> </td> 
-   <td colname="col2"> <p>Geeft elementen toe die elke Dim afwijst. </p> <p>Voorbeeld: Sessies[ geen Page_View] is het aantal sessies zonder paginaweergave. </p> </td> 
+   <td colname="col1"> <p>Geen grijs </p> </td> 
+   <td colname="col2"> <p>Geeft elementen toe die door een willekeurige grijstint worden afgewezen. </p> <p>Voorbeeld: Sessies[ no Page_View ] is het aantal sessies zonder paginaweergave. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(FILTER) </p> </td> 
-   <td colname="col2"> <p>Hetzelfde als FILTER; gebruikt om een deel van een filteruitdrukking te groeperen. </p> </td> 
+   <td colname="col2"> <p>Hetzelfde als FILTER; gebruikt om een deel van een filterexpressie te groeperen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
