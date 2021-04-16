@@ -1,24 +1,24 @@
 ---
-description: Informatie over het bewegen van een proceskaart binnen een venster en hoe te om een 3D proceskaart te roteren.
-solution: Analytics
-title: Een procesmap verplaatsen en roteren
-topic: Data workbench
+description: Informatie over het verplaatsen van een proceskaart binnen een venster en hoe te om een 3D proceskaart te roteren.
+title: Een procesafbeelding verplaatsen en roteren
 uuid: c9d42955-a3c6-4d35-9d4a-83fd3b5332b8
+exl-id: f8a0902f-b0f9-494f-aeb5-51b627651c95
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '83'
+ht-degree: 0%
 
 ---
 
+# Een procesafbeelding{#move-and-rotate-a-process-map} verplaatsen en roteren
 
-# Een procesmap verplaatsen en roteren{#move-and-rotate-a-process-map}
+Informatie over het verplaatsen van een proceskaart binnen een venster en hoe te om een 3D proceskaart te roteren.
 
-Informatie over het bewegen van een proceskaart binnen een venster en hoe te om een 3D proceskaart te roteren.
+**Een proceskaart verplaatsen binnen een venster**
 
-**Om een proceskaart binnen een venster te bewegen**
+* Klik en sleep de kaart naar de gewenste locatie.
 
-* Klik en sleep de kaart aan de gewenste plaats.
+**Een 3D-proceskaart roteren**
 
-**Om een 3D proceskaart te roteren**
-
-* Klik en sleep de kaart met de rechtermuisknop aan terwijl het bewegen van de muis in de gewenste rotatierichting.
-
+* Klik met de rechtermuisknop en sleep de kaart terwijl u de muis in de gewenste draairichting verplaatst.
