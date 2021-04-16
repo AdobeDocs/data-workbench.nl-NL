@@ -1,44 +1,45 @@
 ---
-description: Wanneer het creëren van een vectorlaag die verwijzingen een lusje gescheiden waarden (.tsv) dossier, wordt het vectorgegeven verkregen door tekeningsinstructies evenals lengtegraad en breedtecijfers van het .tsv dossier terug te winnen.
-solution: Analytics
-title: Vectorlagen die van labels voorzien scheiden waardendossiers
-topic: Data workbench
+description: Wanneer u een vectorlaag maakt die verwijst naar een bestand met door tabs gescheiden waarden (.tsv), worden de vectorgegevens verkregen door tekeninstructies en lengte- en breedtegegevens uit het .tsv-bestand op te halen.
+title: Vectorlagen die verwijzen naar via tabs gescheiden waardebestanden
 uuid: 42607b34-e9f2-420a-ba5a-05562598b480
+exl-id: be16ba73-4a98-472b-98f1-1b32e671b763,7b0b0286-072b-4b31-b6ec-ced322da5236
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
+# Vectorlagen die verwijzen naar via tabs gescheiden waardebestanden{#vector-layers-referencing-tab-separated-values-files}
 
-# Vectorlagen die van labels voorzien scheiden waardendossiers{#vector-layers-referencing-tab-separated-values-files}
+Wanneer u een vectorlaag maakt die verwijst naar een bestand met door tabs gescheiden waarden (.tsv), worden de vectorgegevens verkregen door tekeninstructies en lengte- en breedtegegevens uit het .tsv-bestand op te halen.
 
-Wanneer het creëren van een vectorlaag die verwijzingen een lusje gescheiden waarden (.tsv) dossier, wordt het vectorgegeven verkregen door tekeningsinstructies evenals lengtegraad en breedtecijfers van het .tsv dossier terug te winnen.
+Als u een vectorlaag wilt definiëren die verwijst naar een [!DNL .tsv]-bestand, moet u het volgende hebben:
 
-Om een vectorlaag te bepalen die verwijzingen een [!DNL .tsv] dossiers, moet u het volgende hebben:
+* **Een bestand  [!DNL .tsv]** dat de gegevens bevat die worden gebruikt om de vectoren op de wereld te tekenen, inclusief lengte- en breedtegegevens. Zie [Vector TSV-bestandsindeling](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e) voor meer informatie over de vereiste indeling van het [!DNL .tsv]-bestand.
 
-* **Een[!DNL .tsv]dossier** dat de gegevens bevat die worden gebruikt om de vectoren op de aardbol, met inbegrip van lengte en breedtecijfers te trekken. Voor meer informatie over het vereiste formaat van het [!DNL .tsv] dossier, zie het [VectorFormaat](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e)van het Dossier TSV.
-
-* **Een laagdossier** dat de plaats van het [!DNL .tsv] dossier specificeert. Voor meer informatie over het vereiste formaat van het laagdossier, zie het Formaat [van het Dossier van de](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf)VectorLaag.
+* **Een laagbestand** dat de locatie van het  [!DNL .tsv] bestand aangeeft. Zie [Vectorlaagbestandsindeling](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf) voor meer informatie over de vereiste indeling van het laagbestand.
 
 ## Vector TSV-bestandsindeling {#section-a29012c9ff4444ac8a6d41c68482828e}
 
 Het [!DNL .tsv] dossier moet de volgende drie lusje gescheiden kolommen bevatten:
 
-* **[!DNL Begin]:**Deze kolom zou moeten erop wijzen of om met een nieuwe lijn te beginnen. De waarden in deze kolom kunnen of 0 zijn (begin geen nieuwe lijn) of 1 (begin een nieuwe lijn).
-* **[!DNL Longitude]:**Deze kolom zou lengtewaarden moeten bevatten.
-* **[!DNL Latitude]:**Deze kolom zou breedtegraden waarden moeten bevatten.
+* **[!DNL Begin]:** Deze kolom zou moeten erop wijzen of met een nieuwe lijn te beginnen. De waarden in deze kolom kunnen 0 (begin geen nieuwe lijn) of 1 (begin een nieuwe lijn) zijn.
+* **[!DNL Longitude]:** Deze kolom moet lengtewaarden bevatten.
+* **[!DNL Latitude]:** Deze kolom moet breedtewaarden bevatten.
 
 >[!NOTE]
 >
->Om het even welke extra kolommen worden genegeerd.
+>Eventuele extra kolommen worden genegeerd.
 
-Na is een steekproefdossier [!DNL .tsv] dat gegevens voor een vectorlaag bevat:
+Hier volgt een voorbeeld van een [!DNL .tsv]-bestand dat gegevens voor een vectorlaag bevat:
 
 ![](assets/tsv_vectorlayer.png)
 
-## Vector-laagbestandsindeling {#section-c430923f341f4c93852e9f24b61e82bf}
+## Bestandsindeling voor vectorlagen {#section-c430923f341f4c93852e9f24b61e82bf}
 
-Elk vectorlaagdossier van verwijzingen voorzien van dossiers [!DNL .tsv] moet worden geformatteerd gebruikend het volgende malplaatje:
+Elk vectorlaagbestand dat verwijst naar [!DNL .tsv]-bestanden, moet worden opgemaakt met de volgende sjabloon:
 
 ```
 Layer = VectorLayer:
@@ -63,24 +64,23 @@ Layer = VectorLayer:
  <tbody> 
   <tr> 
    <td colname="col1"> TSV-bestanden </td> 
-   <td colname="col2"> <p>Pad(en) naar het (de) <span class="filepath"> .tsv</span> -bestand(en) met de vectorgegevens. </p> <p>Voorbeeld: <span class="filepath"> Kaarten\\USVectorData.tsv</span> </p> </td> 
+   <td colname="col2"> <p>Pad(en) naar het <span class="filepath"> .tsv</span>-bestand(en) met de vectorgegevens. </p> <p>Voorbeeld: <span class="filepath"> Kaarten\\USVectorData.tsv</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Kleur </td> 
-   <td colname="col2"> De RGB kleurenvector, die als (rood, groen, blauw) wordt uitgedrukt. Voor elke kleur in de vector, kunt u een waarde van 0.0 tot 1.0 ingaan. Bijvoorbeeld, (1.0, 0.0, 0.0) is fel rood, en (0.5, 0.5, 0.5, 0.5) is grijs. </td> 
+   <td colname="col2"> De RGB-kleurvector, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Alpha </td> 
-   <td colname="col2"> Controleert de transparantie van de vectoren die op de wereld worden getoond. De waaier is 0 tot 1, met 0 die het meest transparant zijn. </td> 
+   <td colname="col1"> Alfa </td> 
+   <td colname="col2"> Hiermee regelt u de transparantie van de vectoren die op de wereldbol worden weergegeven. Het bereik loopt van 0 tot en met 1, waarbij 0 het meest transparant is. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Breedte </td> 
-   <td colname="col2"> Optioneel. Plaatst de breedte van de gegevens in pixel. Het aanbevolen bereik is 1 tot 4. </td> 
+   <td colname="col2"> Optioneel. Hiermee stelt u de breedte van de gegevens in pixels in. Het aanbevolen bereik is 1 tot 4. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Foutfactor </td> 
-   <td colname="col2"> Controleert hoe nauwkeurig de vectoren worden getrokken. Voor grotere waarden, worden de vectoren minder nauwkeurig maar sneller getrokken. De standaardwaarde is 5. </td> 
+   <td colname="col2"> Bepaalt hoe nauwkeurig de vectoren worden getekend. Voor grotere waarden worden de vectoren minder nauwkeurig maar sneller getekend. De standaardwaarde is 5. </td> 
   </tr> 
  </tbody> 
 </table>
-
