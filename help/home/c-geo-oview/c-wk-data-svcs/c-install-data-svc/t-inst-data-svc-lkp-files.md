@@ -1,33 +1,33 @@
 ---
-description: Stappen om de IP Geo-intelligentie of IP Geo-Plaats raadplegingsdossiers te installeren.
-solution: Analytics
-title: Het installeren van de Dossiers van de Raadpleging van de Dienst van Gegevens
-topic: Data workbench
+description: De stappen om IP Geo-intelligentie of IP geo-location raadplegingsdossiers te installeren.
+title: Opzoekbestanden voor de gegevensservice installeren
 uuid: a3fe8a14-2c74-4105-bc5b-2298f0f4b61e
+exl-id: b19904f4-ead0-4bed-a79f-864c78bc0e1d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 0%
 
 ---
 
+# De opzoekbestanden voor de gegevensservice installeren{#installing-the-data-service-lookup-files}
 
-# Het installeren van de Dossiers van de Raadpleging van de Dienst van Gegevens{#installing-the-data-service-lookup-files}
+De stappen om IP Geo-intelligentie of IP geo-location raadplegingsdossiers te installeren.
 
-Stappen om de IP Geo-intelligentie of IP Geo-Plaats raadplegingsdossiers te installeren.
+Het opzoekbestand (Lookups\*profile name*\*data file name*) dat wordt geleverd met het gegevensserviceprofiel is een binair bestand ( [!DNL .bin]) dat geografisch verwante gegevens bevat op basis van IP-adres. U moet dit bestand regelmatig vervangen om ervoor te zorgen dat u over de meest recente geografische gegevens beschikt. Zie [Gegevensservicebestanden bijwerken](../../../../home/c-geo-oview/c-wk-data-svcs/c-updt-data-svc-files.md#concept-2b3d11e4cb814fc09add5de58a87045c).
 
-Het raadplegingsdossier (Lookups \*profiel naam* \*gegevens dossier - naam*) dat van het profiel van de datadienst wordt voorzien is een binair dossier ( [!DNL .bin]) dat geografisch verwante gegevens bevat die op IP adres worden gebaseerd. U moet dit dossier periodiek vervangen om ervoor te zorgen dat u de meest recente geografische gegevens hebt. Zie de [Bijwerkende Dossiers](../../../../home/c-geo-oview/c-wk-data-svcs/c-updt-data-svc-files.md#concept-2b3d11e4cb814fc09add5de58a87045c)van de Dienst van Gegevens.
-
-**Om IP te installeren geo-intelligentie of IP de dossiers van de geopo-plaatsraadpleging**
+**IP Geo-intelligentie of IP Geo-location raadplegingsdossiers installeren**
 
 >[!NOTE]
 >
->Elk van uw [!DNL IP Geo-location] of [!DNL IP Geo-intelligence] gegevensdossiers moet in het beschikbare fysieke geheugen van uw server van de gegevenswerkbank passen.
+>Al uw [!DNL IP Geo-location] of [!DNL IP Geo-intelligence] gegevensbestanden moeten in het beschikbare fysieke geheugen van uw gegevenswerkbankserver passen.
 
-1. Open de omslag van Raadplegingen van het [!DNL .zip] dossier dat u van Adobe ontving.
-1. Kopieer de IP Geo-intelligentie of IP Geo-locatieomslag aan de omslag van Raadplegingen in uw de installatiefolder van de gegevenswerkbank (u wilt omhoog met een... beëindigen\Lookups\IP Geo-intelligence or a ...\Lookups\IP Geo-location folder on your data workbench server as shown in the following example. De namen van de andere omslagen binnen de omslag van Raadplegingen kunnen van getoond verschillen.
+1. Open de map Lookups vanuit het bestand [!DNL .zip] dat u van Adobe hebt ontvangen.
+1. Kopieer de IP Geo-intelligentie of IP Geo-location omslag naar de omslag van Lookups in uw folder van de de serverinstallatie van de gegevenswerkbank (u wilt omhoog met...\Lookups\IP Geo-intelligence or a ...\Lookups\IP Geo-location folder on your data workbench server as shown in the following example. De namen van de andere mappen in de map Lookups kunnen afwijken van de mappen die worden weergegeven.
 
-   ![Stapgegevens](assets/Geo_installLookups_dirIP.png)
+   ![Stapinfo](assets/Geo_installLookups_dirIP.png)
 
    >[!NOTE]
    >
-   >Periodiek, verzendt Adobe u dossiers die bijgewerkte [!DNL IP Geo-intelligence] of [!DNL IP Geo-location] raadplegingsdossiers bevatten. Wanneer u deze dossiers ontvangt, moet u hen op uw server van de gegevenswerkbank laden zoals die door Adobe wordt geleid. Voor instructies, zie de volgende sectie.
-
+   >Periodiek, verzendt Adobe u dossiers die bijgewerkte [!DNL IP Geo-intelligence] of [!DNL IP Geo-location] raadplegingsdossiers bevatten. Wanneer u deze bestanden ontvangt, moet u deze op de gegevenswerkbankserver laden volgens de instructies van Adobe. Zie de volgende sectie voor instructies.
