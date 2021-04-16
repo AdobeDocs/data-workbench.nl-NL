@@ -1,16 +1,17 @@
 ---
 description: Aangezien u uw dataset vormt, zou u bepaalde uitgebreide afmetingen kunnen willen verbergen zodat tonen zij niet op het afmetingsmenu in gegevenswerkbank.
-solution: Analytics
-title: Gegevensverzameling-onderdelen verbergen
-topic: Data workbench
+title: Dataset-componenten verbergen
 uuid: 011e762b-547c-4a41-9473-d6d617177c86
+exl-id: be8fd482-6084-41bd-bfbf-302bacbbc587
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
 
-
-# Gegevensverzameling-onderdelen verbergen{#hiding-dataset-components}
+# Dataset-componenten verbergen{#hiding-dataset-components}
 
 Aangezien u uw dataset vormt, zou u bepaalde uitgebreide afmetingen kunnen willen verbergen zodat tonen zij niet op het afmetingsmenu in gegevenswerkbank.
 
