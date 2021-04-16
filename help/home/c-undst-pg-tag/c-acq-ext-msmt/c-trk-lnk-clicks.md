@@ -1,24 +1,25 @@
 ---
-description: De stappen die worden gebruikt om de inzameling van de klikken van de Verbinding door het gebruik van de Markering van de Pagina van de Verwijzing te vergemakkelijken.
-solution: Analytics
-title: Het volgen van de klikken van de Verbinding
-topic: Data workbench
+description: Stappen die worden gebruikt om het verzamelen van Klik van de Verbinding door het gebruik van de Markering van de Pagina van de Verwijzing te vergemakkelijken.
+title: Koppelingsklikken bijhouden
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
+exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
+# Koppelingsklikken bijhouden{#tracking-link-clicks}
 
-# Het volgen van de klikken van de Verbinding{#tracking-link-clicks}
+Stappen die worden gebruikt om het verzamelen van Klik van de Verbinding door het gebruik van de Markering van de Pagina van de Verwijzing te vergemakkelijken.
 
-De stappen die worden gebruikt om de inzameling van de klikken van de Verbinding door het gebruik van de Markering van de Pagina van de Verwijzing te vergemakkelijken.
+Door de implementatie van de [!DNL Reference Page Tag] is het mogelijk om meetgegevens te verzamelen die de koppelingen (of href-waarden) aangeven waarop bezoekers tijdens hun bezoek aan bepaalde pagina&#39;s klikken. Doorgaans vereist deze verzameling niet de implementatie van aanvullende koppelings-id&#39;s in uw HTML-pagina&#39;s.
 
-Door de plaatsing van [!DNL Reference Page Tag], is het mogelijk om meetgegevens te verzamelen die de verbindingen (of href waarden) aanduiden die de bezoekers terwijl het bezoeken van bepaalde pagina&#39;s klikken. Typisch, impliceert deze inzameling niet de implementatie van extra verbindingsherkenningstekens in uw HTML- pagina&#39;s.
+Om inzameling van de klik van de Verbinding door het gebruik van [!DNL Reference Page Tag] te vergemakkelijken, voltooi de volgende stappen:
 
-Om inzameling van de Klikken van de Verbinding door het gebruik van te vergemakkelijken, voltooi de volgende stappen: [!DNL Reference Page Tag]
-
-1. Kopieer de volgende code in het bestaande dossier genoemd [!DNL zig.js]:
+1. Kopieer de volgende code naar het bestaande bestand met de naam [!DNL zig.js]:
 
    ```
    //REFERENCE LINK AND FORM CLICK PAGE TAG 
@@ -77,12 +78,12 @@ Om inzameling van de Klikken van de Verbinding door het gebruik van te vergemakk
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. Creeer of plaats 1 pixel door 1 pixelbeelddossier genoemd in een folder huidig op uw Webserver. [!DNL zag2.gif]
-1. Wijzig de [!DNL lc.src] variabele om het aangewezen domein van uw website van verwijzingen te voorzien waarvan het [!DNL zag2.gif]dossier van verwijzingen wordt voorzien.
+1. Maak of plaats het afbeeldingsbestand van 1 pixel bij 1 pixel met de naam [!DNL zag2.gif] in een map op uw webserver.
+1. Wijzig de [!DNL lc.src] variabele om naar het aangewezen domein van uw website te verwijzen waarvan het [!DNL zag2.gif]bestand wordt verwezen.
 
-1. Verzeker aangewezen geheim voorgeheugen-controle de kopballen voor de [!DNL zag.gif] en [!DNL zig.js] dossiers worden gevestigd.
+1. Zorg ervoor dat de juiste cachebeheerkoppen zijn ingesteld voor de [!DNL zag.gif]- en [!DNL zig.js]-bestanden.
 
-1. Binnen de HTML- dossiers u de waarden van de verbindingsklik van wilt verzamelen, [!DNL Reference Page Tag Execution Call] moet worden gewijzigd om de [!DNL Page Tag Execution Script] te informeren verbinding klikt voor die pagina te vangen. Om dit te doen, verander de vlc veranderlijke waarde in &quot;1&quot;zoals benadrukt in het volgende codevoorbeeld:
+1. In de HTML-bestanden waarvan u koppelingsklikwaarden wilt verzamelen, moet [!DNL Reference Page Tag Execution Call] worden gewijzigd om de [!DNL Page Tag Execution Script] te informeren om koppelingsklikken voor die pagina vast te leggen. Hiervoor wijzigt u de waarde van de variabele vlc in &quot;1&quot;, zoals in het volgende codevoorbeeld wordt gemarkeerd:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -101,7 +102,6 @@ var v = {};
 <!-- END REFERENCE PAGE TAG-->
 ```
 
-| Verzamelde gegevens | Toelichting | Voorbeeld |
+| Gegevens verzameld | Toelichting | Voorbeeld |
 |---|---|---|
-| v_ln= | Waarde die de Campagne van de Impressie aanduidt | v_ln=&quot;Ongeveer%20Us&quot; |
-
+| v_ln= | Waarde die de campagne voor onderdrukking aanduidt | v_ln=&quot;About%20Us&quot; |
