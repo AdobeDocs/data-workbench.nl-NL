@@ -1,41 +1,42 @@
 ---
-description: U kunt een segment van de elementen van om het even welke telbare afmeting, dan outputgegevens voor dat segment op een partij of aan de gang zijnde basis in real time in een lusje-afgebakend dossier tot stand brengen.
-solution: Analytics
-title: Vorm segmenten voor de uitvoer
-topic: Data workbench
+description: U kunt een segment van de elementen van om het even welke telbare dimensie tot stand brengen, dan outputgegevens voor dat segment op een partij of aan de gang zijnde basis in real time in een lusje-afgebakend dossier.
+title: Segmenten voor exporteren configureren
 uuid: 651be834-ee41-4487-8c5a-30d94580f6a0
+exl-id: 4f53e02c-3f00-44b3-9f6d-a2f23903b3fa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '865'
+ht-degree: 0%
 
 ---
 
+# Segmenten voor exporteren configureren{#configure-segments-for-export}
 
-# Vorm segmenten voor de uitvoer{#configure-segments-for-export}
+U kunt een segment van de elementen van om het even welke telbare dimensie tot stand brengen, dan outputgegevens voor dat segment op een partij of aan de gang zijnde basis in real time in een lusje-afgebakend dossier.
 
-U kunt een segment van de elementen van om het even welke telbare afmeting, dan outputgegevens voor dat segment op een partij of aan de gang zijnde basis in real time in een lusje-afgebakend dossier tot stand brengen.
-
-Telkens als u een segment uitvoert, output metrische of afmetingsgegevens voor alle afmetingselementen inbegrepen in dat segment. U kunt controleren hoe de outputgegevens geformatteerd zijn zodat andere systemen de gegevens kunnen gemakkelijk laden.
+Telkens wanneer u een segment exporteert, voert u metrische of dimensiegegevens uit voor alle afmetingselementen die in dat segment zijn opgenomen. U kunt bepalen hoe de uitvoergegevens worden opgemaakt, zodat andere systemen de gegevens gemakkelijk kunnen laden.
 
 >[!NOTE]
 >
->U kunt rapporteringsafmetingen niet uitvoeren, omdat zij een [!DNL report time.metric] dossier voor verwijzing gebruiken. Als alternerende actie, als u hard-gecodeerd [!DNL report time.metric] in het profiel plaatst, kan de segmentuitvoer het als verwijzingspunt gebruiken voor het melden van afmetingen. Nochtans, werkt [!DNL report time.metric] niet automatisch bij gebaseerd op het profiel van Tijd, zodat wanneer u de rapporteringsafmetingsverwijzing wilt veranderen, moet u het hard-gecodeerde [!DNL report time.metric] dossier veranderen.
+>U kunt rapportafmetingen niet exporteren, omdat deze een [!DNL report time.metric]-bestand ter referentie gebruiken. Als tussenoplossing kunt u een hard-gecodeerde [!DNL report time.metric] in het profiel plaatsen, de segmentuitvoer het als referentiepunt voor het melden van dimensies gebruiken. De [!DNL report time.metric] wordt echter niet automatisch bijgewerkt op basis van het profiel &#39;s vanaf tijd. Als u de verwijzing naar de rapportdimensie wilt wijzigen, moet u het bestand met de harde code [!DNL report time.metric] wijzigen.
 
-Om een segment voor de uitvoer te vormen, moet u een [!DNL .export] dossier openen en uitgeven.
+Als u een segment wilt configureren voor export, moet u een [!DNL .export]-bestand openen en bewerken.
 
-1. In [!DNL Profile Manager], klik de **[!UICONTROL Export]** folder in de [!DNL File] kolom om zijn inhoud te tonen.
+1. Klik in [!DNL Profile Manager] op de map **[!UICONTROL Export]** in de kolom [!DNL File] om de inhoud ervan weer te geven.
 
-       Als de folder van de Uitvoer niet bestaat, creeer het als volgt:
+       Als de map Export niet bestaat, maakt u deze als volgt:
    
-   1. Navigeer aan uw de installatiefolder van de Werkbank van Gegevens.
-   1. Open de folder voor het profiel waarmee u werkt.
-   1. Binnen de folder van het Profiel, creeer een nieuwe folder genoemd &quot;de Uitvoer.&quot;
+   1. Navigeer naar de installatiemap van uw Data Workbench.
+   1. Open de map voor het profiel waarmee u werkt.
+   1. Maak in de map Profiel een nieuwe map met de naam &quot;Exporteren&quot;.
 
-1. In [!DNL Profile Manager], klik de lege cel in de [!DNL User] kolom voor de folder van de Uitvoer met de rechtermuisknop aan, dan klik **[!UICONTROL Create]** > **[!UICONTROL New Segment Export]**.
+1. Klik in [!DNL Profile Manager] met de rechtermuisknop op de lege cel in de kolom [!DNL User] voor de map Export en klik vervolgens op **[!UICONTROL Create]** > **[!UICONTROL New Segment Export]**.
 
-   Een dossier genoemd [!DNL New Segment Export.export] verschijnt in de [!DNL File] kolom voor de Uitvoer.
+   Een dossier genoemd [!DNL New Segment Export.export] verschijnt in [!DNL File] kolom voor de Uitvoer.
 
-1. Noem het nieuwe dossier anders door in de kolom voor het dossier met de rechtermuisknop aan te klikken en de nieuwe naam in de parameter van het Dossier te typen. [!DNL User]
-1. Open het nieuwe dossier door in de [!DNL User] kolom voor het dossier met de rechtermuisknop te klikken en **[!UICONTROL Open]** > te klikken **[!UICONTROL from the workbench]**.
+1. Wijzig de naam van het nieuwe bestand door met de rechtermuisknop in de kolom [!DNL User] voor het bestand te klikken en de nieuwe naam in de parameter File te typen.
+1. Open het nieuwe bestand door met de rechtermuisknop te klikken in de kolom [!DNL User] voor het bestand en te klikken op **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
 
    Het configuratievenster voor het [!DNL .export] dossier verschijnt.
 
@@ -45,61 +46,60 @@ Om een segment voor de uitvoer te vormen, moet u een [!DNL .export] dossier open
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Voor deze parameter... </th> 
-   <th colname="col2" class="entry"> Verstrek deze informatie... </th> 
+   <th colname="col2" class="entry"> Deze informatie opgeven... </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> Opdracht </td> 
-   <td colname="col2"> <p>Optioneel. Een programma dat moet worden uitgevoerd nadat het Dossier van de Output wordt gecreeerd. Dit gebied moet uitvoerbaar (een <span class="filepath"> .exe- </span> dossier) van verwijzingen voorzien, niet shell bevel. </p> <p>Opmerking:  De segmentuitvoer zal ontbreken als er een ruimte in de bevelparameter is. </p> </td> 
+   <td colname="col2"> <p>Optioneel. Een programma dat wordt uitgevoerd nadat het uitvoerbestand is gemaakt. Dit gebied moet uitvoerbaar (een <span class="filepath"> .exe </span> dossier), niet shell bevel van verwijzingen voorzien. </p> <p>Opmerking:  De segmentexport zal mislukken als er een spatie in de bevelparameter is. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Filteren </td> 
-   <td colname="col2"> <p>Optioneel. Een genoemde filter of een filteruitdrukking. U kunt of een genoemde filter tot stand brengen gebruikend een filterredacteur, dan typ hier de naam van die filter, of u kunt een filteruitdrukking zelf typen. </p> <p>Voor meer informatie over filterredacteurs, zie de Redacteurs van de <a href="../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3"> Filter </a>. Voor meer informatie over de syntaxis van de filteruitdrukking, zie <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md#concept-72f2563f809747a2a3cff7ec72462a15"> Syntaxis voor de Uitdrukkingen van de Filter </a>. </p> <p>De elementen van Niveau die de filter aanpassen worden uitgevoerd, terwijl alle andere elementen niet zijn. </p> </td> 
+   <td colname="col1"> Filter </td> 
+   <td colname="col2"> <p>Optioneel. Een benoemd filter of een filterexpressie. U kunt een benoemd filter maken met een filtereditor en vervolgens hier de naam van dat filter typen of u kunt een filterexpressie zelf typen. </p> <p>Zie <a href="../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3"> Filtereditors </a> voor meer informatie over filtereditors. Zie <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md#concept-72f2563f809747a2a3cff7ec72462a15"> Syntaxis voor filterexpressies </a> voor meer informatie over syntaxis van filterexpressies. </p> <p>Elementen van Niveau die overeenkomen met het filter worden geëxporteerd, terwijl andere elementen dat niet doen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Niveau </td> 
-   <td colname="col2"> <p>De telbare dimensie de waarvan elementen moeten worden uitgevoerd. </p> <p>Voorbeeld: Een bezoekersniveau exporteert één rij gegevens voor elke bezoeker. </p> </td> 
+   <td colname="col2"> <p>De aftelbare dimensie waarvan de elementen moeten worden geëxporteerd. </p> <p>Voorbeeld: Een niveau van Bezoeker voert één rij gegevens voor elke bezoeker uit. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uitvoerbestand </td> 
-   <td colname="col2"> <p>Pad en bestandsnaam van de geëxporteerde gegevens. Als het profiel op een de servercluster van de Werkbank van Gegevens loopt, schrijft elke server van de Werkbank van Gegevens een Dossier die van de Output een gedeelte van de gegevens bevat. </p> <p>De de serverinstallatiefolder van de Werkbank van Gegevens bevat een folder van Uitvoer waar u het outputdossier kunt bewaren. Bijvoorbeeld, kon u het Segment van de Bezoeker van de <span class="filepath"> Uitvoer ingaan \.txt </span>, waar het Segment van de <span class="filepath"> Bezoeker.txt de naam van het dossier </span> is dat de uitgevoerde gegevens bevat. </p> </td> 
+   <td colname="col2"> <p>Pad en bestandsnaam van de geëxporteerde gegevens. Als het profiel op een servercluster van de Data Workbench loopt, schrijft elke server van de Data Workbench een Dossier van de Output dat een gedeelte van de gegevens bevat. </p> <p>De installatiemap van de server van de Data Workbench bevat een directory Exporteren waar u het uitvoerbestand kunt opslaan. U kunt bijvoorbeeld <span class="filepath"> Exports\Visitor Segment.txt </span> invoeren, waarbij <span class="filepath"> Visitor Segment.txt </span> de naam is van het bestand dat de geëxporteerde gegevens bevat. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uitvoerindeling </td> 
-   <td colname="col2"> De metrische of afmetingsgegevens die voor elk element van het Niveau moeten worden uitgevoerd. Als de output een lusje-afgebakend dossier is, zouden de gebieden door de karakters van het Lusje moeten worden gescheiden, en het formaat zou met de aangewezen nieuw-lijn karakters moeten beëindigen. Voor meer informatie, zie <a href="../../../home/c-get-started/c-exp-data-seg-exp/c-abt-otpt-frmt.md#concept-ac7e24d1374a4b418365db7cc98c361e"> over het Formaat van de Output </a>. </td> 
+   <td colname="col2"> De metrische of afmetingsgegevens die voor elk element van het Niveau moeten worden uitgevoerd. Als de uitvoer een door tabs gescheiden bestand is, moeten de velden worden gescheiden door tabtekens en moet de opmaak eindigen met de juiste tekens voor nieuwe regels. Zie <a href="../../../home/c-get-started/c-exp-data-seg-exp/c-abt-otpt-frmt.md#concept-ac7e24d1374a4b418365db7cc98c361e"> Informatie over Uitvoerindeling </a> voor meer informatie. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Eindtijd planning </td> 
-   <td colname="col2"> <p>Optioneel. De einddatum en de tijd voor het programma, met inbegrip van de tijdzone. </p> <p>Formaat: JJJJ-MM-DD u:mm tijdzone </p> <p>Voorbeeld: 2013-08-01 12:01 EDT </p> <p>de geplande uitvoer stopt op dit moment; nochtans, wordt het Dossier van de Output nog geregenereerd wanneer zijn definitie wordt veranderd. Dit gebied is betekenisloos zonder Programma te bepalen elk. Voor meer informatie over de montages van de tijdzone, zie de Gids <i>van de Configuratie van de</i>Dataset. </p> </td> 
+   <td colname="col2"> <p>Optioneel. De einddatum en -tijd voor het programma, inclusief de tijdzone. </p> <p>Indeling: YYYY-MM-DD hh:mm tijdzone </p> <p>Voorbeeld: 2013-08-01 12:01 EDT </p> <p>De geplande uitvoer stopt op dat moment; het uitvoerbestand wordt echter nog steeds opnieuw gegenereerd wanneer de definitie ervan wordt gewijzigd. Dit veld heeft geen betekenis zonder planning op elke te definiëren. Voor meer informatie over de montages van de tijdzone, zie <i>de Gids van de Configuratie van de Dataset</i>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Elk programma plannen </td> 
-   <td colname="col2"> Optioneel. De frequentie waarbij om het Dossier van de Output te regenereren. De gesteunde waarden zijn uur, dag, week, en maand. Het dossier van de Output wordt nog geregenereerd wanneer zijn definitie wordt veranderd. </td> 
+   <td colname="col1"> Plan elke </td> 
+   <td colname="col2"> Optioneel. De frequentie waarmee het uitvoerbestand opnieuw moet worden gegenereerd. Ondersteunde waarden zijn uur, dag, week en maand. Het uitvoerbestand wordt nog steeds opnieuw gegenereerd wanneer de definitie ervan wordt gewijzigd. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Begintijd plannen </td> 
-   <td colname="col2"> <p>Optioneel. De begindatum en de tijd voor het programma, met inbegrip van de tijdzone. </p> <p>Formaat: JJJJ-MM-DD u:mm tijdzone </p> <p>Voorbeeld: 2013-08-01 12:01 EDT </p> <p>De geplande uitvoer begint op dit ogenblik, en het programma is met betrekking tot deze tijd. Dit gebied is betekenisloos zonder het bepalen van <span class="wintitle"> Programma elk </span>. Voor meer informatie over de montages van de tijdzone, zie de Gids <i>van de Configuratie van de</i>Dataset. </p> </td> 
+   <td colname="col2"> <p>Optioneel. De begindatum en -tijd voor het programma, inclusief de tijdzone. </p> <p>Indeling: YYYY-MM-DD hh:mm tijdzone </p> <p>Voorbeeld: 2013-08-01 12:01 EDT </p> <p>De geplande uitvoer begint op dit ogenblik, en het programma is met betrekking tot deze tijd. Dit veld heeft geen betekenis zonder <span class="wintitle"> Planning om </span> te definiëren. Voor meer informatie over de montages van de tijdzone, zie <i>de Gids van de Configuratie van de Dataset</i>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Termijn (sec) </td> 
-   <td colname="col2"> Optioneel. De maximumtijd die wordt toegestaan om te verstrijken terwijl de segmentuitvoer wordt geproduceerd. Als het gespecificeerde interval wordt overschreden, dan begint de uitvoer over. Het plaatsen van deze waarde aan 0 (nul) verwijdert de grens. De standaardwaarde is 600 seconden. </td> 
+   <td colname="col1"> Tijdslimiet (sec) </td> 
+   <td colname="col2"> Optioneel. De maximumtijd die wordt toegestaan om te verstrijken terwijl een segmentuitvoer wordt geproduceerd. Als het opgegeven interval wordt overschreden, wordt het exporteren opnieuw gestart. Als u deze waarde instelt op 0 (nul), wordt de limiet verwijderd. De standaardwaarde is 600 seconden. </td> 
   </tr> 
  </tbody> 
 </table>
 
-1. Klik **[!UICONTROL (New)]** bij de bovenkant van het venster met de rechtermuisknop aan, dan klik **[!UICONTROL Save]**.
-1. Als u dit bestand beschikbaar wilt maken voor alle gebruikers van het werkprofiel, klikt u met de rechtermuisknop op het vinkje voor het gemaakte [!DNL .export] bestand in de [!DNL User] kolom en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. Klik met de rechtermuisknop **[!UICONTROL (New)]** boven in het venster en klik vervolgens op **[!UICONTROL Save]**.
+1. Als u dit bestand beschikbaar wilt maken voor alle gebruikers van het werkprofiel, klikt u met de rechtermuisknop op het vinkje voor het gemaakte [!DNL .export]-bestand in de kolom [!DNL User] en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
 
    >[!NOTE]
    >
-   >Het opslaan van het [!DNL .export] dossier aan de server van de Werkbank van Gegevens veroorzaakt de uitvoer om één keer onmiddellijk te lopen, zelfs als de Tijd van het Begin van het Programma aan een toekomstige datum en een tijd wordt geplaatst.
+   >Wanneer u het [!DNL .export]-bestand opslaat op de Data Workbench-server, wordt het exporteren één keer direct uitgevoerd, zelfs als de Begintijd van het schema is ingesteld op een datum en tijd in de toekomst.
 
-   Het volgende is een steekproef [!DNL .export] dossier.
+   Hier volgt een voorbeeld van een [!DNL .export]-bestand.
 
    ![](assets/vis_Segment_Export_File.png)
 
    >[!NOTE]
    >
-   >Het [!DNL Visitor Segment.export] dossier dat in de steekproef wordt getoond verwijst naar de filter van het Segment van de Bezoeker. Het wijzigen van de definitie van deze filter verandert de definitie van de uitvoer.
-
+   >Het [!DNL Visitor Segment.export]-bestand in het voorbeeld verwijst naar het filter Bezoekerssegment. Als u de definitie van dit filter wijzigt, verandert de definitie van de exportbewerking.
