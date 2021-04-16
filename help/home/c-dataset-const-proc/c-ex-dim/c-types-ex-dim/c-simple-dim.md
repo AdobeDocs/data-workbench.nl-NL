@@ -1,22 +1,23 @@
 ---
-description: Een eenvoudige dimensie heeft een één-aan-vele verhouding met zijn ouder telbare dimensie.
-solution: Analytics
-title: Eenvoudige afmetingen
-topic: Data workbench
+description: Een eenvoudige dimensie heeft een één-aan-vele verhouding met zijn oudertelbare dimensie.
+title: Eenvoudige Dimension
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
+exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 0%
 
 ---
 
+# Eenvoudige Dimension{#simple-dimensions}
 
-# Eenvoudige afmetingen{#simple-dimensions}
+Een eenvoudige dimensie heeft een één-aan-vele verhouding met zijn oudertelbare dimensie.
 
-Een eenvoudige dimensie heeft een één-aan-vele verhouding met zijn ouder telbare dimensie.
+Een eenvoudige dimensie is altijd een onderliggend element van een aftelbare dimensie. U kunt een eenvoudige dimensie zien als een representatie van een eigenschap van de elementen in de bovenliggende dimensie. Als u bijvoorbeeld met webgegevens werkt, kunt u de dimensie Verwijzer bezoeker definiëren. Dit is een eenvoudige dimensie met een bovenliggende dimensie van Bezoeker. Deze vertegenwoordigt de eerste HTTP-referentie voor elke bezoeker in de dimensie Visitor. Elke bezoeker in de dimensie Bezoeker heeft slechts één bezoekersreferentie, maar veel bezoekers kunnen dezelfde bezoekersreferentie hebben. Daarom heeft de dimensie Bezoekerreferentie een-op-een-relatie met de dimensie Bezoeker.
 
-Een eenvoudige dimensie is altijd een kind van een telbare dimensie. U kunt aan een eenvoudige dimensie als vertegenwoordiging van een bezit van de elementen in zijn ouderafmeting denken. Bijvoorbeeld, als u met Webgegevens werkt, kon u de dimensie van de Verwijzing van de Bezoeker bepalen, die een eenvoudige afmeting met een ouderafmeting van Bezoeker is. Het vertegenwoordigt de eerste referentie van HTTP voor elke bezoeker in de dimensie van de Bezoeker. Elke bezoeker in de bezoekersdimensie heeft slechts één bezoeker, maar veel bezoekers kunnen de zelfde bezoeker hebben verwijzer. Daarom heeft de dimensie van de Verwijzing van de Bezoeker een één-aan-vele verhouding met de dimensie van de Bezoeker.
-
-De eenvoudige afmetingen worden bepaald door de volgende parameters:
+Eenvoudige afmetingen worden gedefinieerd door de volgende parameters:
 
 <table id="table_E6F729DFA226459DBFC1776CE8CB81F8"> 
  <thead> 
@@ -29,7 +30,7 @@ De eenvoudige afmetingen worden bepaald door de volgende parameters:
  <tbody> 
   <tr> 
    <td colname="col1"> Naam </td> 
-   <td colname="col2"> Beschrijvende naam van de afmeting aangezien het in gegevenswerkbank verschijnt. De afmetingsnaam kan geen koppelteken (-) omvatten. </td> 
+   <td colname="col2"> Beschrijvende naam van de dimensie zoals deze wordt weergegeven in de werkbank voor gegevens. De naam van de dimensie mag geen afbreekstreepje (-) bevatten. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -38,67 +39,66 @@ De eenvoudige afmetingen worden bepaald door de volgende parameters:
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Toestand </td> 
-   <td colname="col2"> De voorwaarden waaronder de verhouding tussen de Ouder en de waarde van het inputgebied zou moeten worden gecreeerd. </td> 
+   <td colname="col1"> Voorwaarde </td> 
+   <td colname="col2"> De voorwaarden waaronder de relatie tussen de bovenliggende waarde en de waarde van het invoerveld moet worden gemaakt. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Verborgen </td> 
-   <td colname="col2"> Bepaalt of de afmeting in de interface van de gegevenswerkbank verschijnt. Door gebrek, wordt deze parameter geplaatst aan vals. Als, bijvoorbeeld, de afmeting slechts als basis van metrisch moet worden gebruikt, kunt u deze parameter aan waar plaatsen om de afmeting van de vertoning van de gegevenswerkbank te verbergen. </td> 
-   <td colname="col3"> vals </td> 
+   <td colname="col2"> Hiermee wordt bepaald of de dimensie wordt weergegeven in de interface van de gegevenswerkbank. Deze parameter is standaard ingesteld op false. Als de afmeting bijvoorbeeld alleen als basis van een metrische waarde moet worden gebruikt, kunt u deze parameter instellen op true om de afmeting te verbergen in de weergave op de werkbank. </td> 
+   <td colname="col3"> false </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Invoer </td> 
-   <td colname="col2"> Het gebied van waarden dat met de ouderdimensie (Ouder) verwant is. </td> 
+   <td colname="col2"> Het waardenveld dat gerelateerd is aan de bovenliggende dimensie (parent). </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Bestand laden </td> 
-   <td colname="col2"> <p>Optioneel. Een dossier van beschikbare waarden voor de verhouding. U gebruikt een ladingsdossier wanneer één van beiden van het volgende van toepassing is: </p> <p> 
+   <td colname="col2"> <p>Optioneel. Een bestand met beschikbare waarden voor de relatie. U gebruikt een laadbestand wanneer een van de volgende twee van toepassing is: </p> <p> 
      <ul id="ul_056C4A8E46AA479397DC63173C035D5C"> 
-      <li id="li_C26EB5A4AB3C4BEB8EB3A217A5A2377E"> De waarden hebben een specifieke soortorde die u in de vertoning van de gegevenswerkbank wilt bewaren. Bijvoorbeeld, zou u een Kwartdimensie kunnen willen tot stand brengen de waarvan elementen (de kwartalen van het jaar) altijd in chronologische orde tonen. </li> 
-      <li id="li_5D4DF56BC6124D038A7260131B1F3DB3"> U wilt plaatshouders voor waarden tot stand brengen die niet in de gegevens kunnen worden gevonden maar in de vertoning van de gegevenswerkbank moeten verschijnen. </li> 
-     </ul> </p> <p> Als een waarde wordt ontmoet die niet aanwezig in het dossier is, wordt het toegevoegd aan het eind van de waarden wanneer bekeken in gegevenswerkbank. </p> </td> 
+      <li id="li_C26EB5A4AB3C4BEB8EB3A217A5A2377E"> De waarden hebben een specifieke sorteervolgorde die u wilt behouden in de weergave van de gegevenswerkbank. U kunt bijvoorbeeld een kwartdimensie maken waarvan de elementen (de kwartalen van het jaar) altijd in chronologische volgorde worden weergegeven. </li> 
+      <li id="li_5D4DF56BC6124D038A7260131B1F3DB3"> U wilt plaatsaanduidingen maken voor waarden die mogelijk niet in de gegevens worden gevonden, maar wel in de weergave van de werkbank met gegevens moeten worden weergegeven. </li> 
+     </ul> </p> <p> Als een waarde wordt aangetroffen die niet aanwezig is in het bestand, wordt deze toegevoegd aan het einde van de waarden bij weergave in de werkbank voor gegevens. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Exploitatie </td> 
-   <td colname="col2"> <p>De beschikbare verrichtingen zijn als volgt: </p> <p> 
+   <td colname="col1"> Bewerking </td> 
+   <td colname="col2"> <p>De beschikbare bewerkingen zijn als volgt: </p> <p> 
      <ul id="ul_88AE4279413C42609D8B53EC64B5E913"> 
-      <li id="li_DD9623D006844BC28B2AAA8E12AA04E1"> EERSTE NONBLANK: De eerste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de eerste logboekingang komt. Als de Input een vectorgebied is, wordt de eerste rij in de vector voor de relevante logboekingang gebruikt. </li> 
-      <li id="li_0FBE7F0B7B9744D994ECEDAA08F0045C"> EERSTE RIJ: De waarde voor de eerste logboekingang met betrekking tot het element van de ouderafmeting wordt gebruikt, zelfs als de input leeg is. Als de Input een vectorgebied is, wordt de eerste rij in de vector voor de relevante logboekingang gebruikt. Als deze waarde leeg is of geen aantal, of als de relevante logboekingang niet aan de Voorwaarde van de afmeting voldoet, wordt geen waarde gebruikt. </li> 
-      <li id="li_C17190BC699D4A099DC5326C07D1044D"> LAATSTE NONBLANK: De laatste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de laatste logboekingang komt. Als de Input een vectorgebied is, wordt de eerste rij in de vector voor de relevante logboekingang gebruikt. </li> 
-      <li id="li_00BAE86F12004C098F6A455908DB7062"> LAATSTE RIJ: De waarde voor de laatste logboekingang met betrekking tot het element van de ouderafmeting wordt gebruikt, zelfs als de input leeg is. Als de Input een vectorgebied is, wordt de eerste rij in de vector voor de relevante logboekingang gebruikt. Als deze waarde leeg is of geen aantal, of als de relevante logboekingang niet aan de Voorwaarde van de afmeting voldoet, wordt geen waarde gebruikt. </li> 
-     </ul> </p> <p> <p>Opmerking:  Als de Verrichting geen waarde of een lege waarde voor een bepaalde logboekingang oplevert, zal het overeenkomstige element van de ouderafmeting op "niets"element van de eenvoudige afmeting betrekking hebben. </p> </p> <p> U zou een verrichting moeten specificeren om ervoor te zorgen dat de afmeting zoals bedoeld wordt bepaald. </p> </td> 
+      <li id="li_DD9623D006844BC28B2AAA8E12AA04E1"> EERSTE NONBLANK: De eerste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de eerste logboekingang komt. Als Invoer een vectorveld is, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. </li> 
+      <li id="li_0FBE7F0B7B9744D994ECEDAA08F0045C"> EERSTE RIJ: De waarde voor de eerste logbestandvermelding die betrekking heeft op het bovenliggende dimensielement wordt gebruikt, zelfs als de invoer leeg is. Als Invoer een vectorveld is, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. Als deze waarde leeg is of geen getal, of als het relevante logbestandvermelding niet voldoet aan de voorwaarde van de dimensie, wordt geen waarde gebruikt. </li> 
+      <li id="li_C17190BC699D4A099DC5326C07D1044D"> LAATSTE NONBLANK: De laatste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de laatste logboekingang komt. Als Invoer een vectorveld is, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. </li> 
+      <li id="li_00BAE86F12004C098F6A455908DB7062"> LAATSTE RIJ: De waarde voor de laatste logbestandvermelding die betrekking heeft op het bovenliggende dimensielement wordt gebruikt, zelfs als de invoer leeg is. Als Invoer een vectorveld is, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. Als deze waarde leeg is of geen getal, of als het relevante logbestandvermelding niet voldoet aan de voorwaarde van de dimensie, wordt geen waarde gebruikt. </li> 
+     </ul> </p> <p> <p>Opmerking:  Als de Verrichting geen waarde of een lege waarde voor een bepaalde logboekingang oplevert, zal het overeenkomstige element van de ouderafmeting op "niets"element van de eenvoudige afmeting betrekking hebben. </p> </p> <p> Geef een bewerking op om ervoor te zorgen dat de dimensie op de juiste manier wordt gedefinieerd. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Ouder </td> 
-   <td colname="col2"> De naam van de ouderafmeting. Om het even welke telbare afmeting kan een ouderafmeting zijn. </td> 
+   <td colname="col1"> Bovenliggend </td> 
+   <td colname="col2"> De naam van de bovenliggende dimensie. Elke aftelbare dimensie kan een bovenliggende dimensie zijn. </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Dit voorbeeld illustreert de definitie van een eenvoudige afmeting gebruikend gebeurtenisgegevens die van websiteverkeer en een ladingsdossier worden verzameld.
+Dit voorbeeld illustreert de definitie van een eenvoudige dimensie met behulp van gebeurtenisgegevens die zijn verzameld uit websiteverkeer en een laadbestand.
 
-Neem het voorbeeld van een opiniepeiling van de favoriete Girl Scout koekjes van bezoekers. Een Web-pagina vangt deze stem en keert het terug naar de Webserver in de naam-waarde paar voorkeur architectuur. Er wordt slechts één stem per bezoeker geteld, maar bezoekers kunnen hun mening veranderen en opnieuw stemmen indien gewenst. Dit is een relatie van één op vele: een bezoeker kan veel stemmen hebben , maar elke stem wordt geassocieerd met slechts één bezoeker . Daarom is de ouder van de dimensie bezoekers (slechts één stem per bezoeker) en de verrichting is LAATSTE ROW (zodat zij hun mening kunnen veranderen en opnieuw kunnen stemmen).
+Bekijk het voorbeeld van een opiniepeiling van favoriete Girl Scout cookies van sitebezoekers. Een webpagina legt deze stem vast en retourneert deze naar de webserver in de naam-waardeparen-favoriet. Er wordt slechts één stem per bezoeker geteld, maar bezoekers kunnen hun mening wijzigen en desgewenst opnieuw stemmen. Dit is een één-op-veel relatie: een bezoeker kan veel stemmen hebben , maar elke stem heeft slechts betrekking op één bezoeker . Daarom is de ouder van de dimensie bezoekers (slechts één stem per bezoeker) en de operatie is LAST ROW (zodat zij hun mening kunnen veranderen en opnieuw kunnen stemmen).
 
-Placeholders moeten voor alle types van koekjes bestaan zodat de koekjestypes die geen stemmen ontvangen in de vertoning van de gegevenswerkbank verschijnen. Om deze redenen, is een ladingsdossier bepaald dat de lijst van koekjestypes bevat die kunnen worden geselecteerd. De inhoud van dit dossier, bewaard in een dossier genoemd [!DNL cookietypes.txt], kijkt iets als het volgende:
+Voor alle soorten cookies moeten plaatsaanduidingen aanwezig zijn, zodat de cookietypen die geen stemmen ontvangen, worden weergegeven in de weergave op de werkbank. Daarom is een laadbestand gedefinieerd dat de lijst bevat met cookietypen die kunnen worden geselecteerd. De inhoud van dit bestand, opgeslagen in een bestand met de naam [!DNL cookietypes.txt], ziet er ongeveer als volgt uit:
 
-Dierlijke Treasurerings
+Dierlijke schatten
 
 Caramel Delights
 
 Lemon Pastry Creams
 
-Pandut Butter Patties
+Peanut Butter Patches
 
-Kortere paden
+Shortbreads
 
-Minimaal
+Dunne minuten
 
-De definitieve afmeting wordt bepaald zoals hieronder getoond:
+De uiteindelijke afmeting wordt hier weergegeven:
 
 ![](assets/cfg_Transformation_Dim_Simple.png)
-
