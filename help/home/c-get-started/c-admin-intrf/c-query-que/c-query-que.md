@@ -1,41 +1,41 @@
 ---
-description: Normaal, beantwoordt de server van de Werkbank van Gegevens inkomende gebruikersvragen aangezien zij worden ontvangen, en blijft resultaten en updates in real time verstrekken tot de gebruiker niet meer om hen verzoekt.
-solution: Analytics
-title: Zoekwachtrij
-topic: Data workbench
+description: Normaal, beantwoordt de server van de Data Workbench inkomende gebruikersvragen aangezien zij worden ontvangen, en blijft resultaten en updates in real time verstrekken tot de gebruiker hen niet meer verzoekt.
+title: Query-wachtrij
 uuid: 4d64bc89-b664-4532-9f17-be11812d36d4
+exl-id: 5d9b20bf-9396-4016-beed-cee8f533f3ea
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 0%
 
 ---
 
+# Query Queue{#query-queue}
 
-# Zoekwachtrij{#query-queue}
+Normaal, beantwoordt de server van de Data Workbench inkomende gebruikersvragen aangezien zij worden ontvangen, en blijft resultaten en updates in real time verstrekken tot de gebruiker hen niet meer verzoekt.
 
-Normaal, beantwoordt de server van de Werkbank van Gegevens inkomende gebruikersvragen aangezien zij worden ontvangen, en blijft resultaten en updates in real time verstrekken tot de gebruiker niet meer om hen verzoekt.
+Soms, vooral op systemen met vele gebruikers van de Data Workbench, vereist het aantal actieve vragen meer systeemmiddelen dan bij de server beschikbaar zijn. [!DNL Query Queue] staat de server toe om sommige vragen tijdelijk op greep te plaatsen tot de middelen noodzakelijk om antwoorden te verstrekken beschikbaar worden. [!DNL Query Queue] verstrekt ook eigenschappen om vragen voorrang te geven die op een verscheidenheid van parameters worden gebaseerd, zodat in het geval van middelgeschil, hoog-prioritaire vragen eerst worden beantwoord.
 
-Soms, vooral op systemen met vele gebruikers van de Werkbank van Gegevens, vereist het aantal actieve vragen meer systeemmiddelen dan beschikbaar bij de server zijn. [!DNL Query Queue] staat de server toe om sommige vragen tijdelijk op greep te plaatsen tot de middelen noodzakelijk om antwoorden te verstrekken beschikbaar worden. De eigenschappen [!DNL Query Queue] verstrekken ook om vragen voorrang te geven die op een verscheidenheid van parameters worden gebaseerd, zodat in het geval van middelgeschil, de hoog-prioritaire vragen eerst worden beantwoord.
+De vragen van één enkele cliënt of rapportserver worden geplaatst in een bos en gepland als eenheid. U kunt middelmonitors vormen om de hoeveelheid bepaalde systeemmiddelen te beperken die door vragen worden gebruikt. Wanneer de gecontroleerde middelen het plannen van een andere vraagsteller toestaan, is de hoogst-prioritaire bos gepland. De gebruikers de waarvan vragen nog niet gepland zijn, wegens middelbeperkingen, ontvangen geen fout maar worden meegedeeld dat hun vragen een rij worden gevormd, en de gebruiker kan aan de lokale steekproef blijven werken.
 
-De vragen van één enkele cliënt of rapportserver worden geplaatst in een bos en gepland als eenheid. U kunt middelmonitors vormen om de hoeveelheid bepaalde systeemmiddelen te beperken die door vragen worden gebruikt. Wanneer de gecontroleerde middelen het plannen van een andere vraagsteller toestaan, is de hoogst-prioritaire bos gepland. De gebruikers de van wie vragen nog niet gepland zijn, wegens middelbeperkingen, ontvangen geen fout maar meegedeeld dat hun vragen een rij worden gevormd, en de gebruiker kan blijven aan de lokale steekproef werken.
+De standaardconfiguratie omvat een eenvoudige configuratie voor [!DNL Query Queue], maar verlaat het onbruikbaar. Beheerders kunnen de [!DNL Query Queue] in- of uitschakelen, bronmonitoren configureren om te bepalen hoeveel van de verschillende bronnen worden gebruikt voor het opvragen van query&#39;s en complex prioriteitsbeleid configureren voor verschillende gebruikers.
 
-De standaardconfiguratie omvat een eenvoudige configuratie voor [!DNL Query Queue], maar verlaat het gehandicapt. De beheerders kunnen toelaten of onbruikbaar maken [!DNL Query Queue], middelmonitors vormen om te bepalen hoeveel van diverse middelen voor het vragen worden gebruikt, en vormen complex prioritization beleid voor verschillende gebruikers.
+**Het bestand Server.cfg configureren voor[!DNL Query Queuing]**
 
-**Om het dossier te vormen Server.cfg voor[!DNL Query Queuing]**
-
-1. Open [!DNL Server.cfg] door te klikken **[!UICONTROL Admin]** > **[!UICONTROL Profile Manager]** > **[!UICONTROL Dataset]**.
-1. Klik met de rechtermuisknop **[!UICONTROL Server.cfg]** en maak het lokaal voor het uitgeven.
-1. Breid uit [!DNL Query Queue].
+1. Open [!DNL Server.cfg] door te klikken op **[!UICONTROL Admin]** > **[!UICONTROL Profile Manager]** > **[!UICONTROL Dataset]**.
+1. Klik met de rechtermuisknop op **[!UICONTROL Server.cfg]** en maak deze lokaal voor bewerken.
+1. [!DNL Query Queue] uitbreiden.
 
    ![](assets/queryqueue1.png)
 
-1. Vorm de volgende parameters:
+1. Configureer de volgende parameters:
 
-   * **Gebruikersgroepen:** Laat u beleid, gebruikers, en de rijprioriteit vormen. Zie Gebruikersgroepen [van de Rij van de](../../../../home/c-get-started/c-admin-intrf/c-query-que/c-query-que-user-grps.md#concept-5555f51402ed49419c067d61738474c1) Vraag voor definities.
+   * **Gebruikersgroepen:** Hiermee kunt u beleid, gebruikers en de prioriteit van de wachtrij configureren. Zie [Gebruikersgroepen van de Rij van de Vraag](../../../../home/c-get-started/c-admin-intrf/c-query-que/c-query-que-user-grps.md#concept-5555f51402ed49419c067d61738474c1) voor definities.
 
-   * **Actief:** (Vector) laat of maakt het toe onbruikbaar [!DNL Query Queue]. De geldige waarden zijn waar of vals. Standaard het plaatsen is vals.
+   * **Actief:** (Vector) Schakelt het  [!DNL Query Queue]in of uit. Geldige waarden zijn true of false. De standaardinstelling is false.
 
-   * **Standaardgebruikersgroep:** (Koord) Type een naam van de gebruikersgroep waaraan de gebruikers worden toegevoegd, als zij niet vermeld in om het even welke gebruikersgroep zijn.
-   * **Bronnenmonitoren:** (Vector) klik met de rechtermuisknop om een middelmonitor toe te voegen. U kunt specificeren of het [!DNL Query Queue] monitorgeheugen of het aantal vragen. Klik met de rechtermuisknop **[!UICONTROL Resource Monitor]** om de Monitor van de Begroting van het Geheugen of Aantal de Monitor van Vragen te kiezen. Zie de Monitoren [van het Middel van de Rij van de](../../../../home/c-get-started/c-admin-intrf/c-query-que/c-query-que-res-mon.md#concept-0840967b228c4d5ba3b59b4b2759f325) Vraag voor meer informatie.
+   * **Standaardgebruikersgroep:** (tekenreeks) Typ een naam van de gebruikersgroep waaraan gebruikers worden toegevoegd, als deze niet in een gebruikersgroep staan.
+   * **Bronmonitoren:** (Vector) Klik met de rechtermuisknop om een bronmonitor toe te voegen. U kunt specificeren of [!DNL Query Queue] geheugen of het aantal vragen controleert. Klik met de rechtermuisknop **[!UICONTROL Resource Monitor]** om Geheugenbudgetcontrole of Aantal query&#39;s te kiezen. Zie [Query Queue Resource Monitors](../../../../home/c-get-started/c-admin-intrf/c-query-que/c-query-que-res-mon.md#concept-0840967b228c4d5ba3b59b4b2759f325) voor meer informatie.
 
-   * **Onaanraakbare prioriteit:** (Int) specificeert dat de trossen met een prioriteit groter dan of gelijk aan deze waarde nooit aan het plannen van hogere prioritaire bunches worden voorrang gegeven. Gebruikt samen met [!DNL Memory Budget Monitor] beschreven in de Lijst [van de Parameters van de](../../../../home/c-get-started/c-admin-intrf/c-query-que/c-query-que-user-grps.md#concept-5555f51402ed49419c067d61738474c1)Gebruikersgroep.
-
+   * **Onaanraakbare prioriteit:** (Int) Hiermee geeft u op dat bunches met een prioriteit die groter is dan of gelijk is aan deze waarde, nooit voorrang krijgen op het plannen van hosprioriteitsbundels. Wordt gebruikt in combinatie met de [!DNL Memory Budget Monitor] die wordt beschreven in [Gebruikersgroepparameters Tabel](../../../../home/c-get-started/c-admin-intrf/c-query-que/c-query-que-user-grps.md#concept-5555f51402ed49419c067d61738474c1).
