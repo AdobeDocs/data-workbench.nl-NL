@@ -1,22 +1,23 @@
 ---
-description: De het koordvariabelen van de vraag kunnen aan een verzoek worden toegevoegd JavaScript om extra metingen te verzamelen wanneer een verzoek wordt ingediend.
-solution: Analytics
-title: Aanvullende informatie verkrijgen
-topic: Data workbench
+description: Tekenreeksvariabelen van de query kunnen aan een JavaScript-aanvraag worden toegevoegd om aanvullende metingen te verzamelen wanneer een aanvraag wordt gedaan.
+title: Aanvullende informatie ophalen
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
+exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
+# Aanvullende informatie ophalen{#acquiring-additional-information}
 
-# Aanvullende informatie verkrijgen{#acquiring-additional-information}
+Tekenreeksvariabelen van de query kunnen aan een JavaScript-aanvraag worden toegevoegd om aanvullende metingen te verzamelen wanneer een aanvraag wordt gedaan.
 
-De het koordvariabelen van de vraag kunnen aan een verzoek worden toegevoegd JavaScript om extra metingen te verzamelen wanneer een verzoek wordt ingediend.
+Deze variabelen kunnen handmatig of met een script op de pagina zelf worden toegevoegd.
 
-Deze variabelen kunnen manueel of door manuscript in de pagina zelf worden toegevoegd.
-
-De extra informatie die van een pagina kan worden verkregen kan aan het ingebedde voorwerp via manuscript worden toegevoegd gebruikend de volgende code als voorbeeld:
+Aanvullende informatie die van een pagina kan worden opgehaald, kan via een script aan het ingesloten object worden toegevoegd met de volgende code als voorbeeld:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -36,11 +37,10 @@ v["_2"] = "visa";
 <!-- END REFERENCE PAGE TAG-->
 ```
 
-In dit voorbeeld, kunnen de manuscriptvariabelen voor v_1 en v_2 uit een andere functie binnen uw Web-pagina worden afgeleid. De variabelen zijn als voorbeelden opgenomen. Naast de basislijnmetingen die met elk verzoek worden verworven, zouden de volgende uitgebreide metingen met het verzoek van URL hierboven worden verworven:
+In dit voorbeeld kunnen de scriptvariabelen voor v_1 en v_2 worden afgeleid van een andere functie binnen uw webpagina. De variabelen zijn als voorbeelden ingevoegd. Naast de basislijnmetingen die bij elk verzoek zijn verkregen, zouden de volgende uitgebreide metingen worden verkregen met het verzoek van de bovenstaande URL:
 
-| Verzamelde gegevens | Toelichting | Voorbeeld |
+| Gegevens verzameld | Toelichting | Voorbeeld |
 |---|---|---|
-| v_pn= | Waarde verbonden aan de v_pn variabele van het vraagkoord | v_pn=Application Form |
-| v_1= | Waarde verbonden aan de v_1 variabele van het vraagkoord | v_1=99,99 |
-| v_2= | Waarde verbonden aan de v_2 variabele van het vraagkoord | v_2=visum |
-
+| v_pn= | Waarde gekoppeld aan de variabele v_pn-queryreeks | v_pn=Toepassingsformulier |
+| v_1= | Waarde gekoppeld aan de variabele v_1-queryreeks | v_1=99.99 |
+| v_2= | Waarde gekoppeld aan de variabele v_2-queryreeks | v_2=visa |
