@@ -1,27 +1,28 @@
 ---
-description: De server van het Inzicht (InsightServer64.exe) laat u toe om douanedimensies van gebeurtenisgegevens of raadplegingsgegevens te bepalen.
-solution: Analytics
-title: Over uitgebreide afmetingen
-topic: Data workbench
+description: De Server van het Inzicht (InsightServer64.exe) laat u toe om douanedimensies van gebeurtenisgegevens of raadplegingsgegevens te bepalen.
+title: Uitgebreide Dimension
 uuid: ae014a26-5286-4e36-9098-aaa463d9fe05
+exl-id: f74aa85e-f880-4ab5-a8fb-128862aa808f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 0%
 
 ---
 
+# Informatie over uitgebreide Dimension{#about-extended-dimensions}
 
-# Over uitgebreide afmetingen{#about-extended-dimensions}
+De Server van het Inzicht (InsightServer64.exe) laat u toe om douanedimensies van gebeurtenisgegevens of raadplegingsgegevens te bepalen.
 
-De server van het Inzicht (InsightServer64.exe) laat u toe om douanedimensies van gebeurtenisgegevens of raadplegingsgegevens te bepalen.
+Aangepaste afmetingen die u definieert, worden uitgebreide afmetingen genoemd. U kunt hen gebruiken om visualisaties tot stand te brengen, uitgebreide metriek te bouwen, of analyse uit te voeren om de verrichtingen en de kwesties te begrijpen verbonden aan uw bedrijfskanaal. U kunt verschillende soorten uitgebreide afmetingen definiëren in het [!DNL Transformation.cfg]-bestand of in [!DNL Transformation Dataset Include]-bestanden.
 
-Om het even welke douaneafmetingen die u bepaalt worden bedoeld als uitgebreide afmetingen. U kunt hen gebruiken om visualisaties tot stand te brengen, uitgebreide metriek te bouwen, of analyse uit te voeren om de verrichtingen en de kwesties te begrijpen verbonden aan uw bedrijfskanaal. U kunt verscheidene types van uitgebreide afmetingen in het [!DNL Transformation.cfg] dossier of in [!DNL Transformation Dataset Include] dossiers bepalen.
-
-Een uitgebreide dimensie vertegenwoordigt een verband tussen de waarden van het logboekgebied en een ouderdimensie. Een ouderafmeting kan om het even welke user-defined telbare afmeting zijn. Zie [Afmetingen](../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-count-dim.md#concept-f28b633419494e7bbc510012dbfcc6f8). U specificeert de ouder wanneer het bepalen van de afmeting in het [!DNL Transformation.cfg] dossier of een [!DNL Transformation Dataset Include] dossier. De ouder van een dimensie is het zelfde als zijn niveau. Bijvoorbeeld, als u een afmeting met een ouder van Zitting bepaalt, dan is die afmeting een zitting-vlakke afmeting.
+Een uitgebreide dimensie vertegenwoordigt een relatie tussen de waarden van het logboekgebied en een ouderafmeting. Een ouderafmeting kan om het even welke user-defined telbare afmeting zijn. Zie [Telbare Dimension](../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-count-dim.md#concept-f28b633419494e7bbc510012dbfcc6f8). U geeft het bovenliggende element op bij het definiëren van de dimensie in het [!DNL Transformation.cfg]-bestand of een [!DNL Transformation Dataset Include]-bestand. Het bovenliggende element van een dimensie is hetzelfde als het niveau ervan. Bijvoorbeeld, als u een afmeting met een ouder van Zitting bepaalt, dan is die afmeting een zitting-vlakke afmeting.
 
 >[!NOTE]
 >
->De waarden van het logboekgebied kunnen uit de inherente waarden komen beschikbaar in de logboek ( [!DNL .vsl]) dossiers of andere bronnen van gebeurtenisgegevens of uit uitgebreide logboekgebieden die door het gebruik van transformaties worden gecreeerd.
+>De waarden van de logvelden kunnen afkomstig zijn van de inherente waarden die beschikbaar zijn in de logbestanden ( [!DNL .vsl]) of andere bronnen van gebeurtenisgegevens, of van uitgebreide logvelden die zijn gemaakt met behulp van transformaties.
 
-Om een uitgebreide afmeting aan een visualisatie toe te voegen, hebt toegang u tot het van de Uitgebreide lijst binnen het [!DNL Select Dimension] menu. Bijvoorbeeld, om een uitgebreide afmeting aan een grafiekvisualisatie toe te voegen, zou u binnen de werkruimte met de rechtermuisknop klikken en **[!UICONTROL Add Visualization]** > **[!UICONTROL Graph]** > **[!UICONTROL Extended]** > *&lt;**[!UICONTROL dimension name]**>* klikken. Als u de lijst van uw uitgebreide afmetingen binnen de interface van de gegevenswerkbank zou willen organiseren, kunt u de uitgebreide afmetingen in subfolders bewegen die u creeert. Zie het Administratieve hoofdstuk van Interfaces van de Gids *van de Gebruiker van de Werkbank van* Gegevens. Als u dit doet, verschijnen de namen van subfolders ook in het menu, zoals in Add Visualisatie > Grafiek > Uitgebreid > &lt;*subfolder naam*> > &lt;*afmetingsnaam*>.
+Als u een uitgebreide dimensie aan een visualisatie wilt toevoegen, opent u deze vanuit de lijst Uitgebreide in het menu [!DNL Select Dimension]. Als u bijvoorbeeld een uitgebreide dimensie wilt toevoegen aan een grafiekvisualisatie, klikt u met de rechtermuisknop in de werkruimte en klikt u op **[!UICONTROL Add Visualization]** > **[!UICONTROL Graph]** > **[!UICONTROL Extended]** > *&lt;**[!UICONTROL dimension name]**>*. Als u de lijst met uitgebreide afmetingen wilt ordenen in de interface van de gegevenswerkbank, kunt u de uitgebreide afmetingen verplaatsen naar submappen die u maakt. Zie het Administratieve hoofdstuk van Interfaces van *de Gids van de Gebruiker van de Data Workbench*. Als u dit doet, verschijnen de namen van de submappen ook in het menu, zoals in Add Visualization > Graph > Extended > &lt;*subfolder name*> > &lt;*dimensienaam*>.
 
-Om alle afmetingen te zien die voor uw datasetprofiel en de buffergrootte voor elk zijn bepaald, open de [!DNL Detailed Status] interface in gegevenswerkbank en klik **[!UICONTROL Performance]**, dan **[!UICONTROL Dimensions]** om de knopen uit te breiden. De buffergrootte, die vraagtijden controleert, wordt uitgedrukt in MB. Voor meer informatie over de [!DNL Detailed Status] interface, zie de gids van het Beleid en van de Installatie van de Server.
+Als u alle dimensies wilt zien die zijn gedefinieerd voor uw gegevenssetprofiel en de buffergrootte voor elke component, opent u de [!DNL Detailed Status]-interface in de gegevenswerkbank en klikt u op **[!UICONTROL Performance]** en **[!UICONTROL Dimensions]** om de knooppunten uit te vouwen. De buffergrootte, die vraagtijden controleert, wordt uitgedrukt in MB. Voor meer informatie over de [!DNL Detailed Status] interface, zie de gids van het Beleid van de Server en van de Installatie.
