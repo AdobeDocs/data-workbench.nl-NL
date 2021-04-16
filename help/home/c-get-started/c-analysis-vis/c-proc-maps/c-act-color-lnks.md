@@ -1,21 +1,22 @@
 ---
-description: U kunt de wegen tussen knopen in een proceskaart in kleur tonen.
-solution: Analytics
-title: Een kleurenkoppeling activeren
-topic: Data workbench
+description: U kunt de paden tussen knooppunten in een procesafbeelding in kleur weergeven.
+title: Een kleurkoppeling activeren
 uuid: 7046128e-6d52-4875-9979-c4c7bad59c9d
+exl-id: d210e54a-5f5e-4bcf-b2d2-7a748d7b90ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
 
+# Een kleurkoppeling activeren{#activate-a-color-link}
 
-# Een kleurenkoppeling activeren{#activate-a-color-link}
+U kunt de paden tussen knooppunten in een procesafbeelding in kleur weergeven.
 
-U kunt de wegen tussen knopen in een proceskaart in kleur tonen.
+Het kleurenschema is afhankelijk van de kleurlegenda die is geopend in de werkruimte. Zie [Kleurlegenda](../../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
 
-De kleurenregeling hangt van de kleurenlegende af die in de werkruimte open is. Zie [KleurenLegends](../../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
+Klik met de rechtermuisknop op een knooppunt op de kaart en klik op **[!UICONTROL Options]** > **[!UICONTROL Color Links]**.
 
-Klik om het even welke knoop in de kaart met de rechtermuisknop aan en klik **[!UICONTROL Options]** > **[!UICONTROL Color Links]**.
-
-X links van de Verbindingen van de Kleur wijst erop dat de gekleurde verbindingen in de kaart actief zijn. Wanneer de Verbindingen van de Kleur gehandicapt zijn, lijken de pijlen tussen knopen grijs.
+Een X links van Kleurkoppelingen geeft aan dat gekleurde koppelingen actief zijn op de kaart. Als Kleurkoppelingen is uitgeschakeld, worden de pijlen tussen knooppunten grijs weergegeven.
