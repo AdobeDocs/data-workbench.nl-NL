@@ -1,27 +1,27 @@
 ---
-description: De conceptuele informatie over vereisten voor uw rapportreeksen.
-solution: Analytics
+description: Conceptuele informatie over vereisten voor uw rapportreeksen.
 title: Vereisten voor rapportset
-topic: Data workbench
 uuid: 81d79a8f-cde1-4d86-b8b4-1b71313bac24
+exl-id: 58a2a142-8927-4300-997b-b94d0bf2e896
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 0%
 
 ---
 
+# Vereisten rapporteren{#report-set-requirements}
 
-# Vereisten voor rapportset{#report-set-requirements}
+Conceptuele informatie over vereisten voor uw rapportreeksen.
 
-De conceptuele informatie over vereisten voor uw rapportreeksen.
+Alle rapportsets moeten:
 
-Alle reeksen verslagen moeten:
+* Moet worden opgeslagen in een submap in de map *&lt;werkprofielnaam*\Reports. Ze moeten worden weergegeven op het tabblad [!DNL Reports] van [!DNL Worktop].
 
-* Opslaan in een submap binnen de map *&lt;working profile name*>\Reports. Zij moeten op het [!DNL Reports] lusje van [!DNL Worktop]verschijnen.
-
-* Bevat een [!DNL Report.cfg] dossier in de rapportvastgestelde omslag.
-* Bevat (of punt aan) minstens één werkruimte.
+* Bevat een [!DNL Report.cfg] dossier in de omslag van de rapportreeks.
+* Bevat (of wijs naar) minstens één werkruimte.
 
 >[!NOTE]
 >
->Om worden bekeken gebruikend [!DNL Report Portal], moeten de rapporten specifieke noemende overeenkomsten volgen. Bovendien, moet de folder waarin de rapporten worden bewaard een voorgeschreven structuur volgen. Voor een beschrijving van deze vereisten, zie het [Zorgen dat Uw Reeksen van het Rapport met het Portaal van het Rapport compatibel zijn...](../../home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md#section-2b141e5d198a4bbea455699126c24706).
-
+>Om te kunnen worden weergegeven met [!DNL Report Portal], moeten rapporten specifieke naamgevingsconventies volgen. Daarnaast moet de map waarin rapporten worden opgeslagen een voorgeschreven structuur hebben. Voor een beschrijving van deze vereisten, zie [Zorgen dat Uw Reeksen van het Rapport met het Portaal van het Rapport compatibel zijn..](../../home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md#section-2b141e5d198a4bbea455699126c24706).
