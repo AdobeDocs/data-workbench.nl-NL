@@ -1,28 +1,29 @@
 ---
-description: browsers van de weg kunnen worden gevormd om met om het even welke combinatie basisafmeting, groepsafmeting, niveauafmeting, en metrisch te werken die voor uw toepassing en dataset steek houdt.
-solution: Analytics
-title: Vorm een wegbrowser
-topic: Data workbench
+description: Browsers van de weg kunnen worden gevormd om met om het even welke combinatie basisdimensie, groepsdimensie, niveaudimensie, en metrisch te werken die voor uw toepassing en dataset steek houdt.
+title: Een padbrowser configureren
 uuid: 1ba3fb6e-b76f-428f-b6ec-077669c3b305
+exl-id: be6a68f7-e3e3-4207-a112-3a4fdd5c5f57
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 0%
 
 ---
 
+# Een padbrowser configureren{#configure-a-path-browser}
 
-# Vorm een wegbrowser{#configure-a-path-browser}
+Browsers van de weg kunnen worden gevormd om met om het even welke combinatie basisdimensie, groepsdimensie, niveaudimensie, en metrisch te werken die voor uw toepassing en dataset steek houdt.
 
-browsers van de weg kunnen worden gevormd om met om het even welke combinatie basisafmeting, groepsafmeting, niveauafmeting, en metrisch te werken die voor uw toepassing en dataset steek houdt.
+Nadat u een wegbrowser vormt, is het vermeld met andere wegbrowsers in het [!DNL Add Visualization] menu.
 
-Nadat u wegbrowser vormt, is het vermeld met andere wegbrowsers in het [!DNL Add Visualization] menu.
+1. Klik in [!DNL Profile Manager] op **[!UICONTROL Menu]** en **[!UICONTROL Path Browser]**.**[!UICONTROL Add Visualization]**
 
-1. In [!DNL Profile Manager], klik **[!UICONTROL Menu]**, dan klik **[!UICONTROL Add Visualization]** en **[!UICONTROL Path Browser]**.
+   Ten minste één [!DNL *.vw]-bestand bevindt zich in de map Path Browser.
 
-   Minstens één [!DNL *.vw] - dossier verblijft in de Browser van de Weg folder.
-
-1. Klik het vinkje voor het gewenste dossier met de rechtermuisknop aan en klik **[!UICONTROL Make Local]**.
-1. Klik het vinkje voor het dossier in de [!DNL User] kolom met de rechtermuisknop aan en klik **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
-1. Geef de parameters van het dossier uit gebruikend het volgende steekproefdossier en de lijst als gidsen:
+1. Klik met de rechtermuisknop op het vinkje voor het gewenste bestand en klik op **[!UICONTROL Make Local]**.
+1. Klik met de rechtermuisknop op het vinkje voor het bestand in de kolom [!DNL User] en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Bewerk de parameters van het bestand met behulp van het volgende voorbeeldbestand en de volgende tabel als hulplijnen:
 
    ```
    window = simpleBorderWindow: 
@@ -42,39 +43,39 @@ Nadat u wegbrowser vormt, is het vermeld met andere wegbrowsers in het [!DNL Add
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Voor deze parameter... </th> 
-   <th colname="col2" class="entry"> Verstrek deze informatie... </th> 
+   <th colname="col2" class="entry"> Deze informatie opgeven... </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><i>Naam van de basisdimensie</i> </p> </td> 
-   <td colname="col2"> <p>De naam van de afmeting de waarvan elementen op wegbrowser verschijnen. </p> </td> 
+   <td colname="col1"> <p><i>Naam van basisdimensie</i> </p> </td> 
+   <td colname="col2"> <p>De naam van de dimensie waarvan de elementen in de padbrowser worden weergegeven. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><i>Naam groepsdimensie</i> </p> </td> 
-   <td colname="col2"> <p>De naam van de afmeting die bepaalt hoe de elementen van de niveauafmeting worden gegroepeerd om de wegen in wegbrowser te vormen. Specifiek, kunnen de elementen van de niveaudimensie verbonden aan één enkele weg in wegbrowser niet meer dan één element van een groepsdimensie overspannen. </p> </td> 
+   <td colname="col1"> <p><i>Naam van groepsdimensie</i> </p> </td> 
+   <td colname="col2"> <p>De naam van de dimensie die bepaalt hoe de elementen van de niveaudimensie worden gegroepeerd om de paden te vormen in een padbrowser. Specifiek, kunnen de elementen van de niveaudimensie verbonden aan één enkele weg in wegbrowser niet meer dan één element van een groepsdimensie overspannen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><i>Naam dimensie niveau</i> </p> </td> 
-   <td colname="col2"> <p>De naam van het niveau (ouder) van de basisdimensie de waarvan elementen u aan wegbrowser sleept. Aangezien u een weg van één element van de basisdimensie aan volgende volgt, beweegt u zich van één element van de niveaudimensie aan volgende. Wanneer u een weg van de elementen van de basisafmeting selecteert, selecteert u gegevens voor de overeenkomstige elementen van de niveauafmeting. De selectie omvat altijd de elementen van de niveaudimensie die op de wortel betrekking hebben, en het wordt verfijnd door meer elementen aan de weg toe te voegen. </p> </td> 
+   <td colname="col1"> <p><i>Naam van niveaudimensie</i> </p> </td> 
+   <td colname="col2"> <p>De naam van het niveau (bovenliggend niveau) van de basisdimensie waarvan u de elementen naar de padbrowser sleept. Als u een pad volgt van het ene element van de basisdimensie naar het volgende, gaat u van het ene element van de niveaudimensie naar het volgende. Wanneer u een pad met basisdimensie-elementen selecteert, selecteert u gegevens voor de corresponderende elementen van de niveaudimensie. De selectie bevat altijd de elementen van de niveaudimensie die betrekking hebben op de hoofdmap en wordt verfijnd door meer elementen aan het pad toe te voegen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>Metrische naam</i> </p> </td> 
-   <td colname="col2"> <p>De naam van metrisch de waarvan waarde voor een bepaald element proportioneel aan de dikte van de weg is die tot dat element leidt. </p> </td> 
+   <td colname="col2"> <p>De naam van de metrische waarde waarvan de waarde voor een bepaald element evenredig is met de dikte van het pad dat naar dat element leidt. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Voor meer informatie over de basisafmeting, de groepsafmeting, de niveauafmeting, en metrisch voor wegbrowser, zie Browsers van de [Weg](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b).
+>Voor meer informatie over de basisafmeting, groepsafmeting, niveauafmeting, en metrisch voor wegbrowser, zie [Browsers van de Weg](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b).
 
-1. In Blocnote, klik **[!UICONTROL File]** > **[!UICONTROL Save As]** om het dossier met een nieuwe naam op te slaan die op de groepsdimensie wordt gebaseerd, d.w.z., de afmetingsnaam *.vw van de* Groep.
+1. Klik in Kladblok op **[!UICONTROL File]** > **[!UICONTROL Save As]** om het bestand op te slaan met een nieuwe naam op basis van de groepsdimensie, dat wil zeggen *Naam van groepsdimensie*.vw.
 
-   Zorg ervoor dat u sparen het dossier aan de Browser van de Weg folder.
+   Sla het bestand op in de map Path Browser.
 
    >[!NOTE]
    >
-   >Om ervoor te zorgen dat uw wegbrowser als [!DNL *.vw] dossier, in het [!DNL Save As] venster wordt opgeslagen, plaats sparen als type aan Alle Dossiers.
+   >Om ervoor te zorgen dat uw wegbrowser als [!DNL *.vw] dossier, in het [!DNL Save As] venster wordt bewaard, plaats sparen als type aan Alle Dossiers.
 
-1. (Facultatief) om de veranderingen ter beschikking te stellen van alle gebruikers van het het werkprofiel, in het [!DNL Profile Manager], klik het vinkje voor het dossier in de [!DNL User] kolom met de rechtermuisknop aan en klik **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. (Optioneel) Als u de wijzigingen beschikbaar wilt maken voor alle gebruikers van het werkprofiel, klikt u in [!DNL Profile Manager] met de rechtermuisknop op het vinkje voor het bestand in de kolom [!DNL User] en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
