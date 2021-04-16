@@ -1,16 +1,16 @@
 ---
-description: Vele web-specifieke configuratiemontages voor Plaats worden bepaald in de Dataset van de Verwerking van het Logboek en van de Transformatie omvat dossiers.
-solution: Analytics
-title: De Montages van de configuratie voor de Gegevens van het Web
-topic: Data workbench
+description: Veel webspecifieke configuratie-instellingen voor Site worden gedefinieerd in Gegevensset voor logverwerking en transformatie van include-bestanden.
+title: Configuratie-instellingen voor webgegevens
 uuid: f7d91bb9-d6b3-49e1-a4dc-c7aba08f2906
+exl-id: 575c2c5b-4453-4522-bde0-feabddaec4c3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '42'
+ht-degree: 0%
 
 ---
 
+# Configuratie-instellingen voor webgegevens{#configuration-settings-for-web-data}
 
-# De Montages van de configuratie voor de Gegevens van het Web{#configuration-settings-for-web-data}
-
-Vele web-specifieke configuratiemontages voor Plaats worden bepaald in de Dataset van de Verwerking van het Logboek en van de Transformatie omvat dossiers.
-
+Veel webspecifieke configuratie-instellingen voor Site worden gedefinieerd in Gegevensset voor logverwerking en transformatie van include-bestanden.
