@@ -1,24 +1,24 @@
 ---
-description: De functionaliteit van de transformatie omvat drie configuratiedossiers die de vereiste parameters voor lezing en het uitvoeren van gegevens bevatten.
-solution: Analytics
-title: Configuratiebestanden voor transformeren
-topic: Data workbench
+description: De functionaliteit van de transformatie omvat drie configuratiedossiers die de vereiste parameters voor het lezen en het uitvoeren van gegevens bevatten.
+title: Configuratiebestanden voor transformatie
 uuid: abb5b7a4-ade6-4658-b3a1-7ce4c2c17507
+exl-id: 9cd5ae3a-e3fc-466f-a6ab-20582001fb4a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 0%
 
 ---
 
+# Configuratiebestanden voor transformatie{#configuration-files-for-transform}
 
-# Configuratiebestanden voor transformeren{#configuration-files-for-transform}
+De functionaliteit van de transformatie omvat drie configuratiedossiers die de vereiste parameters voor het lezen en het uitvoeren van gegevens bevatten.
 
-De functionaliteit van de transformatie omvat drie configuratiedossiers die de vereiste parameters voor lezing en het uitvoeren van gegevens bevatten.
-
-* [Het dossier van Transform.cfg van het Inzicht](../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13)
-* [Het dossier van de Transformatie van het Inzicht Mode.cfg- Dossier](../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-transf-mode-file.md#task-816c4723c08541898cd3449474dee3df)
-* [Het vereiste gebied Definities.cfg- dossier](../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/c-req-field-def-file.md#concept-3697c777c09049ccac0354962e7bb64c)
+* [Het Insight Transform.cfg-bestand](../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13)
+* [Het bestand Insight Transform Mode.cfg](../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-transf-mode-file.md#task-816c4723c08541898cd3449474dee3df)
+* [Het bestand Required field Definition.cfg](../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/c-req-field-def-file.md#concept-3697c777c09049ccac0354962e7bb64c)
 
 >[!NOTE]
 >
->Alvorens u begint om uw implementatie van transformatiefunctionaliteit te vormen, te bevestigen gelieve dat u behoorlijk de van de gegevenswerkbank [!DNL Transform.cfg] [!DNL ransform Mode.cfg] en gegevens werkbankT dossiers en alle de softwareproducten en toepassingen van Adobe hebt geïnstalleerd nodig voor uw implementatie. Voor installatieinstructies, zie de Gids *van de Installatie en van het Beleid van de Producten van de* Server.
-
+>Bevestig voordat u begint met het configureren van de implementatie van de transformatiefunctionaliteit dat u de gegevenswerkbank [!DNL Transform.cfg] en de gegevenswerkbank T [!DNL ransform Mode.cfg] bestanden en alle Adobe-softwareproducten en -toepassingen die nodig zijn voor uw implementatie correct hebt geïnstalleerd. Voor installatieinstructies, zie *de Gids van de Installatie en van het Beleid van de Producten van de Server*.
