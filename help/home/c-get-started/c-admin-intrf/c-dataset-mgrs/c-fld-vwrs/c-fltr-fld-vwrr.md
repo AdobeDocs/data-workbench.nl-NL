@@ -1,34 +1,35 @@
 ---
-description: U kunt de waarden filtreren die in een gebiedskijker worden getoond door naar specifieke tekst te zoeken of door lege rijen uit te filtreren.
-solution: Analytics
-title: Filter binnen een veldviewer
-topic: Data workbench
+description: U kunt de waarden die worden weergegeven in een veldviewer filteren door te zoeken naar specifieke tekst of door lege rijen te filteren.
+title: Filteren in een veldviewer
 uuid: 3788fa03-c898-4e9d-81a0-ecf90376cac6
+exl-id: 0bb781e7-8c1c-4a74-882f-410470782ad2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
+# Filteren binnen een veldviewer{#filter-within-a-field-viewer}
 
-# Filter binnen een veldviewer{#filter-within-a-field-viewer}
+U kunt de waarden die worden weergegeven in een veldviewer filteren door te zoeken naar specifieke tekst of door lege rijen te filteren.
 
-U kunt de waarden filtreren die in een gebiedskijker worden getoond door naar specifieke tekst te zoeken of door lege rijen uit te filtreren.
+**Filteren binnen een veldviewer**
 
-**Om binnen een gebiedskijker te filtreren**
-
-1. Klik binnen de kolom voor het gebied met de rechtermuisknop aan waarvan waarden u wilt zoeken.
+1. Klik met de rechtermuisknop in de kolom voor het veld waarvan u de waarden wilt zoeken.
 1. I
 
-   In het tekstvakje onder [!DNL Search for rows with], typ de tekst waarvoor aan onderzoek. U kunt regelmatige uitdrukkingen voor patroon ook ingaan aanpassing.
+   Typ in het tekstvak onder [!DNL Search for rows with] de tekst waarnaar u wilt zoeken. U kunt ook reguliere expressies invoeren voor overeenkomende patronen.
 
 ![](assets/vis_FieldViewer_Search.png)
 
-De waarden van het gebied die de tekst bevatten of de regelmatige uitdrukkingsvertoning in de gebiedskijker tevredenstellen. Wanneer de onderzoeksresultaten tonen, wordt de kolomnaam benadrukt in rood.
+Veldwaarden die de tekst bevatten of voldoen aan de reguliere-expressieweergave in de veldviewer. Wanneer de zoekresultaten worden weergegeven, wordt de kolomnaam rood gemarkeerd.
 
-Voor informatie over regelmatige uitdrukkingen, zie de Gids *van de Configuratie van de* Dataset.
+Voor informatie over regelmatige uitdrukkingen, zie *de Gids van de Configuratie van de Dataset*.
 
-**Om lege rijen uit te filtreren**
+**Lege rijen uitfilteren**
 
-* Klik binnen de kolom voor het gebied met de rechtermuisknop aan waarvoor u lege rijen wilt uit filtreren en klikken **[!UICONTROL Filter out blank rows]**.
+* Klik met de rechtermuisknop in de kolom voor het veld waarvoor u blanco rijen wilt uitfilteren en klik op **[!UICONTROL Filter out blank rows]**.
 
-Wanneer toegelaten, verschijnt X links van de optie, en de kolomnaam wordt benadrukt in rood.
+Als deze optie is ingeschakeld, wordt er links van de optie een X weergegeven en wordt de kolomnaam rood gemarkeerd.
