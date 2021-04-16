@@ -1,39 +1,40 @@
 ---
 description: Verklaart de Mening van de Duimnagel en de Mening van de Lijst.
-solution: Analytics
-title: Browser van het dashboard Meningen
-topic: Data workbench
+title: Weergaven dashboardbrowser
 uuid: 8e5ef06a-6c5a-4792-a732-fe7574aed8ab
+exl-id: 94da6ee1-30ab-426f-9be3-fd56f172aadb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 0%
 
 ---
 
-
-# Browser van het dashboard Meningen{#dashboard-browser-views}
+# Weergaven dashboardbrowser{#dashboard-browser-views}
 
 Verklaart de Mening van de Duimnagel en de Mening van de Lijst.
 
-Er zijn twee meningen die kunnen worden gebruikt om dashboards binnen Browser van het Dashboard te navigeren: de Miniatuurweergave en de lijstweergave. De mening van de Duimnagel verstrekt duimnagels van dashboards aangezien u doorbladert, terwijl de Mening van de Lijst een meer op detail-georiënteerde lijst-gebaseerde mening van de beschikbare dashboards is.
+Er zijn twee weergaven die kunnen worden gebruikt om door dashboards te navigeren in de dashboardbrowser: de miniatuurweergave en de lijstweergave. De miniatuurweergave bevat miniaturen van dashboards terwijl u bladert, terwijl de lijstweergave een meer gedetailleerde, op tabellen gebaseerde weergave van de beschikbare dashboards is.
 
 ## Miniatuurweergave {#section-b522ce5e6e184ef9a0e1b9a42f7a9ae0}
 
-De mening van de Duimnagel verstrekt een galerij van duimnagels die met de dashboards beantwoorden waarvoor u toegang hebt. Als een duimnagel een standaardpictogram toont, gelieve uw beheerder te contacteren om een duimnagel te hebben die voor dat dashboard wordt gevestigd. De pictogrammen links van de onderzoeksbar staan u toe om tussen de Meningen van de Duimnagel en van de Lijst van een knevel te voorzien.
+De miniatuurweergave bevat een galerie met miniaturen die overeenkomen met de dashboards waartoe u toegang hebt. Als een miniatuur een standaardpictogram weergeeft, neemt u contact op met de beheerder om een miniatuur voor dat dashboard in te stellen. Met de pictogrammen links van de zoekbalk kunt u schakelen tussen miniatuur- en lijstweergaven.
 
 ![](assets/thumbnail.png)
 
-In de duimnagelmening, toont het linkernavigatiepaneel van Browser van het Dashboard de omslaghiërarchie die de opslag van dashboards organiseert. Om de inhoud van een omslag te bekijken, klik op de omslag om zijn inhoud als duimnagels in het centrumpaneel van Browser van het Dashboard te tonen. Als er geen dashboards bewaard in dat niveau van de omslag zijn, zal het bericht &quot;geen dashboards in deze plaats&quot;in het centrumpaneel van het venster tonen.
+In de miniatuurweergave wordt in het navigatievenster aan de linkerkant van de dashboardbrowser de maphiërarchie weergegeven waarin de opslag van dashboards wordt georganiseerd. Als u de inhoud van een map wilt weergeven, klikt u op de map om de inhoud ervan als miniaturen weer te geven in het middelste deelvenster van de dashboardbrowser. Als er geen dashboards in dat niveau van de omslag worden bewaard, zal het bericht &quot;geen dashboards in deze plaats&quot;in het centrum paneel van het venster tonen.
 
-U kunt subfolders ook onderzoeken door op de pijl links van de omslag van belang te klikken. Dit zal een lijst van subfolders en dashboards binnen de omslag uitbreiden u selecteerde. Door een omslag te selecteren die minstens één dashboard bevat, zal het centrumpaneel een duimnagel voor elk van de dashboards tonen die op het niveau van die selectie worden gevestigd. De titel van het centrumpaneel zal ook veranderen om op de weg van de geselecteerde omslag te wijzen.
+U kunt submappen ook verkennen door op de pijl links van de betreffende map te klikken. Hiermee vouwt u een lijst met submappen en dashboards uit in de map die u hebt geselecteerd. Als u een map selecteert die minstens één dashboard bevat, wordt in het middelste deelvenster een miniatuur weergegeven voor elk dashboard dat zich op het niveau van die selectie bevindt. De titel van het middelste deelvenster geeft ook het pad van de geselecteerde map aan.
 
 ![](assets/choose_a_dashboard2.png)
 
-U kunt het dashboard van belang dan selecteren door op het te klikken. Zodra u op een dashboardduimnagel hebt geklikt, zal het rechtse kader met de details over het dashboard bevolken. De dashboardgegevens bevatten een miniatuurweergave van het geselecteerde dashboard, de naam ervan, een korte beschrijving, de eigenaar, de datum van oprichting, de laatste wijzigingsdatum, het profiel of de profielen die worden gebruikt om de gegevens samen te stellen, zichtbaarheidscontroles en een selectie van bewerkingen.
+Vervolgens kunt u het gewenste dashboard selecteren door erop te klikken. Nadat u op een dashboardminiatuur hebt geklikt, wordt het rechterframe gevuld met de details over het dashboard. De dashboarddetails bevatten een miniatuurweergave van het geselecteerde dashboard, de naam, een korte beschrijving, de eigenaar, de aanmaakdatum, de laatste wijzigingsdatum, het profiel of de profielen die worden gebruikt om de gegevens te compileren, de zichtbaarheidsbesturingselementen en een selectie van bewerkingen.
 
 ## Lijstweergave {#section-aa79d51168a7430ea2816413dc6cc73a}
 
-De mening van de Lijst verstrekt op lijst-gebaseerde informatie over de dashboards waarvoor u toegang hebt. Elke rij in de lijst van de Mening van de Lijst vertegenwoordigt een uniek dashboard. Het klikken op kolomkopballen zal u toestaan om de lijst door die kolom in of dalende of stijgende orde te sorteren.
+De lijstmening verstrekt op lijst-gebaseerde informatie over de dashboards waarvoor u toegang hebt. Elke rij in de tabel van de lijstweergave vertegenwoordigt een uniek dashboard. Als u op kolomkoppen klikt, kunt u de tabel op die kolom in aflopende of oplopende volgorde sorteren.
 
 ![](assets/list_view.png)
 
-Het klikken op een dashboardingang zal de details van het dashboard in het rechterpaneel van dashboardbrowser tonen. Om tussen meningen te schakelen, selecteer de gewenste meningsoptie opnieuw.
+Als u op een dashboarditem klikt, worden de details van het dashboard weergegeven in het rechterdeelvenster van de dashboardbrowser. Als u wilt schakelen tussen weergaven, selecteert u de gewenste weergaveoptie opnieuw.
