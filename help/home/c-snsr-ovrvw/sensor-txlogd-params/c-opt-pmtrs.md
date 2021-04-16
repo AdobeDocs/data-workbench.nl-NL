@@ -1,16 +1,15 @@
 ---
 description: Informatie over optionele parameters voor het bestand Sensor txlogd.conf.
-solution: Analytics
 title: Optionele parameters
 uuid: 8515a571-93ce-49cd-9ded-c9273259d0ee
+exl-id: 5141f215-979c-4eb8-8c2c-94eef5815743
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 0%
 
 ---
-
 
 # Optionele parameters{#optional-parameters}
 
@@ -34,7 +33,7 @@ Informatie over optionele parameters voor het bestand Sensor txlogd.conf.
   </tr> 
   <tr> 
    <td colname="col1"> DebugLogPath </td> 
-   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Laat zuivert registreren voor de Webmodule en zender toe. </p> <p>U gebruikt deze parameter wanneer de <span class="wintitle"> sensor</span> niet correct werkt. Nadat deze parameter is ingesteld, moet u een leeg bestand op de opgegeven padlocatie maken en alle gebruikers schrijfrechten geven. Bijvoorbeeld (in een unix-shell op de webserver): 
+   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Laat zuivert registreren voor de Webmodule en zender toe. </p> <p>U gebruikt deze parameter wanneer <span class="wintitle"> Sensor</span> niet correct werkt. Nadat deze parameter is ingesteld, moet u een leeg bestand op de opgegeven padlocatie maken en alle gebruikers schrijfrechten geven. Bijvoorbeeld (in een unix-shell op de webserver): 
      <ul id="ul_7A067014A78048BF9D2F23DC66FF9E24"> 
       <li id="li_11C51EB9B9CC431585ECE9E8648F6122"><span class="filepath"> % cd /var/log</span> </li> 
       <li id="li_C56B2B5D49A543DBB258C5DE099B4AE5"><span class="filepath"> % touch vslog.txt</span> </li> 
@@ -60,7 +59,7 @@ Informatie over optionele parameters voor het bestand Sensor txlogd.conf.
       <li id="li_A175CAF03E51473E990BE4F31F198B42">cs(userAgent) </li> 
       <li id="li_ED38ED31B2644F2FA1C86FF93ADB9CEF">sc (inhoudstype) </li> 
       <li id="li_1173C0027C8A4638BDF35E9719CD9D4C">x-experiment </li> 
-     </ul> </p> <p>Voorbeeld: <span class="filepath"> x-trackingid voor veld uitschakelen</span> </p> </td> 
+     </ul> </p> <p>Voorbeeld: <span class="filepath"> x-trackingid van veld uitschakelen</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ExpFile </td> 
@@ -72,11 +71,11 @@ Informatie over optionele parameters voor het bestand Sensor txlogd.conf.
   </tr> 
   <tr> 
    <td colname="col1"> ExpPartialMatch </td> 
-   <td colname="col2"> <p>Als u gecontroleerde experimenten wilt toelaten om uw volledige plaats of een volledige subdirectory van uw plaats aan een andere plaats opnieuw in kaart te brengen, plaats deze parameter aan "op." De standaardwaarde is "uit". </p> <p>Voorbeeld: <span class="filepath"> ExpPartialMatch uitgeschakeld</span> </p> <p> <p>Opmerking:  Wees zeer voorzichtig wanneer u deze parameter instelt op "on." </p> </p> </td> 
+   <td colname="col2"> <p>Als u gecontroleerde experimenten wilt toelaten om uw volledige plaats of een volledige subdirectory van uw plaats aan een andere plaats opnieuw in kaart te brengen, plaats deze parameter aan "op." De standaardwaarde is "uit". </p> <p>Voorbeeld: <span class="filepath"> ExpPartialMatch off</span> </p> <p> <p>Opmerking:  Wees zeer voorzichtig wanneer u deze parameter instelt op "on." </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> LogAllNewUsers </td> 
-   <td colname="col2"> <p>Bepaalt of de eerste klik van elke nieuwe gebruiker het programma wordt geopend zelfs als de gebruiker om een documenttype verzoekt dat door de parameter ContentFilterExclude wordt gefiltreerd. </p> <p>De standaardwaarde is "nee". </p> <p>Afbeeldingsbestanden worden doorgaans uitgefilterd door de parameter ContentFilterExclude. Als LogAllNewUsers wordt geplaatst aan "ja"en het zeer eerste document een nieuwe gebruiker van de server krijgt is een beeld, dat verzoek wordt geregistreerd. Als de parameter LogAllNewUsers is ingesteld op "no" of helemaal niet is ingesteld (en als wordt aangenomen dat afbeeldingen zijn uitgefilterd door de parameter ContentFilterExclude) en het allereerste document dat een nieuwe gebruiker van de server krijgt, is een afbeelding, wordt dat verzoek niet geregistreerd. </p> <p>Voorbeeld: <span class="filepath"> LogAllNewUsers niet</span> </p> </td> 
+   <td colname="col2"> <p>Bepaalt of de eerste klik van elke nieuwe gebruiker het programma wordt geopend zelfs als de gebruiker om een documenttype verzoekt dat door de parameter ContentFilterExclude wordt gefiltreerd. </p> <p>De standaardwaarde is "nee". </p> <p>Afbeeldingsbestanden worden doorgaans uitgefilterd door de parameter ContentFilterExclude. Als LogAllNewUsers wordt geplaatst aan "ja"en het zeer eerste document een nieuwe gebruiker van de server krijgt is een beeld, dat verzoek wordt geregistreerd. Als de parameter LogAllNewUsers is ingesteld op "no" of helemaal niet is ingesteld (en als wordt aangenomen dat afbeeldingen zijn uitgefilterd door de parameter ContentFilterExclude) en het allereerste document dat een nieuwe gebruiker van de server krijgt, is een afbeelding, wordt dat verzoek niet geregistreerd. </p> <p>Voorbeeld: <span class="filepath"> LogAllNewUsers no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> MaxPageLoadTime </td> 
@@ -84,15 +83,15 @@ Informatie over optionele parameters voor het bestand Sensor txlogd.conf.
   </tr> 
   <tr> 
    <td colname="col1"> PrivacyID </td> 
-   <td colname="col2"> <p>Hiermee kunt u het bijhouden van bezoekers uitschakelen. Deze functie kan worden gebruikt om te voldoen aan de regels voor het weigeren van toegang. </p> <p>Wanneer toegelaten, registreert de <span class="wintitle"> Sensor</span> geen "pakket"voor om het even welke bezoeker van wie V1st koekje aan gespecificeerde PrivacyID wordt geplaatst. Omdat voor deze bezoekers geen informatie wordt geregistreerd, wordt geen informatie over die bezoekers verzonden naar de server <span class="keyword"> van de</span> gegevenswerkbank voor verwerking. </p> <p>Als u deze functie wilt inschakelen, moet u de volgende stappen uitvoeren: 
+   <td colname="col2"> <p>Hiermee kunt u het bijhouden van bezoekers uitschakelen. Deze functie kan worden gebruikt om te voldoen aan de regels voor het weigeren van toegang. </p> <p>Wanneer toegelaten, <span class="wintitle"> Sensor</span> registreert geen "pakket"voor om het even welke bezoeker van wie V1st koekje aan gespecificeerde PrivacyID wordt geplaatst. Aangezien voor deze bezoekers geen gegevens zijn geregistreerd, wordt er geen informatie over deze bezoekers naar de <span class="keyword"> gegevenswerkbankserver</span> verzonden voor verwerking. </p> <p>Als u deze functie wilt inschakelen, moet u de volgende stappen uitvoeren: 
      <ol id="ol_5D658C5E4AB14F419029E0FFC52F1310"> 
-      <li id="li_BF056439F92148169BF592731264C3CD"> PrivacyID moet worden gedefinieerd met de waarde 0 (nul) in het bestand <span class="filepath"> txlogd.conf</span> voor de <span class="wintitle"> Sensor</span>. <p>Voorbeeld: <span class="filepath"> PrivacyID 0</span> </p> </li> 
-      <li id="li_3E20F068C2F94512A92F284C80273B1C">Eigenaars van websites moeten code schrijven om cookies van bezoekers (V1st) zo in te stellen dat de waarde van de cookie-id overeenkomt met de waarde voor PrivacyID die is gedefinieerd als '<span class="filepath"> txlogd.conf</span>'. </li> 
+      <li id="li_BF056439F92148169BF592731264C3CD"> PrivacyID moet met een waarde van 0 (nul) in het <span class="filepath"> txlogd.conf</span> dossier voor <span class="wintitle"> Sensor</span> worden bepaald. <p>Voorbeeld: <span class="filepath"> PrivacyID 0</span> </p> </li> 
+      <li id="li_3E20F068C2F94512A92F284C80273B1C">Eigenaars van websites moeten code schrijven om bezoekerscookies (V1st) zo in te stellen dat de waarde van de cookie-id overeenkomt met de waarde voor PrivacyID gedefinieerd "<span class="filepath"> txlogd.conf</span>". </li> 
      </ol> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SiteTest </td> 
-   <td colname="col2"> <p>Locatie waarnaar de verzender (txlogd) periodiek verzoeken verzendt om te controleren of de website correct werkt. </p> <p>De locatie wordt opgegeven in de volgende indeling, niet als een URL: </p> <p>http,<i>serverAddress,poort/resource</i> </p> <p>waarbij <i>serverAddress</i> servernaam of IP-adres is, is de <i>poort</i> de HTTP-luisterpoort van de server en is de <i>resource</i> de specifieke bron die moet worden aangevraagd (kan een querytekenreeks bevatten). </p> <p>U kunt meerdere SiteTest-regels opgeven. </p> <p>Voorbeeld: <span class="filepath"> SiteTest http,localhost,80,/test.html</span> </p> <p> <p>Opmerking:  Momenteel wordt alleen http ondersteund. </p> </p> </td> 
+   <td colname="col2"> <p>Locatie waarnaar de verzender (txlogd) periodiek verzoeken verzendt om te controleren of de website correct werkt. </p> <p>De locatie wordt opgegeven in de volgende indeling, niet als een URL: </p> <p>http,<i>serverAddress, poort/resource</i> </p> <p>waarbij <i>serverAddress</i> servernaam of IP-adres is, <i>port</i> de HTTP-luisterpoort van de server is en <i>resource</i> de specifieke bron die moet worden aangevraagd (kan een queryreeks bevatten). </p> <p>U kunt meerdere SiteTest-regels opgeven. </p> <p>Voorbeeld: <span class="filepath"> SiteTest http,localhost,80,/test.html</span> </p> <p> <p>Opmerking:  Momenteel wordt alleen http ondersteund. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> TrackingCookie </td> 
@@ -100,7 +99,7 @@ Informatie over optionele parameters voor het bestand Sensor txlogd.conf.
   </tr> 
   <tr> 
    <td colname="col1"> VerifyCertName </td> 
-   <td colname="col2"> <p>Geeft aan of de server moet worden gevalideerd met de CertName-parameter </p> <p>De standaardwaarde is "on." </p> <p>Voorbeeld: <span class="filepath"> VerifyCertName op</span> </p> </td> 
+   <td colname="col2"> <p>Geeft aan of de server moet worden gevalideerd met de CertName-parameter </p> <p>De standaardwaarde is "on." </p> <p>Voorbeeld: <span class="filepath"> VerifyCertName on</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -115,15 +114,15 @@ Informatie over optionele parameters voor het bestand Sensor txlogd.conf.
  <tbody> 
   <tr> 
    <td colname="col1"> IISCaptureBytesSent </td> 
-   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Vertelt de <span class="wintitle"> Sensor</span> IIS die van twee mogelijke het registreren "haken"zou moeten worden gebruikt om een pakket te registreren </p> <p>Gebruik deze parameter wanneer de <span class="wintitle"> Sensor</span> IIS pakketten niet correct registreert. Deze parameter zou aan "weg"worden geplaatst als de standaardregistrerenhaak niet correct werkte. De standaardwaarde is "on." </p> <p>Voorbeeld: <span class="filepath"> IISCaptureBytesVerzonden op</span> </p> </td> 
+   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Vertelt IIS <span class="wintitle"> Sensor</span> die van twee mogelijke het registreren "haken"zou moeten worden gebruikt om een pakket te registreren </p> <p>Gebruik deze parameter wanneer IIS <span class="wintitle"> Sensor</span> pakketten niet correct registreert. Deze parameter zou aan "weg"worden geplaatst als de standaardregistrerenhaak niet correct werkte. De standaardwaarde is "on." </p> <p>Voorbeeld: <span class="filepath"> IISCaptureBytesSent on</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> IISUseAlternateHandler </td> 
-   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Geeft aan met welke <span class="wintitle"> sensor</span> van twee mogelijke "haken" het v1st-cookie moet worden ingesteld. </p> <p>U gebruikt deze parameter wanneer de IIS- <span class="wintitle"> sensor</span> het v1st-cookie niet correct instelt. Deze parameter zou op "ja"worden geplaatst als de standaardhaak niet correct het v1st koekje plaatste. De standaardwaarde is "nee". </p> <p>Voorbeeld: <span class="filepath"> IISUseAlternateHandler n</span> </p> </td> 
+   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Vertelt <span class="wintitle"> Sensor</span> die van twee mogelijke "haken"zou moeten worden gebruikt om v1st koekje te plaatsen. </p> <p>U gebruikt deze parameter wanneer de IIS <span class="wintitle"> Sensor</span> niet het v1st koekje correct plaatst. Deze parameter zou op "ja"worden geplaatst als de standaardhaak niet correct het v1st koekje plaatste. De standaardwaarde is "nee". </p> <p>Voorbeeld: <span class="filepath"> IISUseAlternateHandler no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>NewUserCacheControl </p> <p>CacheControl </p> </td> 
-   <td colname="col2"> <p>Door gebrek, verzendt de <span class="wintitle"> Sensor</span> de reactiekopballen van de geheim voorgeheugencontrole op elk verzoek. Wanneer de eigenschap van de geheim voorgeheugencontrole wordt toegelaten <span class="wintitle"> Sensor</span> verzendt een kopbal van Verloopt met een waarde van Du, 01 Dec 1994 16:00:00 GMT naar browser. </p> <p>U kunt de antwoordtekenreeksen naar wens wijzigen door de volgende twee regels in het bestand <span class="filepath"> txlogd.conf</span> te bewerken: </p> <p> <span class="filepath"> NewUserCacheControl</span> <i>&lt;<span class="filepath"> string1</span>&gt;</i> </p> <p> <span class="filepath"> CacheControl</span> <i>&lt;<span class="filepath"> string2</span>&gt;</i> </p> <p>Voorbeeld: </p> <p> <span class="filepath"> NewUserCacheControl no-cache=Set-Cookie</span> </p> <p> <span class="filepath"> CacheControl private,max-age=0,moet-revalidate</span> </p> <p>Om het verzenden van de kopballen van de de reactie van de geheim voorgeheugencontrole onbruikbaar te maken, typ een koppelteken voor elke lijn zoals hieronder getoond: </p> <p> <span class="filepath"> NewUserCacheControl -</span> </p> <p> <span class="filepath"> CacheControl -</span> </p> </td> 
+   <td colname="col2"> <p>Door gebrek, <span class="wintitle"> Sensor</span> verzendt de antwoordkopballen van de geheim voorgeheugencontrole op elk verzoek. Wanneer de eigenschap van de geheim voorgeheugencontrole <span class="wintitle"> Sensor</span> wordt toegelaten verzendt een kopbal van Verlopen met een waarde van Du, 01 Dec 1994 16:00:00 GMT naar browser. </p> <p>U kunt de antwoordkoorden wijzigen zoals gewenst door de volgende twee lijnen in het <span class="filepath"> txlogd.conf</span> dossier uit te geven: </p> <p> <span class="filepath"> </span> <i>&lt;&gt; NewUserCacheControllerString1</span>&gt;</i><span class="filepath"> </span></p> <p> <span class="filepath"> </span> <i>&lt;&gt; CacheControlString2</span>&gt;</i><span class="filepath"> </span></p> <p>Voorbeeld: </p> <p> <span class="filepath"> NewUserCacheControl no-cache=Set-Cookie</span> </p> <p> <span class="filepath"> CacheControl private,max-age=0,moet-revalidate</span> </p> <p>Om het verzenden van de kopballen van de de reactie van de geheim voorgeheugencontrole onbruikbaar te maken, typ een koppelteken voor elke lijn zoals hieronder getoond: </p> <p> <span class="filepath"> NewUserCacheControl -</span> </p> <p> <span class="filepath"> CacheControl -</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -138,15 +137,15 @@ Informatie over optionele parameters voor het bestand Sensor txlogd.conf.
  <tbody> 
   <tr> 
    <td colname="col1"> ApacheUseAlternateHandler </td> 
-   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Geeft aan met welke <span class="wintitle"> sensor</span> van twee mogelijke "haken" het v1st-cookie moet worden ingesteld. </p> <p>U gebruikt deze parameter wanneer de Apache <span class="wintitle"> Sensor</span> het v1st-cookie niet correct instelt. Deze parameter zou op "ja"worden geplaatst als de standaardhaak niet correct het v1st koekje plaatste. De standaardwaarde is "nee". </p> <p>Voorbeeld: <span class="filepath"> ApacheUseAlternateHandler n</span> </p> </td> 
+   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Vertelt <span class="wintitle"> Sensor</span> die van twee mogelijke "haken"zou moeten worden gebruikt om v1st koekje te plaatsen. </p> <p>U gebruikt deze parameter wanneer de Apache <span class="wintitle"> Sensor</span> de v1st cookie niet correct instelt. Deze parameter zou op "ja"worden geplaatst als de standaardhaak niet correct het v1st koekje plaatste. De standaardwaarde is "nee". </p> <p>Voorbeeld: <span class="filepath"> ApacheUseAlternateHandler no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ApacheUsebothHandlers </td> 
-   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Geeft de <span class="wintitle"> Sensor</span> de opdracht om het v1st-cookie in beide haken in te stellen. </p> <p>U gebruikt deze parameter wanneer de Apache <span class="wintitle"> Sensor</span> het v1st-cookie niet correct instelt. De standaardwaarde is "ja". </p> <p>Als de waarde "yes" is ingesteld en het v1st-cookie niet correct is ingesteld in de eerste haak, wordt de tweede haak gebruikt. Indien ingesteld op "nee", stelt u de parameter ApacheUseAlternateHandler zo in dat deze aangeeft welke haak moet worden gebruikt om het v1st-cookie in te stellen. </p> <p>Voorbeeld: <span class="filepath"> ApacheUsebothHandlers yes</span> </p> </td> 
+   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Instrueert de <span class="wintitle"> Sensor</span> om te proberen het v1st koekje in beide haken te plaatsen. </p> <p>U gebruikt deze parameter wanneer de Apache <span class="wintitle"> Sensor</span> de v1st cookie niet correct instelt. De standaardwaarde is "ja". </p> <p>Als de waarde "yes" is ingesteld en het v1st-cookie niet correct is ingesteld in de eerste haak, wordt de tweede haak gebruikt. Indien ingesteld op "nee", stelt u de parameter ApacheUseAlternateHandler zo in dat deze aangeeft welke haak moet worden gebruikt om het v1st-cookie in te stellen. </p> <p>Voorbeeld: <span class="filepath"> ApacheUsebothHandlers yes</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>NewUserCacheControl </p> <p>CacheControl </p> </td> 
-   <td colname="col2"> <p>Door gebrek, verzendt de <span class="wintitle"> Sensor</span> de reactiekopballen van de geheim voorgeheugencontrole op elk verzoek. Wanneer de eigenschap van de geheim voorgeheugencontrole wordt toegelaten <span class="wintitle"> Sensor</span> verzendt een kopbal van Verloopt met een waarde van Du, 01 Dec 1994 16:00:00 GMT naar browser. </p> <p>U kunt de antwoordtekenreeksen naar wens wijzigen door de volgende twee regels in het bestand <span class="filepath"> txlogd.conf</span> te bewerken: </p> <p> <span class="filepath"> NewUserCacheControl</span> <i>&lt;<span class="filepath"> string1</span>&gt;</i> </p> <p> <span class="filepath"> CacheControl</span> <i>&lt;<span class="filepath"> string2</span>&gt;</i> </p> <p>Voorbeeld: </p> <p> <span class="filepath"> NewUserCacheControl no-cache=Set-Cookie</span> </p> <p> <span class="filepath"> CacheControl private,max-age=0,moet-revalidate</span> </p> <p>Om het verzenden van de kopballen van de de reactie van de geheim voorgeheugencontrole onbruikbaar te maken, typ een koppelteken voor elke lijn zoals hieronder getoond: </p> <p> <span class="filepath"> NewUserCacheControl -</span> </p> <p> <span class="filepath"> CacheControl -</span> </p> <p> <p>Opmerking:  Adobe raadt u aan deze functie niet uit te schakelen. </p> </p> </td> 
+   <td colname="col2"> <p>Door gebrek, <span class="wintitle"> Sensor</span> verzendt de antwoordkopballen van de geheim voorgeheugencontrole op elk verzoek. Wanneer de eigenschap van de geheim voorgeheugencontrole <span class="wintitle"> Sensor</span> wordt toegelaten verzendt een kopbal van Verlopen met een waarde van Du, 01 Dec 1994 16:00:00 GMT naar browser. </p> <p>U kunt de antwoordkoorden wijzigen zoals gewenst door de volgende twee lijnen in het <span class="filepath"> txlogd.conf</span> dossier uit te geven: </p> <p> <span class="filepath"> </span> <i>&lt;&gt; NewUserCacheControllerString1</span>&gt;</i><span class="filepath"> </span></p> <p> <span class="filepath"> </span> <i>&lt;&gt; CacheControlString2</span>&gt;</i><span class="filepath"> </span></p> <p>Voorbeeld: </p> <p> <span class="filepath"> NewUserCacheControl no-cache=Set-Cookie</span> </p> <p> <span class="filepath"> CacheControl private,max-age=0,moet-revalidate</span> </p> <p>Om het verzenden van de kopballen van de de reactie van de geheim voorgeheugencontrole onbruikbaar te maken, typ een koppelteken voor elke lijn zoals hieronder getoond: </p> <p> <span class="filepath"> NewUserCacheControl -</span> </p> <p> <span class="filepath"> CacheControl -</span> </p> <p> <p>Opmerking:  Adobe raadt u aan deze functie niet uit te schakelen. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -161,12 +160,11 @@ Informatie over optionele parameters voor het bestand Sensor txlogd.conf.
  <tbody> 
   <tr> 
    <td colname="col1"> ApacheUseAlternateHandler </td> 
-   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Geeft aan met welke <span class="wintitle"> sensor</span> van twee mogelijke "haken" het v1st-cookie moet worden ingesteld. </p> <p>U gebruikt deze parameter wanneer de Apache <span class="wintitle"> Sensor</span> het v1st-cookie niet correct instelt. Deze parameter zou op "ja"worden geplaatst als de standaardhaak niet correct het v1st koekje plaatste. De standaardwaarde is "nee". </p> <p>Voorbeeld: <span class="filepath"> ApacheUseAlternateHandler n</span> </p> </td> 
+   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Vertelt <span class="wintitle"> Sensor</span> die van twee mogelijke "haken"zou moeten worden gebruikt om v1st koekje te plaatsen. </p> <p>U gebruikt deze parameter wanneer de Apache <span class="wintitle"> Sensor</span> de v1st cookie niet correct instelt. Deze parameter zou op "ja"worden geplaatst als de standaardhaak niet correct het v1st koekje plaatste. De standaardwaarde is "nee". </p> <p>Voorbeeld: <span class="filepath"> ApacheUseAlternateHandler no</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ApacheUsebothHandlers </td> 
-   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Geeft de <span class="wintitle"> Sensor</span> de opdracht om het v1st-cookie in beide haken in te stellen. </p> <p>U gebruikt deze parameter wanneer de Apache <span class="wintitle"> Sensor</span> het v1st-cookie niet correct instelt. De standaardwaarde is "ja". </p> <p>Als de waarde "yes" is ingesteld en het v1st-cookie niet correct is ingesteld in de eerste haak, wordt de tweede haak gebruikt. Indien ingesteld op "nee", stelt u de parameter ApacheUseAlternateHandler zo in dat deze aangeeft welke haak moet worden gebruikt om het v1st-cookie in te stellen. </p> <p>Voorbeeld: <span class="filepath"> ApacheUsebothHandlers yes</span> </p> </td> 
+   <td colname="col2"> <p>Stel deze parameter alleen in wanneer u werkt met Adobe Consulting Services. </p> <p>Instrueert de <span class="wintitle"> Sensor</span> om te proberen het v1st koekje in beide haken te plaatsen. </p> <p>U gebruikt deze parameter wanneer de Apache <span class="wintitle"> Sensor</span> de v1st cookie niet correct instelt. De standaardwaarde is "ja". </p> <p>Als de waarde "yes" is ingesteld en het v1st-cookie niet correct is ingesteld in de eerste haak, wordt de tweede haak gebruikt. Indien ingesteld op "nee", stelt u de parameter ApacheUseAlternateHandler zo in dat deze aangeeft welke haak moet worden gebruikt om het v1st-cookie in te stellen. </p> <p>Voorbeeld: <span class="filepath"> ApacheUsebothHandlers yes</span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
