@@ -1,69 +1,70 @@
 ---
-description: Binnen de omslag van Werkruimten van uw de installatiefolder van de Werkbank van Gegevens, specificeert een folder.lock- dossier of de werkruimten in die bepaalde omslag gesloten zijn, terwijl een werkruimte name.lock- dossier specificeert of een bepaalde werkruimte gesloten is.
-solution: Analytics
-title: Folder.lock en werkruimte.lock- dossiers
-topic: Data workbench
+description: In de map Workspaces van de installatiemap van uw Data Workbench geeft een bestand folder.lock aan of de werkruimten in die map zijn vergrendeld, terwijl een bestand workspace name.lock opgeeft of een bepaalde werkruimte is vergrendeld.
+title: Map.lock en workspace.lock, bestanden
 uuid: d4c69e16-0596-4542-854f-bc614167ae80
+exl-id: 980b8692-8aa5-481f-b6bc-33836d8a3a76
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '601'
+ht-degree: 0%
 
 ---
 
+# Map.lock en workspace.lock, bestanden{#folder-lock-and-workspace-lock-files}
 
-# Folder.lock en werkruimte.lock- dossiers{#folder-lock-and-workspace-lock-files}
+In de map Workspaces van de installatiemap van uw Data Workbench geeft een bestand folder.lock aan of de werkruimten in die map zijn vergrendeld, terwijl een bestand workspace name.lock opgeeft of een bepaalde werkruimte is vergrendeld.
 
-Binnen de omslag van Werkruimten van uw de installatiefolder van de Werkbank van Gegevens, specificeert een folder.lock- dossier of de werkruimten in die bepaalde omslag gesloten zijn, terwijl een werkruimte name.lock- dossier specificeert of een bepaalde werkruimte gesloten is.
+Wanneer u volledige mappen vergrendelt, kunt u deze vergrendelen op het mapniveau Workspaces of op submapniveau (tabblad). U kunt ook al uw mappen vergrendelen of ontgrendelen (op het mapniveau Workspaces) en vervolgens de uitzonderingen voor bepaalde submappen opgeven (met behulp van [!DNL folder.lock]-bestanden) of bepaalde werkruimten (met behulp van *werkruimtenaam*.lock-bestanden).
 
-Wanneer het sluiten van volledige omslagen, kunt u hen op het de omslagniveau van Werkruimten of op het subfolder (lusje) niveau sluiten. U kunt ook al uw omslagen (op het de omslagniveau van Werkruimten) sluiten of openen, dan de uitzonderingen voor bepaalde sub-omslagen (gebruikend [!DNL folder.lock] dossiers) of bepaalde werkruimten (gebruikend *werkruimtenaam*.lock- dossiers) specificeren.
+In het volgende voorbeeld van [!DNL Profile Manager] worden drie elementen gemarkeerd:
 
-Het volgende voorbeeld van de [!DNL Profile Manager] hoogtepunten drie elementen:
+* Een [!DNL folder.lock]-bestand voor de hoofdmap Workspaces
+* Een [!DNL Monthly Numbers.lock]-bestand voor het [!DNL Monthly Numbers.vw]-werkruimtebestand
 
-* Een [!DNL folder.lock] dossier voor de belangrijkste omslag van Werkruimten
-* Een [!DNL Monthly Numbers.lock] dossier voor het [!DNL Monthly Numbers.vw] werkruimtedossier
-
-* Een [!DNL folder.lock] dossier voor de subfolder van de Werkruimten \ van de Douane
+* Een [!DNL folder.lock]-bestand voor de submap Workspaces\Custom
 
 ![](assets/wsp_Locking_lockFiles.png)
 
-In dit voorbeeld, wordt het [!DNL Workspaces folder.lock] dossier geplaatst aan gesloten, die alle werkruimten in deze instantie van de Werkbank van Gegevens sluit. Het sub-omslagdossier van de Werkruimten \ van de Douane wordt geplaatst aan ontgrendeld, dat alle werkruimten op de [!DNL folder.lock] [!DNL Custom] tabel ontgrendelt. Tot slot wordt het [!DNL Monthly Numbers.lock] dossier geplaatst aan gesloten, die de Maandelijkse werkruimte van de Aantallen sluit.
+In dit voorbeeld is het [!DNL Workspaces folder.lock]-bestand ingesteld op vergrendeld, waardoor alle werkruimten in deze instantie van Data Workbench worden vergrendeld. De submap [!DNL folder.lock] van Workspaces\Custom is ingesteld op ontgrendeld, waardoor alle werkruimten op het tabblad [!DNL Custom] worden ontgrendeld. Tot slot wordt het [!DNL Monthly Numbers.lock] dossier geplaatst aan gesloten, die de werkruimte van Maandelijkse Aantallen sluit.
 
 ## .lock-bestanden maken {#section-c4f78b4b43c347368a376904effb41d2}
 
-U kunt een [!DNL new folder.lock] dossier tot stand brengen gebruikend de [!DNL Create menu] optie in [!DNL Profile Manager] of [!DNL Workspaces Manager]. U kunt een [!DNL folder.lock] of *werkruimte ook creëren - noem*.lock- dossier door een bestaand [!DNL .lock] dossier te kopiëren en te kleven in de aangewezen omslag, de naam van het dossier te veranderen (voor *werkruimte - noem*.lock- dossiers slechts), en het plaatsen in het dossier indien nodig te veranderen.
+U kunt een [!DNL new folder.lock] dossier tot stand brengen gebruikend [!DNL Create menu] optie in [!DNL Profile Manager] of [!DNL Workspaces Manager]. U kunt ook een [!DNL folder.lock]- of *werkruimtenaam*.lock-bestand maken door een bestaand [!DNL .lock]-bestand naar de juiste map te kopiëren en te plakken, waarbij de naam van het bestand wordt gewijzigd (alleen voor *werkruimtenaam*.lock-bestanden) en de instelling in het bestand indien nodig wordt gewijzigd.
 
-**Om een nieuw folder.lock- dossier te creëren**
+**Een nieuw bestand folder.lock maken**
 
-1. In de Werkbank van Gegevens, open de [!DNL Workspaces Manager] door binnen een werkruimte met de rechtermuisknop te klikken en te klikken **[!UICONTROL Manage]** > **[!UICONTROL Profile]** > **[!UICONTROL Workspaces Manager]**.
-1. Klik de omslag waarvoor u een [!DNL folder.lock] dossier wilt tot stand brengen.
-1. In de [!DNL User] kolom voor die omslag, klik in de cel met de rechtermuisknop aan en klik **[!UICONTROL Create]** > **[!UICONTROL folder.lock]**. Er verschijnt een [!DNL new folder.lock] bestand. [!DNL New folder.lock] de dossiers worden geplaatst aan [ontgrendeld] door gebrek.
-1. (Facultatief) als u het plaatsen in het dossier moet veranderen:
+1. Open in Data Workbench de [!DNL Workspaces Manager] door met de rechtermuisknop in een werkruimte te klikken en **[!UICONTROL Manage]** > **[!UICONTROL Profile]** > **[!UICONTROL Workspaces Manager]** te klikken.
+1. Klik op de map waarvoor u een [!DNL folder.lock]-bestand wilt maken.
+1. Klik in de kolom [!DNL User] voor die map met de rechtermuisknop in de cel en klik op **[!UICONTROL Create]** > **[!UICONTROL folder.lock]**. Er wordt een [!DNL new folder.lock]-bestand weergegeven. [!DNL New folder.lock] bestanden worden standaard  [] ontgrendeld.
+1. (Optioneel) Als u de instelling in het bestand wilt wijzigen:
 
-   1. Klik het vinkje voor het dossier met de rechtermuisknop aan.
-   1. Klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Het [!DNL folder.lock] bestand wordt geopend.
+   1. Klik met de rechtermuisknop op het vinkje voor het bestand.
+   1. Klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Het [!DNL folder.lock] dossier opent.
 
-   1. Verander het plaatsen in [gesloten].
-   1. Sparen en sluit het dossier.
+   1. Wijzig de instelling in [locked].
+   1. Sla het bestand op en sluit het.
 
-1. Om dit de instelling te maken voor alle gebruikers die met hetzelfde werkprofiel werken, klikt u met de rechtermuisknop op het vinkje voor het bestand en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. Als u deze instelling wilt instellen voor alle gebruikers die met hetzelfde werkprofiel werken, klikt u met de rechtermuisknop op het vinkje voor het bestand en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
 
-De werkruimten in deze omslag zijn nu gesloten of geopend volgens het plaatsen in het nieuwe dossier.
+De werkruimten in deze map zijn nu vergrendeld of ontgrendeld volgens de instelling in het nieuwe bestand.
 
-**Om een.lock- dossier van een bestaand dossier te creëren**
+**Een .lock-bestand maken van een bestaand bestand**
 
-1. In [!DNL Profile Manager] of [!DNL Workspaces Manager], klik het vinkje voor een bestaand [!DNL .lock] dossier met de rechtermuisknop aan en klik **[!UICONTROL Copy]**.
-1. In de [!DNL User] kolom voor de omslag waarin u het [!DNL .lock] dossier wilt kleven, klik in de cel met de rechtermuisknop aan en klik **[!UICONTROL Paste]**.
-1. Als dit dossier wordt gebruikt om een individuele werkruimte te sluiten, klik het vinkje voor het [!DNL .lock] dossier in de [!DNL User] kolom met de rechtermuisknop aan en verander zijn naam op het [!DNL File] gebied om de naam van de werkruimte aan te passen die u wilt sluiten.
+1. Klik in [!DNL Profile Manager] of [!DNL Workspaces Manager] met de rechtermuisknop op het vinkje voor een bestaand [!DNL .lock]-bestand en klik op **[!UICONTROL Copy]**.
+1. Klik in de kolom [!DNL User] voor de map waarin u het [!DNL .lock]-bestand wilt plakken met de rechtermuisknop in de cel en klik op **[!UICONTROL Paste]**.
+1. Als dit bestand wordt gebruikt om een afzonderlijke werkruimte te vergrendelen, klikt u met de rechtermuisknop op het vinkje voor het bestand [!DNL .lock] in de kolom [!DNL User] en wijzigt u de naam in het veld [!DNL File] zodat deze overeenkomt met de naam van de werkruimte die u wilt vergrendelen.
 
-   Bijvoorbeeld, om de [!DNL Monthly Numbers.vw] werkruimte te sluiten, zou u het dossier &quot; [!DNL Monthly Numbers.lock]&quot; noemen.Als dit dossier wordt gebruikt om een individuele werkruimte te sluiten, klik het vinkje voor het [!DNL .lock] dossier in de [!DNL User] kolom met de rechtermuisknop aan en verander zijn naam op het [!DNL File] gebied om de naam van de werkruimte aan te passen die u wilt sluiten. Bijvoorbeeld, om de [!DNL Monthly Numbers.vw] werkruimte te sluiten, zou u het dossier &quot; [!DNL Monthly Numbers.lock]&quot; noemen.
+   Als u bijvoorbeeld de werkruimte [!DNL Monthly Numbers.vw] wilt vergrendelen, geeft u het bestand de naam &quot;[!DNL Monthly Numbers.lock]&quot;.Als dit bestand wordt gebruikt om een afzonderlijke werkruimte te vergrendelen, klikt u met de rechtermuisknop op het vinkje voor het bestand [!DNL .lock] in de kolom [!DNL User] en wijzigt u de naam in het veld [!DNL File] zodat deze overeenkomt met de naam van de werkruimte die u wilt vergrendelen. Als u bijvoorbeeld de werkruimte [!DNL Monthly Numbers.vw] wilt vergrendelen, geeft u het bestand de naam &quot;[!DNL Monthly Numbers.lock]&quot;.
 
-1. Om het plaatsen in het dossier te veranderen:
+1. U wijzigt de instelling in het bestand als volgt:
 
-   1. Klik het vinkje voor het dossier met de rechtermuisknop aan.
-   1. Klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Het [!DNL .lock] bestand wordt geopend.
+   1. Klik met de rechtermuisknop op het vinkje voor het bestand.
+   1. Klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Het [!DNL .lock] dossier opent.
 
-   1. Verander het plaatsen in [gesloten] of [ontgrendeld].
-   1. Sparen en sluit het dossier.
+   1. Wijzig de instelling in [locked] of [unlocked].
+   1. Sla het bestand op en sluit het.
 
-1. Om dit de instelling te maken voor alle gebruikers die met hetzelfde werkprofiel werken, klikt u met de rechtermuisknop op het vinkje voor het bestand en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. Als u deze instelling wilt instellen voor alle gebruikers die met hetzelfde werkprofiel werken, klikt u met de rechtermuisknop op het vinkje voor het bestand en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
 
 De geselecteerde werkruimten zijn nu vergrendeld of ontgrendeld volgens de instelling in het nieuwe bestand.
