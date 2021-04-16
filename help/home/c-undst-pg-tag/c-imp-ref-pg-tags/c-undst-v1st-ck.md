@@ -1,29 +1,30 @@
 ---
-description: De plaats gebruikt koekjes om bezoekers aan uw website uniek te identificeren en hun gedrag in tijd te volgen.
-solution: Analytics
-title: Het begrijpen van de v1st Koekje
-topic: Data workbench
+description: De site gebruikt cookies om bezoekers van uw website op unieke wijze te identificeren en hun gedrag in de loop der tijd te volgen.
+title: De v1st-cookie begrijpen
 uuid: 6112cafe-51e3-42f0-8554-4a653dea782a
+exl-id: c5e8e1cb-686b-4d31-821e-60beb2808f80
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 0%
 
 ---
 
+# De v1st-cookie{#understanding-the-v-st-cookie}
 
-# Het begrijpen van de v1st Koekje{#understanding-the-v-st-cookie}
+De site gebruikt cookies om bezoekers van uw website op unieke wijze te identificeren en hun gedrag in de loop der tijd te volgen.
 
-De plaats gebruikt koekjes om bezoekers aan uw website uniek te identificeren en hun gedrag in tijd te volgen.
+De eerste keer dat een bepaalde browser (als bezoeker beschouwd) een verzoek indient van uw website, werkt [!DNL Sensor] samen met uw webserver om een permanente cookie, cs(cookie)(v1st), in te stellen die intern in het systeem wordt geïnterpreteerd als x-trackingid. Deze permanente cookie wordt ingesteld naast eventuele andere cookies die uw site anders instelt. Met dit cookie kunt u uw bezoekers tijdens meerdere sessies bijhouden. Hierdoor zijn veel soorten analyses mogelijk die anders niet mogelijk zijn.
 
-De eerste keer dat een bepaalde browser (als bezoeker beschouwd) een verzoek indient op uw website, [!DNL Sensor] werkt met uw webserver om een persistent cookie, cs(cookie)(v1st), in te stellen, wat intern binnen het systeem wordt geïnterpreteerd als x-trackingid. Dit persistente cookie wordt ingesteld naast een ander cookie dat je site anders kan instellen. Dit koekje optimaliseert uw capaciteit om uw bezoekers over veelvoudige zittingen te volgen, die vele soorten analyse toelaat die anders onmogelijk zijn.
+[!DNL Sensor] Wijst een 64-bits numerieke sleutel toe in het cookie om nieuwe bezoekers te identificeren die een aanvraag van de site indienen als een unieke id. Wanneer [!DNL Sensor] een verzoek van browser ziet, controleert het om te zien of &quot;cs(cookie)(v1st)&quot;, een eerste partij blijvend koekje dat door [!DNL Sensor] wordt geplaatst, in de verzoekgegevens bestaat. Als cs(cookie)(v1st) niet aanwezig is, [!DNL Sensor], geeft u de browser via uw webserver de opdracht deze in te stellen. In tegenstelling tot andere oplossingen kan [!DNL Sensor] dit cookie instellen op het eerste verzoek van de bezoeker.
 
-[!DNL Sensor] wijst een numerieke sleutel met 64 bits in het koekje toe om nieuwe bezoekers te identificeren die een verzoek van de plaats als uniek herkenningsteken indienen. Wanneer de gebruiker een verzoek van een browser [!DNL Sensor] ziet, controleert hij of &quot;cs (cookie)(v1st)&quot;, een eerste-partij persistente cookie die is ingesteld door, [!DNL Sensor]voorkomt in de aanvraaggegevens. Als cs (koekje) (v1st) niet aanwezig is, [!DNL Sensor]door uw Webserver, vertelt browser om het te plaatsen. In tegenstelling tot andere oplossingen, [!DNL Sensor] kan dit koekje op het eerste verzoek van de bezoeker plaatsen.
-
-Hieronder is de standaard persistente cookie header die naar de browser wordt gestuurd op zijn eerste verzoek van je site door je webserver, in de richting van [!DNL Sensor]. Het formaat kan op het tijdstip van configuratie worden bepaald als een verschillende naam of een vervaldatum wordt gewenst. Bijvoorbeeld:
+Hieronder ziet u de standaard permanente cookie-header die op uw eerste verzoek van uw site naar de browser wordt gestuurd door uw webserver, op de richting van [!DNL Sensor]. De indeling kan op het moment van configuratie worden gedefinieerd als een andere naam of vervaldatum gewenst is. Bijvoorbeeld:
 
 ```
 Set-Cookie:v1st=3D80DCA944D60E16; path=/; expires=Wed, 19 Feb 2020 14:28:00 GMT
 ```
 
-Dit koekje wordt geplaatst enkel eens, op het allereerste verzoek dat door die bezoeker aan uw plaats wordt gedaan. Het wordt dan verzameld bij die bezoeker telkens als browser een verzoek (of pagina of ingebed objecten verzoek) van uw plaats in de toekomst indient. Het koekje is zeer klein in grootte om de hoeveelheid bandbreedte te minimaliseren die wordt gebruikt om het aan uw servers met elk verzoek van dat browser aan uw plaats over te brengen.
+Deze cookie wordt slechts eenmaal ingesteld op het allereerste verzoek dat die bezoeker aan uw site heeft gedaan. Deze wordt vervolgens bij die bezoeker verzameld telkens wanneer die browser in de toekomst een aanvraag voor uw site indient (pagina of verzoek om een ingesloten object). Het cookie is erg klein van formaat om de hoeveelheid bandbreedte te minimaliseren die wordt gebruikt om het naar uw servers over te brengen met elke aanvraag van die browser naar uw site.
 
-Het goedkeuren van een blijvend koekje is bij browser discreet. De meeste webgebruikers begrijpen wat cookies doen en erkennen ook dat cookies van de eerste partij een waardevol voordeel voor hen zijn omdat ze de mogelijkheid bieden om de inhoud van de site aan te passen aan hun voorkeuren. Deze koekjes van de eerste-partij worden niet geblokkeerd door de standaardveiligheidsmontages van populaire browsers. Als een gebruiker verkiest om de koekjes van de eerste-partij te blokkeren, worden hun verzoeken van de paginamening nog geregistreerd, maar de metingsgegevens van die verzoeken kunnen niet betrouwbaar gecorreleerd zijn met een bepaalde bezoeker of hun zittingen op de plaats. Vele plaatsen, vooral de verfijnde dynamische plaatsen, gebruiken reeds de koekjes van de eerste-partij, die in veel gevallen noodzakelijk zijn om Webtoepassingen toe te laten om voor de bezoeker te werken. Een stap terug van een hardnekkig koekje is een zittingskoekje, dat een reeks verzoeken toestaat om samen in een zitting te worden vastgebonden, maar intersessiebezoeker het volgen niet toestaat. [!DNL Site] is in staat om bezoekersgegevens te sessioniseren op basis van sessiecookies of op basis van IP-nummer, maar beide methoden tasten aanzienlijk af van de soorten en de waarde van analyses die kunnen worden uitgevoerd met [!DNL Site] of een ander webactiviteitsanalyse- en rapportagesysteem.
+Het accepteren van een permanente cookie is een beslissing van de browser. De meeste webgebruikers begrijpen wat cookies doen en herkennen ook dat cookies van de eerste partij een waardevol voordeel voor hen opleveren doordat ze site-inhoud aan hun voorkeuren kunnen aanpassen. Deze cookies van de eerste partij worden niet geblokkeerd door de standaardbeveiligingsinstellingen van populaire browsers. Als een gebruiker cookies van de eerste partij blokkeert, worden de aanvragen voor de paginaweergave nog steeds geregistreerd, maar kunnen de meetgegevens van die aanvragen niet betrouwbaar worden gecorreleerd met een bepaalde bezoeker of zijn sessies op de site. Veel sites, vooral geavanceerde dynamische sites, maken al gebruik van cookies van andere bedrijven, die in veel gevallen nodig zijn om webtoepassingen voor de bezoeker te laten werken. Een stap terug van een blijvend cookie is een sessiecookie, waardoor een reeks verzoeken kan worden samengevoegd tot een sessie, maar bezoekers niet kunnen worden bijgehouden tijdens een sessie. [!DNL Site] kan bezoekersgegevens sessioniseren op basis van sessiecookies of op basis van IP-nummer, maar beide methoden zijn aanzienlijk nadelig voor de typen en de waarde van de analyse die met  [!DNL Site] of een ander webactiviteitanalyse- en rapportagesysteem kunnen worden uitgevoerd.
