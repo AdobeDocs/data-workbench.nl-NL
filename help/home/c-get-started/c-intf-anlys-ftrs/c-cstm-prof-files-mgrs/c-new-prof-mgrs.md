@@ -1,42 +1,43 @@
 ---
-description: De profielmanager toont alle folders verbonden aan uw werkend profiel.
-solution: Analytics
+description: In Profielbeheer worden alle directory's weergegeven die aan uw werkprofiel zijn gekoppeld.
 title: Profielbeheer maken
-topic: Data workbench
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
+exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 0%
 
 ---
 
-
 # Profielbeheer maken{#create-a-profile-manager}
 
-De profielmanager toont alle folders verbonden aan uw werkend profiel.
+In Profielbeheer worden alle directory&#39;s weergegeven die aan uw werkprofiel zijn gekoppeld.
 
-U kunt tot subdirectory van willen toegang hebben [!DNL Profile Manager] zonder het moeten zijn volledige folderstructuur navigeren. Bijvoorbeeld, laten de [!DNL Metrics] en [!DNL Workspaces] menuopties beschikbaar op het [!DNL Manage] menu van het menu van het werkruimtevenster u toe om de de Metriek van de Manager van het Profiel en omslagen van de Werkruimten, respectievelijk te openen.
+U kunt tot subdirectory van [!DNL Profile Manager] willen toegang hebben zonder het moeten zijn volledige folderstructuur navigeren. Met de menuopties [!DNL Metrics] en [!DNL Workspaces] in het menu [!DNL Manage] van het menu van het werkruimtevenster kunt u bijvoorbeeld respectievelijk de mappen Metriek en Werkruimten van Profielbeheer openen.
 
-Voor meer informatie over [!DNL Profile Manager], zie [de Manager](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)van het Profiel.
+Zie [Profielbeheer](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html) voor meer informatie over [!DNL Profile Manager].
 
-Door gebrek hebt u toegang tot de volgende managers:
+Standaard hebt u toegang tot de volgende managers:
 
-* **[!DNL Metrics Manager]:**Toont de inhoud van de omslag van de Metriek van de Manager van het Profiel. U kunt, de metriek openen uitgeven, verwijderen of kopiëren die binnen elk profiel wordt bepaald.
-* **[!DNL Reports Manager]:**Toont de inhoud van de omslag van de Rapporten van de Manager van het Profiel. U kunt, rapportwerkruimten of[!DNL report.cfg]dossiers openen uitgeven, verwijderen of kopiëren.
+* **[!DNL Metrics Manager]:** Hiermee geeft u de inhoud van de map Metrics van Profielbeheer weer. U kunt de metriek openen, bewerken, verwijderen of kopiëren die in elk profiel is gedefinieerd.
+* **[!DNL Reports Manager]:** Hiermee geeft u de inhoud van de map Rapporten van Profielbeheer weer. U kunt rapportwerkruimten of [!DNL report.cfg]-bestanden openen, bewerken, verwijderen of kopiëren.
 
-* **[!DNL Workspaces Manager]:**Toont de inhoud van de omslag van de Werkruimten van de Manager van het Profiel. Alle dossiers voor het vormen van de lusjes van de[!DNL Worktop]lusjes worden hier gevestigd. Zie Tabs[Aanpassen](../../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)voor bureaublad.
+* **[!DNL Workspaces Manager]:** Hiermee geeft u de inhoud van de map Workspaces van Profielbeheer weer. Alle bestanden voor het configureren van de tabbladen van [!DNL Worktop] bevinden zich hier. Zie [Werkdesktoptabs aanpassen](../../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md).
 
-De Werkbank van gegevens laat u toe om extra profielmanagers tot stand te brengen die één subdirectory van tonen [!DNL Profile Manager]. Elke manager die u creeert moet een [!DNL .vw] dossier hebben dat de [!DNL Profile Manager] folder specificeert de waarvan inhoud het en de eigenschappen van dat venster toont. U kunt het [!DNL .vw] dossier voor om het even welke verstrekte managers als malplaatje gebruiken.
+Met Data Workbench kunt u extra profielmanagers maken die één submap van de [!DNL Profile Manager] weergeven. Elke manager die u creeert moet een [!DNL .vw] dossier hebben dat [!DNL Profile Manager] folder specificeert waarvan inhoud het toont en de eigenschappen van dat venster. U kunt het [!DNL .vw] dossier voor om het even welke verstrekte managers als malplaatje gebruiken.
 
-**Een profielbeheer maken**
+**Profielbeheer maken**
 
-1. In [!DNL Profile Manager], klik de **[!UICONTROL Menu]** folder om zijn inhoud te bekijken.
-1. Binnen de folder van het Menu, klik de **[!UICONTROL Admin]** folder en toen de **[!UICONTROL Profile]** folder. De [!DNL .vw] dossiers voor de bestaande managers worden hier gevestigd.
-1. In de kolom van de *profielnaam* , klik het vinkje voor één van de [!DNL .vw] dossiers (bijvoorbeeld, [!DNL Workspaces.vw]) met de rechtermuisknop aan, dan klik **[!UICONTROL Make Local]**.
+1. Klik in [!DNL Profile Manager] op de map **[!UICONTROL Menu]** om de inhoud ervan weer te geven.
+1. Klik in de map Menu op de map **[!UICONTROL Admin]** en vervolgens op de map **[!UICONTROL Profile]**. De [!DNL .vw] dossiers voor de bestaande managers worden hier gevestigd.
+1. Klik in de kolom *profielnaam* met de rechtermuisknop op het vinkje voor een van de [!DNL .vw]-bestanden (bijvoorbeeld [!DNL Workspaces.vw]) en klik vervolgens op **[!UICONTROL Make Local]**.
 
-   Een vinkje voor het dossier verschijnt in de [!DNL User] kolom.
+   Er wordt een vinkje voor het bestand weergegeven in de kolom [!DNL User].
 
-1. Klik het vinkje voor het [!DNL .vw] dossier in de [!DNL User] kolom met de rechtermuisknop aan en klik **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
-1. Op het [!DNL Profile Path] gebied, typ de [!DNL Profile Manager] folder waarvoor u een nieuwe manager wilt tot stand brengen. Ben zeker om de schuine streep (/) na de foldernaam te omvatten.
+1. Klik met de rechtermuisknop op het vinkje voor het [!DNL .vw]-bestand in de kolom [!DNL User] en klik **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Typ in het veld [!DNL Profile Path] de map [!DNL Profile Manager] waarvoor u een nieuwe manager wilt maken. Zorg ervoor dat u de schuine streep (/) achter de mapnaam opneemt.
 
    ```
    window = simpleBorderWindow:
@@ -50,9 +51,8 @@ De Werkbank van gegevens laat u toe om extra profielmanagers tot stand te brenge
      size = v3d: (830, 900, 0)
    ```
 
-1. In Blocnote, klik **[!UICONTROL File]** > **[!UICONTROL Save As]** om het uitgegeven dossier aan de de installatiemap *van de Werkbank van* Gegevens op te slaan \User\*working profiel name*\Menu\Admin\Profile Management.
+1. Klik in Kladblok op **[!UICONTROL File]** > **[!UICONTROL Save As]** om het bewerkte bestand op te slaan in de installatiemap *Data Workbench*\User\*werkprofielnaam*\Menu\Admin\Profile Management.
 
-   Ben zeker om de naam van het [!DNL .vw] dossier te veranderen om op de folder te wijzen [!DNL Profile Manager] waaraan het beantwoordt.
+   Vergeet niet de naam van het [!DNL .vw]-bestand te wijzigen om de map weer te geven in de [!DNL Profile Manager] die het bestand benadert.
 
-1. (Facultatief) om de veranderingen beschikbaar te maken voor alle gebruikers van het het werkprofiel, klik het vinkje voor het [!DNL .vw] dossier in de [!DNL User] kolom met de rechtermuisknop aan en klik **[!UICONTROL Save to]** > &lt; **[!UICONTROL working profile name]**>.
-
+1. (Optioneel) Als u de wijzigingen beschikbaar wilt maken voor alle gebruikers van het werkprofiel, klikt u met de rechtermuisknop op het vinkje voor het bestand [!DNL .vw] in de kolom [!DNL User] en klikt u op **[!UICONTROL Save to]** > &lt; **[!UICONTROL working profile name]**>.
