@@ -1,21 +1,19 @@
 ---
-description: 'null'
-solution: Analytics,Analytics
+description: De parameter ExpPartialMatch wijzigen (optioneel)
 title: De parameter ExpPartialMatch wijzigen (optioneel)
-topic: Data workbench
 uuid: 15ed33cc-5ec8-45b2-a4eb-d1941962ca9d
+exl-id: 8ad45368-85a4-4865-b66b-52c29c28799c
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 1%
+source-wordcount: '82'
+ht-degree: 0%
 
 ---
 
-
 # De parameter ExpPartialMatch wijzigen (optioneel){#modifying-the-exppartialmatch-parameter-optional}
 
-Als u gecontroleerde experimenten wilt toelaten om uw volledige website of een volledige subdirectory van uw website aan een andere plaats opnieuw in kaart te brengen, kunt u de parameter ExpPartialMatch in het [!DNL txlogd.conf] dossier aan &quot;op.&quot;plaatsen De standaardwaarde is &quot;uit&quot;.
+Als u gecontroleerde experimenten wilt toelaten om uw volledige website of een volledige subdirectory van uw website aan een andere plaats opnieuw toe te wijzen, kunt u de parameter ExpPartialMatch in het [!DNL txlogd.conf] dossier aan &quot;plaatsen.&quot; De standaardwaarde is &quot;uit&quot;.
 
 Hieronder ziet u een voorbeeld van de parameter ExpPartialMatch:
 
