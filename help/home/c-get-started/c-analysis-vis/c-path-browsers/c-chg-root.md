@@ -1,42 +1,42 @@
 ---
-description: U kunt de wortel van wegbrowser veranderen door of een getoond element als wortel aan te wijzen of een nieuw element toe te voegen aan de visualisatie.
-solution: Analytics
+description: U kunt de hoofdmap van een padbrowser wijzigen door een weergegeven element aan te wijzen als basis of door een nieuw element aan de visualisatie toe te voegen.
 title: De hoofdmap van de padbrowser wijzigen
-topic: Data workbench
 uuid: 0bb9b004-9736-411b-bd22-cac04f4733a6
+exl-id: 09842b93-af26-42b9-9395-a02b86978b21
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 0%
 
 ---
 
-
 # De hoofdmap van de padbrowser wijzigen{#change-the-path-browser-s-root}
 
-U kunt de wortel van wegbrowser veranderen door of een getoond element als wortel aan te wijzen of een nieuw element toe te voegen aan de visualisatie.
+U kunt de hoofdmap van een padbrowser wijzigen door een weergegeven element aan te wijzen als basis of door een nieuw element aan de visualisatie toe te voegen.
 
 >[!NOTE]
 >
->U kunt geen begin of eindknoop als wortel van wegbrowser plaatsen.
+>U kunt een begin- of eindknooppunt niet instellen als de basis van een padbrowser.
 
-**Om de wortel van wegbrowser te plaatsen**
+**De hoofdmap van een padbrowser instellen**
 
-* Klik het gewenste element met de rechtermuisknop aan en klik **[!UICONTROL Set as root]**.
+* Klik met de rechtermuisknop op het gewenste element en klik op **[!UICONTROL Set as root]**.
 
-**Om een nieuw element aan wegbrowser toe te voegen**
+**Een nieuw element toevoegen aan de padbrowser**
 
-1. Open een grafiek of een lijst die de afmeting tonen waarvan elementen u getoond op wegbrowser wilt.
+1. Open een grafiek of een lijst die de afmeting tonen waarvan elementen u op wegbrowser wilt tonen.
 
-   Bijvoorbeeld, als u met websitegegevens werkt, open een paginagrafiek of een lijst en identificeer de pagina die u als wortel wilt plaatsen.
+   Als u bijvoorbeeld met websitegegevens werkt, opent u een paginagrafiek of tabel en identificeert u de pagina die u als basis wilt instellen.
 
-1. De pers Ctrl+Alt en sleept het gewenste element aan de wortelpositie op wegbrowser.
-
-   >[!NOTE]
-   >
-   >U kunt de basisdimensie veranderen verbonden aan wegbrowser door een element van de gewenste afmeting aan wegbrowser te slepen. Dit element wordt de nieuwe wortel van wegbrowser, en het etiket in de hoogste linkerhoek van wegbrowser verandert om op de afmeting voor dit element te wijzen.
-
-   Bijvoorbeeld, veronderstel dat u browser creeert van de paginaweg die de Opeenvolging van Pagina&#39;s voor elke Zitting toont. Als u een element van de dimensie van de Term van het Onderzoek aan wegbrowser moest slepen, zou het element van de onderzoekstermijn de nieuwe wortel worden, en het etiket zou nu de Opeenvolging van de Termen van het Onderzoek voor elke Zitting tonen.
+1. Druk op Ctrl+Alt en sleep het gewenste element naar de hoofdpositie in de padbrowser.
 
    >[!NOTE]
    >
-   >Het slepen van een element in wegbrowser kan de basisdimensie veranderen verbonden aan wegbrowser, maar het verandert niet de niveaudimensie, groepsdimensie, of metrisch. Daarom moet u voorzichtigheid in het kiezen van een basisafmeting uitoefenen die wanneer gebruikt met de het niveauafmeting van wegbrowser, groepsafmeting, en metrisch steek houdt. Om de niveaudimensie, groepsdimensie, of metrisch te veranderen, moet u het [!DNL *.vw] dossier van wegbrowser in een tekstredacteur zoals Blocnote uitgeven. Zie [het Vormen Browsers van de Weg](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
+   >U kunt de basisdimensie wijzigen die aan een padbrowser is gekoppeld, door een element van de gewenste dimensie naar de padbrowser te slepen. Dit element wordt de nieuwe basis van de padbrowser en het label in de linkerbovenhoek van de padbrowser verandert om de dimensie van dit element weer te geven.
 
+   Stel dat u een browser met paginapaden maakt waarin de paginagereeks van pagina&#39;s voor elke sessie wordt weergegeven. Als u een element van de dimensie van de Term van het Onderzoek aan wegbrowser moest slepen, zou het element van de onderzoekstermijn de nieuwe wortel worden, en het etiket zou nu de Opeenvolging van de Termen van het Onderzoek voor elke Zitting tonen.
+
+   >[!NOTE]
+   >
+   >Als u een element naar een padbrowser sleept, kan de basisdimensie die aan de padbrowser is gekoppeld, veranderen, maar niet de afmetingen van het niveau, de groepsdimensie of de metrische waarde. Daarom moet u voorzichtigheid in het kiezen van een basisafmeting uitoefenen die wanneer gebruikt met de het niveauafmeting van de wegbrowser, groepsafmeting, en metrisch steek houdt. Om de niveauafmeting, groepsafmeting, of metrisch te veranderen, moet u het dossier van de wegbrowser [!DNL *.vw] in een tekstredacteur zoals Blocnote uitgeven. Zie [Padbrowsers configureren](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
