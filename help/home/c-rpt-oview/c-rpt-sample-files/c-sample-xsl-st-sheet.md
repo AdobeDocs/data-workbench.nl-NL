@@ -1,18 +1,19 @@
 ---
-description: De steekproef van de code van de stijlblad van XSL.
-solution: Analytics
-title: Steekproef XSL-stijlpagina
-topic: Data workbench
+description: Codevoorbeeld van XSL-stijlpagina.
+title: Voorbeeld-XSL-stijlblad
 uuid: cac5c5ad-b0ec-45d8-901d-e39ce1f6d61a
+exl-id: 688b0ce5-999b-4cfc-9228-146450132aee
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '20'
+ht-degree: 0%
 
 ---
 
+# Voorbeeld-XSL-stijlblad{#sample-xsl-style-sheet}
 
-# Steekproef XSL-stijlpagina{#sample-xsl-style-sheet}
-
-De steekproef van de code van de stijlblad van XSL.
+Codevoorbeeld van XSL-stijlpagina.
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -34,4 +35,3 @@ De steekproef van de code van de stijlblad van XSL.
 </xsl:template>
 </xsl:stylesheet>
 ```
-
