@@ -1,14 +1,15 @@
 ---
 description: Informatie om rapporten als dossiers van Excel te produceren.
-solution: Analytics
 title: Rapporten genereren als Microsoft Excel-bestanden
-topic: Data workbench
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
+exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '476'
+ht-degree: 1%
 
 ---
-
 
 # Rapporten genereren als Microsoft Excel-bestanden{#generating-reports-as-microsoft-excel-files}
 
@@ -16,40 +17,40 @@ Informatie om rapporten als dossiers van Excel te produceren.
 
 Aan de volgende eisen moet worden voldaan:
 
-* Microsoft Excel moet op het zelfde systeem worden geïnstalleerd zoals [!DNL Report Server].
-* De gebruikersrekening waaronder het [!DNL Report Server] proces loopt moet toestemming hebben om tot Microsoft Excel toegang te hebben.
+* Microsoft Excel moet op dezelfde computer zijn geïnstalleerd als [!DNL Report Server].
+* De gebruikersaccount waaronder het proces [!DNL Report Server] wordt uitgevoerd, moet toestemming hebben om toegang te krijgen tot Microsoft Excel.
 
    >[!NOTE]
    >
    >
    >    
    >    
-   >    * Wanneer u rapporten als dossiers van Excel produceert, opent u een nieuw geval van Excel. Voor meer informatie over dit proces, zie [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757).
-   >    * Hoewel de gegevenswerkbank meer dan 256 kolommen en 65.536 rijen van gegevens steunt, Microsoft Excel niet.
+   >    * Wanneer u rapporten als dossiers van Excel produceert, opent u een nieuw geval van Excel. Zie [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757) voor meer informatie over dit proces.
+   >    * Hoewel de werkbank van gegevens meer dan 256 kolommen en 65.536 rijen van gegevens steunt, Microsoft Excel niet.
 
 
-Als aan deze vereisten wordt voldaan, begin [!DNL Report Server] automatisch Microsoft Excel en outputgegevens van bepaalde visualisaties, afmeting en waardelegends, en tekstannotaties aan een nieuw werkboek van Excel met één visualisatie per aantekenvel.
+Als aan deze vereisten wordt voldaan, [!DNL Report Server] begint automatisch Microsoft Excel en outputgegevens van bepaalde visualisaties, afmeting en waardelegends, en tekstannotaties aan een nieuw werkboek van Excel met één visualisatie per aantekenvel.
 
 >[!NOTE]
 >
->Het gegeven wordt niet uitgevoerd van grafieken, wegbrowsers, proceskaarten, verstrooidslagen, en globes.
+>Gegevens worden niet geëxporteerd uit grafieken, padbrowsers, procesafbeeldingen, verstrooiingspunten en globes.
 
-Tenzij u een [!DNL Custom Title] voor de visualisatie hebt gespecificeerd, wordt het type van venster (bijvoorbeeld, de Lijst van de Film) gebruikt als aantekenvelnaam.
+Tenzij u een [!DNL Custom Title] voor visualisatie hebt gespecificeerd, wordt het type van venster (bijvoorbeeld, de Lijst van de Film) gebruikt als aantekenvelsnaam.
 
-Voor meer informatie over het specificeren [!DNL Custom Titles] voor visualisaties, zie de Gids van de Cliënt van de Werkbank van [Gegevens](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html).
+Voor meer informatie over het specificeren van [!DNL Custom Titles] voor visualisaties, zie [de Gids van de Cliënt van de Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html).
 
-## Een sjabloonbestand gebruiken {#section-40ab11916f464b1a88214ab969da6751}
+## Sjabloonbestand {#section-40ab11916f464b1a88214ab969da6751} gebruiken
 
-U kunt een rapport als dossier van Excel ook produceren gebruikend een malplaatjeExcel ( [!DNL .xls] of [!DNL .xlsx]) dossier. Het gebruiken van een malplaatjedossier kan de hoeveelheid tijd verminderen dat u het formatteren van uw gegevens besteedt telkens als het rapport wordt geproduceerd.
+U kunt een rapport ook produceren als dossier van Excel gebruikend een malplaatjeExcel ( [!DNL .xls] of [!DNL .xlsx]) dossier. Het gebruik van een sjabloonbestand kan de hoeveelheid tijd verminderen die u besteedt aan het opmaken van de gegevens telkens wanneer het rapport wordt gegenereerd.
 
-Dit malplaatjedossier moet een [!DNL .xls] of [!DNL .xlsx] dossier, niet een [!DNL .xlt] dossier zijn.
+Dit sjabloonbestand moet een [!DNL .xls]- of [!DNL .xlsx]-bestand zijn, geen [!DNL .xlt]-bestand.
 
-U kunt verkiezen om een malplaatje voor elk individueel rapport, een generisch malplaatje voor elk van uw rapporten, of een combinatie allebei te bepalen. Deze twee punten zijn niet wederzijds - exclusief, zodat kunt u een generisch malplaatje bepalen en dan specifieke malplaatjes ook bepalen.
+U kunt verkiezen om een malplaatje voor elk individueel rapport, een generisch malplaatje voor al uw rapporten, of een combinatie allebei te bepalen. Deze twee punten sluiten elkaar niet uit, zodat kunt u een generisch malplaatje bepalen en dan specifieke malplaatjes eveneens bepalen.
 
-Om een rapport te produceren dat een generisch malplaatje gebruikt dat u voor alle rapporten gebruikt, moet u de naam van dat dossier van Excel in de parameter van het Malplaatje Standaard van Excel in [!DNL Report.cfg] voor dat rapport vastgestelde dossier specificeren, dan plaats het malplaatjedossier in de zelfde omslag zoals [!DNL Report.cfg] voor die rapportreeks (de installatiefolder *\*ProfileName*\Reports\*ReportSetName* van de* gegevenswerkbank). Voor informatie over deze parameter, zie Parameters [Report.cfg](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
+Om een rapport te produceren gebruikend een generisch malplaatje dat u voor alle rapporten gebruikt, moet u de naam van dat dossier van Excel in de Standaardparameter van het Malplaatje van Excel in [!DNL Report.cfg] voor dat dossier van de rapportreeks specificeren, dan plaats het malplaatjedossier in de zelfde omslag zoals [!DNL Report.cfg] voor die rapportreeks (*gegevens werkbench installatiemap*\*ProfileName*\Reports\*ReportSetName*). Voor informatie over deze parameter, zie [Parameters Report.cfg](../../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
 
-Om een rapport te produceren dat een malplaatje gebruikt dat voor een rapport specifiek is, moet u het dossier van Excel het zelfde als het dossier van de rapportwerkruimte ( [!DNL .vw]) noemen, dan plaats het malplaatjedossier in de zelfde omslag zoals het dossier van de rapportwerkruimte ( [!DNL .vw]).
+Om een rapport te produceren gebruikend een malplaatje dat voor een rapport specifiek is, moet u het dossier van Excel het zelfde als het dossier van de rapportwerkruimte ( [!DNL .vw]) noemen, dan plaats het malplaatjedossier in de zelfde omslag zoals het dossier van de rapportwerkruimte ( [!DNL .vw]).
 
-Wanneer het rapport wordt geproduceerd, worden de bestaande van labels voorzien bladen in het malplaatje (elk die één visualisatie vertegenwoordigen) herhaald met de meest recente gegevens van het rapport, terwijl om het even welke nieuwe vensters die niet aanwezig in het malplaatje zoals van labels voorzien bladen zijn worden genegeerd. Om het even welke andere van labels voorzien bladen in het malplaatjedossier blijven onveranderd.
+Wanneer het rapport wordt geproduceerd, worden de bestaande met tabbladen in het malplaatje (elk die één visualisatie vertegenwoordigen) opnieuw bevolkt met de meest recente gegevens van het rapport, terwijl om het even welke nieuwe vensters die niet in het malplaatje zoals van labels voorzien bladen aanwezig zijn worden genegeerd. Alle andere tabbladen in het sjabloonbestand blijven ongewijzigd.
 
 Bovendien als u een macro hebt die in het dossier van malplaatjeExcel wordt bepaald dat u automatisch zou willen lopen wanneer het rapport wordt geproduceerd, noem de macro &quot;VSExport.&quot;
