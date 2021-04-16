@@ -1,40 +1,41 @@
 ---
 description: U zou beschikbare schijfruimte regelmatig moeten controleren zodat alle machines van de Server van het Rapport op het hoogst mogelijke niveau blijven presteren.
-solution: Analytics
-title: Schijfruimte bewaken
-topic: Data workbench
+title: Schijfruimte controleren
 uuid: 590c8239-d20e-470e-b633-7785b75daaa6
+exl-id: 0debd601-494f-4d4e-9452-c4d32678dc95
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 0%
 
 ---
 
-
-# Schijfruimte bewaken{#monitoring-disk-space}
+# Schijfruimte controleren{#monitoring-disk-space}
 
 U zou beschikbare schijfruimte regelmatig moeten controleren zodat alle machines van de Server van het Rapport op het hoogst mogelijke niveau blijven presteren.
 
-Elk [!DNL Report Server] systeem slaat de volgende soorten gegevens op:
+Op elke [!DNL Report Server]-computer worden de volgende gegevenstypen opgeslagen:
 
-* Gegevens van het besturingssysteem
+* Gegevens besturingssysteem
 * Rapportgegevens
 * Systeemgegevens
 
 >[!NOTE]
 >
->De adviseurs van Adobe kunnen uw gebruiksscenario evalueren om u te helpen de hoeveelheid gegevensopslag projecteren die uw de softwaretoepassing van Adobe produceert en vereist. Om zulk een evaluatie te verzoeken, gelieve te contacteren de Raadplegende Diensten van Adobe.
+>Adobe consultants kunnen uw gebruiksscenario evalueren om u te helpen de hoeveelheid gegevensopslag te projecteren die uw Adobe-softwaretoepassing genereert en nodig heeft. Neem contact op met de Adobe Consulting Services als u een dergelijke evaluatie wilt aanvragen.
 
-* [Gegevensruimte voor controleverslag](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-ad0a63f3a6824e68acd675da0b6c5c23)
-* [Back-ups maken van besturingssystemen, rapporten en systeemgegevens](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-b5efb132ca5d4ee69a8608f9b4ab245b)
+* [Gegevensruimte monitoringrapport](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-ad0a63f3a6824e68acd675da0b6c5c23)
+* [Back-up maken van besturingssystemen, rapporten en systeemgegevens](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-b5efb132ca5d4ee69a8608f9b4ab245b)
 
-## Gegevensruimte voor controleverslag {#section-ad0a63f3a6824e68acd675da0b6c5c23}
+## Gegevensruimte van rapport controleren {#section-ad0a63f3a6824e68acd675da0b6c5c23}
 
-**Aanbevolen frequentie:** Om de 5-10 minuten
+**Aanbevolen frequentie:** elke 5-10 minuten
 
-Zorg ervoor dat u genoeg schijfruimte verstrekt om uw rapporten in de [!DNL Reports] omslag binnen de [!DNL Report] installatiefolder aan te passen.
+Zorg ervoor dat u genoeg schijfruimte hebt om uw rapporten in de [!DNL Reports] omslag binnen [!DNL Report] installatiemap aan te passen.
 
-## Back-ups maken van besturingssystemen, rapporten en systeemgegevens {#section-b5efb132ca5d4ee69a8608f9b4ab245b}
+## Back-up maken van besturingssystemen, rapporten en systeemgegevens {#section-b5efb132ca5d4ee69a8608f9b4ab245b}
 
 **Aanbevolen frequentie:** Dagelijks
 
-Het rapport, het systeem, en de werkend systeemgegevens moeten regelmatig en zorgvuldig worden gesteund gebruikend de normale van uw bedrijf file en rampenterugwinningssystemen.
+Gegevens over rapporten, systemen en besturingssystemen moeten regelmatig en zorgvuldig worden opgeslagen met behulp van de normale back-up- en noodherstelsystemen van uw bedrijf.
