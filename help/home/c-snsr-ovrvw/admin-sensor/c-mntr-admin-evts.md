@@ -1,24 +1,23 @@
 ---
 description: Als u Sensorfouten zo snel mogelijk wilt detecteren en deze wilt herstellen voordat ze grote problemen of storingen veroorzaken, moet u regelmatig uw gebeurtenissenlogboeken controleren.
-solution: Analytics
 title: Bewaking van administratieve gebeurtenissen
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
+exl-id: 70894074-b8aa-4f6c-87d1-d0403f4c3319
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 0%
 
 ---
 
-
-# Bewaking van administratieve gebeurtenissen{#monitoring-administrative-events}
+# Bewaking van beheergebeurtenissen{#monitoring-administrative-events}
 
 Als u Sensorfouten zo snel mogelijk wilt detecteren en deze wilt herstellen voordat ze grote problemen of storingen veroorzaken, moet u regelmatig uw gebeurtenissenlogboeken controleren.
 
-**Aanbevolen frequentie:** Ten minste één uur
+**Aanbevolen frequentie:ten** minste één uur
 
-U kunt deze gebeurtenissen controleren met het Windows Event Viewer- of Unix Syslog-bestand en de [!DNL *.sensor-log] bestanden die standaard in de [!DNL Logs] map in de [!DNL Sensor] installatiemap staan. Deze bestanden geven aan dat er fouten optreden tijdens het verzamelen van gegevens, vooral als een toepassing [!DNL Sensor] geen verbinding kan maken met het doel [!DNL data workbench server] en een wachtrij voor gegevens opent.
+U kunt deze gebeurtenissen controleren met het Windows Event Viewer- of Unix Syslog-bestand en de [!DNL *.sensor-log]-bestanden die standaard in de map [!DNL Logs] in de installatiemap [!DNL Sensor] staan. Deze dossiers wijzen op de aanwezigheid van fouten tijdens gegevensinzameling, vooral als [!DNL Sensor] niet met het doel [!DNL data workbench server] kan verbinden en begint een rij vormen gegevens.
 
 ## Gebeurtenissen controleren in Windows {#section-7c0443a356af4381bf22259654f5cd17}
 
@@ -32,7 +31,7 @@ Berichten worden, afhankelijk van hun ernst, als &quot;Informatie&quot;, &quot;W
 
 ## Gebeurtenissen controleren op Unix {#section-5de3947891fb47ac88b7c855e545d54a}
 
-Sensor registreert fouten aan de [!DNL syslog] daemon.
+Sensor registreert fouten aan [!DNL syslog] daemon.
 
 De syslog daemon schrijft foutenmeldingen aan logboekdossiers die op de regels worden gebaseerd u in uw syslog.conf- dossier specificeerde. Fouten worden geregistreerd met de markeringen &quot;LOG_DAEMON&quot; en &quot;LOG_NOTICE&quot; of &quot;LOG_ERR&quot;, afhankelijk van de ernst.
 
@@ -42,17 +41,17 @@ Unix syslog wordt typisch gevestigd in [!DNL /var/adm/messages] of [!DNL /var/lo
 
 Blader naar de juiste locatie en open de syslog.
 
-## Berichtindelingen {#section-a0899add30fd4b2da58a23b9e3324693}
+## Informatie over berichtindelingen {#section-a0899add30fd4b2da58a23b9e3324693}
 
 Alle berichten van de Sensor bevatten het koord &quot;Sensor&quot;en genummerd om op het belang van het bericht te wijzen dat wordt getoond.
 
 | Berichtnummer | Betekenis van bericht | Berichttekenreeks |
 |---|---|---|
-| 1xxx | Informatief | Sensorinfo nr. |
-| 2xxx | Waarschuwing | Sensorwaarschuwing nr. |
-| 3xxx | Configuratiefout | Sensorfout nummer |
+| 1 xxx | Informatief | Sensorinfo nr. |
+| 2 xxx | Waarschuwing | Sensorwaarschuwing nr. |
+| 3 xxx | Configuratiefout | Sensorfout nummer |
 | 4xxx | Operationele fout | Sensorfout nummer |
-| 5xxx | Interne fout | Sensorfout nummer |
+| 5 xxx | Interne fout | Sensorfout nummer |
 
 >[!NOTE]
 >
@@ -60,13 +59,13 @@ Alle berichten van de Sensor bevatten het koord &quot;Sensor&quot;en genummerd o
 
 Uw hulpmiddel van het netwerkbeheer kan worden geplaatst om uw berichten om de 5-10 minuten voor fouten met de &quot;Sensor&quot;bron te controleren en aangewezen personeel over kwesties te waarschuwen die interventie kunnen vereisen. U kunt ervoor kiezen het systeem alleen te controleren voor bepaalde typen gebeurtenisberichten, zoals de tekenreeks &quot;Sensor Error&quot;. U kunt ook verschillende regels toepassen op gebeurtenissen die worden voorafgegaan door de tekenreeksen &quot;Sensor Info&quot;, &quot;Sensorwaarschuwing&quot; en &quot;Sensorfout&quot;.
 
-## Belangrijke berichten identificeren {#section-5a20f5dc18ca4012931d194db855e54e}
+## Belangrijke berichten {#section-5a20f5dc18ca4012931d194db855e54e} identificeren
 
 In uw gebeurtenislogboeken, zou u speciale aandacht aan moeten besteden en onmiddellijk om het even welke berichten betreffende rijgrootte richten.
 
-Berichten zoals &quot; [!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; hebben bijvoorbeeld aandacht nodig.
+Berichten zoals &quot;[!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; hebben bijvoorbeeld aandacht nodig.
 
-## Reageren op Sensor-gebeurtenisberichten {#section-0004c4a169dc4a8882d9bd87dd326ad4}
+## Reageren op sensorgebeurtenisberichten {#section-0004c4a169dc4a8882d9bd87dd326ad4}
 
 Tabellen die Sensor-gebeurtenissen beschrijven en acties voorstellen voor de ondersteunde webserverplatforms.
 
@@ -195,9 +194,9 @@ Tabellen die Sensor-gebeurtenissen beschrijven en acties voorstellen voor de ond
 
 | Gebeurtenisbericht | Voorgestelde actie |
 |---|---|
-| Sensorfout 3015: De sectie ns/server/[server]/module/[module] ontbreekt in het configuratiebestand van AOLServer. | Dit is een configuratiefout. Correct zoals aangegeven in fout. |
+| Sensorfout 3015: ns/server/[server]/module/[module]-sectie ontbreekt in AOLServer-configuratiebestand. | Dit is een configuratiefout. Correct zoals aangegeven in fout. |
 | Sensorfout 3019: vys-cookie is niet aangeroepen vóór vys-log. Neem contact op met de technische ondersteuning. Neem contact op met de Adobe ClientCare. | Neem contact op met de technische ondersteuning. Neem contact op met de Adobe ClientCare. |
-| Sensorfout 3020: VisualSciencesConfig mist als eerste ingang in [sectie] sectie in AOLServer configuratiedossier. | Dit is een configuratiefout. Correct zoals aangegeven in fout. |
+| Sensorfout 3020: VisualSciencesConfig ontbreekt als eerste ingang in [sectie] sectie in AOLServer configuratiedossier. | Dit is een configuratiefout. Correct zoals aangegeven in fout. |
 | Sensorfout 3021: VisualSciencesConfig mist een waarde in [sectie] sectie in AOLServer configuratiedossier. | Dit is een configuratiefout. Correct zoals aangegeven in fout. |
 
 **iPlanet- en Java System Web Servers**
@@ -207,4 +206,3 @@ Tabellen die Sensor-gebeurtenissen beschrijven en acties voorstellen voor de ond
 | Sensorfout 3011: Init-instructie vereist. Bijvoorbeeld Init fn=vys-init config-file=&quot;/mypath/myfile&quot; | Dit is een configuratiefout. De iPlanet init-richtlijn ontbreekt. |
 | Sensorfout 3015: config-file is niet gespecificeerd in de richtlijn van de Inzet van iPlanet | Dit is een configuratiefout. Het pad naar het configuratiebestand is niet opgegeven in de iPlanet Init-instructie. |
 | Sensorfout 3019: vys-cookie is niet aangeroepen vóór vys-log. Controleer het configuratiebestand | vys-koekje moet als eerste NameTrans richtlijn voor elke software virtuele server worden gespecificeerd. |
-
