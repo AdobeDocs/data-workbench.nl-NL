@@ -1,31 +1,32 @@
 ---
-description: De metrische, afmeting, en de filteruitdrukkingen kunnen herkenningstekens gebruiken om naar genoemde metriek, afmetingen, en filters te verwijzen.
-solution: Analytics
-title: Syntaxis voor identificatoren
-topic: Data workbench
+description: Metrische expressies, afmetingen en filterexpressies kunnen id's gebruiken om te verwijzen naar benoemde metriek, afmetingen en filters.
+title: Syntaxis voor id's
 uuid: 9cfa188a-05ca-4163-a268-e33fce9a1929
+exl-id: 79bc5585-7b21-4a9d-b044-28ff4bc5a885
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 0%
 
 ---
 
+# Syntaxis voor id&#39;s{#syntax-for-identifiers}
 
-# Syntaxis voor identificatoren{#syntax-for-identifiers}
+Metrische expressies, afmetingen en filterexpressies kunnen id&#39;s gebruiken om te verwijzen naar benoemde metriek, afmetingen en filters.
 
-De metrische, afmeting, en de filteruitdrukkingen kunnen herkenningstekens gebruiken om naar genoemde metriek, afmetingen, en filters te verwijzen.
+Deze id&#39;s zijn hoofdlettergevoelig en moeten exact worden getypt zoals ze zijn gedefinieerd.
 
-Deze herkenningstekens zijn gevoelig geval en moeten precies worden getypt aangezien zij worden bepaald.
+Een geldige id kan een of meer van de volgende elementen bevatten:
 
-Een geldig herkenningsteken kan één of meer van het volgende bevatten:
-
-* Onderstrepen (_). De onderstreept in een herkenningsteken vertegenwoordigen ruimten in metrisch, afmeting, of filternaam. Bijvoorbeeld, zou de dimensie van de Verwijzing van de Zitting worden bedoeld zoals [!DNL Session_Referrer] in een uitdrukking.
+* Onderstrepingstekens (_). Onderstrepingstekens in een id vertegenwoordigen spaties in de metrische naam, dimensie of filternaam. Bijvoorbeeld, zou de dimensie van de Verwijzing van de Zitting als [!DNL Session_Referrer] in een uitdrukking worden bedoeld.
 * Percentage tekens (%)
 * Hoofdletters (A-Z)
-* Lagere letters (a-z)
+* Kleine letters (a-z)
 * Dollar-tekens ($)
-* Aantallen (0-9), behalve als eerste karakter in een herkenningsteken.
+* Getallen (0-9), behalve als het eerste teken in een id.
 * Niet-ASCII-tekens
 
-Alle andere karakters zijn illegaal in een herkenningsteken.
+Alle andere tekens in een id zijn ongeldig.
 
-Deze zelfde regels zijn op de namen van metriek, afmetingen, en filters van toepassing wanneer zij buiten uitdrukkingen worden gebruikt, behalve dat de namen ruimten kunnen bevatten maar niet onderstreept. Bijvoorbeeld, kunt u de afmeting van de Referateur van de Zitting in het [!DNL Transformation.cfg] dossier als Referrer van de Zitting bepalen, maar niet [!DNL Session_Referrer].
+Dezelfde regels gelden voor de namen van metriek, afmetingen en filters wanneer deze buiten expressies worden gebruikt, behalve dat namen spaties kunnen bevatten maar geen onderstrepingstekens. U kunt bijvoorbeeld de dimensie Sessieverwijzing in het [!DNL Transformation.cfg]-bestand definiëren als Sessieverwijzing, maar niet [!DNL Session_Referrer].
