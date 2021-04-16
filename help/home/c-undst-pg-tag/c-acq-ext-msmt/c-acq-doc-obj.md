@@ -1,20 +1,21 @@
 ---
-description: Gebruikend het Model van de Objecten van het Document JavaScript, kunnen de extra scripting methodes worden gebruikt om het verzoek om het dossier te vergroten zig.js.
-solution: Analytics
+description: Met het JavaScript Document Object Model kunt u aanvullende scriptmethoden gebruiken om de aanvraag voor het bestand zig.js aan te vullen.
 title: Documentobjecten ophalen
-topic: Data workbench
 uuid: 7681c337-b147-4937-9d9c-0ff48d9bdd00
+exl-id: eae6609c-be86-44cf-a1a1-69ffb43231fa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 0%
 
 ---
 
-
 # Documentobjecten ophalen{#acquiring-document-objects}
 
-Gebruikend het Model van de Objecten van het Document JavaScript, kunnen de extra scripting methodes worden gebruikt om het verzoek om het dossier te vergroten zig.js.
+Met het JavaScript Document Object Model kunt u aanvullende scriptmethoden gebruiken om de aanvraag voor het bestand zig.js aan te vullen.
 
-De informatie zoals de waarde van markeringen META, de waarden van identiteitskaart van markeringen DIV, etc., kan door naam worden van verwijzingen voorzien en als variabelen voor gebruik in analyse worden verzameld. Bijvoorbeeld, om de informatie dynamisch te vangen bevat binnen het element META van het HTML- document, kunt u de volgende syntaxis gebruiken JavaScript:
+Informatie zoals de waarde van META-tags, ID-waarden van DIV-tags, enzovoort, kan op naam worden genoemd en worden verzameld als variabelen voor gebruik in de analyse. Als u bijvoorbeeld de informatie in het element META van het HTML-document dynamisch wilt vastleggen, kunt u de volgende JavaScript-syntaxis gebruiken:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -35,8 +36,8 @@ v["_1"] = metacontent;
 <!-- END REFERENCE PAGE TAG-->
 ```
 
-| Verzamelde gegevens | Toelichting | Voorbeeld |
+| Gegevens verzameld | Toelichting | Voorbeeld |
 |---|---|---|
-| v_1= | Waarde verbonden aan de variabele van het METAVALUE vraagkoord. Deze waarde vertegenwoordigt de gegevens binnen het element META van het HTML- document. | v_1=This de pagina dient inhoud met betrekking tot de orde te dienen dank u pagina. |
+| v_1= | Waarde die is gekoppeld aan de variabele van de METAVALUE-queryreeks. Deze waarde vertegenwoordigt de gegevens binnen het element META van het HTML-document. | v_1=Deze pagina bevat inhoud die te maken heeft met de volgorde waarin u bedankt bent voor de pagina. |
 
-Nadat het gegeven wordt verzameld, kunt u de server van de gegevenswerkbank vormen om deze metingsgegevens voor analyse en rapportering te verwerken.
+Nadat de gegevens zijn verzameld, kunt u de gegevenswerkbankserver configureren om deze meetgegevens te verwerken voor analyse en rapportage.
