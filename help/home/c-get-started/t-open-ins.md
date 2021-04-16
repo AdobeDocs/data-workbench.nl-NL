@@ -1,20 +1,21 @@
 ---
-description: Nadat de Werkbank van Gegevens is geïnstalleerd en met de server wordt verbonden, kunt u het gebruiken om uw verwerkte gegevens te analyseren.
-solution: Analytics
-title: Werkbank voor gegevens openen
-topic: Data workbench
+description: Nadat Data Workbench is geïnstalleerd en met de server is verbonden, kunt u het gebruiken om uw verwerkte gegevens te analyseren.
+title: Data Workbench openen
 uuid: d1da143d-6302-4467-a989-842b54b87c2e
+exl-id: 898c9dc7-969c-4e62-be6b-1d2e0086b1d6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 0%
 
 ---
 
+# Data Workbench openen{#opening-data-workbench}
 
-# Werkbank voor gegevens openen{#opening-data-workbench}
+Nadat Data Workbench is geïnstalleerd en met de server is verbonden, kunt u het gebruiken om uw verwerkte gegevens te analyseren.
 
-Nadat de Werkbank van Gegevens is geïnstalleerd en met de server wordt verbonden, kunt u het gebruiken om uw verwerkte gegevens te analyseren.
-
-1. Navigeer aan de de installatiefolder van de Werkbank van Gegevens.
+1. Navigeer naar de installatiemap van de Data Workbench.
 1. Dubbelklik [!DNL insight.exe] om de toepassing te starten.
 1. Klik op **[!UICONTROL Login]**.
 
@@ -24,19 +25,18 @@ Nadat de Werkbank van Gegevens is geïnstalleerd en met de server wordt verbonde
 
    ![](assets/dwb_signin.png)
 
-   De eerste keer dat u start, wordt de [!DNL Start] pagina weergegeven en wordt begonnen met het downloaden van profielgegevens en de gegevenscache.
+   De eerste keer dat u start, geeft het systeem de pagina [!DNL Start] weer en wordt begonnen met het downloaden van profielgegevens en de gegevenscache.
 
-1. Nadat het gegevensgeheime voorgeheugen begint te vullen, klik **[!UICONTROL Start]**.
+1. Klik op **[!UICONTROL Start]** nadat de gegevenscache is gevuld.
 
-   Het systeem toont het [!DNL Worktop].
+   Het systeem toont [!DNL Worktop].
 
    ![](assets/wtp_open.png)
 
-   De volgende keer dat u de Werkbank van Gegevens start, slaat het systeem de [!DNL Start] pagina over en wordt de pagina weergegeven [!DNL Worktop], tenzij een nieuw profiel aan de server is toegevoegd.
+   De volgende keer dat u de Data Workbench start, slaat het systeem de [!DNL Start]-pagina over en geeft de [!DNL Worktop] weer, tenzij een nieuw profiel aan de server is toegevoegd.
 
-   De updates aan het profiel en zijn gegevens worden gedownload slechts als u online werkt en een netwerkverbinding aan de server van de Werkbank van Gegevens hebt. Voor meer informatie over het werken online, zie het [Werk Offline en Online](../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
+   Updates van het profiel en de bijbehorende gegevens worden alleen gedownload als u online werkt en een netwerkverbinding met de Data Workbench-server hebt. Zie [Offline werken en Online](../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54) voor meer informatie over online werken.
 
    >[!NOTE]
    >
-   >Het wordt niet aanbevolen dat meerdere gebruikers één apparaat delen voor het gebruik van het werkstation.
-
+   >Het wordt niet aanbevolen dat meerdere gebruikers één computer delen om het werkstation te gebruiken.
