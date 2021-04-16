@@ -1,38 +1,38 @@
 ---
-description: Gebruikend Rapport, kunt u rapporten dynamisch voor de afmetingselementen produceren die u in een raadplegingsdossier of voor een bepaald aantal afmetingselementen, zoals voor de gebruikers met de 10 hoogste ordeleningen specificeert.
-solution: Analytics
+description: Gebruikend Rapport, kunt u rapporten dynamisch voor de afmetingselementen produceren die u in een raadplegingsdossier of voor een bepaald aantal afmetingselementen specificeert, zoals voor de gebruikers met de 10 hoogste orde tellingen.
 title: Dynamische titelaantekeningen
-topic: Data workbench
 uuid: ae01b251-8888-474e-a94e-13badeea0dff
+exl-id: 6644698a-fa8f-468c-b57a-ae5d4365a8bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '229'
+ht-degree: 0%
 
 ---
 
-
 # Dynamische titelaantekeningen{#dynamic-title-annotations}
 
-Gebruikend Rapport, kunt u rapporten dynamisch voor de afmetingselementen produceren die u in een raadplegingsdossier of voor een bepaald aantal afmetingselementen, zoals voor de gebruikers met de 10 hoogste ordeleningen specificeert.
+Gebruikend Rapport, kunt u rapporten dynamisch voor de afmetingselementen produceren die u in een raadplegingsdossier of voor een bepaald aantal afmetingselementen specificeert, zoals voor de gebruikers met de 10 hoogste orde tellingen.
 
-Gebruikend een dynamische titelannotatie, kunt u een titel in een dynamisch rapport tonen dat of de naam identificeert van het afmetingselement die momenteel door wordt verwerkt of de naam van het afmetingselement die u aan mening hebt geselecteerd. [!DNL Report] De dynamische titelannotaties laten u toe om te identificeren welke gegevens van het element u op het rapport bekijkt zonder om het even welke andere visualisaties te veranderen of toevallig een selectie door een bepaald element te sorteren.
+Gebruikend een dynamische titelaantekening, kunt u een titel in een dynamisch rapport tonen dat of de naam van het afmetingselement identificeert die momenteel door [!DNL Report] wordt verwerkt of de naam van het afmetingselement die u aan mening hebt geselecteerd. Met dynamische titelannotaties kunt u bepalen welke elementgegevens u in het rapport weergeeft zonder andere visualisaties te wijzigen of per ongeluk een selectie te sorteren op een bepaald element.
 
 >[!NOTE]
 >
->Deze functionaliteit is beschikbaar slechts wanneer u vergunning hebt gegeven [!DNL Report]. Voor meer informatie over [!DNL Report], zie de Gids *van het Rapport van het Rapport van de* Werkbank van Gegevens.
+>Deze functionaliteit is alleen beschikbaar wanneer u een licentie hebt verkregen voor [!DNL Report]. Voor meer informatie over [!DNL Report], zie *de Gids van het Rapport van de Data Workbench*.
 
-Voor meer informatie over dynamisch het produceren van rapporten, zie de Gids *van het Rapport van het* Inzicht.
+Voor meer informatie over dynamisch het produceren van rapporten, zie *de Gids van het Rapport van het Inzicht*.
 
-**Aan opstelling een dynamische titelannotatie**
+**Een dynamische titelaantekening instellen**
 
-* Klik binnen de dynamische titelannotatie met de rechtermuisknop aan en klik **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*.
+* Klik met de rechtermuisknop in de dynamische titelaantekening en klik op **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]***.
 
    ![](assets/mnu_DynamicTitle.png)
 
-* Om de informatie voor één bepaald element te bekijken, klik **[!UICONTROL Change Element]** en klik het gewenste element aan voorproef het rapport voor dat bepaalde element.
+* Als u de informatie voor een bepaald element wilt weergeven, klikt u op **[!UICONTROL Change Element]** en klikt u op het gewenste element om een voorvertoning van het rapport voor dat bepaalde element weer te geven.
 
    ![](assets/mnu_DynamicTitle_Element.png)
 
    **Exporteren naar Microsoft Excel**
 
-   Voor informatie over het uitvoeren van vensters, zie het [Uitvoeren van de Gegevens](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)van het Venster.
-
+   Zie [Venstergegevens exporteren](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349) voor informatie over het exporteren van vensters.
