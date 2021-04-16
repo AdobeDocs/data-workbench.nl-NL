@@ -1,20 +1,20 @@
 ---
-description: Naast het uitbreiden van en het doen ineenstorten van een visualisatie, kunt u hen ook resize.
-solution: Analytics
-title: Indeling visualisaties
-topic: Data workbench
+description: Naast het uitvouwen en samenvouwen van een visualisatie, kunt u hen ook resize.
+title: Visualisaties vergroten/verkleinen
 uuid: ba8ceab2-61bc-4996-80cb-7a507e728efa
+exl-id: 23c86123-cdf2-43a8-a473-fd66fe202f8a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 0%
 
 ---
 
+# Visualisaties vergroten/verkleinen{#sizing-visualizations}
 
-# Indeling visualisaties{#sizing-visualizations}
+Naast het uitvouwen en samenvouwen van een visualisatie, kunt u hen ook resize.
 
-Naast het uitbreiden van en het doen ineenstorten van een visualisatie, kunt u hen ook resize.
-
-Gebruik enkel resize handvat bij de bodem van het visualisatievenster. Door over de bodemrand van een visualiseringsvenster te hangen, kunt u klikken-en-belemmering om het venster te maken groter of korter op het dashboardcanvas. Andere visualisaties binnen het dashboard zullen automatisch opnieuw worden geplaatst om de nieuwe grootte van resized visualisatie te passen. De breedte van visualisatie is vast met betrekking tot de breedte van browser en kan niet worden gemanipuleerd.
+Gebruik gewoon de formaatgreep onder aan het visualisatievenster. Als u de cursor boven de onderrand van een visualisatievenster houdt, kunt u klikken en slepen om het venster langer of korter te maken op het dashboardcanvas. Eventuele andere visualisaties in het dashboard worden automatisch opnieuw geplaatst, zodat deze passen bij de nieuwe grootte van de gewijzigde visualisatie. De breedte van de visualisatie is vast ten opzichte van de breedte van de browser en kan niet worden gemanipuleerd.
 
 ![](assets/size_visual.png)
-
