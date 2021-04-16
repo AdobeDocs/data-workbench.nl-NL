@@ -1,32 +1,33 @@
 ---
 description: De Universal Transverse Mercator (UTM)-projectie wordt gedefinieerd door acht parameters.
-solution: Analytics
 title: Universal Transverse Mercator-projecties
-topic: Data workbench
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
+exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 0%
 
 ---
-
 
 # Universal Transverse Mercator-projecties{#universal-transverse-mercator-projections}
 
 De Universal Transverse Mercator (UTM)-projectie wordt gedefinieerd door acht parameters.
 
-Wanneer u een Universal Transverse Mercator-projectie opgeeft voor een laag met een terreinafbeelding, moeten uw bestanden met een terreinafbeelding worden uitgelijnd met een false (geprojecteerd) noordwaarts naar de bovenkant van de afbeelding en met een false oost naar rechts van de afbeelding.
+Wanneer u een Universal Transverse Mercator-projectie opgeeft voor een achtergrondafbeeldingslaag, moeten de bestanden van de terreinafbeelding worden uitgelijnd met false (geprojecteerd) ten noorden in de richting van de bovenkant van de afbeelding en met false ten oosten rechts van de afbeelding.
 
-Om een projectie UTM voor om het even welke bron van het terreinbeeld te specificeren, moet u het [!DNL Terrain Images.cfg] dossier in een tekstredacteur zoals Blocnote openen, de parameter van Info van de Projectie plaatsen aan &quot;TransverseMercatorProjection&quot;, en montages toevoegen voor de projectie UTM.
+Als u een UTM-projectie wilt opgeven voor een willekeurige terreinafbeeldingsbron, moet u het [!DNL Terrain Images.cfg]-bestand openen in een teksteditor zoals Kladblok, de parameter Projectie-info instellen op &quot;TransverseMercatorProjection&quot; en instellingen toevoegen voor de UTM-projectie.
 
-**Om een Universal Transverse Mercator-projectie te specificeren**
+**Een Universal Transverse Mercator-projectie opgeven**
 
-1. In [!DNL Server Files Manager], klik **[!UICONTROL Components]** om zijn inhoud te bekijken. Het [!DNL Terrain Images.cfg] dossier wordt gevestigd binnen deze folder.
+1. Klik in [!DNL Server Files Manager] op **[!UICONTROL Components]** om de inhoud ervan weer te geven. Het [!DNL Terrain Images.cfg]-bestand bevindt zich in deze map.
 
-1. Klik het vinkje in de kolom van de *servernaam* voor met de rechtermuisknop aan, dan klik [!DNL Terrain Images.cfg]**[!UICONTROL Make Local]**. Een vinkje verschijnt in de [!DNL Temp] kolom voor [!DNL Terrain Images.cfg].
+1. Klik met de rechtermuisknop op het vinkje in de kolom *servernaam* voor [!DNL Terrain Images.cfg] en klik vervolgens op **[!UICONTROL Make Local]**. In de kolom [!DNL Temp] wordt een vinkje weergegeven voor [!DNL Terrain Images.cfg].
 
-1. Klik het pas gecreëerde vinkje in de [!DNL Temp] kolom met de rechtermuisknop aan en klik **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Het [!DNL Terrain Images.cfg]dossier verschijnt in een venster van de Blocnote.
+1. Klik met de rechtermuisknop op het nieuwe vinkje in de kolom [!DNL Temp] en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Het [!DNL Terrain Images.cfg]bestand wordt weergegeven in een Kladblok-venster.
 
-1. Geef de parameters van Info van de Projectie uit gebruikend het volgende fragment van het steekproefdossier en de parameterlijst als gidsen. Ben zeker om het projectietype te specificeren zoals hieronder benadrukt.
+1. Bewerk de parameters voor projectie-info met behulp van het volgende voorbeeldbestandsfragment en de parametertabel als hulplijnen. Zorg ervoor dat u het projectietype opgeeft, zoals hieronder wordt gemarkeerd.
 
    ```
    Projection Info = TransverseMercatorProjection:
@@ -42,10 +43,9 @@ Om een projectie UTM voor om het even welke bron van het terreinbeeld te specifi
 
 | Parameter | Beschrijving |
 |---|---|
-| Ellipsoïde inverse afvlakking, Ellipsoïde Semimajor-as | De parameters van de ellipsoïde die voor de projectie wordt gebruikt. De semimajoras wordt gespecificeerd in meters. |
-| Valse zoekactie | De valse verassing van de middelste meridiaan van de projectie, in meter. Voor UTM is dit altijd 500.000. |
-| False Northing | Het valse noord van de evenaar in de projectie, in meters. Voor UTM, is dit 0 voor de gebieden van het noordelijk halfrond en 10.000 voor de gebieden van het zuidelijk halfrond. |
-| Northwest Corner Coordinates, Coördinaten zuidoost Corner | De coördinaten (in geprojecteerde meters) van de hoogste linker en bodem juiste hoeken van het beeld. |
-| Premier Meridian | De lengtegraad van de middelste meridiaan van de projectie, gespecificeerd in graden ten oosten van Greenwich. De negatieve aantallen kunnen worden gebruikt om graden west te specificeren. |
-| Schaalfactor | De verhouding tussen de straal van de projectiekilinder en de puntbeeldas van de ellips. Voor UTM-projecties (Universal Transverse Mercator) is dit altijd 0,9996. |
-
+| Ellipsoïde inverse Flatting, Ellipsoid Semimajor-as | De parameters van de ellipsoïde die voor de projectie worden gebruikt. De halfafbeeldingsas wordt opgegeven in meters. |
+| Onjuiste bewerking | De onechte afdekking van de centrale meridiaan van de projectie, in meters. Voor UTM is dit altijd 500.000. |
+| False Northing | Het onwaar normaalpunt van de evenaar in de projectie, in meters. Voor UTM is dit 0 voor de noordelijke halfronde en 10.000 voor de zuidelijke halfronde gebieden. |
+| Northwest Corner Coordinates, coördinaten zuidoosthoek | De coördinaten (in geprojecteerde meters) van de linkerbovenhoek en rechteronderhoek van de afbeelding. |
+| Premier Meridian | De lengtegraad van de centrale meridiaan van de projectie, in graden ten oosten van Greenwich. Negatieve getallen kunnen worden gebruikt om graden naar west op te geven. |
+| Schaalfactor | De verhouding tussen de straal van de projectiefilter en de halve afbeeldingsas van de ellips. Voor UTM-projecties (Universal Transverse Mercator) is dit altijd 0,9996. |
