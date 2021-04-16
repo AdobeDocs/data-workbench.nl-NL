@@ -1,28 +1,29 @@
 ---
-description: Als deel van de verzamelde gegevens van de Meting van de Basislijn, verzamelt de Sensor de domeinkoekjes die van de machine van een bezoeker worden verzonden wanneer het indienen van een verzoek van uw Webserver.
-solution: Analytics
-title: Het verwerven van meetgegevens door koekjes
-topic: Data workbench
+description: Als onderdeel van de verzamelde gegevens voor basislijnmeting verzamelt Sensor de domeincookies die van de computer van de bezoeker worden verzonden wanneer deze een aanvraag van uw webserver indient.
+title: Metingsgegevens ophalen via cookies
 uuid: 34cd6baf-6317-4774-8165-58208698b53c
+exl-id: 37c7b5f6-33bf-4373-963a-e08a826e05df
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '587'
+ht-degree: 0%
 
 ---
 
+# Metingsgegevens ophalen via cookies{#acquiring-measurement-data-through-cookies}
 
-# Het verwerven van meetgegevens door koekjes{#acquiring-measurement-data-through-cookies}
+Als onderdeel van de verzamelde gegevens voor basislijnmeting verzamelt Sensor de domeincookies die van de computer van de bezoeker worden verzonden wanneer deze een aanvraag van uw webserver indient.
 
-Als deel van de verzamelde gegevens van de Meting van de Basislijn, verzamelt de Sensor de domeinkoekjes die van de machine van een bezoeker worden verzonden wanneer het indienen van een verzoek van uw Webserver.
+Dit omvat zowel permanente cookies als sessiecookies die uw website instelt wanneer een bezoeker communiceert met uw systeem.
 
-Dit omvat zowel hardnekkige als sessiecookies die uw website plaatst wanneer een bezoeker met uw systeem in wisselwerking staat.
+In de meeste gevallen stellen websites permanente cookies in om bezoekers te identificeren of gebruikersinvoer vast te leggen voor gebruik tijdens volgende bezoekerssessies. Alle informatie die in permanente cookies wordt geschreven en opgeslagen, kan samen met alle andere meetgegevens in de gegevenswerkbankserver worden vastgelegd en gebruikt.
 
-In de meeste gevallen, plaatsen de websites blijvende koekjes om bezoekers te identificeren of gebruikersinput te vangen voor gebruik binnen verdere bezoekerszittingen. Alle informatie die wordt geschreven naar en opgeslagen in permanente cookies kan samen met alle andere meetgegevens in de gegevenswerkbankserver worden vastgelegd en gebruikt.
+Een voorbeeld van zo&#39;n aanhoudend cookie kan een klant-id bevatten in de vorm van een numerieke sleutel die aanwezig is in een domeinspecifieke cookie die op de computer van de bezoeker staat. Naast het identificeren van de gebruiker als retourbezoeker, zou de permanente cookie ook kunnen worden gebruikt om de bezoeker nader te identificeren als een terugkerende klant of om de bezoeker te koppelen aan informatie in een klantendatabase zodat demografische informatie van de offline klant kan worden weergegeven binnen [!DNL Site] en kan worden gebruikt voor interactieve analyse.
 
-Een voorbeeld van zo&#39;n blijvend koekje kon een klantenherkenningsteken in de vorm van een numerieke sleutel impliceren aanwezig binnen een domein-specifieke koekje dat op de machine van de bezoeker verblijft. Naast het identificeren van de gebruiker als terugkeerbezoeker, kon het blijvende koekje ook worden gebruikt om de bezoeker als terugkerende klant verder te identificeren of de bezoeker te binden aan informatie in een klantengegevensbestand om off-line klantendemografische informatie toe te staan binnen worden getoond [!DNL Site] en voor interactieve analyse worden gebruikt.
+Sessiecookies kunnen een goed mechanisme zijn om gebruikersinvoer te verzamelen via formuliervelden of andere dynamische interactieve elementen op uw website. Als een website formulieren implementeert om gebruikerspecifieke invoergegevens vast te leggen, blijft de informatie alleen in het sessiecookie aanwezig zolang de sessie actief is. Wanneer een gebruiker uw website verlaat of een sessie vervolgens beëindigt, wordt de informatie niet meer opgeslagen op de computer van de gebruiker. De ingevoerde informatie wordt echter vastgelegd door [!DNL Sensor] en beschikbaar gesteld als meetgegevens binnen [!DNL Site].
 
-De koekjes van de zitting kunnen een goed mechanisme zijn om gebruikersinput door vormgebieden of andere dynamische interactieve elementen binnen uw website te verzamelen. In het geval van een website die vormen uitvoert om gebruiker-specifieke inputgegevens te vangen, blijft de informatie in het zittingskoekje slechts zolang de zitting actief is. Wanneer een gebruiker uw website verlaat of later een zitting beëindigt, wordt de informatie niet meer opgeslagen op de computer van de gebruiker. De ingevoerde informatie wordt echter vastgelegd door [!DNL Sensor] en beschikbaar gesteld als meetgegevens binnen [!DNL Site].
-
-Na is een voorbeeld van het gebruiken van een zittingskoekje om één enkele vormvariabele te vangen ingegaan door een bezoeker.
+Hieronder ziet u een voorbeeld van het gebruik van een sessiecookie om één formuliervariabele vast te leggen die een bezoeker heeft ingevoerd.
 
 ```
 <html> 
@@ -56,13 +57,13 @@ testform.submit();
 </html> 
 ```
 
-In dit voorbeeld, wordt een functie geroepen om een zittingskoekje op de machine van de bezoeker met de naam van het gebied en de waarde te plaatsen ingegaan in het vormgebied. Aangezien de vorm wordt voorgelegd, en de verdere Web-pagina wordt gevraagd, wordt de reeks van het zittingskoekje overgegaan tot de Webserver en door verzameld [!DNL Sensor]. De volgende gegevens zijn daarom beschikbaar binnen de server van de gegevenswerkbank voor gebruik in gegevensanalyse:
+In dit voorbeeld wordt een functie aangeroepen om een sessiecookie op de computer van de bezoeker in te stellen met de naam van het veld en de waarde die in het formulierveld is ingevoerd. Terwijl het formulier wordt verzonden en de volgende webpagina wordt opgevraagd, wordt de set sessiecookies doorgegeven aan de webserver en verzameld door [!DNL Sensor]. De volgende gegevens zijn daarom beschikbaar binnen de server van de gegevenswerkbank voor gebruik in gegevensanalyse:
 
-| Verzamelde gegevens | Toelichting | Voorbeeld |
+| Gegevens verzameld | Toelichting | Voorbeeld |
 |---|---|---|
-| v_1 | Waarde verbonden aan het v_1 koekje. Deze waarde vertegenwoordigt de NAAM ingegaan in het vormgebied dat in het zittingskoekje resulteerde dat wordt geplaatst. | v_1=John Smith |
+| v_1 | Waarde die is gekoppeld aan het cookie v_1. Deze waarde vertegenwoordigt de NAAM die is ingevoerd in het formulierveld dat heeft geleid tot het instellen van het sessiecookie. | v_1=John Smith |
 
-De koekjes van de zitting kunnen ook worden gebruikt om vormgebieden of een massa ingebedde variabelen te vangen JavaScript huidig binnen een HTML- pagina. In het volgende voorbeeld, wordt JavaScript gebruikt om het even welk vormgebied recursief te vangen huidig binnen een HTML- dossier en een zittingskoekje met de aangewezen name=value paren te plaatsen.
+Sessiecookies kunnen ook worden gebruikt om formuliervelden of een groot aantal ingesloten JavaScript-variabelen die zich in een HTML-pagina bevinden, herhaaldelijk vast te leggen. In het volgende voorbeeld wordt JavaScript gebruikt om alle formuliervelden in een HTML-bestand recursief vast te leggen en een sessiecookie in te stellen met de juiste naam=waarde paren.
 
 ```
 <script language="JavaScript"> 
@@ -101,4 +102,4 @@ document.testform.submit();
 </script>
 ```
 
-In dit voorbeeld, wordt een zittingskoekje geplaatst op de machine van de bezoeker met de naam en de waarde van elk vormgebied dat binnen de vorm bestaat. Dit omvat inputgebieden, controledozen, radioknopen, uitgezochte dozen, en tekstgebieden. Aangezien u in dit voorbeeld kunt opmerken, omdat het aantal vormgebieden onbekend is, is het noodzakelijk om alle vormnaam en gebiedswaarden als één enkel koord te vangen, dat door een ampersand wordt afgebakend. Deze stap moet worden genomen vanwege een beperking van het aantal cookies dat een gebruiker op een bepaald moment op zijn of haar computer kan hebben. Microsoft Internet Explorer laat slechts twintig (20) zittingskoekjes toe om aanwezig te zijn alvorens het begint dalend oudste.
+In dit voorbeeld wordt op de computer van de bezoeker een sessiecookie ingesteld met de naam en waarde van elk formulierveld in het formulier. Dit zijn invoervelden, selectievakjes, keuzerondjes, selectiekaders en tekstgebieden. Zoals u in dit voorbeeld zult merken, is het, omdat het aantal formuliervelden onbekend is, noodzakelijk om alle formuliernamen en veldwaarden als één tekenreeks vast te leggen, gescheiden door een en-teken. Deze stap moet worden genomen vanwege een beperking van het aantal cookies dat een gebruiker op een bepaald tijdstip op zijn of haar computer kan hebben. In Microsoft Internet Explorer kunnen slechts twintig (20) sessiecookies aanwezig zijn voordat de oudste wordt neergezet.
