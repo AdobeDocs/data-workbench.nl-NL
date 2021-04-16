@@ -1,108 +1,108 @@
 ---
-description: Toont hoe te om Titel, Profiel, Dimensie, Metrisch, Filter, de Hoogste van de Vertoning, Soort door, en Periode te vormen.
-solution: Analytics
+description: Toont hoe te om Titel, Profiel, Dimension, Metrisch, Filter, de Boven van de Vertoning, Soort door, en Periode te vormen.
 title: Visualisaties configureren
-topic: Data workbench
 uuid: aca77188-8f28-4554-8913-412b252f688c
+exl-id: 153adf94-5689-4917-9d71-625caef49903
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 0%
 
 ---
 
-
 # Visualisaties configureren{#configuring-visualizations}
 
-Toont hoe te om Titel, Profiel, Dimensie, Metrisch, Filter, de Hoogste van de Vertoning, Soort door, en Periode te vormen.
+Toont hoe te om Titel, Profiel, Dimension, Metrisch, Filter, de Boven van de Vertoning, Soort door, en Periode te vormen.
 
-Elke visualisatie op het dashboardcanvas heeft zijn eigen configuratie. Wanneer een visualisatie eerst aan het dashboardcanvas wordt toegevoegd, zal zijn configuratievenster automatisch verschijnen. Als de configuratie eenmaal is geconfigureerd, kan de visualisatie op elk gewenst moment worden gewijzigd door te klikken op het versnellingspictogram in het rechterbovengedeelte van het visualisatievenster.
+Elke visualisatie op het dashboardcanvas heeft zijn eigen configuratie. Wanneer een visualisatie voor het eerst aan het dashboardcanvas wordt toegevoegd, wordt het bijbehorende configuratievenster automatisch weergegeven. Zodra gevormd, kan de visualisatie op elk ogenblik worden gewijzigd door het tandwielpictogram in het hogere juiste gedeelte van het visualisatievenster te klikken.
 
 >[!NOTE]
 >
->De opties van de configuratie variëren lichtjes afhankelijk van het type van visualisatie die wordt getoond.
+>De configuratieopties variëren enigszins afhankelijk van het type visualisatie dat wordt weergegeven.
 
 ## Visualisatietitel {#section-0414844283d745ae912e85f8ea14a51d}
 
-Dit gebied staat u toe om de titel aan te passen die bij de bovenkant van de visualisatie wordt getoond. Door gebrek wordt de titel geplaatst aan **[!UICONTROL Automatic Title]**, die automatisch een titel voor het visualiseringsvenster zal produceren. Door de **[!UICONTROL Automatic Title]** knoop te ontruimen, kunt u om het even welke titel op dit gebied plaatsen. (Dit gebied is op alle visualisaties van toepassing.)
+In dit veld kunt u de titel aanpassen die boven aan de visualisatie wordt weergegeven. De titel wordt standaard ingesteld op **[!UICONTROL Automatic Title]**, waardoor automatisch een titel voor het visualisatievenster wordt gegenereerd. Door de **[!UICONTROL Automatic Title]** knoop te ontruimen, kunt u om het even welke titel op dit gebied plaatsen. (Dit veld is van toepassing op alle visualisaties.)
 
 ![](assets/title.png)
 
 ## Profiel {#section-16eb0def0a2d4eb289f5bb9200d14754}
 
-In dit veld kunt u selecteren uit welk profiel u gegevens wilt visualiseren. Het klikken op het dropdown menu zal u van een lijst van profielen voorzien waarvoor u toegang hebt. (Dit gebied is niet toepasselijk voor de Rijke visualisaties van de Tekst.)
+In dit veld kunt u selecteren uit welk profiel u de gegevens wilt visualiseren. Als u op het vervolgkeuzemenu klikt, krijgt u een lijst met profielen waartoe u toegang hebt. (Dit veld is niet van toepassing op RTF-visualisaties.)
 
-De profielen zijn gegevensreeksen die binnen de werkbank van Gegevens worden bepaald die gegevens over een bepaald domein, samen met de afmetingen, de metriek, en de filters bevatten die de gegevens begeleiden. Een profiel wordt vaak ontworpen om een specifiek doel (zoals marketing of websiteverkeer) te vervullen.
+Profielen zijn gegevenssets die zijn gedefinieerd in de Data Workbench en die gegevens bevatten over een bepaald domein, samen met de afmetingen, metriek en filters die bij de gegevens horen. Een profiel wordt vaak ontworpen om een specifiek doel (zoals marketing of websiteverkeer) te vervullen.
 
 >[!NOTE]
 >
->U kunt slechts de profielen zien waarvoor u toegang hebt gekregen. Voor meer informatie zie de Controles van de Toegang.
+>U kunt alleen de profielen zien waarvoor u toegang hebt gekregen. Voor meer informatie zie de Controles van de Toegang.
 
 ![](assets/profile.png)
 
-## Afmetingen {#section-4ebb8c4308a146c3a35c7ac7ab6b579f}
+## Dimension {#section-4ebb8c4308a146c3a35c7ac7ab6b579f}
 
-Laat de dimensie selecteren u zou willen visualiseren. De lijst is ingevuld in de lijst met afmetingen die beschikbaar is in het profiel dat is geselecteerd in het veld Profiel. Klik op de gewenste afmeting en klik dan de Uitgezochte knoop. (Dit gebied is niet toepasselijk voor de Metrische Legende en Rijke visualisaties van de Tekst.)
+Hiermee selecteert u de dimensie die u wilt visualiseren. De lijst wordt gevuld vanuit de lijst met afmetingen die beschikbaar is via het profiel dat is geselecteerd in het veld Profiel. Klik op de gewenste dimensie en klik vervolgens op de knop Selecteren. (Dit veld is niet van toepassing op weergaven van metrische legenda en RTF.)
 
-De afmetingen zijn categorieën van gelijkaardige gegevenstypes. Bijvoorbeeld, zijn de Dagen van Week dimensie samengesteld uit de volgende gegevenselementen: Zondag, Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, en Zaterdag. De afmetingen tonen wat wordt gemeten.
+Dimension zijn categorieën van soortgelijke gegevenstypen. De dimensie Dagen van week bestaat bijvoorbeeld uit de volgende gegevenselementen: Zondag, maandag, dinsdag, woensdag, donderdag, vrijdag, en zaterdag. Dimension laten zien wat er wordt gemeten.
 
 ![](assets/dimension.png)
 
 ## Metrisch(e) {#section-7d46f2f1b9fe4e539b5eb0a0dc6e5ad3}
 
-Laat u de metriek selecteren om te visualiseren. De metriek zijn kwantitatieve voorwerpen en door één of andere kwantificeerbare uitdrukking bepaald. Bijvoorbeeld, worden de Meningen van de Pagina per Zitting afgeleid uit de uitdrukking van de telling van de Meningen van de Pagina die door de telling van Zittingen worden verdeeld. De metriek beantwoorden de vraag van &quot;hoeveel?&quot;
+Hiermee kunt u de meetgegevens selecteren die u wilt visualiseren. Metrische waarden zijn kwantitatieve objecten die worden gedefinieerd door een kwantificeerbare expressie. Paginaweergaven per sessie worden bijvoorbeeld afgeleid van de expressie van het aantal paginaweergaven gedeeld door het aantal sessies. Metrics beantwoorden de vraag &quot;hoeveel?&quot;
 
-De enig-metrische visualisaties hebben een enig-metrisch selectievenster:
+Single-Metrische visualisaties hebben een enig-metrisch selectievenster:
 
 ![](assets/metrics2.png)
 
-De multimetrische visualisaties hebben een multi-metrisch selectievenster:
+Multimetrische visualisaties hebben een multi-metrisch selectievenster:
 
 ![](assets/metrics.png)
 
-De lijst is bevolkt van de lijst van metriek beschikbaar bij het profiel dat op het gebied van het Profiel wordt geselecteerd.
+De lijst wordt gevuld vanuit de lijst met beschikbare metriek van het profiel dat is geselecteerd in het veld Profiel.
 
-Klik op de gewenste metriek en klik dan **[!UICONTROL Select]**. (Dit gebied is niet toepasselijk voor de Rijke visualisaties van de Tekst.)
+Klik op de gewenste metriek en klik dan **[!UICONTROL Select]**. (Dit veld is niet van toepassing op RTF-visualisaties.)
 
 ## Filters {#section-f8619ae2f8e54735a2c1b0fbb8bb1281}
 
-Selecteer de filters u op uw visualisatie zou willen toepassen. Het venster van de filterselectie staat u toe om veelvoudige filters van de filterlijst te selecteren. De lijst is bevolkt van de lijst van filters beschikbaar bij het profiel dat op het gebied van het Profiel wordt geselecteerd. Klik op de gewenste filter en klik dan **[!UICONTROL Select]**.
+Selecteer de filters die u op uw visualisatie wilt toepassen. In het venster met filterselectie kunt u meerdere filters in de filterlijst selecteren. De lijst wordt gevuld met de lijst met filters die beschikbaar zijn via het profiel dat is geselecteerd in het veld Profiel. Klik op het gewenste filter en klik vervolgens op **[!UICONTROL Select]**.
 
 >[!NOTE]
 >
->De filters die hier worden toegepast worden slechts toegepast op hun overeenkomstige visualisatie, niet het volledige dashboard. Dit is nuttig om de resultaten van twee verschillende visualisaties met verschillende toegepaste filters te vergelijken.
+>Filters die u hier toepast, worden alleen toegepast op de bijbehorende visualisatie, niet op het hele dashboard. Dit is handig als u de resultaten van twee verschillende visualisaties wilt vergelijken met verschillende toegepaste filters.
 
 ![](assets/filter.png)
 
-## Tops weergeven {#section-7ce71cb0fa6446998b710b427e68b133}
+## Tops {#section-7ce71cb0fa6446998b710b427e68b133} weergeven
 
-De visualisaties in het dashboard worden niet ontworpen om de volledige gegevens te tonen. Eerder, staan zij u toe om het aantal afmetingsverslagen te specificeren u op de visualisatie zou willen tonen. Dit toont het hoogste aantal afmetingen afhankelijk van de hieronder vermelde soort-door waarde. (Dit gebied is niet toepasselijk voor Lijsten, de Metrische Legende, en de Rijke visualisaties van de Tekst.)
+Visualisaties in het dashboard zijn niet ontworpen om alle gegevens weer te geven. In plaats daarvan kunt u hiermee het aantal dimensie-records opgeven dat u wilt weergeven op de visualisatie. Hierdoor wordt het bovenste aantal dimensies weergegeven, afhankelijk van de onderstaande sorteerwaarde. (Dit veld is niet van toepassing op tabellen, metrische legenda en RTF-visualisaties.)
 
 ![](assets/display_top.png)
 
 ## Sorteren op {#section-f686249e20444359bff87c00cc2ba29f}
 
-Dit staat u toe om te specificeren hoe de gegevens zouden moeten worden gesorteerd wanneer het binnen de visualisatie wordt getoond. (Dit gebied is niet toepasselijk voor Lijsten, de Metrische Legende, en de Rijke visualisaties van de Tekst.) Er zijn veelvoudige sorteeropties:
+Op deze manier kunt u opgeven hoe de gegevens moeten worden gesorteerd wanneer deze worden weergegeven in de visualisatie. (Dit veld is niet van toepassing op tabellen, metrische legenda en RTF-visualisaties.) Er zijn meerdere sorteeropties:
 
-* **[!UICONTROL Default]** - Terugkeer de gegevens ongesorteerd die op de soortorde worden gebaseerd die in gegevenswerkbank wordt opgeslagen. Dit is de optie voor op tijd-gebaseerde gegevens zoals uur, dag, week, of maand te gebruiken.
-* **[!UICONTROL Dimension]** - Sorteer de gegevens die op de alfanumerieke afmetingswaarde worden gebaseerd.
-* **[!UICONTROL Metric]** - Sorteer de gegevens die op de metrische waarde worden gebaseerd en is goed voor snel het visualiseren van de hoogste afmetingen.
-* **[!UICONTROL Descending]** - Sorteer de gegevens in dalende orde.
+* **[!UICONTROL Default]** - Retourneer de gegevens ongesorteerd op basis van de sorteervolgorde die is opgeslagen in de gegevenswerkbank. Dit is de optie die u kunt gebruiken voor op tijd gebaseerde gegevens zoals uur, dag, week of maand.
+* **[!UICONTROL Dimension]** - Sorteer de gegevens op basis van de waarde van de alfanumerieke dimensie.
+* **[!UICONTROL Metric]** - Sorteer de gegevens op basis van de metrische waarde en is goed voor het snel visualiseren van de bovenste afmetingen.
+* **[!UICONTROL Descending]** - Sorteer de gegevens in aflopende volgorde.
 * **[!UICONTROL Ascending]** - Sorteer de gegevens in oplopende volgorde.
 
 ![](assets/sort_by.png)
 
 ## Tijdsperiode {#section-6220368e9e524b46ac735add6ab9edb0}
 
-Deze visualisatie staat u toe om de gewenste begin en/of einddatum van de gegevens te specificeren om binnen de visualisatie te tonen.
+Met deze visualisatie kunt u de gewenste begin- en/of einddatum opgeven voor de gegevens die binnen de visualisatie worden weergegeven.
 
-Het selecteren **[!UICONTROL All Dates]**toont de volledige datumwaaier beschikbaar in het profiel.
+Als u **[!UICONTROL All Dates]**selecteert, wordt het volledige datumbereik weergegeven dat beschikbaar is in het profiel.
 
-Het selecteren **[!UICONTROL Range]** toont slechts de gegevens die binnen een gespecificeerde waaier vallen. Om de datumwaaier in te gaan, kunt u in de begin en/of einddatum typen, of een kalenderinput gebruiken door het kalenderpictogram te selecteren.
+Als u **[!UICONTROL Range]** selecteert, worden alleen de gegevens weergegeven die binnen een opgegeven bereik vallen. Als u het datumbereik wilt invoeren, typt u de begin- en/of einddatum of gebruikt u een kalenderinvoer door het kalenderpictogram te selecteren.
 
-(Dit gebied is niet toepasselijk voor de Rijke visualisaties van de Tekst.)
+(Dit veld is niet van toepassing op RTF-visualisaties.)
 
 >[!NOTE]
 >
->De waaiers van de datum die hier worden toegepast worden slechts toegepast op hun overeenkomstige visualisatie, niet het volledige dashboard. Dit is nuttig om de resultaten van twee verschillende visualisaties met verschillende toegepaste datumwaaiers te vergelijken.
+>De hier toegepaste datumbereiken worden alleen toegepast op de bijbehorende visualisatie, niet op het hele dashboard. Dit is handig als u de resultaten van twee verschillende visualisaties wilt vergelijken met verschillende toegepaste datumbereiken.
 
 ![](assets/time_period.png)
-
