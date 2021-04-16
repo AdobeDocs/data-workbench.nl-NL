@@ -1,69 +1,69 @@
 ---
-description: Binnen een werkruimte, vertegenwoordigt een visualisatie een reeks vraagresultaten.
-solution: Analytics
-title: Begrijpend hoe een Selectie Andere Visualisaties beïnvloedt
-topic: Data workbench
+description: Binnen een werkruimte vertegenwoordigt een visualisatie een set queryresultaten.
+title: Begrijpen hoe een selectie andere visualisaties beïnvloedt
 uuid: d46f4e8d-df6f-4a7f-a796-eb9f11536ae5
+exl-id: 7756646b-9309-41aa-a098-8988f6c065c8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 0%
 
 ---
 
+# Begrijpen hoe een selectie andere visualisaties beïnvloedt{#understanding-how-a-selection-affects-other-visualizations}
 
-# Begrijpend hoe een Selectie Andere Visualisaties beïnvloedt{#understanding-how-a-selection-affects-other-visualizations}
+Binnen een werkruimte vertegenwoordigt een visualisatie een set queryresultaten.
 
-Binnen een werkruimte, vertegenwoordigt een visualisatie een reeks vraagresultaten.
+Wanneer u een selectie maakt, filtert de Data Workbench de resultaten van de vragen die het gebruikt om de visualisaties in de werkruimte te veroorzaken. Het specifieke filter varieert door visualisatie.
 
-Wanneer u een selectie maakt, de filters van de Werkbank van Gegevens de resultaten van de vragen die het gebruikt om de visualisaties in de werkruimte te veroorzaken. De specifieke filter varieert door visualisatie.
+In het volgende voorbeeld ziet u hoe Data Workbench een selectie toepast op drie verschillende visualisatietypen. Als u deze voorbeelden bekijkt, begrijpt u welke filtereffecten selecties hebben op visualisaties. Ze helpen u ook te begrijpen hoe u de resultaten kunt interpreteren die u in een gefilterde visualisatie ziet.
 
-De volgende voorbeelden illustreren hoe de Werkbank van Gegevens een selectie op drie verschillende soorten visualisaties toepast. Het herzien van deze voorbeelden helpt u het het filtreren effect begrijpen dat de selecties op visualisaties hebben. Zij helpen u ook begrijpen hoe te om de resultaten te interpreteren die u in een gefiltreerde visualisatie ziet.
-
-* [Het filtreren van een Visualisatie met een Metrische Zittingen](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-aff-vis.md#section-7cc06493ecb34cd4a696dbf0f0a7aaef)
+* [Een visualisatie filteren met een metrische sessie](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-aff-vis.md#section-7cc06493ecb34cd4a696dbf0f0a7aaef)
 * [Een visualisatie filteren met een metrische bezoeker](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-aff-vis.md#section-97d38c7f03e8457189a9c72d69514ed2)
-* [Het filtreren van een Visualisatie met een Bezoeker-door-Zitting Metrische](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-aff-vis.md#section-f746182311d648dcb98716b0fe846e25)
+* [Filteren van een Visualisatie met een Bezoeker-voor-Zitting Metrisch](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-aff-vis.md#section-f746182311d648dcb98716b0fe846e25)
 
-## Het filtreren van een Visualisatie met een Metrische Zittingen {#section-7cc06493ecb34cd4a696dbf0f0a7aaef}
+## Een visualisatie filteren met een sessiemetrisch {#section-7cc06493ecb34cd4a696dbf0f0a7aaef}
 
-In dit voorbeeld, filtreert [!DNL /direct.asp/?ldPage=hme] URI in de visualisatie op de linkerzijde metrisch voor Zittingen die in de visualisatie op het recht worden getoond.
+In dit voorbeeld filtert [!DNL /direct.asp/?ldPage=hme] URI in visualisatie op de linkerzijde metrisch voor Zittingen die in visualisatie op het recht worden getoond.
 
 ![](assets/client-vis1.png)
 
-* **Effect van Selectie op de Vraag:** De Werkbank van gegevens filters de Zittingen voor geselecteerd URI. In dit voorbeeld, wordt de vraag die de waarde voor het [!DNL /pops/disclosure_pop.asp] element produceert gefiltreerd als volgt:
+* **Het effect van Selectie op Vraag:** Data Workbench filtert de zittingen voor geselecteerde URI. In dit voorbeeld wordt de query die de waarde voor het element [!DNL /pops/disclosure_pop.asp] genereert, als volgt gefilterd:
 
    ```
    Sessions[ URI="/pops/disclosure_pop.asp" AND URI="/direct.asp
    /?ldPage=hme"] by Page View by Session
    ```
 
-* **Het interpreteren van de Visualisatie:** De gefiltreerde visualisatie vertegenwoordigt het aantal Zittingen die URIs omvatten die in de visualisatie en [!DNL /direct.asp/?ldPage=hme]worden vermeld. Dit voorbeeld toont aan dat er 1.113 zittingen waren waarin de bezoekers zowel [!DNL /pops/disclosure_pop.asp] pagina als [!DNL /direct.asp/?ldPage=hme] in de zelfde zitting bekeken.
+* **Bezig met interpreteren van visualisatie:** De gefilterde visualisatie vertegenwoordigt het aantal sessies dat de URI&#39;s bevat die in de visualisatie en  [!DNL /direct.asp/?ldPage=hme]. In dit voorbeeld wordt getoond dat er 1.113 sessies waren waarin bezoekers zowel [!DNL /pops/disclosure_pop.asp] pagina als [!DNL /direct.asp/?ldPage=hme] in dezelfde sessie bekeken.
 
-## Een visualisatie filteren met een metrische bezoeker {#section-97d38c7f03e8457189a9c72d69514ed2}
+## Een visualisatie filteren met een metrisch {#section-97d38c7f03e8457189a9c72d69514ed2}
 
-In dit voorbeeld, filtreert [!DNL /direct.asp/?ldPage=home] URI in de visualisatie op de linkerzijde metrisch voor Bezoekers in de visualisatie op het recht.
+In dit voorbeeld filtert de URI [!DNL /direct.asp/?ldPage=home] in de visualisatie links de metrische waarde voor Bezoekers in de visualisatie aan de rechterkant.
 
 ![](assets/client-vis2.png)
 
-* **Effect van Selectie op de Vraag:** De Werkbank van gegevens filters de Bezoekers voor geselecteerde URI. In dit voorbeeld, wordt de vraag die de waarde voor [!DNL /pops/disclosure_pop.asp] URI produceert gefiltreerd als volgt:
+* **Effect van Selectie op Vraag:** Data Workbench filtert de Bezoekers voor geselecteerde URI. In dit voorbeeld wordt de query die de waarde voor de URI [!DNL /pops/disclosure_pop.asp] genereert, als volgt gefilterd:
 
    ```
    Visitors[ URI="/pops/disclosure_pop.asp" by Page View by Visitor 
      AND URI="/direct.asp/?ldPage=hme" by Page View by Visitor ]
    ```
 
-* **Het interpreteren van de Visualisatie:** De gefiltreerde visualisatie toont de Bezoekers die URIs hebben bekeken die in de visualisatie en [!DNL /direct.asp/?ldPage=hme] (hoewel niet noodzakelijk tijdens de zelfde zitting) worden vermeld. Uit het bovenstaande voorbeeld blijkt dat 2.041 bezoekers zowel [!DNL /pops/disclosure_pop.asp] als [!DNL /direct.asp/?ldPage=hme]hebben gezien.
+* **Bezig met interpreteren van visualisatie:** De gefilterde visualisatie toont de bezoekers die de URI&#39;s hebben bekeken die in de visualisatie en  [!DNL /direct.asp/?ldPage=hme] (hoewel niet noodzakelijkerwijs tijdens dezelfde sessie) worden vermeld. Het bovenstaande voorbeeld toont dat 2.041 bezoekers zowel [!DNL /pops/disclosure_pop.asp] als [!DNL /direct.asp/?ldPage=hme] hebben bekeken.
 
-## Het filtreren van een Visualisatie met een Bezoeker-door-Zitting Metrische {#section-f746182311d648dcb98716b0fe846e25}
+## Filtrerend een Visualisatie met Bezoekers-door-Zitting Metrisch {#section-f746182311d648dcb98716b0fe846e25}
 
-In dit voorbeeld, filtreert [!DNL /direct.asp/?ldPage=hme] URI in de visualisatie op de linkerzijde metrisch voor bezoeker-door-zitting in de visualisatie op het recht.
+In dit voorbeeld filtert de URI [!DNL /direct.asp/?ldPage=hme] in de visualisatie aan de linkerkant de metrische waarde voor bezoeker-voor-sessie in de visualisatie aan de rechterkant.
 
 ![](assets/client-vis3.png)
 
-* **Effect van Selectie op de Vraag:** De Werkbank van gegevens filters de Bezoekers door Zitting voor geselecteerde URI. Bijvoorbeeld, wordt de vraag die de waarde voor [!DNL /pops/disclosure_pop.asp] URI produceert gefiltreerd als volgt:
+* **Effect van Selectie op Vraag:** Data Workbench filtert de Bezoekers door Zitting voor geselecteerde URI. Bijvoorbeeld, wordt de vraag die de waarde voor [!DNL /pops/disclosure_pop.asp] URI produceert gefiltreerd als volgt:
 
    ```
    Visitors[ ( URI="/pops/disclosure_pop.asp" by Page View 
      AND URI="/direct.asp/?ldPage=hme" by Page View ) by Session ]
    ```
 
-* **Het interpreteren van de Visualisatie:** De gefiltreerde visualisatie toont de Bezoekers die beide URIs hebben bekeken die in de visualisatie en [!DNL /direct.asp/?ldPage=hme] tijdens de zelfde zitting worden vermeld. Dit voorbeeld toont aan dat 1.069 bezoekers zowel [!DNL /pops/disclosure_pop.asp] als [!DNL /direct.asp/?ldPage=hme] tijdens één enkele zitting zagen.
-
+* **Bezig met interpreteren van visualisatie:** De gefilterde visualisatie toont de bezoekers die beide URI&#39;s hebben weergegeven die in de visualisatie en  [!DNL /direct.asp/?ldPage=hme] tijdens dezelfde sessie zijn vermeld. In dit voorbeeld wordt getoond dat 1069 bezoekers zowel [!DNL /pops/disclosure_pop.asp] als [!DNL /direct.asp/?ldPage=hme] hebben gezien tijdens één sessie.
