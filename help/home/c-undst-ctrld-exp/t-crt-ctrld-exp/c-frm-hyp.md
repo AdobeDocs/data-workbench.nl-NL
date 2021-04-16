@@ -2,16 +2,15 @@
 description: Een hypothese is een veronderstelling, die voor het argument als juist kan worden beschouwd, die een voorzichtige verklaring biedt die door verder onderzoek kan worden getest.
 solution: Analytics,Analytics
 title: Een hypothese opmaken
-topic: Data workbench
 uuid: 3973060a-f49e-44e1-aa49-25059cb33783
+exl-id: d7e77d85-4655-49c5-adeb-15402e48dd7b
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
-
 
 # Een hypothese opmaken{#forming-a-hypothesis}
 
@@ -23,11 +22,10 @@ Uw hypothese moet een statistisch significant resultaat opleveren. Dit kan worde
 
 Op dit punt, zou u ook uw bezoekersgebaseerde succesmetriek, of als deel van de hypothese of als extra matrijs moeten bepalen.
 
-**Hypothese:** Als u de grafische koppeling &quot;Verzoek om een demo&quot; dichter naar de bovenzijde van de pagina verplaatst, wordt de bezoekerconversie met ten minste 1,5% verhoogd.
+**Hypothese:** Als u de grafische koppeling &quot;Verzoek om demo&quot; dichter naar de bovenkant van de pagina verplaatst, wordt de bezoekerconversie met ten minste 1,5% verhoogd.
 
 In onze voorbeeldhypothese hebben we het succescriterium voor dit experiment gedefinieerd als een verhoging van de bezoekersconversie met minstens 1,5 procent.
 
 ![](assets/ControlPage.png)
 
 ![](assets/TestPage.png)
-
