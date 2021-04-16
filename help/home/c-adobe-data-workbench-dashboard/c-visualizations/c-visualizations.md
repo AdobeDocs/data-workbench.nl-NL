@@ -1,45 +1,45 @@
 ---
-description: De visualisaties zijn elementen die aan het dashboardcanvas worden toegevoegd en worden gevormd om diverse metrische en op maat-gebaseerde gegevens te tonen.
-solution: Analytics
+description: Visualisaties zijn elementen die aan het dashboardcanvas worden toegevoegd en worden geconfigureerd om verschillende op metrische en dimensies gebaseerde gegevens weer te geven.
 title: Visualisaties
-topic: Data workbench
 uuid: 1e15de30-7761-422a-a836-7a1b49b58daf
+exl-id: 7e8b23cd-5e95-4cd5-b07e-3aa53f26fac7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 0%
 
 ---
 
-
 # Visualisaties{#visualizations}
 
-De visualisaties zijn elementen die aan het dashboardcanvas worden toegevoegd en worden gevormd om diverse metrische en op maat-gebaseerde gegevens te tonen.
+Visualisaties zijn elementen die aan het dashboardcanvas worden toegevoegd en worden geconfigureerd om verschillende op metrische en dimensies gebaseerde gegevens weer te geven.
 
-Alle dashboards zijn samengesteld uit één of meerdere visualisaties. Elke visualisatie kan, onafhankelijk van alle andere visualisaties op het dashboardcanvas worden gecreeerd, worden verwijderd, resized en worden aangepast.
+Alle dashboards bestaan uit één of meerdere visualisaties. Elke visualisatie kan onafhankelijk van alle andere visualisaties op het dashboardcanvas worden gemaakt, verwijderd, vergroot of verkleind en opnieuw geconfigureerd.
 
-De visualisaties zijn ook interactief, toestaand gebruikers om gegevens snel te segmenteren door selecties op één of meerdere gegevenselementen binnen de visualisatie te maken. De selecties die binnen één visualisatie worden gemaakt zullen dynamisch filters in real time op andere visualisaties op het canvas toepassen. Dit geeft de zelfde gegevens over alle visualisaties op het canvas terug.
+De visualisaties zijn ook interactief, toestaand gebruikers om gegevens snel te segmenteren door selecties op één of meerdere gegevenselementen binnen visualisatie te maken. Bij selecties binnen één visualisatie worden filters in real-time dynamisch toegepast op andere visualisaties op het canvas. Hierdoor worden dezelfde gegevens weergegeven voor alle visualisaties op het canvas.
 
-Er zijn acht verschillende visualisaties. Elke kan worden toegevoegd, resized, gevormd, en onafhankelijk van een andere visualisatie worden verwijderd. De vertoningsgegevens van visualisaties die in gegevenswerkbank door een architect van de gegevenswerkbank worden bepaald.
+Er zijn acht verschillende soorten visualisatie. Elke kan worden toegevoegd, resized, gevormd en, onafhankelijk van een andere visualisatie worden verwijderd. Bij visualisaties worden gegevens weergegeven die in de gegevenswerkbank door een gegevenswerkbankarchitect zijn gedefinieerd.
 
-De acht beschikbare soorten visualisaties omvatten:
+De acht beschikbare visualisatietypen zijn:
 
-* Kolomgrafieken
-* Bar-grafieken
-* Lijndiagrammen
+* Kolomdiagrammen
+* Staafdiagrammen
+* Lijngrafieken
 * Tabellen
-* Metrische legaten
-* Piekgrafieken
-* Scatter Plots
-* Rijke tekst
+* Metrische legenda
+* Cirkeldiagrammen
+* Spreidingsplokken
+* RTF
 
-## Visualisatie-gebruikersinterface {#section-54a73865f00742268340cf9123d6c590}
+## Gebruikersinterface {#section-54a73865f00742268340cf9123d6c590} visualiseren
 
-Het kopbalgedeelte van de visualisatie bevat de visualisatitel en visualisatiehulpmiddelen, die afhankelijk van het type en de staat van de visualisatie variëren. Het lichaam van de visualisatie bevat de inhoud, en is afhankelijk van het type en de configuratie van de visualisatie die worden getoond. De visualisatiehulpmiddelen verschijnen slechts wanneer de muis het visualisatievenster ingaat. Anders zijn ze verborgen.
+Het koptekstgedeelte van de visualisatie bevat de visualisatietitel en de visualisatiegereedschappen, die afhankelijk van het type en de staat van de visualisatie variëren. De hoofdtekst van de visualisatie bevat de inhoud en is afhankelijk van het type en de configuratie van de visualisatie die wordt weergegeven. De visualisatiegereedschappen worden alleen weergegeven wanneer de muis het visualisatievenster binnengaat. Anders worden ze verborgen.
 
 ![](assets/visualization.png)
 
-* Visualisatietitel. Beschrijft deze visualisatie. De titel wordt automatisch geproduceerd of manueel met voeten getreden met een douanetitel.
-* Bedrag weergegeven. Voor de afmeting die wordt gevisualiseerd, toont de hoeveelheid getoonde gegevens tegenover het totale beschikbare bedrag.
-* Monsterindicator. Getoond wanneer de visualiseerde gegevens een steekproef en niet een volledig 100% vraagresultaat zijn.
-* Visualisatieprogramma&#39;s. Voert specifieke verrichtingen op de visualisaties uit. De beschikbare hulpmiddelen hangen van het visualisatietype, de staat, en de huidige gebruikerstoestemmingen af.
-* Visualiseringsorgaan. Toont de gegevens van de visualisatie zoals gevormd. Dit gebied is interactief en hangt van het type van visualisatie af die wordt getoond.
-
+* Titel visualisatie. Beschrijft deze visualisatie. De titel wordt automatisch gegenereerd of handmatig overschreven door een aangepaste titel.
+* Hoeveelheid weergegeven. Voor de afmeting die wordt visualiseerd, toont de hoeveelheid getoonde gegevens tegenover de totale beschikbare hoeveelheid.
+* Voorbeeldindicator. Getoond wanneer de visualiseerde gegevens een steekproef en niet een volledig 100% vraagresultaat zijn.
+* Visualisatieprogramma&#39;s. Hiermee voert u specifieke bewerkingen op de visualisaties uit. De beschikbare gereedschappen zijn afhankelijk van het visualisatietype, de status en de huidige gebruikersmachtigingen.
+* Visualiseringsinstantie. Toont de gegevens van visualisatie zoals gevormd. Dit gebied is interactief en is afhankelijk van het type visualisatie dat wordt weergegeven.
