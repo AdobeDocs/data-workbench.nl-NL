@@ -1,20 +1,21 @@
 ---
-description: De waarden ingegaan in een vorm in een Web-pagina kunnen in het vraagkoord van de later gevraagde pagina (op vormvoorlegging) door het gebruik van JavaScript worden verzameld en worden toegevoegd.
-solution: Analytics
+description: Waarden die in een formulier op een webpagina worden ingevoerd, kunnen met behulp van JavaScript worden verzameld en toegevoegd aan de queryreeks van de pagina die daarna wordt aangevraagd (bij het verzenden van het formulier).
 title: Algemene informatie
-topic: Data workbench
 uuid: 401816a5-1d95-48e6-bedf-ee2a5dbd2d50
+exl-id: 9effc72b-e75f-423c-87ec-6ac25edee8d6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '175'
+ht-degree: 0%
 
 ---
 
-
 # Algemene informatie{#general-information}
 
-De waarden ingegaan in een vorm in een Web-pagina kunnen in het vraagkoord van de later gevraagde pagina (op vormvoorlegging) door het gebruik van JavaScript worden verzameld en worden toegevoegd.
+Waarden die in een formulier op een webpagina worden ingevoerd, kunnen met behulp van JavaScript worden verzameld en toegevoegd aan de queryreeks van de pagina die daarna wordt aangevraagd (bij het verzenden van het formulier).
 
-Dit wordt getoond in het volgende voorbeeld. Omvat dit JavaScript na om het even welke manuscripten van de vormbevestiging die in uw HTML- pagina&#39;s worden gebruikt.
+Dit wordt in het volgende voorbeeld getoond. Neem dit JavaScript op na alle validatiescripts voor formulieren die in uw HTML-pagina&#39;s worden gebruikt.
 
 ```
 <html> 
@@ -47,18 +48,17 @@ document.formname.action = document.formname.action + '?' + formvalues;
 </html> 
 ```
 
-Dit voorbeeld voegt de waarden ingegaan in de vorm door de browser gebruiker aan de verdere &quot;thankyou.asp&quot;pagina toe die in de waarde van de Actie van de VORM als volgt wordt vermeld:
+In dit voorbeeld worden de waarden die door de browsergebruiker in het formulier zijn ingevoerd, toegevoegd aan de volgende pagina &quot;thankyou.asp&quot; die als volgt in de waarde voor FORM-actie wordt aangegeven:
 
 ```
 http://www.myserver.com/thankyou.asp?v_1=John Smith&v_2=Los Angeles&v_3=California&v_4=90210
 ```
 
-De volgende uitgebreide metingen zouden met dit verzoek worden verkregen naast de basismetingen die worden verzameld door [!DNL Sensor]:
+De volgende uitgebreide metingen zouden met dit verzoek worden verkregen naast de basismetingen die door [!DNL Sensor] worden verzameld:
 
-| Verzamelde gegevens | Toelichting | Voorbeeld |
+| Gegevens verzameld | Toelichting | Voorbeeld |
 |---|---|---|
-| v_1 | Waarde verbonden aan het de vormgebied van de NAAM | v_1=John Smith |
-| v_2 | Waarde verbonden aan het de vormgebied van de CITY | v_2=Los Angeles |
-| v_3 | Waarde verbonden aan het de vormgebied van de STAAT | v_3=Californië |
-| v_4 | Waarde verbonden aan het de vormgebied van het PIT | v_4=90210 |
-
+| v_1 | Waarde die is gekoppeld aan het formulierveld NAME | v_1=John Smith |
+| v_2 | Waarde die is gekoppeld aan het veld CITY-formulier | v_2=Los Angeles |
+| v_3 | Waarde die is gekoppeld aan het STATE-formulierveld | v_3=California |
+| v_4 | Waarde die is gekoppeld aan het ZIP-formulierveld | v_4=90210 |
