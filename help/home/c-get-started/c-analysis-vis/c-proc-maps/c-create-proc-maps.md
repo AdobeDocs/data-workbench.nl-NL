@@ -1,24 +1,25 @@
 ---
-description: U kunt 2D en 3D proceskaarten tot stand brengen door elementen van bar grafieken, lijsten, en hiërarchiemeningen op een lege kaart te slepen en te laten vallen.
-solution: Analytics
-title: Creeer een proceskaart
-topic: Data workbench
+description: U kunt 2D- en 3D-procesafbeeldingen maken door elementen van staafgrafieken, tabellen en hiërarchische weergaven naar een lege kaart te slepen.
+title: Een proceskaart maken
 uuid: dbcde637-0411-4296-99ca-5510e0285e4b
+exl-id: 2e417a8e-5b1c-4dce-9e4e-ac7ed044564c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 0%
 
 ---
 
+# Een procesafbeelding maken{#create-a-process-map}
 
-# Creeer een proceskaart{#create-a-process-map}
+U kunt 2D- en 3D-procesafbeeldingen maken door elementen van staafgrafieken, tabellen en hiërarchische weergaven naar een lege kaart te slepen.
 
-U kunt 2D en 3D proceskaarten tot stand brengen door elementen van bar grafieken, lijsten, en hiërarchiemeningen op een lege kaart te slepen en te laten vallen.
+De elementen die u kunt toevoegen moeten elementen van de de basisdimensie van de proceskaart zijn. U kunt ook knooppunten van de ene proceskaart naar een andere slepen zolang de kaarten dezelfde basisdimensie gebruiken. Bovendien kan de volledige kaart worden gezoomd of worden bewogen om zich op een bepaalde knoop te concentreren, of het kan in andere visualisatietypen worden veranderd. Zie [Zoomen in visualisaties](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
 
-De elementen die u kunt toevoegen moeten elementen van de de basisdimensie van de proceskaart zijn. U kunt ook knopen van één proceskaart aan een andere slepen en laten vallen zolang de kaarten de zelfde basisafmeting gebruiken. Bovendien kan de volledige kaart worden gezoemd of worden bewogen om zich op een bepaalde knoop te concentreren, of het kan in andere visualisatietypes worden veranderd. Zie [Zoomen in Visualisaties](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
+**Elementen toevoegen aan een proceskaart met een tabel- of staafgrafiek**
 
-**Om elementen aan een proceskaart toe te voegen die een lijst of een bar grafiek gebruikt**
-
-* Van om het even welke lijst of bar grafiek met de zelfde basisafmeting zoals de proceskaart, druk Ctrl+Alt terwijl u klikt en individuele elementen aan de proceskaart sleept. Uw muiscurseur toont het woord &quot;Nr&quot;tot uw muis de proceskaart bereikt.
+* Druk vanuit een tabel- of staafgrafiek met dezelfde basisafmeting als de procesafbeelding op Ctrl+Alt terwijl u op afzonderlijke elementen klikt en deze naar de procesafbeelding sleept. Uw muiscursor geeft het woord &quot;Nee&quot; weer totdat uw muis de proceskaart heeft bereikt.
 
    >[!NOTE]
    >
@@ -26,22 +27,22 @@ De elementen die u kunt toevoegen moeten elementen van de de basisdimensie van d
 
    ![](assets/vis_2DProcessMap_addPages.png)
 
-**Om elementen aan een proceskaart toe te voegen die een hiërarchiemening gebruikt**
+**Elementen toevoegen aan een proceskaart met behulp van een hiërarchische weergave**
 
 >[!NOTE]
 >
->Adobe adviseert dat u knopen van het hoogste niveau van de hiërarchie toevoegt die u analyseert.
+>Adobe raadt u aan knooppunten toe te voegen van het hoogste niveau van de hiërarchie die u analyseert.
 
-1. Van om het even welke lijst of bar grafiek met de zelfde basisafmeting zoals de proceskaart, klik een element of het etiket van de basisafmeting met de rechtermuisknop aan en klik **[!UICONTROL Hierarchy View]**.
-1. Pers Ctrl+Alt terwijl u klikt en elementen aan de proceskaart sleept. Uw muiscurseur toont het woord &quot;Nr&quot;tot uw muis de kaart bereikt.
+1. Klik in een tabel- of staafgrafiek met dezelfde basisafmeting als de procesafbeelding met de rechtermuisknop op een element of het label van de basisafmeting en klik op **[!UICONTROL Hierarchy View]**.
+1. Druk op Ctrl+Alt terwijl u op elementen klikt en deze naar het procesdiagram sleept. Uw muiscursor geeft het woord &quot;Nee&quot; weer totdat uw muis de kaart heeft bereikt.
 
    >[!NOTE]
    >
    >De elementen die u kunt toevoegen moeten elementen van de de basisdimensie van de proceskaart zijn.
 
-   Het slepen van één enkel element op een proceskaart maakt een kaartknoop voor slechts dat element, maar als u veelvoudige elementen (een groep) of een omslag selecteert die veelvoudige elementen bevat, leidt het slepen van de hiërarchie tot één enkele knoop voor die groep of omslag. Bijvoorbeeld, als u met websitegegevens werkt, maakt het slepen van een omslag genoemd [!DNL site.com/cgi-bin] op een kaart een geroepen knoop [!DNL site.com/cgi-bin/*], die alle pagina&#39;s en folders vertegenwoordigt die kinderen van die omslag zijn.
+   Als u één element naar een proceskaart sleept, wordt alleen voor dat element een toewijzingsknooppunt gemaakt. Als u echter meerdere elementen (een groep) of een map met meerdere elementen selecteert en u sleept vanuit de hiërarchie, wordt één knooppunt voor die groep of map gemaakt. Als u bijvoorbeeld met websitegegevens werkt en een map met de naam [!DNL site.com/cgi-bin] naar een map sleept, wordt een knooppunt met de naam [!DNL site.com/cgi-bin/*] gemaakt. Dit knooppunt vertegenwoordigt alle pagina&#39;s en mappen die onderliggende items van die map zijn.
 
-Voor meer informatie over de meningen van de paginahiërarchie, zie het [Toepassen van de Meningen](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff)van de Hiërarchie.
+Zie [Hiërarchieweergaven toepassen](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff) voor meer informatie over paginahiërarchieweergaven.
 
 **Om knopen aan een proceskaart van een andere proceskaart toe te voegen**
 
@@ -49,8 +50,7 @@ Voor meer informatie over de meningen van de paginahiërarchie, zie het [Toepass
 >
 >De proceskaarten moeten de zelfde basisdimensie hebben.
 
-* Kopieer een knoop van de eerste aan de tweede proceskaart gebruikend de volgende methodes:
+* Kopieer een knooppunt van het eerste naar het tweede procesoverzicht met de volgende methoden:
 
-   * Om individuele knopen te kopiëren, klik en sleep elke knoop aan de tweede proceskaart.
-   * Om veelvoudige knopen, Ctrl+click en belemmering te kopiëren om een doos rond de knopen tot stand te brengen wilt u kopiëren, dan klikken en de benadrukte knopen slepen aan de tweede proceskaart. Alle benadrukte knopen worden gekopieerd aan de tweede proceskaart.
-
+   * Om individuele knopen te kopiëren, klik en sleep elk knooppunt aan de tweede proceskaart.
+   * Als u meerdere knooppunten wilt kopiëren, houdt u Ctrl ingedrukt terwijl u klikt en sleept om een vak te maken rond de knooppunten die u wilt kopiëren, en klikt en sleept u de gemarkeerde knooppunten naar de tweede proceskaart. Alle gemarkeerde knooppunten worden naar de tweede proceskaart gekopieerd.
