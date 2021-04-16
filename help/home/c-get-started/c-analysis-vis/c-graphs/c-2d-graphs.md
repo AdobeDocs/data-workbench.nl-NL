@@ -1,34 +1,35 @@
 ---
-description: Tweedimensionale (2D) grafieken tonen metrisch over twee afmetingen.
-solution: Analytics
+description: Tweedimensionale (2D) grafieken geven een metrische waarde over twee dimensies weer.
 title: 2D-grafieken
-topic: Data workbench
 uuid: f8860fff-4614-4b1a-b217-760bf4d48f20
+exl-id: 9767124b-8507-4b25-842b-8e2729e57461
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
 
-
 # 2D-grafieken{#d-graphs}
 
-Tweedimensionale (2D) grafieken tonen metrisch over twee afmetingen.
+Tweedimensionale (2D) grafieken geven een metrische waarde over twee dimensies weer.
 
 Zie het volgende voorbeeld:
 
 ![](assets/vis_2DGraph.png)
 
-**Om een grafiek te roteren**
+**Een grafiek roteren**
 
-* Klik de grafiek met de rechtermuisknop aan en sleep de muis in de gewenste rotatierichting.
+* Klik met de rechtermuisknop op de grafiek en sleep de muis in de gewenste draairichting.
 
-**Om in of uit op de grafiek te zoemen**
+**In- of uitzoomen op de grafiek**
 
-* Met de muiswijzer overal in het grafiekvenster, druk tezelfdertijd beide muisknopen en duw de muis van uw aan gezoem binnen en naar u om uit te zoemen. U kunt ook uw muiswiel gebruiken als één beschikbaar is.
+* Terwijl de muisaanwijzer zich ergens in het grafiekvenster bevindt, drukt u tegelijkertijd op beide muisknop en drukt u de muis weg van uw muis om in te zoomen en naar u toe om uit te zoomen. U kunt ook uw muiswiel gebruiken als er een beschikbaar is.
 
-**Om de verticale as te schalen**
+**De verticale as schalen**
 
-1. Beweeg de muis over de verticale as om een vliegtuig van de grafiek te benadrukken.
-1. Terwijl het vliegtuig wordt benadrukt, klik+drag de muis naar boven of naar onder om de verticale as van de grafiek te schrapen.
+1. Plaats de muis boven de verticale as om een vlak van de grafiek te markeren.
+1. Terwijl het vlak is gemarkeerd, klikt u en sleept u de muis omhoog of omlaag om de verticale as van de grafiek te schalen.
 
-Zie [Zoomen in Visualisaties](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
+Zie [Zoomen in visualisaties](../../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530).
