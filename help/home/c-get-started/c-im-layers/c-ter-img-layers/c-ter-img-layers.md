@@ -1,29 +1,30 @@
 ---
-description: Een laag van het terreinbeeld toont terreinbeelden van de aarde.
-solution: Analytics
-title: Afbeeldingslagen op het terrein
-topic: Data workbench
+description: Een grondbeeldlaag toont terreinbeelden van de aarde.
+title: Terreaire afbeeldingslagen
 uuid: 17968293-1ad2-4040-a174-d33f418af9b7
+exl-id: 754211a7-0b1f-4353-86f8-9c634d70cd83
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '992'
+ht-degree: 0%
 
 ---
 
+# Terreaire afbeeldingslagen{#terrain-image-layers}
 
-# Afbeeldingslagen op het terrein{#terrain-image-layers}
+Een grondbeeldlaag toont terreinbeelden van de aarde.
 
-Een laag van het terreinbeeld toont terreinbeelden van de aarde.
-
-[!DNL Terrain image layers] worden opgeslagen in het [!DNL Geography] profiel in een douaneformaat. Deze beeldlagen kunnen door Adobe worden geproduceerd, of de server van de Werkbank van Gegevens kan uw gebruiker-geleverde terreinbeelden in terreinlagen omzetten geschikt voor gebruik op de globale visualisatie.
+[!DNL Terrain image layers] worden opgeslagen in het  [!DNL Geography] profiel in een aangepaste indeling. Deze afbeeldingslagen kunnen worden gegenereerd door Adobe of de server van de Data Workbench kan door de gebruiker geleverde terreinbeelden transformeren in terreinlagen die geschikt zijn voor gebruik op de wereldvisualisatie.
 
 >[!NOTE]
 >
->Om met te werken, moet u het [!DNL terrain image layers][!DNL Terrain Images.cfg] dossier installeren dat door Adobe wordt verstrekt.
+>Als u met [!DNL terrain image layers] wilt werken, moet u het [!DNL Terrain Images.cfg]-bestand van Adobe installeren.
 
-Om een laag van het terreinbeeld te bepalen, moet u het volgende hebben:
+Als u een grondafbeeldingslaag wilt definiëren, moet u over het volgende beschikken:
 
-* **Één of meerdere dossiers** van het terreinbeeld die de beelden bevatten die op de aardbol moeten worden getoond.
-* **Een[!DNL Terrain Images.cfg]bestand** waarin de bestanden met terreinafbeelding worden opgegeven die voor de laag(en) moeten worden gebruikt. Het [!DNL Terrain Images.cfg] dossier laat u toe om één of meerdere bronnen toe te voegen om tot een [!DNL terrain image layer]te leiden. Het formaat van uw dossier van het terreinbeeld bepaalt het type van bron dat u zou moeten toevoegen. De volgende lijst verstrekt beschrijvingen van de beschikbare bronnen van de de laaglaag van het terreinbeeld, met inbegrip van de gesteunde dossierformaten van het terreinbeeld:
+* **Een of meer terreinafbeeldingsbestanden** met de afbeeldingen die op de wereldbol moeten worden weergegeven.
+* **Een  [!DNL Terrain Images.cfg]** bestand dat aangeeft welk(e) terreinafbeeldingsbestand(en) moet worden gebruikt voor de laag of lagen. Met het bestand [!DNL Terrain Images.cfg] kunt u een of meer bronnen toevoegen om een [!DNL terrain image layer] te maken. De indeling van het terreinafbeeldingsbestand bepaalt het type bron dat u wilt toevoegen. In de volgende tabel vindt u een beschrijving van de beschikbare bronnen voor grondafbeeldingslagen, inclusief de ondersteunde bestandsindelingen voor terreinafbeeldingen:
 
 <table id="table_CFDF5E61FCCD40B29A9D35FFA42F68D1"> 
  <thead> 
@@ -34,37 +35,37 @@ Om een laag van het terreinbeeld te bepalen, moet u het volgende hebben:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Ruwe niet-geprojecteerde bitmap </p> </td> 
-   <td colname="col2"> <p>Creeert de lagen <span class="wintitle"> van het</span> terreinbeeld van 24 - beetje kopballoze RGB dossiers die breedtegraad-lengtegraad gericht (niet geprojecteerd) zijn, waar het noorden de bovenkant van het beeld is, en het oosten is het recht. </p> <p>Ondersteunde afbeeldingsindeling(en): RAUW </p> <p> <p>Opmerking: Deze bron vereist projectieinformatie. Voor informatie over projectieformaten, zie het <a href="../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-proj-info-ter-imgs.md#concept-eec35baa01744895b847a02e69dad04e"> Specificeren van de Informatie van de Projectie voor de Beelden</a>van het Terrein. </p> </p> </td> 
+   <td colname="col1"> <p>Ongeprojecteerde bitmap, ruw </p> </td> 
+   <td colname="col2"> <p>Hiermee maakt u <span class="wintitle"> terrain image layers</span> van 24-bits headerless RGB-bestanden die zijn uitgelijnd met de lengte-breedtegraad (niet geprojecteerd), waarbij noord de bovenkant van de afbeelding is en oost de rechterkant. </p> <p>Ondersteunde afbeeldingsindeling(en): RAW </p> <p> <p>Opmerking: Voor deze bron is projectie-informatie vereist. Zie <a href="../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-proj-info-ter-imgs.md#concept-eec35baa01744895b847a02e69dad04e"> Projectie-informatie voor terreinafbeeldingen opgeven</a> voor informatie over projectie-indelingen. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Algemeen beeld, niet geprojecteerd </p> </td> 
-   <td colname="col2"> <p>Creeert de lagen <span class="wintitle"> van het</span> terreinbeeld van 24 - beetje, breedtegraad-gerichte (niet geprojecteerde) beeldformaten, waar het noorden de bovenkant van het beeld is, en het oosten is het recht. </p> <p>Ondersteunde afbeeldingsindeling(en): BMP, JPG, PNG, TIFF </p> <p> <p>Opmerking: Deze bron vereist projectieinformatie. Voor informatie over projectieformaten, zie het <a href="../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-proj-info-ter-imgs.md#concept-eec35baa01744895b847a02e69dad04e"> Specificeren van de Informatie van de Projectie voor de Beelden</a>van het Terrein. </p> </p> </td> 
+   <td colname="col2"> <p>Hiermee maakt u <span class="wintitle"> terreinafbeeldingslagen</span> van 24-bits afbeeldingsindelingen die zijn uitgelijnd met de breedtegraad (niet-geprojecteerd), waarbij noord de bovenkant van de afbeelding is en oost de rechterzijde. </p> <p>Ondersteunde afbeeldingsindeling(en): BMP, JPG, PNG, TIFF </p> <p> <p>Opmerking: Voor deze bron is projectie-informatie vereist. Zie <a href="../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-proj-info-ter-imgs.md#concept-eec35baa01744895b847a02e69dad04e"> Projectie-informatie voor terreinafbeeldingen opgeven</a> voor informatie over projectie-indelingen. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Afbeelding met ingebouwde projectie </p> </td> 
-   <td colname="col2"> <p>Creeert de lagen <span class="wintitle"> van het</span> terreinbeeld van beeldformaten die geodetische gegevens in het beelddossier inbedden. De projectieinformatie wordt uit het beeld gehaald. </p> <p>Ondersteunde afbeeldingsindeling(en): Erdas (IMG), GeoTIFF </p> <p> <p>Opmerking: Deze bron vereist gewoonlijk geen projectieinformatie maar steunt de toevoeging van dergelijke informatie indien nodig. Voor informatie over projectieformaten, zie het <a href="../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-proj-info-ter-imgs.md#concept-eec35baa01744895b847a02e69dad04e"> Specificeren van de Informatie van de Projectie voor de Beelden</a>van het Terrein. </p> </p> </td> 
+   <td colname="col1"> <p>Afbeelding met ingesloten projectie </p> </td> 
+   <td colname="col2"> <p>Hiermee maakt u <span class="wintitle"> terreinafbeeldingslagen</span> op basis van afbeeldingsindelingen die geodetische gegevens in het afbeeldingsbestand insluiten. De projectiegegevens worden uit de afbeelding geëxtraheerd. </p> <p>Ondersteunde afbeeldingsindeling(en): Erdas (IMG), GeoTIFF </p> <p> <p>Opmerking: Deze bron vereist gewoonlijk geen projectieinformatie maar steunt de toevoeging van dergelijke informatie indien nodig. Zie <a href="../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-proj-info-ter-imgs.md#concept-eec35baa01744895b847a02e69dad04e"> Projectie-informatie voor terreinafbeeldingen opgeven</a> voor informatie over projectie-indelingen. </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Om een laag van het terreinbeeld te bepalen**
+**Een achtergrondafbeeldingslaag definiëren**
 
-1. In de Werkbank van Gegevens, op het **[!UICONTROL Admin]** > **[!UICONTROL Dataset and Profile]** lusje, klik de **[!UICONTROL Servers Manager]** duimnagel om de [!DNL Servers Manager] werkruimte te openen.
-1. Klik in het [!DNL Servers Manager] venster met de rechtermuisknop op het pictogram van de gewenste server voor een gegevenswerkbank en klik op **[!UICONTROL Server Files]**.
-1. In [!DNL Server Files Manager], klik **[!UICONTROL Components]** om zijn inhoud te bekijken. Het [!DNL Terrain Images.cfg] dossier wordt gevestigd binnen deze folder.
-1. Klik het vinkje in de kolom van de servernaam voor met de rechtermuisknop aan [!DNL Terrain Images.cfg], dan klik **[!UICONTROL Make Local]**. Een vinkje verschijnt in de [!DNL Temp] kolom voor [!DNL Terrain Images.cfg].
-1. Klik het pas gecreëerde vinkje in de **[!UICONTROL Temp]** kolom met de rechtermuisknop aan en klik **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. Het [!DNL Terrain Images.cfg] venster wordt weergegeven.
-1. In het [!DNL Terrain Images] venster, klik **[!UICONTROL component]** om zijn inhoud te bekijken.
-1. Klik met de rechtermuisknop **[!UICONTROL Sources]** > **[!UICONTROL Add new]** en kies een van de volgende brontypen:
+1. Klik in Data Workbench op het tabblad **[!UICONTROL Admin]** > **[!UICONTROL Dataset and Profile]** op de miniatuur **[!UICONTROL Servers Manager]** om de werkruimte [!DNL Servers Manager] te openen.
+1. Klik in het venster [!DNL Servers Manager] met de rechtermuisknop op het pictogram van de gewenste Data Workbench-server en klik op **[!UICONTROL Server Files]**.
+1. Klik in [!DNL Server Files Manager] op **[!UICONTROL Components]** om de inhoud ervan weer te geven. Het [!DNL Terrain Images.cfg]-bestand bevindt zich in deze map.
+1. Klik met de rechtermuisknop op het vinkje in de kolom Servernaam voor [!DNL Terrain Images.cfg] en klik vervolgens op **[!UICONTROL Make Local]**. In de kolom [!DNL Temp] wordt een vinkje weergegeven voor [!DNL Terrain Images.cfg].
+1. Klik met de rechtermuisknop op het nieuwe vinkje in de kolom **[!UICONTROL Temp]** en klik op **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. Het venster [!DNL Terrain Images.cfg] verschijnt.
+1. Klik in het venster [!DNL Terrain Images] op **[!UICONTROL component]** om de inhoud ervan weer te geven.
+1. Klik met de rechtermuisknop op **[!UICONTROL Sources]** > **[!UICONTROL Add new]** en kies een van de volgende brontypen:
 
-   * **[!UICONTROL Raw unprojected bitmap]**. (Zodra toegevoegd, wordt dit brontype geëtiketteerd RawTerrainSource in het [!DNL Terrain Images] venster.)
+   * **[!UICONTROL Raw unprojected bitmap]**. (Nadat dit brontype is toegevoegd, wordt het aangeduid met RawTerrainSource in het venster [!DNL Terrain Images].)
 
-   * **[!UICONTROL General image, unprojected]**. (Zodra toegevoegd, wordt dit brontype geëtiketteerd [!DNL GDALTerrainSource] in het [!DNL Terrain Images] venster.)
+   * **[!UICONTROL General image, unprojected]**. (Na toevoeging van dit brontype wordt [!DNL GDALTerrainSource] geëtiketteerd in [!DNL Terrain Images] venster.)
 
-   * **[!UICONTROL Image with embedded projection]**. (Zodra toegevoegd, wordt dit brontype geëtiketteerd [!DNL GDALTerrainSource] in het [!DNL Terrain Images] venster.)
+   * **[!UICONTROL Image with embedded projection]**. (Na toevoeging van dit brontype wordt [!DNL GDALTerrainSource] geëtiketteerd in [!DNL Terrain Images] venster.)
 
-1. Geef zonodig de parameters voor de bron uit gebruikend het volgende steekproefdossier en de lijst van parameters als gidsen.
+1. Bewerk indien nodig de parameters voor de bron met behulp van het volgende voorbeeldbestand en de tabel met parameters als hulplijnen.
 
    ![](assets/cfg_TerrainImages_ALL.png)
 
@@ -78,36 +79,36 @@ Om een laag van het terreinbeeld te bepalen, moet u het volgende hebben:
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Gamma </p> </td> 
-   <td colname="col2"> <p>Optioneel voor alle bronnen. Specificeert gammacorrectie die op het bronbeeld moet worden toegepast. Dit kan wenselijk zijn omdat de Werkbank van Gegevens normaal met het hoge gamma plaatsen loopt. De standaardwaarde is 1. </p> </td> 
+   <td colname="col2"> <p>Optioneel voor alle bronnen. Hiermee wordt gammacorrectie opgegeven die op de bronafbeelding moet worden toegepast. Dit kan wenselijk zijn vanwege het feit dat Data Workbench gewoonlijk met een hoge gammainstelling wordt uitgevoerd. De standaardwaarde is 1. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Hoogte </p> </td> 
-   <td colname="col2"> <p>Vereist voor ruwe niet-geprojecteerde bitmap beelden. De hoogte van het bronbeeld in pixel. </p> </td> 
+   <td colname="col2"> <p>Vereist voor onbewerkte, niet-geprojecteerde bitmapafbeeldingen. De hoogte van de bronafbeelding in pixels. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Projectiegegevens </p> </td> 
-   <td colname="col2"> <p>Vereist voor ruwe niet-geprojecteerde bitmap beelden en algemene beelden, niet geprojecteerd, maar gesteund voor beelden met ingebedde projectie. De Werkbank van gegevens steunt breedtegraad-lengteprojecties en de projecties van de Transverse Mercator (TM) voor de lagen van het terreinbeeld. Het standaardprojectieformaat is de breedtegraad-projectie (LatLonProjection). </p> <p>Voor informatie over projectieformaten, zie het <a href="../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-proj-info-ter-imgs.md#concept-eec35baa01744895b847a02e69dad04e"> Specificeren van de Informatie van de Projectie voor de Beelden</a>van het Terrein. </p> </td> 
+   <td colname="col1"> <p>Projectie-info </p> </td> 
+   <td colname="col2"> <p>Vereist voor onbewerkte, niet-geprojecteerde bitmapafbeeldingen en algemene afbeeldingen, maar ondersteund voor afbeeldingen met ingesloten projectie. Data Workbench ondersteunt breedtegraad-lengteprojecties en Transverse Mercator (TM)-projecties voor grondafbeeldingslagen. De standaardprojectie-indeling is de breedte-lengteprojectie (LatLonProjection). </p> <p>Zie <a href="../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-proj-info-ter-imgs.md#concept-eec35baa01744895b847a02e69dad04e"> Projectie-informatie voor terreinafbeeldingen opgeven</a> voor informatie over projectie-indelingen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Bronafbeelding </p> </td> 
-   <td colname="col2"> <p>Vereist voor alle bronnen. De naam van het bronbeelddossier. Dit kan een dossier zijn - noem of een vervangingspatroon. Het gebruiken van een patroon kan nuttig zijn als, bijvoorbeeld, de beelden voor het zelfde gebied op verschillende data worden geupload, zonder verandering in de bijbehorende meta-gegevens. Daarom zou een patroon zoals de Hoek van <span class="filepath"> Tysons *.raw</span> lagen van de <span class="filepath"> Hoek 050211.raw</span>van Tysons, <span class="filepath"> Tysons Corner 050218.raw</span>, etc. tot stand brengen aangezien de nieuwe beelden worden toegevoegd, zonder extra configuratie noodzakelijk als de parameters voor de dossiers anders identiek zijn. </p> </td> 
+   <td colname="col2"> <p>Vereist voor alle bronnen. De naam van het bronafbeeldingsbestand. Dit kan een bestandsnaam of een jokertekenpatroon zijn. Het gebruik van een patroon kan nuttig zijn als afbeeldingen voor hetzelfde gebied op verschillende datums bijvoorbeeld worden geüpload zonder dat de bijbehorende metagegevens worden gewijzigd. Een patroon als <span class="filepath"> Tysons Corner *.raw</span> zou daarom lagen maken van <span class="filepath"> Tysons Corner 050211.raw</span>, <span class="filepath"> Tysons Corner 050218.raw</span>, enzovoort, wanneer nieuwe afbeeldingen worden toegevoegd, zonder extra configuratie nodig als de parameters voor de parameters de bestanden zijn verder identiek. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>De Compressiekwaliteit van de Tegel </p> </td> 
-   <td colname="col2"> <p>Optioneel voor alle bronnen. Voor compressie JPEG, een geheel van 0 tot 100 specificerend hoe te om beeldgrootte en kwaliteit in evenwicht te brengen. (De standaardwaarde is nul.) Een hoger aantal resulteert in betere beeldkwaliteit, maar veroorzaakt grotere beelden en langere downloadtijden voor de gebruikers van de Werkbank van Gegevens. </p> <p> <p>Opmerking:  Het samenpersen van beelden onder 70 kan in beelddegradatie resulteren. </p> </p> </td> 
+   <td colname="col1"> <p>Tegelcompressiekwaliteit </p> </td> 
+   <td colname="col2"> <p>Optioneel voor alle bronnen. Voor JPEG-compressie geeft een geheel getal van 0 tot en met 100 op hoe de afbeeldingsgrootte en -kwaliteit in evenwicht moeten worden gebracht. (De standaardwaarde is nul.) Een hogere waarde resulteert in een betere beeldkwaliteit, maar geeft grotere afbeeldingen en langere downloadtijden voor Data Workbench. </p> <p> <p>Opmerking:  Het comprimeren van afbeeldingen onder 70 kan resulteren in een verslechtering van de afbeelding. </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Tile compressor </p> </td> 
-   <td colname="col2"> <p>Optioneel voor alle bronnen. Specificeert welke compressiemethode wordt gebruikt om outputdossiers te schrijven. De enige momenteel gesteunde methodes zijn RAWRGB (het gebrek, resulterend in geen compressie) en JPEG. De compressie van JPEG van het gebruik om de grootte van lagen te verminderen die tijdens profielsynchronisatie worden overgebracht. </p> </td> 
+   <td colname="col1"> <p>Tegelcompressie </p> </td> 
+   <td colname="col2"> <p>Optioneel voor alle bronnen. Hiermee geeft u op welke compressiemethode wordt gebruikt voor het schrijven van uitvoerbestanden. De enige momenteel ondersteunde methoden zijn RAWRGB (de standaardinstelling, zonder compressie) en JPEG. Gebruik JPEG-compressie om de grootte te reduceren van lagen die tijdens profielsynchronisatie worden verzonden. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Breedte </p> </td> 
-   <td colname="col2"> <p>Vereist voor ruwe niet-geprojecteerde bitmap beelden. De breedte van het bronbeeld in pixel. </p> </td> 
+   <td colname="col2"> <p>Vereist voor onbewerkte, niet-geprojecteerde bitmapafbeeldingen. De breedte van de bronafbeelding in pixels. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-1. Geef de Plaats van het BronBeeld, de Opslag van het Beeld van Temperaturen uit, en schrijf Lagen aan parameters gebruikend de volgende lijst als gids. Deze parameters zijn op alle bronnen van het terreinbeeld van toepassing die u in de [!DNL Sources] sectie van dit dossier bepaalt.
+1. Bewerk de parameters Locatie bronafbeelding, Opslag tijdelijke afbeelding en Lagen schrijven naar aan de hand van de volgende tabel als richtlijn. Deze parameters zijn van toepassing op alle grondafbeeldingsbronnen die u in de sectie [!DNL Sources] van dit bestand definieert.
 
 <table id="table_103F02C54ED94C6C922450F5B2781CAE"> 
  <thead> 
@@ -119,19 +120,18 @@ Om een laag van het terreinbeeld te bepalen, moet u het volgende hebben:
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Locatie bronafbeelding </p> </td> 
-   <td colname="col2"> <p>Vereist. De folder die voor beelden wordt afgetast om in terreinlagen te vertalen. Als het geen absolute weg is, wordt het geïnterpreteerd met betrekking tot de de serverinstallatiefolder van de Werkbank van Gegevens. </p> </td> 
+   <td colname="col2"> <p>Vereist. De map die wordt gescand voor afbeeldingen die worden omgezet in grondlagen. Als het geen absoluut pad is, wordt het geïnterpreteerd ten opzichte van de installatiemap van de Data Workbench-server. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Temperatuurbeeldopslag </p> </td> 
-   <td colname="col2"> <p>Optioneel. De naam van een folder die voor opslag van tijdelijke dossiers wordt gebruikt die in de vertaling van bronbeelden aan terreinlagen worden gebruikt. Als het geen absolute weg is, wordt het geïnterpreteerd met betrekking tot de de serverinstallatiefolder van de Werkbank van Gegevens. De standaardplaats is de folder van <span class="wintitle"> Temperaturen</span> . </p> </td> 
+   <td colname="col1"> <p>Temperatuur-afbeeldingsopslag </p> </td> 
+   <td colname="col2"> <p>Optioneel. De naam van een map die wordt gebruikt voor de opslag van tijdelijke bestanden die worden gebruikt voor de omzetting van bronafbeeldingen in terreinlagen. Als het geen absoluut pad is, wordt het geïnterpreteerd ten opzichte van de installatiemap van de Data Workbench-server. De standaardlocatie is de map <span class="wintitle"> Temp</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Lagen schrijven naar </p> </td> 
-   <td colname="col2"> <p>Vereist. De folder waaraan de terreinlagen output is. Doorgaans, is dit subdirectory van Kaarten van een profielfolder, zodat de visualisatie van de Globe de lagen kan vinden. </p> </td> 
+   <td colname="col2"> <p>Vereist. De map waarnaar grondlagen worden uitgevoerd. Doorgaans is dit de submap Maps van een profielmap, zodat de wereldvisualisatie de lagen kan vinden. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-1. Sparen het dossier door **[!UICONTROL (modified)]** bij de bovenkant van het venster met de rechtermuisknop aan te klikken en te klikken **[!UICONTROL Save]**.
-1. Als u een bijgewerkt bestand wilt opslaan op de computer met de Data Workbench-server, klikt u in de [!DNL Server Files Manager]kolom met de rechtermuisknop op het vinkje voor [!DNL Terrain Images.cfg] in de [!DNL Temp] kolom en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
-
+1. Sla het bestand op door met de rechtermuisknop op **[!UICONTROL (modified)]** boven in het venster te klikken en op **[!UICONTROL Save]** te klikken.
+1. Als u een bijgewerkt bestand wilt opslaan op de Data Workbench-servercomputer, klikt u in [!DNL Server Files Manager] met de rechtermuisknop op het vinkje voor [!DNL Terrain Images.cfg] in de kolom [!DNL Temp] en klikt u vervolgens op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
