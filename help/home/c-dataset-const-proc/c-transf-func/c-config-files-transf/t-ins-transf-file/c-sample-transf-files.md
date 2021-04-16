@@ -1,49 +1,49 @@
 ---
-description: Informatie over hoe te om parameters in het dossier te specificeren Transform.cfg dat op de verscheidene scenario's wordt gebaseerd.
-solution: Analytics
-title: Voorbeeld van gegevenswerkbankbestanden Transform.cfg
-topic: Data workbench
+description: Informatie over hoe te om parameters in het Transform.cfg- dossier te specificeren dat op de verscheidene scenario's wordt gebaseerd.
+title: Voorbeeld van Data Workbench Transform.cfg-bestanden
 uuid: cb473a5a-54e2-4bf7-84fb-c9c27910ef64
+exl-id: f7aadde4-6d89-4bd4-b34b-192a81a71dc3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 0%
 
 ---
 
+# Voorbeeld van Data Workbench Transform.cfg-bestanden{#sample-data-workbench-transform-cfg-files}
 
-# Voorbeeld van gegevenswerkbankbestanden Transform.cfg{#sample-data-workbench-transform-cfg-files}
+Informatie over hoe te om parameters in het Transform.cfg- dossier te specificeren dat op de verscheidene scenario&#39;s wordt gebaseerd.
 
-Informatie over hoe te om parameters in het dossier te specificeren Transform.cfg dat op de verscheidene scenario&#39;s wordt gebaseerd.
+* [Een eenvoudig Insight Transform.cfg-bestand](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md#section-b7e83cafa3a947c597bd09d316930190)
+* [Uitvoer met door komma&#39;s gescheiden waarden](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md#section-03916934ad574efc8695abbae54a1816)
+* [Voorbeeldlogbestanden](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md#section-113b3b0c0c7547ea9536bb2f465c0875)
+* [Logbestanden splitsen op websitesectie](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md#section-2cac205cd3934d31abb6c6ed8780196d)
 
-* [Een eenvoudig dossier van Transform.cfg van het Inzicht](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md#section-b7e83cafa3a947c597bd09d316930190)
-* [Uitvoer met komma-gescheiden Waarden](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md#section-03916934ad574efc8695abbae54a1816)
-* [Bemonsterde logboekdossiers](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md#section-113b3b0c0c7547ea9536bb2f465c0875)
-* [Het verdelen van de Dossiers van het Logboek door de Sectie van de Website](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/c-sample-transf-files.md#section-2cac205cd3934d31abb6c6ed8780196d)
+In elk voorbeeld wordt het bestand als een [!DNL Transform.cfg]-venster weergegeven in een werkbank voor gegevens.
 
-In elke steekproef, wordt het dossier getoond als [!DNL Transform.cfg] venster in gegevenswerkbank.
+## Een eenvoudig Data Workbench Transform.cfg-bestand {#section-b7e83cafa3a947c597bd09d316930190}
 
-## Een eenvoudig dossier van Transform.cfg van de Werkbank van Gegevens {#section-b7e83cafa3a947c597bd09d316930190}
-
-Het volgende [!DNL Transform.cfg] venster verstrekt instructies om [!DNL .vsl] dossiers van de [!DNL Logs] folder te lezen en de x-timestring en x-trackingid gebieden naar een tekstdossier uit te voeren dat in de folder van Logs \ VT wordt opgeslagen. Omdat geen de periode van de dossieromwenteling of formaat van het outputdossier - noem wordt gespecificeerd, bevat elk dossier gegevens voor één kalenderdag en heeft een naam in het standaardformaat [!DNL %yyyy%%mm%%dd%-%x-mask%.txt].
+In het volgende venster [!DNL Transform.cfg] vindt u instructies voor het lezen van [!DNL .vsl]-bestanden uit de map [!DNL Logs] en het exporteren van de velden x-timestring en x-trackingid naar een tekstbestand dat is opgeslagen in de map Logs\VT. Omdat er geen rotatieperiode van het bestand of indeling van de uitvoerbestandsnaam is opgegeven, bevat elk bestand gegevens voor één kalenderdag en heeft het een naam in de standaardnotatie [!DNL %yyyy%%mm%%dd%-%x-mask%.txt].
 
 ![](assets/cfg_VisualTransform_SimpleExample.png)
 
-## Uitvoer met komma-gescheiden Waarden {#section-03916934ad574efc8695abbae54a1816}
+## Uitvoer met door komma&#39;s gescheiden waarden {#section-03916934ad574efc8695abbae54a1816}
 
-Het volgende [!DNL Transform.cfg] venster verstrekt instructies om [!DNL .vsl] [!DNL .csv]dossiers van de folder van Logs en de uitvoergebieden 0 door 13 te lezen aan een komma-afgebakend () dossier dat in Logs\VT\CSV directory wordt opgeslagen. Omdat geen periode van de dossieromwenteling wordt gespecificeerd, bevat elk dossier gegevens voor één kalenderdag. De outputdossiers zijn [!DNL .csv] dossiers die in het formaat worden genoemd [!DNL %yyyy%%mm%%dd%-%x-mask%.csv].
+In het volgende venster [!DNL Transform.cfg] vindt u instructies voor het lezen van [!DNL .vsl]-bestanden uit de map Logs en het exporteren van velden 0 tot en met 13 naar een kommagescheiden bestand ( [!DNL .csv]) dat is opgeslagen in de map Logs\VT\CSV directory. Omdat er geen periode voor het roteren van bestanden is opgegeven, bevat elk bestand gegevens voor één kalenderdag. De uitvoerbestanden zijn [!DNL .csv] bestanden in de indeling [!DNL %yyyy%%mm%%dd%-%x-mask%.csv].
 
 ![](assets/cfg_VisualTransform_CSVExample.png)
 
 ## Voorbeeldlogbestanden {#section-113b3b0c0c7547ea9536bb2f465c0875}
 
-U kunt transformatiefunctionaliteit vormen om een bijgewerkte, compacte versie van uw volledige logboekdossiers tot stand te brengen en te handhaven. Het doen laat u toe om uw datasetconfiguraties snel, met opwerkingstijden van seconden of notulen in plaats van uren te testen nodig om de volledige dataset opnieuw te verwerken. Het volgende voorbeeld verstrekt een voorbeeld van hoe te om transformatiefunctionaliteit te vormen om dit te doen.
+U kunt transformatiefunctionaliteit configureren om een bijgewerkte, compacte versie van uw volledige logbestanden te maken en te onderhouden. Dit laat u toe om uw datasetconfiguraties, met herverwerkingstijden van seconden of notulen in plaats van uren snel te testen nodig om de volledige dataset opnieuw te verwerken. In het volgende voorbeeld ziet u hoe u de transformatiefunctionaliteit kunt configureren om dit te doen.
 
-Het volgende [!DNL Transform.cfg] venster verstrekt instructies om [!DNL .vsl] dossiers van de folder van Logs te lezen en de x-timestring en x-trackingid gebieden naar een tekstdossier uit te voeren dat in de folder van Logs \ VT wordt opgeslagen. De gespecificeerde filters van de Drempel van de Hash bepaalde het volgen IDs van de dataset, daardoor creërend een dataset die door een factor 100 wordt bemonsterd. Omdat geen periode van de dossieromwenteling wordt gespecificeerd, bevat elk dossier gegevens voor één kalenderdag. De namen van de outputdossiers zijn in het standaardformaat [!DNL %yyyy%%mm%%dd%-%x-mask%.txt].
+In het volgende venster [!DNL Transform.cfg] vindt u instructies voor het lezen van [!DNL .vsl]-bestanden in de map Logs en het exporteren van de velden x-timestring en x-trackingid naar een tekstbestand dat is opgeslagen in de map Logs\VT. De gespecificeerde Drempel van de Hash filters bepaalde het volgen IDs van de dataset, daardoor creërend een dataset die door een factor van 100 wordt bemonsterd. Omdat er geen periode voor het roteren van bestanden is opgegeven, bevat elk bestand gegevens voor één kalenderdag. De namen van de uitvoerbestanden hebben de standaardindeling [!DNL %yyyy%%mm%%dd%-%x-mask%.txt].
 
 ![](assets/cfg_VisualTransform_SampledExample.png)
 
-## Het verdelen van de Dossiers van het Logboek door de Sectie van de Website {#section-2cac205cd3934d31abb6c6ed8780196d}
+## Logbestanden splitsen op websitesectie {#section-2cac205cd3934d31abb6c6ed8780196d}
 
-Het volgende [!DNL Transform.cfg] venster verstrekt instructies om [!DNL .vsl]dossiers van de folder van Logs te lezen en de x-timestring en x-trackingid gebieden naar een tekstdossier uit te voeren dat in de folder van Logs \ VT wordt opgeslagen. De normale uitdrukkingstransformatie ( [!DNL RETransform]) neemt als input het cs-uri-stengebied en leidt tot een nieuw gebied (x-plaats) dat een sectie van de plaats bepaalt. Het x-plaatsgebied is inbegrepen in de naam van de dossiers van de outputtekst, elk waarvan gegevens voor één kalenderdag bevatten.
+In het volgende venster [!DNL Transform.cfg] vindt u instructies voor het lezen van [!DNL .vsl]bestanden in de map Logs en het exporteren van de velden x-timestring en x-trackingid naar een tekstbestand dat is opgeslagen in de map Logs\VT. De transformatie van de reguliere expressie ( [!DNL RETransform]) neemt als invoer het veld cs-uri-stem en maakt een nieuw veld (x-site) dat een sectie van de site definieert. Het veld x-site wordt opgenomen in de naam van uitvoertekstbestanden, die elk gegevens voor één kalenderdag bevatten.
 
 ![](assets/cfg_VisualTransform_SplittingExample.png)
-
