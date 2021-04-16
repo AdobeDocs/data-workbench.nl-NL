@@ -1,81 +1,81 @@
 ---
-description: Hoe te om, en referentie van de Desktop uit te voeren te kopiëren.
-solution: Analytics
-title: Het gebruiken van het de duimnagelmenu van de Desktop
-topic: Data workbench
+description: Hoe te, exemplaar, en referentie van de Desktop uitvoeren.
+title: Het menu Bureaubladminiatuur gebruiken
 uuid: bada2260-3ae7-4fb6-938a-40b7acb1ffa7
+exl-id: 2220051d-5c53-48ed-8e13-62883819f22a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 0%
 
 ---
 
+# Het menu met miniaturen van bureaublad gebruiken{#using-the-worktop-thumbnail-menu}
 
-# Het gebruiken van het de duimnagelmenu van de Desktop{#using-the-worktop-thumbnail-menu}
+Hoe te, exemplaar, en referentie van de Desktop uitvoeren.
 
-Hoe te om, en referentie van de Desktop uit te voeren te kopiëren.
-
-Klik een Werkruimte met de rechtermuisknop aan om uit te voeren, te kopiëren, en bladwijzer functies van de Desktop.
+Klik met de rechtermuisknop op een werkruimte om bladwijzerfuncties van het bureaublad te exporteren, kopiëren en te kopiëren.
 
 ![](assets/thumbnail_menu.png)
 
 ## Interfacebeschrijvingen {#section-fd027dd94b7d4cb6b933d70c08ccd3e2}
 
-De volgende elementen zijn beschikbaar in het [!DNL Worktop] duimnagelmenu:
+De volgende elementen zijn beschikbaar in het [!DNL Worktop] miniatuurmenu:
 
 **Serverwerkruimte:** *naam*
 
-Verschijnt slechts voor onuitgegeven serverwerkruimten. Identificeert de genoemde werkruimte zoals het zelfde als de werkruimte die op de server wordt opgeslagen.
+Wordt alleen weergegeven voor onbewerkte serverwerkruimten. Identificeert de benoemde werkruimte als hetzelfde als de werkruimte die op de server is opgeslagen.
 
 **Datum:** *dag en tijd*
 
-De datum en de tijd de werkruimte werden het laatst geopend.
+De datum en tijd waarop de werkruimte voor het laatst is geopend.
 
-**Lokale versie van:** *naam*
+**Lokale versie van:** *name*
 
-Verschijnt slechts voor lokale versies van serverwerkruimten. Identificeert de genoemde werkruimte als uitgegeven, lokale versie van een werkruimte die op de server wordt opgeslagen.
+Wordt alleen weergegeven voor lokale versies van serverwerkruimten. Identificeert de benoemde werkruimte als een bewerkte, lokale versie van een werkruimte die is opgeslagen op de server.
 
-**Werkruimte gebruiker:** *naam*
+**Gebruikerswerkruimte:** *naam*
 
-Verschijnt slechts voor gebruikerswerkruimten. Identificeert de genoemde werkruimte als werkruimte die slechts op de lokale machine bestaat.
+Wordt alleen weergegeven voor gebruikerswerkruimten. Hiermee wordt de benoemde werkruimte geïdentificeerd als een werkruimte die alleen op de lokale computer bestaat.
 
-**Compute in Background**
+**Berekenen op achtergrond**
 
-Wordt alleen weergegeven wanneer u online werkt. Houdt de vragen in de geselecteerde werkruimte die op de achtergrond lopen terwijl u blijft werkend. Wanneer geselecteerd, toont de duimnagel de volgende informatie, die op de vooruitgang van de vragen wijst:
+Wordt alleen weergegeven wanneer u online werkt. Hiermee blijven de query&#39;s in de geselecteerde werkruimte op de achtergrond actief terwijl u doorgaat met werken. Als deze optie is geselecteerd, wordt in de miniatuur de volgende informatie weergegeven die de voortgang van de query&#39;s aangeeft:
 
-* Werken: *n%* - wijst erop dat de vraag en het percentage van de verwerking verwerkt is die volledig is.
-* *n* MB de Lading van de Vraag - totale grootte van het vraagresultaat. De lading van de vraag is proportioneel aan de totale geheugenlading van uw server van de Werkbank van Gegevens, maar correleert niet direct. Als richtlijn, kan een 10 MB of hogere vraaglading uw systeem verrekken. De vermelde vraaglading neemt het groeperen zich niet in rekening.
+* Werken: *n%* - wijst erop dat de vraag en het percentage van de verwerking die volledig is verwerkt.
+* *De Lading van de Vraag* nMB - totale grootte van het vraagresultaat. De Lading van de vraag is evenredig aan de totale geheugenlading van uw server van de Data Workbench, maar correleert niet direct. Als richtlijn, kan een 10 MB of hogere vraaglading uw systeem belasten. De vermelde vraaglading neemt geen groepering in aanmerking.
 
    >[!NOTE]
    >
-   >Als Compute in Achtergrond blijft geselecteerd, worden de vragen in de geselecteerde werkruimte staande vragen, die blijven worden bijgewerkt en geheugenlading gebruiken. Zorg ervoor om Compute in Achtergrond te schrappen wanneer u klaar bent met het werken in de werkruimte.
+   >Als Berekenen op achtergrond blijft geselecteerd, worden de query&#39;s in de geselecteerde werkruimte staande query&#39;s, worden deze bijgewerkt en wordt geheugenbelasting gebruikt. Schakel Berekenen op achtergrond uit als u klaar bent met werken in de werkruimte.
 
 **Exporteren naar Excel**
 
-De werkruimtegegevens van de uitvoer aan lijst in Microsoft Excel (.xls en .xslx- dossiers). Wanneer het uitvoeren van een werkruimte naar Excel, voert de Werkbank van Gegevens gegevens gegevens van bepaalde visualisaties, afmeting en waardelegends, en tekstannotaties aan een nieuw werkboek van Excel met één visualisatie per aantekenvel uit.
+De werkruimtegegevens van de uitvoer naar lijst in Microsoft Excel (.xls en .xslx- dossiers). Wanneer het uitvoeren van een werkruimte naar Excel, voert de Data Workbench gegevens van bepaalde visualisaties, afmeting en waardelegenda, en tekstannotaties naar een nieuw werkboek van Excel met één visualisatie per aantekenvel uit.
 
 **Exporteren naar Excel-sjabloon**
 
-De uitvoer naar een malplaatje van Excel (.xltx).
+Exporteren naar een Excel-sjabloon (.xltx).
 
 **Kopiëren**
 
-Kopieert de werkruimte. Voor meer informatie over het kleven van een gekopieerde werkruimte, zie het [Kopiëren en het Kleuren Bestaande Werkruimten](../../home/c-get-started/c-work-worksp/c-create-worksp.md#section-f91ae89b845640c9a4a52820a6110e65).
+Kopieert de werkruimte. Zie [Bestaande werkruimten kopiëren en plakken](../../home/c-get-started/c-work-worksp/c-create-worksp.md#section-f91ae89b845640c9a4a52820a6110e65) voor meer informatie over het plakken van een gekopieerde werkruimte.
 
-**Terug naar serverversie**
+**Terugkeren naar serverversie**
 
-Verschijnt slechts voor lokale versies van serverwerkruimten. Schrapt het lokale exemplaar van deze werkruimte. Het originele blijft op de server.
+Wordt alleen weergegeven voor lokale versies van serverwerkruimten. Hiermee verwijdert u de lokale kopie van deze werkruimte. Het origineel blijft op de server staan.
 
 **Verwijderen**
 
-Verschijnt slechts voor gebruikerswerkruimten. Verwijdert de werkruimte van de gebruiker, die alleen op de lokale machine bestaat. Voor informatie over het schrappen van werkruimten van de verbonden server van de Werkbank van Gegevens, zie het [Schrappen van Dossiers van Uw Werkprofiel](../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b).
+Wordt alleen weergegeven voor gebruikerswerkruimten. Hiermee verwijdert u de gebruikerswerkruimte, die alleen op de lokale computer bestaat. Zie [Bestanden verwijderen uit uw werkprofiel](../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b) voor informatie over het verwijderen van werkruimten van de verbonden Data Workbench-server.
 
 **Opslaan op server**
 
-Verschijnt slechts voor lokale versies van serverwerkruimten en gebruikerswerkruimten en werkt slechts voor die gebruikers met de aangewezen toestemmingen. Bewaart het lokale exemplaar van de werkruimte aan de server. Door gebrek, worden de werkruimten bewaard aan de aangewezen werkende `<profile name>\Workspaces\<tab name>` omslag.
+Wordt alleen weergegeven voor lokale versies van serverwerkruimten en gebruikerswerkruimten en werkt alleen voor gebruikers met de juiste machtigingen. Hiermee slaat u de lokale kopie van de werkruimte op de server op. Werkruimten worden standaard opgeslagen in de juiste werkmap `<profile name>\Workspaces\<tab name>`.
 
 **Bladwijzer**
 
-Referentie een werkruimte om later snel terug te winnen.
+Bladwijzer maken van een werkruimte om deze later snel op te halen.
 
-Een bladetekenpictogram ![](assets/bookmark_icon.png) zal boven de werkruimte op de werktop verschijnen en de naam van de werkruimte zal in het paneel van de Referentie verschijnen. ![](assets/bookmark_worktop.png)
-
+Een bladwijzerpictogram ![](assets/bookmark_icon.png) zal boven de werkruimte op de werkbovenkant verschijnen en de naam van de werkruimte zal in het paneel van de Bladwijzer verschijnen. ![](assets/bookmark_worktop.png)
