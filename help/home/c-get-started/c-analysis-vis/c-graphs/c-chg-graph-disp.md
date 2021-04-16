@@ -1,37 +1,37 @@
 ---
-description: Door gebrek, de vertoningsbars van grafiekvisualisaties, maar u kunt de bars gemakkelijk tonen als lijnen en vice versa.
-solution: Analytics
+description: Standaard worden in grafiekvisualisaties balken weergegeven, maar u kunt de balken eenvoudig weergeven als lijnen en andersom.
 title: Een grafiekweergave wijzigen
-topic: Data workbench
 uuid: 8448afab-a2b0-4f96-a0e5-920013e83905
+exl-id: b8d8d403-0432-42e1-8019-2d2d0a891e55
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
 
-
 # Een grafiekweergave wijzigen{#change-a-graph-display}
 
-Door gebrek, de vertoningsbars van grafiekvisualisaties, maar u kunt de bars gemakkelijk tonen als lijnen en vice versa.
+Standaard worden in grafiekvisualisaties balken weergegeven, maar u kunt de balken eenvoudig weergeven als lijnen en andersom.
 
-Beide vertoningstypes worden getoond in het volgende voorbeeld.
+In het volgende voorbeeld worden beide weergavetypen weergegeven.
 
 ![](assets/vis_Line_LinesAndBars.png)
 
-**Om het vertoningstype te selecteren**
+**Het weergavetype selecteren**
 
-Klik het afmetingsetiket bij de bodem van de grafiek met de rechtermuisknop aan en klik **[!UICONTROL Display]** > **[!UICONTROL Draw lines]** of **[!UICONTROL Display]** > **[!UICONTROL Draw bars]**. Een X verschijnt links van de actieve vertoningswijze.
+Klik met de rechtermuisknop op het dimensielabel onder aan de grafiek en klik op **[!UICONTROL Display]** > **[!UICONTROL Draw lines]** of **[!UICONTROL Display]** > **[!UICONTROL Draw bars]**. Er verschijnt een X links van de actieve weergavemodus.
 
 ![](assets/mnu_Graph_Draw.png)
 
-**De Bekleding van de gradiënt op een Grafiek**
+**Verloopbedekking op een grafiek**
 
-U kunt een **Verloopbekleding** van het menu met de rechtermuisknop aanklikken en selecteren aan betere elementen van de meningsgrafiek.
+U kunt met de rechtermuisknop klikken en een **Verloopbedekking** selecteren in het menu om grafiekelementen beter weer te geven.
 
 ![](assets/6_51_gradient_graph.png)
 
-* **Geen verloopbedekking**. Selecteer om bars zonder toegepaste gradiëntbekleding te tonen.
-* **Achtergrond van links**. Selecteer om gradatie van kleuren over alle bars van links naar rechts te tonen.
-* **Achtergrond van rechts**. Selecteer om gradatie van kleuren over alle bars van rechts naar links te tonen.
-* **Cilinder**. Selecteer om gradatie van kleuren van het centrum van elke bar aan de rand van elke bar te tonen.
-
+* **Geen verloopbedekking**. Selecteer deze optie om staven weer te geven zonder toegepaste verloopbedekking.
+* **Achtergrond van links**. Selecteer deze optie om de kleurverloop in alle balken van links naar rechts weer te geven.
+* **Achtergrond van rechts**. Selecteer deze optie om de kleurverloop in alle balken van rechts naar links weer te geven.
+* **Cilinder**. Schakel deze optie in om de kleurverloop vanaf het midden van elke balk tot de rand van elke balk weer te geven.
