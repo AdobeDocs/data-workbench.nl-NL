@@ -1,29 +1,30 @@
 ---
-description: Alvorens u rapporten en alarm kunt produceren, moet u de Server van het Rapport vormen om het adres van de server van het Inzicht te specificeren en de profielen te identificeren dat u het waartegen wilt rapporteren.
-solution: Analytics
-title: Het vormen van de Verbinding aan de Server van het Inzicht
-topic: Data workbench
+description: Alvorens u rapporten en alarm kunt produceren, moet u de Server van het Rapport vormen om het adres van de server van het Inzicht te specificeren en de profielen te identificeren waarop u het wilt melden.
+title: De verbinding met de Insight Server configureren
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
+exl-id: a398a665-fe09-448a-977c-b0f9de4add09
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 0%
 
 ---
 
-
 # Het vormen van de Verbinding aan de Server van het Inzicht{#configuring-the-connection-to-the-insight-server}
 
-Alvorens u rapporten en alarm kunt produceren, moet u de Server van het Rapport vormen om het adres van de server van het Inzicht te specificeren en de profielen te identificeren dat u het waartegen wilt rapporteren.
+Alvorens u rapporten en alarm kunt produceren, moet u de Server van het Rapport vormen om het adres van de server van het Inzicht te specificeren en de profielen te identificeren waarop u het wilt melden.
 
 >[!NOTE]
 >
->Tot u de Server van het Rapport zoals hieronder beschreven vormt, kunt u de Server van het Rapport niet met succes in werking stellen. Als u probeert om de Server van het Rapport met het niet-gevormde dossier in werking te stellen dat met het programma geïnstalleerd is, veroorzaakt de Server van het Rapport een stroom van fouten.
+>Totdat u de Server van het Rapport zoals hieronder beschreven vormt, kunt u de Server van het Rapport niet met succes in werking stellen. Als u probeert om de Server van het Rapport met het niet-gevormde dossier in werking te stellen dat met het programma geïnstalleerd is, veroorzaakt de Server van het Rapport een stroom van fouten.
 
 **Om de Server van het Rapport te vormen**
 
 1. Met de Ontdekkingsreiziger van Vensters, navigeer aan de folder waar u de Server van het Rapport installeerde.
 1. Open het [!DNL ReportServer.cfg] dossier in Blocnote en wijzig het dossier zoals gewenst.
 
-   De volgende steekproef [!DNL Report Server.cfg] bevat slechts de parameters inbegrepen in het [!DNL Report Server.cfg] dossier door gebrek (en benadrukt de vereiste parametermontages). Als u de Server van de Vergunning van Adobe door een volmachtsserver contacteert, moet u de het Verlenen van vergunningen vector en zijn parameters toevoegen. Zie de parameters [van](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) het Rapport Server.cfg voor een gedetailleerde beschrijving.
+   Het volgende voorbeeld [!DNL Report Server.cfg] bevat standaard alleen de parameters die in het [!DNL Report Server.cfg]-bestand zijn opgenomen (en markeert de vereiste parameterinstellingen). Als u via een proxyserver contact opneemt met de Adobe-licentieserver, moet u de licentievector en de bijbehorende parameters toevoegen. Zie [De parameters van Server.cfg van het rapport](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) voor een gedetailleerde beschrijving.
 
    ```
    Fonts = vector: 0 items
@@ -59,4 +60,4 @@ Alvorens u rapporten en alarm kunt produceren, moet u de Server van het Rapport 
      SMTP Server for Errors Send To = string: RecipientAddresses
    ```
 
-1. Sparen en sluit het dossier.
+1. Sla het bestand op en sluit het.
