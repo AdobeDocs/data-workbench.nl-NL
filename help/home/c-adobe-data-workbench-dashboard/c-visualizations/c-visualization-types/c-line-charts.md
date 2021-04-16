@@ -1,20 +1,20 @@
 ---
-description: ongeldig
-solution: Analytics
-title: Lijndiagrammen
-topic: Data workbench
+description: Lijngrafieken
+title: Lijngrafieken
 uuid: 6f525c49-6679-4234-886b-52a3c7df98ff
+exl-id: 75532aff-15ff-4be8-8000-f503b2bf60a2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '143'
+ht-degree: 0%
 
 ---
 
+# Lijngrafieken{#line-charts}
 
-# Lijndiagrammen{#line-charts}
+Met lijngrafiekvisualisaties kunt u metrische en dimensiegegevens visualiseren met elk gegevenselement dat als een punt op een x-y-as wordt vertegenwoordigd, en kunt u lijnen verbinden die aangrenzende punten verbinden. Met lijngrafieken kunnen maximaal 200 unieke gegevenselementen tegelijk op het diagram worden weergegeven. De waarden van de afmetingen worden geëtiketteerd langs de x-as, terwijl de metrische toename langs de y-as wordt geëtiketteerd. Als u de muis op een punt in het lijndiagram plaatst, wordt de exacte metrische waarde op dat punt weergegeven.
 
-De het grafiekvisualisaties van de lijn staan u toe om metrische en afmetingsgegevens met elk die gegevenselement visualiseren als punt op een x-y as wordt vertegenwoordigd, en lijnen die aangrenzende punten verbinden. De grafieken van de lijn staan tot 200 unieke gegevenselementen toe die op de grafiek moeten onmiddellijk worden getoond. De afmetingswaarden worden geëtiketteerd langs de x-as, terwijl de metrische toename langs de y-as wordt geëtiketteerd. Het plaatsen van de muis over een punt in de lijngrafiek zal de nauwkeurige metrische waarde op dat punt tonen.
-
-De selecties kunnen in lijngrafieken worden gemaakt door een bepaald punt te klikken. Het drukken en het houden van de sleutel van Alt zullen selecties behouden aangezien u extra punten klikt. Het drukken en het houden van de sleutel van Alt wanneer het klikken zal ook de waarde van een selectie van een knevel voorzien. Dit is nuttig om slechts één selectie uit een groep reeds geselecteerde punten te verwijderen.
+U kunt selecties aanbrengen in lijngrafieken door op een bepaald punt te klikken. Als u op Alt drukt en de toets Alt ingedrukt houdt, blijven de selecties behouden wanneer u op andere items klikt. Als u Alt ingedrukt houdt wanneer u klikt, wordt de waarde van een selectie ook in- of uitgeschakeld. Dit is handig als u slechts één selectie uit een groep reeds geselecteerde items wilt verwijderen.
 
 ![](assets/line_chart.png)
-
