@@ -1,17 +1,18 @@
 ---
-description: Bekijk de vorige de versienota's van de Werkbank van Gegevens.
-solution: Analytics
-title: Data Workbench 6.0 Release Notes
-topic: Data workbench
+description: Bekijk de opmerkingen bij de vorige release van de Data Workbench.
+title: Opmerkingen bij de release Data Workbench 6.0
 uuid: 36f518a1-7964-4380-9cfe-38950126bbb4
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '40'
+ht-degree: 0%
 
 ---
 
 
-# Data Workbench 6.0 Release Notes{#data-workbench-release-notes}
+# Opmerkingen bij de release Data Workbench 6.0{#data-workbench-release-notes}
 
-Bekijk de vorige de versienota&#39;s van de Werkbank van Gegevens.
+Bekijk de opmerkingen bij de vorige release van de Data Workbench.
 
-Zie ook de [vorige de versienota&#39;s](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/c-release-notes-insight-600.html)van de Werkbank van Gegevens.
+Zie ook de [opmerkingen bij vorige release van Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/c-release-notes-insight-600.html).
