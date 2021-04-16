@@ -1,24 +1,25 @@
 ---
-description: Als u met gegevens werkt die van websiteverkeer worden verzameld, kunt u de transformatie gebruiken Sessionize om te bepalen hoe de zittingen worden bepaald.
-solution: Analytics
-title: Sessionize
-topic: Data workbench
+description: Als u werkt met gegevens die zijn verzameld uit websiteverkeer, kunt u met de transformatie Sessioneren bepalen hoe sessies worden gedefinieerd.
+title: Sessioneren
 uuid: c6e2487a-80e5-4e00-b4d4-2ce013fac3ea
+exl-id: bb25cb4b-7185-4524-8ff5-740b672e1cd9
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 0%
 
 ---
 
+# Sessioneren{#sessionize}
 
-# Sessionize{#sessionize}
+Als u werkt met gegevens die zijn verzameld uit websiteverkeer, kunt u met de transformatie Sessioneren bepalen hoe sessies worden gedefinieerd.
 
-Als u met gegevens werkt die van websiteverkeer worden verzameld, kunt u de transformatie gebruiken Sessionize om te bepalen hoe de zittingen worden bepaald.
-
-De transformatie neemt als zijn input timestamp en een volgende identiteitskaart en output een zittingsaantal voor elke logboekingang. Het zittingsaantal is &quot;1&quot;voor de eerste zitting met een bepaalde volgende identiteitskaart, &quot;2&quot;voor de tweede zitting met zelfde volgende identiteitskaart, etc. De output kan direct als zittingssleutel worden gebruikt omdat het een unieke waarde voor elke zitting heeft.
+De transformatie neemt als invoer een tijdstempel en een trackingsidentiteitskaart en voert een zittingsaantal voor elke logboekingang uit. Het sessienummer is &quot;1&quot; voor de eerste sessie met een bepaalde id voor bijhouden, &quot;2&quot; voor de tweede sessie met dezelfde id, enzovoort. De uitvoer kan rechtstreeks als een sessiesleutel worden gebruikt, omdat deze voor elke sessie een unieke waarde heeft.
 
 >[!NOTE]
 >
->Om te werken, vereist de [!DNL Sessionize] transformatie dat het gegeven in tijd wordt bevolen en door volgende identiteitskaart in uw brongegevens gegroepeerd. Daarom werkt het [!DNL Sessionize] slechts wanneer bepaald in het [!DNL Transformation.cfg] dossier of in een [!DNL Transformation Dataset Include] dossier.
+>Om te werken, vereist de [!DNL Sessionize] transformatie dat de gegevens in tijd worden bevolen en door volgende identiteitskaart in uw brongegevens worden gegroepeerd. [!DNL Sessionize] werkt daarom alleen wanneer dit is gedefinieerd in het [!DNL Transformation.cfg]-bestand of in een [!DNL Transformation Dataset Include]-bestand.
 
 <table id="table_34984DF9340149C0A5016F08EABAD158"> 
  <thead> 
@@ -31,7 +32,7 @@ De transformatie neemt als zijn input timestamp en een volgende identiteitskaart
  <tbody> 
   <tr> 
    <td colname="col1"> Naam </td> 
-   <td colname="col2"> Beschrijvende naam van de transformatie. U kunt om het even welke naam hier ingaan. </td> 
+   <td colname="col2"> Beschrijvende naam van de transformatie. U kunt hier elke naam invoeren. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -40,56 +41,55 @@ De transformatie neemt als zijn input timestamp en een volgende identiteitskaart
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Toestand </td> 
+   <td colname="col1"> Voorwaarde </td> 
    <td colname="col2"> De omstandigheden waaronder deze transformatie wordt toegepast. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Invoertijdstempel </td> 
-   <td colname="col2"> Het gebied dat de waarden van te gebruiken timestamp bevat. </td> 
+   <td colname="col1"> Tijdstempel invoeren </td> 
+   <td colname="col2"> Het veld met de waarden van de te gebruiken tijdstempel. </td> 
    <td colname="col3"> x-timestamp </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> ID Invoer volgen </td> 
-   <td colname="col2"> <p>Het gebied dat de waarden van het volgen identiteitskaart bevat dat moet worden gebruikt. De waarde moet een 64 beetje (16 cijfer) of kleiner hexadecimaal aantal of een decimale gehelen van 16 cijfers of minder zijn. </p> <p> <p>Opmerking: Als u wenst om een gebied buiten x-trackingidentiteitskaart voor volgende identiteitskaart te gebruiken, moet u het gebied eerst knoeien. Zie <a href="../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md#concept-9c353923264941c3aea4428fed66d369"> Hash</a>. </p> </p> </td> 
+   <td colname="col1"> ID Invoer bijhouden </td> 
+   <td colname="col2"> <p>Het veld met de waarden van de te gebruiken tracking-id. De waarde moet een 64-bits (16 cijfers) of kleiner hexadecimaal getal of een decimaal geheel getal van 16 cijfers of minder zijn. </p> <p> <p>Opmerking: Als u een ander veld dan x-trackingid wilt gebruiken voor de id voor bijhouden, moet u het veld eerst hashen. Zie <a href="../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md#concept-9c353923264941c3aea4428fed66d369"> Hash</a>. </p> </p> </td> 
    <td colname="col3"> x-trackingid </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Maximale duur sessie </p> </td> 
-   <td colname="col2">De langste lengte van zitting vóór een nieuwe zitting is begonnen. (Dit houdt Web-pagina's die autoinhoud hebben die van het creëren van zittingen verfrissen die willekeurig lang zijn.) Als de <span class="wintitle"> Voorwaarde</span> van de Onderbreking wordt tevredengesteld en de verwijzende van een klik aan één van de ingangen in de Interne parameter van Domeinen wordt geplaatst, wordt de MaximumDuur van de Zitting gebruikt om het eind van een zitting te bepalen. Geen zitting kan langer zijn dan de gespecificeerde MaximumDuur van de Zitting ongeacht hoeveel klikken het bevat. De aanbevolen waarde is 48 uur. Voor meer informatie over de MaximumDuur van de Zitting en de Interne parameters van Domeinen, zie de Montages van de <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> Configuratie voor de Gegevens</a>van het Web. </td> 
+   <td colname="col1"> <p>Maximale sessieduur </p> </td> 
+   <td colname="col2">De langste duur van de sessie voordat een nieuwe sessie wordt gestart. (Zo blijven webpagina's waarvan de inhoud automatisch wordt vernieuwd, bestaan uit het maken van sessies die willekeurig lang zijn.) Als <span class="wintitle"> de Voorwaarde van de Onderbreking </span> wordt tevredengesteld en de verwijzer van een klik aan één van de ingangen in de Interne parameter van Domeinen wordt geplaatst, wordt de Maximale Duur van de Zitting gebruikt om het eind van een zitting te bepalen. Geen enkele sessie kan langer zijn dan de opgegeven maximale sessieduur, ongeacht het aantal klikken dat deze bevat. De aanbevolen waarde is 48 uur. Voor meer informatie over de Maximale Duur van de Zitting en de Interne parameters van Domeinen, zie <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> de Montages van de Configuratie voor de Gegevens van het Web</a>. </td> 
    <td colname="col3"> 48 uur </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uitvoersessienummer </td> 
-   <td colname="col2"> Het gebied waarin het zittingsaantal wordt opgeslagen. Dit gebied heeft een unieke waarde voor elke zitting voor elke bezoeker. </td> 
+   <td colname="col2"> Het veld waarin het sessienummer wordt opgeslagen. Dit veld heeft een unieke waarde voor elke sessie voor elke bezoeker. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Time-out sessie </td> 
-   <td colname="col2"> <p>De hoeveelheid tijd die tussen logboekingangen van een bepaalde bezoeker moet overgaan om het eind van één zitting en het begin van een nieuwe zitting (namelijk de typische onderbreking te bepalen die wordt gebruikt om een gebruikerszitting te bepalen) te bepalen. De geadviseerde waarde van deze parameter is 30 minuten. Als de Voorwaarde van de Onderbreking niet wordt tevredengesteld en de verwijzer van een klik niet aan één van de verwijzingen in de Interne parameter van Domeinen wordt geplaatst, wordt de Onderbreking van de Zitting gebruikt om de zitting te bepalen. </p> <p> Als de Voorwaarde van de Onderbreking wordt tevredengesteld en cs (verwijzing-domein) voor een logboekingang in de lijst van interne domeinen is, dan bepaalt de MaximumDuur van de Zitting of de huidige logboekingang deel van een bestaande zitting of het begin van een nieuwe zitting uitmaakt. </p> <p> Voor meer informatie over de parameter van de Onderbreking van de Zitting, zie de Montages van de <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> Configuratie voor de Gegevens</a>van het Web. </p> </td> 
+   <td colname="col2"> <p>De hoeveelheid tijd die tussen logboekingangen van een bepaalde bezoeker moet overgaan om het eind van één zitting en het begin van een nieuwe zitting te bepalen (namelijk de typische onderbreking die wordt gebruikt om een gebruikerszitting te bepalen). De aanbevolen waarde van deze parameter is 30 minuten. Als de timeout-voorwaarde niet wordt vervuld en de referentie van een klik niet is ingesteld op een van de referenties in de parameter Internal Domains, wordt de Session Timeout gebruikt om de sessie te definiëren. </p> <p> Als de Voorwaarde van de Onderbreking wordt tevredengesteld en cs (verwijzing-domein) voor een logboekingang in de lijst van interne domeinen is, dan bepaalt de Maximale Duur van de Zitting of de huidige logboekingang deel van een bestaande zitting of de aanvang van een nieuwe zitting uitmaakt. </p> <p> Voor meer informatie over de parameter van de Onderbreking van de Zitting, zie <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> de Montages van de Configuratie voor de Gegevens van het Web</a>. </p> </td> 
    <td colname="col3"> 30 minuten </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Time-out-voorwaarde </td> 
+   <td colname="col1"> Time-outvoorwaarde </td> 
    <td colname="col2"> De voorwaarde die voor een logboekingang moet worden voldaan om als begin van een nieuwe zitting te worden beschouwd. Merk op dat de hoeveelheid tijd die tussen de logboekingang en de vorige logboekingang overgaat minstens de waarde van de parameter van de Onderbreking van de Zitting moet zijn. </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Een nieuwe zitting begint wanneer om het even welke volgende situaties voorkomt:
+Een nieuwe sessie begint wanneer een van de volgende situaties zich voordoet:
 
-* De volgende identiteitskaart verandert.
-* De tijd sinds de laatste logboekingang is minstens gelijk aan de waarde van de parameter van de Onderbreking van de Zitting en de Voorwaarde van de Onderbreking wordt tevredengesteld.
-* De tijd sinds de eerste logboekingang van de laatste zitting overschrijdt de waarde van de Maximum parameter van de Duur van de Zitting.
+* De id voor bijhouden wordt gewijzigd.
+* De tijd sinds de laatste logboekingang is minstens gelijk aan de waarde van de parameter van de Onderbreking van de Zitting en de Voorwaarde van de Onderbreking wordt voldaan.
+* De tijd sinds de eerste logboekingang van de laatste zitting overschrijdt de waarde van de Maximale parameter van de Duur van de Zitting.
 
 >[!NOTE]
 >
->Als u reeds de MaximumDuur van de Zitting en Onderbreking van de Zitting als parameters in het [!DNL Session Parameters.cfg] dossier hebt bepaald, ga geen waarden voor hen in de configuratie in. U kunt de parameters van verwijzingen voorzien door *$ (parameternaam)* te typen zoals aangetoond in het volgende voorbeeld. Voor meer informatie over deze parameters, zie de Montages van de [Configuratie voor de Gegevens](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)van het Web.
+>Als u de Maximale duur van de Zitting en Onderbreking van de Zitting reeds als parameters in het [!DNL Session Parameters.cfg] dossier hebt bepaald, ga geen waarden voor hen in de configuratie in. U kunt naar de parameters verwijzen door *$ (parameternaam)* te typen zoals aangetoond in het volgende voorbeeld. Voor meer informatie over deze parameters, zie [De Montages van de Configuratie voor Gegevens van het Web](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
 
-De [!DNL Sessionize] transformatie in dit voorbeeld neemt als input de x-timestamp en x-trackingid gebieden en registreert het zittingsaantal voor elke logboekingang op het x-zitting-zeer belangrijke gebied. De transformatie [!DNL Timeout Condition] is gebaseerd op een [!DNL Neither] voorwaarde: Als het cs (verwijzing-domein) gebied voor een logboekingang een lid van de Interne parameter van Domeinen aanpast, evalueert de voorwaarde aan vals. Neem nota van de verwijzingen naar de Interne Domeinen en parameters van de Onderbreking van de Zitting.
+De [!DNL Sessionize] transformatie in dit voorbeeld neemt als input de x-timestamp en x-trackingid gebieden en registreert het zittingsaantal voor elke logboekingang in het x-session-belangrijkste gebied. De [!DNL Timeout Condition] van de transformatie is gebaseerd op een [!DNL Neither] voorwaarde: Als het veld cs(reference-domain) voor een logbestandvermelding overeenkomt met een lid van de parameter Internal Domains, levert de voorwaarde false op. Neem nota van de verwijzingen naar de Interne Domeinen en parameters van de Onderbreking van de Zitting.
 
-Voor informatie over [!DNL NeitherCondition], zie [Voorwaarden](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md). Voor informatie over de Interne Domeinen en parameters van de Onderbreking van de Zitting, zie de Montages van de [Configuratie voor de Gegevens](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)van het Web.
+Voor informatie over [!DNL NeitherCondition], zie [Voorwaarden](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md). Voor informatie over de Interne Domeinen en parameters van de Onderbreking van de Zitting, zie [Montages van de Configuratie voor de Gegevens van het Web](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
 
 ![](assets/cfg_TransformationType_Sessionize.png)
-
