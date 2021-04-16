@@ -1,17 +1,15 @@
 ---
 description: Dimension-expressies worden nooit alleen gebruikt, maar kunnen overal worden gebruikt waar een dimensie wordt aangeroepen in een metrische expressie of filterexpressie.
-solution: Analytics
 title: Syntaxis voor dimensie-expressies
-topic: Data workbench
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
+exl-id: 58609e31-8ad8-418b-9a9f-40462d6443f7
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 0%
 
 ---
-
 
 # Syntaxis voor dimensie-expressies{#syntax-for-dimension-expressions}
 
@@ -21,13 +19,13 @@ Dimension-expressies worden nooit alleen gebruikt, maar kunnen overal worden geb
 1. Het formulier `{TEXT}?` vertegenwoordigt optionele tekst.
 1. Het formulier `{TEXT}*` vertegenwoordigt tekst die nul of meer keren kan voorkomen.
 1. Het formulier `{A | B | C |...}` vertegenwoordigt tekst die uit exact een van de opgegeven opties bestaat, zoals A, B of C...
-1. Het formulier `[A,B)` vertegenwoordigt een bereik van getallen, van A tot, maar niet inclusief B.
+1. De vorm `[A,B)` vertegenwoordigt een waaier van aantallen, van A tot maar zonder B.
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Id </p> </td> 
-   <td colname="col2"> <p>Een id verwijst naar een benoemde dimensie. Zie <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntaxis voor id's </a>. </p> <p>Voorbeeld: Sessies[ Session_Number = "1" ] is het aantal sessies met het sessienummer "1." Sessienummer is een benoemde dimensie waarnaar wordt verwezen door de id. </p> </td> 
+   <td colname="col2"> <p>Een id verwijst naar een benoemde dimensie. Zie <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntaxis voor id's </a> voor de regels die van toepassing zijn op wettelijke id's. </p> <p>Voorbeeld: Sessies[ Session_Number = "1" ] is het aantal sessies met het sessienummer "1." Sessienummer is een benoemde dimensie waarnaar wordt verwezen door de id. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Dimension) </p> </td> 
@@ -59,7 +57,7 @@ Dimension-expressies worden nooit alleen gebruikt, maar kunnen overal worden geb
   </tr> 
   <tr> 
    <td colname="col1"> <p>latency (Level, Clip, Dim, Filter, MaxBefore, MaxAfter, FormatString) </p> </td> 
-   <td colname="col2"> <p>Zie Dimension voor latentie <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> maken </a>. </p> </td> 
+   <td colname="col2"> <p>Zie <a href="../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/t-create-ltncy-dims.md#task-6d46ea8c89a047318d9c71bf105ef64a"> Dimension voor latentie maken </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>cartesiaans_product(Scheidingsteken {,Dim}*) </p> </td> 
@@ -67,7 +65,7 @@ Dimension-expressies worden nooit alleen gebruikt, maar kunnen overal worden geb
   </tr> 
   <tr> 
    <td colname="col1"> <p>nearest_countable(Dim) </p> </td> 
-   <td colname="col2"> <p>Verwijst naar een reeds bestaande dimensie: de dichtstbijzijnde telbare voorouder van Dim in het schema. De dichtstbijzijnde teller(URI) is bijvoorbeeld gelijk aan Page_View. </p> </td> 
+   <td colname="col2"> <p>Verwijst naar een reeds bestaande dimensie: de dichtstbijzijnde telbare voorouder van Dim in het schema. De dichtstbijzijnde teller (URI) is bijvoorbeeld gelijk aan Page_View. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>genormaliseerd (grijs, Aantal) </p> </td> 
@@ -95,4 +93,3 @@ Dimension-expressies worden nooit alleen gebruikt, maar kunnen overal worden geb
   </tr> 
  </tbody> 
 </table>
-
