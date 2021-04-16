@@ -1,22 +1,23 @@
 ---
-description: Het op de markt brengen van uw website kan de plaatsing van reclame in de vorm van beeld of andere rijke media dossiers (die van uw Webserver worden gediend) op derdewebsites impliceren.
-solution: Analytics
-title: Meten van reclame-uitingen
-topic: Data workbench
+description: Als u uw website op de markt brengt, moet u mogelijk advertenties plaatsen in de vorm van afbeeldings- of andere rich media-bestanden (die via uw webserver worden aangeboden) op websites van derden.
+title: Meting van Advertisement Impression
 uuid: ca2bd6bf-4f49-406c-b47a-18d6abfb48a4
+exl-id: 77cd816e-63a4-4080-ac65-0661e1de4ec0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 0%
 
 ---
 
+# Meting Advertisement Impression{#measuring-advertisement-impression}
 
-# Meten van reclame-uitingen{#measuring-advertisement-impression}
+Als u uw website op de markt brengt, moet u mogelijk advertenties plaatsen in de vorm van afbeeldings- of andere rich media-bestanden (die via uw webserver worden aangeboden) op websites van derden.
 
-Het op de markt brengen van uw website kan de plaatsing van reclame in de vorm van beeld of andere rijke media dossiers (die van uw Webserver worden gediend) op derdewebsites impliceren.
+In dergelijke gevallen kunt u zowel de indruk van de advertentie op een browser als de daaropvolgende doorklik, als die zich voordoet, op de doel-URL van de advertentie op uw website meten.
 
-In dergelijke gevallen, zou u zowel de indruk van de reclame op browser als de verdere klik-door, als één voorkomt, aan het doel URL van de reclame op uw website kunnen willen meten.
-
-Voor advertenties in de vorm van beelden, resulteert het toevoegen [!DNL Log=1] aan het vraagkoord in het beeldverzoek, en zo de reclame-indruk, die door [!DNL Sensor] voor analysedoeleinden wordt gevangen.
+Voor advertenties in de vorm van afbeeldingen leidt het toevoegen van [!DNL Log=1] aan de queryreeks tot de afbeeldingsaanvraag, en dus tot de advertentie-indruk, die wordt vastgelegd door [!DNL Sensor] voor analysedoeleinden.
 
 ```
 <!—REFERENCE IMPRESSION TAG-> 
@@ -24,13 +25,13 @@ Voor advertenties in de vorm van beelden, resulteert het toevoegen [!DNL Log=1] 
 <!--END REFERENCE IMPRESSION TAG-->
 ```
 
-| Verzamelde gegevens | Toelichting | Voorbeeld |
+| Gegevens verzameld | Toelichting | Voorbeeld |
 |---|---|---|
-| v_ic= | Waarde die de Campagne van de Impressie aanduidt | v_ic=&quot;CAMPAIGN1&quot; |
-| v_ica= | Waarde die de Activa van de Campagne van de Impressie aanduidt | v_ica=&quot;72890ab&quot; |
-| v_icr= | Waarde die de Referrer van de Campagne van de Impressie aanduidt | v_icr=&quot;http://money.cnn.com/markets/ |
+| v_ic= | Waarde die de campagne voor onderdrukking aanduidt | v_ic=&quot;CAMPAIGN1&quot; |
+| v_ica= | Waarde die de middelen van de campagne voor onderdrukking aanduidt | v_ica=&quot;72890ab&quot; |
+| v_icr= | Waarde die de impressiecampagnegerder aangeeft | v_icr=&quot;http://money.cnn.com/markets/ |
 
-Naast het toevoegen [!DNL Log=1] aan het beeldverzoek, zou een herkenningsteken aan URL moeten worden toegevoegd die van de reclame aan de doelpagina binnen uw website leidt om de reclame te volgen die tot de klik-door leidde en de klik-door terug naar de bepaalde campagne voor die reclame te volgen.
+Naast het toevoegen van [!DNL Log=1] aan het beeldverzoek, zou een herkenningsteken aan URL moeten worden toegevoegd die van de reclame aan de doelpagina binnen uw website leidt om de reclame te volgen die tot de klikthrough leidde en de klikthrough terug naar de bepaalde campagne voor die reclame terug te volgen.
 
 ```
 <a href=”www.mysite.com/path/to/landingpage?Log=1&v_c=CAMPAIGN&v_ca=72890ab&v_cr=http://money.cnn.com/markets/”>
@@ -41,7 +42,7 @@ Click Here
 <table id="table_B87134C522EF4AC9BD2AFA6F4A0CF574"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Verzamelde gegevens </th> 
+   <th colname="col1" class="entry"> Gegevens verzameld </th> 
    <th colname="col2" class="entry"> Toelichting </th> 
    <th colname="col3" class="entry"> Voorbeeld </th> 
   </tr> 
@@ -49,12 +50,12 @@ Click Here
  <tbody> 
   <tr> 
    <td colname="col1"> v_c= </td> 
-   <td colname="col2"> Waarde die de klik-door Campagne aanduiden </td> 
+   <td colname="col2"> Waarde die de Klikken-door Campagne duidt </td> 
    <td colname="col3"> v_c="CAMPAIGN1" </td> 
   </tr> 
   <tr> 
    <td colname="col1"> v_ca= </td> 
-   <td colname="col2"> Waarde die de Click-through Activa van de Campagne aanduidt </td> 
+   <td colname="col2"> Waarde die de Middel van de Campagne van het Doorklikken-door aanduidt </td> 
    <td colname="col3"> v_ca="72890ab" </td> 
   </tr> 
   <tr> 
@@ -64,4 +65,3 @@ Click Here
   </tr> 
  </tbody> 
 </table>
-
