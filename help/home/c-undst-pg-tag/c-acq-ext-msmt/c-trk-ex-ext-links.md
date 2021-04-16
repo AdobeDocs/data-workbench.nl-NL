@@ -1,26 +1,27 @@
 ---
-description: Het vangen van activiteit over derdewebsiteverbindingen om de analyse van het Doel van de Uitgang toe te laten.
-solution: Analytics
-title: Het volgen gaat aan Externe Verbindingen weg
-topic: Data workbench
+description: Vastleggen van activiteit over derdewebsiteverbindingen om de analyse van het Doel van het Uitgang toe te laten.
+title: Afsluiten bij externe koppelingen bijhouden
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
+exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 0%
 
 ---
 
+# Afsluiten bijhouden naar externe koppelingen{#tracking-exits-to-external-links}
 
-# Het volgen gaat aan Externe Verbindingen weg{#tracking-exits-to-external-links}
+Vastleggen van activiteit over derdewebsiteverbindingen om de analyse van het Doel van het Uitgang toe te laten.
 
-Het vangen van activiteit over derdewebsiteverbindingen om de analyse van het Doel van de Uitgang toe te laten.
-
-De Web-pagina&#39;s kunnen verbindingen aan derdewebsites bevatten, en de activiteit over die verbindingen kan worden gevangen om de analyse van het Doel van de Uitgang toe te laten, vooral in het geval dat de derdeplaats verantwoordelijk is voor het betalen van verwijzingskosten wanneer dergelijke verwijzingen worden ontvangen. Omdat de klikgebeurtenis aan de logboekdossiers van het derdesysteem door gebrek wordt geschreven, moeten de wijzigingen aan de verbinding voor de klikgebeurtenis worden aangebracht die plaatselijk moet worden gevangen. De derdeverbinding aanwezig binnen uw website moet als volgt worden gewijzigd:
+Webpagina&#39;s kunnen koppelingen naar websites van derden bevatten, en activiteiten in die koppelingen kunnen worden vastgelegd om Exit Target-analyse mogelijk te maken, met name wanneer de externe site verantwoordelijk is voor het betalen van verwijzingskosten wanneer dergelijke verwijzingen worden ontvangen. Omdat de klikgebeurtenis aan de logboekdossiers van het derdesysteem door gebrek wordt geschreven, moeten de veranderingen aan de verbinding voor de klikgebeurtenis worden aangebracht om plaatselijk worden gevangen. De koppeling naar een andere fabrikant op uw website moet als volgt worden gewijzigd:
 
 ```
 <A HREF=”http://www.myserver.com/PageExit.htm?v_eurl=http://www.othersite.com”>
 ```
 
-Het referenced [!DNL PageExit.htm] dossier moet worden gecreeerd en zou moeten worden gestructureerd om het volgende manuscript te bevatten:
+Het bestand [!DNL PageExit.htm] waarnaar wordt verwezen, moet worden gemaakt en gestructureerd met het volgende script:
 
 ```
 <html> 
@@ -51,9 +52,8 @@ location.replace(getExitURLQuery("v_eurl"));
 </html>
 ```
 
-Door het verzoek om het [!DNL PageExit.htm] bestand in te dienen, wordt de v_eurl waarde verzameld voor analysedoeleinden. Bovendien, wanneer [!DNL PageExit.htm] wordt geladen, richt het onmiddellijk aan de gespecificeerde v_eurl doelplaats opnieuw.
+Door het verzoek om het [!DNL PageExit.htm] dossier te doen, wordt de v_eurl waarde verzameld voor analysedoeleinden. Wanneer [!DNL PageExit.htm] is geladen, wordt deze bovendien direct doorgestuurd naar de opgegeven doellocatie v_eurl.
 
-| Verzamelde gegevens | Toelichting | Voorbeeld |
+| Gegevens verzameld | Toelichting | Voorbeeld |
 |---|---|---|
-| v_eurl | Waarde verbonden aan de v_eurl variabele van het vraagkoord. Deze waarde vertegenwoordigt het doel URL van de verbinding aanwezig binnen de HTML- pagina. | v_eurl=www.othersite.com |
-
+| v_eurl | Waarde gekoppeld aan de variabele v_eurl-queryreeks. Deze waarde vertegenwoordigt de doel-URL van de koppeling in de HTML-pagina. | v_eurl=www.othersite.com |
