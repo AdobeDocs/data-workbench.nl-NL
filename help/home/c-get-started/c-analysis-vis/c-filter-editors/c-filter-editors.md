@@ -1,24 +1,25 @@
 ---
-description: Een filterredacteur is een speciale visualisatie voor de bouw van en het uitgeven van filters.
-solution: Analytics
-title: Filterbewerkers
-topic: Data workbench
+description: Een filtereditor is een speciale visualisatie voor het maken en bewerken van filters.
+title: Filtereditors
 uuid: c4e99e44-1927-4131-92e9-111c76bdc3e2
+exl-id: 9009c760-8726-4234-b85b-727aeae761bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 0%
 
 ---
 
+# Filtereditors{#filter-editors}
 
-# Filterbewerkers{#filter-editors}
+Een filtereditor is een speciale visualisatie voor het maken en bewerken van filters.
 
-Een filterredacteur is een speciale visualisatie voor de bouw van en het uitgeven van filters.
+Terwijl andere visualisaties in de vertoningsgegevens van de Data Workbench van uw dataset, laat een filterredacteur u toe om te specificeren welk gedeelte of ondergroep van de gegevens in de visualisaties worden getoond.
 
-Terwijl andere visualisaties in de vertoningsgegevens van de Werkbank van Gegevens van uw dataset, laat een filterredacteur u toe om te specificeren welk gedeelte of ondergroep van de gegevens te specificeren die in de visualisaties worden getoond.
+![](assets/filter_edit_toolbar.png) **De knop Filter opslaan.** Wanneer u een item in een werkruimte selecteert (een detailtabel, visualisatie, filter of ander item), wordt de knop  **Filter** opslaan op de werkbalk geopend, zodat u een filter kunt maken voor het geselecteerde item. De optie voor het invoeren van een naam wordt gegeven wanneer op het pictogram Filter opslaan wordt geklikt. Het filter kan vervolgens in het profiel worden opgeslagen.
 
-![](assets/filter_edit_toolbar.png) De knop Filter **opslaan.** Wanneer u een punt binnen een werkruimte-een detaillijst selecteert, opent de visualisatie, de filter, of ander punt- **sparen knoop van de Filter** op de toolbar die u toestaat om een filter voor het geselecteerde punt tot stand te brengen. De optie om een naam in te gaan wordt verstrekt wanneer sparen het pictogram van de Filter wordt geklikt. De filter kan dan aan het profiel worden bewaard.
-
-U creeert een filter door een venster van de filterredacteur in uw werkruimte te openen en één of meerdere voorwaarden toe te voegen. Om u bij het bepalen van de voorwaarden van uw filter bij te staan, verschijnen de editable gebieden in het venster van de filterredacteur als tekstvakjes of worden benadrukt wanneer u uw muis over hen rolt. U klikt eenvoudig binnen het tekstvakje om tekst toe te voegen of het benadrukte gebied met de rechtermuisknop aan te klikken om te zien welke opties beschikbaar zijn. De filter die u creeert leest als een zin, die het gemakkelijk maakt om te begrijpen welke ondergroep van de gegevens inbegrepen of uitgesloten is. Als u zou willen, kunt u een beschrijving voor elke filtervoorwaarde tot stand brengen zodat zijn etiket in de filterredacteur voor u of uw team zinvoller is.
+U maakt een filter door een venster van de filtereditor in uw werkruimte te openen en een of meer voorwaarden toe te voegen. Als u de voorwaarden van het filter wilt definiëren, worden bewerkbare velden in het venster van de filtereditor weergegeven als tekstvakken of gemarkeerd wanneer u de muis erboven plaatst. U klikt gewoon in het tekstvak om tekst toe te voegen of u klikt met de rechtermuisknop op het gemarkeerde veld om te zien welke opties beschikbaar zijn. Het filter dat u maakt, leest als een zin, zodat u gemakkelijk kunt zien welke subset van de gegevens wordt opgenomen of uitgesloten. U kunt desgewenst een beschrijving maken voor elke filtervoorwaarde, zodat het label ervan in de filtereditor voor u of uw team betekenisvoller wordt.
 
 ![](assets/vis_FilterEditor_Blank.png)
 
@@ -26,5 +27,4 @@ Bovendien kunt u de filterredacteur gebruiken om het even welk [!DNL .filter] do
 
 >[!NOTE]
 >
->Wanneer u de filter voor het eerst opent, werkt de filterredacteur de definitie van de filter bij om het formaat van de filterredacteur aan te passen.
-
+>Wanneer u het filter voor het eerst opent, werkt de filtereditor de filterdefinitie bij zodat deze overeenkomt met de indeling van de filtereditor.
