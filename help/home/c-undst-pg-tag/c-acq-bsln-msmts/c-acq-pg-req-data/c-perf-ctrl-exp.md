@@ -1,17 +1,18 @@
 ---
-description: Sensor maakt gecontroleerde websiteexperimenten mogelijk, zodat u gecontroleerde experimenten kunt uitvoeren op willekeurige subsets van uw bezoekerspopulatie met minimale onderbrekingen van uw lopende activiteiten.
-solution: Analytics
-title: Het uitvoeren van Gecontroleerde Experimenten
-topic: Data workbench
+description: Sensor maakt gecontroleerde websiteexperimenten mogelijk, zodat u gecontroleerde experimenten kunt uitvoeren op willekeurige subsets van uw bezoekerspopulatie met minimale onderbreking van uw lopende activiteiten.
+title: Gecontroleerde experimenten uitvoeren
 uuid: 2fe16713-21c8-497a-a765-8cea011d419b
+exl-id: 8cbe9a10-72d8-4964-bd0b-0a262fd7ede2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 
+# Gecontroleerde experimenten uitvoeren{#performing-controlled-experiments}
 
-# Het uitvoeren van Gecontroleerde Experimenten{#performing-controlled-experiments}
+Sensor maakt gecontroleerde websiteexperimenten mogelijk, zodat u gecontroleerde experimenten kunt uitvoeren op willekeurige subsets van uw bezoekerspopulatie met minimale onderbreking van uw lopende activiteiten.
 
-Sensor maakt gecontroleerde websiteexperimenten mogelijk, zodat u gecontroleerde experimenten kunt uitvoeren op willekeurige subsets van uw bezoekerspopulatie met minimale onderbrekingen van uw lopende activiteiten.
-
-De gecontroleerde experimenten staan experimenteren met hypothesen toe om website financiële prestaties te verbeteren, klantenervaring te verbeteren, of klantengedrag te beïnvloeden. De programma&#39;s van de marketing, de initiatieven van de inhoudpersonalisatie, processtromen, en de creatieve of hypotheses van het inhoudsconcept kunnen op een gecontroleerd percentage willekeurig geselecteerde plaatsbezoekers worden getest en dan in gegevenswerkbank worden geanalyseerd om de verdienste van de hypotheses te bepalen.
+Gecontroleerde experimenten maken experimenten met hypothesen mogelijk om de financiële prestaties van websites te verbeteren, de gebruikerservaring te verbeteren of het gedrag van klanten te beïnvloeden. Marketingprogramma&#39;s, initiatieven voor het aanpassen van inhoud, processtromen en hypothesen voor creatieve of inhoudconcept kunnen worden getest op een gecontroleerd percentage willekeurig geselecteerde sitebezoekers en vervolgens worden geanalyseerd in de werkbank voor gegevensverwerking om de verdienste van de hypothesen te bepalen.
