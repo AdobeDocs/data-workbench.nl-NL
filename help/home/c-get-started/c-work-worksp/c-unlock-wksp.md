@@ -1,31 +1,32 @@
 ---
-description: De beheerders kunnen de Werkbank van Gegevens vormen om slechts bepaalde gebruikers toe te staan om bepaalde werkruimten te veranderen.
-solution: Analytics
-title: Een werkruimte ontsluiten
-topic: Data workbench
+description: Beheerders kunnen Data Workbench configureren zodat alleen bepaalde gebruikers bepaalde werkruimten kunnen wijzigen.
+title: Een werkruimte ontgrendelen
 uuid: 07e7ee09-36f1-4990-8e6d-5ec356f8cf0d
+exl-id: 6c603e63-3b61-46ce-9798-483cc7eb38ed
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 0%
 
 ---
 
+# Een werkruimte ontgrendelen{#unlocking-a-workspace}
 
-# Een werkruimte ontsluiten{#unlocking-a-workspace}
+Beheerders kunnen Data Workbench configureren zodat alleen bepaalde gebruikers bepaalde werkruimten kunnen wijzigen.
 
-De beheerders kunnen de Werkbank van Gegevens vormen om slechts bepaalde gebruikers toe te staan om bepaalde werkruimten te veranderen.
+Terwijl een werkruimte is vergrendeld, kunnen gebruikers in de meeste visualisaties selecties maken en de gegevens in tabellen sorteren, maar kunnen ze geen andere wijzigingen in de werkruimte aanbrengen.
 
-Terwijl een werkruimte gesloten is, kunnen de gebruikers selecties in de meeste visualisaties maken en de gegevens in lijsten sorteren maar kunnen geen andere veranderingen in de werkruimte aanbrengen.
+Bepaalde gebruikers kunnen een vergrendelde werkruimte tijdelijk ontgrendelen met de optie [!DNL Temporarily Unlock] in het menu van de titelbalk van de werkruimte, de benodigde wijzigingen aanbrengen en vervolgens de werkruimte opslaan. De volgende keer dat de gebruiker de werkruimte opent, wordt deze vergrendeld.
 
-Bepaalde gebruikers hebben de capaciteit om een gesloten werkruimte tijdelijk te openen gebruikend de [!DNL Temporarily Unlock] optie op het de barmenu van de werkruimtetitel, de noodzakelijke veranderingen aan te brengen, dan sparen de werkruimte. De volgende keer dat de gebruiker de werkruimte opent, is het opnieuw gesloten.
+Als u geen wijzigingen in een werkruimte kunt aanbrengen en opslaan en de optie [!DNL Temporarily Unlock] niet beschikbaar is in het menu [!DNL File], is deze werkruimte vergrendeld door de beheerder van de Adobe-toepassing en kunt u deze niet wijzigen. Neem contact op met uw beheerder voor meer informatie.
 
-Als u geen veranderingen in een werkruimte kunt aanbrengen en bewaren en de [!DNL Temporarily Unlock] optie niet beschikbaar in het [!DNL File] menu is, is deze werkruimte gesloten door uw de toepassingsbeheerder van Adobe en u kunt niet het veranderen. Neem contact op met uw beheerder voor meer informatie.
+**Een werkruimte vergrendelen of ontgrendelen**
 
-**Om een werkruimte te sluiten of te openen**
-
-In de titelbar van de werkruimte, klik **[!UICONTROL File]** > **[!UICONTROL Temporarily Unlock]**.
+Klik in de titelbalk van de werkruimte op **[!UICONTROL File]** > **[!UICONTROL Temporarily Unlock]**.
 
 >[!NOTE]
 >
->Voor informatie over het vormen van individuele werkruimten en volledige te sluiten lusjes of omslagen, zie het [Vormen Vergrendelde Werkruimten](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md#concept-b6ce110bbed645d89f29373b5106836a).
+>Voor informatie over het vormen van individuele werkruimten en volledige te sluiten lusjes of omslagen, zie [Vormend Vergrendelde Werkruimten](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md#concept-b6ce110bbed645d89f29373b5106836a).
 
-Om serverwerkruimten te schrappen, moet u gebruiken [!DNL Profile Manager]. Zie Bestanden [verwijderen uit uw werkprofiel](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b)voor meer informatie.
+Als u serverwerkruimten wilt verwijderen, moet u [!DNL Profile Manager] gebruiken. Zie [Bestanden verwijderen uit uw werkprofiel](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b) voor meer informatie.
