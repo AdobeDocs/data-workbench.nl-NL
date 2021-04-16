@@ -1,23 +1,21 @@
 ---
 description: Metrische gegevens kunnen worden bewerkt met de metrische editor en worden opgeslagen in de map Metriek van een profiel.
-solution: Analytics
 title: Syntaxis voor metrische expressies
-topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
+exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 0%
 
 ---
 
-
 # Syntaxis voor metrische expressies{#syntax-for-metric-expressions}
 
 Metrische gegevens kunnen worden bewerkt met de metrische editor en worden opgeslagen in de map Metriek van een profiel.
 
-Voor meer informatie, zie het [Creëren en het Uitgeven Afgeleide Metriek](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). Metrische expressies kunnen ook in werkbladen worden gebruikt. Zie [Werkbladen](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581)voor meer informatie. De volgende syntaxis wordt gebruikt om metrische uitdrukkingen te bepalen.
+Voor meer informatie, zie [het Creëren en het uitgeven Afgeleide Metriek](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). Metrische expressies kunnen ook in werkbladen worden gebruikt. Zie [Werkbladen](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581) voor meer informatie. De volgende syntaxis wordt gebruikt om metrische uitdrukkingen te bepalen.
 
 Opmerkingen:
 
@@ -25,13 +23,13 @@ Opmerkingen:
 1. Het formulier `{TEXT}?` vertegenwoordigt optionele tekst.
 1. Het formulier `{TEXT}*` vertegenwoordigt tekst die nul of meer keren kan voorkomen.
 1. Het formulier `{A | B | C |...}` vertegenwoordigt tekst die uit exact een van de opgegeven opties bestaat, zoals A, B of C...
-1. Het formulier `[A,B)` vertegenwoordigt een bereik van getallen, van A tot, maar niet inclusief B.
+1. De vorm `[A,B)` vertegenwoordigt een waaier van aantallen, van A tot maar zonder B.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Id </p> </td> 
-   <td colname="col2"> <p>Een id verwijst naar een benoemde metrische waarde. Zie <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntaxis voor id's </a>. </p> <p>Voorbeeld: Opbrengst = Totaal_Prijs </p> </td> 
+   <td colname="col2"> <p>Een id verwijst naar een benoemde metrische waarde. Zie <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntaxis voor id's </a> voor de regels die van toepassing zijn op wettelijke id's. </p> <p>Voorbeeld: Opbrengst = Totaal_Prijs </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(metrisch) </p> </td> 
@@ -75,7 +73,7 @@ Opmerkingen:
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metrisch[filter] </p> </td> 
-   <td colname="col2"> <p>"Metrisch met filter": Een nieuwe metrische waarde die door het opgegeven filter wordt gefilterd. </p> <p>Voorbeeld: Jan_Sessions = Sessies[ Month="Jan" ] </p> </td> 
+   <td colname="col2"> <p>"Metrisch met filter": Een nieuwe metrieke die door het bepaalde filter wordt gefiltreerd. </p> <p>Voorbeeld: Jan_Sessions = Sessies[ Month="Jan" ] </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metrisch met Dimension </p> </td> 
@@ -86,7 +84,7 @@ Opmerkingen:
    <td colname="col2"> <p>Een metrische waarde met een vaste waarde. </p> <p>Voorbeeld: Pi = 3,1415 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>total(metrisch) </p> </td> 
+   <td colname="col1"> <p>total(Metrisch) </p> </td> 
    <td colname="col2"> <p>Negeert om het even welke afmeting waarover metrisch wordt geëvalueerd. Metrisch heeft de zelfde waarde voor elk element van die afmeting. </p> <p>Voorbeeld: Pct_of_Visitors = Bezoekers / totaal(Bezoekers) </p> </td> 
   </tr> 
   <tr> 
@@ -119,4 +117,3 @@ Opmerkingen:
   </tr> 
  </tbody> 
 </table>
-
