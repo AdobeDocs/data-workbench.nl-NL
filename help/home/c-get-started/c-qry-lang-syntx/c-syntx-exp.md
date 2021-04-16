@@ -1,24 +1,24 @@
 ---
-description: Syntaxis-regels voor formules.
-solution: Analytics
-title: Syntaxis voor elke uitdrukking
-topic: Data workbench
+description: Syntaxisregels voor formules.
+title: Syntaxis voor elke expressie
 uuid: 663e3fd2-80e5-4805-8706-34a0e02ebd0f
+exl-id: ca1a52c1-b5bd-48bd-95cd-f8059913bd0a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '89'
+ht-degree: 4%
 
 ---
 
+# Syntaxis voor elke expressie{#syntax-for-any-expression}
 
-# Syntaxis voor elke uitdrukking{#syntax-for-any-expression}
+Syntaxisregels voor formules.
 
-Syntaxis-regels voor formules.
+* In een formule zijn trefwoorden hoofdlettergevoelig en moeten ze precies zo worden getypt als ze worden weergegeven.
+* In een formule moeten metrische namen, afmetingen en filternamen die spaties bevatten, gebruikmaken van onderstrepingstekens tussen woorden. Bijvoorbeeld: [!DNL Page_Views]
+* Voor tekenreeksen binnen expressies moet u aan bepaalde enkele aanhalingstekens, dubbele aanhalingstekens en backslashes ontsnappen. Bijvoorbeeld:
 
-* Wanneer in een formule, zijn de sleutelwoorden case gevoelig en moeten precies worden getypt aangezien zij verschijnen.
-* Wanneer in een formule, metrisch, afmeting, en filternamen die ruimten omvatten moet gebruiken onderstreept tussen woorden. Bijvoorbeeld: [!DNL Page_Views]
-* Voor koorden binnen uitdrukkingen, moet u bepaalde enige aanhalingstekens, dubbele aanhalingstekens, en backslashes ontsnappen. Bijvoorbeeld:
+   * [!DNL “can’t”] is aanvaardbaar en hoeft niet te worden gevrijwaard, maar  [!DNL ‘can’t’] is onaanvaardbaar en moet worden gevrijwaard  [!DNL ‘can\’t’].
 
-   * [!DNL “can’t”] is acceptabel en hoeft niet te worden ontsnapt, maar [!DNL ‘can’t’] is onaanvaardbaar en moet zo worden ontsnapt [!DNL ‘can\’t’].
-
-   * [!DNL c:\windows] moet ontsnapt zijn zoals [!DNL c:\\windows].
-
+   * [!DNL c:\windows] moeten worden gevrijwaard zoals  [!DNL c:\\windows].
