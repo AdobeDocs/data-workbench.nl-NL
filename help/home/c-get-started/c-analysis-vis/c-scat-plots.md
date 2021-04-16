@@ -1,60 +1,60 @@
 ---
-description: De percelen van de katter grafiek de elementen van een gegevensdimensie (zoals Pagina of Stad) op een net waarin de x- en y-assen verschillende metriek vertegenwoordigen.
-solution: Analytics
-title: 2D-verspreidingspunten
-topic: Data workbench
+description: Verstrooiingspunten geven de elementen van een gegevensdimensie (zoals Pagina of Stad) weer op een raster waarin de x- en y-as verschillende meetwaarden vertegenwoordigen.
+title: 2D-spreidingspunten
 uuid: 73c23d22-3c3a-4535-b66b-0e3508bd904c
+exl-id: 340f8c18-ce47-4f3a-aba4-3d6124505313
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 0%
 
 ---
 
+# 2D-spreidingspunten{#d-scatter-plots}
 
-# 2D-verspreidingspunten{#d-scatter-plots}
+Verstrooiingspunten geven de elementen van een gegevensdimensie (zoals Pagina of Stad) weer op een raster waarin de x- en y-as verschillende meetwaarden vertegenwoordigen.
 
-De percelen van de katter grafiek de elementen van een gegevensdimensie (zoals Pagina of Stad) op een net waarin de x- en y-assen verschillende metriek vertegenwoordigen.
-
-Scatter de percelen kunnen nuttig zijn wanneer het proberen om het verband tussen grote aantallen ongelijksoortige punten, door twee verschillende metriek te begrijpen. In het volgende voorbeeld, toont het spreidingsperceel elke stad door het aantal bezoekers en het respectieve behoudstarief.
+Verstrooiingspunten kunnen nuttig zijn wanneer u de relatie probeert te begrijpen tussen grote aantallen ongelijksoortige items, door twee verschillende meeteenheden. In het volgende voorbeeld toont het spreidingsperceel elke stad aan de hand van het aantal bezoekers en de respectieve retentiepercentages.
 
 ![](assets/vis_ScatterPlot_City.png)
 
-Het verspreidingsplot laat u toe om de uitschieters snel te zien. Zout Lake City bijvoorbeeld, heeft een hoger dan gemiddeld retentiepercentage per bezoeker.
+Met het spreidingsperceel kunt u de uitschieters snel zien. Zout Lake City heeft bijvoorbeeld een hogere retentieresnelheid dan gemiddeld per bezoeker.
 
-Ook de verschillende waarnemingspunten kunnen worden gebruikt om de consistentie van de gegevens aan te tonen. In het volgende voorbeeld, toont het verspreidingsplot het aantal bezoekers met zittingen van een bepaalde lengte.
+U kunt ook spreidingspercelen gebruiken om de consistentie van gegevens aan te tonen. In het volgende voorbeeld wordt in het spreidingsperceel het aantal bezoekers met sessies van een bepaalde lengte weergegeven.
 
 ![](assets/vis_ScatterPlot_SessionDuration.png)
 
-De grootte van elk punt op het uitzetplot wordt bepaald door de metrische straal. De standaard metrische straal verschilt voor elke toepassing van Adobe. Bijvoorbeeld, in [!DNL Site], is metrische straal gebaseerd op Zittingen door gebrek. U kunt metrische straal veranderen om de punten in uw verspreidingspunten te hebben om het even welke beschikbare metrisch vertegenwoordigen. Voor stappen om dit te doen, zie de [Veranderende Metriek](../../../home/c-get-started/c-analysis-vis/c-scat-plots.md#section-fd80576d583c430cb469daf12e39aa2a) van de Straal de kleur van de punten gebaseerd is op de kleurenlegende die binnen de werkruimte open is. Voor meer informatie over kleurenlegenden, zie de Legenda van de [Kleur](../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
+De grootte van elk punt op het verstrooiingsperceel wordt bepaald door de meetstraal. De standaardstraalmetrisch verschilt voor elke toepassing van Adobe. In [!DNL Site] is de straalmetrische waarde bijvoorbeeld standaard gebaseerd op sessies. U kunt de metrische straal wijzigen zodat de punten in de spreidingsgebieden elke beschikbare metrische waarde vertegenwoordigen. Zie [Radiusmetriek wijzigen](../../../home/c-get-started/c-analysis-vis/c-scat-plots.md#section-fd80576d583c430cb469daf12e39aa2a) De kleur van de punten is gebaseerd op de legenda van de kleur die is geopend in de werkruimte. Zie [Kleurlegenda](../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358) voor meer informatie over legenda.
 
-## Selecteer punten {#section-4b4d45f39b884d54bb7407b3b2f4ea50}
+## Punten {#section-4b4d45f39b884d54bb7407b3b2f4ea50} selecteren
 
-**Om één enkel punt te selecteren**
+**Eén punt selecteren**
 
 * Klik op het punt.
 
-**Om een ander punt of een groep punten aan uw selectie toe te voegen**
+**Een ander punt of een groep punten toevoegen aan de selectie**
 
-* Ctrl+click een punt of Ctrl+drag over veelvoudige punten.
+* Houd Ctrl ingedrukt en klik op een punt of houd Ctrl ingedrukt en sleep over meerdere punten.
 
-**Om een punt of een groep punten uit uw selectie te verwijderen**
+**Een punt of groep punten uit de selectie verwijderen**
 
-* Shift+click een punt of Shift+drag over verscheidene punten.
+* Houd Shift ingedrukt en klik op een punt of houd Shift ingedrukt en sleep over verschillende punten.
 
-## Afmetingen wijzigen {#section-796cd962ef3f476caa89d99083782ed1}
+## Afmetingen {#section-796cd962ef3f476caa89d99083782ed1} wijzigen
 
-* Klik het etiket van de afmeting bij de bovenkant van de grafiek met de rechtermuisknop aan en klik **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*.
+* Klik met de rechtermuisknop op het label van de dimensie boven aan de grafiek en klik op **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*.
 
-## Veranderende metriek {#section-44b8be9215cd4039b1eeb98ae1b31445}
+## Metrische waarden {#section-44b8be9215cd4039b1eeb98ae1b31445} wijzigen
 
-**Om metrisch te veranderen getoond op de x- of y-as van een spatterplot**
+**De metrische waarde wijzigen die wordt weergegeven op de x- of y-as van een spreidingsperceel**
 
-* Klik het etiket van metrisch met de rechtermuisknop aan dat u wilt veranderen en **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>* klikken.
+* Klik met de rechtermuisknop op het label van de metrische waarde die u wilt wijzigen en klik op **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
-## Meetwaarden voor straal wijzigen {#section-fd80576d583c430cb469daf12e39aa2a}
+## Straalmetriek wijzigen {#section-fd80576d583c430cb469daf12e39aa2a}
 
-**Om de straal metrisch van een spatterplot te veranderen**
+**De straal van een spreidingsperceel wijzigen**
 
-Klik het etiket van de afmeting bij de bovenkant van de grafiek met de rechtermuisknop aan en klik **[!UICONTROL Change Radius Metric]** > *&lt;**[!UICONTROL metric name]**>*.
+Klik met de rechtermuisknop op het label van de dimensie boven aan de grafiek en klik op **[!UICONTROL Change Radius Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_ScatterPlot_Change.png)
-
