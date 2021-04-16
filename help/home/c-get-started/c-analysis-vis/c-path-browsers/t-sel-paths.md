@@ -1,39 +1,39 @@
 ---
-description: U kunt een weg binnen wegbrowser selecteren om filters tot stand te brengen die gegevens omvatten verbonden aan de elementen in de weg.
-solution: Analytics
-title: Selecteer een pad
-topic: Data workbench
+description: U kunt een pad selecteren in een padbrowser om filters te maken die gegevens bevatten die zijn gekoppeld aan de elementen in het pad.
+title: Een pad selecteren
 uuid: 3131df2f-674f-44b8-9006-d8cb1ecf3874
+exl-id: c560dfd0-ccaf-4a60-88a1-29a33f8aa014
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 0%
 
 ---
 
-
 # Selecteer een pad{#select-a-path}
 
-U kunt een weg binnen wegbrowser selecteren om filters tot stand te brengen die gegevens omvatten verbonden aan de elementen in de weg.
+U kunt een pad selecteren in een padbrowser om filters te maken die gegevens bevatten die zijn gekoppeld aan de elementen in het pad.
 
-Wanneer u een weg van de elementen van de basisafmeting binnen wegbrowser selecteert, selecteert u gegevens voor de overeenkomstige elementen van de niveauafmeting.
+Wanneer u een pad met basisdimensie-elementen selecteert in een padbrowser, selecteert u gegevens voor de corresponderende elementen van de niveaudimensie.
 
-Bijvoorbeeld, veronderstel dat u wegbrowser hebt gecreeerd die pagina&#39;s van een website toont. Elke pagina is een element van de dimensie van de Pagina, en de niveaudimensie voor Pagina is de Mening van de Pagina. Wanneer u een weg van pagina&#39;s in wegbrowser selecteert, selecteert u gegevens voor de paginameningen verbonden aan die pagina&#39;s.
+Stel dat u een padbrowser hebt gemaakt waarin pagina&#39;s van een website worden weergegeven. Elke pagina is een element van de pagina-afmeting en de niveauafmeting voor Pagina is Paginaweergave. Wanneer u een pad met pagina&#39;s selecteert in een padbrowser, selecteert u gegevens voor de paginaweergaven die aan deze pagina&#39;s zijn gekoppeld.
 
 >[!NOTE]
 >
->U kunt de standaardniveaudimensie voor wegbrowser veranderen. Voor instructies om wegbrowser te vormen, zie het [Vormen Browsers](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)van de Weg.
+>U kunt de standaardniveauafmetingen voor een wegbrowser veranderen. Zie [Browsers van paden configureren](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3) voor instructies voor het configureren van een padbrowser.
 
-1. Klik een element in wegbrowser om de getoonde weg tot de linkerzijde of het recht van de wortel uit te breiden.
-1. Klik het gewenste element met de rechtermuisknop aan en klik **[!UICONTROL Select path]**. De geselecteerde weg is geschetst in wit.
+1. Klik op een element in de padbrowser om het weergegeven pad naar links of rechts van het basiselement uit te breiden.
+1. Klik met de rechtermuisknop op het gewenste element en klik op **[!UICONTROL Select path]**. Het geselecteerde pad krijgt een witte omtrek.
 
    >[!NOTE]
    >
-   >U kunt geen begin of eindknoop selecteren.
+   >U kunt geen begin- of eindknooppunt selecteren.
 
-1. Herhaal Stap 1 voor elk element dat u wenst om aan de weg toe te voegen.
+1. Herhaal stap 1 voor elk element dat u aan het pad wilt toevoegen.
 
-   Bijvoorbeeld, als u met websitegegevens werkt, kon u een weg van pagina&#39;s op uw website selecteren.
+   Als u bijvoorbeeld met websitegegevens werkt, kunt u een pad met pagina&#39;s op uw website selecteren.
 
    ![](assets/client-path.png)
 
-   Deze weg vormt een selectie, en alle andere open visualisaties in de werkruimte (met inbegrip van legenden) update aan vertoningsgegevens verbonden aan de weg die door de geselecteerde elementen wordt gecreeerd. Zie Selecties [maken in visualisaties](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746).
-
+   Dit pad vormt een selectie en alle andere geopende visualisaties in de werkruimte (inclusief legenda&#39;s) worden bijgewerkt om gegevens weer te geven die zijn gekoppeld aan het pad dat door de geselecteerde elementen is gemaakt. Zie [Selecties maken in visualisaties](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746).
