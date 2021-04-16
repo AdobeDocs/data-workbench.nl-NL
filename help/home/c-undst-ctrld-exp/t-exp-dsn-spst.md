@@ -2,18 +2,17 @@
 description: Dit bestand fungeert niet alleen als werkblad, maar ook als overzicht van uw beslissingen over het experiment.
 solution: Analytics,Analytics
 title: Werkblad Experimenteel ontwerp
-topic: Data workbench
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
+exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
 
 ---
 
-
-# Werkblad Experimenteel ontwerp{#experiment-design-spreadsheet}
+# Werkblad{#experiment-design-spreadsheet} Experimenteel ontwerp
 
 Dit bestand fungeert niet alleen als werkblad, maar ook als overzicht van uw beslissingen over het experiment.
 
@@ -23,8 +22,8 @@ Het spreadsheet van het proefontwerp kan alleen nuttige statistische conclusies 
 
 **Uw experiment ontwerpen met behulp van het ontwerpbestand van het experiment**
 
-1. Als u beheerderstoegang hebt tot uw web- of toepassingsservers, navigeert u naar de [!DNL Sensor] installatiemap op een willekeurige [!DNL Sensor] computer in uw webcluster. Als u geen beheerdersrechten hebt, neemt u contact op met uw Adobe-accountmanager om het bestand aan te vragen.
-1. Open het bestand Design.xls met VS-gecontroleerde experimenten. (U kunt de naam van dit bestand desgewenst wijzigen.)
+1. Als u beheerdertoegang tot uw Web of toepassingsservers hebt, navigeer aan [!DNL Sensor] installatiemap op om het even welke [!DNL Sensor] machine in uw Webcluster. Als u geen beheerdersrechten hebt, neemt u contact op met uw Adobe-accountmanager om het bestand aan te vragen.
+1. Open het bestand Design.xls met VS-controle als expert. (U kunt de naam van dit bestand desgewenst wijzigen.)
 
    Het spreadsheet op de volgende pagina is een voorbeeld van hoe u het spreadsheet zou voltooien wanneer het voorbereiden om de voorbeeldhypothese te testen die door deze gids wordt gebruikt.
 
@@ -156,7 +155,7 @@ U moet de waarde in het Minimale Vereiste Bezoekers (Test+Control Groepen) gebie
 
 ![](assets/Experiment_Design_Min_Visitors.png)
 
-en vergelijk het met de waarde in het veld Totaal in de [!DNL Visitors] kolom.
+en vergelijk het met de waarde in het veld Totaal in de kolom [!DNL Visitors].
 
 ![](assets/Experiment_Design_Total_Visitors.png)
 
@@ -166,4 +165,4 @@ Gezien de geleverde input, toont het voorbeeldaantekenvel u dat 10.475 bezoekers
 
 Als u het aantal dagen gelijk houdt, kunt u het betrouwbaarheidsniveau verhogen zolang het totale aantal bezoekers blijft voldoen aan of het vereiste minimum overschrijden.
 
-1. Sla het bestand op voor uw records en gebruik vervolgens de gegevens uit het bestand om het experiment te configureren met behulp van het werkblad met de testconfiguratie. Voor meer informatie over dit spreadsheet, zie het [Vormen en het Opstellen van de Experiment](../../home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md#concept-50f1de0242904698937bb72b3ea1b429).
+1. Sla het bestand op voor uw records en gebruik vervolgens de gegevens uit het bestand om het experiment te configureren met behulp van het werkblad met de testconfiguratie. Voor meer informatie over dit spreadsheet, zie [Vormend en het Opstellen van Experiment](../../home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md#concept-50f1de0242904698937bb72b3ea1b429).
