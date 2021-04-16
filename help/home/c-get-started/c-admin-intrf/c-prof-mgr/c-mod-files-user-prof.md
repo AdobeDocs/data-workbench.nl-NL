@@ -1,45 +1,46 @@
 ---
-description: U kunt de Manager van het Profiel gebruiken om dossiers te downloaden die u wilt wijzigen.
-solution: Analytics
-title: Wijzig lokale dossiers in het gebruikersprofiel
-topic: Data workbench
+description: U kunt Profielbeheer gebruiken om bestanden te downloaden die u wilt wijzigen.
+title: Lokale bestanden in het gebruikersprofiel wijzigen
 uuid: 839417d1-34db-4b14-a103-8f5297af55b7
+exl-id: 187d67a1-e436-4bfd-87ad-17b6c70dbee4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 0%
 
 ---
 
+# Lokale bestanden wijzigen in het gebruikersprofiel{#modify-local-files-in-the-user-profile}
 
-# Wijzig lokale dossiers in het gebruikersprofiel{#modify-local-files-in-the-user-profile}
+U kunt Profielbeheer gebruiken om bestanden te downloaden die u wilt wijzigen.
 
-U kunt de Manager van het Profiel gebruiken om dossiers te downloaden die u wilt wijzigen.
+U kunt een bestand downloaden om het bestaande lokale bestand te overschrijven met de oorspronkelijke versie van het bestand of bestanden te openen, weer te geven en te wijzigen die niet toegankelijk zijn via de werkruimtemenu&#39;s.
 
-U zou een dossier kunnen willen downloaden om uw bestaand, lokaal dossier met de originele versie van het dossier te beschrijven of, dossiers te openen, te bekijken en te wijzigen die niet van de werkruimtemenu&#39;s kunnen worden betreden.
+**Een bestand downloaden**
 
-**Om een dossier te downloaden**
-
-1. In [!DNL Profile Manager], open de noodzakelijke omslagen en subfolders om van het dossier de plaats te bepalen dat u wilt downloaden.
-1. Klik het vinkje naast de naam van het dossier met de rechtermuisknop aan en klik **[!UICONTROL Make Local]**.
+1. Open in [!DNL Profile Manager] de benodigde mappen en submappen om te zoeken naar het bestand dat u wilt downloaden.
+1. Klik met de rechtermuisknop op het vinkje naast de naam van het bestand en klik op **[!UICONTROL Make Local]**.
 
    >[!NOTE]
    >
-   >Configuratie ( [!DNL .cfg]), afmeting ( [!DNL .dim]), en metrische ( [!DNL .metric]) dossiers kunnen direct in een profielomslag worden uitgegeven en aan de server worden bewaard zonder hen lokaal te maken en hen afzonderlijk te bewaren aan de server. Klik eenvoudig het vinkje naast de naam van het dossier met de rechtermuisknop aan en klik **[!UICONTROL Open]** > **in werkstation**.
+   >Configuratie ( [!DNL .cfg]), dimensie ( [!DNL .dim]) en metrische ( [!DNL .metric]) dossiers kunnen direct in een profielomslag worden uitgegeven en aan de server worden bewaard zonder hen lokaal te maken en hen afzonderlijk op te slaan aan de server. Klik met de rechtermuisknop op het vinkje naast de naam van het bestand en klik op **[!UICONTROL Open]** > **in werkstation**.
 
-Nadat het bestand naar de lokale computer is gedownload, wordt in de [!DNL User] kolom een vinkje weergegeven, waarmee wordt aangegeven dat een lokaal exemplaar van het bestand zich bevindt in de map User\*profile name* op uw computer. Merk op dat het vinkje de zelfde kleur zoals het vinkje in de kolom van de *profielnaam* is. Dit wijst erop dat het lokale dossier de zelfde Gewijzigde datum en de tijd zoals het dossier in de omslag van de *profielnaam* hebben.
+Nadat het bestand naar de lokale computer is gedownload, wordt een vinkje weergegeven in de kolom [!DNL User]. Hiermee wordt aangegeven dat een lokale kopie van het bestand zich in de map Gebruiker\*profielnaam* op uw computer bevindt. Het vinkje heeft dezelfde kleur als het vinkje in de kolom *profielnaam*. Dit geeft aan dat het lokale bestand dezelfde datum en tijd heeft als het bestand in de map *profile name*.
 
-**Om het dossier te wijzigen**
+**Het bestand wijzigen**
 
-1. Klik het vinkje naast het dossier met de rechtermuisknop aan - noem in de [!DNL User] kolom.
-1. Klik één van de volgende menuopties, afhankelijk van hoe u het dossier wilt uitgeven:
+1. Klik met de rechtermuisknop op het vinkje naast de bestandsnaam in de kolom [!DNL User].
+1. Klik op een van de volgende menuopties, afhankelijk van de manier waarop u het bestand wilt bewerken:
 
-   * **[!UICONTROL Open]** > **[!UICONTROL in workstation]** als u een [!DNL .vw] dossier of een [!DNL .cfg] dossier in een werkruimte uitgeeft.
+   * **[!UICONTROL Open]** >  **[!UICONTROL in workstation]** als u een  [!DNL .vw] bestand of een  [!DNL .cfg] bestand in een werkruimte bewerkt.
 
-   * **Open** > **in vw. De redacteur **als u een .vw dossier uitgeeft om nieuwe parameters toe te voegen.
+   * **Open**  > **in vw. Editor **als u een .vw-bestand bewerkt om nieuwe parameters toe te voegen.
 
-   * **[!UICONTROL Open]** > **[!UICONTROL In Notepad]** als u een tekstdossier opent of nieuwe parameters aan een [!DNL .cfg] dossier moet toevoegen.
+   * **[!UICONTROL Open]** >  **[!UICONTROL In Notepad]** als u een tekstbestand opent of nieuwe parameters aan een  [!DNL .cfg] bestand wilt toevoegen.
 
-   * **[!UICONTROL Open]** > **[!UICONTROL folder]** als u de map wilt openen waarin het bestand zich op uw computer bevindt
+   * **[!UICONTROL Open]** >  **[!UICONTROL folder]** als u de map wilt openen waarin het bestand zich op uw computer bevindt
 
-1. Bewerk het bestand naar wens en sla het vervolgens op.
+1. Bewerk het bestand naar wens en sla het bestand op.
 
-In [!DNL Profile Manager], merk op dat het vinkje in de [!DNL User] kolom voor het dossier u uitgeeft kleur heeft veranderd. Dit wijst erop dat het lokale dossier nu van de versie in de omslag van de *profielnaam* verschillend is. Indien nodig, kunt u de herziene versie van het dossier aan het profiel voor gebruik door andere gebruikers publiceren die met dit profiel werken.
+Let er in [!DNL Profile Manager] op dat het vinkje in de kolom [!DNL User] voor het bestand dat u hebt bewerkt, van kleur is gewijzigd. Dit geeft aan dat het lokale bestand nu verschilt van de versie in de map *profile name*. Indien nodig kunt u de gereviseerde versie van het bestand publiceren naar het profiel voor gebruik door andere gebruikers die met dit profiel werken.
