@@ -1,20 +1,21 @@
 ---
-description: De kaarten van het proces laten u toe om de stroom van activiteit tussen elementen van een afmeting te analyseren.
-solution: Analytics
-title: Procesoverzicht
-topic: Data workbench
+description: Met procesafbeeldingen kunt u de activiteitsstroom tussen elementen van een dimensie analyseren.
+title: Proceskaart
 uuid: f1db41a9-400e-467a-ba59-39831fb166af
+exl-id: 019cee7b-a704-4b47-84c6-d3ddc277c43e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '737'
+ht-degree: 0%
 
 ---
 
+# Proceskaart{#process-map}
 
-# Procesoverzicht{#process-map}
+Met procesafbeeldingen kunt u de activiteitsstroom tussen elementen van een dimensie analyseren.
 
-De kaarten van het proces laten u toe om de stroom van activiteit tussen elementen van een afmeting te analyseren.
-
-U creeert proceskaarten door de elementen van een afmeting te slepen en te laten vallen op een lege tweedimensionale (2D) of driedimensionale (3D) kaart. De elementen worden knopen op de kaart. De knopen zijn cirkels in 2D proceskaarten en bars in 3D proceskaarten.
+U maakt procesafbeeldingen door de elementen van een dimensie naar een lege tweedimensionale (2D) of driedimensionale (3D) kaart te slepen en neer te zetten. De elementen worden knooppunten op de kaart. Knooppunten zijn cirkels in 2D-proceskaarten en -balken in 3D-proceskaarten.
 
 ![](assets/vis_2DProcessMap.png)
 
@@ -22,31 +23,30 @@ U creeert proceskaarten door de elementen van een afmeting te slepen en te laten
 
 >[!NOTE]
 >
->Een proceskaart krijgt zijn naam van zijn gebruik in het analyseren van de stroom van activiteit tussen de stappen in een proces. In dit type van analyse, vertegenwoordigt elk element op de kaart een stap in het proces.
+>Een proceskaart krijgt zijn naam van zijn gebruik in het analyseren van de stroom van activiteit tussen de stappen in een proces. In dit type analyse vertegenwoordigt elk element op de kaart een stap in het proces.
 
-In tegenstelling tot wegbrowsers, kunnen de proceskaarten zo weinig of zo vele elementen zonodig voor uw analyse tonen. U kiest de elementen van belang en sleept en laat vallen hen op de kaart. Ook in tegenstelling tot wegbrowsers, tonen de proceskaarten de stroom van activiteit in beide richtingen tussen één element en één of meerdere andere elementen.
-
->[!NOTE]
->
->Voor deze kaarten om het meest effectief te werken, zou u een kleurenlegende in de werkruimte moeten openen. Voor informatie over het gebruiken van kleurenlegenden met proceskaarten, zie de [Activerende Verbindingen](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md#concept-2c9b9f67f2bd4cd7a5431fa21c094edc)van de Kleur. Voor meer informatie over kleurenlegenden, zie de Legenda van de [Kleur](../../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
-
-Elke proceskaart heeft een bijbehorende basisafmeting, groepsafmeting, niveauafmeting, en metrisch, die sleutels verstrekken om de gegevens te interpreteren die in de proceskaart worden getoond.
-
-De standaardmontages voor de afmetingen en metrisch van een proceskaart hangen van de toepassing van de Werkbank van Gegevens af die u gebruikt. Voor informatie over de afmetingen en de metriek beschikbaar aan u voor uw proceskaarten, zie de toepassingsgids voor uw toepassing van de Werkbank van Gegevens.
-
-* **Basisdimensie:** Wanneer u sleept en een element op een proceskaart laat vallen, sleept u en laat vallen een element van de basisdimensie.
-* **Niveaudimensie:** Elke dimensie in uw dataset heeft een bijbehorende niveaudimensie (die ook als ouder wordt bedoeld). De niveaudimensie voor uw proceskaart zou het zelfde als de niveaudimensie (of ouder) voor de de basisdimensie van uw proceskaart moeten zijn. Bijvoorbeeld, als u een pagina (een element van de dimensie van de Pagina) aan de kaart sleept, zou de overeenkomstige niveaudimensie de Mening van de Pagina zijn.
-* **Groepsdimensie:** De groepsdimensie bepaalt hoe de elementen van de niveaudimensie worden gegroepeerd om de verbindingen tussen knopen te vormen. Voor proceskaarten, is de groepsdimensie belangrijk om drie belangrijke redenen:
-
-   * Een verbinding tussen twee knopen kan niet meer dan één element van een groepsdimensie overspannen. Om dit te begrijpen, overweeg een voorbeeld gebruikend Webgegevens. Veronderstel dat de basis, het niveau, en de groepsdimensies voor uw proceskaart Pagina, de Mening van de Pagina, en Zitting, respectievelijk zijn. Een verbinding van pagina A aan pagina B vertelt u dat, tijdens om het even welke enige zitting, een paginamening van pagina A voorafgaand aan een paginamening van pagina B zonder het tussenkomen paginameningen van andere pagina&#39;s (knopen) op de kaart voorkwam. Merk op dat de paginameningen van andere pagina&#39;s van de plaats tussen paginameningen voor pagina&#39;s A en B tijdens de zelfde zitting zouden kunnen voorgekomen zijn, maar deze pagina&#39;s worden niet getoond op deze kaart.
-   * Een verbinding tussen twee knopen kan veelvoudige elementen van de groepsdimensie vertegenwoordigen. Bijvoorbeeld, zouden er veelvoudige zittingen kunnen zijn waarin een paginamening van pagina A vóór een paginamening van pagina B voorkwam. Daarom vertegenwoordigt de verbinding tussen pagina A en pagina B alle individuele zittingen waarin een paginamening van pagina A vóór een paginamening van pagina B zonder het tussenkomen paginameningen van andere pagina&#39;s (knopen) op de kaart voorkwam.
-   * Wanneer u een selectie maakt die op een knoop binnen een proceskaart wordt gebaseerd, selecteert u alle elementen van de groepsdimensie die die knoop impliceerde. Zie Selecties [maken in visualisaties](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746). Voor informatie over selecties, zie het [Maken Selecties in Visualisaties](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746).
-
-* **Metrisch:** De grootte van de knoop voor een bepaald element is proportioneel aan de waarde van metrisch voor dat element. De grotere knopen wijzen op grotere metrische waarden dan kleinere knopen.
-
-Bijvoorbeeld, als u de toepassing [!DNL Site] of HBX gebruikt, kunt u, door gebrek, elementen van de dimensie van de Pagina op de proceskaart slepen. De grootte van elke knoop is verwant met de hoeveelheid zittingen (die door metrische Zittingen worden bepaald) waarin die pagina werd bekeken.
+In tegenstelling tot padbrowsers kunnen procesafbeeldingen maar weinig of net zoveel elementen bevatten als nodig zijn voor de analyse. U kiest de interessepunten en sleept ze naar de kaart. In tegenstelling tot padbrowsers geven procesafbeeldingen de activiteitsstroom in beide richtingen tussen een element en een of meer andere elementen weer.
 
 >[!NOTE]
 >
->U kunt de standaardafmetingen of metrisch voor een proceskaart veranderen. Voor stappen om een proceskaart te vormen, zie het [Vormen de Kaarten](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md#task-4a95730b18a14bc790a77c013832b2d6)van het Proces.
+>Deze kaarten werken alleen op de meest effectieve manier als u een legenda in de werkruimte opent. Zie [Kleurkoppelingen activeren](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md#concept-2c9b9f67f2bd4cd7a5431fa21c094edc) voor informatie over het gebruik van kleurlegenda&#39;s met procesafbeeldingen. Zie [Kleurlegenda](../../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358) voor meer informatie over legenda.
 
+Elke proceskaart heeft een bijbehorende basisdimensie, groepsdimensie, niveaudimensie, en metrisch, die sleutels verstrekken om de gegevens te interpreteren die in de proceskaart worden getoond.
+
+De standaardmontages voor de afmetingen en metrisch van een proceskaart hangen van de toepassing van de Data Workbench af die u gebruikt. Zie de toepassingshandleiding voor uw Data Workbench voor informatie over de afmetingen en metriek waarover u beschikt voor uw proceskaarten.
+
+* **Basisdimensie:** wanneer u een element naar een procesafbeelding sleept, sleept u een element van de basisdimensie en zet u het neer.
+* **De dimensie van het niveau:** Elke dimensie in uw dataset heeft een bijbehorende niveaudimensie (die ook als ouder wordt bedoeld). De niveaudimensie voor uw proceskaart zou het zelfde als de niveaudimensie (of ouder) voor de de basisdimensie van uw proceskaart moeten zijn. Als u bijvoorbeeld een pagina (een element van de pagina-afmeting) naar de kaart sleept, is Paginaweergave de afmeting van het desbetreffende niveau.
+* **Groepsdimensie:** de groepsdimensie bepaalt hoe de elementen van de niveaudimensie worden gegroepeerd om de verbindingen tussen knopen te vormen. Voor proceskaarten is de groepsdimensie belangrijk om drie belangrijke redenen:
+
+   * Een verbinding tussen twee knooppunten kan niet meer dan één element van een groepsdimensie beslaan. Om dit te begrijpen, overweeg een voorbeeld gebruikend Webgegevens. Stel dat de basis-, niveau- en groepsafmetingen voor uw procesoverzicht respectievelijk Pagina, Paginaweergave en Sessie zijn. Een verbinding van pagina A aan pagina B vertelt u dat, tijdens om het even welke enige zitting, een paginamening van pagina A vóór een paginamening van pagina B zonder tussenliggende paginameningen van andere pagina&#39;s (knopen) op de kaart voorkwam. Paginaweergaven van andere pagina&#39;s van de site kunnen tijdens dezelfde sessie zijn opgetreden tussen paginaweergaven voor pagina&#39;s A en B, maar deze pagina&#39;s worden niet weergegeven op deze kaart.
+   * Een verbinding tussen twee knooppunten kan meerdere elementen van de groepsdimensie vertegenwoordigen. Er kunnen bijvoorbeeld meerdere sessies zijn waarin een paginaweergave van pagina A is opgetreden vóór een paginaweergave van pagina B. Daarom staat de verbinding tussen pagina A en pagina B voor alle afzonderlijke sessies waarin een paginaweergave van pagina A is opgetreden vóór een paginaweergave van pagina B zonder tussenliggende paginaweergaven van andere pagina&#39;s (knooppunten) op de kaart.
+   * Wanneer u een selectie maakt die op een knoop binnen een proceskaart wordt gebaseerd, selecteert u alle elementen van de groepsdimensie die dat knoop impliceert. Zie [Selecties maken in visualisaties](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746). Zie [Selecties maken in visualisaties](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746) voor informatie over selecties.
+
+* **Metrisch:** De grootte van de knoop voor een bepaald element is evenredig met de metrische waarde voor dat element. Grotere knooppunten geven hogere metrische waarden aan dan kleinere knooppunten.
+
+Als u bijvoorbeeld de toepassing [!DNL Site] of HBX gebruikt, kunt u standaard elementen van de pagina-dimensie naar het procesoverzicht slepen. De grootte van elk knooppunt is gerelateerd aan de hoeveelheid sessies (gedefinieerd door de metrische sessies) waarin die pagina is weergegeven.
+
+>[!NOTE]
+>
+>U kunt de standaardafmetingen of metrisch voor een proceskaart veranderen. Voor stappen om een proceskaart te vormen, zie [Het Vormen Kaarten van het Proces](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md#task-4a95730b18a14bc790a77c013832b2d6).
