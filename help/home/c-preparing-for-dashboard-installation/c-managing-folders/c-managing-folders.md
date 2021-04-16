@@ -1,17 +1,18 @@
 ---
-description: ongeldig
-solution: Analytics
+description: Mappen beheren
 title: Mappen beheren
-topic: Data workbench
 uuid: f296cd35-879f-482e-9b0d-8345ab3dda27
+exl-id: 3e55d20e-ce5a-4bfd-8fee-e67c98d51f9f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '73'
+ht-degree: 0%
 
 ---
 
-
 # Mappen beheren{#managing-folders}
 
-Alle dashboards worden bewaard in omslagen. De omslagstructuur is volledig flexibel en kan op elk ogenblik worden gewijzigd. Door gebrek, slechts bestaat één enkele **[!UICONTROL Main]** omslag bij installatie. Dit staat u toe om een omslagstructuur of dashboards tot stand te brengen specifiek voor uw organisatie.
+Alle dashboards worden opgeslagen in mappen. De mapstructuur is volledig flexibel en kan op elk gewenst moment worden gewijzigd. Standaard bestaat er slechts één **[!UICONTROL Main]**-map bij de installatie. Zo kunt u een mapstructuur of dashboards maken die specifiek zijn voor uw organisatie.
 
-Slechts hebben de beheerders het voorrecht om de omslagstructuur tot stand te brengen en te wijzigen. Dit wordt uitgevoerd binnen **[!UICONTROL Folder Manager]** en is toegankelijk van het **[!UICONTROL Folder Manager]** lusje in **[!UICONTROL Administration Console]**.
+Alleen beheerders hebben het recht de mapstructuur te maken en te wijzigen. Dit wordt uitgevoerd binnen **[!UICONTROL Folder Manager]** en is toegankelijk van het **[!UICONTROL Folder Manager]** lusje in **[!UICONTROL Administration Console]**.
