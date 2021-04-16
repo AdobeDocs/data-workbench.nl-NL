@@ -2,18 +2,16 @@
 description: Het algemene doel van een gecontroleerd experiment op een website is te bepalen of en in welke mate een bepaalde wijziging of een bepaalde reeks wijzigingen een effect heeft op de gebruikers van de website.
 solution: Analytics,Analytics
 title: Een gecontroleerde experiment maken
-topic: Data workbench
 uuid: 0f7016e7-187e-4fd2-9228-0547cc5b487e
+exl-id: 9287c2c5-8e2a-4d78-8f9d-21a3ee5a5081
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
-
 # Een gecontroleerde experiment maken{#creating-a-controlled-experiment}
 
 Het algemene doel van een gecontroleerd experiment op een website is te bepalen of en in welke mate een bepaalde wijziging of een bepaalde reeks wijzigingen een effect heeft op de gebruikers van de website.
-
