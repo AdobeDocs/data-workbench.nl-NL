@@ -1,26 +1,27 @@
 ---
-description: De transformatie REMatch is een patroon-passende transformatie die regelmatige uitdrukkingen gebruikt om één of meerdere patronen te specificeren om in de input te zoeken en te vangen.
-solution: Analytics
+description: De REMatch-transformatie is een patroonovereenkomende transformatie die gebruikmaakt van reguliere expressies om een of meer patronen op te geven die moeten worden gezocht en vastgelegd in de invoer.
 title: REMatch
-topic: Data workbench
 uuid: 8ef80bfa-aea2-45a1-a7d9-38ad33043886
+exl-id: 571e6f1c-f557-49c3-9e7c-c31f06132ec7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 1%
 
 ---
 
-
 # REMatch{#rematch}
 
-De transformatie REMatch is een patroon-passende transformatie die regelmatige uitdrukkingen gebruikt om één of meerdere patronen te specificeren om in de input te zoeken en te vangen.
+De REMatch-transformatie is een patroonovereenkomende transformatie die gebruikmaakt van reguliere expressies om een of meer patronen op te geven die moeten worden gezocht en vastgelegd in de invoer.
 
-De transformatie construeert een outputgebied voor elke het vangen subpatroon in de regelmatige uitdrukking. Als de regelmatige uitdrukking niet het inputgebied aanpast, zijn de output leeg, en als het outputgebied reeds bestaat, worden de waarden vervangen door de lege waarden. Voor een korte gids aan het gebruiken van regelmatige uitdrukkingen, zie [Regelmatige Uitdrukkingen](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
+De transformatie maakt een uitvoerveld voor elk onderpatroon van vastlegging in de reguliere expressie. Als de reguliere expressie niet overeenkomt met het invoerveld, zijn de uitvoer leeg en als het uitvoerveld al bestaat, worden de waarden vervangen door de lege waarden. Voor een korte gids aan het gebruiken van regelmatige uitdrukkingen, zie [Gewone Uitdrukkingen](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
 
 >[!NOTE]
 >
->De [!DNL REMatch] transformatie werkt zo ook aan de [!DNL RETransform] transformatie (zie [RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)), die regelmatige uitdrukkingen gebruikt om een koord te vangen en dat koord op één enkel outputgebied op te slaan.
+>De [!DNL REMatch]-transformatie werkt op dezelfde manier als de [!DNL RETransform]-transformatie (zie [RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)), die reguliere expressies gebruikt om een tekenreeks vast te leggen en die tekenreeks op te slaan in één uitvoerveld.
 
-[!DNL REMatch] ontleedt een koord efficiënter dan veelvoudige [!DNL RETransform] transformaties of één enkele [!DNL RETransform] transformatie die door een [!DNL Flatten] transformatie wordt gevolgd. Zie [Flatten](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce).
+[!DNL REMatch] parseert een tekenreeks efficiënter dan meerdere  [!DNL RETransform] transformaties of één  [!DNL RETransform] transformatie gevolgd door een  [!DNL Flatten] transformatie. Zie [Afvlakken](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce).
 
 <table id="table_7077578512B249E986BC79AE770CBD9A"> 
  <thead> 
@@ -33,12 +34,12 @@ De transformatie construeert een outputgebied voor elke het vangen subpatroon in
  <tbody> 
   <tr> 
    <td colname="col1"> Naam </td> 
-   <td colname="col2"> Beschrijvende naam van de transformatie. U kunt om het even welke naam hier ingaan. </td> 
+   <td colname="col2"> Beschrijvende naam van de transformatie. U kunt hier elke naam invoeren. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Gevallengevoelig </td> 
-   <td colname="col2"> Waar of vals. Specificeert of de gelijke case-sensitive is. </td> 
+   <td colname="col1"> Hoofdlettergevoelig </td> 
+   <td colname="col2"> Waar of onwaar. Geeft aan of de overeenkomst hoofdlettergevoelig is. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -47,23 +48,23 @@ De transformatie construeert een outputgebied voor elke het vangen subpatroon in
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Toestand </td> 
+   <td colname="col1"> Voorwaarde </td> 
    <td colname="col2"> De omstandigheden waaronder deze transformatie wordt toegepast. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uitdrukking </td> 
-   <td colname="col2"> De regelmatige uitdrukking die voor aanpassing wordt gebruikt. </td> 
+   <td colname="col2"> De reguliere expressie die wordt gebruikt voor overeenkomsten. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Invoer </td> 
-   <td colname="col2"> Het gebied waartegen de regelmatige uitdrukking wordt geëvalueerd. </td> 
+   <td colname="col2"> Het veld waartegen de reguliere expressie wordt geëvalueerd. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Resultaten </td> 
-   <td colname="col2"> <p>De naam van het outputkoord of de vector. In het geval van koordvectoren als input, zijn de output ook koordvectoren. </p> <p> Een outputgebied moet voor elk het vangen subpatroon in de uitdrukking bestaan. </p> </td> 
+   <td colname="col1"> Uitvoer </td> 
+   <td colname="col2"> <p>De naam van de uitvoertekenreeks of vector. In het geval van tekenreeksvectoren als invoer zijn de uitvoer ook tekenreeksvectoren. </p> <p> Er moet een uitvoerveld aanwezig zijn voor elk onderpatroon dat wordt vastgelegd in de expressie. </p> </td> 
    <td colname="col3"></td> 
   </tr> 
  </tbody> 
@@ -71,9 +72,8 @@ De transformatie construeert een outputgebied voor elke het vangen subpatroon in
 
 >[!NOTE]
 >
->[!DNL REMatch] de transformaties kunnen zeer langzaam zijn en kunnen voor veel van de gegevensverwerkingstijd rekenschap geven.
+>[!DNL REMatch] transformaties kunnen zeer traag zijn en kunnen een groot deel van de verwerkingstijd voor gegevens veroorzaken.
 
-In dit voorbeeld, ontleedt een [!DNL REMatch] transformatie een datum van het formaat JJJJ-MM-DD in de gebieden x-jaar, x-maand, en x-dag. Voor de datum 2007-01-02 zouden de waarden van x jaar, x maand, en x-dag respectievelijk 2007, 01, en 02 zijn.
+In dit voorbeeld wordt met een transformatie [!DNL REMatch] een datum met de notatie YYYY-MM-DD geparseerd in de velden x-year, x-month en x-day. Voor de datum 2007-01-02 zijn de waarden van x-year, x-month en x-day respectievelijk 2007, 01 en 02.
 
 ![](assets/cfg_TransformationType_REMatch.png)
-
