@@ -1,31 +1,32 @@
 ---
-description: De het meest meestal gebruikte terminologie en eigenschappen van de gegevenswerkbank van Adobe, met inbegrip van het dashboard.
-solution: Analytics
-title: Woordenlijst
-topic: Data workbench
+description: De meest gebruikte terminologie en eigenschappen van de werkbank van Adobe- gegevens, met inbegrip van het dashboard.
+title: Verklarende woordenlijst
 uuid: 9c832e10-f518-4a76-b06e-2fd7ea1fd985
+exl-id: 0fcc348a-8963-4473-a19d-0235c993c19a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 0%
 
 ---
 
+# Verklarende woordenlijst{#glossary}
 
-# Woordenlijst{#glossary}
-
-De het meest meestal gebruikte terminologie en eigenschappen van de gegevenswerkbank van Adobe, met inbegrip van het dashboard.
+De meest gebruikte terminologie en eigenschappen van de werkbank van Adobe- gegevens, met inbegrip van het dashboard.
 
 ## Profielen {#section-9b34a2c00ef54008927394a396fc33a5}
 
-De profielen bepalen een dataset. Een profiel omvat gegevens over een bepaald onderwerp, alsmede de uitsplitsing van die gegevens in gebruikersvriendelijke analytische componenten. De profielen worden gecreeerd en binnen de gegevenswerkbank van Adobe beheerd en toegankelijk gemaakt door de dashboardtoepassing. De profielen worden typisch ontworpen om een specifiek doel (zoals het analyseren van marketing en websiteverkeer) te vervullen en een reeks analytische componenten te bepalen die als Afmetingen, Metriek, en Filters worden bekend.
+Profielen definiëren een gegevensset. Een profiel omvat gegevens over een bepaald onderwerp, alsmede de indeling van die gegevens in gebruikersvriendelijke analytische onderdelen. Profielen worden gemaakt en beheerd in de werkbank Adobe-gegevens en worden toegankelijk gemaakt via de dashboardtoepassing. Profielen zijn doorgaans ontworpen voor een specifiek doel (zoals het analyseren van marketing en websiteverkeer) en het definiëren van een set analytische componenten die Dimension, Metriek en Filters worden genoemd.
 
-## Afmetingen {#section-f126625e45524d59b8b5db47d4d1d0dd}
+## Dimensies {#section-f126625e45524d59b8b5db47d4d1d0dd}
 
-De afmetingen zijn categorieën van gelijkaardige gegevenstypes. Bijvoorbeeld, zijn de Dagen van Week dimensie samengesteld uit de volgende gegevenselementen: Zondag, Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, en Zaterdag. Specifiek, detailleren de afmetingen wat wordt gemeten. In het dashboard, worden de afmetingen bepaald binnen de gegevenswerkbank van Adobe en toegankelijk gemaakt door de dashboardtoepassing. Elke dimensie heeft een unieke naam binnen de dashboardinterface.
+Dimension zijn categorieën van soortgelijke gegevenstypen. De dimensie Dagen van week bestaat bijvoorbeeld uit de volgende gegevenselementen: Zondag, maandag, dinsdag, woensdag, donderdag, vrijdag, en zaterdag. Met name de afmetingen geven aan wat er wordt gemeten. In het dashboard worden de afmetingen gedefinieerd in de Adobe data workbench en toegankelijk gemaakt via de dashboardtoepassing. Elke dimensie heeft een unieke naam binnen de dashboardinterface.
 
-## Metriek {#section-4a7778c8209640b6a54afd82096eceef}
+## Cijfers {#section-4a7778c8209640b6a54afd82096eceef}
 
-De metriek zijn kwantitatieve voorwerpen die door een kwantificeerbare uitdrukking worden bepaald. Bijvoorbeeld, worden de Meningen van de Pagina per Zitting afgeleid uit de uitdrukking van de telling van de Meningen van de Pagina die door de telling van Zittingen worden verdeeld. De metriek beantwoorden de vraag van &quot;hoeveel?&quot; In het dashboard, worden de metriek bepaald binnen de gegevenswerkbank van Adobe en toegankelijk gemaakt door de dashboardtoepassing. Elke metrisch heeft een unieke naam binnen de dashboardinterface.
+Metrisch zijn kwantitatieve objecten die worden gedefinieerd door een kwantificeerbare expressie. Paginaweergaven per sessie worden bijvoorbeeld afgeleid van de expressie van het aantal paginaweergaven gedeeld door het aantal sessies. Metrics beantwoorden de vraag &quot;hoeveel?&quot; In het dashboard worden meetgegevens gedefinieerd in de Adobe data workbench en toegankelijk gemaakt via de dashboardtoepassing. Elke metrische waarde heeft een unieke naam binnen de dashboardinterface.
 
 ## Filters {#section-916c8df454c04a5f8b3e5da9e3af4870}
 
-De filters staan u toe om uw gegevens op een specifieke manier te segmenteren. De filters zullen uw gegevens tot een ondergroep van het gehele resultaat verminderen, en vaak gecombineerd om een uniek perspectief op de gegevens te verstrekken. In het dashboard, worden de filters eerst bepaald binnen de gegevenswerkbank van Adobe en toegankelijk gemaakt door de dashboardtoepassing. Elke filter heeft een unieke naam binnen de dashboardinterface.
+Met filters kunt u uw gegevens op een bepaalde manier segmenteren. Filters reduceren uw gegevens tot een subset van het gehele resultaat en worden vaak gecombineerd om een uniek perspectief op de gegevens te bieden. In het dashboard worden filters eerst gedefinieerd in de Adobe data workbench en toegankelijk gemaakt via de dashboardtoepassing. Elk filter heeft een unieke naam binnen de dashboardinterface.
