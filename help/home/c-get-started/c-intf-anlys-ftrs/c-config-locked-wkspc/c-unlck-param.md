@@ -1,34 +1,34 @@
 ---
-description: De Unlock parameter in het dossier van Insight.cfg van een gebruiker specificeert of die gebruiker toestemming heeft om gesloten werkruimten tijdelijk te openen voor het uitgeven.
-solution: Analytics
-title: De parameter voor ontgrendelen instellen
-topic: Data workbench
+description: Met de parameter Unlock in het bestand Insight.cfg van een gebruiker wordt opgegeven of die gebruiker gemachtigd is om vergrendelde werkruimten tijdelijk te ontgrendelen voor bewerking.
+title: De ontgrendelingsparameter instellen
 uuid: db094e32-7d82-4f93-a492-a6bed33ae722
+exl-id: 5eda919f-4cfe-4692-9dbf-f7cf64fde1de
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 0%
 
 ---
 
+# De ontgrendelingsparameter instellen{#set-the-unlock-parameter}
 
-# De parameter voor ontgrendelen instellen{#set-the-unlock-parameter}
+Met de parameter Unlock in het bestand Insight.cfg van een gebruiker wordt opgegeven of die gebruiker gemachtigd is om vergrendelde werkruimten tijdelijk te ontgrendelen voor bewerking.
 
-De Unlock parameter in het dossier van Insight.cfg van een gebruiker specificeert of die gebruiker toestemming heeft om gesloten werkruimten tijdelijk te openen voor het uitgeven.
+Als de parameter Ontgrendelen al aanwezig is in het bestand [!DNL Insight.cfg] van de gebruiker, kunt u de parameter bewerken met Data Workbench. Als het niet reeds in het [!DNL Insight.cfg] dossier van de gebruiker aanwezig is, moet u het aan het dossier toevoegen gebruikend een tekstredacteur, zoals Kladblok.
 
-Als de Unlock parameter reeds aanwezig in het [!DNL Insight.cfg] dossier van de gebruiker is, kunt u de parameter uitgeven gebruikend de Werkbank van Gegevens. Als het niet reeds aanwezig in het [!DNL Insight.cfg] dossier van de gebruiker is, moet u het aan het dossier toevoegen gebruikend een tekstredacteur, zoals Blocnote.
+**Een bestaande  [!DNL Unlock] parameter instellen in het bestand Insight.cfg**
 
-**Om een bestaande[!DNL Unlock]parameter in het Insight.cfg- dossier te plaatsen**
+1. Klik in een werkruimte met de rechtermuisknop op **[!UICONTROL Admin]** > **[!UICONTROL Client Configuration]**. Het [!DNL Insight.cfg] dossier opent.
+1. Typ true of false voor de parameter Unlock. True stelt de gebruiker in staat om vergrendelde werkruimten tijdelijk te ontgrendelen, false niet.
+1. Als u de configuratiewijzigingen wilt opslaan, klikt u met de rechtermuisknop **[!UICONTROL Insight.cfg (modified)]** boven in het venster en klikt u op **[!UICONTROL Save as Insight.cfg]**.
 
-1. In een werkruimte, klik **[!UICONTROL Admin]** > met de rechtermuisknop aan **[!UICONTROL Client Configuration]**. Het [!DNL Insight.cfg] bestand wordt geopend.
-1. Voor de Unlock parameter, typ of waar of vals. Waar laat de gebruiker toe om het even welke gesloten werkruimte tijdelijk te openen, terwijl vals niet.
-1. Om uw configuratieveranderingen te bewaren, klik **[!UICONTROL Insight.cfg (modified)]** bij de bovenkant van het venster met de rechtermuisknop aan en klik **[!UICONTROL Save as Insight.cfg]**.
+**De parameter Unlock toevoegen aan het bestand Insight.cfg**
 
-**Om de parameter van de Ontgrendeling aan het Insight.cfg- dossier toe te voegen**
-
-1. Navigeer aan uw de installatiefolder van de Werkbank van Gegevens en open het [!DNL Insight.cfg] dossier gebruikend een tekstredacteur, zoals Blocnote.
-1. Voeg de parameter van de Ontgrendeling aan het eind van het dossier, zoals in het volgende voorbeeld toe:
+1. Navigeer naar de installatiemap van de Data Workbench en open het [!DNL Insight.cfg] dossier gebruikend een tekstredacteur, zoals Blocnote.
+1. Voeg de parameter Ontgrendelen toe aan het einde van het bestand, zoals in het volgende voorbeeld:
 
 [!DNL Unlock = bool: false]
 
-1. Plaats de waarde aan of waar of vals. Waar laat de gebruiker toe om het even welke gesloten werkruimte tijdelijk te openen, terwijl vals niet.
-1. Sparen en sluit het dossier.
-
+1. Stel de waarde in op true of false. True stelt de gebruiker in staat om vergrendelde werkruimten tijdelijk te ontgrendelen, false niet.
+1. Sla het bestand op en sluit het.
