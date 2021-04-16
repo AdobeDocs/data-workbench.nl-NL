@@ -1,35 +1,36 @@
 ---
-description: De transformatie ReplaceURI verandert de waarde in de interne dimensie van URI in een nieuwe waarde.
-solution: Analytics
-title: VervangenURI
-topic: Data workbench
+description: Met de ReplaceURI-transformatie wordt de waarde in de interne URI-dimensie gewijzigd in een nieuwe waarde.
+title: ReplaceURI
 uuid: f9fc6d51-6eb6-4ace-8c19-2c0200555363
+exl-id: 03a6f306-5e2e-488c-8d79-a14938dcd635
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 2%
 
 ---
 
+# ReplaceURI{#replaceuri}
 
-# VervangenURI{#replaceuri}
+Met de ReplaceURI-transformatie wordt de waarde in de interne URI-dimensie gewijzigd in een nieuwe waarde.
 
-De transformatie ReplaceURI verandert de waarde in de interne dimensie van URI in een nieuwe waarde.
-
-Als [!DNL URI Prefix] wordt gespecificeerd, is de resulterende waarde eenvoudig de prefix van URI die met de verstrekte inputwaarde wordt aaneengeschakeld.
+Als [!DNL URI Prefix] wordt gespecificeerd, is de resulterende waarde eenvoudig het voorvoegsel van URI samengevoegd met de verstrekte inputwaarde.
 
 | Parameter | Beschrijving | Standaard |
 |---|---|---|
-| Naam | Beschrijvende naam van de transformatie. U kunt om het even welke naam hier ingaan. |  |
+| Naam | Beschrijvende naam van de transformatie. U kunt hier elke naam invoeren. |  |
 | Opmerkingen | Optioneel. Opmerkingen over de transformatie. |  |
-| Toestand | De omstandigheden waaronder deze transformatie wordt toegepast. |  |
-| Standaard | De standaardwaarde om te gebruiken als aan de voorwaarde wordt voldaan en de inputwaarde niet beschikbaar is. |  |
-| Invoer | De waarde om URI te vervangen. |  |
-| URI-voorvoegsel | De waarde (koord) die aan de waarde op het [!DNL Input] gebied moet worden voorgespannen. |  |
+| Voorwaarde | De omstandigheden waaronder deze transformatie wordt toegepast. |  |
+| Standaard | De standaardwaarde die moet worden gebruikt als aan de voorwaarde is voldaan en de invoerwaarde niet beschikbaar is. |  |
+| Invoer | De waarde die de URI moet vervangen. |  |
+| URI-voorvoegsel | De waarde (tekenreeks) die aan de waarde in het veld [!DNL Input] moet worden toegevoegd. |  |
 
 >[!NOTE]
 >
->Alvorens [!DNL ReplaceURI] transformaties toe te passen, zou u een nieuwe eenvoudige afmeting met een ouder van [!DNL Page View]een exemplaar van cs-uri-stem of cs-uri-uri moeten tot stand brengen. Voor hulp met dit, contacteer Adobe.
+>Voordat u [!DNL ReplaceURI]-transformaties toepast, moet u een nieuwe, eenvoudige dimensie maken met een bovenliggend element van [!DNL Page View]uit een kopie van cs-uri-stem of cs-uri. Neem contact op met Adobe voor hulp.
 
-Dit voorbeeld toont het gebruik van aan [!DNL ReplaceURI] om de &quot;page=*pageid*&quot;vraagkoorden met &quot; [!DNL homepage.html]&quot;te vervangen wanneer *pageid* erop wijst dat de homepage van de website werd bekeken. Het eindresultaat is een gebruikersvriendelijker mening van URI.
+In dit voorbeeld wordt het gebruik van [!DNL ReplaceURI] getoond om de querytekenreeksen &quot;page=*pageid*&quot; te vervangen door &quot; [!DNL homepage.html]&quot; wanneer *pageid* aangeeft dat de homepage van de website is weergegeven. Het eindresultaat is een gebruikersvriendelijker mening van URI.
 
 ![](assets/cfg_TransformationType_ReplaceURI.bmp)
 
@@ -40,4 +41,3 @@ Voor de getoonde transformatie, de pagina
 wordt gewijzigd in
 
 * [!DNL www.examplesite.com/homepage.html]
-
