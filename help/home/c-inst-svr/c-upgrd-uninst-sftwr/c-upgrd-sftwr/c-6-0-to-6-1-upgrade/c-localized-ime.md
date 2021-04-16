@@ -1,51 +1,52 @@
 ---
-description: De werkbank van gegevens steunt nu de Redacteur van de Methode van de Input (IME) als secundair proces van de tekstingang voor internationale talen.
-solution: Analytics
-title: Het installeren van de Redacteur van de Methode van de Input
-topic: Data workbench
+description: De werkbank voor gegevens ondersteunt nu de IME (Input Method Editor) als secundair tekstinvoerproces voor internationale talen.
+title: De Invoermethode-editor installeren
 uuid: 2a4dc6de-9dd7-4280-b410-fb88a135fe45
+exl-id: 3fcc58f5-29a9-427e-831a-44d527614b56,0bdc7d95-b49a-4ca5-9fde-9c1ce2cd14ec,e4e1c016-0544-434a-b82e-fdd2a4af316c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 0%
 
 ---
 
+# De Invoermethode-editor installeren{#installing-the-input-method-editor}
 
-# Het installeren van de Redacteur van de Methode van de Input{#installing-the-input-method-editor}
+De werkbank voor gegevens ondersteunt nu de IME (Input Method Editor) als secundair tekstinvoerproces voor internationale talen.
 
-De werkbank van gegevens steunt nu de Redacteur van de Methode van de Input (IME) als secundair proces van de tekstingang voor internationale talen.
-
-IMEs staat u toe om internationale karakters in te gaan gebruikend een verscheidenheid van methodes die voor uw lokale taal worden aangepast. De werkbank van gegevens verstrekt een vakje van de inputdialoog dat u toestaat om uw gewenste IME voor tekstgebieden te openen en te gebruiken.
+Met IME&#39;s kunt u internationale tekens invoeren met behulp van verschillende methoden die geschikt zijn voor uw lokale taal. De werkbank Gegevens biedt een invoerdialoogvenster waarin u de gewenste IME voor tekstvelden kunt openen en gebruiken.
 
 >[!NOTE]
 >
->Voor de 6.1-release van de gegevenswerkbank wordt alleen het virtuele vereenvoudigde Chinese toetsenbord ondersteund. Het invoeren van andere talen door IME zou in onverwacht gedrag kunnen resulteren.
+>Voor de gegevenswerkbank 6.1-release wordt alleen het virtuele vereenvoudigde Chinese toetsenbord ondersteund. Het invoeren van andere talen via de IME kan leiden tot onverwacht gedrag.
 
-## Een IME gebruiken {#section-5f008d75a7b24119ab6aebc55454f927}
+## IME {#section-5f008d75a7b24119ab6aebc55454f927} gebruiken
 
-Om de drijvende IME eigenschap van de tekstinput te gebruiken:
+De functie voor het invoeren van zwevende IME-tekst gebruiken:
 
 1. Klik **[!UICONTROL Alt + Space]** voor om het even welk gebied van de tekstinput.
-1. Ga waarden in gebruikend IME van uw systeem.
-1. Sluit de invoerdialoog door de **[!UICONTROL Enter]** sleutel te selecteren of de **[!UICONTROL OK]** knoop te klikken.
+1. Voer waarden in met behulp van de IME van uw systeem.
+1. Sluit het invoerdialoogvenster door de **[!UICONTROL Enter]**-toets te selecteren of op de **[!UICONTROL OK]**-knop te klikken.
 
-   De dialoog zal verdwijnen en de karakters zullen dan op het geselecteerde gebied verschijnen.
+   Het dialoogvenster verdwijnt en de tekens verschijnen in het geselecteerde veld.
 
-**Het bijwerken van het dossier Insight.cfg**
+**Het bestand Insight.cfg bijwerken**
 
-Om IME aan te wenden, moet u het [!DNL Insight.cfg] dossier met dit het plaatsen bijwerken:
+Als u de IME wilt gebruiken, moet u het [!DNL Insight.cfg]-bestand met deze instelling bijwerken:
 
 ```
 Localized IME = bool: true
 ```
 
-Als dit het plaatsen niet in het configuratiedossier bestaat, dan zal het drukken niet de eigenschap IME in dienst nemen. **[!UICONTROL Alt + Space]**
+Als deze instelling niet bestaat in het configuratiebestand en u op **[!UICONTROL Alt + Space]** drukt, wordt de IME-functie niet geactiveerd.
 
-**Inzicht starten in een andere taal:** Om gelokaliseerde activa zoals een welkomstscherm beter te steunen en veelvoudige talen in de toekomst te steunen, vereist de gegevenswerkbank bevel-lijn argumenten die de te laden taal identificeren. De standaardtaal is Engels.
+**Beginnend Inzicht in een andere taal:** om gelokaliseerde activa zoals een splash scherm beter te steunen en veelvoudige talen in de toekomst te steunen, vereist de werkbank van gegevens bevel-lijn argumenten die de te laden taal identificeren. De standaardtaal is Engels.
 
-De beginnende gegevenswerkbank in het Chinees vereist u om [!DNL Insight.exe] met het &quot;-zh-cn&quot;argument aan te halen:
+Voor het starten van een gegevenswerkbank in het Chinees moet u [!DNL Insight.exe] aanroepen met het argument &quot;-zh-cn&quot;:
 
 ```
 Insight.exe -zh-cn
 ```
 
-(Deze argumenten van de bevellijn zijn niet gevoelig geval.)
+(Deze opdrachtregelargumenten zijn niet hoofdlettergevoelig.)
