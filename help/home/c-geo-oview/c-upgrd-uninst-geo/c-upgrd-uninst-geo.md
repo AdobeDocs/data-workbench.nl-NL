@@ -1,20 +1,21 @@
 ---
-description: Informatie over het upgraden en verwijderen van uw gegevenswerkbankGeography-software.
-solution: Analytics
-title: Geografie van gegevenswerkbank upgraden en verwijderen
-topic: Data workbench
+description: Informatie over het upgraden en verwijderen van uw gegevensworkbenchGeography-software.
+title: Data Workbench Geography upgraden en verwijderen
 uuid: cc752762-ddc3-4e81-8c71-40e6cb1e7ecf
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '44'
+ht-degree: 0%
 
 ---
 
 
-# Geografie van gegevenswerkbank upgraden en verwijderen{#upgrading-and-uninstalling-data-workbench-geography}
+# Data Workbench Geography{#upgrading-and-uninstalling-data-workbench-geography} upgraden en verwijderen
 
-Informatie over het upgraden en verwijderen van uw gegevenswerkbankGeography-software.
+Informatie over het upgraden en verwijderen van uw gegevensworkbenchGeography-software.
 
 >[!NOTE]
 >
->Me ervan bewust ben dat wanneer de gegevenswerkbank wordt bevorderd of gedesinstalleerd, de dataset automatisch opnieuw verwerkt. [!DNL Geography]
+>Houd er rekening mee dat wanneer de gegevenswerkbank [!DNL Geography] wordt bijgewerkt of verwijderd, de gegevensset automatisch opnieuw wordt verwerkt.
 
