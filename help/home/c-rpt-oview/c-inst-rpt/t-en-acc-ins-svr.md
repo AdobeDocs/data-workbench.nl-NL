@@ -1,16 +1,17 @@
 ---
 description: Om met een server van de gegevenswerkbank te verbinden, moet de Server van het Rapport toestemming hebben om tot die server toegang te hebben.
-solution: Analytics
-title: Het toelaten van Toegang tot de Server van de Werkbank van Gegevens
-topic: Data workbench
+title: Toegang tot de server van de Data Workbench inschakelen
 uuid: e112ac2a-34fe-40a2-9324-262f5cb1f681
+exl-id: bf409413-470e-4e05-9bd2-b5b511bbe4a5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 0%
 
 ---
 
-
-# Het toelaten van Toegang tot de Server van de Werkbank van Gegevens{#enabling-access-to-the-data-workbench-server}
+# Toegang tot de server van de Data Workbench inschakelen{#enabling-access-to-the-data-workbench-server}
 
 Om met een server van de gegevenswerkbank te verbinden, moet de Server van het Rapport toestemming hebben om tot die server toegang te hebben.
 
@@ -18,22 +19,22 @@ U verleent toegang tot een server van de gegevenswerkbank door de gemeenschappel
 
 >[!NOTE]
 >
->Wanneer het werken in een gegroepeerd milieu, zou de Server van het Rapport moeten worden gevormd om tot de hoofdserver van de gegevenswerkbank toegang te hebben om synchronisatiekwesties te vermijden. In de werkbank van gegevens kunt u informatie over verwerkingsservers in uw cluster bekijken gebruikend het [!DNL Related Servers] menupunt in het [!DNL Servers Manager]. Voor meer informatie over [!DNL Servers Manager], zie het Administratieve hoofdstuk van Interfaces van de Gids van de Gebruiker van de Werkbank van *Gegevens*.
+>Wanneer het werken in een gegroepeerd milieu, zou de Server van het Rapport moeten worden gevormd om tot de master server van de gegevenswerkbank toegang te hebben om synchronisatiekwesties te vermijden. In de werkbank voor gegevens kunt u informatie bekijken over het verwerken van servers in uw cluster met de menuoptie [!DNL Related Servers] in [!DNL Servers Manager]. Voor meer informatie over [!DNL Servers Manager], zie het Administratieve hoofdstuk van Interfaces van *de Gids van de Gebruiker van de Data Workbench*.
 
-De volgende procedure beschrijft hoe te om de Server van het Rapport aan het dossier van de toegangscontrole op een server van de gegevenswerkbank manueel toe te voegen. Om het toegangsbeheerdossier op deze manier bij te werken, moet u dossier-systeem toegang op de machine hebben waar de server van de gegevenswerkbank geïnstalleerd is.
+De volgende procedure beschrijft hoe te om de Server van het Rapport aan het dossier van de toegangscontrole op een server van de gegevenswerkbank manueel toe te voegen. Als u het toegangsbeheerbestand op deze manier wilt bijwerken, moet u toegang hebben tot het bestandssysteem op de computer waarop de gegevenswerkbankserver is geïnstalleerd.
 
-U kunt het de toegangsbeheerdossier van de server ook bijwerken gebruikend [!DNL Server Files Manager] in gegevenswerkbank. Om dit te doen, moet uw cliënt van de gegevenswerkbank administratieve voorrechten op de server hebben.
+U kunt het toegangsbeheerbestand van de server ook bijwerken met behulp van [!DNL Server Files Manager] in de werkbank voor gegevens. Hiervoor moet de client van uw gegevenswerkbank over beheerdersrechten op de server beschikken.
 
-Voor meer informatie over [!DNL Server Files Manager], zie het Administratieve hoofdstuk van Interfaces van de Gids van de Gebruiker van de Werkbank van *Gegevens*.
+Voor meer informatie over [!DNL Server Files Manager], zie het Administratieve hoofdstuk van Interfaces van *de Gids van de Gebruiker van de Data Workbench*.
 
 **Om toegang tot een server van de gegevenswerkbank te vormen**
 
-1. Navigeer aan de omslag van het Toegangsbeheer in de folder waar u de server van de gegevenswerkbank (InsightServer64.exe) installeerde.
+1. Navigeer naar de omslag van het Toegangsbeheer in de folder waar u de server van de gegevenswerkbank (InsightServer64.exe) installeerde.
 
    Voorbeeld: [!DNL C:\Adobe\Server\Access Control]
 
 1. Open [!DNL Access Control.cfg] in een tekstredacteur zoals Blocnote.
-1. Bepaal de plaats van de [!DNL Report Server AccessGroup] en voeg [!DNL Report Server’s] gemeenschappelijke naam aan deze groep toe zoals die in het volgende dossierfragment wordt benadrukt. (Typ precies de gemeenschappelijke naam aangezien het op [!DNL Report Server’s] digitaal certificaat. verschijnt)
+1. Zoek de [!DNL Report Server AccessGroup] en voeg [!DNL Report Server’s] gemeenschappelijke naam aan deze groep toe zoals benadrukt in het volgende dossierfragment. (Typ de algemene naam exact zoals deze wordt weergegeven op het digitale certificaat [!DNL Report Server’s].)
 
    ```
    . . .
