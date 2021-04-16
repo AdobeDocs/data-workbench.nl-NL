@@ -1,22 +1,23 @@
 ---
-description: Een tijddimensie laat u toe om een reeks periodieke of absolute lokale tijddimensies (zoals Dag, Dag van Week, Uur van Dag, de Tijd van de Reservering, etc.) tot stand te brengen die op om het even welk timestamp gebied wordt gebaseerd dat u voor de parameter van de Tijd van de Input (1970 epoch) specificeert.
-solution: Analytics
-title: Afmetingen tijd
-topic: Data workbench
+description: Met een tijddimensie kunt u een set periodieke of absolute lokale tijdafmetingen maken (zoals Dag, Dag van Week, Uur van Dag, Reserveringstijd enzovoort) op basis van een tijdstempelveld dat u opgeeft voor de parameter Invoertijd (1970 tijdperk).
+title: Dimension tijd
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
+exl-id: f9534b24-3a16-4220-bac2-bc541e121005
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 1%
 
 ---
 
+# Tijd Dimension{#time-dimensions}
 
-# Afmetingen tijd{#time-dimensions}
+Met een tijddimensie kunt u een set periodieke of absolute lokale tijdafmetingen maken (zoals Dag, Dag van Week, Uur van Dag, Reserveringstijd enzovoort) op basis van een tijdstempelveld dat u opgeeft voor de parameter Invoertijd (1970 tijdperk).
 
-Een tijddimensie laat u toe om een reeks periodieke of absolute lokale tijddimensies (zoals Dag, Dag van Week, Uur van Dag, de Tijd van de Reservering, etc.) tot stand te brengen die op om het even welk timestamp gebied wordt gebaseerd dat u voor de parameter van de Tijd van de Input (1970 epoch) specificeert.
+Wanneer u tijdafmetingen definieert, kunt u ook een andere dag dan maandag kiezen die als het begin van een week moet worden gebruikt door de parameter Begindag week op te geven. U kunt meer dan één reeks tijddimensies in uw dataset bepalen zolang de afmetingen verschillende namen hebben.
 
-Wanneer het bepalen van tijdafmetingen, kunt u ook een dag buiten Maandag kiezen die als begin van een week moet worden gebruikt door de parameter van de Dag van het Begin van de Week te specificeren. U kunt meer dan één reeks tijddimensies in uw dataset bepalen zolang de afmetingen verschillende namen hebben.
-
-De afmetingen van de tijd worden bepaald door de volgende parameters:
+De tijdafmetingen worden gedefinieerd door de volgende parameters:
 
 <table id="table_9734F6CD7ABA4661A2F9A5FB948A7282"> 
  <thead> 
@@ -29,7 +30,7 @@ De afmetingen van de tijd worden bepaald door de volgende parameters:
  <tbody> 
   <tr> 
    <td colname="col1"> Naam </td> 
-   <td colname="col2"> Beschrijvende naam van de afmeting aangezien het in gegevenswerkbank verschijnt. De afmetingsnaam kan geen koppelteken (-) omvatten. </td> 
+   <td colname="col2"> Beschrijvende naam van de dimensie zoals deze wordt weergegeven in de werkbank voor gegevens. De naam van de dimensie mag geen afbreekstreepje (-) bevatten. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -38,42 +39,41 @@ De afmetingen van de tijd worden bepaald door de volgende parameters:
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Afmetingen </td> 
-   <td colname="col2"> <p>U kunt afmetingsnamen voor om het even welke volgende periodes specificeren: </p> <p> 
+   <td colname="col1"> Dimensies </td> 
+   <td colname="col2"> <p>U kunt dimensienamen voor om het even welke volgende periodes specificeren: </p> <p> 
      <ul id="ul_EB0837DD66BE4004A615A6029EEF4CD5"> 
       <li id="li_2E46E6DB004E443C8CC831DCEE743D60"> Dag </li> 
       <li id="li_F59A27779EBE4E2A84E0972EE8BCDFA7"> Weekdag </li> 
       <li id="li_7D74CD547ED1449091EF7B2E0E8C46DE"> Uur </li> 
-      <li id="li_706AF9D385CB44C098DEBACA3BA2CD4B"> Uur van Dag </li> 
+      <li id="li_706AF9D385CB44C098DEBACA3BA2CD4B"> Uur van dag </li> 
       <li id="li_76FBF69B25954885A0192D308A155E41"> Maand </li> 
       <li id="li_3C16955BE5C54291A25E25CD31259661"> Week </li> 
-     </ul> </p> <p> De namen die u hier ingaat zijn de namen die in afmetingsmenu's en in visualisaties in gegevenswerkbank verschijnen. Als u de naam van een lege tijddimensie verlaat, wordt de afmeting niet gecreeerd in de dataset. </p> </td> 
+     </ul> </p> <p> De namen die u hier invoert zijn de namen die in dimensiemenu's en in visualisaties in gegevenswerkbank verschijnen. Als u de naam van een tijddimensie leeg verlaat, wordt de dimensie niet gecreeerd in de dataset. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Verborgen </td> 
-   <td colname="col2"> Bepaalt of de afmeting in de interface van de gegevenswerkbank verschijnt. Door gebrek, wordt deze parameter geplaatst aan vals. Als, bijvoorbeeld, de afmeting slechts als basis van metrisch moet worden gebruikt, kunt u deze parameter aan waar plaatsen om de afmeting van de vertoning van de gegevenswerkbank te verbergen. </td> 
-   <td colname="col3"> waar </td> 
+   <td colname="col2"> Hiermee wordt bepaald of de dimensie wordt weergegeven in de interface van de gegevenswerkbank. Deze parameter is standaard ingesteld op false. Als de afmeting bijvoorbeeld alleen als basis van een metrische waarde moet worden gebruikt, kunt u deze parameter instellen op true om de afmeting te verbergen in de weergave op de werkbank. </td> 
+   <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Invoertijd (1970-poch) </td> 
-   <td colname="col2"> <p>De naam van het timestamp gebied aan gebruik als input. </p> <p> <p>Opmerking:  De waarden van het gebied moeten het aantal seconden sinds 1 Januari, 1970, bij 00:00 vertegenwoordigen:01. Als de invoertijd geen geldige tijd is (1970 tot 2037), zal het transformatieproces ontbreken, en de server van de gegevenswerkbank zal een fout produceren. </p> </p> </td> 
+   <td colname="col1"> Invoertijd (1970 tijdperk) </td> 
+   <td colname="col2"> <p>De naam van het tijdstempelveld dat als invoer moet worden gebruikt. </p> <p> <p>Opmerking:  De waarden van het veld moeten het aantal seconden weergeven dat is verstreken sinds 1 januari 1970, 00:00:01. Als de invoertijd geen geldige tijd is (1970 tot 2037), zal het transformatieproces ontbreken, en de server van de gegevenswerkbank zal een fout produceren. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Ouder </td> 
-   <td colname="col2"> De naam van de ouderafmeting. Om het even welke telbare afmeting kan een ouderafmeting zijn. Voor Webgegevens, is de ouder Zitting. </td> 
+   <td colname="col1"> Bovenliggend </td> 
+   <td colname="col2"> De naam van de bovenliggende dimensie. Elke aftelbare dimensie kan een bovenliggende dimensie zijn. Voor webgegevens is Sessie de bovenliggende map. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Weekstartdag </td> 
-   <td colname="col2"> <p>De dag voor gebruik als de eerste dag van een week. </p> <p> Deze parameter beïnvloedt de Weekdimensie, de dimensie van de Dag van Week, en om het even welke rapporteringstijddimensies die in termen van weken worden bepaald. </p> </td> 
+   <td colname="col1"> Begindag week </td> 
+   <td colname="col2"> <p>De dag die als de eerste dag van een week moet worden gebruikt. </p> <p> Deze parameter beïnvloedt de Weekdimensie, de dimensie van de Dag van Week, en om het even welke rapporteringstijddimensies die in termen van weken worden bepaald. </p> </td> 
    <td colname="col3"> Mon </td> 
   </tr> 
  </tbody> 
 </table>
 
-Dit voorbeeld leidt tot een reeks tijddimensies die op het user-defined inputgebied x-time-1970 worden gebaseerd. De reeks tijddimensies wordt genoemd &quot;de Tijd van de Zitting.&quot; Omdat de ouder van elke afmeting de afmeting van de Zitting is, beantwoordt elk element van de tijddimensies aan de tijd waarin een zitting begon. De parameter van de Dag van het Begin van de Week specificeert dat elke week van de afmeting van de Week op Maandag begint.
+In dit voorbeeld wordt een set tijdafmetingen gemaakt op basis van het door de gebruiker gedefinieerde invoerveld x-time-1970. De reeks tijdafmetingen heeft de naam &quot;Sessietijd&quot;. Omdat de ouder van elke afmeting de afmeting van de Zitting is, beantwoordt elk element van de tijddimensies aan de tijd waarop een zitting begon. De parameter van de Dag van het Begin van de Week specificeert dat elke week van de dimensie van de Week op maandag begint.
 
 ![](assets/cfg_Transformation_Dim_TimeDim.png)
-
