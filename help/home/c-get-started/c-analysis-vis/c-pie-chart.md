@@ -1,14 +1,14 @@
 ---
-description: ongeldig
-solution: Analytics
-title: Grafiek
-topic: Data workbench
+description: Cirkeldiagram
+title: Cirkeldiagram
 uuid: 8b004980-45a1-46f1-a8ef-5f97e2e1dcce
+exl-id: bc27b296-bade-497f-8738-64c22960c90d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '6'
+ht-degree: 0%
 
 ---
 
-
-# Grafiek{#pie-chart}
-
+# Schijfdiagram{#pie-chart}
