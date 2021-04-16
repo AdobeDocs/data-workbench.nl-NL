@@ -1,29 +1,29 @@
 ---
-description: De transformatie ChangeCase verandert het geval van het koord in de parameter van de Input zoals die door de parameter van de Actie wordt gespecificeerd.
-solution: Analytics
-title: WijzigenCase
-topic: Data workbench
+description: Met de ChangeCase-transformatie wordt het hoofdlettergebruik van de tekenreeks in de invoerparameter gewijzigd, zoals opgegeven door de parameter Action.
+title: ChangeCase
 uuid: 676e79e6-324e-43d1-8982-b44596d0eeac
+exl-id: 2002fe22-d31c-4286-9f73-59ef205f1384
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '145'
+ht-degree: 2%
 
 ---
 
+# ChangeCase{#changecase}
 
-# WijzigenCase{#changecase}
-
-De transformatie ChangeCase verandert het geval van het koord in de parameter van de Input zoals die door de parameter van de Actie wordt gespecificeerd.
+Met de ChangeCase-transformatie wordt het hoofdlettergebruik van de tekenreeks in de invoerparameter gewijzigd, zoals opgegeven door de parameter Action.
 
 | Parameter | Beschrijving | Standaard |
 |---|---|---|
-| Naam | Beschrijvende naam van de transformatie. U kunt om het even welke naam hier ingaan. |  |
-| Actie | Boven of lager. Specificeert of het geval in bovenleer of onderaan moet worden veranderd. | lager |
+| Naam | Beschrijvende naam van de transformatie. U kunt hier elke naam invoeren. |  |
+| Handeling | Hoger of lager. Hiermee wordt opgegeven of het hoofdlettergebruik moet worden gewijzigd in een hogere of lagere waarde. | lager |
 | Opmerkingen | Optioneel. Opmerkingen over de transformatie. |  |
-| Toestand | De omstandigheden waaronder deze transformatie wordt toegepast. |  |
-| Invoer | De naam van het gebied van de logboekingang aan gebruik als input. |  |
-| Uitvoer | De naam van het outputgebied. |  |
+| Voorwaarde | De omstandigheden waaronder deze transformatie wordt toegepast. |  |
+| Invoer | De naam van het veld in het logbestand dat als invoer moet worden gebruikt. |  |
+| Uitvoer | De naam van het uitvoerveld. |  |
 
-In dit voorbeeld, dat gebieden van gegevens gebruikt die van websiteverkeer worden verzameld, wordt het geval van het koord binnen het s-dns gebied veranderd in lager geval, en de nieuwe waarde is output op het nieuwe gebied, x-kleine letters-dns.
+In dit voorbeeld, dat velden gebruikt met gegevens die zijn verzameld uit websiteverkeer, wordt het hoofdlettergebruik van de tekenreeks in het veld s-dns gewijzigd in kleine letters en wordt de nieuwe waarde uitgevoerd in het nieuwe veld, x-kleine letters-dns.
 
 ![](assets/cfg_TransformationType_ChangeCase.png)
-
