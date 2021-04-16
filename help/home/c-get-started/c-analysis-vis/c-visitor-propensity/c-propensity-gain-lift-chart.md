@@ -1,43 +1,44 @@
 ---
-description: De grafieken van de Lift en van de Aanwinst bieden visualisaties voor het evalueren van de potentiële prestaties van een gescoord model aan om prestaties over bepaalde gedeelten van het publiek te evalueren.
-solution: Analytics
-title: Hoogte- en hijskaarten
-topic: Data workbench
+description: De grafieken van de Optillen en van de Aanwinst bieden visualisaties voor het evalueren van de potentiële prestaties van een genoteerd model om prestaties over bepaalde gedeelten van het publiek te evalueren.
+title: Hoogte- en oplichtdiagrammen
 uuid: 4f08277e-deea-48d3-ab15-214c43ad6664
+exl-id: 5ac08512-ac9c-4e85-a4f9-ea6d819095d8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 0%
 
 ---
 
+# Hoogte- en oplichtgrafieken{#propensity-gain-and-lift-charts}
 
-# Hoogte- en hijskaarten{#propensity-gain-and-lift-charts}
+De grafieken van de Optillen en van de Aanwinst bieden visualisaties voor het evalueren van de potentiële prestaties van een genoteerd model om prestaties over bepaalde gedeelten van het publiek te evalueren.
 
-De grafieken van de Lift en van de Aanwinst bieden visualisaties voor het evalueren van de potentiële prestaties van een gescoord model aan om prestaties over bepaalde gedeelten van het publiek te evalueren.
+De grafieken van de aanwinst en van de lift zijn visualisaties die worden gebouwd om de potentiële prestaties van het gegraveerde model te evalueren. Deze grafieken evalueren de prestaties over elk deel van de bevolking.
 
-De grafieken van de aanwinst en van de lift zijn visualisaties die worden gebouwd om de potentiële prestaties van het genoteerde model te evalueren. Deze grafieken evalueren de prestaties over elk deel van de bevolking.
+**Een grafiek voor het optillen of vergroten openen**
 
-**Om een grafiek van de Lift of van de Aanwinst te openen**
-
-1. Selecteer [!DNL Add Visualization > Predictive Analytics > Scoring] .
-1. Over **[!UICONTROL Model Complete]** een opgeslagen score heen.
+1. Selecteer [!DNL Add Visualization > Predictive Analytics > Scoring].
+1. Houd de muis boven **[!UICONTROL Model Complete]** van een opgeslagen score.
 
 ![](assets/propensity_lift_gain_1.png)
 
-**Over Lift- en winstkaarten**
+**Info Houtgrafieken optillen en verbreken**
 
-De grafieken van de Lift en van de Aanwinst zijn nuttige visuele hulpmiddelen om de waarde van een vooruitlopende model te meten. Beide grafieken bestaan uit een liftkromme (groen) en een basislijn (roze). Voor de Grafiek **van de** Aanwinst, vertegenwoordigt de afstand tussen de hefboomkromme en de basislijn hoeveel u prestaties in reacties (of de &quot; aanwinst&quot;) kunt verbeteren van het gebruiken van de vooruitlopende wijze. De winst wordt bereikt door voorrang te geven aan en het richten van de vooruitzichten (klanten/bezoekers) die het waarschijnlijkst zijn om te zetten, eerder dan marketing aan klanten/bezoekers willekeurig. Op deze manier, kunt u de verwachte waarde kwantificeren van het gebruiken van het vooruitlopende model om te kiezen welke vooruitzichten om te contacteren.
+De grafieken van de Lift en van de Aanwinst zijn nuttige visuele hulpmiddelen om de waarde van een vooruitlopende model te meten. Beide grafieken bestaan uit een liftcurve (groen) en een basislijn (roze). Voor **Versterking Grafiek**, vertegenwoordigt de afstand tussen de liftkromme en de basislijn hoeveel u prestaties in reacties (of de &quot; aanwinst&quot;) kunt verbeteren van het gebruiken van de voorspellende wijze. De winst wordt gerealiseerd door voorrang te geven aan en zich te richten op de vooruitzichten (klanten/bezoekers) die het meest waarschijnlijk zullen worden omgezet, eerder dan aan marketing aan klanten/bezoekers willekeurig. Op deze manier, kunt u de verwachte waarde kwantificeren van het gebruiken van het vooruitlopende model om te kiezen welke vooruitzichten om te contacteren.
 
-Net als in de Grafiek van de Aanwinst, toont de **Lift Grafiek** hoeveel waarschijnlijker u positieve reacties zult ontvangen dan als u toevallig met vooruitzichten contacteerde. U wilt de afstand tussen de hefboomkromme en de basislijn zo groot mogelijk zijn, die grotere verwachte winst vertegenwoordigen van het gebruiken van het vooruitlopende model om klanten te contacteren. Wiskundig worden de aanwinst- en hefgrafieken als volgt gedefinieerd:
+Net als in de Grafiek van de Aanwinst, toont **Lift Grafiek** hoeveel waarschijnlijker u positieve reacties zult ontvangen dan als u vooruitzichten bij willekeurig contacteerde. U wilt dat de afstand tussen de liftcurve en de basislijn zo groot mogelijk is, wat grotere verwachte voordelen vertegenwoordigt wanneer u het voorspellende model gebruikt om klanten te contacteren. Wiskundig worden de verbreding- en liftdiagrammen als volgt gedefinieerd:
 
-* **Winst** = (Verwachte Reactie die het Predictieve Model aan de Vooruitzichten van het Contact gebruikt) / (Verwachte Reactie van willekeurig Contacterende Vooruitzichten)
-* **Lift** = (Verwachte respons onder een specifieke groepsgrootte van vooruitzichten die wordt geïdentificeerd met behulp van het voorspellende model) / (Verwachte respons onder dezelfde Willekeurige groepsgrootte van vooruitzichten)
+* **Gain** = (Verwachte Reactie die het Predictieve Model aan Vooruitzichten van het Contact gebruikt) / (Verwachte Reactie van willekeurig Contacting Vooruitzichten)
+* **Lift** = (Verwachte Reactie onder een Specifieke Grootte van de Groep van Vooruitzichten die gebruikend het Predictieve Model worden geïdentificeerd) / (Verwachte Reactie onder de zelfde Specifieke Grootte van willekeurig geïdentificeerde Groepen van Vooruitzichten)
 
-**Voorbeeld van liften- en winstkaarten**
+**Voorbeeld van retoucheerdiagrammen en versterkingsgrafieken**
 
-Bijvoorbeeld, overweeg het voorbeeld van een detailhandelaar die een e-mail re-marketing campagne wil lanceren om yoga broek te verkopen. Historisch gezien verwacht de analist een gemiddeld responspercentage van 20%, gebaseerd op eerdere e-mailmarketingcampagnes die vergelijkbaar zijn met deze. Terwijl de analist bijna 5 miljoen klanten in zijn e-mailgegevensbestand heeft, willen de zaken slechts aan die klanten op de markt brengen die aan e-mail en aankoop het meest waarschijnlijk zullen antwoorden. Op deze manier maximaliseert het bedrijf het rendement van de campagne en zorgt het er tegelijkertijd voor dat het niet onnodig e-mails naar niet-geïnteresseerde klanten verzendt. Gezien een verwacht responspercentage van 20 procent, verwachten de marktspeler en de analist dat ongeveer 1 miljoen klanten waarschijnlijk zullen reageren en aankopen. In plaats van willekeurig te veronderstellen welke van die klanten onder de 20 percenten reacties zullen zijn, wil de analist slim zijn over het voorspellen van welke van de één miljoen vooruitzichten (onder de gegevensbestand van 5 miljoen klanten) het meest waarschijnlijk zullen antwoorden.
+Neem bijvoorbeeld het voorbeeld van een detailhandelaar die een e-mailmarketingcampagne wil starten om een yoga-broek te verkopen. In het verleden verwacht de analist een gemiddeld responspercentage van 20 procent op basis van eerdere e-mailmarketingcampagnes, vergelijkbaar met deze. Terwijl de analist bijna 5 miljoen klanten in zijn e-mailgegevensbestand heeft, wil de zaken slechts aan die klanten in de handel brengen die het meest waarschijnlijk op e-mail en aankoop zullen antwoorden. Op deze manier maximaliseert het bedrijf het rendement van de campagne en zorgt het ervoor dat het niet onnodig e-mails stuurt naar niet-geïnteresseerde klanten. Gezien een verwacht responspercentage van 20 procent, verwachten de marktleider en analist dat ongeveer 1 miljoen klanten waarschijnlijk zullen reageren en kopen. In plaats van willekeurig te veronderstellen welke van die klanten onder de 20 percenten reacties zullen zijn, wil de analist slim zijn over het voorspellen welke van de één miljoen vooruitzichten (onder het gegevensbestand van 5 miljoen klanten) het meest waarschijnlijk zullen antwoorden.
 
-Gebruikend het Scorende vermogen van het Publiek van Adobe, definieert de analist succes als vooruitzicht klikt op een e-mail en koopt yoga broek (de afhankelijke variabele). Na het selecteren van de onafhankelijke variabelen (op basis van ervaring en kennis die is opgedaan bij het analyseren van de correlaties met gegevens en het bundelen van het publiek onder andere analyses), wordt elk vooruitzicht beoordeeld op hun waarschijnlijkheid om positief te reageren op de campagne voor het opnieuw op de markt brengen van e-mail (klikken op de e-mail en yoga-broek kopen). De analist opent de resulterende Gain- en Lift-diagrammen op basis van het voorspellende model.
+Gebruikend de functie van Audience Scoring, bepaalt de analist succes aangezien een vooruitzicht op een e-mail klikt en yoga broek (de afhankelijke variabele) koopt. Na het selecteren van de onafhankelijke variabelen (op basis van ervaring en kennis die is opgedaan bij het analyseren van de correlaties met gegevens en clustering van het publiek onder andere analyses), wordt elk vooruitzicht beoordeeld op de waarschijnlijkheid dat de campagne voor het opnieuw in de handel brengen van e-mail positief zal worden gereageerd (door op de e-mail te klikken en een yoga-broek aan te schaffen). De analist opent de resulterende Gain- en Lift-diagrammen op basis van het voorspellende model.
 
-De y-as toont het percentage van de cumulatieve verwachte positieve reacties. In ons voorbeeld verwachten we een totaal van 1 miljoen positieve reacties. Een waarde van 20% op de y-as komt overeen met 20% van de 1 miljoen verwachte positieve reacties, of 200.000 positieve reacties. De x-as toont het percentage potentiële klanten contacteerde. In ons voorbeeld, vertegenwoordigt de x-as een fractie van de 5 miljoen klanten in het e-mailgegevensbestand. De basislijn (Roze) is het totale responspercentage - als u contact opneemt met X% van de vooruitzichten, ontvangt u X% van de totale positieve respons. Gebruikend het voorspellende model, toont de (groene) hefboomkromme het percentage positieve die reacties (y-as) worden verkregen door een bepaald percentage vooruitzichten (x-as) te contacteren.
+Op de y-as wordt het percentage van de cumulatieve verwachte positieve reacties weergegeven. In ons voorbeeld verwachten we in totaal 1 miljoen positieve antwoorden. Een waarde van 20% op de y-as komt overeen met 20% van de 1 miljoen verwachte positieve reacties, ofwel 200.000 positieve reacties. Op de x-as wordt het percentage van de gecontacteerde potentiële klanten weergegeven. In ons voorbeeld vertegenwoordigt de x-as een fractie van de 5 miljoen klanten in het e-mailgegevensbestand. De basislijn (roze) is de totale responssnelheid - als u contact opneemt met X% van de vooruitzichten, krijgt u X% van de totale positieve respons. Met behulp van het voorspellende model geeft de liftcurve (groen) het percentage positieve reacties weer dat is verkregen (y-as) door contact op te nemen met een bepaald percentage vooruitzichten (x-as).
 
-In de Lift-kaart wordt de verwachte lift weergegeven als gevolg van het gebruik van het voorspellende model om de hoogste 1 miljoen vooruitzichten te bepalen die het waarschijnlijkst zijn om een yoga-broek aan te schaffen nadat u op de e-mail hebt geklikt. Voor het contacteren van 20 percent van willekeurig geselecteerde vooruitzichten gebruikend geen vooruitlopende model, zou u moeten verwachten om 20 percent van responders te krijgen. Nochtans, gebruikend het voorspellende model om de hoogste 20 percent van vooruitzichten te identificeren die het waarschijnlijkst te antwoorden, verwacht u om 50% van de responders te krijgen. De y-waarde van de hefboomkromme bij 20 percenten is 50/20 = 2.5. De liftgrafiek toont hoeveel waarschijnlijker u respondenten zult ontvangen dan als u een willekeurige steekproef van vooruitzichten contacteert. Bijvoorbeeld, door slechts 20 percenten van vooruitzichten te contacteren die op het vooruitlopende model worden gebaseerd zult u 2.5 keer zo veel respondenten bereiken vergeleken bij het gebruiken van geen voorspellend model.
+In de Lift-grafiek wordt de verwachte lift uitgestippeld als gevolg van het gebruik van het voorspellende model om de top 1 miljoen te bepalen van de vooruitzichten die het meest waarschijnlijk zijn om een yoga-broek aan te schaffen na ontvangst en klik op de e-mail. Als u contact wilt opnemen met 20% van de willekeurig geselecteerde vooruitzichten zonder voorspellend model, kunt u verwachten dat u 20% van de responders krijgt. Nochtans, gebruikend het vooruitlopende model om de top 20 percenten van vooruitzichten te identificeren het meest waarschijnlijk om te antwoorden, verwacht u 50% van responders te krijgen. De y-waarde van de liftcurve bij 20 % is 50/20 = 2,5. De lift toont hoeveel waarschijnlijker u reacties zult ontvangen dan als u een willekeurige steekproef van vooruitzichten contacteert. Als u bijvoorbeeld slechts 20 procent van de vooruitzichten op basis van het voorspellende model aanspreekt, bereikt u 2,5 keer zoveel respondenten als wanneer u geen voorspellend model gebruikt.
