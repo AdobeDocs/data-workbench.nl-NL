@@ -1,23 +1,24 @@
 ---
-description: U kunt de verschijning van menu's met inbegrip van het menu van het werkruimtevenster (dat door in om het even welke werkruimte met de rechtermuisknop aan te klikken wordt betreden) aanpassen en menu's die van metriek, afmetingen, en kaartlagen een lijst maken.
-solution: Analytics
+description: U kunt de vormgeving van menu's aanpassen, zoals het menu van het werkruimtevenster (dat u kunt openen door met de rechtermuisknop in een werkruimte te klikken) en menu's met maateenheden, afmetingen en kaartlagen.
 title: Een menu aanpassen
-topic: Data workbench
 uuid: 8c409c50-40b3-4de3-8048-a825ef4d75f5
+exl-id: 7a377d9c-d339-43d8-a71a-a322416b2e60
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
-
 # Een menu aanpassen{#customize-a-menu}
 
-U kunt de verschijning van menu&#39;s met inbegrip van het menu van het werkruimtevenster (dat door in om het even welke werkruimte met de rechtermuisknop aan te klikken wordt betreden) aanpassen en menu&#39;s die van metriek, afmetingen, en kaartlagen een lijst maken.
+U kunt de vormgeving van menu&#39;s aanpassen, zoals het menu van het werkruimtevenster (dat u kunt openen door met de rechtermuisknop in een werkruimte te klikken) en menu&#39;s met maateenheden, afmetingen en kaartlagen.
 
-De hiërarchie van om het even welk menu spiegelt de structuur van zijn folder in [!DNL Profile Manager]. Bijvoorbeeld, weerspiegelt het menu van het werkruimtevenster de structuur van de folder van het Menu en het metriekmenu spiegelt de structuur van de folder van Metriek. Voor om het even welk menu, kan de overeenkomstige folder de volgende punten bevatten:
+De hiërarchie van om het even welk menu weerspiegelt de structuur van zijn folder in [!DNL Profile Manager]. Het menu van het werkruimtevenster spiegelt bijvoorbeeld de structuur van de map Menu en het menu Metriek spiegelt de structuur van de map Metrics. Voor elk menu kan de corresponderende map de volgende items bevatten:
 
-* **Bestanden:** Deze dossiers vertegenwoordigen de visualisaties, legends, annotaties, administratieve interfaces, metriek, afmetingen, of kaartlagen die u kunt openen door het overeenkomstige menupunt te klikken.
-* **Een[!DNL order.txt]bestand:** Dit dossier specificeert in welke orde het menu zijn punten toont.
-* **Subdirectories:** Elke subdirectory vertegenwoordigt een submenu. Elke subdirectory kan zijn eigen dossiers, subdirectories, en [!DNL order.txt] dossier bevatten.
+* **Bestanden:** deze bestanden vertegenwoordigen de visualisaties, legenda&#39;s, annotaties, beheerinterfaces, metriek, dimensies of kaartlagen die u kunt openen door op het bijbehorende menu-item te klikken.
+* **An  [!DNL order.txt] file:** This file specifies in which order the menu displays its items.
+* **submappen:** elke submap vertegenwoordigt een submenu. Elke subdirectory kan zijn eigen bestanden, submappen en [!DNL order.txt]-bestand bevatten.
 
-Bijvoorbeeld, bevat het [!DNL Add Legend] menu de menupunten Metrisch, Kleur, Waarde, en Vertrouwen, in die orde. In vergelijking, voegt het Menu \ de folder van de Legende in toe [!DNL Profile Manager] bevat de dossiers [!DNL Color.vw], [!DNL Confidence.vw], [!DNL Metric.vw], en de [!DNL Value.vw] dossiers in alfabetische orde, evenals een [!DNL order.txt] dossier om de orde van de andere dossiers te controleren.
+Het menu [!DNL Add Legend] bevat bijvoorbeeld de menu-items Metrisch, Kleur, Waarde en Vertrouwen in die volgorde. Ter vergelijking: de map Menu\Add Legend in [!DNL Profile Manager] bevat de bestanden [!DNL Color.vw], [!DNL Confidence.vw], [!DNL Metric.vw] en [!DNL Value.vw] in alfabetische volgorde, evenals een [!DNL order.txt]-bestand om de volgorde van de andere bestanden te bepalen.
