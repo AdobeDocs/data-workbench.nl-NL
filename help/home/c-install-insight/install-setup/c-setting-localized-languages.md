@@ -1,54 +1,55 @@
 ---
-description: Het dossier van de opstelling insight.zbin om de taal van de cliënttoepassing te plaatsen.
-solution: Analytics
-title: Lokaal taalgebruik instellen
-topic: Data workbench
+description: Stel het bestand info.zbin in om de taal van de clienttoepassing in te stellen.
+title: Gelokaliseerde talen instellen
 uuid: 7735e183-7ba3-4e11-bfe2-7f87e4c55fc8
+exl-id: bb57887f-f213-48a4-9a10-8da7ea33eda5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
+# Gelokaliseerde talen instellen{#setting-up-localized-languages}
 
-# Lokaal taalgebruik instellen{#setting-up-localized-languages}
+Stel het bestand info.zbin in om de taal van de clienttoepassing in te stellen.
 
-Het dossier van de opstelling insight.zbin om de taal van de cliënttoepassing te plaatsen.
-
-## Werk de servercomponenten van de gegevenswerkbank bij {#section-5d07a081befc4eaa8fdf7fea904e0d48}
+## De onderdelen {#section-5d07a081befc4eaa8fdf7fea904e0d48} van de gegevenswerkbench-server bijwerken
 
 De beheerder moet deze taken eerst voltooien om deze servercomponenten bij te werken:
 
-1. **Update aan de server van de gegevenswerkbank 6.x.** U moet de server van de gegevenswerkbank voor localisatie bijwerken door het [!DNL base\localization\*.zbin] dossier bij te werken. Dit [!DNL insight.zbin] bestand wordt vervolgens naar de client gekopieerd.
+1. **Bijwerken naar gegevenswerkbankserver 6.x.** U moet de gegevenswerkbankserver bijwerken voor lokalisatie door het  [!DNL base\localization\*.zbin] bestand bij te werken. Dit [!DNL insight.zbin]-bestand wordt vervolgens naar de client gekopieerd.
 
-   Een [!DNL insight.zbin] dossier is inbegrepen in de installatieomslag naast het [!DNL insight.exe] dossier. Als u met een server verbindt die u niet van taal-specifieke [!DNL .zbin] dossiers voorziet, dan zal de gegevenswerkbank te werk gaan om dit dossier te gebruiken.
+   Er wordt een [!DNL insight.zbin]-bestand in de installatiemap opgenomen naast het [!DNL insight.exe]-bestand. Als u verbinding maakt met een server die u geen taalspecifieke [!DNL .zbin]-bestanden biedt, wordt dit bestand verder gebruikt in de werkbank.
 
-   Het back- [!DNL insight.zbin] upbestand kan in elke taal worden geleverd. Dientengevolge, als u gegevenswerkbank in Chinees gebruikt en met een server verbindt die deze taal niet steunt, dan zal uw cliënt van de gegevenswerkbank nog in het Chinees zijn, zelfs als de server uw basisprofiel verandert en uw [!DNL .zbin] dossiers uit de [!DNL Base/Localization] omslag verwijdert.
+   Het back-upbestand [!DNL insight.zbin] kan in elke taal worden geleverd. Als u gegevensworkbench gebruikt in het Chinees en verbinding maakt met een server die deze taal niet ondersteunt, is de gegevensworkbench-client dus nog steeds Chinees, zelfs als de server uw basisprofiel wijzigt en uw [!DNL .zbin]-bestanden verwijdert uit de map [!DNL Base/Localization].
 
-1. **Werk de server van het gegevenswerkbankrapport bij.** De [!DNL insight.zbin] bij de wortelomslag van het rapportserver van de gegevenswerkbank zal in het Engels door gebrek zijn. Als beheerder, zult u worden vereist om het [!DNL .zbin] - dossier van het bijgewerkte pakket van de rapportserver te selecteren en te kopiëren en het te plaatsen in de wortelfolder van de het rapportserver van de gegevenswerkbank. Als de cliënt, vereist de rapportserver ook de juiste argumenten voor de geselecteerde taal, zoals [!DNL Insight.exe -zh-cn]
+1. **Werk de server van het gegevenswerkbankrapport bij.** De  [!DNL insight.zbin] hoofdmap van de rapportserver van de gegevenswerkbank wordt standaard in het Engels weergegeven. Als beheerder, zult u het [!DNL .zbin] dossier van het bijgewerkte pakket van de rapportserver moeten selecteren en kopiëren en het in de wortelfolder van de server van het gegevenswerkbankrapport plaatsen. Net als de client vereist de rapportserver ook de juiste argumenten voor de geselecteerde taal, zoals [!DNL Insight.exe -zh-cn]
 
    1. Stop de diensten van de rapportserver.
-   1. Kopieer de [!DNL Localization] omslag van het nieuwe pakket van de rapportserver.
-   1. Van de [!DNL Localization] omslag, kopieer het [!DNL Insight.zbin] dossier en plaats het in de wortelfolder van de rapportserver waar [!DNL Insight.exe] wordt gevestigd.
+   1. Kopieer de map [!DNL Localization] uit het nieuwe serverpakket voor rapporten.
+   1. Kopieer het [!DNL Localization]-bestand vanuit de map [!DNL Insight.zbin] en plaats het in de hoofdmap van de rapportserver op de locatie van [!DNL Insight.exe].
 
-   1. Voeg om het even welke vereiste argumenten, zoals toe [!DNL insight.exe -zh-cn]
+   1. Voeg eventueel vereiste argumenten toe, zoals [!DNL insight.exe -zh-cn]
    1. Start de rapportserver opnieuw.
 
-## Update de cliënt van de gegevenswerkbank {#section-9653d3fcaf2a4337a97b685857e7aeac}
+## De gegevensworkbench-client {#section-9653d3fcaf2a4337a97b685857e7aeac} bijwerken
 
-Na het bijwerken van de server, volg deze stappen om elke cliënt bij te werken.
+Nadat u de server hebt bijgewerkt, voert u de volgende stappen uit om elke client bij te werken.
 
-1. Om ervoor te zorgen wordt de cliënt niet bijgewerkt van de server tijdens deze update, plaats uw [!DNL Insight.cfg] argument aan Vals.
+1. Om ervoor te zorgen dat de client tijdens deze update niet van de server wordt bijgewerkt, stelt u het argument [!DNL Insight.cfg] in op Onwaar.
 
    ```
    Update Software = bool: false
    ```
 
 1. Start de client opnieuw.
-1. Navigeer naar het profiel Software en Docs (SoftDocs-profiel) en download het vereiste **[!UICONTROL insight.zbin]** bestand van het clientpakket: [!DNL Software\Insight Client\Insight_6.1.zip]
+1. Navigeer naar het profiel Software en Docs (SoftDocs-profiel) en download het vereiste **[!UICONTROL insight.zbin]**-bestand uit het clientpakket: [!DNL Software\Insight Client\Insight_6.1.zip]
 
-1. Verplaats het [!DNL insight.zbin] dossier naar de omslag waar [!DNL insight.exe] wordt gevestigd.
+1. Verplaats het [!DNL insight.zbin]-bestand naar de map waarin [!DNL insight.exe] zich bevindt.
 
-1. Om ervoor te zorgen dat de cliëntdossiers nu van de server worden bijgewerkt, verander het [!DNL Insight.cfg] dossierargument in Waar worden bijgewerkt:
+1. Om ervoor te zorgen dat de cliëntdossiers nu van de server worden bijgewerkt, verander het [!DNL Insight.cfg] dossierargument in Waar:
 
    ```
    Update Software = bool: true
@@ -58,25 +59,24 @@ Na het bijwerken van de server, volg deze stappen om elke cliënt bij te werken.
 
    >[!NOTE]
    >
-   >Uw cliënt zal met de server synchroniseren en u zult een bericht zien verklarend dat het bijwerkt. Aan het eind van de download, zult u een bericht krijgen vragend of wilt u uw cliënt opnieuw beginnen.
+   >De client wordt gesynchroniseerd met de server. Er wordt een bericht weergegeven dat de client wordt bijgewerkt. Aan het einde van het downloaden ontvangt u een bericht met de vraag of u de client opnieuw wilt starten.
 
-1. Klik op **OK** om de client opnieuw te starten.
+1. Klik **OK** om de client opnieuw te starten.
 
-Als u het volgende bericht krijgt, dan betekent het dat het [!DNL zbin] dossier niet in de zelfde plaats werd geplaatst zoals het [!DNL Insight.exe].
+Als u het volgende bericht krijgt, dan betekent het dat het [!DNL zbin] dossier niet in de zelfde plaats werd geplaatst zoals [!DNL Insight.exe].
 
 ```
 Insight Terminated: The backup dictionary file insight.zbin 
 is missing.
 ```
 
-**Gelokaliseerde plasmaschermen**
+**Gelokaliseerde welkomstschermen**
 
-De werkbank van gegevens zoekt de volgende dossiers van het welkomstscherm:
+De werkbank van gegevens zoekt de volgende dossiers van het splash scherm:
 
 * Engels (standaard): [!DNL Base/Images/<version_product> Splash.png]
-* Chinees (bij aanvang met -zh-cn): [!DNL Base/Images/<version_product> Splash zh-cn.png].
+* Chinees (wanneer begonnen met -zh-cn): [!DNL Base/Images/<version_product> Splash zh-cn.png].
 
-Als een welkomstscherm wordt gevraagd maar ontbreekt, zal de gegevenswerkbank tot het Engelse welkomstscherm door gebrek toegang hebben.
+Als een welkomstscherm wordt aangevraagd maar ontbreekt, heeft de werkbank voor gegevens standaard toegang tot het Engelstalige welkomstscherm.
 
 <!-- <a id="section_91AE5EF234C14652A7B04082A22629AB"></a> -->
-
