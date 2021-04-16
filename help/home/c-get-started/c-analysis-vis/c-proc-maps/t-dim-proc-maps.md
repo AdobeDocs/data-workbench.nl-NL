@@ -1,24 +1,24 @@
 ---
 description: Stappen om een dimensie van een proceskaart te bewaren.
-solution: Analytics
-title: Sparen een afmeting van een proceskaart
-topic: Data workbench
+title: Dimensies opslaan op basis van een proceskaart
 uuid: 9af8e5c5-9c20-47c5-8c30-221583b0b3c2
+exl-id: bd328918-1b5b-4c58-9d14-693f92e88c69
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '145'
+ht-degree: 0%
 
 ---
 
-
-# Sparen een afmeting van een proceskaart{#save-a-dimension-from-a-process-map}
+# Een dimensie opslaan op basis van een proceskaart{#save-a-dimension-from-a-process-map}
 
 Stappen om een dimensie van een proceskaart te bewaren.
 
-1. Klik de geselecteerde knopen met de rechtermuisknop aan en klik **[!UICONTROL Save Dimension]**. Het [!DNL Save Dimension As] venster wordt weergegeven. De standaardbewaarplaats is de omslag van de Afmetingen van de Gebruiker \*de profielnaam* \ van de Gebruiker.
+1. Klik met de rechtermuisknop op de geselecteerde knooppunten en klik op **[!UICONTROL Save Dimension]**. Het venster [!DNL Save Dimension As] verschijnt. De standaardopslaglocatie is de map Gebruiker\*profielnaam*\Dimension.
 
-   Om een nieuwe dimensie tot stand te brengen die op veelvoudige knopen wordt gebaseerd, Ctrl+click en belemmering om een doos rond de punten tot stand te brengen die u wilt selecteren. Klik met de rechtermuisknop op het vak en klik op **[!UICONTROL Collapse to a single node]**. Klik de doen ineenstorten knoop met de rechtermuisknop aan en klik **[!UICONTROL Save Dimension]**.
+   Als u een nieuwe dimensie wilt maken op basis van meerdere knooppunten, houdt u Ctrl ingedrukt terwijl u klikt en sleept om een vak te maken rondom de items die u wilt selecteren. Klik met de rechtermuisknop op het vak en klik op **[!UICONTROL Collapse to a single node]**. Klik met de rechtermuisknop op het samengevouwen knooppunt en klik op **[!UICONTROL Save Dimension]**.
 
-1. Op het [!DNL File name] gebied, typ een meer beschrijvende naam voor de afmeting en klik **[!UICONTROL Save]**. U hebt nu toegang tot deze dimensie van om het even welke afmetingslijst.
+1. Typ in het veld [!DNL File name] een beschrijvende naam voor de dimensie en klik op **[!UICONTROL Save]**. U hebt nu toegang tot deze dimensie vanuit een lijst met dimensies.
 
-   Als u alle gebruikers van een profiel de afmetingen zou willen gebruiken die u sparen, moet u hen aan het aangewezen profiel uploaden gebruikend [!DNL Profile Manager]. Zie Bestanden [publiceren in uw werkprofiel](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
-
+   Als u wilt dat alle gebruikers van een profiel de afmetingen gebruiken die u opslaat, moet u deze naar het juiste profiel uploaden met de [!DNL Profile Manager]. Zie [Bestanden publiceren naar uw werkprofiel](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
