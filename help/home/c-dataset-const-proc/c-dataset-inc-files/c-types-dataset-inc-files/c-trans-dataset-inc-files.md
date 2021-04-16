@@ -1,30 +1,31 @@
 ---
-description: De dataset van de Transformatie omvat dossier voor een geërft profiel bevat parameters verbonden aan de transformatiefase van datasetconstructie.
-solution: Analytics
-title: Dataset transformatie bevat bestanden
-topic: Data workbench
+description: Het gegevensbestand van de Dataset van de Transformatie omvat dossier voor een geërft profiel bevat parameters verbonden aan de transformatiefase van datasetconstructie.
+title: Gegevensset transformatie bevat bestanden
 uuid: 46756f68-843c-4b0d-a79e-f107ef85db6c
+exl-id: 58793f82-162a-4d43-aea9-163716c82db6
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 1%
 
 ---
 
+# Gegevensset transformatie bevat bestanden{#transformation-dataset-include-files}
 
-# Dataset transformatie bevat bestanden{#transformation-dataset-include-files}
+Het gegevensbestand van de Dataset van de Transformatie omvat dossier voor een geërft profiel bevat parameters verbonden aan de transformatiefase van datasetconstructie.
 
-De dataset van de Transformatie omvat dossier voor een geërft profiel bevat parameters verbonden aan de transformatiefase van datasetconstructie.
+De eerste regel van het bestand definieert een type [!DNL TransformationInclude] dat de parameters Uitgebreide Dimension, Parameters, Opnieuw verwerken, Werkgebied en Transformaties ondersteunt. Alle andere parameters moeten in het [!DNL Transformation.cfg] dossier in de folder van de Dataset van het datasetprofiel worden bepaald.
 
-De eerste lijn van het dossier bepaalt een type [!DNL TransformationInclude] dat de Uitgebreide Dimensies, de Parameters, het Herproces, het Stadium, en de parameters van Transformaties steunt. Alle andere parameters moeten in het [!DNL Transformation.cfg] dossier in de folder van de Dataset van het datasetprofiel worden bepaald.
+Als u andere parameters dan Extended Dimension, Parameters, Opnieuw verwerken, Stage en Transformaties opneemt in een [!DNL Transformation Dataset Include]-bestand, worden er fouten gegenereerd.
 
-Met inbegrip van parameters buiten Uitgebreide Afmetingen, Parameters, Herproces, Stadium, en Transformaties in een [!DNL Transformation Dataset Include] dossier produceert fouten.
-
-U kunt een [!DNL Transformation Dataset Include] dossier om het even wat noemen u wilt, maar zijn dossieruitbreiding moet zijn [!DNL .cfg]. Het dossier moet binnen de *geërfte profielnaam*\Dataset\Transformation directory worden opgeslagen. Omdat de dossiers recursief tijdens de transformatiefase van datasetconstructie worden geladen, kunt u de [!DNL Transformation Dataset Include] dossiers op om het even welk niveau binnen de folder opslaan (bijvoorbeeld, *geërfte profielnaam*\Dataset\Transformation\*mapnaam* \*include dossier - noem*.cfg).
+U kunt een [!DNL Transformation Dataset Include] dossier om het even wat noemen u wilt, maar zijn dossieruitbreiding moet [!DNL .cfg] zijn. Het bestand moet worden opgeslagen in de *overgenomen profielnaam*\Dataset\Transformation directory. Omdat de bestanden recursief worden geladen tijdens de transformatiefase van de constructie van gegevenssets, kunt u de [!DNL Transformation Dataset Include]-bestanden op elk niveau in de map opslaan (bijvoorbeeld *overgeërfde profielnaam*\Dataset\Transformation\*mapnaam*\*include-bestandsnaam*.cfg).
 
 >[!NOTE]
 >
->Vele web-specifieke configuratieparameters voor Plaats worden bepaald in [!DNL Transformation Dataset Include] dossiers. Voor informatie over deze parameters, zie de Montages van de [Configuratie voor de Gegevens](../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)van het Web.
+>Veel webspecifieke configuratieparameters voor Site worden gedefinieerd in [!DNL Transformation Dataset Include]-bestanden. Voor informatie over deze parameters, zie [Montages van de Configuratie voor de Gegevens van het Web](../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
 
-De volgende lijst beschrijft de parameters die in een [!DNL Transformation Dataset Include] dossier beschikbaar zijn:
+In de volgende tabel worden de parameters beschreven die beschikbaar zijn in een [!DNL Transformation Dataset Include]-bestand:
 
 <table id="table_7BD343888D9145BCBA889B531A4D18F8"> 
  <thead> 
@@ -35,37 +36,37 @@ De volgende lijst beschrijft de parameters die in een [!DNL Transformation Datas
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Uitgebreide afmetingen </td> 
-   <td colname="col2"> Optioneel. Bepaalt de uitgebreide afmetingen. Zie <a href="../../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md"> Uitgebreide afmetingen</a>. </td> 
+   <td colname="col1"> Uitgebreide Dimension </td> 
+   <td colname="col2"> Optioneel. Hiermee definieert u de uitgebreide afmetingen. Zie <a href="../../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md"> Uitgebreide Dimension</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Parameters </td> 
-   <td colname="col2"> Optioneel. Een variabele die u in andere configuratieparameters kunt van verwijzingen voorzien. Voor meer informatie, zie het <a href="../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md#concept-5ad06acc8dc44bf2a99643fafdd56b50"> Bepalen van Parameters in Dataset Dossiers</a>omvatten. </td> 
+   <td colname="col2"> Optioneel. Een variabele waarnaar u in andere configuratieparameters kunt verwijzen. Zie <a href="../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md#concept-5ad06acc8dc44bf2a99643fafdd56b50"> Parameters definiëren in Dataset Inclusief bestanden</a> voor meer informatie. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Opnieuw verwerken </td> 
-   <td colname="col2"> <p>Optioneel. Om het even welk karakter of combinatie karakters kunnen hier zijn ingegaan. Het veranderen van deze parameter en het bewaren van het dossier stelt gegevensretransformatie in werking. </p> <p> Voor informatie over het opnieuw verwerken van uw gegevens, zie <a href="../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md"> Opwerking en Herschikking</a>. </p> </td> 
+   <td colname="col2"> <p>Optioneel. Elk teken of elke combinatie van tekens kan hier worden ingevoerd. Als u deze parameter wijzigt en het bestand opslaat, worden de gegevens opnieuw getransformeerd. </p> <p> Zie <a href="../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md"> Opwerking en hertransformatie</a> voor informatie over het opnieuw verwerken van uw gegevens. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Stadium </td> 
-   <td colname="col2"> <p>Optioneel. De naam van het verwerkingsstadium dat op deze Dataset van de <span class="wintitle"> Transformatie van toepassing is omvat</span> dossier. De verwerkingsstadia worden bepaald in de parameter van Staven in het <span class="filepath"> dossier Transformation.cfg</span> . </p> <p> <p>Opmerking: Wanneer u een Stadium specificeert, moet de naam van het Stadium precies de naam aanpassen die in de parameter van Fasen in het <span class="filepath"> Transformation.cfg</span> - dossier voor het datasetprofiel vermeld is. </p> </p> </td> 
+   <td colname="col1"> Werkgebied </td> 
+   <td colname="col2"> <p>Optioneel. De naam van het verwerkingswerkgebied dat van toepassing is op dit <span class="wintitle">-bestand voor de gegevensset voor transformatie Include</span>. De verwerkingsstadia worden gedefinieerd in de parameter Stages in het bestand <span class="filepath"> Transformation.cfg</span>. </p> <p> <p>Opmerking: Wanneer u een werkgebied opgeeft, moet de naam van het werkgebied exact overeenkomen met de naam die wordt vermeld in de parameter Stage in het bestand <span class="filepath"> Transformation.cfg</span> voor het gegevenssetprofiel. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Transformaties </td> 
-   <td colname="col2"> Optioneel. Bepaalt de gegevenstransformaties die tijdens transformatie moeten worden toegepast. Voor informatie over de beschikbare transformatietypen, zie de Transformaties <a href="../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md"></a>van Gegevens. </td> 
+   <td colname="col2"> Optioneel. Definieert de gegevenstransformaties die moeten worden toegepast tijdens de transformatie. Voor informatie over de beschikbare transformatietypen, zie <a href="../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md"> Transformaties van Gegevens</a>. </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Voor beschrijvingen van de parameters in het [!DNL Transformation.cfg] dossier, zie het Dossier van de Configuratie van de [Transformatie](../../../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md).
+>Zie [Transformation Configuration File](../../../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md) voor beschrijvingen van de parameters in het [!DNL Transformation.cfg]-bestand.
 
-U zou de volgende punten in mening moeten houden wanneer u met [!DNL Transformation Dataset Include] dossiers werkt:
+Houd rekening met de volgende punten wanneer u met [!DNL Transformation Dataset Include] bestanden werkt:
 
-* Het veranderen van om het even welke parameters in dit dossier vereist retransformation van de gegevens.
-* [!DNL CrossRows], [!DNL ODBCLookup], [!DNL Sessionize], en [!DNL AppendURI] transformaties werken slechts wanneer bepaald in een [!DNL Transformation Dataset Configuration] dossier. Voor informatie over deze transformaties, zie de Transformaties van [Gegevens](../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md).
+* Als u een van de parameters in dit bestand wijzigt, moeten de gegevens opnieuw worden getransformeerd.
+* [!DNL CrossRows],  [!DNL ODBCLookup],  [!DNL Sessionize]en  [!DNL AppendURI] transformaties werken alleen wanneer deze in een  [!DNL Transformation Dataset Configuration] bestand zijn gedefinieerd. Voor informatie over deze transformaties, zie [Transformaties van Gegevens](../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md).
 
-* U kunt om het even welke hierboven beschreven parameters aan het [!DNL Transformation Dataset Include] dossier toevoegen door het dossier in Blocnote te openen en uit te geven. Om het even welke veranderingen u aanbrengt en opslaat verschijnen wanneer u het dossier in gegevenswerkbank heropent. Wanneer het toevoegen van een nieuwe parameter, gebruik de Ruimtesleutel (niet de sleutel van het Lusje) om twee (2) ruimten rechts van het vorige rubriekniveau te kartelen.
+* U kunt om het even welke hierboven beschreven parameters aan het [!DNL Transformation Dataset Include] dossier toevoegen door het dossier in Blocnote te openen en uit te geven. Wijzigingen die u aanbrengt en opslaat, worden weergegeven wanneer u het bestand opnieuw opent in de werkbank Gegevens. Wanneer u een nieuwe parameter toevoegt, gebruikt u de toets Ruimte (niet de Tab-toets) om twee (2) spaties rechts van het vorige kopniveau te laten inspringen.
 
-Als u aan de de gegevensdienst van Adobe [!DNL IP Geo-location] of [!DNL IP Geo-intelligence] intekent, verstrekt Adobe u van een intern profiel dat uit een reeks gegevenstransformaties en uitgebreide afmetingen bestaat die specifiek voor de datadienst worden gecreeerd. De transformaties en de afmetingen worden bepaald in [!DNL Transformation Dataset Include] dossiers die in de folder van de Dataset van het interne profiel inbegrepen zijn. Raadpleeg de gebruikershandleiding bij de [!DNL IP Geo-location] gegevenswerkbank voor instructies voor het installeren van het interne profiel voor de [!DNL IP Geo-intelligence] of *gegevensservice*.
+Als u zich abonneert op de gegevensservice [!DNL IP Geo-location] of [!DNL IP Geo-intelligence], verschaft Adobe u een intern profiel dat bestaat uit een set gegevenstransformaties en uitgebreide dimensies die specifiek voor de gegevensservice zijn gemaakt. De transformaties en afmetingen worden gedefinieerd in [!DNL Transformation Dataset Include]-bestanden die worden opgenomen in de map Dataset van het interne profiel. Raadpleeg de *Handleiding voor Data Workbench* voor instructies voor het installeren van het interne profiel voor de [!DNL IP Geo-location]- of [!DNL IP Geo-intelligence]-gegevensservice.
