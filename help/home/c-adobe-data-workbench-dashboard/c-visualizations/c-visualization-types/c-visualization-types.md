@@ -1,22 +1,22 @@
 ---
-description: Introduceert de acht verschillende visualisatietypes.
-solution: Analytics
+description: Introduceert de acht verschillende visualisatietypen.
 title: Visualisatietypen
-topic: Data workbench
 uuid: f98a6ff5-19c9-46a1-958e-054e1b808c23
+exl-id: 3c0170c8-6b5e-4b8f-9353-a7eb699a37fa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 0%
 
 ---
 
-
 # Visualisatietypen{#visualization-types}
 
-Introduceert de acht verschillende visualisatietypes.
+Introduceert de acht verschillende visualisatietypen.
 
-Wanneer het selecteren van een visualisatie, is het belangrijk om de afmetingen en de metriek zorgvuldig te overwegen u visualiseert en hoe de gegevens het meest effectief kunnen worden visualiseerd. Bijvoorbeeld, hebben sommige visualisaties beperkingen op de hoeveelheid gegevens die onmiddellijk kunnen worden getoond.
+Bij het selecteren van een visualisatie, is het belangrijk om zorgvuldig de dimensies en metriek te overwegen u visualiseert en hoe de gegevens het meest effectief kunnen worden visualiseerd. Sommige visualisaties hebben bijvoorbeeld beperkingen ten aanzien van de hoeveelheid gegevens die tegelijk kan worden weergegeven.
 
-Er zijn acht verschillende visualisatietypen die kunnen worden gebruikt om uw gegevens te visualiseren en te analyseren: De grafieken van de bar, de Grafieken van de Kolom, de Grafieken van de Lijn, de Kasten van de Piek, de Lijsten, de Metrische Legenda, de Kaders van de Scatter, en de Rijke Tekst.
+Er zijn acht verschillende visualisatietypen die kunnen worden gebruikt om uw gegevens te visualiseren en te analyseren: Staafdiagrammen, Kolomgrafieken, Lijngrafieken, Schijfgrafieken, Tabellen, Metrische legenda, Verstrooiingspunten en Rijke tekst.
 
 ![](assets/visualization_types.png)
-
