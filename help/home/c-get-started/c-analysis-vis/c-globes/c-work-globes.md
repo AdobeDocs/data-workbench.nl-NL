@@ -1,42 +1,42 @@
 ---
-description: Wanneer u uw muis over de kaart beweegt, worden om het even welke beschikbare gegevens die aan de geografische positie van uw wijzerplaats beantwoorden getoond in de hoger-juiste hoek van de visualisatie.
-solution: Analytics
+description: Wanneer u de muis over de kaart beweegt, worden alle beschikbare gegevens die overeenkomen met de geografische positie van de aanwijzerlocatie weergegeven in de rechterbovenhoek van de visualisatie.
 title: Werken met globes
-topic: Data workbench
 uuid: 8aa3ad86-8129-47f6-8af9-d645ff9c566b
+exl-id: 2dc410fd-e452-4d03-88b9-fe1027b54e9c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '227'
+ht-degree: 0%
 
 ---
 
-
 # Werken met globes{#working-with-globes}
 
-Wanneer u uw muis over de kaart beweegt, worden om het even welke beschikbare gegevens die aan de geografische positie van uw wijzerplaats beantwoorden getoond in de hoger-juiste hoek van de visualisatie.
+Wanneer u de muis over de kaart beweegt, worden alle beschikbare gegevens die overeenkomen met de geografische positie van de aanwijzerlocatie weergegeven in de rechterbovenhoek van de visualisatie.
 
-U kunt ook zoemen en de bol roteren om zich op een gewenst geografisch gebied te concentreren.
+U kunt ook zoomen en de wereldbol roteren om de focus op een gewenst geografisch gebied te richten.
 
-**Om een gloed binnen een venster te bewegen**
+**Een gloed binnen een venster verplaatsen**
 
-* Klik de hoogste grens van de visualisatie en sleep de kaart aan de gewenste plaats.
+* Klik op de bovenste rand van de visualisatie en sleep de kaart naar de gewenste locatie.
 
-**Om binnen op een gloed te zoemen**
+**Inzoomen op een gloed**
 
-1. Plaats uw muiswijzer in het globe venster.
-1. Druk op zowel de muisknoppen als beweeg de muis naar voren (weg van u).
+1. Plaats de muisaanwijzer in het venster van de wereldbol.
+1. Druk op beide muisknoppen en beweeg de muis naar voren (weg van u).
 
-**Om uit op een gloed te zoemen**
+**Uitzoomen op een wereldbol**
 
-1. Plaats uw muiswijzer in het globe venster.
-1. Druk zowel muisknopen als beweeg achteruit de muis (naar u).
+1. Plaats de muisaanwijzer in het venster van de wereldbol.
+1. Druk op beide muisknop en verplaats de muis naar achteren (naar u toe).
 
-**Om een globe te roteren**
+**Een globe roteren**
 
-* Klik binnen de visualisatie met de rechtermuisknop aan en sleep de muis in de gewenste rotatierichting.
+* Klik met de rechtermuisknop in de visualisatie en sleep de muis in de gewenste draairichting.
 
-**Om verlichting in een gloed van een knevel te voorzien**
+**Verlichting in een wereldbol in-/uitschakelen**
 
-U kunt de verlichting in een globe in- of uitschakelen op basis van de positie van de zon gezien de tijd van de dag. De tijd wordt geplaatst door de server van de Werkbank van Gegevens.
+U kunt de belichting in een wereldbol in- of uitschakelen op basis van de positie van de zon op het moment van de dag. De tijd wordt geplaatst door de server van de Data Workbench.
 
-* Klik binnen de visualisatie met de rechtermuisknop aan en klik **[!UICONTROL Toggle Lighting]**. Een X links van het menupunt wijst erop dat de verlichting wordt toegelaten.
-
+* Klik met de rechtermuisknop in de visualisatie en klik op **[!UICONTROL Toggle Lighting]**. Een X links van het menu-item geeft aan dat de belichting is ingeschakeld.
