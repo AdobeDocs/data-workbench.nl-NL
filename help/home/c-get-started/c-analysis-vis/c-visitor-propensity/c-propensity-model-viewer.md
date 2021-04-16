@@ -1,26 +1,27 @@
 ---
-description: Een modelkijker laat u een logistiek regressiemodel produceren gebruikend de Propensity Scoring eigenschap.
-solution: Analytics
+description: Met een modelviewer kunt u een logistiek regressiemodel genereren met de functie voor het noteren van volheid.
 title: Modelviewer
-topic: Data workbench
 uuid: 7ee8ff29-21c2-4721-804a-c7a5d101b50b
+exl-id: e0e4acd4-76a2-436a-993b-2bb7ca91ae1a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 0%
 
 ---
 
-
 # Modelviewer{#model-viewer}
 
-Een modelkijker laat u een logistiek regressiemodel produceren gebruikend de Propensity Scoring eigenschap.
+Met een modelviewer kunt u een logistiek regressiemodel genereren met de functie voor het noteren van volheid.
 
-De modelKijker toont de coëfficiëntgewichten van elke inputvariabele (met inbegrip van de constante termijn) en hun statistische foutenwaaier. De variabelen van de input die een hoge absolute coëfficiënt en een kleine foutenmarge tonen zijn de belangrijkste voorspellers in het model.
+In de modelviewer worden de coëfficiëntgewichten van elke invoervariabele (inclusief de constante term) en het statistische foutbereik weergegeven. Invoervariabelen met een hoge absolute coëfficiënt en een kleine foutmarge zijn de belangrijkste voorspellers in het model.
 
-**Om een Modelgrafiek van de Kijker te openen**
+**Een modelviewerdiagram openen**
 
-1. Selecteer [!DNL Add Visualization > Predictive Analytics > Scoring] .
-1. Afdekking over model voltooid van een opgeslagen score.
+1. Selecteer [!DNL Add Visualization > Predictive Analytics > Scoring].
+1. Houd de muisaanwijzer boven het model Voltooien van een opgeslagen score.
 
 ![](assets/propensity_model_viewer.png)
 
-De inputvariabelen met een coëfficiënt >= 1 zijn positieve invloeden op het voortstuwingsmodel. De coëfficiënten die &lt; 1 zijn, zijn negatieve invloeden op het nevenmodel. De waaier die binnen de haakjes wordt bepaald is de fout, en wijst op de consistentie van de inputvariabele over de succesvolle populatie.
+De inputvariabelen met een coëfficiënt >= 1 zijn positieve invloeden op het voortstuwingsmodel. De coëfficiënten die &lt; 1 zijn, zijn negatieve invloeden op het nevenmodel. Het bereik dat tussen de haakjes staat, is de fout en geeft de consistentie aan van de invoervariabele in de geslaagde populatie.
