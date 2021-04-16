@@ -1,58 +1,59 @@
 ---
 description: De stappen om een nieuwe dataset tot stand te brengen omvatten dossier.
-solution: Analytics
-title: Het creëren van Nieuwe Dataset omvat Dossiers
-topic: Data workbench
+title: Nieuwe gegevensset maken met include-bestanden
 uuid: 707bdd84-b12b-4226-b6aa-43c9fc7ec9fe
+exl-id: 8a7b343d-b695-41aa-b465-8c5cd68d6ef7
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 0%
 
 ---
 
-
-# Het creëren van Nieuwe Dataset omvat Dossiers{#creating-new-dataset-include-files}
+# Nieuwe gegevensset maken met bestanden{#creating-new-dataset-include-files}
 
 De stappen om een nieuwe dataset tot stand te brengen omvatten dossier.
 
-U zou een nieuwe dataset moeten tot stand brengen omvat dossier om het even welke volgende taken van de datasetconfiguratie uit te voeren:
+U zou een nieuwe dataset moeten creëren omvat dossier om het even welke volgende taken van de datasetconfiguratie uit te voeren:
 
 * Het specificeren van nieuwe gebieden van gegevens die van logboekverwerking tot transformatie moeten worden overgegaan.
-* Het bepalen van transformaties die één van beiden van het volgende doen:
+* Transformaties definiëren die een van de volgende handelingen uitvoeren:
 
-   * Bestaande logboekvelden bijwerken.
+   * Bestaande logvelden bijwerken.
    * Produceer nieuwe gebieden die van logboekverwerking tot transformatie moeten worden overgegaan of die worden gebruikt om uitgebreide afmetingen te bepalen.
 
-      Voor informatie over de beschikbare transformatietypen, zie de Transformaties van [Gegevens](../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md).
+      Zie [Gegevenstransformaties](../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md) voor informatie over de beschikbare transformatietypen.
 
       >[!NOTE]
       >
-      >Als u transformaties in een nieuwe dataset bepaalt omvat dossier, ben zeker om de orde van de input en de output in mening te houden. Voor informatie over het opdracht geven tot van transformaties, zie [Overeenkomsten voor het construeren van Transformaties](../../../../home/c-dataset-const-proc/c-data-trans/c-con-transf.md#concept-01998eebb7e347c58255fb442f2613b6).
+      >Als u transformaties in een nieuwe dataset omvat dossier bepaalt, ben zeker om de orde van de input en de output in mening te houden. Zie [Conventies voor het samenstellen van transformaties](../../../../home/c-dataset-const-proc/c-data-trans/c-con-transf.md#concept-01998eebb7e347c58255fb442f2613b6) voor informatie over de volgorde van transformaties.
 
-* Het creëren van uitgebreide afmetingen. Voor informatie over de beschikbare afmetingstypes, zie [Uitgebreide Afmetingen](../../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md).
+* Uitgebreide afmetingen maken. Voor informatie over de beschikbare afmetingtypes, zie [Uitgebreide Dimension](../../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md).
 
-1. Terwijl het werken in uw datasetprofiel, open de [!DNL Profile Manager] en klik **[!UICONTROL Dataset]** om de bestaande dataset te bekijken omvatten dossiers.
+1. Tijdens het werken in uw datasetprofiel, open [!DNL Profile Manager] en klik **[!UICONTROL Dataset]** om de bestaande dataset te bekijken omvat dossiers.
 
-   * Om de [!DNL Log Processing Dataset Include] dossiers te bekijken, klik **[!UICONTROL Log Processing]**.
+   * Als u de [!DNL Log Processing Dataset Include]-bestanden wilt weergeven, klikt u op **[!UICONTROL Log Processing]**.
 
-   * Om de [!DNL Transformation Dataset Include] dossiers te bekijken, klik **[!UICONTROL Transformation]**.
+   * Als u de [!DNL Transformation Dataset Include]-bestanden wilt weergeven, klikt u op **[!UICONTROL Transformation]**.
 
-1. Creeer een nieuwe [!DNL Log Processing] of [!DNL Transformation Dataset Include] dossiers door één van de volgende stappen uit te voeren:
+1. Maak nieuwe [!DNL Log Processing]- of [!DNL Transformation Dataset Include]-bestanden door een van de volgende stappen uit te voeren:
 
-   * In de [!DNL User] kolom voor de folder van de Verwerking van het Logboek, klik **[!UICONTROL Create]** > **[!UICONTROL New Log Processing]**. Een genoemd dossier [!DNL New Log Processing.cfg] verschijnt in de folder.
+   * Klik in de kolom [!DNL User] voor de map Logverwerking op **[!UICONTROL Create]** > **[!UICONTROL New Log Processing]**. Er wordt een bestand met de naam [!DNL New Log Processing.cfg] weergegeven in de map.
 
-   * In de [!DNL User] kolom voor de folder van de Transformatie, klik **[!UICONTROL Create]** > **[!UICONTROL New Transformation]**. Een genoemd dossier [!DNL New Transformation.cfg] verschijnt in de folder.
+   * Klik in de kolom [!DNL User] voor de Transformatiemap op **[!UICONTROL Create]** > **[!UICONTROL New Transformation]**. Er wordt een bestand met de naam [!DNL New Transformation.cfg] weergegeven in de map.
 
-1. Noem het nieuwe dossier anders door zijn vinkje in de [!DNL User] kolom met de rechtermuisknop aan te klikken en de nieuwe naam in de parameter van het Dossier te typen.
+1. Wijzig de naam van het nieuwe bestand door met de rechtermuisknop op het vinkje ervan in de kolom [!DNL User] te klikken en de nieuwe naam in de parameter File te typen.
 
-   ![Stapgegevens](assets/vis_ProfileManager_RenameFile.png)
+   ![Stapinfo](assets/vis_ProfileManager_RenameFile.png)
 
-1. Klik het vinkje voor het anders genoemde dossier met de rechtermuisknop aan en klik **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. Het configuratievenster verschijnt.
-1. Geef de parameters in het configuratiedossier uit zoals aangewezen. Zie Dataset voor [logboekverwerking Bestanden](../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md#concept-999475a22519432e98844622ca95b6ab) of gegevensset voor [transformatie opnemen Bestanden](../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace) opnemen voor beschrijvingen van de beschikbare parameters.
-1. Om uw veranderingen te bewaren, klik **[!UICONTROL (modified)]** bij de bovenkant van het venster met de rechtermuisknop aan en klik **[!UICONTROL Save]**.
-1. Om de plaatselijk aangebrachte veranderingen van kracht te maken, in [!DNL Profile Manager], klik het vinkje voor het dossier in de [!DNL User] kolom met de rechtermuisknop aan, dan klik **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, waar de profielnaam de naam van het datasetprofiel of het geërfte profiel is waartot de dataset omvat dossier behoort. De opwerking of de retransformatie van de gegevens beginnen na synchronisatie van het datasetprofiel.
+1. Klik met de rechtermuisknop op het vinkje voor het bestand met de nieuwe naam en klik op **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. Het configuratievenster wordt weergegeven.
+1. Bewerk de parameters in het configuratiebestand naar wens. Zie [Gegevensset voor logverwerking Inclusief bestanden](../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md#concept-999475a22519432e98844622ca95b6ab) of [Gegevensset voor transformatie Inclusief bestanden](../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace) voor beschrijvingen van de beschikbare parameters.
+1. Als u uw wijzigingen wilt opslaan, klikt u met de rechtermuisknop **[!UICONTROL (modified)]** boven in het venster en klikt u op **[!UICONTROL Save]**.
+1. Als u wilt dat de lokaal aangebrachte wijzigingen van kracht worden, klikt u in [!DNL Profile Manager] met de rechtermuisknop op het vinkje voor het bestand in de kolom [!DNL User] en vervolgens op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, waarbij de profielnaam de naam is van het gegevenssetprofiel of het overgeërfde profiel waartoe de gegevensset include-bestand behoort. Het opnieuw verwerken of omzetten van de gegevens begint na synchronisatie van het gegevenssetprofiel.
 
    >[!NOTE]
    >
-   >Sla het gewijzigde configuratiebestand niet op in een van de interne profielen die door Adobe worden geleverd, omdat uw wijzigingen worden overschreven wanneer u updates voor deze profielen installeert.
+   >Sla het gewijzigde configuratiebestand niet op in een van de interne profielen die door Adobe worden geleverd, omdat de wijzigingen worden overschreven wanneer u updates voor deze profielen installeert.
 
-Om een dataset uit te geven omvat dossier dat u creeerde, zie het [Uitgeven Bestaande Dataset Dossiers](../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077)omvatten.
+Om een dataset uit te geven omvat dossier dat u creeerde, zie [Bestaand Dataset uitgeeft omvat Dossiers](../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077).
