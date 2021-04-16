@@ -1,64 +1,65 @@
 ---
-description: Het groeperen van de bezoeker laat u hefboomwerkings klantenkenmerken om bezoekers dynamisch te categoriseren en clusterreeksen te produceren die op geselecteerde gegevensinput worden gebaseerd, waarbij groepen worden geïdentificeerd die gelijkaardige belangen en gedrag voor klantenanalyse en het richten hebben.
-solution: Analytics
+description: Door middel van clustering bij bezoekers kunt u klantkenmerken gebruiken om bezoekers dynamisch te categoriseren en clustersets te genereren op basis van geselecteerde gegevensinvoer. Zo kunt u groepen identificeren die vergelijkbare belangen en gedragingen hebben voor klantanalyse en -gerichtheid.
 title: Bezoekersclustering
-topic: Data workbench
 uuid: 0c16aaa0-1d86-43a6-a7e2-b43b3ea80dc5
+exl-id: 68c1845d-9c49-4ad9-adf3-c123d08cf758
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 1%
 
 ---
 
+# Bezoekerclustering{#visitor-clustering}
 
-# Bezoekersclustering{#visitor-clustering}
-
-Het groeperen van de bezoeker laat u hefboomwerkings klantenkenmerken om bezoekers dynamisch te categoriseren en clusterreeksen te produceren die op geselecteerde gegevensinput worden gebaseerd, waarbij groepen worden geïdentificeerd die gelijkaardige belangen en gedrag voor klantenanalyse en het richten hebben.
+Door middel van clustering bij bezoekers kunt u klantkenmerken gebruiken om bezoekers dynamisch te categoriseren en clustersets te genereren op basis van geselecteerde gegevensinvoer. Zo kunt u groepen identificeren die vergelijkbare belangen en gedragingen hebben voor klantanalyse en -gerichtheid.
 
 **Clusterproces**
 
-Het het groeperen proces vereist u om metriek en afmetingselementen te identificeren als input te gebruiken, en staat u toe om een specifieke doelpopulatie te kiezen om deze elementen toe te passen om gespecificeerde clusters tot stand te brengen. Wanneer u het het groeperen proces in werking stelt, gebruikt het systeem metrische en afmetrische input om aangewezen aanvankelijke centra voor het gespecificeerde aantal clusters te bepalen. Deze centra worden dan gebruikt als uitgangspunt om het K-Means algoritme toe te passen.
+Het clusterende proces vereist u om metriek en afmetingselementen te identificeren als input te gebruiken, en staat u toe om een specifieke doelbevolking te kiezen om deze elementen toe te passen om gespecificeerde clusters tot stand te brengen. Wanneer u het het groeperen proces in werking stelt, gebruikt het systeem metrische en afmetingsinput om aangewezen aanvankelijke centra voor het gespecificeerde aantal clusters te bepalen. Deze centra worden dan gebruikt als uitgangspunt om het K-Means algoritme toe te passen.
 
 ![](assets/K_algorithm.png)
 
-* De eerste centra worden intelligent gekozen via een Canopy Clustering pass.
-* De clusters van gegevens worden gecreeerd door elk gegevenspunt aan het meest dichtbijgelegen centrum te associëren.
-* Het gemiddelde van elk van de K-clusters wordt het nieuwe centrum.
-* Het algoritme wordt herhaald in stappen 2 en 3 tot de convergentie wordt bereikt. Dit kan veelvoudig passeren.
+* De eerste centra worden op intelligente wijze gekozen via een Canopy Clustering-pas.
+* Gegevensclusters worden gemaakt door elk gegevenspunt aan het dichtstbijzijnde midden te koppelen.
+* Het gemiddelde van elk van de clusters van K wordt het nieuwe centrum.
+* Het algoritme wordt herhaald in stap 2 en 3 tot convergentie wordt bereikt. Dit kan meerdere stappen duren.
 
-Het **[!UICONTROL Maximum Iterations]** in het **[!UICONTROL Options]** menu staat de analist toe om het maximumaantal herhalingen te specificeren die door het het groeperen algoritme moeten worden uitgevoerd. Het plaatsen van deze optie kan in snellere voltooiing van het zich groeperende proces resulteren dat op het maximum van herhalingen wordt gebaseerd ten koste van nauwkeurige convergentie van de clustercentra.
+Met **[!UICONTROL Maximum Iterations]** in het menu **[!UICONTROL Options]** kan de analist het maximumaantal herhalingen opgeven dat door het clusteringsalgoritme moet worden uitgevoerd. Het instellen van deze optie kan resulteren in een snellere voltooiing van het clusteringproces op basis van het plafond voor maximale herhalingen ten koste van de exacte convergentie van de clustercentra.
 
 >[!NOTE]
 >
->Zodra de clusters zijn gedefinieerd, kan de clusterdimensie worden opgeslagen voor gebruik, net als elke andere dimensie. Het kan ook in de Ontdekkingsreiziger van de Cluster worden geladen om de scheiding van clustercentra te onderzoeken.
+>Zodra de clusters zijn bepaald, kan de Dimension van de Cluster voor gebruik enkel als om het even welke andere dimensie worden bewaard. Het kan ook in de Ontdekkingsreiziger van de Cluster worden geladen om de scheiding van clustercentra te onderzoeken.
 
-In de Bouwer van de Cluster, kunt u **[!UICONTROL Options]** > selecteren **[!UICONTROL Algorithm]** om algoritmen te selecteren wanneer het bepalen van clusters. Momenteel, zijn er 3 gesteunde algoritmen:
+In de Bouwer van de Cluster, kunt u **[!UICONTROL Options]** > **[!UICONTROL Algorithm]** selecteren om algoritmen te selecteren wanneer het bepalen van clusters. Er zijn momenteel drie ondersteunde algoritmen:
 
 * KMeans
-* Kant`++`
-* Maximalisering van verwachtingen
+* Kmeans`++`
+* Maximalisatie verwachting
 
-Er zijn 2 manieren om het groeperende proces in werking te stellen:
+Er zijn twee manieren om het het groeperen proces in werking te stellen:
 
 * Methode 1 - klik **[!UICONTROL Go]** in het venster van de clustervisualisatie.
-* Methode 2 - klik **[!UICONTROL Submit]** in het venster van de clustervisualisatie, dat direct de het groeperen baan naar de Server verzendt. U kunt de vooruitgang door de &quot;Gedetailleerde Status voor Vraag&quot;optie volgen.
+* Methode 2 - Klik **[!UICONTROL Submit]** in het venster van de clustervisualisatie, dat direct de het groeperen baan naar de Server verzendt. U kunt de vooruitgang volgen door de &quot;Gedetailleerde Status voor Vraag&quot;optie.
 
 ![](assets/dwb_visitorclustering.png)
 
 Het algoritme heeft de volgende beperkingen:
 
-1. Als u Methode 1 gebruikt, kunt u om het even welke gesteunde het groeperen zich algoritmen selecteren.
-1. Als u Methode 2 gebruikt, kunt u gemiddelden of gemiddelden++ selecteren. De optie voor maximalisatie van verwachtingen is niet beschikbaar.
+1. Als u Methode 1 gebruikt, kunt u om het even welke gesteunde het groeperen algoritmen selecteren.
+1. Als u Methode 2 gebruikt, kunt u kiezen of de middelen++. De optie Maximalisatie verwachtingen is niet beschikbaar.
 
 >[!NOTE]
 >
->In het [!DNL DPU.cfg] dossier, wordt de waarde voor &quot;Vraag, de Grens van het Geheugen&quot;geplaatst aan 500 MB door gebrek. Deze waarde moet worden verhoogd terwijl het runnen van veelvoudige het groeperen van banen. Bijvoorbeeld, als u 5 het groeperen van banen in parallel in werking stelt, verhoog deze waarde tot 1 GB. Er is geen manier om de groeperende baan te annuleren zonder de Server opnieuw te beginnen.
+>In het [!DNL DPU.cfg] dossier, wordt de waarde voor &quot;Vraag, de Limiet van het Geheugen&quot;geplaatst aan 500 MB door gebrek. Deze waarde moet worden verhoogd wanneer meerdere clusteringtaken worden uitgevoerd. Bijvoorbeeld, als u 5 het groeperen banen parallel in werking stelt, verhoog deze waarde tot 1 GB. Er is geen manier om de het groeperen baan te annuleren zonder de Server opnieuw te beginnen.
 
 **Aanbevelingen**
 
-Het aantal herhalingen (aantal keer wordt het gegeven afgetast) en de convergentiedrempel dat u vormt, beïnvloedt grosso modo de het groeperen prestaties. De volgende lijst verstrekt een bredere richtlijn die u kunt volgen:
+Het aantal herhalingen (aantal tijden het gegeven wordt gescand) en de convergentiedrempel die u vormt, beïnvloedt grosso modo de het groeperen prestaties. In de volgende tabel vindt u een uitgebreidere richtlijn die u kunt volgen:
 
-| Aantal clusters | Algoritme | Interferenties | Convergentiedrempel | Normalisatie |
+| Aantal clusters | Algorithm | Herhalingen | Convergentiedrempel | Normalisatie |
 |---|---|---|---|---|
-| 6 | Kant | 25,50 | 1e-3 | Min-Max |
-| 6 | Kant | 25,50 | 1e-6 | Min-Max |
-| 6 | Midden++ | 50 | 1e-6 | Min-Max |
+| 6 | Kant | 25 50 | 1e-3 | Min. max |
+| 6 | Kant | 25 50 | 1e-6 | Min. max |
+| 6 | Kmeans++ | 50 | 1e-6 | Min. max |
