@@ -1,26 +1,27 @@
 ---
-description: Het maskeren verwijst naar het selecteren van een ondergroep van uw gegevens of een ondergroep van de elementen in een afmeting.
-solution: Analytics
+description: Maskeren verwijst naar het selecteren van een subset van uw gegevens of een subset van de elementen in een dimensie.
 title: Maskergegevens
-topic: Data workbench
 uuid: 81b5f4e0-826c-4803-9169-66a424a4ea9f
+exl-id: 3029e08e-827f-40d7-b5a1-45630876a097
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 0%
 
 ---
 
-
 # Maskergegevens{#mask-data}
 
-Het maskeren verwijst naar het selecteren van een ondergroep van uw gegevens of een ondergroep van de elementen in een afmeting.
+Maskeren verwijst naar het selecteren van een subset van uw gegevens of een subset van de elementen in een dimensie.
 
-U maskeert of verbergt die elementen die u niet inbegrepen in de analyse wilt.
+U maskeert of verbergt de elementen die u niet in de analyse wilt opnemen.
 
-De Werkbank van gegevens verstrekt twee methodes om afmetingselementen te maskeren. De eerste methode wendt de opties aan beschikbaar in het [!DNL Mask] menu. Gebruikend de [!DNL Mask] menuopties, kunt u uw muis gebruiken om die elementen te selecteren om te tonen of te maskeren, of u kunt top-gerangschikte elementen tonen wanneer u de gegevens door metrisch sorteert. De tweede methode om afmetingselementen te maskeren wendt een onderzoek aan.
+Data Workbench biedt twee methoden voor het maskeren van dimensie-elementen. De eerste methode gebruikt de opties beschikbaar in [!DNL Mask] menu. Met de menuopties [!DNL Mask] kunt u de muis gebruiken om de elementen te selecteren die u wilt weergeven of maskeren, of u kunt de elementen op de hoogste positie tonen wanneer u de gegevens op metrische basis sorteert. De tweede methode voor het maskeren van dimensie-elementen maakt gebruik van een zoekopdracht.
 
-**Om gegevens te maskeren**
+**Gegevens maskeren**
 
-1. Klik een element of het etiket van de gewenste afmeting met de rechtermuisknop aan en klik **[!UICONTROL Mask]**.
+1. Klik met de rechtermuisknop op een element of het label van de gewenste dimensie en klik op **[!UICONTROL Mask]**.
 
    ![](assets/mnu_Table_Mask.png)
 
@@ -29,59 +30,58 @@ De Werkbank van gegevens verstrekt twee methodes om afmetingselementen te masker
    * **[!UICONTROL Show all]**
    * **[!UICONTROL Show selected only]**
    * **[!UICONTROL Hide selected]**
-   * **[!UICONTROL Show top > 5, 10, 25, 50, 100]**, of **[!UICONTROL 500]** van de getoonde die elementen door metrisch worden gesorteerd
-   * **[!UICONTROL Show top > All Positive]** om slechts waarden te tonen groter dan nul (0)
-   * **[!UICONTROL Display “X more”]** om het aantal momenteel gemaskeerde elementen te tonen
-   * **[!UICONTROL At least one >]***&lt; **[!UICONTROL countable dimension name]**>*(alleen beschikbaar bij werken met een denormale dimensie)
+   * **[!UICONTROL Show top > 5, 10, 25, 50, 100]** of  **[!UICONTROL 500]** van de weergegeven elementen die metrisch zijn gesorteerd
+   * **[!UICONTROL Show top > All Positive]** alleen waarden groter dan nul (0) weergeven
+   * **[!UICONTROL Display “X more”]** om het aantal momenteel gemaskerde elementen weer te geven
+   * **[!UICONTROL At least one >]***&lt;>>*(alleen beschikbaar wanneer u werkt met een denormale dimensie)**[!UICONTROL countable dimension name]**
 
-      Wanneer het werken met een denormale afmeting, laat deze optie u toe om een afmeting door een telbare afmeting te maskeren. Wanneer geselecteerd, toont de lijst slechts die elementen die minstens één element van de telbare dimensie hebben die u selecteerde. De lijst toont tot 1.023 elementen.
+      Wanneer het werken met een denormale afmeting, laat deze optie u toe om een afmeting door een telbare afmeting te maskeren. Wanneer geselecteerd, toont de lijst slechts die elementen die minstens één element van de telbare afmeting hebben die u selecteerde. De tabel bevat maximaal 1023 elementen.
 
 >[!NOTE]
 >
->Omdat Adobe gegevens in willekeurige orde [!DNL Platform] verwerkt, wanneer minstens één het maskeren in meer dan 1.023 elementen resulteert, hebben de gemeenschappelijkere en grotere elementen een grotere kans om in de lijst worden omvat.
+>Omdat de Adobe [!DNL Platform] gegevens in willekeurige orde verwerkt, wanneer minstens één het maskeren in meer dan 1.023 elementen resulteert, hebben de gemeenschappelijkere en grotere elementen een grotere kans om in de lijst worden opgenomen.
 
-Wanneer u door toont bovenkant of minstens één maskeert, door gebrek beantwoordt de orde in de lijst aan de waarden zoals die door de selectie op dat ogenblik worden beïnvloed. Als u later de selectie verandert, verandert de orde niet van de originele orde tenzij de lijst wordt geresorteerd of u Dynamische Selectie toelaat. Wanneer u klikt **[!UICONTROL Mask]** > **[!UICONTROL Dynamic Selection]**, wordt de lijst opnieuw geplaatst telkens als u de selectie verandert.
+Wanneer u maskeert door Bovenzijde tonen of minstens één, door gebrek beantwoordt de orde in de lijst aan de waarden zoals die door de selectie op dat ogenblik worden beïnvloed. Als u de selectie later wijzigt, verandert de volgorde niet in de oorspronkelijke volgorde, tenzij de tabel opnieuw wordt gesorteerd of u Dynamische selectie inschakelt. Wanneer u **[!UICONTROL Mask]** > **[!UICONTROL Dynamic Selection]** klikt, wordt de lijst opnieuw gesorteerd telkens als u de selectie verandert.
 
-**Om gegevens te maskeren die een onderzoek gebruiken**
+**Gegevens maskeren met een zoekopdracht**
 
 * U kunt gegevens maskeren met een van de volgende zoekopties:
 
-   * Klik een element of het etiket van de gewenste afmeting met de rechtermuisknop aan, klik **[!UICONTROL Mask]**, dan in het [!DNL Search] doostype de uitdrukking waarvoor u wilt zoeken.
+   * Klik met de rechtermuisknop op een element of het label van de gewenste dimensie, klik op **[!UICONTROL Mask]** en typ in het vak [!DNL Search] de woordgroep waarnaar u wilt zoeken.
 
       ![](assets/mnu_Table_MaskSearch.png)
 
-   * Klik een element of het etiket van de gewenste afmeting met de rechtermuisknop aan, klik **[!UICONTROL Mask]** > **[!UICONTROL Display search bar]**, dan in de onderzoeksdoos die in de cel van het afmetingsetiket toont, typ de uitdrukking waarvoor u wilt zoeken.
+   * Klik met de rechtermuisknop op een element of het label van de gewenste dimensie, klik op **[!UICONTROL Mask]** > **[!UICONTROL Display search bar]** en typ in het zoekvak dat wordt weergegeven in de cel met het dimensielabel de uitdrukking waarnaar u wilt zoeken.
 
       ![](assets/vis_Table_Mask_searchBar.png)
 
-      Aangezien u een onderzoeksuitdrukking typt, werkt de Werkbank van Gegevens de afmeting bij om op gelijken te wijzen.
+      Terwijl u een zoekfrase typt, wordt de Data Workbench aangepast aan de overeenkomsten.
 
-Om het maskeren tijdens een onderzoek verder te beperken, kunt u om het even welke volgende methodes gebruiken:
+Als u het maskeren tijdens een zoekopdracht verder wilt beperken, kunt u een van de volgende methoden gebruiken:
 
-* U kunt &quot;re:&quot;in de [!DNL search] doos of de bar typen om de onderzoeksuitdrukking te hebben die als regelmatige uitdrukking wordt geïnterpreteerd. U kunt om het even welke syntaxis gebruiken verbonden aan regelmatige uitdrukkingen in uw onderzoeksuitdrukking. Voor meer informatie over regelmatige uitdrukkingen, zie het Regelmatige bijlage van de Uitdrukking in de Gids *van de Configuratie van de* Dataset.
-* U kunt het $ symbool als eerste karakter in uw onderzoekskoord typen om uitdrukkingen te vinden die met het koord beginnen u inging, of als laatste karakter om uitdrukkingen te vinden die met het koord beëindigen u inging.
-* U kunt een ruimte als eerste karakter in uw onderzoekskoord typen om het even welke woorden binnen een uitdrukking te vinden die met het koord beginnen u inging, of als laatste karakter om het even welke woorden binnen een uitdrukking te vinden die met het koord beëindigde u inging.
+* U kunt &quot;re:&quot; typen in het vak of de balk [!DNL search] om de zoekuitdrukking als een reguliere expressie te laten interpreteren. U kunt elke syntaxis gebruiken die is gekoppeld aan reguliere expressies in uw zoekfragment. Voor meer informatie over regelmatige uitdrukkingen, zie het Regelmatige bijlage van de Uitdrukking in *Gids van de Configuratie van de Dataset*.
+* U kunt het $ symbool als eerste karakter in uw onderzoekstekenreeks typen om uitdrukkingen te vinden die met het koord beginnen u inging, of als laatste karakter om uitdrukkingen te vinden die met het koord beëindigen u inging.
+* U kunt een spatie typen als het eerste teken in de zoektekenreeks om te zoeken naar woorden binnen een woordgroep die begint met de tekenreeks die u hebt ingevoerd, of als het laatste teken om woorden te zoeken binnen een woordgroep die eindigt met de tekenreeks die u hebt ingevoerd.
 
-Na zijn voorbeelden van verschillende manieren om een lijst te maskeren gebruikend het koord &quot;op&quot;in een onderzoek:
+Hier volgen voorbeelden van verschillende manieren om een tabel te maskeren met de tekenreeks &quot;on&quot; in een zoekopdracht:
 
-* Het typen &quot;op&quot;toont elke uitdrukking die het koord &quot;op&quot;overal in de uitdrukking bevat: &quot;**** online bankieren&quot;, &quot;**** contact opnemen met kopers&quot;, &quot;**gouden** munten&quot;, &quot;bank **** online&quot;, &quot;gouden **** opties&quot; en &quot;zilveren **miljard**&quot;.
-* Het typen &quot;$on&quot;toont elke uitdrukking die met het koord &quot;op&quot;begint:
+* Wanneer u &quot;on&quot; typt, wordt elke woordgroep met de tekenreeks &quot;on&quot; overal in de woordgroep weergegeven: &quot;**on** line banking,&quot; &quot;c **on** tact kopers,&quot; &quot;bulli **on** munten,&quot; &quot;bank **on** line,&quot; &quot;gold opti **on** s,&quot; en &quot;zilveren bulli&lt;a **on a11/>.&quot;**
+* Wanneer u &quot;$on&quot; typt, wordt elke woordgroep weergegeven die begint met de tekenreeks &quot;on&quot;:
 
-   &quot;**** online bankieren&quot; en &quot;**on**-line betaling&quot;.
+   &quot;**on** line banking&quot; en &quot;**on**-line payment.&quot;
 
-* Het typen &quot;op$&quot;toont elke uitdrukking die met het koord &quot;op&quot;beëindigt:
+* Als u &quot;on$&quot; typt, wordt elke woordgroep weergegeven die eindigt met de tekenreeks &quot;on&quot;:
 
-   &quot;zilveren **edelmetaal**&quot; en &quot;gouden **optie**&quot;.
+   &quot;zilverbulli **on**&quot; en &quot;goudopti **on**&quot;.
 
-* Het typen &quot;op&quot;toont elke uitdrukking die een woord bevat dat met het koord &quot;op&quot;begint:
+* Als u &quot;on&quot; typt, wordt elke woordgroep weergegeven die een woord bevat dat begint met de tekenreeks &quot;on&quot;:
 
-   &quot;**** online bankieren&quot; en &quot;bank **** online&quot;.
+   &quot;**on** line banking&quot; en &quot;bank **on** line.&quot;
 
-* Het typen &quot;op&quot;toont elke uitdrukking die een woord bevat dat met het koord &quot;op&quot;beëindigt:
+* Als u &quot;on&quot; typt, wordt elke woordgroep weergegeven die een woord bevat dat eindigt met de tekenreeks &quot;on&quot;:
 
-   &quot;**gouden** munten&quot; en &quot;zilveren **edelmetaal**&quot;.
+   &quot;bulli **op** munten&quot; en &quot;zilverbulli **on**&quot;.
 
-* Het gebruiken &quot;op&quot;toont elke uitdrukking die het koord &quot;op&quot;als woord bevat:
+* Als u &quot;on&quot; gebruikt, wordt elke woordgroep met de tekenreeks &quot;on&quot; weergegeven als een woord:
 
-   &quot;**on** line banking&quot; en &quot;bank **on** line&quot;.
-
+   &quot;**on** line banking&quot; en &quot;bank **on** line.&quot;
