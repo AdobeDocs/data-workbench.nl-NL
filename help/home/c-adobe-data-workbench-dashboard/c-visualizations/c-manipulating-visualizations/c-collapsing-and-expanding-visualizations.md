@@ -1,19 +1,20 @@
 ---
-description: De ineenstorting/breidt de huidige visualisatie uit.
-solution: Analytics
-title: Ineenstorting en Uitbreidende Visualisaties
-topic: Data workbench
+description: Vouwt de huidige visualisatie samen of breidt deze uit.
+title: Invouwen en uitvouwen van visualisaties
 uuid: 16ee5479-e457-4abc-8a40-ed75612318fa
+exl-id: b005fd1e-1704-476f-b220-44ac591b8d15
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '94'
+ht-degree: 0%
 
 ---
 
+# Bezoekingen samenvouwen en uitbreiden{#collapsing-and-expanding-visualizations}
 
-# Ineenstorting en Uitbreidende Visualisaties{#collapsing-and-expanding-visualizations}
+Vouwt de huidige visualisatie samen of breidt deze uit.
 
-De ineenstorting/breidt de huidige visualisatie uit.
+Visualisaties kunnen op elk gewenst moment worden samengevouwen en uitgevouwen. Door een visualisatie samen te vouwen, verkleint u de hoogte van de visualisatie tot alleen de titel en het gedeelte met gereedschappen, waardoor de hoofdtekst van de visualisatie wordt verborgen. Door een samengevouwen visualisatie uit te vouwen, wordt de oorspronkelijke hoogte hersteld.
 
-De visualisaties kunnen op elk ogenblik worden doen ineenstorten en worden uitgebreid. Het ineenstorten van een visualisatie zal de hoogte van de visualisatie tot enkel het titel en hulpmiddelengedeelte verminderen, die het visualiseringslichaam verbergen. Het uitbreiden van een doen ineenstorten visualisatie zal zijn grootte aan zijn originele hoogte herstellen.
-
-Het ineenstorten van een visualisatie is bijzonder nuttig om een groot aantal visualisaties binnen een dashboard te bewaren terwijl het opnemen van minimale ruimte. De gebruikers kunnen een doen ineenstorten visualisatie uitbreiden om zijn inhoud te zien slechts wanneer noodzakelijk.
+Het samenvouwen van een visualisatie is vooral handig voor het behouden van een groot aantal visualisaties in een dashboard en het opnemen van minimale ruimte. Gebruikers kunnen een samengevouwen visualisatie alleen indien nodig uitvouwen om de inhoud ervan te zien.
