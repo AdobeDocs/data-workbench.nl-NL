@@ -1,53 +1,53 @@
 ---
-description: Gebruikend een beeldannotatie, kunt u een beeld uit om het even welke bron kopiëren en het kleven direct in een werkruimte.
-solution: Analytics
+description: Met behulp van een afbeeldingsannotatie kunt u een afbeelding uit een willekeurige bron kopiëren en rechtstreeks in een werkruimte plakken.
 title: Afbeeldingsannotaties
-topic: Data workbench
 uuid: 62a655f6-120b-4cf4-adaa-aa04f721a7dc
+exl-id: 905d3e9e-0d24-456e-af45-c29f12ed986d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 0%
 
 ---
 
-
 # Afbeeldingsannotaties{#image-annotations}
 
-Gebruikend een beeldannotatie, kunt u een beeld uit om het even welke bron kopiëren en het kleven direct in een werkruimte.
+Met behulp van een afbeeldingsannotatie kunt u een afbeelding uit een willekeurige bron kopiëren en rechtstreeks in een werkruimte plakken.
 
-U kunt resize dan, de kleurenregeling omkeren, of het beeld verdraaien.
+Vervolgens kunt u het formaat van de afbeelding wijzigen, het kleurenschema omkeren of de afbeelding dimmen.
 
-## Een afbeelding toevoegen {#section-bcb71217e75f4135a90a222b27479c9a}
+## Afbeelding {#section-bcb71217e75f4135a90a222b27479c9a} toevoegen
 
-1. Kopieer om het even welk beeld aan uw klembord door het beeld met de rechtermuisknop aan te klikken en te klikken **[!UICONTROL Copy]**.
-1. Klik binnen de beeldannotatie met de rechtermuisknop aan en klik **[!UICONTROL Paste Image]**.
+1. Kopieer een afbeelding naar het klembord door met de rechtermuisknop op de afbeelding te klikken en op **[!UICONTROL Copy]** te klikken.
+1. Klik met de rechtermuisknop in de afbeeldingsannotatie en klik op **[!UICONTROL Paste Image]**.
 
 ![](assets/mnu_Image_Paste.png)
 
 >[!NOTE]
 >
->U kunt slechts één beeld aan een beeldannotatie toevoegen. Het kleven van een nieuw beeld in de annotatiekleeft over het bestaande beeld. Om veelvoudige beelden aan een werkruimte toe te voegen, moet u een andere beeldannotatie toevoegen.
+>U kunt slechts één afbeelding aan een afbeeldingsannotatie toevoegen. Als u een nieuwe afbeelding in de annotatie plakt, wordt deze over de bestaande afbeelding heen geplakt. Als u meerdere afbeeldingen aan een werkruimte wilt toevoegen, moet u nog een afbeeldingsannotatie toevoegen.
 
 ## De grootte van een afbeelding wijzigen {#section-c8136a2573bf4378a9aa18cc6a098b27}
 
-* Klik+sleep om het even welke kant of hoek van de annotatie.
+* Klik en sleep een zijde of hoek van de annotatie.
 
-## Een afbeelding omkeren {#section-6248ca0f729f4397ac200fae0eef9d9a}
+## Een afbeelding {#section-6248ca0f729f4397ac200fae0eef9d9a} omkeren
 
-* Klik binnen de annotatie met de rechtermuisknop aan en klik **[!UICONTROL Display Mode]** > **[!UICONTROL Invert (white to black)]** of **[!UICONTROL Display Mode]** > **[!UICONTROL Invert (black to white)]**.
+* Klik met de rechtermuisknop in de annotatie en klik op **[!UICONTROL Display Mode]** > **[!UICONTROL Invert (white to black)]** of **[!UICONTROL Display Mode]** > **[!UICONTROL Invert (black to white)]**.
 
-## Een afbeelding omdraaien {#section-2d4b66428ea4456e9735c0ad09f3b765}
+## Een afbeelding {#section-2d4b66428ea4456e9735c0ad09f3b765} dimmen
 
-* Klik binnen de annotatie met de rechtermuisknop aan en klik **[!UICONTROL Display Mode]** > **[!UICONTROL Dim]** of **[!UICONTROL Display Mode]** > **[!UICONTROL Very Dim]**.
+* Klik met de rechtermuisknop in de annotatie en klik op **[!UICONTROL Display Mode]** > **[!UICONTROL Dim]** of **[!UICONTROL Display Mode]** > **[!UICONTROL Very Dim]**.
 
-## Terug naar oorspronkelijke weergavemodus {#section-044fad7278bd4947b463deca1b94acfd}
+## Terugkeren naar de oorspronkelijke weergavemodus {#section-044fad7278bd4947b463deca1b94acfd}
 
-* Klik binnen de annotatie met de rechtermuisknop aan en klik **[!UICONTROL Display Mode]** > **[!UICONTROL Original]**.
+* Klik met de rechtermuisknop in de annotatie en klik op **[!UICONTROL Display Mode]** > **[!UICONTROL Original]**.
 
 ## Aanpassen aan venster {#section-904eb9aed20947749bc35525efeb4bda}
 
-**Om de Geschikte aan de optie van het Venster toe te laten of onbruikbaar te maken**
+**De optie Aanpassen aan venster in- of uitschakelen**
 
-De [!DNL Fit to Window] optie, wanneer geselecteerd, laat de annotatie automatisch uitbreiden of krimpen om de beeldgrootte te passen. De [!DNL Fit to Window] optie wordt toegelaten door gebrek.
+Als de optie [!DNL Fit to Window] is geselecteerd, wordt de annotatie automatisch vergroot of verkleind om deze aan te passen aan de afbeeldingsgrootte. De optie [!DNL Fit to Window] is standaard ingeschakeld.
 
-* Klik binnen de annotatie met de rechtermuisknop aan **[!UICONTROL Fit to Window]**. Wanneer toegelaten, verschijnt X links van [!DNL Fit to Window].
-
+* Klik met de rechtermuisknop in de annotatie en klik op **[!UICONTROL Fit to Window]**. Als deze optie is ingeschakeld, wordt een X links van [!DNL Fit to Window] weergegeven.
