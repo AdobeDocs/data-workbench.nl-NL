@@ -1,18 +1,18 @@
 ---
-description: ongeldig
-solution: Analytics
-title: Bar-grafieken
-topic: Data workbench
+description: Staafdiagrammen
+title: Staafdiagrammen
 uuid: 1baac7b3-7918-4de6-81f3-1aba7e9b8e20
+exl-id: e4e25832-5552-4acb-9adc-aea93b384a9e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '75'
+ht-degree: 0%
 
 ---
 
+# Staafdiagrammen{#bar-charts}
 
-# Bar-grafieken{#bar-charts}
-
-De het grafiekvisualisaties van de bar staan u toe om metrische en afmetingsgegevens met elk die gegevenselement te visualiseren als horizontale bar op de grafiek wordt vertegenwoordigd. De grafieken van de bar staan tot 200 unieke gegevenselementen toe om op de grafiek meteen worden getoond. De afmetingswaarden worden geëtiketteerd langs de y-as, terwijl de metrische toename langs de x-as wordt geëtiketteerd. De bar voor elke afmetingswaarde wordt geëtiketteerd met zijn nauwkeurige metrische waarde.
+De grafiekvisualisaties van de bar staan u toe om metrische en afmetingsgegevens visualiseren met elk gegevenselement dat als horizontale bar op de grafiek wordt vertegenwoordigd. Met staafdiagrammen kunnen maximaal 200 unieke gegevenselementen tegelijk op het diagram worden weergegeven. De waarden van de afmetingen worden geëtiketteerd langs de y-as, terwijl de metrische toename langs de x-as wordt geëtiketteerd. De bar voor elke afmetingswaarde wordt geëtiketteerd met zijn nauwkeurige metrische waarde.
 
 ![](assets/bar_chart.png)
-
