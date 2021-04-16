@@ -1,26 +1,27 @@
 ---
-description: Voor sommige plaatsen, is het noodzakelijk om ingebedde objecten verzoeken te gebruiken om informatie tot de Webserver over te gaan zodat de details over welke pagina eigenlijk werd gediend door Sensor kunnen worden verworven en voor rapportering en analyse worden gebruikt.
-solution: Analytics
+description: Voor sommige sites is het nodig om ingesloten objectverzoeken te gebruiken om informatie door te geven aan de webserver, zodat Sensor details kan verkrijgen over de pagina die daadwerkelijk is bediend en deze kan gebruiken voor rapportage en analyse.
 title: Dynamische paginanamen ophalen
-topic: Data workbench
 uuid: eaa35023-bbfa-4eb9-9ab7-3986187e5537
+exl-id: cd94caf0-b0dc-46c1-8f59-3ebb2f703286
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '594'
+ht-degree: 0%
 
 ---
 
-
 # Dynamische paginanamen ophalen{#acquiring-dynamic-page-names}
 
-Voor sommige plaatsen, is het noodzakelijk om ingebedde objecten verzoeken te gebruiken om informatie tot de Webserver over te gaan zodat de details over welke pagina eigenlijk werd gediend door Sensor kunnen worden verworven en voor rapportering en analyse worden gebruikt.
+Voor sommige sites is het nodig om ingesloten objectverzoeken te gebruiken om informatie door te geven aan de webserver, zodat Sensor details kan verkrijgen over de pagina die daadwerkelijk is bediend en deze kan gebruiken voor rapportage en analyse.
 
-Dit zou kunnen worden vereist als URL van de pagina, zoals die door de Webserver wordt gezien, niet indicatief van de paginainhoud is die aan browser wordt getoond. Deze kwestie vloeit vaak voort uit het gebruik van verpersoonlijking of dynamische systemen van het inhoudsbeheer waarin de daadwerkelijke inhoud die in een pagina wordt gediend bij de vlucht door URL, het koekje, de verwante gegevens en toepassingslogica wordt bepaald.
+Dit kan nodig zijn als de URL van de pagina, zoals deze door de webserver wordt gezien, niet indicatief is voor de pagina-inhoud die aan de browser wordt weergegeven. Dit geval is vaak het gevolg van het gebruik van personalisatie- of dynamische contentbeheersystemen waarbij de werkelijke inhoud op een pagina direct wordt bepaald door de URL, het cookie, de gerelateerde gegevens en toepassingslogica.
 
-De implementatie van een ingebed voorwerp om extra metingen te verzamelen zou minimale invloed op uw algemene plaatsprestaties moeten hebben. Adobe stelt voor dat u een dossier JavaScript als voorwerp inbedt dat wordt gebruikt om de uitgebreide attributen te verzamelen. (Merk op dat een dossier JavaScript zonder enige potentiële invloed op de lay-out en de presentatie van uw Web-pagina kan worden ingebed aangezien het met het gebruik van een ingebed beeld kan resulteren.) Om de informatie nauwkeurig te vangen die binnen het ingebedde voorwerp wordt overgegaan, stelt Adobe ook voor dat een gemeenschappelijke naam wordt gebruikt. Voor noemende doeleinden, verwijst Adobe naar dit voorwerp zoals [!DNL zig.js]. Het [!DNL zig.js] dossier zou binnen de aangewezen folder op een Webserver moeten worden gecreeerd waarop geïnstalleerd [!DNL Sensor] is. Dit dossier moet bestaan zodat het verzoek geen 404 foutencode terugkeert. De inhoud van het dossier zelf is niet belangrijk. U zou een leeg dossier moeten gebruiken genoemd [!DNL zig.js] om de hoeveelheid netwerkverkeer te minimaliseren dat als gevolg van het verzoek wordt opgelopen.
+De implementatie van een ingesloten object om aanvullende metingen te verzamelen, heeft minimale invloed op de algehele prestaties van de site. Adobe stelt voor dat u een JavaScript-bestand insluit als het object dat wordt gebruikt om de uitgebreide kenmerken te verzamelen. (Een JavaScript-bestand kan worden ingesloten zonder dat dit invloed kan hebben op de lay-out en presentatie van uw webpagina. Dit kan gebeuren als een ingesloten afbeelding wordt gebruikt.) Om de informatie nauwkeurig te vangen die binnen het ingebedde voorwerp wordt overgegaan, stelt Adobe ook voor dat een gemeenschappelijke naam wordt gebruikt. Voor naamgevingsdoeleinden verwijst Adobe naar dit object als [!DNL zig.js]. Het [!DNL zig.js]-bestand moet worden gemaakt in de juiste map op een webserver waarop [!DNL Sensor] is geïnstalleerd. Dit bestand moet bestaan, zodat het verzoek geen 404-foutcode retourneert. De inhoud van het bestand zelf is niet belangrijk. Gebruik een leeg bestand met de naam [!DNL zig.js] om de hoeveelheid netwerkverkeer die het gevolg is van het verzoek tot een minimum te beperken.
 
-Om een bruikbare naam voor de pagina [!DNL Sensor] te verzamelen die eigenlijk werd gediend, moeten een paar lijnen van code JavaScript aan de dynamische pagina&#39;s worden toegevoegd die u wilt volgen of waaraan u een unieke paginanaam wilt toevoegen. Deze code bedt een fragment van JavaScript in de pagina in, die veroorzaakt dat een tertiair ingebed objecten verzoek om aan de Webserver wordt gemaakt aangezien de pagina laadt. Dat verzoek verzendt details over de specifieke pagina die terug naar de Webserver werd gediend. De naam van de pagina die eigenlijk werd gediend wordt gedragen terug naar de Webserver als variabele in het vraagkoord van het ingebedde objecten (in dit geval JavaScript) verzoek.
+[!DNL Sensor] om een bruikbare naam voor de pagina te verzamelen die eigenlijk werd gediend, moeten een paar lijnen code van JavaScript aan de dynamische pagina&#39;s worden toegevoegd die u wilt volgen of waaraan u een unieke paginanaam wilt toevoegen. Deze code sluit een JavaScript-fragment in de pagina in. Hierdoor wordt een tertiair verzoek om een ingesloten object naar de webserver verzonden terwijl de pagina wordt geladen. Dat verzoek verzendt details over de specifieke pagina die aan de Webserver werd gediend. De naam van de pagina die daadwerkelijk is aangeboden, wordt als een variabele in de queryreeks van het ingesloten objectverzoek (in dit geval JavaScript) naar de webserver geretourneerd.
 
-In het algemeen, zou het objecten verzoek ingebed in elke dergelijke HTML- pagina als het volgende moeten kijken:
+Over het algemeen zou de objecten aanvraag ingebed in elk dergelijk HTML- pagina als het volgende moeten kijken:
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -39,11 +40,10 @@ v["_pn"] = "Application Form";
 <!-- END REFERENCE PAGE TAG-->
 ```
 
-[!DNL Log=1] zorgt ervoor dat [!DNL Sensor] het verzoek ondanks de [!DNL Sensor] inhoudstype het filtreren regels aan het tegenovergestelde, zoals het filtreren uit JavaScript en beeldverzoeken registreert alvorens zij worden opgeslagen. De opgegeven v_pn variabele identificeert de naam van de werkelijke pagina-inhoud die wordt gediend, zodat de naam van de pagina die de bezoeker daadwerkelijk heeft bekeken, [!DNL Site] bekend is. De v_pn waarde zou manueel of door andere manuscript of toepassingscode kunnen worden gevestigd.
+[!DNL Log=1] zorgt ervoor dat het verzoek ondanks de filterregels voor het  [!DNL Sensor] inhoudstype wordt  [!DNL Sensor] geregistreerd in het tegendeel, zoals het filtreren uit JavaScript en beeldverzoeken alvorens zij worden opgeslagen. De gedeclareerde v_pn-variabele geeft de naam aan van de pagina-inhoud die wordt weergegeven, zodat [!DNL Site] de naam kent van de pagina die de bezoeker daadwerkelijk heeft weergegeven. De waarde v_pn kan handmatig of met andere script- of toepassingscode worden ingesteld.
 
-Nadat de waarde wordt verzameld, kunt u de server van de gegevenswerkbank vormen om de inhoud van de variabele van het vraagkoord (name=value paar, bijvoorbeeld, v_pn=Application Vorm) te gebruiken die aan [!DNL zag.gif] URI (bijvoorbeeld, [!DNL http://www.mysite.com/pageserved.asp?v_pn=Application%20Form]) wordt toegevoegd, als verhoging van [!DNL zag.gif] URI. Naast de basislijnmetingen die met elk HTTP- verzoek worden verworven, zou een uitgebreide meting met dit verzoek worden verworven.
+Nadat de waarde is verzameld, kunt u de gegevenswerkbankserver zodanig configureren dat de inhoud van de querytekenreeksvariabele (name=value pair, bijvoorbeeld v_pn=Application Form) die aan de [!DNL zag.gif] URI (bijvoorbeeld [!DNL http://www.mysite.com/pageserved.asp?v_pn=Application%20Form]) is toegevoegd, wordt gebruikt als een augmentatie van de [!DNL zag.gif] URI. Naast de basislijnmetingen die bij elke HTTP-aanvraag zijn verkregen, zou met deze aanvraag een uitgebreide meting worden verkregen.
 
-| Verzamelde gegevens | Toelichting | Voorbeeld |
+| Gegevens verzameld | Toelichting | Voorbeeld |
 |---|---|---|
-| v_pn= | Waarde verbonden aan de v_pn variabele van het vraagkoord | v_pn=Application Form |
-
+| v_pn= | Waarde gekoppeld aan de variabele v_pn-queryreeks | v_pn=Toepassingsformulier |
