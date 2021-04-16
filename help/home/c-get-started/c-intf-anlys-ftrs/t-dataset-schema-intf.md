@@ -1,44 +1,44 @@
 ---
-description: Stappen om de standaardvisualisatie te veranderen.
-solution: Analytics
+description: Stappen om de standaardvisualisatie te wijzigen.
 title: Vorm de Interface van het Schema van de Dataset
-topic: Data workbench
 uuid: 953909e8-3382-43cf-98c0-d4785c6d1dda
+exl-id: 0227663f-4789-4780-b753-d0deb35f6144
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 0%
 
 ---
 
-
 # Vorm de Interface van het Schema van de Dataset{#configure-the-dataset-schema-interface}
 
-Stappen om de standaardvisualisatie te veranderen.
+Stappen om de standaardvisualisatie te wijzigen.
 
-U kunt controleren welk type van visualisatievertoningen wanneer u een afmetingsnaam in a klikt [!DNL Dataset Schema Interface] door dossiers aan de Profielen toe te voegen \*profielnaam*\Context\Dimension Legend folder of the Data Workbench server installation folder. Het [!DNL Default.1d] dossier in deze omslag controleert het standaard visualisatietype voor alle afmetingen. Door een *afmetingsnaam*.1d- dossier (zoals [!DNL Hour.1d]) aan deze omslag toe te voegen, kunt u de standaardvisualisatie voor die bepaalde afmeting controleren.
+U kunt bepalen welk type visualisatie wordt weergegeven wanneer u op een dimensienaam in een [!DNL Dataset Schema Interface] klikt door bestanden toe te voegen aan de profielnaam \*\Context\Dimension Legend folder of the Data Workbench server installation folder. Het [!DNL Default.1d] dossier in deze omslag controleert het standaardvisualisatietype voor alle dimensies. Door een *dimensienaam*.1d- dossier (zoals [!DNL Hour.1d]) aan deze omslag toe te voegen, kunt u de standaardvisualisatie voor die bepaalde afmeting controleren.
 
-Voor meer informatie over [!DNL Dataset Schema Interfaces], zie [de Interface](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175)van het Schema van de Dataset.
+Voor meer informatie over [!DNL Dataset Schema Interfaces], zie [De Interface van het Schema van de Dataset](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175).
 
-**Om de standaardvisualisatie te veranderen**
+**De standaardvisualisatie wijzigen**
 
-1. In om het even welke werkruimte, creeer een visualisatie die de gegevens bevat die u in de nieuwe standaardvisualisatie wilt verschijnen.
+1. Maak in elke werkruimte een visualisatie met de gegevens die u wilt weergeven in de nieuwe standaardvisualisatie.
 
-   Bijvoorbeeld, als u de afmeting in een bargrafiek wilt tonen, creeer een visualisatie die van de bargrafiek de gewenste metrisch en afmeting toont.
+   Als u bijvoorbeeld wilt dat de afmetingen in een staafgrafiek worden weergegeven, maakt u een staafgrafiek die de gewenste metrisch en afmeting weergeeft.
 
-1. Klik de hoogste grens van het callout venster met de rechtermuisknop aan en klik **[!UICONTROL Save]**.
-1. Klik in het [!DNL Save] venster op ![](assets/btn_folder_up.png), dubbelklik **[!UICONTROL Context]** en dubbelklik op **[!UICONTROL Dimension Legend]**.
-1. Typ in het [!DNL File Name] veld de naam van de afmeting.
+1. Klik met de rechtermuisknop op de bovenrand van het bijschriftvenster en klik op **[!UICONTROL Save]**.
+1. Klik in het venster [!DNL Save] op ![](assets/btn_folder_up.png), dubbelklik **[!UICONTROL Context]** en dubbelklik vervolgens op **[!UICONTROL Dimension Legend]**.
+1. Typ in het veld [!DNL File Name] de naam van de dimensie.
 
-   De naam van het [!DNL .1d] dossier moet de naam van de afmeting precies aanpassen. Bijvoorbeeld, [!DNL Hour.1d].
+   De naam van het [!DNL .1d] bestand moet exact overeenkomen met de naam van de dimensie. Bijvoorbeeld, [!DNL Hour.1d].
 
-1. Verander de dossieruitbreiding in &quot;1d&quot;en klik **[!UICONTROL Save]**.
+1. Wijzig de bestandsextensie in &quot;1d&quot; en klik op **[!UICONTROL Save]**.
 
-   Het bestand wordt opgeslagen in de gebruikersnaam\*werkprofielnaam*\Context\Dimension Legend folder.
+   Het bestand wordt opgeslagen op de gebruikersnaam\*werkprofielnaam*\Context\Dimension Legend folder.
 
-   De volgende tijd dat u die afmeting van in [!DNL Dataset Schema Interface]een klikt, de visualisatie die u vertoningen specificeerde.
+   De volgende keer dat u die afmeting van in [!DNL Dataset Schema Interface] klikt, toont de visualisatie die u specificeerde vertoningen.
 
-1. (Facultatief) om deze verandering aan alle gebruikers van het werkprofiel beschikbaar te stellen:
+1. (Optioneel) Deze wijziging beschikbaar stellen voor alle gebruikers van het werkprofiel:
 
-   1. In [!DNL Profile Manager], klik **[!UICONTROL Context]**, dan klik **[!UICONTROL Dimension Legend]**.
+   1. Klik in [!DNL Profile Manager] op **[!UICONTROL Context]** en vervolgens op **[!UICONTROL Dimension Legend]**.
 
-   1. Klik met de rechtermuisknop op het vinkje naast de bestandsnaam van de nieuwe callout in de [!DNL User] kolom en klik op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
-
+   1. Klik met de rechtermuisknop op het vinkje naast de bestandsnaam van de nieuwe callout in de kolom [!DNL User] en klik **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
