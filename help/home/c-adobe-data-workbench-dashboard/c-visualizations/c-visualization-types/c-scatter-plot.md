@@ -1,20 +1,20 @@
 ---
-description: ongeldig
-solution: Analytics
-title: Scatter Plot
-topic: Data workbench
+description: Spreidingspad
+title: Spreidingspad
 uuid: a07efa89-0d1f-4ab9-96fa-d1239c82f16c
+exl-id: 536cc0aa-4f9e-40d0-88a6-a874255de4f0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '138'
+ht-degree: 0%
 
 ---
 
+# Spreidingsperceel{#scatter-plot}
 
-# Scatter Plot{#scatter-plot}
+Met perceelvisualisaties voor verstrooiing kunt u twee metriek visualiseren tegen een dimensie, waarbij elk gegevenselement wordt voorgesteld als een punt op een x-y-as. Met verstrooiingspunten kunnen maximaal 200 unieke gegevenselementen tegelijk op het diagram worden weergegeven. De stappen van de eerste metrische waarde worden gelabeld langs de y-as, terwijl de stappen van de tweede metrische waarde worden gelabeld langs de x-as. Als u de muis op een punt in het lijndiagram plaatst, wordt de exacte waarde op dat punt weergegeven.
 
-De het grafiekvisualisaties van de vangstof staan u toe om twee metriek tegen een afmeting te visualiseren, met elk gegevenselement dat als punt op een x-y as wordt vertegenwoordigd. De schakelaarpercelen staan tot 200 unieke gegevenselementen toe om op de grafiek meteen worden getoond. De eerste metrische toename wordt geëtiketteerd langs de y-as, terwijl de tweede metrische toename langs de x-as wordt geëtiketteerd. Het plaatsen van de muis over een punt in de lijngrafiek zal de nauwkeurige waarde op dat punt tonen.
-
-De selecties kunnen in verspreidingspercelen worden gemaakt door een bepaald punt te klikken. Als u op de **[!UICONTROL Alt]** toets drukt en deze ingedrukt houdt, blijven selecties behouden wanneer u op extra items klikt. Het drukken van en het houden van de **[!UICONTROL Alt]** sleutel wanneer het klikken zal ook de waarde van een selectie van een knevel voorzien. Dit is nuttig om slechts één selectie uit een groep reeds geselecteerde punten te verwijderen.
+U kunt selecties aanbrengen in spreidingsgebieden door op een bepaald punt te klikken. Als u **[!UICONTROL Alt]** ingedrukt houdt, blijven de selecties behouden wanneer u op andere items klikt. Als u **[!UICONTROL Alt]** ingedrukt houdt wanneer u klikt, wordt de waarde van een selectie ook in- of uitgeschakeld. Dit is handig als u slechts één selectie uit een groep reeds geselecteerde items wilt verwijderen.
 
 ![](assets/scatter_plot.png)
-
