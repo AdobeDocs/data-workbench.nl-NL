@@ -1,20 +1,21 @@
 ---
-description: De markering van de Pagina van de Verwijzing bestaat uit een Manuscript van de Uitvoering van de Markering van de Pagina dat op een Webserver verblijft, en wanneer geroepen resultaten in de inzameling van alle cliënt-zijgegevens voor de pagina die door de plaatsbezoeker wordt gevraagd.
-solution: Analytics
-title: Het uitgeven van het Manuscript van de Uitvoering van de Markering van de Verwijzing Pagina
-topic: Data workbench
+description: De referentiepagina-tag bestaat uit een script voor de uitvoering van een paginalabel dat zich op een webserver bevindt. Wanneer deze tag wordt aangeroepen, resulteert dit in de verzameling van alle client-side gegevens voor de pagina die door de sitebezoeker is aangevraagd.
+title: Het script voor de uitvoering van de referentiepagina-tag bewerken
 uuid: 0db00b89-e420-423d-9b88-8b724baa828f
+exl-id: bc922b59-716e-4e92-84b5-59a52620df03
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 1%
 
 ---
 
+# Het script voor de uitvoering van de referentiepagina-tag bewerken{#editing-the-reference-page-tag-execution-script}
 
-# Het uitgeven van het Manuscript van de Uitvoering van de Markering van de Verwijzing Pagina{#editing-the-reference-page-tag-execution-script}
+De referentiepagina-tag bestaat uit een script voor de uitvoering van een paginalabel dat zich op een webserver bevindt. Wanneer deze tag wordt aangeroepen, resulteert dit in de verzameling van alle client-side gegevens voor de pagina die door de sitebezoeker is aangevraagd.
 
-De markering van de Pagina van de Verwijzing bestaat uit een Manuscript van de Uitvoering van de Markering van de Pagina dat op een Webserver verblijft, en wanneer geroepen resultaten in de inzameling van alle cliënt-zijgegevens voor de pagina die door de plaatsbezoeker wordt gevraagd.
-
-U kunt wijzigen [!DNL Reference Page Tag Execution Script] om extra informatie te verzamelen die tijdens vereisten kan worden geïdentificeerd verzamelend vergaderingen met het team van de Diensten van het Raadplegen van Adobe. De [!DNL Reference Page Tag Execution Script] grootte is vrij klein om grote downloadtoevoegingen aan uw Web-pagina&#39;s te vermijden.
+U kunt [!DNL Reference Page Tag Execution Script] wijzigen om extra informatie te verzamelen die tijdens vereisten kan worden geïdentificeerd het verzamelen van vergaderingen met het team van de Diensten van de Raadpleging van Adobe. De grootte van [!DNL Reference Page Tag Execution Script] is relatief klein om grote downloadtoevoegingen aan uw webpagina&#39;s te voorkomen.
 
 De volgende [!DNL Reference Page Tag Execution Script] code wordt verstrekt aan u in een dossier genoemd [!DNL zig.js]:
 
@@ -60,19 +61,19 @@ document.write(ct,cd,cu,vo,ce);
 //END REFERENCE PAGE TAG 
 ```
 
-Voer de volgende stappen uit om het verzamelen van gegevens door het gebruik van de [!DNL Reference Page Tag]gegevensbank te vergemakkelijken:
+Voer de volgende stappen uit om het verzamelen van gegevens te vergemakkelijken via de [!DNL Reference Page Tag]:
 
-1. Creeer of plaats 1 pixel door 1 pixelbeelddossier genoemd in een folder huidig op uw Webserver. [!DNL zag.gif]
-1. Wijzig de cd variabele om het aangewezen domein van uw website of Adobe te verwijzen beheerde de dienstdomein waarvan het [!DNL zag.gif] dossier van verwijzingen wordt voorzien. De verwijzing naar het dossier wordt gecreeerd door de uitvoering van de [!DNL zig.js] dossierfuncties. Bijvoorbeeld:
+1. Maak of plaats het afbeeldingsbestand van 1 pixel bij 1 pixel met de naam [!DNL zag.gif] in een map op uw webserver.
+1. Wijzig de cd-variabele om te verwijzen naar het juiste domein van uw website of Adobe beheerde servicedomein waarnaar wordt verwezen in het [!DNL zag.gif]-bestand. De verwijzing naar het bestand wordt gemaakt door de uitvoering van de bestandsfuncties [!DNL zig.js]. Bijvoorbeeld:
 
    ```
    //www.mysite.com
    ```
 
-1. Wijzig de cu variabele om de aangewezen weg aan de plaats van het [!DNL zag.gif] dossier van verwijzingen te voorzien. Bijvoorbeeld
+1. Wijzig de cu-variabele om te verwijzen naar het juiste pad naar de locatie van het [!DNL zag.gif]-bestand. Bijvoorbeeld
 
    ```
    /scripts
    ```
 
-1. Verzeker aangewezen geheim voorgeheugen-controle de kopballen voor de [!DNL zag.gif] en [!DNL zig.js] dossiers worden gevestigd.
+1. Zorg ervoor dat de juiste cachebeheerkoppen zijn ingesteld voor de [!DNL zag.gif]- en [!DNL zig.js]-bestanden.
