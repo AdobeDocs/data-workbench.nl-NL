@@ -1,36 +1,36 @@
 ---
-description: Het selecteren van een knoop door het te klikken verandert de andere knopen zodat u de pijlen aan en van de benadrukte knoop gemakkelijker kunt zien.
-solution: Analytics
-title: Selecteer een knooppunt
-topic: Data workbench
+description: Als u een knooppunt selecteert door erop te klikken, worden de andere knooppunten gedimd, zodat u de pijlen van en naar het gemarkeerde knooppunt gemakkelijker kunt zien.
+title: Een knooppunt selecteren
 uuid: d63b39f6-edec-4b4c-b36b-f6e6881d3419
+exl-id: a483547f-e338-4d13-8a0b-6cb7971b7790
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 0%
 
 ---
 
-
 # Selecteer een knooppunt{#select-a-node}
 
-Het selecteren van een knoop door het te klikken verandert de andere knopen zodat u de pijlen aan en van de benadrukte knoop gemakkelijker kunt zien.
+Als u een knooppunt selecteert door erop te klikken, worden de andere knooppunten gedimd, zodat u de pijlen van en naar het gemarkeerde knooppunt gemakkelijker kunt zien.
 
-Het laat u ook toe om de geselecteerde knopen als groep binnen de visualisatie te bewegen.
+U kunt hiermee ook de geselecteerde knooppunten als een groep verplaatsen binnen de visualisatie.
 
 >[!NOTE]
 >
->Het selecteren van een knoop door het te klikken filtert op geen enkele manier de gegevens.
+>Als u een knooppunt selecteert door erop te klikken, worden de gegevens op geen enkele manier gefilterd.
 
-**Om één enkele knoop te selecteren**
+**Eén knooppunt selecteren**
 
-* Klik de knoop om het te selecteren en de pijlen te benadrukken richtend aan en vanaf de knoop.
+* Klik op het knooppunt om het te selecteren en markeer de pijlen die naar en van het knooppunt wijzen.
 
    ![](assets/vis_2DProcessMap_SelectNode.png)
 
-**Om een andere knoop of een groep knopen aan uw selectie toe te voegen**
+**Een ander knooppunt of een groep knooppunten toevoegen aan uw selectie**
 
-* Ctrl+click een knoop of Ctrl+drag over veelvoudige knopen.
+* Houd Ctrl ingedrukt en klik op een knooppunt of houd Ctrl ingedrukt en sleep over meerdere knooppunten.
 
-**Om een knoop of een groep knopen uit uw selectie te verwijderen**
+**Een knooppunt of groep knooppunten uit uw selectie verwijderen**
 
-* Shift+click een knoop of Shift+drag over verscheidene knopen.
-
+* Houd Shift ingedrukt en klik op een knooppunt of houd Shift ingedrukt en sleep over verschillende knooppunten.
