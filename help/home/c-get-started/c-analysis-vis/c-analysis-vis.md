@@ -1,23 +1,24 @@
 ---
-description: Informatie over de talrijke analysevisualisaties beschikbaar in de Werkbank van Gegevens.
-solution: Analytics
-title: Analysevisualisaties
-topic: Data workbench
+description: Informatie over de talrijke analytische visualisaties beschikbaar in de Data Workbench.
+title: Analyse-visualisaties
 uuid: db003afa-b971-4510-b762-3ef9b29e0910
+exl-id: a455d3cc-8133-4a08-9656-91332765c6c3
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 0%
 
 ---
 
+# Analyse van visualisaties{#analysis-visualizations}
 
-# Analysevisualisaties{#analysis-visualizations}
+Informatie over de talrijke analytische visualisaties beschikbaar in de Data Workbench.
 
-Informatie over de talrijke analysevisualisaties beschikbaar in de Werkbank van Gegevens.
+* U kunt elke visualisatie openen door met de rechtermuisknop in een werkruimte te klikken en de gewenste menuoptie te selecteren, of door te klikken op **Ctrl** + **n**.
 
-* U kunt om het even welke visualisatie openen door binnen een werkruimte met de rechtermuisknop aan te klikken en de gewenste menuoptie te selecteren, of door **CTRL** + **n** te klikken.
-
-* De visualisaties kunnen niet als werkruimten worden ingevoerd. Wanneer u in de werktop met de rechtermuisknop klikt en selecteert **[!UICONTROL Import]**, kunt u een bestaande werkruimte invoeren, maar niet een visualisatie die buiten de werkruimte verblijft.
+* Visualisaties kunnen niet worden geïmporteerd als werkruimten. Wanneer u met de rechtermuisknop op de werkbalk klikt en **[!UICONTROL Import]** selecteert, kunt u een bestaande werkruimte importeren, maar geen visualisatie die zich buiten de werkruimte bevindt.
 
    ![](assets/import_workspace.png)
 
-   Als u probeert om een visualisatie in te voeren, zult u een &quot;geen geldige werkruimte&quot;fout ontvangen.
+   Als u probeert een visualisatie te importeren, wordt de fout &#39;&#39;Geen geldige werkruimte&#39;&#39; weergegeven.
