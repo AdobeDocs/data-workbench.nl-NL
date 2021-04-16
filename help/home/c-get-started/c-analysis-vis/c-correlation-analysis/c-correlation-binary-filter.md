@@ -1,44 +1,45 @@
 ---
-description: Een Binaire Filter in de Matrijs van de Correlatie laat u waarden voor één of allebei van de gecorreleerde metriek beperken om de vergelijking beter te concentreren.
-solution: Analytics
-title: Binaire Filter in de Matrijs van de Correlatie
-topic: Data workbench
+description: Met een binair filter in de correlatiematrix kunt u de waarden voor een of beide gecorreleerde metriek beperken om de vergelijking beter te kunnen focussen.
+title: Binair filter in de matrix Correlatie
 uuid: 61c3ca37-cfa2-49dc-87de-4e9a44647eca
+exl-id: e693fc72-5697-4c47-a498-e0d4d875c688
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
+# Binair filter in de Correlatie Matrix{#binary-filter-in-the-correlation-matrix}
 
-# Binaire Filter in de Matrijs van de Correlatie{#binary-filter-in-the-correlation-matrix}
+Met een binair filter in de correlatiematrix kunt u de waarden voor een of beide gecorreleerde metriek beperken om de vergelijking beter te kunnen focussen.
 
-Een Binaire Filter in de Matrijs van de Correlatie laat u waarden voor één of allebei van de gecorreleerde metriek beperken om de vergelijking beter te concentreren.
+Een binair filter instellen op een correlatiematrix:
 
-Om een binaire filter op een Matrijs van de Correlatie te plaatsen:
-
-1. Van de Matrijs van de Correlatie, klik een metrische naam met de rechtermuisknop aan.
-1. Selecteer **Metrische details** bewerken.
+1. Klik met de rechtermuisknop op een metrische naam in de Matrix Correlatie.
+1. Selecteer **Metrische details bewerken**.
 
    ![](assets/correlation_matrix_binary_filter.png)
 
-   Het **[!UICONTROL Edit Correlation Metric Details]** venster wordt geopend.
+   Het venster **[!UICONTROL Edit Correlation Metric Details]** wordt geopend.
 
    ![](assets/correlation_matrix_metric_details.png)
 
-1. Opstelling een Binair Filter.
+1. Stel een binair filter in.
 
-   Klik eerst op de **[!UICONTROL Inactive]** instelling. Het zal van een knevel voorzien om de filter te plaatsen zoals **[!UICONTROL Active]** en de gebieden van de **Vergelijking** en van de **Waarde** te tonen.
+   Klik eerst op de instelling **[!UICONTROL Inactive]**. Hiermee wordt geschakeld om het filter in te stellen als **[!UICONTROL Active]** en de velden **Comparison** en **Value** weer te geven.
 
-   Dan, selecteer een **[!UICONTROL Comparison]** exploitant en plaats zijn **[!UICONTROL Value]** aan opstelling een filter voor geselecteerde metrisch.
+   Selecteer vervolgens een **[!UICONTROL Comparison]**-operator en stel **[!UICONTROL Value]** ervan in om een filter voor de geselecteerde metrische waarde in te stellen.
 
 >[!IMPORTANT]
 >
->De Binaire Filter voor Werkbank 6.2 van Gegevens is bijgewerkt met nieuwe eigenschappen, die u vereisen om het even welke correlatiematrijs met een binaire filter te herbouwen die in vorige versies wordt gebouwd.
+>Het Binaire Filter voor Data Workbench 6.2 is bijgewerkt met nieuwe eigenschappen, die u vereisen om het even welke correlatiematrix met een binair filter te herbouwen dat in vorige versies wordt gebouwd.
 
-## Afmetingen toevoegen {#section-f19f4e0368ca488e92d1e28bcc24417c}
+## Dimension-elementen toevoegen {#section-f19f4e0368ca488e92d1e28bcc24417c}
 
-U kunt een afmetingselement ook toevoegen om metrisch te beperken. Metrisch kan slechts één element hebben verbonden aan het.
+U kunt ook een dimensie-element toevoegen om metrisch te beperken. Aan een metrische waarde kan slechts één element zijn gekoppeld.
 
 ![](assets/correlation_matrix_element.png)
 
-Klik in de werkruimte met de rechtermuisknop aan en selecteer **Lijst**. Open een afmeting met zijn elementen en sleep aan het **[!UICONTROL Element]** plaatsen in het Edit venster van de Details van de Correlatie Metrische, of daling op metrisch in de Matrijs van de Correlatie.
+Klik met de rechtermuisknop in de werkruimte en selecteer **Tabel**. Open een dimensie met de elementen en sleep naar de **[!UICONTROL Element]**-instelling in het venster Metrische gegevens van correlatie bewerken of zet een metrische waarde neer in de matrix Correlatie.
