@@ -1,23 +1,24 @@
 ---
-description: Stappen om rapporten per e-mail opnieuw te versturen.
-solution: Analytics
-title: Rapporten per e-mail verzenden
-topic: Data workbench
+description: Stappen om rapporten via e-mail opnieuw te verzenden.
+title: Rapporten terugsturen via e-mail
 uuid: 384dfa1f-6a72-4fef-886e-bf2290f5993f
+exl-id: eb37fd3e-6e7b-4672-bcf0-fffa9f10997d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 0%
 
 ---
 
+# Rapporten via e-mail verzenden{#resending-reports-by-email}
 
-# Rapporten per e-mail verzenden{#resending-reports-by-email}
+Stappen om rapporten via e-mail opnieuw te verzenden.
 
-Stappen om rapporten per e-mail opnieuw te versturen.
+Als de parameter **[!UICONTROL Allow Report Regeneration]** in het [!DNL Report.cfg] dossier aan [!DNL True] wordt geplaatst, wanneer u veranderingen in een [!DNL Report.cfg] dossier aanbrengt en dat dossier terug naar de server opslaat, produceert de Server van het Rapport automatisch de rapporten in die reeks. De rapporten worden niet opnieuw verzonden via e-mail.
 
-Als de **[!UICONTROL Allow Report Regeneration]** parameter in het [!DNL Report.cfg] dossier aan wordt geplaatst [!DNL True], wanneer u veranderingen in een [!DNL Report.cfg] dossier aanbrengt en dat dossier terug naar de server opslaat, produceert de Server van het Rapport automatisch de rapporten in die reeks opnieuw. De rapporten worden niet via e-mail opnieuw verzonden.
-
-1. Voor het [!DNL Reports] lusje, selecteer subfolder (lusje of drop-down subdirectory) voor de rapportreeks die u wilt opnieuw beëindigen.
+1. Selecteer op het tabblad [!DNL Reports] de submap (tab of vervolgkeuzemenu) voor de rapportset die u opnieuw wilt verzenden.
 1. Klik op **[!UICONTROL Report.cfg]**. De parameters van [!DNL Report.cfg] voor dit rapport plaatsen vertoning.
-1. Verander de **[!UICONTROL Start Date]** parameter in de toekomstige tijd waarin u rapporten wilt zijn aanwezig.
-1. Sparen het dossier door **[!UICONTROL Report.cfg (modified)]** bij de bovenkant van de parameters met de rechtermuisknop aan te klikken en **[!UICONTROL Save to]***&lt; **[!UICONTROL server location]**>*te klikken.
-De rapporten in deze reeks regenereren en worden doorgestuurd per e-mail naar de gespecificeerde ontvangers.
+1. Verander de **[!UICONTROL Start Date]** parameter in de toekomstige tijd waarbij u rapporten wilt opnieuw zijn.
+1. Sla het bestand op door met de rechtermuisknop op **[!UICONTROL Report.cfg (modified)]** boven aan de parameters te klikken en op **[!UICONTROL Save to]***&lt; **[!UICONTROL server location]***te klikken.
+De rapporten in deze set worden opnieuw gegenereerd en worden via e-mail doorgestuurd naar de opgegeven ontvangers.
