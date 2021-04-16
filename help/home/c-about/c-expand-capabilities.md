@@ -1,19 +1,20 @@
 ---
-description: De werkbank van gegevens laat u toe om nieuwe metriek, filters, en afmetingen tot stand te brengen om de informatie uit te breiden beschikbaar door een toepassing of de definities in de toepassing gemakkelijk aan te passen om aan uw behoeften te voldoen. De open-end aard van metriek, afmetingen, en filters laat u toe om meer vragen te beantwoorden aangezien u nieuwe metriek en afmetingen toevoegt.
-solution: Analytics
-title: Uitbreidende Metriek, Afmetingen, en Filters
-topic: Data workbench
+description: Met de gegevenswerkbank kunt u nieuwe metriek, filters en dimensies maken om de informatie die beschikbaar is via een toepassing uit te breiden of om de definities in de toepassing eenvoudig aan te passen aan uw wensen. Door het open karakter van metriek, dimensies, en filters kunt u meer vragen beantwoorden aangezien u nieuwe metriek en afmetingen toevoegt.
+title: Metriek, Dimension en filters uitbreiden
 uuid: eaec0731-1916-4063-9fda-3a92ee325024
+exl-id: 5a7719a3-ba2e-4361-87e0-4d0df23196df
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
+# Metriek, Dimension en filters uitbreiden{#expanding-metrics-dimensions-and-filters}
 
-# Uitbreidende Metriek, Afmetingen, en Filters{#expanding-metrics-dimensions-and-filters}
+Met de gegevenswerkbank kunt u nieuwe metriek, filters en dimensies maken om de informatie die beschikbaar is via een toepassing uit te breiden of om de definities in de toepassing eenvoudig aan te passen aan uw wensen. Door het open karakter van metriek, dimensies, en filters kunt u meer vragen beantwoorden aangezien u nieuwe metriek en afmetingen toevoegt.
 
-De werkbank van gegevens laat u toe om nieuwe metriek, filters, en afmetingen tot stand te brengen om de informatie uit te breiden beschikbaar door een toepassing of de definities in de toepassing gemakkelijk aan te passen om aan uw behoeften te voldoen. De open-end aard van metriek, afmetingen, en filters laat u toe om meer vragen te beantwoorden aangezien u nieuwe metriek en afmetingen toevoegt.
-
-De nieuw bepaalde metriek kan over bestaande afmetingen worden geëvalueerd, en, zo ook, kunnen de bestaande metriek over onlangs bepaalde afmetingen worden geëvalueerd. Nieuw bepaalde metriek kan ook als input in andere metriek worden gebruikt. Omdat de metriek aan de cliëntkant (namelijk hun bouw vereist geen datasetverwerking) worden gebouwd, hebben zij een minimaal effect op systeemprestaties. U kunt uw analysemogelijkheden verhogen door vele niveaus van metriek te construeren.
+Pas gedefinieerde metriek kan worden geëvalueerd op basis van bestaande afmetingen en op dezelfde manier kunnen bestaande metriek worden geëvalueerd op basis van nieuw gedefinieerde afmetingen. Nieuw gedefinieerde metriek kan ook worden gebruikt als invoer in andere metriek. Omdat de metriek op de cliëntkant (namelijk hun bouw vereist geen datasetverwerking) worden gebouwd, hebben zij een minimale invloed op systeemprestaties. U kunt uw analysemogelijkheden verhogen door vele niveaus van metriek te construeren.
 
 Voor meer informatie over de syntaxis die wordt gebruikt om metriek, afmetingen, en filters te manipuleren, zie [taalsyntaxis](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-qry-lang-syntx.html).
