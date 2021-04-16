@@ -1,29 +1,29 @@
 ---
 description: Informatie over het openen van visualisaties.
-solution: Analytics
-title: Openende visualisaties
-topic: Data workbench
+title: Visualisaties openen
 uuid: 106c6899-8f93-4221-898d-c7cde5ea19a8
+exl-id: 3b475429-ca2d-4bca-b1ac-2107ce200dcd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 0%
 
 ---
-
 
 # Openende visualisaties{#opening-visualizations}
 
 Informatie over het openen van visualisaties.
 
-Omdat uw implementatie van de Werkbank van Gegevens volledig kan worden aangepast, kan het van wat in deze gids wordt gedocumenteerd verschillen. De nauwkeurige wegen aan elke visualisatie worden niet verstrekt in deze gids.
+Aangezien uw implementatie van Data Workbench volledig kan worden aangepast, kan deze afwijken van wat in deze handleiding wordt beschreven. Deze handleiding bevat geen exacte paden naar elke visualisatie.
 
-Alle visualisaties kunnen worden geopend door binnen een werkruimte met de rechtermuisknop te klikken en de gewenste menuoptie te selecteren.
+Alle visualisaties kunnen worden geopend door met de rechtermuisknop in een werkruimte te klikken en de gewenste menuoptie te selecteren.
 
-Na het openen van een nieuwe werkruimte, kunt u moeten klikken **toevoegt** > **tijdelijk opent.**
+Nadat u een nieuwe werkruimte hebt geopend, moet u mogelijk **Add** > **Tijdelijk ontgrendelen.**
 
 >[!NOTE]
 >
->De visualisaties kunnen niet als werkruimten worden ingevoerd. Wanneer u in de werktop met de rechtermuisknop klikt en selecteert **[!UICONTROL Import]**, kunt u een bestaande werkruimte invoeren, maar niet een visualisatie die buiten de werkruimte verblijft.
+>Visualisaties kunnen niet worden geïmporteerd als werkruimten. Wanneer u met de rechtermuisknop op de werkbalk klikt en **[!UICONTROL Import]** selecteert, kunt u een bestaande werkruimte importeren, maar geen visualisatie die zich buiten de werkruimte bevindt.
 >
 >![](assets/import_workspace.png)>
->Als u probeert om een visualisatie in te voeren, zult u een &quot;geen geldige werkruimte&quot;fout ontvangen.
-
+>Als u probeert een visualisatie te importeren, wordt de fout &#39;&#39;Geen geldige werkruimte&#39;&#39; weergegeven.
