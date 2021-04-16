@@ -1,18 +1,19 @@
 ---
-description: De steekproef van de code van de index van het Rapport.
-solution: Analytics
+description: Codevoorbeeld van de rapportindex.
 title: Index voorbeeldrapport
-topic: Data workbench
 uuid: 38711240-8434-4f8f-81da-6c223064613b
+exl-id: 33a038c0-c3d1-4458-a2dd-8ec5155396b5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '18'
+ht-degree: 0%
 
 ---
 
+# Voorbeeld van rapportindex{#sample-report-index}
 
-# Index voorbeeldrapport{#sample-report-index}
-
-De steekproef van de code van de index van het Rapport.
+Codevoorbeeld van de rapportindex.
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
@@ -109,4 +110,3 @@ De steekproef van de code van de index van het Rapport.
   </REPORT> 
 </REPORTS>
 ```
-
