@@ -1,16 +1,16 @@
 ---
-description: U kunt de interface van de Werkbank van Gegevens aanpassen om aan uw behoeften te voldoen en bepaalde eigenschappen te vormen zodat u hen in uw analyses kunt gebruiken. Deze secties beschrijven hoe te om aanpassingen en configuraties uit te voeren.
-solution: Analytics
-title: Interface en analyse
-topic: Data workbench
+description: U kunt de interface van de Data Workbench aanpassen aan uw behoeften en bepaalde functies configureren zodat u deze kunt gebruiken in uw analyses. Deze secties beschrijven hoe te om aanpassingen en configuraties uit te voeren.
+title: Interface- en analysefuncties
 uuid: a0298c35-1be6-4491-b3d0-e374bd75a542
+exl-id: 90edf4f3-87d0-4239-a614-98ac397315aa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '74'
+ht-degree: 0%
 
 ---
 
+# Interface- en analysefuncties{#interface-and-analysis-features}
 
-# Interface en analyse{#interface-and-analysis-features}
-
-U kunt de interface van de Werkbank van Gegevens aanpassen om aan uw behoeften te voldoen en bepaalde eigenschappen te vormen zodat u hen in uw analyses kunt gebruiken. Deze secties beschrijven hoe te om aanpassingen en configuraties uit te voeren.
-
+U kunt de interface van de Data Workbench aanpassen aan uw behoeften en bepaalde functies configureren zodat u deze kunt gebruiken in uw analyses. Deze secties beschrijven hoe te om aanpassingen en configuraties uit te voeren.
