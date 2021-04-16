@@ -1,37 +1,38 @@
 ---
-description: Om met de statistieken te helpen, verstrekt de Werkbank van Gegevens drie statistische maatregelen in de geleide analyse visualisatie.
-solution: Analytics
+description: Om de statistieken te helpen, voorziet Data Workbench in drie statistische maatregelen in de geleide analyse visualisatie.
 title: Statistische maatregelen
-topic: Data workbench
 uuid: a8782cd2-d657-4c04-9c5d-8e0af2a3b76e
+exl-id: 166ff98b-d531-4b31-897e-0c7fedbd2f4d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
-
 # Statistische maatregelen{#statistical-measures}
 
-Om met de statistieken te helpen, verstrekt de Werkbank van Gegevens drie statistische maatregelen in de geleide analyse visualisatie.
+Om de statistieken te helpen, voorziet Data Workbench in drie statistische maatregelen in de geleide analyse visualisatie.
 
 >[!NOTE]
 >
->Hoewel wiskunde u kan helpen oordelen te maken over de correlaties in uw gegevens, moet de context rond de gegevens ook in aanmerking worden genomen.
+>Hoewel wiskunde u kan helpen oordelen over de correlaties in uw gegevens, moet de context rond de gegevens ook in overweging worden genomen.
 
-* **Chi Sq p** is een test van statistische significantie die het uiterlijk van het vinkje in de visualisatie controleert. Wiskundig gezien is het waarschijnlijk dat we de nulhypothese kunnen verwerpen, waarin staat dat de waargenomen verschillen tussen de twee groepen kunnen worden verklaard door willekeurige variaties. Praktisch gezien, als de Chi Sq p-waarde minder dan bijna 100% is, kunnen we de correlatie negeren ongeacht de gemeten sterkte (zoals beschreven in de volgende statistische secties van de U en V).
-* **De U-statistiek** is een maatstaf voor de sterkte van de statistische correlatie. Wiskundig gezien, komt het uit een tak van wiskunde genoemd informatietheorie en is nauw verbonden met het concept wederzijdse informatie tussen de distributies van de twee groepen. Alternatief, kan het van als samendrukbaarheid van één groep worden gedacht gegeven een optimale coderingsregeling voor de andere groep. Praktisch, presteert deze maatregel zeer goed in het gemeenschappelijke geval van een dimensie met vele elementen die weinig bezoekers bevatten. De maatregel varieert van 0 (zwak) tot 1 (sterk).
-* **De V-statistiek** is ook een maatstaf voor de sterkte van de statistische correlatie. Wiskundig gezien houdt het verband met de bekende Cramer’s V-statistiek, die alleen verschilt door een normaliseringsstap die bedoeld is om de symmetrie van de maatregel met betrekking tot de inversie van de selectie te verbeteren. In de praktijk werkt deze maatregel redelijk goed met vele soorten dimensies en houdt hij verband met een algemeen gebruikte statistische maatstaf. De maatregel varieert van 0 (zwak) tot 1 (sterk).
+* **Chi Sq** pis een test van statistisch belang die het uiterlijk van het vinkje in de visualisatie bepaalt. Wiskundig gezien is het waarschijnlijk dat we de nulhypothese kunnen verwerpen, die stelt dat de verschillen tussen de twee groepen kunnen worden verklaard door willekeurige variaties. Praktisch gezien, als de Chi Sq p-waarde minder dan bijna 100% is, kunnen wij de correlatie ongeacht zijn gemeten sterkte (zoals beschreven in de volgende U statistic en V statistische secties) negeren.
+* **U** statistisch is een maat voor de sterkte van de statistische correlatie. Wiskundig komt het uit een tak van wiskunde, genaamd informatietheorie, en houdt nauw verband met het concept van wederzijdse informatie tussen de distributies van de twee groepen. Het kan ook worden beschouwd als de samendrukbaarheid van een groep bij een optimaal coderingsschema voor de andere groep. Deze maatregel functioneert in de praktijk zeer goed in het algemene geval van een dimensie met veel elementen die weinig bezoekers bevatten. De maatregel varieert van 0 (zwak) tot 1 (sterk).
+* **V** statistisch is ook een maat voor de sterkte van de statistische correlatie. Wiskundig gezien houdt het verband met de bekende V-statistiek van Cramer, die alleen verschilt door een normaliseringsstap die bedoeld is om de symmetrie van de maatregel met betrekking tot de omkering van de selectie te verbeteren. In de praktijk werkt deze maatregel redelijk goed met vele soorten dimensies en houdt hij verband met een veelgebruikte statistische maatstaf. De maatregel varieert van 0 (zwak) tot 1 (sterk).
 
 >[!NOTE]
 >
->De U en V statistieken werden geselecteerd om elkaar aan te vullen - elk stemde om soorten correlaties te ontdekken waaraan andere niet zo sterk zou kunnen antwoorden.
+>De U- en V-statistieken zijn zodanig gekozen dat ze elkaar aanvullen. Elke statistiek is afgestemd om de typen correlaties te detecteren waarop de andere niet zo sterk reageert.
 
-Gebruikend deze visualisatie als uw gids, kunt u andere visualisaties aan uw werkruimte toevoegen om meer inzicht in uw gegevens te verstrekken die op de selectie worden gebaseerd.
+Met deze visualisatie als richtlijn kunt u andere visualisaties toevoegen aan uw werkruimte voor meer inzicht in uw gegevens op basis van de selectie.
 
-Het volgende [!DNL Site] voorbeeld bevat een bargrafiek die zittingen voor dagen in Januari, Februari, Maart, en April toont. Merk op dat één dag in Januari wordt geselecteerd.
+Het volgende [!DNL Site] voorbeeld bevat een staafgrafiek die zittingen voor dagen in Januari, Februari, Maart, en April toont. Merk op dat één dag in Januari wordt geselecteerd.
 
 ![](assets/vis_GuidedAnalysis_withVis.png)
 
-De geleide analysevisualisatie in de laag-linkerhoek van de werkruimte wijst erop dat de dimensie van het Aantal van de Zitting nuttige informatie over de geselecteerde dag verstrekt.
+De geleide analyse visualisatie in de laag-linkerhoek van de werkruimte wijst erop dat de dimensie van het Aantal van de Zitting nuttige informatie over de geselecteerde dag verstrekt.
 
-Door de de bargrafiek van het Aantal van de Zitting in de laag-juiste hoek van de werkruimte te onderzoeken, kunt u zien dat de gegevens voor Zitting Nummer 2 veel lager zijn dan de benchmark. Aldus, kunnen wij concluderen dat, als percentage, minder tweede zittingen op de geselecteerde dag voorkwamen dan gebruikelijk is. Om een bar grafiek voor om het even welke afmetingen te bekijken die in de geleide analysevisualisatie worden vermeld, selecteer eenvoudig de afmeting door de afmeting met uw muis te klikken.
+Door de grafiek van de bar van het Aantal van de Zitting in de laag-juiste hoek van de werkruimte te onderzoeken, kunt u zien dat de gegevens voor Zitting Nummer 2 veel lager zijn dan het benchmark. We kunnen dus concluderen dat, als percentage, op de geselecteerde dag minder tweede sessies hebben plaatsgevonden dan normaal. Als u een staafgrafiek wilt weergeven voor een van de dimensies die worden vermeld in de visualisatie van de geleide analyse, selecteert u gewoon de dimensie door met de muis op de dimensie te klikken.
