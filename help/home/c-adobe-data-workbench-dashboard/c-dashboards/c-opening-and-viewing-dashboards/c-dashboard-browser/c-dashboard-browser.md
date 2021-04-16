@@ -1,26 +1,26 @@
 ---
-description: Browser van het Dashboard vergemakkelijkt het doorbladeren, het zoeken, en het openen dashboards die u en andere leden van uw organisatie hebben gecreeerd en bewaard.
-solution: Analytics
-title: Dashboard-browser
-topic: Data workbench
+description: In de dashboardbrowser kunt u dashboards die u en andere leden van uw organisatie hebben gemaakt en opgeslagen, doorbladeren, zoeken en openen.
+title: Dashboardbrowser
 uuid: ab4f81dc-c32e-408b-bcfd-3531766c9054
+exl-id: 02ee7120-2d94-4033-afce-9556383d1eba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 0%
 
 ---
 
+# Dashboard Browser{#dashboard-browser}
 
-# Dashboard-browser{#dashboard-browser}
+In de dashboardbrowser kunt u dashboards die u en andere leden van uw organisatie hebben gemaakt en opgeslagen, doorbladeren, zoeken en openen.
 
-Browser van het Dashboard vergemakkelijkt het doorbladeren, het zoeken, en het openen dashboards die u en andere leden van uw organisatie hebben gecreeerd en bewaard.
+U kunt doorbladeren en tot alle dashboards toegang hebben die u toestemmingen aan mening hebt (voor meer informatie over toegangscontroles, zie de Controles van de Toegang van de sectie). De dashboardbrowser werkt goed wanneer u een dashboard moet vinden, maar u weet niet welke dashboard u nodig hebt of waar het zich bevindt. De dashboardbrowser is ook handig voor het ophalen van aanvullende details en het uitvoeren van speciale functies op een bepaald dashboard.
 
-U kunt doorbladeren en tot alle dashboards toegang hebben die u toestemmingen aan mening (voor meer informatie over toegangscontroles, zie de Controles van de sectietoegang) hebt. Browser van het Dashboard werkt goed wanneer u een dashboard moet vinden maar onzeker bent over welke u wenst of waar het verblijft. Browser van het Dashboard is ook nuttig om extra details te krijgen en speciale functies op een bepaald dashboard uit te voeren.
+## De dashboardbrowser openen {#section-10e158d738684219ab997ef050b675d7}
 
-## Het openen van Browser van het Dashboard {#section-10e158d738684219ab997ef050b675d7}
-
-Wanneer u in het werkbankdashboard van de Gegevens van Adobe registreert, zal Browser Dashboard door gebrek verschijnen. U kunt tot Browser van het Dashboard op elk ogenblik ook toegang hebben door op het menu van het Dashboard in de toolbar te klikken en te selecteren **[!UICONTROL Browse…]**.
+Wanneer u zich aanmeldt bij het dashboard voor de Adobe Data Workbench, wordt de Dashboard Browser standaard weergegeven. U kunt de Dashboardbrowser ook op elk gewenst moment openen door op het dashboardmenu in de werkbalk te klikken en **[!UICONTROL Browse…]** te selecteren.
 
 ![](assets/browse.png)
 
 ![](assets/choose_a_dashboard.png)
-
