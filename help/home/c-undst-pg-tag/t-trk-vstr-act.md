@@ -1,24 +1,25 @@
 ---
-description: Websites die zijn gemaakt met Flash vereisen speciale aandacht voor het vastleggen van bezoekersacties die worden uitgevoerd in de rich media-inhoud.
-solution: Analytics
-title: Bezoekersactiviteiten bijhouden binnen Flash-inhoud voor veeleisende media
-topic: Data workbench
+description: Websites die zijn gemaakt met behulp van Flash vereisen speciale aandacht voor het vastleggen van bezoekersacties die worden uitgevoerd in de rich media-inhoud.
+title: Bezoekersactiviteit bijhouden binnen inhoud van Flash-rijke media
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
+exl-id: f51c7034-a7fd-4575-80e1-18fc6513ca2b
 translation-type: tm+mt
-source-git-commit: 48892b1b4fc9e9fdeacee8ca318025f43f2d0064
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 2%
 
 ---
 
+# Bezoekersactiviteit bijhouden binnen Flash-rijke media-inhoud{#tracking-visitor-activity-within-flash-rich-media-content}
 
-# Bezoekersactiviteiten bijhouden binnen Flash-inhoud voor veeleisende media{#tracking-visitor-activity-within-flash-rich-media-content}
+Websites die zijn gemaakt met behulp van Flash vereisen speciale aandacht voor het vastleggen van bezoekersacties die worden uitgevoerd in de rich media-inhoud.
 
-Websites die zijn gemaakt met Flash vereisen speciale aandacht voor het vastleggen van bezoekersacties die worden uitgevoerd in de rich media-inhoud.
+Met [!DNL Flash] ActionScript kunt u eenvoudige wijzigingen aanbrengen in uw bestaande [!DNL Flash]-films om alle bezoekersinteracties met de film te kunnen bijhouden, zoals knopklikken of muisbewegingen.
 
-Met [!DNL Flash] ActionScript kunt u eenvoudige wijzigingen aanbrengen in uw bestaande [!DNL Flash] films, zodat alle bezoekersinteracties met de film kunnen worden bijgehouden, zoals knopklikken of muisbewegingen.
+Volg onderstaande stappen om het volgen van bezoekersactiviteiten in uw [!DNL Flash] film te vergemakkelijken:
 
-Volg onderstaande stappen om bezoekersactiviteiten in uw [!DNL Flash] film te volgen:
-
-1. Voeg de volgende ActionScript-code toe aan uw film. Deze code vertegenwoordigt een functie die kan worden aangeroepen door gebeurtenissen binnen de [!DNL Flash] film die u wilt bijhouden.
+1. Voeg de volgende ActionScript code aan uw film toe. Deze code vertegenwoordigt een functie die door gebeurtenissen binnen de [!DNL Flash] film kan worden geroepen die u wilt volgen.
 
    ```
    // FLASH TAG CODE BEGIN 
@@ -30,7 +31,7 @@ Volg onderstaande stappen om bezoekersactiviteiten in uw [!DNL Flash] film te vo
    ```
 
 1. Maak een leeg bestand met de naam [!DNL flashtag.txt] en plaats het bestand op uw webservers.
-1. Vervang binnen de functie in Stap 1 de tijdelijke aanduiding \[[!DNL PATH_TO_WEB_SERVER]\] door het volledig gekwalificeerde of relatieve pad naar de locatie van het [!DNL flashtag.txt] bestand. Bijvoorbeeld:
+1. Vervang binnen de functie in Stap 1 de tijdelijke aanduiding \[[!DNL PATH_TO_WEB_SERVER]\] door het volledig gekwalificeerde of relatieve pad naar de locatie van het [!DNL flashtag.txt]-bestand. Bijvoorbeeld:
 
    ```
    var FLASHTAGURI = http://www.mysite.com/flashtag/flashtag.txt”;
@@ -44,7 +45,7 @@ Volg onderstaande stappen om bezoekersactiviteiten in uw [!DNL Flash] film te vo
 
    In dit voorbeeld wordt het gebruik van de gebeurtenis on(release) getoond. nochtans, kan de markering () functie door om het even welke gebeurtenis worden van verwijzingen voorzien die u kunt willen volgen, zoals on (pers), on (rollover), on (rollout), of on (keypress) gebeurtenis.
 
-   De tijdelijke aanduiding \[[!DNL PUT_PAGE_NAME_HERE]\] moet worden vervangen door een tekenreeks die de naam vertegenwoordigt van de pagina of gebeurtenis die u bijhoudt. De variabele \[[!DNL PUT_PAGE_NAME_HERE]\] kan of manueel of door veranderlijke verwijzing worden gewijzigd om een unieke naam voor de pagina of de gebeurtenis binnen de [!DNL Flash] toepassing aan te duiden. De waarde die de tijdelijke aanduiding \[[!DNL PUT_PAGE_NAME_HERE]\] vervangt, kan bestaan uit een eenvoudige naam of kan zodanig zijn gestructureerd dat deze een hiërarchische structuur vertegenwoordigt die lijkt op een volledige URI. Bijvoorbeeld:
+   De tijdelijke aanduiding \[[!DNL PUT_PAGE_NAME_HERE]\] moet worden vervangen door een tekenreeks die de naam vertegenwoordigt van de pagina of gebeurtenis die u bijhoudt. De variabele \[[!DNL PUT_PAGE_NAME_HERE]\]kan of manueel of door veranderlijke verwijzing worden gewijzigd om een unieke naam voor de pagina of de gebeurtenis binnen &lt;a1 aan te duiden/> toepassing. [!DNL Flash] De waarde die de tijdelijke aanduiding \[[!DNL PUT_PAGE_NAME_HERE]\] vervangt, kan bestaan uit een eenvoudige naam of kan zodanig zijn gestructureerd dat deze een hiërarchische structuur vertegenwoordigt die lijkt op een volledige URI. Bijvoorbeeld:
 
    ```
    on(release) {tag(“/about_us/index.swf","[PUT_ADDITIONAL_VAR_HERE]");}
@@ -52,7 +53,7 @@ Volg onderstaande stappen om bezoekersactiviteiten in uw [!DNL Flash] film te vo
 
    Adobe raadt u aan om vóór de implementatie van code een schriftelijke specificatie voor paginanamen en gebeurtenisnamen samen te stellen om de afstemming van bedrijfsvereisten en ontwikkelingstaken te vergemakkelijken en het potentieel voor extra ontwikkelingscycli te beperken.
 
-1. Indien gewenst kunnen extra variabelen worden verzameld en gekoppeld aan pagina&#39;s of gebeurtenissen in de [!DNL Flash] film. Hiervoor vervangt u de tijdelijke aanduiding \[[!DNL PUT_ADDITIONAL_VAR_HERE]\] door een set naam=waarde-paren, gescheiden door een en-teken (&amp;). Bijvoorbeeld:
+1. Indien gewenst kunnen extra variabelen worden verzameld en gekoppeld aan pagina&#39;s of gebeurtenissen in de [!DNL Flash]-film. Hiervoor vervangt u de tijdelijke aanduiding \[[!DNL PUT_ADDITIONAL_VAR_HERE]\] door een set naam=waarde-paren, gescheiden door een en-teken (&amp;). Bijvoorbeeld:
 
    ```
    on(release) {tag(“/about_us/index.swf"," var1=value1&var2=value2");}
@@ -60,13 +61,13 @@ Volg onderstaande stappen om bezoekersactiviteiten in uw [!DNL Flash] film te vo
 
    De variabelen kunnen handmatig of via een verwijzing naar een variabele worden gewijzigd om extra kenmerken aan te duiden die moeten worden verzameld en gekoppeld aan de pagina of gebeurtenis. Als er geen toepasselijke aanvullende variabelen zijn om te verzamelen, verwijdert u \[[!DNL PUT_ADDITIONAL_VAR_HERE]\].
 
-   Uw instelling voor het bijhouden van bezoekers in [!DNL Flash] rich media-inhoud is nu voltooid. Wanneer de gebeurtenis wordt aangeroepen, wordt de tagfunctie [!DNL (PAGENAME,VARIABLES)] aangeroepen, wat resulteert in een HTTP-aanvraag voor het volgende bestand. Deze functie wordt aangeroepen naast andere functies die kunnen worden geactiveerd zoals gedefinieerd in uw [!DNL Flash] film:
+   Uw instelling voor het bijhouden van bezoekers binnen [!DNL Flash] rich media-inhoud is nu voltooid. Wanneer de gebeurtenis wordt aangeroepen, wordt de functie tag [!DNL (PAGENAME,VARIABLES)] aangeroepen, wat resulteert in een HTTP-aanvraag voor het volgende bestand. Deze functie zal naast andere functies worden geroepen die zoals bepaald binnen uw [!DNL Flash] film kunnen teweegbrengen:
 
    ```
    http://www.mysite.com/flashtag/flashtag.txt?PAGENAME=/about_us/index.swf&var1=value1&var2=value2
    ```
 
-De HTTP-aanvraag die voortvloeit uit de ActionScript-functie [!DNL Flash] Tag, leidt ertoe dat de volgende informatie wordt verzameld met betrekking tot elke gebeurtenis in de [!DNL Flash] film. De laatste rij in de tabel (W3C-naam cs-uri-query) vertegenwoordigt de informatie die wordt verzameld voor de extra variabelen die in de functieaanroep zijn opgegeven.
+De HTTP-aanvraag die voortvloeit uit de functie [!DNL Flash] Tag ActionScript, leidt ertoe dat de volgende informatie wordt verzameld met betrekking tot elke gebeurtenis binnen de film [!DNL Flash]. De laatste rij in de tabel (W3C-naam cs-uri-query) vertegenwoordigt de informatie die wordt verzameld voor de extra variabelen die in de functieaanroep zijn opgegeven.
 
 <table id="table_A7ED9D38F36B4405947B2F48EA94D3C4"> 
  <thead> 
@@ -81,7 +82,7 @@ De HTTP-aanvraag die voortvloeit uit de ActionScript-functie [!DNL Flash] Tag, l
   <tr> 
    <td colname="col1"> x-trackingid </td> 
    <td colname="col2"> Tracking-id (unieke bezoeker) </td> 
-   <td colname="col3"> Id gelezen van een cookie die door <span class="wintitle"> </span> Sensor op eerste verzoek van Bezoeker in de browser van de gebruiker is geplaatst </td> 
+   <td colname="col3"> Identifier gelezen van een cookie die door <span class="wintitle"> Sensor </span> op eerste verzoek van bezoeker in de browser van de gebruiker is geplaatst. </td> 
    <td colname="col4"> v1st=3C94007B4E01F9C2 </td> 
   </tr> 
   <tr> 
@@ -128,7 +129,7 @@ De HTTP-aanvraag die voortvloeit uit de ActionScript-functie [!DNL Flash] Tag, l
   </tr> 
   <tr> 
    <td colname="col1"> cs (user-agent) </td> 
-   <td colname="col2"> Gebruikersagent </td> 
+   <td colname="col2"> User Agent </td> 
    <td colname="col3"> Apparaat dat wordt gebruikt om een aanvraag bij de HTTP-server in te dienen </td> 
    <td colname="col4"> Mozilla/4.0+(compatibel;+MSIE+6.0; +Windows+NT+5.1) </td> 
   </tr> 
@@ -146,4 +147,3 @@ De HTTP-aanvraag die voortvloeit uit de ActionScript-functie [!DNL Flash] Tag, l
   </tr> 
  </tbody> 
 </table>
-
