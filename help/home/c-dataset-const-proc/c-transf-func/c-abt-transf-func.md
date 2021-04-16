@@ -1,25 +1,26 @@
 ---
-description: De functionaliteit van de transformatie (Transform) loopt op een de servermachine van de gegevenswerkbank om de uitvoer van logboekbrongegevens voor gebruik door andere toepassingen toe te laten.
-solution: Analytics
+description: Transformatiefunctionaliteit (Transform) wordt uitgevoerd op een computer met een gegevenswerkbankserver om het exporteren van logbrongegevens voor gebruik door andere toepassingen mogelijk te maken.
 title: Informatie over transformatiefunctionaliteit
-topic: Data workbench
 uuid: f797f283-025b-4fb5-a110-84a9483dccaa
+exl-id: db5d6329-407d-43f3-92fc-1b40f7289916
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 0%
 
 ---
 
+# Info over Transformatiefunctionaliteit{#about-transformation-functionality}
 
-# Informatie over transformatiefunctionaliteit{#about-transformation-functionality}
+Transformatiefunctionaliteit (Transform) wordt uitgevoerd op een computer met een gegevenswerkbankserver om het exporteren van logbrongegevens voor gebruik door andere toepassingen mogelijk te maken.
 
-De functionaliteit van de transformatie (Transform) loopt op een de servermachine van de gegevenswerkbank om de uitvoer van logboekbrongegevens voor gebruik door andere toepassingen toe te laten.
-
-[!DNL Transform] kan [!DNL .vsl] dossiers, logboekdossiers, de dossiers van XML, en ODBC- gegevens lezen en de gegevens uitvoeren als [!DNL .vsl] dossiers, tekstdossiers, of afgebakende tekstdossiers die door het laden DataWarehouse routines, controlebureaus, of andere doelstellingen kunnen worden gebruikt. De gegevensextractie en -transformatie kan op een continue of andere geplande basis worden uitgevoerd.
+[!DNL Transform] U kunt  [!DNL .vsl] bestanden, logbestanden, XML-bestanden en ODBC-gegevens lezen en de gegevens exporteren als  [!DNL .vsl] bestanden, tekstbestanden of tekstbestanden met scheidingstekens die kunnen worden gebruikt door routines voor het laden van DataWarehouse, controlebureaus of andere doelen. De gegevensextractie en -transformatie kunnen doorlopend of op een andere geplande basis worden uitgevoerd.
 
 >[!NOTE]
 >
->Typisch, [!DNL Transform] wordt gevormd op een server FSU van de gegevenswerkbank. Nochtans, kan uw implementatie configuratie op een server DPU van de gegevenswerkbank vereisen. Voor meer informatie, contacteer Adobe.
+>[!DNL Transform] is doorgaans geconfigureerd op een gegevenswerkbankserver FSU. Nochtans, kan uw implementatie configuratie op een serverDPU van de gegevenswerkbank vereisen. Neem voor meer informatie contact op met Adobe.
 
-U kunt de informatie van het geheugengebruik voor [!DNL Transform] in de Gedetailleerde interface van de Status bekijken. Voor meer informatie, zie het Administratieve hoofdstuk van Interfaces van de Gids *van de Gebruiker van de Werkbank van* Gegevens.
+U kunt informatie over geheugengebruik voor [!DNL Transform] in de Gedetailleerde interface van de Status bekijken. Voor meer informatie, zie het Administratieve hoofdstuk van Interfaces van *de Gids van de Gebruiker van de Data Workbench*.
 
-De eigenschap van de segmentuitvoer verstrekt een ander middel om gegevens van een toepassing van Adobe uit te voeren. [!DNL Transform] laat u toe om onverwerkte gegevens naar een extern doel uit te voeren, maar de eigenschap van de segmentuitvoer laat u aan output verwerkte gegevens van de dataset toe en vereist dat de uitgevoerde gegevens als dimensie in de dataset worden bepaald. Voor meer informatie over de segmentuitvoer, zie de Gids *van de Gebruiker van de Werkbank van* Gegevens.
+De functie voor segmentexport biedt een andere manier om gegevens uit een Adobe-toepassing te exporteren. [!DNL Transform] laat u toe om onverwerkte gegevens naar een extern doel uit te voeren, maar de eigenschap van de segmentuitvoer laat u toe om verwerkte gegevens van de dataset uit te voeren en vereist dat de uitgevoerde gegevens als dimensie in de dataset worden bepaald. Voor meer informatie over segmentuitvoer, zie *de Gids van de Gebruiker van de Data Workbench*.
