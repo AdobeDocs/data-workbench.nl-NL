@@ -1,98 +1,99 @@
 ---
 description: De de lijstvisualisaties van de latentie zijn lijsten die een latentiedimensie omvatten, die een type van afgeleide dimensie is die de tijd meet die sinds een bepaalde gebeurtenis is verstreken.
-solution: Analytics
 title: Latentietabellen
-topic: Data workbench
 uuid: 8081540c-f96c-424e-802d-05d1be5a728d
+exl-id: 22f6d52f-e1c2-430a-9e69-3440be0ecdea
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 0%
 
 ---
-
 
 # Latentietabellen{#latency-tables}
 
 De de lijstvisualisaties van de latentie zijn lijsten die een latentiedimensie omvatten, die een type van afgeleide dimensie is die de tijd meet die sinds een bepaalde gebeurtenis is verstreken.
 
-U bepaalt de gebeurtenis door selecties binnen één of meerdere visualisaties te maken en die selecties te plaatsen als gebeurtenis gebruikend de Vastgestelde optie van het de contextmenu van de Gebeurtenis. De lijsten van de latentie zijn vooral nuttig om activiteit te volgen met betrekking tot een campagne of tot een bepaalde klantenorde waarin u een tijdcorrelatie zoekt.
+U definieert de gebeurtenis door selecties te maken binnen een of meer visualisaties en die selecties in te stellen als de gebeurtenis met de contextmenuoptie Gebeurtenis instellen. De lijsten van de latentie zijn vooral nuttig om activiteit met betrekking tot een campagne of aan een bepaalde klantenorde te volgen waarin u een tijdcorrelatie zoekt.
 
-In [!DNL Site], verstrekken de latentietabellen informatie over de bezoekerszittingen die zo vele zeven dagen vóór of na de gebeurtenis voorkwamen, maar u kunt latentietabellen vormen om informatie over verschillende telbare en tijddimensies te verstrekken. Zie Latentietabellen [configureren](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/c-config-ltcy-tbls.md#concept-7175c3defec64556994f0dfcccb7d15c).
+In [!DNL Site], verstrekken de latentietabellen informatie over de bezoekerszittingen die tot zeven dagen vóór of na de gebeurtenis voorkwamen, maar u kunt latentietabellen vormen om informatie over verschillende telbare en tijddimensies te verstrekken. Zie [Latentietabellen configureren](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/c-config-ltcy-tbls.md#concept-7175c3defec64556994f0dfcccb7d15c).
 
-De elementen van de ouderafmeting, zoals een zitting, die deel van de specifieke gebeurtenis uitmaken die u selecteerde, hebben een latentie van nul. Alle andere elementen worden toegewezen latenties die op de afstand (in de aangewezen tijddimensie) van de gebeurtenis wijzen.
+Elementen van de bovenliggende dimensie, zoals een sessie, die onderdeel zijn van de specifieke gebeurtenis die u hebt geselecteerd, hebben een latentie van nul. Alle andere elementen krijgen latentie toegewezen die de afstand (in de aangewezen tijddimensie) van de gebeurtenis weerspiegelen.
 
-Het volgende voorbeeld illustreert hoe u de latentielijst zou kunnen gebruiken.
+In het volgende voorbeeld ziet u hoe u de latentietabel kunt gebruiken.
 
-**Omgaan met waardegebeurtenissen met betrekking tot een campagne**
+**Waardegebeurtenissen met betrekking tot een campagne identificeren**
 
-Laten we zeggen dat u de activiteiten van klanten wilt volgen in de zeven dagen voor en nadat zij op een bepaalde reclamecampagne hebben gereageerd. Om de latentie voor een bepaalde reclamecampagne te bekijken, zou u de belangencampagne als gebeurtenis voor de latentietabel plaatsen.
+Laten we zeggen dat u de activiteiten van klanten gedurende de zeven dagen voor en na de reactie op een bepaalde reclamecampagne wilt volgen. Als u de latentie voor een bepaalde advertentiecampagne wilt bekijken, stelt u de belangencampagne in als de gebeurtenis voor de latentietabel.
 
-De latentie in de werkruimte hieronder is gebaseerd op selectie van Campagne 11566 (de zittingen in antwoord op deze campagne).
+De latentie in de werkruimte hieronder is gebaseerd op de selectie van Campagne 11566 (de zittingen in antwoord op deze campagne).
 
 ![](assets/vis_Latency.png)
 
-Een latentie van &quot;+0 dagen&quot;identificeert de zittingen in antwoord op Campagne 1566, evenals alle andere zittingen voor die zelfde klanten die op de zelfde dag voorkwamen.
+Een vertraging van &quot;+0 dagen&quot; geeft de sessies aan in reactie op Campagne 11566 en alle andere sessies voor dezelfde klanten die op dezelfde dag hebben plaatsgevonden.
 
-Een latentie van &quot;-2 dagen&quot;identificeert de zittingen voor die zelfde klanten die twee dagen voorkwamen alvorens de klanten op de campagne antwoordden.
+Een vertraging van &quot;-2 dagen&quot; identificeert de sessies voor dezelfde klanten die twee dagen voordat de klanten op de campagne reageerden, zijn opgetreden.
 
-Een latentie van &quot;+7 dagen&quot;identificeert de zittingen voor die zelfde klanten die zeven dagen plaatsvonden nadat zij op de campagne antwoordden.
+Een vertraging van &quot;+7 dagen&quot; geeft de sessies aan voor dezelfde klanten die zeven dagen na hun reactie op de campagne zijn uitgevoerd.
 
-Naast de procedures die in de volgende secties worden vermeld, kunt u alle zelfde taken uitvoeren die u in een lijst, zoals soortelementen, maskerelementen kunt uitvoeren, een reeksenlegende, de uitvoergegevens toevoegen, etc. Voor meer informatie, zie [Lijsten](../../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f).
+Naast de procedures die in de volgende secties worden vermeld, kunt u alle zelfde taken uitvoeren die u in een lijst kunt uitvoeren, zoals soortelementen, maskerelementen, toevoegen een reeksenlegenda, de uitvoergegevens, etc. Zie [Tabellen](../../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f) voor meer informatie.
 
 ## Een latentietabel maken {#section-31a03031d9854ef7acc2462d4f37678d}
 
-Om een latentietabel te creëren, begint u door een selectie te maken, dan plaatsend die selectie als gebeurtenis waarvoor u latentie wilt volgen.
+Als u een latentietabel wilt maken, maakt u eerst een selectie en stelt u vervolgens die selectie in als de gebeurtenis waarvoor u de latentie wilt bijhouden.
 
-1. Klik met de rechtermuisknop binnen een werkruimte en open de gewenste visualisatie(s), die gebaseerd moet zijn op de aftelbare dimensie die wordt gebruikt om uw latentietabel te configureren.
+1. Klik met de rechtermuisknop in een werkruimte en open de gewenste visualisatie(s), die gebaseerd moet zijn op de aftelbare dimensie die wordt gebruikt om uw latentietabel te configureren.
 
-   Bijvoorbeeld, in [!DNL Site] de visualisatie(s) zou(en) op zittingen-gebaseerd moeten zijn.
+   In [!DNL Site] moeten de visualisatie(s) bijvoorbeeld op sessies zijn gebaseerd.
 
 1. Open een lege latentietabel.
 1. Maak een selectie in uw werkruimte.
-1. Klik binnen de latentietabel met de rechtermuisknop aan en klik **[!UICONTROL Set Event]**.
+1. Klik met de rechtermuisknop in de latentietabel en klik op **[!UICONTROL Set Event]**.
 
 ![](assets/vis_Latency_SetEvent.png)
 
 >[!NOTE]
 >
->De gebeurtenissen die u selecteert duren niet voort tenzij u sparen de selecties als latentiedimensie. Zie Een [latentiedimensie](../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#section-29c6483bf9ba476fb1c24ad1df253f46)opnieuw gebruiken voor stappen.
+>Gebeurtenissen die u selecteert, blijven alleen van kracht als u de selecties opslaat als een latentiedimensie. Zie [Een latentie-Dimension opnieuw gebruiken](../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#section-29c6483bf9ba476fb1c24ad1df253f46) voor stappen.
 
-## Hergebruik een latentietabel {#section-05f741169d204213b6537dce553e4f73}
+## Een latentietabel opnieuw gebruiken {#section-05f741169d204213b6537dce553e4f73}
 
-Als u de zelfde latentietabel wilt opnieuw gebruiken, kunt u de latentietabel plaatselijk bewaren of als u de juiste toestemmingen hebt kunt u het aan de server voor alle gebruikers van een bepaald profiel aan toegang bewaren.
+Als u dezelfde latentietabel opnieuw wilt gebruiken, kunt u de latentietabel lokaal opslaan of als u de juiste machtigingen hebt, kunt u de tabel opslaan op de server zodat alle gebruikers van een bepaald profiel toegang hebben.
 
-**Om de latentietabel op te slaan voor gebruik in andere werkruimten**
+**De latentietabel opslaan voor gebruik in andere werkruimten**
 
-1. Klik de hoogste grens van de visualisatie met de rechtermuisknop aan en klik **[!UICONTROL Save]**. Het [!DNL Save] venster wordt weergegeven. De standaardbewaarplaats is de omslag van het Werk van de Gebruiker \*profiel naam* \.
-1. Typ in het [!DNL File name] veld een beschrijvende naam voor de visualisatie en klik op **[!UICONTROL Save]**.
+1. Klik met de rechtermuisknop op de bovenste rand van de visualisatie en klik op **[!UICONTROL Save]**. Het venster [!DNL Save] verschijnt. De standaardopslaglocatie is de map Gebruiker\*profielnaam*\Work.
+1. Typ in het veld [!DNL File name] een beschrijvende naam voor de visualisatie en klik op **[!UICONTROL Save]**.
 
-**Om de bewaarde latentietabel terug te winnen**
+**De opgeslagen latentietabel ophalen**
 
-1. Klik binnen de werkruimte met de rechtermuisknop aan en klik **[!UICONTROL Open]** > **[!UICONTROL File]**. Het [!DNL Open Visualization] venster wordt weergegeven.
-1. Navigeer aan de latentielijst die u bewaarde.
-1. Selecteer het visualisatiedossier van de latentielijst ( [!DNL *.vw]) en klik **[!UICONTROL Open]**.
+1. Klik met de rechtermuisknop in de werkruimte en klik op **[!UICONTROL Open]** > **[!UICONTROL File]**. Het venster [!DNL Open Visualization] verschijnt.
+1. Navigeer naar de latentietabel die u hebt opgeslagen.
+1. Selecteer het visualisatiebestand voor de latentietabel ( [!DNL *.vw]) en klik op **[!UICONTROL Open]**.
 
-## Hergebruik een latentiedimensie {#section-29c6483bf9ba476fb1c24ad1df253f46}
+## Een latentiedimensie opnieuw gebruiken {#section-29c6483bf9ba476fb1c24ad1df253f46}
 
-Als u de zelfde latentiedimensie wilt opnieuw gebruiken, kunt u de latentiedimensie plaatselijk bewaren of als u de juiste toestemmingen hebt kunt u het aan de server voor alle gebruikers van een bepaald profiel aan toegang bewaren.
+Als u dezelfde latentiedimensie opnieuw wilt gebruiken, kunt u de latentiedimensie lokaal opslaan of als u de juiste machtigingen hebt, kunt u deze opslaan op de server zodat alle gebruikers van een bepaald profiel toegang hebben.
 
-Om het even welke latentiedimensies die u creeert worden bewaard in de folder van de Afmetingen van het profiel en zijn beschikbaar in de [!DNL Change Dimension] drop-down lijst binnen de Werkbank van Gegevens.
+Eventuele latentieafmetingen die u maakt, worden opgeslagen in de map Dimension van het profiel en zijn beschikbaar in de vervolgkeuzelijst [!DNL Change Dimension] in de Data Workbench.
 
-**Om de latentiedimensie voor gebruik in andere werkruimten te bewaren**
+**De latentiedimensie opslaan voor gebruik in andere werkruimten**
 
-1. Klik het [!DNL Latency] kolometiket of één van zijn elementen met de rechtermuisknop aan en klik **[!UICONTROL Save Dimension]**. Het [!DNL Save Dimension As] venster wordt weergegeven.
-1. Selecteer of creeer de aangewezen subfolder binnen de folder van Afmetingen.
-1. Op het [!DNL File name] gebied, typ een beschrijvende naam voor de afmeting (bijvoorbeeld, [!DNL Latency for Campaign 11565.dim]) en klik **[!UICONTROL Save]**.
+1. Klik met de rechtermuisknop op het kolomlabel [!DNL Latency] of op een van de elementen en klik op **[!UICONTROL Save Dimension]**. Het venster [!DNL Save Dimension As] verschijnt.
+1. Selecteer of maak de juiste submap in de map Dimension.
+1. Typ in het veld [!DNL File name] een beschrijvende naam voor de dimensie (bijvoorbeeld [!DNL Latency for Campaign 11565.dim]) en klik op **[!UICONTROL Save]**.
 
-**Om de bewaarde latentiedimensie terug te winnen**
+**De opgeslagen latentiedimensie ophalen**
 
-1. Klik binnen de werkruimte met de rechtermuisknop aan en klik **[!UICONTROL Open]** > **[!UICONTROL File]**. Het [!DNL Open Visualization] venster wordt weergegeven.
-1. Navigeer aan de latentievisualisatie die u in de omslag van de Afmetingen van de Naam van het Profiel \*van de Gebruiker \*opgeslagen.
-1. Selecteer het dossier van de latentiedimensie ( [!DNL *.dim]) en klik **[!UICONTROL Open]**.
+1. Klik met de rechtermuisknop in de werkruimte en klik op **[!UICONTROL Open]** > **[!UICONTROL File]**. Het venster [!DNL Open Visualization] verschijnt.
+1. Navigeer naar de latentie-visualisatie die u hebt opgeslagen in de map Gebruiker\*profile name*\Dimension.
+1. Selecteer het bestand met de latentiedimensie ( [!DNL *.dim]) en klik op **[!UICONTROL Open]**.
 
 ## Exporteren naar Microsoft Excel {#section-3dffa5c3aab14cdaa40c78b81b08fe53}
 
-Voor informatie over het uitvoeren van vensters, zie het [Uitvoeren van de Gegevens](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)van het Venster.
+Zie [Venstergegevens exporteren](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349) voor informatie over het exporteren van vensters.
 
 ## Exporteren naar een TSV-bestand {#section-fd921f351c994ed0a94f63d3bd5b5a87}
 
-Voor informatie over het uitvoeren van vensters, zie het [Uitvoeren van de Gegevens](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)van het Venster.
+Zie [Venstergegevens exporteren](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349) voor informatie over het exporteren van vensters.
