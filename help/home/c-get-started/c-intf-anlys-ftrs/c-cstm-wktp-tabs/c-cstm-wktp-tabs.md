@@ -1,24 +1,24 @@
 ---
-description: Elk lusje of subtab in de Desktop beantwoordt aan een bepaald type van informatie, zoals Dashboards, Activiteit, Aankoop, etc.
-solution: Analytics
-title: Een werkblad aanpassen
-topic: Data workbench
+description: Elk tabblad of subtabblad in het bureaublad komt overeen met een bepaald type informatie, zoals dashboards, Activiteit, Overname, enzovoort.
+title: Een tabblad van een werkbalk aanpassen
 uuid: f1f557c8-f4cb-4789-8162-39cc7c52c943
+exl-id: 529c6d8d-fc42-4c2b-a111-b8eea4665d8b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '162'
+ht-degree: 0%
 
 ---
 
+# Een werkbovenste tabblad aanpassen{#customize-a-worktop-tab}
 
-# Een werkblad aanpassen{#customize-a-worktop-tab}
+Elk tabblad of subtabblad in het bureaublad komt overeen met een bepaald type informatie, zoals dashboards, Activiteit, Overname, enzovoort.
 
-Elk lusje of subtab in de Desktop beantwoordt aan een bepaald type van informatie, zoals Dashboards, Activiteit, Aankoop, etc.
+Het tabblad [!DNL Acquisition] kan bijvoorbeeld werkruimten bevatten die gegevens bevatten over verwijzende domeinen, zoekmachines en campagnes.
 
-Bijvoorbeeld, zou het [!DNL Acquisition] lusje werkruimten kunnen bevatten die gegevens over het verwijzen van domeinen, onderzoeksmotoren, en campagnes verstrekken.
-
-Elk lusje dat in verschijnt [!DNL Worktop] beantwoordt aan een omslag in de omslag van de Werkruimten van het *werkende profiel naam*\ binnen de de installatiefolder van de Werkbank van Gegevens. De orde van de lusjes in wordt [!DNL Worktop] gecontroleerd door het [!DNL order.txt] dossier in die zelfde omslag. Bijvoorbeeld, als u een subfolder van de Aanwinst in de omslag van Werkruimten hebt en dan voegt u Aanwinst als eerste ingang in het [!DNL order.txt] dossier toe, [!DNL Acquisition] is het eerste lusje in het [!DNL Worktop] en alles in die subfolder vertoningen in de [!DNL Acquisition] tabel.
+Elk tabblad dat wordt weergegeven in de map [!DNL Worktop] komt overeen met een map in de map *werkprofielnaam*\Workspaces in de installatiemap van de Data Workbench. De volgorde van de tabbladen in [!DNL Worktop] wordt bepaald door het bestand [!DNL order.txt] in dezelfde map. Als u bijvoorbeeld een submap Acquisition in de map Workspaces hebt en vervolgens Acquisition toevoegt als de eerste vermelding in het bestand [!DNL order.txt], is [!DNL Acquisition] de eerste tab in [!DNL Worktop] en wordt alles in die submap weergegeven op het tabblad [!DNL Acquisition].
 
 >[!NOTE]
 >
->Voor informatie over het gebruiken van het [!DNL order.txt] dossier om het menu van het werkruimtevenster aan te passen, zie het [Aanpassen van Menu&#39;s](../../../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-ctm-menus.md#concept-93d4c09cb7f34cd293b7b64fba1cf894).
-
+>Zie [Menu&#39;s aanpassen](../../../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-ctm-menus.md#concept-93d4c09cb7f34cd293b7b64fba1cf894) voor informatie over het gebruik van het [!DNL order.txt]-bestand om het menu van het werkruimtevenster aan te passen.
