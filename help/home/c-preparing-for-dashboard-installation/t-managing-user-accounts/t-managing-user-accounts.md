@@ -1,19 +1,20 @@
 ---
-description: Het de rekeningsbeheer van de gebruiker wordt uitgevoerd gebruikend de sectie van de Manager van de Gebruiker binnen de Console van het Beleid.
-solution: Analytics
+description: Gebruikersaccountbeheer wordt uitgevoerd met de sectie Gebruikersbeheer in de beheerconsole.
 title: Gebruikersaccounts beheren
-topic: Data workbench
 uuid: 516a152c-e107-4268-8f9d-7e3a7ff05eef
+exl-id: eef40f7e-a509-4089-ab20-77beed9fbc65
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '75'
+ht-degree: 0%
 
 ---
 
-
 # Gebruikersaccounts beheren{#managing-user-accounts}
 
-Het de rekeningsbeheer van de gebruiker wordt uitgevoerd gebruikend de sectie van de Manager van de Gebruiker binnen de Console van het Beleid.
+Gebruikersaccountbeheer wordt uitgevoerd met de sectie Gebruikersbeheer in de beheerconsole.
 
-De gebruikers kunnen worden gecreeerd, worden uitgegeven, en worden geschrapt gebruikend de hulpmiddelen op dit gebied. Het aantal gebruikers u in één keer kunt hebben hangt van hoeveel gebruikers af vergunning gegeven is.
+Gebruikers kunnen met de gereedschappen in dit gebied worden gemaakt, bewerkt en verwijderd. Het aantal gebruikers dat u in één keer kunt hebben, is afhankelijk van het aantal gebruikers dat een licentie heeft.
 
-Alle gebruikersverrichtingen hieronder worden uitgevoerd binnen het **[!UICONTROL User Manager]** lusje in **[!UICONTROL Administration Console]**.
+Alle gebruikersbewerkingen hieronder worden uitgevoerd op het tabblad **[!UICONTROL User Manager]** in **[!UICONTROL Administration Console]**.
