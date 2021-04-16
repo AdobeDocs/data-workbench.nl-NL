@@ -1,92 +1,92 @@
 ---
-description: sidebar verleent toegang tot regelmatig-gebruikte functies en bewaart visualisaties aangezien u zich tussen Werkruimten beweegt.
-solution: Analytics
+description: De zijbalk biedt toegang tot regelmatig gebruikte functies en behoudt de visualisatie wanneer u tussen werkruimten beweegt.
 title: De zijbalk configureren
-topic: Data workbench
 uuid: 0d2f0b9a-56a9-4f27-aaa6-1f9bf7fcab2d
+exl-id: 75ccc869-8ced-4beb-b3d7-ed7febe347f9
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 0%
 
 ---
 
-
 # De zijbalk configureren{#configure-the-sidebar}
 
-sidebar verleent toegang tot regelmatig-gebruikte functies en bewaart visualisaties aangezien u zich tussen Werkruimten beweegt.
+De zijbalk biedt toegang tot regelmatig gebruikte functies en behoudt de visualisatie wanneer u tussen werkruimten beweegt.
 
-De beheerders kunnen sidebar aanpassen om het voor verschillende gebruikersgroepen aangewezen te maken, dan opstellen sidebar met een profiel.
+Beheerders kunnen een zijbalk aanpassen om deze geschikt te maken voor verschillende gebruikersgroepen en vervolgens de zijbalk met een profiel implementeren.
 
-sidebar is ideaal om u te helpen spoor van filters en lokale treedt met voeten. Als u liever de zijbalk niet gebruikt, kunt u deze verbergen.
+De zijbalk is ideaal als u filters en lokale overschrijvingen wilt bijhouden. Als u liever de zijbalk niet gebruikt, kunt u deze verbergen.
 
-## Voeg visualisaties aan sidebar toe {#section-666f70a405db4f8d8eaffa567ffcac06}
+## Visualisaties toevoegen aan het zijpaneel {#section-666f70a405db4f8d8eaffa567ffcac06}
 
-1. De werkbank van Gegevens van de lancering.
-1. Klik in de zijbalk op **[!UICONTROL Add]** > *&lt;**[!UICONTROL item]**>*. For example, [!DNL Selections Panel], [!DNL Filters Panel], or [!DNL Table].
+1. Start Data Workbench.
+1. Klik in de zijbalk op **[!UICONTROL Add]** > *&lt;**[!UICONTROL item]**>*. Bijvoorbeeld [!DNL Selections Panel], [!DNL Filters Panel], of [!DNL Table].
 
-   De volgende zijpanelen zijn beschikbaar in de standaardinstallatie van de Werkbank van Gegevens. Meer objecten zijn mogelijk beschikbaar in je specifieke profiel:
+   De volgende zijbalkdeelvensters zijn beschikbaar in de standaardinstallatie van Data Workbench. Mogelijk zijn meer items beschikbaar in uw specifieke profiel:
 
-   * **Selectiescherm:** Laat u begrijpen welke selecties in de huidige werkruimte actief zijn. De [!DNL Selections Panel] updates wanneer u een nieuwe selectie maakt. U kunt selecties ontruimen door te klikken **[!UICONTROL x]**. Zie Selecties [maken in Visualisaties](../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746) voor informatie over het selecteren van gegevens.
-   * **Filterpaneel:** Maakt het gemakkelijk om bewaarde filters te laden en toe te passen. U kunt veelvoudige filters laden, en elk toelaten of onbruikbaar maken onafhankelijk door de controledoos naast het te klikken. Zie [Filtereditors](../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
-   * **Lokaal deelvenster Opheffing:** Dit paneel toont welke metriek, afmetingen, en filters die in het profiel aanwezig zijn zijn gewijzigd in uw persoonlijk exemplaar van het profiel. Dit helpt u aan mogelijke verschillen tussen de manier alarmeren de gegevens in uw cliënt en die van andere gebruikers verschijnen. Wanneer u sparen veranderingen in metrisch, afmeting, of filter aan de server opslaat, wordt de opheffing verwijderd uit [!DNL Local Overrides panel]. Als u een opheffing klikt en dan klikt **[!UICONTROL Revert to Server]**, wordt de lokale opheffing verwijderd en het punt keert aan de gedeelde versie terug.
-   * **metrische legende:** Voegt een metrische legende toe. [!DNL Metric legends] laat u toe om basislijnmetriek te zien met betrekking tot uw profiel en statistieken met betrekking tot de dataset (of tot de huidige selectie, als één is gemaakt). Zie [Metrische Legends](../../home/c-get-started/c-analysis-vis/c-legends/c-metric-leg.md#concept-e7195bc8f7844ae295bda3a88b028d5b).
-   * **Kleurenlegende:** Voegt een kleurenlegende toe. U kunt kleur-code visualisaties door metriek, zoals Omzetting en Behoud, en hen gebruiken in bijna elk [!DNL Workspace]. Het verbinden van bedrijfsmetriek aan kleur maakt het gemakkelijk om anomalieën, uitzonderingen, en tendensen te vinden. Zie [KleurenLegends](../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
-   * **Tekstannotatie:** Voegt een notitiepaneel toe. [!DNL Text annotations] zijn vensters waarin u willekeurige teksten kunt ingaan om beschrijvende informatie of commentaren aan een [!DNL Workspace]toe te voegen. Zie [Werken met tekstannotaties](../../home/c-get-started/c-analysis-vis/c-annots/c-text-annots.md#concept-55b4aa3e0c58470b8e3c9d452e12a777).
-   * **Tabel:** Voegt een lijst toe. Een lijst kan één of meerdere metriek over één of meerdere afmetingen van gegevens tonen. Zie [Tabellen](../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f).
+   * **Deelvenster Selecties:** Hiermee kunt u begrijpen welke selecties actief zijn in de huidige werkruimte. De [!DNL Selections Panel] wordt bijgewerkt wanneer u een nieuwe selectie maakt. U kunt selecties wissen door op **[!UICONTROL x]** te klikken. Zie [Selecties maken in visualisaties](../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746) voor informatie over het selecteren van gegevens.
+   * **Deelvenster Filters:** Hiermee kunt u opgeslagen filters eenvoudig laden en toepassen. U kunt meerdere filters laden en elk filter afzonderlijk in- of uitschakelen door op het selectievakje naast het filter te klikken. Zie [Editors filteren](../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
+   * **Deelvenster Lokaal overschrijven:in** dit deelvenster wordt weergegeven welke maateenheden, afmetingen en filters in het profiel zijn gewijzigd in uw persoonlijke kopie van het profiel. Hierdoor wordt u gewaarschuwd voor mogelijke verschillen tussen de manier waarop gegevens op uw client worden weergegeven en die van andere gebruikers. Wanneer u wijzigingen in metrische vorm, in afmetingen of in een filter opslaat op de server, wordt de overschrijving verwijderd uit [!DNL Local Overrides panel]. Als u op een overschrijving klikt en vervolgens **[!UICONTROL Revert to Server]** klikt, wordt de lokale overschrijving verwijderd en wordt het item teruggezet naar de gedeelde versie.
+   * **Metrische legenda:** voegt een metrische legenda toe. [!DNL Metric legends] kunt u basislijnmetriek zien met betrekking tot uw profiel en statistieken met betrekking tot de dataset (of tot de huidige selectie, als gemaakt). Zie [Metrische legenda](../../home/c-get-started/c-analysis-vis/c-legends/c-metric-leg.md#concept-e7195bc8f7844ae295bda3a88b028d5b).
+   * **Kleurlegenda:** voegt een legenda toe. U kunt kleurcode-visualisaties op metriek, zoals Omzetting en Behoud, en gebruiken hen in bijna elke [!DNL Workspace]. Door bedrijfsmetriek aan kleuren te koppelen, kunt u gemakkelijk anomalieën, uitzonderingen en trends opsporen. Zie [Kleurlegenda](../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358).
+   * **Tekstannotatie:** voegt een notitievenster toe. [!DNL Text annotations] Dit zijn vensters waarin u willekeurige tekst kunt invoeren om beschrijvende informatie of opmerkingen aan een  [!DNL Workspace]document toe te voegen. Zie [Werken met tekstannotaties](../../home/c-get-started/c-analysis-vis/c-annots/c-text-annots.md#concept-55b4aa3e0c58470b8e3c9d452e12a777).
+   * **Tabel:** voegt een tabel toe. Een tabel kan een of meer metriek in een of meer dimensies van gegevens weergeven. Zie [Tabellen](../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f).
    * **Openen:** Opent een opgeslagen bestand.
 
-## Een Sidebar-scherm openen {#section-cbc8e57491854274a577d47a48c306b8}
+## Deelvenster Zijbalk openen {#section-cbc8e57491854274a577d47a48c306b8}
 
-U kunt een sidebar visualisatiedossier van een bewaarde plaats of van het klembord openen.
+U kunt een bestand voor sidebar-visualisatie openen vanaf een opgeslagen locatie of vanaf het klembord.
 
 1. Klik in de zijbalk op **[!UICONTROL Add]** > **[!UICONTROL Open]**.
-1. Klik **[!UICONTROL File]** om van het [!DNL .vw] dossier van het paneel de plaats te bepalen u, **[!UICONTROL Last Closed Window]** dat de visualisatie van het klembord wilt toevoegen of klikken.
+1. Klik op **[!UICONTROL File]** om het [!DNL .vw]-bestand te zoeken van het deelvenster dat u wilt toevoegen of klik op **[!UICONTROL Last Closed Window]**, dat de visualisatie vanaf het klembord ophaalt.
 
-   Bovendien, kunt u klikken **[!UICONTROL From Clipboard]** om een visualisatie te kleven die aan het klembord is gekopieerd. Zie Een Sidebar-deelvenster [kopiëren](../../home/c-get-started/c-config-sidebar.md#section-720ae057632a4b8dbb94412e06a370b1).
+   Daarnaast kunt u op **[!UICONTROL From Clipboard]** klikken om een visualisatie te plakken die naar het klembord is gekopieerd. Zie [Een zijpaneel kopiëren](../../home/c-get-started/c-config-sidebar.md#section-720ae057632a4b8dbb94412e06a370b1).
 
-## Een Sidebar-scherm kopiëren {#section-720ae057632a4b8dbb94412e06a370b1}
+## Een deelvenster Zijbalk {#section-720ae057632a4b8dbb94412e06a370b1} kopiëren
 
-1. Klik de hoogste grens van het paneel met de rechtermuisknop aan, dan klik **[!UICONTROL Copy]** > **[!UICONTROL Window]**.
-1. Om het paneel te kleven, klik **[!UICONTROL Add]** > **[!UICONTROL Open]** > **[!UICONTROL From Clipboard]**.
+1. Klik met de rechtermuisknop op de bovenste rand van het deelvenster en klik vervolgens op **[!UICONTROL Copy]** > **[!UICONTROL Window]**.
+1. Als u het deelvenster wilt plakken, klikt u op **[!UICONTROL Add]** > **[!UICONTROL Open]** > **[!UICONTROL From Clipboard]**.
 
-## Een Sidebar-scherm opslaan {#section-fb19936b12704fb0a4c592abb579db1d}
+## Een zijpaneel opslaan {#section-fb19936b12704fb0a4c592abb579db1d}
 
-Voor een sidebar paneel, klik in de titelbar met de rechtermuisknop aan en klik **[!UICONTROL Save]**.
+Klik in een zijpaneel met de rechtermuisknop op de titelbalk en klik op **[!UICONTROL Save]**.
 
-Op dezelfde manier kunt u een bewaarde sidebar visualisatie openen. De Werkbank van gegevens bewaart de visualisatie als [!DNL .vw] dossier bij de plaats u specificeert.
+Op dezelfde manier kunt u een opgeslagen zijbalkvisualisatie openen. Data Workbench slaat de visualisatie op als een [!DNL .vw]-bestand op de locatie die u opgeeft.
 
-## Terug naar Standaard Sidebar {#section-4d14b8771ad747bba799876267f24831}
+## Terugkeren naar de standaardzijbalk {#section-4d14b8771ad747bba799876267f24831}
 
 Klik in de zijbalk op **[!UICONTROL Options]** > **[!UICONTROL Revert]**.
 
-Wanneer u de Werkbank van Gegevens sluit, bewaart het systeem de huidige sidebar configuratie in het [!DNL sidebar.vw] dossier in het gebruikersprofiel. Wanneer u de Werkbank van Gegevens opent, laadt het systeem het [!DNL sidebar.vw] dossier van het gebruikersprofiel, eerder dan een ouderprofiel.
+Wanneer u Data Workbench sluit, slaat het systeem de huidige zijbalkconfiguratie in het [!DNL sidebar.vw] dossier in het gebruikersprofiel op. Wanneer u Data Workbench opent, laadt het systeem het [!DNL sidebar.vw] dossier van het gebruikersprofiel, eerder dan een ouderprofiel.
 
-U kunt aan een gebrek of eerder opgeslagen sidebar terugkeren, die sidebar van het gebruikersprofiel schrapt en sidebar van het ouderprofiel herlaadt. De beheerders kunnen standaard (ouder) sidebar met een lokale sidebar vervangen door het te uploaden van het [!DNL Profile Manager].
+U kunt terugkeren naar een standaardzijbalk of eerder opgeslagen zijbalk, waardoor de zijbalk uit het gebruikersprofiel wordt verwijderd en de zijbalk opnieuw wordt geladen uit het bovenliggende profiel. Beheerders kunnen de standaardzijbalk (bovenliggend item) vervangen door een lokale zijbalk door deze te uploaden vanaf [!DNL Profile Manager].
 
-## Pas het Meer Dossier van het Comité van de Status aan {#section-8d502f3b59cc4331966edec05e896ce1}
+## Het bestand Meer status-deelvensters aanpassen {#section-8d502f3b59cc4331966edec05e896ce1}
 
-De beheerders van het systeem kunnen formules in bouwen [!DNL More Status Panel.vw]. Dit plaatst contextuele woorden rond metrisch en afmetingswaarden, en toont de resultaten in sidebar [!DNL More Status panel] .
+Systeembeheerders kunnen formules maken in de [!DNL More Status Panel.vw]. Hierdoor worden contextafhankelijke woorden geplaatst rondom metrische waarden en waarden van dimensies, en worden de resultaten weergegeven in de [!DNL More Status panel] op de zijbalk.
 
-Om de [!DNL More Status panel] in sidebar te tonen, klik de pijlen die in het volgende voorbeeld worden getoond.
+Als u de [!DNL More Status panel] in het zijpaneel wilt weergeven, klikt u op de pijlen in het volgende voorbeeld.
 
 ![](assets/more_status_panel_arrows.png)
 
-De volgende procedure toont een eenvoudig voorbeeld van hoe te om tot een aangepaste status te leiden die vertelt u hoeveel dagen in een dataset zijn:
+De volgende procedure toont een eenvoudig voorbeeld van hoe te om tot een aangepaste status te leiden die u vertelt hoeveel dagen in een dataset zijn:
 
-1. Klik in de [!DNL Profile Manager], op **[!UICONTROL Sidebar\]**.
+1. Klik in [!DNL Profile Manager] op **[!UICONTROL Sidebar\]**.
 
-1. In de [!DNL Base_5_3*] kolom, maak een lokaal exemplaar van het [!DNL More Status Panel.vw] dossier.
+1. Maak in de kolom [!DNL Base_5_3*] een lokale kopie van het bestand [!DNL More Status Panel.vw].
 
-   Om dit te doen, klik het teken van de dossiercontrole met de rechtermuisknop aan en klik **[!UICONTROL Make Local]**.
+   Klik hiertoe met de rechtermuisknop op het vinkje en klik op **[!UICONTROL Make Local]**.
 
-1. Open het [!DNL More Status Panel.vw] dossier in de Blocnote [!DNL .vw] [!DNL Editor] of in Blocnote.
+1. Open het [!DNL More Status Panel.vw] dossier in [!DNL .vw] [!DNL Editor] of in Blocnote.
 
    ![](assets/more_status_panel_file.png)
 
-1. Voltooi de [!DNL Context] en [!DNL Items] - gebieden in de [!DNL Editor]. Zie de Syntaxis [van de Taal van de](../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f) Vraag voor richtlijnen over syntaxis.
+1. Vul de velden [!DNL Context] en [!DNL Items] in [!DNL Editor] in. Zie [Syntaxis van de Taal van de vraag](../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f) voor richtlijnen over syntaxis.
 
 1. Sla het bestand op.
 
-   De waarden in het voorafgaande voorbeeld resulteren in een statusformule die als volgt wordt getoond:
+   De waarden in het voorgaande voorbeeld resulteren in een statusformule die als volgt wordt weergegeven:
 
    ![](assets/more_status_panel.png)
-
