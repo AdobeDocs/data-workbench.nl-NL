@@ -1,23 +1,24 @@
 ---
-description: ongeldig
-solution: Analytics
+description: Mappen toevoegen
 title: Mappen toevoegen
-topic: Data workbench
 uuid: 9e6b35e8-435e-4af7-ab60-30b335869063
+exl-id: dfd60ac2-4443-432d-901f-00ce1fc4e46a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '36'
+ht-degree: 0%
 
 ---
 
-
 # Mappen toevoegen{#adding-folders}
 
-1. Klik een bestaande omslag met de rechtermuisknop aan, en selecteer **[!UICONTROL New subfolder]**.
+1. Klik met de rechtermuisknop op een bestaande map en selecteer **[!UICONTROL New subfolder]**.
 
    ![](assets/new_subfolder_1.png)
 
-1. Een nieuwe subfolder zal worden gecreeerd.
+1. Er wordt een nieuwe submap gemaakt.
 
    ![](assets/new_subfolder_2.png)
 
-   Als de verrichting succesvol was, zult u ook een herinnering zien erop wijzend dat de omslag is gecreeerd.
+   Als de bewerking succesvol was, wordt er ook een melding weergegeven dat de map is gemaakt.
