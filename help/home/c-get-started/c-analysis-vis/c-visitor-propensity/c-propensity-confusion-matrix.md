@@ -1,29 +1,30 @@
 ---
-description: De statistische berekeningen voor het scoren van de dichtheid worden gedefinieerd.
-solution: Analytics
-title: Het berekenen van het Score van de Propensiteit
-topic: Data workbench
+description: De statistische berekeningen voor het waarderen van de volheid worden gedefinieerd.
+title: Correctie berekenen
 uuid: 67270864-0468-4cc9-b48b-0e880f813555
+exl-id: 679e1363-fd10-4a44-a85a-ef0daefaf303
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 0%
 
 ---
 
+# Correctie berekenen{#calculating-propensity-scoring}
 
-# Het berekenen van het Score van de Propensiteit{#calculating-propensity-scoring}
+De statistische berekeningen voor het waarderen van de volheid worden gedefinieerd.
 
-De statistische berekeningen voor het scoren van de dichtheid worden gedefinieerd.
+Conceptueel, is de score die voor elke bezoeker wordt berekend een geschatte waarschijnlijkheid dat de gespecificeerde gebeurtenis (die door de doelfilter wordt bepaald) zou kunnen gebeuren, resulterend in een score waaier van 0 tot 100 percenten. De scoringsprocedure gebruikt bestaande steekproeven als opleidingsgegevens om het verband tussen de gebeurteniswaarschijnlijkheid en de geselecteerde onafhankelijke variabelen van belang te vinden.
 
-Conceptueel, is de score die voor elke bezoeker wordt berekend een geschatte waarschijnlijkheid dat de gespecificeerde gebeurtenis (die door de doelfilter wordt bepaald) zou kunnen gebeuren, resulterend in een waaier van de scorewaarde van 0 tot 100 percenten. De scoringsprocedure gebruikt bestaande steekproeven als opleidingsgegevens om het verband tussen de gebeurteniswaarschijnlijkheid en de geselecteerde onafhankelijke variabelen van belang te vinden.
+Dergelijke relaties worden wiskundig weergegeven in elke kwantitatieve waarde die aan elke onafhankelijke variabele is gekoppeld. Deze waarden worden modelcoëfficiënten genoemd. ScoreDim gebruikt momenteel het algoritme Iterously Reweight Least Squares (IRLS) om de modelcoëfficiënten te schatten. IRLS gaat door de steekproeven veelvoudige tijden tot het verschil van coëfficiënten tussen huidige pas en de vorige pas minder dan 1.0e-6 is, waarbij het **wordt genoemd samengekomen**. Afhankelijk van de gegevens is het echter mogelijk dat de IRLS geen convergentie kunnen bereiken.
 
-Mathematisch, worden dergelijke verhoudingen weerspiegeld in elke kwantitatieve waarde verbonden aan elke onafhankelijke variabele. Die waarden worden modelcoëfficiënten genoemd. ScoreDim gebruikt momenteel het Iteratively Regewogen algoritme van de Minst Squares (IRLS) om de modelcoëfficiënten te schatten. IRLS gaat door de steekproeven veelvoudige tijden tot het verschil van coëfficiënten tussen huidige pas en de vorige pas minder dan 1.0e-6 is, waarbij het wordt genoemd **samengekomen**. Nochtans, afhankelijk van de gegevens, kan IRLS geen convergentie kunnen bereiken.
+In dat geval wordt de modelopleiding beëindigd wanneer
 
-In dat geval eindigt de modeltraining wanneer
-
-* het coëfficiëntverschil wordt groter in plaats van kleiner;
+* het coëfficiëntieverschil wordt groter in plaats van kleiner;
 * 1000 passages zijn bereikt, of
-* een wiskundige fout verhindert verdere herhaling.
+* een wiskundige fout voorkomt herhaling.
 
-Als IRLS niet samenkomt, zal een reservealgoritme genoemd het Stochastische Decent van de Gradiënt (SGD) worden gebruikt. SGD zal ook door de opleidingssteekproeven veelvoudige tijden gaan. Maar in tegenstelling tot IRLS worden de SGD-modelcoëfficiënten gecontroleerd, zodat het verschil tussen iteratie altijd exponentieel zal afnemen. Evenzo zal SGD eindigen wanneer het coëfficiëntverschil onder 1,0e-6 of 100.000 passages is bereikt. De mislukking van IRLS en de betrokkenheid van SGD zullen in spoorlogboek worden geregistreerd.
+Als IRLS niet samenkomt, zal een reservealgoritme genoemd Stochastic Gradient Decent (SGD) worden gebruikt. SGD zal ook de opleidingssteekproeven veelvoudige tijden doornemen. Maar in tegenstelling tot IRLS worden de SGD-modelcoëfficiënten zodanig beheerd dat het verschil tussen iteratie altijd exponentieel afneemt. Evenzo zal SGD eindigen wanneer het verschil in coëfficiënt onder 1,0e-6 of 100.000 passages is bereikt. De mislukking van de IRLS en de betrokkenheid van SGD zullen in spoorlogboek worden geregistreerd.
 
-Voor beide algoritmen, niet gaan alle steekproeven in modelopleiding. Op dit moment wordt 80 procent gebruikt om het model te trainen. Nadat het model wordt opgeleid, zullen de resterende 20 percenten steekproeven worden gebruikt om de modelsterkte in termen van Nauwkeurigheid, Rappel, en Nauwkeurigheid te beoordelen die uit de verwarringsmatrijs wordt berekend. Hoe dichter bij 100%, hoe beter het scoremodel.
+Voor beide algoritmen gaan niet alle steekproeven naar modelopleiding. 80 procent wordt momenteel gebruikt om het model te trainen. Nadat het model is opgeleid, zullen de resterende 20 percenten steekproeven worden gebruikt om de modelsterkte in termen van Nauwkeurigheid, Herhaling, en Precisie te beoordelen die van de verwarringsmatrijs wordt berekend. Hoe dichter bij 100%, hoe beter het scoremodel.
