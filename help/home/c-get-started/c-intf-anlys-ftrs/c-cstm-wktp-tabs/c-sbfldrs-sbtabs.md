@@ -1,37 +1,37 @@
 ---
-description: Door gebrek, tonen de pas gecreëerde lusjes subfolders binnen de bijbehorende folder als hiërarchische, drop-down subdirectories in plaats van als subtabs.
-solution: Analytics
-title: Submappen weergeven als subtabs
-topic: Data workbench
+description: Nieuwe tabbladen geven de submappen in de bijbehorende map standaard weer als hiërarchische submappen in plaats van als subtabbladen.
+title: Submappen weergeven als subtabbladen
 uuid: b4d7c6dd-d5ad-4b93-ba67-65a69e11eefc
+exl-id: 6a05852b-3efc-4e71-9782-d4cc3a687a26
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 0%
 
 ---
 
+# Submappen weergeven als subtabbladen{#display-subfolders-as-subtabs}
 
-# Submappen weergeven als subtabs{#display-subfolders-as-subtabs}
+Nieuwe tabbladen geven de submappen in de bijbehorende map standaard weer als hiërarchische submappen in plaats van als subtabbladen.
 
-Door gebrek, tonen de pas gecreëerde lusjes subfolders binnen de bijbehorende folder als hiërarchische, drop-down subdirectories in plaats van als subtabs.
+U kunt submappen weergeven als subtabbladen (zoals in het volgende voorbeeld) door een [!DNL empty folder.useTabs]-bestand te plaatsen in de map *werkprofiel name*\Workspaces\*tabnaam* in de installatiemap van de Data Workbench.
 
-U kunt subfolders als subtabs (zoals aangetoond in het volgende voorbeeld) tonen door een [!DNL empty folder.useTabs] dossier in het het *werkende profiel te plaatsen - noem*\Workspaces\*tabnaam omslag* binnen de de installatiefolder van de Werkbank van Gegevens.
-
-Het volgende voorbeeld toont het [!DNL Custom] lusje met drop-down subdirectories.
+In het volgende voorbeeld ziet u het tabblad [!DNL Custom] met vervolgkeuzemenu&#39;s.
 
 ![](assets/client-sub.png)
 
-Als u een [!DNL empty folder.useTabs] dossier in de omslag van de Douane van de Werkruimten \ plaatst, alle subfolders binnen de de omslagvertoning van de Douane in [!DNL Worktop] als subtabs, zoals aangetoond in het volgende voorbeeld:
+Als u een [!DNL empty folder.useTabs] dossier in de omslag van de Werkruimten \ van de Douane plaatst, tonen alle subfolders binnen de omslag van de Douane in [!DNL Worktop] als subtabs, zoals aangetoond in het volgende voorbeeld:
 
 ![](assets/client-sub2.png)
 
-**Om subfolders als subtabs in te tonen[!DNL Worktop]**
+**Submappen weergeven als subtabbladen in het dialoogvenster[!DNL Worktop]**
 
 >[!NOTE]
 >
->Elk folderniveau moet een [!DNL Tab Name.useTabs] dossier voor de inhoud van subfolder hebben om als subtabs in plaats van hiërarchische, drop-down subdirectories te verschijnen.
+>De inhoud van de submap wordt alleen weergegeven als subtabs op elk directoryniveau als er een [!DNL Tab Name.useTabs]-bestand aanwezig is in plaats van hiërarchische vervolgkeuzelijsten.
 
-1. In [!DNL Profile Manager], klik **[!UICONTROL Workspaces]** om zijn inhoud te bekijken.
-1. Klik in de kolom Naam *van het* werkprofiel met de rechtermuisknop op het vinkje voor een van de [!DNL folder.useTabs] bestanden en klik op **[!UICONTROL Copy]**.
-1. Klik met de rechtermuisknop in de [!DNL User] kolom voor de map Werkruimten\*tabnaam* en klik op **[!UICONTROL Paste]**. De subfolders binnen dat lusje tonen nu als subtabs.
-1. (Facultatief) om deze verandering beschikbaar te maken voor alle gebruikers van het het werkprofiel, klik het witte vinkje voor het [!DNL new folder.useTabs] dossier in de [!DNL User] kolom met de rechtermuisknop aan en klik **[!UICONTROL Save to]** > &lt; **[!UICONTROL working profile name]**>.
-
+1. Klik in [!DNL Profile Manager] op **[!UICONTROL Workspaces]** om de inhoud ervan weer te geven.
+1. Klik in de kolom *werkprofielnaam* met de rechtermuisknop op het vinkje voor een van de [!DNL folder.useTabs] bestanden en klik op **[!UICONTROL Copy]**.
+1. Klik met de rechtermuisknop in de kolom [!DNL User] voor de map Workspaces\*tab name* en klik op **[!UICONTROL Paste]**. De submappen op dat tabblad worden nu als subtabbladen weergegeven.
+1. (Optioneel) Als u deze wijziging beschikbaar wilt maken voor alle gebruikers van het werkprofiel, klikt u met de rechtermuisknop op het witte vinkje voor het bestand [!DNL new folder.useTabs] in de kolom [!DNL User] en klikt u op **[!UICONTROL Save to]** > &lt; **[!UICONTROL working profile name]**>.
