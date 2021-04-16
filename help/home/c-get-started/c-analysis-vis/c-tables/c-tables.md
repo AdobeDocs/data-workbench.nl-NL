@@ -1,20 +1,20 @@
 ---
-description: Een lijst kan één of meerdere metriek over één of meerdere afmetingen van gegevens tonen.
-solution: Analytics
+description: Een tabel kan een of meer metriek in een of meer dimensies van gegevens weergeven.
 title: Tabellen
-topic: Data workbench
 uuid: 72c1eb8a-4f51-44d9-a0b1-be45e896d781
+exl-id: cef8d0b1-61c2-4d60-ad2e-52a94063d65b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '62'
+ht-degree: 0%
 
 ---
 
-
 # Tabellen{#tables}
 
-Een lijst kan één of meerdere metriek over één of meerdere afmetingen van gegevens tonen.
+Een tabel kan een of meer metriek in een of meer dimensies van gegevens weergeven.
 
-Het volgende voorbeeld toont u een lijst waarin de Gemiddelde Score voor elke Film als waarde wordt getoond maar ook door de lengte van zijn bar wordt afgeschilderd.
+In het volgende voorbeeld ziet u een tabel waarin de gemiddelde score voor elke film als een waarde wordt weergegeven, maar die ook wordt weergegeven door de lengte van de balk.
 
 ![](assets/vis_Table.png)
-
