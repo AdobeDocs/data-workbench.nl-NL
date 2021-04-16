@@ -1,26 +1,27 @@
 ---
-description: De afmetingen van de latentie worden geconstrueerd van een ouder telbare afmeting, zoals Zittingen, en een tijddimensie, zoals Dag.
-solution: Analytics
-title: Creeer een latentiedimensie
-topic: Data workbench
+description: De afmetingen van de latentie worden geconstrueerd van een oudertelbare afmeting, zoals Zittingen, en een tijdafmeting, zoals Dag.
+title: Een latentiedimensie maken
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
+exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 0%
 
 ---
 
+# Een latentiedimensie maken{#create-a-latency-dimension}
 
-# Creeer een latentiedimensie{#create-a-latency-dimension}
+De afmetingen van de latentie worden geconstrueerd van een oudertelbare afmeting, zoals Zittingen, en een tijdafmeting, zoals Dag.
 
-De afmetingen van de latentie worden geconstrueerd van een ouder telbare afmeting, zoals Zittingen, en een tijddimensie, zoals Dag.
+Wanneer u een latentietabel in Data Workbench maakt, voegt u automatisch een latentiedimensie toe aan het visualisatiebestand (.vw). U kunt de latentiedimensie van een tabel bewerken door de onderstaande stappen te volgen.
 
-Wanneer u een latentietabel maakt in Data Workbench, voegt u automatisch een latentiedimensie toe aan het visualisatiebestand (.vw). U kunt de latentiedimensie van een lijst uitgeven door de hieronder stappen te volgen.
+**Een latentiedimensie bewerken**
 
-**Om een latentiedimensie uit te geven**
+1. Open de latentietabel die u in een teksteditor zoals Kladblok hebt gemaakt. U vindt deze in de map Gebruiker > `working profile name` > Werkmap in de installatiemap van de Data Workbench.
 
-1. Open de latentielijst die u in een tekstredacteur zoals Blocnote creeerde. Het wordt gevestigd in de Gebruiker > `working profile name` > de omslag van het Werk binnen uw de installatiefolder van de Werkbank van Gegevens.
-
-   De bepaalde latentiedimensie omvat de parameters die in het volgende voorbeeld worden getoond. (De definitie van uw latentiedimensie kan extra parameters omvatten.) Het [!DNL line entity = LatencyDim:] wijst op het begin van de definitie van de latentiedimensie.
+   De gedefinieerde latentiedimensie bevat de parameters die in het volgende voorbeeld worden getoond. (De definitie van de latentiedimensie kan aanvullende parameters bevatten.) De [!DNL line entity = LatencyDim:] geeft het begin van de definitie van de latentiedimensie aan.
 
    ```
    entity = LatencyDim:
@@ -35,54 +36,54 @@ Wanneer u een latentietabel maakt in Data Workbench, voegt u automatisch een lat
    Time After = int: time after
    ```
 
-1. Geef de waarden voor de Naam, het Niveau, de Klem, de Tijd, het Formaat, de Tijd vóór, of de Tijd na parameters uit gebruikend de volgende lijst als gids:
+1. Bewerk de waarden voor de parameters Naam, Niveau, Clip, Tijd, Indeling, Tijd voor of Tijd na met behulp van de volgende tabel als richtlijn:
 
    <table id="table_13DF30B8B7314F118D0ED5DF9EA70B9B"> 
    <thead> 
    <tr> 
       <th colname="col1" class="entry"> Voor deze parameter... </th> 
-      <th colname="col2" class="entry"> Verstrek deze informatie... </th> 
+      <th colname="col2" class="entry"> Deze informatie opgeven... </th> 
    </tr> 
    </thead>
    <tbody> 
    <tr> 
       <td colname="col1"> <p>Naam </p> </td> 
-      <td colname="col2"> <p>Optioneel. De naam van de latentiedimensie die in het contextmenu verschijnt wanneer u het afmetingsetiket of de elementen met de rechtermuisknop aanklikt. </p> </td> 
+      <td colname="col2"> <p>Optioneel. De naam van de latentieafmeting die in het contextmenu verschijnt wanneer u het afmetingsetiket of de elementen met de rechtermuisknop aanklikt. </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> <p>Niveau </p> </td> 
-      <td colname="col2"> <p>Een telbare dimensie die de ouder van de latentiedimensie is. De voorbeelden omvatten Zitting, Bezoeker, en de Mening van de Pagina. </p> </td> 
+      <td colname="col2"> <p>Een aftelbare dimensie die de ouder van de latentiedimensie is. Voorbeelden zijn Sessie, Bezoeker en Paginaweergave. </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> <p>Clip </p> </td> 
-      <td colname="col2"> <p>Een telbare dimensie die een één-aan-vele verhouding met het niveau van de latentiedimensie heeft. De latentie wordt niet berekend over de grenzen van deze afmeting. Bijvoorbeeld, als u een niveau van de Mening van de Pagina en een klem van Zitting specificeert, worden de latenties berekend voor die paginameningen die tijdens de zelfde zitting zoals de gebeurtenis voorkwamen. </p> <p>Voor informatie over één-aan-vele (eenvoudige) afmetingen, zie de Gids <i>van de Configuratie van de</i>Dataset. </p> </td> 
+      <td colname="col2"> <p>Een aftelbare dimensie die een één-op-vele verhouding met het niveau van de latentiedimensie heeft. Latentie wordt niet berekend over de grenzen van deze dimensie. Als u bijvoorbeeld een niveau van paginaweergave en een clip van sessie opgeeft, worden latentie berekend voor de paginaweergaven die tijdens dezelfde sessie als de gebeurtenis hebben plaatsgevonden. </p> <p>Voor informatie over één-aan-vele (eenvoudige) afmetingen, zie <i>Gids van de Configuratie van de Dataset</i>. </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> <p>Tijd </p> </td> 
-      <td colname="col2"> <p>De dimensie die wordt gebruikt om verstreken tijd voor de latentiedimensie te meten. Deze dimensie kan een tijddimensie, zoals Dag of Uur, of een telbare afmeting, zoals Bezoeker, Zitting, of de Mening van de Pagina zijn. </p> </td> 
+      <td colname="col2"> <p>De dimensie die wordt gebruikt om de verstreken tijd voor de latentiedimensie te meten. Deze dimensie kan een tijddimensie zijn, zoals Dag of Uur, of een aftelbare dimensie, zoals Bezoeker, Zitting, of de Mening van de Pagina. </p> </td> 
    </tr> 
    <tr> 
-      <td colname="col1"> Formaat </td> 
-      <td colname="col2"> <p>Optioneel. Specificeert de verschijning van de latentievisualisatie in de Werkbank van Gegevens. Binnen de parameter van het Formaat, kunt u de volgende waarden uitgeven: 
+      <td colname="col1"> Indeling </td> 
+      <td colname="col2"> <p>Optioneel. Hiermee bepaalt u de vormgeving van de latentie-visualisatie in de Data Workbench. Binnen de parameter van het Formaat, kunt u de volgende waarden uitgeven: 
       <ul id="ul_ABF4C17BDE2E4F6C9CBDD933674DE861"> 
-         <li id="li_5ED6A7267C81444983AF8507ADC6A5AB">Tijdskoord. De eenheid van tijd die in de latentivisualisatie wordt getoond, zoals dag of week. Ben zeker om het tijdkoord te veranderen wanneer u de tijddimensie verandert. </li> 
-         <li id="li_E3B517ECE1494221AAE90455CC0AAB42">Compensatie. Een geheel aantal dat aan negatief van de waarde voor Tijd vóór gelijk is. Bijvoorbeeld, als de Tijd vóór 7 is, zou de compensatie -7 moeten zijn. </li> 
+         <li id="li_5ED6A7267C81444983AF8507ADC6A5AB">Tijdreeks. De tijdseenheid die wordt getoond in de latentie visualisatie, zoals dag of week. Vergeet niet de tijdtekenreeks te wijzigen wanneer u de tijddimensie wijzigt. </li> 
+         <li id="li_E3B517ECE1494221AAE90455CC0AAB42">Verschuiving. Een geheel getal dat gelijk is aan het negatieve getal van de waarde voor Tijd voor. Als Tijd voor bijvoorbeeld 7 is, moet de verschuiving -7 zijn. </li> 
       </ul> </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> <p>Tijd voor </p> </td> 
-      <td colname="col2"> <p>De maximale hoeveelheid tijd (uitgedrukt in de eenheden van de tijddimensie) vóór de gebeurtenis waarvoor latentie wordt berekend. Als deze waarde aan 0 of niet geplaatst bij allen wordt geplaatst, wordt de latentie berekend slechts voor de voorwaartse richting. </p> <p>Als u deze waarde verandert, ben zeker om de compensatiewaarde in de parameter van het Formaat te veranderen: De compensatie is negatief van de waarde voor Tijd vóór. </p> </td> 
+      <td colname="col2"> <p>De maximale tijdsduur (uitgedrukt in de eenheden van de tijddimensie) vóór de gebeurtenis waarvoor latentie wordt berekend. Als deze waarde is ingesteld op 0 of helemaal niet, wordt de vertraging alleen voor de voorwaartse richting berekend. </p> <p>Als u deze waarde wijzigt, moet u de verschuivingswaarde wijzigen in de parameter Format: De verschuiving is het negatief van de waarde voor Tijd voor. </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> <p>Tijd na </p> </td> 
-      <td colname="col2"> <p>De maximale hoeveelheid tijd (uitgedrukt in de eenheden van de tijddimensie) na de gebeurtenis waarvoor latentie wordt berekend. </p> </td> 
+      <td colname="col2"> <p>De maximale tijdsduur (uitgedrukt in de eenheden van de tijddimensie) na de gebeurtenis waarvoor latentie wordt berekend. </p> </td> 
    </tr> 
    </tbody> 
    </table>
 
-1. Sla het [!DNL .vw] bestand op in de map User\*working profile name*\Work.
+1. Sla het [!DNL .vw]-bestand op in de map User\*working profile name*\Work.
 
-   Na zijn de montages voor de standaardlatentiedimensie:
+   Hier volgen de instellingen voor de standaardlatentiedimensie:
 
    ```
    entity = LatencyDim:
@@ -94,7 +95,7 @@ Wanneer u een latentietabel maakt in Data Workbench, voegt u automatisch een lat
    Time After = int: 7
    ```
 
-   In de volgende latentiedimensie, wordt de latentie van elke zittingsgebeurtenis berekend in uren en de Tijd alvorens aan nul wordt geplaatst. Daarom wordt de latentie berekend voor slechts die zittingen die binnen 24 uur na de bepaalde gebeurtenis voorkwamen.
+   In de volgende latentiedimensie, wordt de latentie van elke zittingsgebeurtenis berekend in uren en Tijd vóór wordt geplaatst aan nul. Daarom wordt de latentie alleen berekend voor de sessies die binnen 24 uur na de gedefinieerde gebeurtenis hebben plaatsgevonden.
 
    ```
    entity = LatencyDim:
