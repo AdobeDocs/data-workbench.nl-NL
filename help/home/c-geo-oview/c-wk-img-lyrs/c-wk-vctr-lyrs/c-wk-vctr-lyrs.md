@@ -1,17 +1,18 @@
 ---
-description: In gegevenswerkbank, toont een vectorlaag statische vectorgegevens (lijnkunst) op de bol.
-solution: Analytics
+description: In de werkbank Gegevens geeft een vectorlaag statische vectorgegevens (lijntekeningen) weer op de wereldschaal.
 title: Werken met vectorlagen
-topic: Data workbench
 uuid: db104a91-05b3-4db7-ba1c-6e4afc01893b
+exl-id: 668ce90c-e9e0-4e7c-98e5-0e5bf2a87a8e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '58'
+ht-degree: 0%
 
 ---
 
-
 # Werken met vectorlagen{#working-with-vector-layers}
 
-In gegevenswerkbank, toont een vectorlaag statische vectorgegevens (lijnkunst) op de bol.
+In de werkbank Gegevens geeft een vectorlaag statische vectorgegevens (lijntekeningen) weer op de wereldschaal.
 
-U kunt vectorlagen gebruiken om overzichten van geografische gebieden, zoals staten, landen, eilanden, of lichamen van water te tonen.
+U kunt vectorlagen gebruiken om omtrekken van geografische gebieden, zoals staten, landen, eilanden, of lichamen van water te tonen.
