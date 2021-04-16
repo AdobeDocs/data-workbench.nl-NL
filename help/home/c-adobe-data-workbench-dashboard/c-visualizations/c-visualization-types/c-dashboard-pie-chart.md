@@ -1,19 +1,20 @@
 ---
-description: ongeldig
-solution: Analytics
-title: Grafiek
-topic: Data workbench
+description: Cirkeldiagram
+title: Cirkeldiagram
 uuid: 94387e7f-ce54-44fc-bfb8-b079e59aee02
+exl-id: 7f0876cc-a7f6-4cca-b09e-b6d9836b1cce
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '95'
+ht-degree: 0%
 
 ---
 
+# Schijfdiagram{#pie-chart}
 
-# Grafiek{#pie-chart}
+Met schijfgrafiekvisualisaties kunt u relatieve percentages van de metrische waarden voor een beperkt aantal dimensies weergeven. Met een cirkeldiagram kunnen maximaal 20 unieke gegevenselementen tegelijk op het diagram worden weergegeven. Elke wig van de taart vertegenwoordigt een afmeting in de dataset, samen met zijn percentage. Elk percentage wordt berekend met betrekking tot de metrische waarden van de andere dimensies die op het cirkeldiagram worden getoond, die niet noodzakelijk de volledige dataset kunnen zijn.
 
-De de grafiekvisualisaties van het lichaam staan u toe om relatieve percentages van de metrische waarden voor een beperkt aantal afmetingen te tonen. Een cirkeldiagram laat tot 20 unieke gegevenselementen toe om op de grafiek meteen worden getoond. Elke wig van de taart vertegenwoordigt een afmeting in de dataset, samen met zijn percentage. Elk percentage wordt berekend met betrekking tot de metrische waarden van de andere afmetingen die op de cirkelgrafiek worden getoond, die niet noodzakelijk de volledige dataset kan zijn.
-
-De selecties kunnen in cirkelgrafieken worden gemaakt door om het even welke bepaalde wig te klikken.
+U kunt schijfgrafieken selecteren door op een bepaald segment te klikken.
 
 ![](assets/pie_chart.png)
