@@ -1,17 +1,18 @@
 ---
-description: Voert gegevens van de huidige visualisatie uit.
-solution: Analytics
+description: Hiermee exporteert u gegevens uit de huidige visualisatie.
 title: Visualisaties exporteren
-topic: Data workbench
 uuid: 21ec377c-70a6-4fcb-a3d4-2737f9c358b2
+exl-id: 3da13061-5588-4490-9cdd-23ada6f285c5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '60'
+ht-degree: 0%
 
 ---
 
+# Bezoekingen exporteren{#exporting-visualizations}
 
-# Visualisaties exporteren{#exporting-visualizations}
+Hiermee exporteert u gegevens uit de huidige visualisatie.
 
-Voert gegevens van de huidige visualisatie uit.
-
-De gegevens van visualisaties kunnen snel worden uitgevoerd gebruikend het de uitvoerpictogram bij het hoogste recht van het visualiseringsvenster. Het klikken van dit pictogram zal de uitvoer op de server in werking stellen en zal u toestaan om de gegevens in verscheidene formaten te downloaden. Zie Gegevens [](../../../../home/c-adobe-data-workbench-dashboard/c-exporting-data.md#concept-826596f7c95649b2adbcafd91fad782b) exporteren voor meer informatie.
+Gegevens uit visualisaties kunnen snel worden geëxporteerd met het exportpictogram rechtsboven in het visualisatievenster. Als u op dit pictogram klikt, wordt een exportbewerking op de server gestart en kunt u de gegevens in verschillende indelingen downloaden. Zie [Gegevens exporteren](../../../../home/c-adobe-data-workbench-dashboard/c-exporting-data.md#concept-826596f7c95649b2adbcafd91fad782b) voor meer informatie.
