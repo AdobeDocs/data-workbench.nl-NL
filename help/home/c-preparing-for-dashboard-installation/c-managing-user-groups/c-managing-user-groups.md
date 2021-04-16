@@ -1,15 +1,16 @@
 ---
-description: ongeldig
-solution: Analytics
+description: Gebruikersgroepen beheren
 title: Gebruikersgroepen beheren
-topic: Data workbench
 uuid: e1ece130-f135-48d8-aa30-5032b161b2ea
+exl-id: 51a6b39e-8305-475b-b62f-9c695e229aaa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '27'
+ht-degree: 0%
 
 ---
 
-
 # Gebruikersgroepen beheren{#managing-user-groups}
 
-Het groepsbeheer van de gebruiker wordt uitgevoerd binnen de **[!UICONTROL Group Manager]** sectie in **[!UICONTROL Administration Console]** het. Alle handelingen hieronder worden uitgevoerd binnen het **[!UICONTROL Group Manager]** tabblad.
+Gebruikersgroepbeheer wordt uitgevoerd binnen de sectie **[!UICONTROL Group Manager]** in **[!UICONTROL Administration Console]**. Alle onderstaande bewerkingen worden uitgevoerd op het tabblad **[!UICONTROL Group Manager]**.
