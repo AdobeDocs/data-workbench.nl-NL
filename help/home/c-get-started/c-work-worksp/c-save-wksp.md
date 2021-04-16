@@ -1,45 +1,46 @@
 ---
-description: Door gebrek, bewaart het sluiten van een geopende werkruimte om het even welke veranderingen die aan de werkruimte zijn aangebracht.
-solution: Analytics
+description: Als u een niet-vergrendelde werkruimte sluit, worden standaard alle wijzigingen in de werkruimte opgeslagen.
 title: Een werkruimte opslaan
-topic: Data workbench
 uuid: 166f9ef8-c2c4-4dfc-8d7d-453650bee6b8
+exl-id: 0f1052f5-496c-443e-b29d-5973c16ef527
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
 
-
 # Een werkruimte opslaan{#save-a-workspace}
 
-Door gebrek, bewaart het sluiten van een geopende werkruimte om het even welke veranderingen die aan de werkruimte zijn aangebracht.
+Als u een niet-vergrendelde werkruimte sluit, worden standaard alle wijzigingen in de werkruimte opgeslagen.
 
-Als de werkruimte een serverwerkruimte is, worden uw veranderingen bewaard slechts plaatselijk tenzij u specifiek de bijgewerkte werkruimte aan de server van de Werkbank van Gegevens bewaart. Voor meer informatie over gesloten werkruimten, zie het [Ontgrendelen van een Werkruimte](../../../home/c-get-started/c-work-worksp/c-unlock-wksp.md#concept-18ada952aecf45c79a806b31b294023e).
+Als de werkruimte een serverwerkruimte is, worden uw wijzigingen alleen lokaal opgeslagen, tenzij u de bijgewerkte werkruimte specifiek opslaat op de server van de Data Workbench. Zie [Een werkruimte ontgrendelen](../../../home/c-get-started/c-work-worksp/c-unlock-wksp.md#concept-18ada952aecf45c79a806b31b294023e) voor meer informatie over vergrendelde werkruimten.
 
 ## Een werkruimte lokaal opslaan {#section-3f331c880f1a490c96844103c2432d61}
 
-De standaardbewaarplaats is de omslag van het **Profiel van de Gebruiker name\Workspaces\tab name** binnen de de installatiefolder van de Werkbank van Gegevens. Bijvoorbeeld, als u met het profiel van Films werkt en u bewaart plaatselijk een werkruimte van het [!UICONTROL Custom] lusje, wordt de werkruimte bewaard aan de omslag **User\Movies\Workspaces\Custom** in uw de installatiefolder van de Werkbank van Gegevens.
+De standaardopslaglocatie is de map **User\profile name\Workspaces\tab name** in de installatiemap van de Data Workbench. Als u bijvoorbeeld met het profiel Films werkt en u een werkruimte lokaal opslaat vanaf het tabblad [!UICONTROL Custom], wordt de werkruimte opgeslagen in de map **User\Movies\Workspaces\Custom** in de installatiemap van de Data Workbench.
 
-**Om veranderingen in een werkruimte te bewaren**
+**Wijzigingen in een werkruimte opslaan**
 
-* In de werkruimte, klik **[!UICONTROL File]**, dan **[!UICONTROL Save]**.
+* Klik in de werkruimte op **[!UICONTROL File]** en **[!UICONTROL Save]**.
 
-**Om een bestaande werkruimte als nieuwe werkruimte te bewaren**
+**Een bestaande werkruimte opslaan als een nieuwe werkruimte**
 
-1. Voor het gewenste [!DNL Worktop] lusje, klik de duimnagel van de werkruimte u wilt tonen.
-1. In de werkruimte, klik **[!UICONTROL File]**, dan klik **[!UICONTROL Save Copy As]**.
-1. In de [!DNL Save Workspace As] dialoogdoos, specificeer de naam en de plaats waar u de gekopieerde werkruimte wilt bewaren en klikken **[!UICONTROL Save]**.
+1. Klik op de gewenste [!DNL Worktop]-tab op de miniatuur van de werkruimte die u wilt weergeven.
+1. Klik in de werkruimte op **[!UICONTROL File]** en klik vervolgens op **[!UICONTROL Save Copy As]**.
+1. Geef in het dialoogvenster [!DNL Save Workspace As] de naam en locatie op waar u de gekopieerde werkruimte wilt opslaan en klik op **[!UICONTROL Save]**.
 
-## Sparen een werkruimte aan de server van de Werkbank van Gegevens {#section-65a23da852ee4186880e002f7c87ea81}
+## Een werkruimte opslaan op de Data Workbench-server {#section-65a23da852ee4186880e002f7c87ea81}
 
 >[!NOTE]
 >
->Slechts kunnen de gebruikers met de aangewezen toestemmingen werkruimten aan de server van de Werkbank van Gegevens bewaren. Voor meer informatie, contacteer uw systeembeheerder.
+>Alleen gebruikers met de juiste machtigingen kunnen werkruimten opslaan op de Data Workbench-server. Neem voor meer informatie contact op met de systeembeheerder.
 
-De werkruimten van de besparing aan de verbonden server van de Werkbank van Gegevens worden ook bedoeld als het publiceren van een werkruimte omdat het de werkruimte ter beschikking stelt van andere gebruikers. Door gebrek, worden de werkruimten bewaard aan de *werkende profielnaam*\Workspaces\*tabName* omslag van de server van de Werkbank van Gegevens. Bijvoorbeeld, als u met het profiel van Films werkt en u sparen een werkruimte aan de verbonden server van de Werkbank van Gegevens van het [!DNL Custom] lusje, wordt de werkruimte bewaard aan Movies\Workspaces\Custom folder of the Data Workbench server.
+Het opslaan van werkruimten op de verbonden server van de Data Workbench wordt ook bedoeld als het publiceren van een werkruimte omdat het de werkruimte ter beschikking van andere gebruikers stelt. Werkruimten worden standaard opgeslagen in de map *werkprofielnaam*\Workspaces\*tabnaam* van de Data Workbench-server. Als u bijvoorbeeld met het profiel Films werkt en u via het tabblad [!DNL Custom] een werkruimte opslaat naar de verbonden Data Workbench-server, wordt de werkruimte opgeslagen in de map Movies\Workspaces\Custom folder of the Data Workbench server.
 
-**Om een werkruimte aan de server van de Werkbank van Gegevens te bewaren**
+**Een werkruimte opslaan op de Data Workbench-server**
 
-* Voor het gewenste [!DNL Worktop] lusje, klik de duimnagel van de werkruimte met de rechtermuisknop aan die u aan de server van de Werkbank van Gegevens wilt bewaren en klikken **[!UICONTROL Save to server]**.
+* Klik op het gewenste tabblad [!DNL Worktop] met de rechtermuisknop op de miniatuur van de werkruimte die u wilt opslaan op de Data Workbench-server en klik op **[!UICONTROL Save to server]**.
 
 ![](assets/mnu_workspaceManager_SaveToServerwksp.png)
