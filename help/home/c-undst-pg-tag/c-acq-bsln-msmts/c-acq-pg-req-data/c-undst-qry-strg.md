@@ -1,35 +1,36 @@
 ---
-description: Het vraagkoord (cs-uri-vraag) wordt vaak gebruikt door Webtoepassingen en plaatsontwikkelaars om informatie van pagina tot pagina wegens de statenloze aard van HTTP over te gaan.
-solution: Analytics
-title: Het begrip van het Koord van de Vraag
-topic: Data workbench
+description: De querytekenreeks (cs-uri-query) wordt vaak gebruikt door webtoepassingen en siteontwikkelaars om informatie van pagina naar pagina door te geven vanwege de stateless aard van HTTP.
+title: De queryreeks begrijpen
 uuid: 7403277d-fbce-4e98-bd42-894142e38d0d
+exl-id: b5281e5f-3eb7-4d6a-a7b3-9958cb430621
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 0%
 
 ---
 
-
 # Het begrip van het Koord van de Vraag{#understanding-the-query-string}
 
-Het vraagkoord (cs-uri-vraag) wordt vaak gebruikt door Webtoepassingen en plaatsontwikkelaars om informatie van pagina tot pagina wegens de statenloze aard van HTTP over te gaan.
+De querytekenreeks (cs-uri-query) wordt vaak gebruikt door webtoepassingen en siteontwikkelaars om informatie van pagina naar pagina door te geven vanwege de stateless aard van HTTP.
 
-In veel gevallen, kan de informatie in het vraagkoord worden overgegaan wanneer het door [!DNL Sensor] bij de Webserver wordt verworven. Dergelijke informatie kan worden gebruikt door de ware structuur van de site en het pad van de bezoekers erdoorheen te belichten, evenals andere informatie. [!DNL Site]
+In veel gevallen kan informatie worden doorgegeven in de queryreeks wanneer deze wordt aangeschaft door [!DNL Sensor] op de webserver. Dergelijke informatie kan door [!DNL Site] worden gebruikt om de ware structuur van de plaats, en de weg van bezoekers door het, evenals andere informatie te verlichten.
 
-In sommige dynamische websites, zijn de naam=value paren (variabelen) in het vraagkoord belangrijk voor het bepalen van de daadwerkelijke pagina die door een bezoeker wordt gevraagd. In dergelijke gevallen kunnen URL&#39;s op de volgende of soortgelijke wijze worden gestructureerd:
+In sommige dynamische websites zijn naam=waarde paren (variabelen) in de queryreeks belangrijk om te bepalen welke pagina daadwerkelijk wordt aangevraagd door een bezoeker. In dergelijke gevallen kunnen URL&#39;s op de volgende of soortgelijke wijze worden gestructureerd:
 
 ```
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME
 ```
 
-In dit voorbeeld, is PAGENAME eigenlijk de indicator van welke pagina aan de aanvrager van dit URL zal worden gediend. Vele hulpmiddelen en de diensten van de de analyse van het Weblogboek beperken de capaciteit van een plaatsexploitant om te bepalen wat een pagina in hun plaats gebaseerd is op welke variabelen van het vraagkoord in de vraagkoorden van URLs van de plaats voorkomen. De server van de gegevenswerkbank en de gegevenswerkbank kunnen worden gevormd om dergelijke vraagnamen te gebruiken om unieke pagina&#39;s te bepalen. Dit is belangrijk omdat vele systemen volgende URLs als de zelfde pagina zouden interpreteren, maar [!DNL Site] niet.
+In dit voorbeeld is PAGENAME in feite de indicator van welke pagina aan de aanvrager van deze URL zal worden betekend. Veel hulpprogramma&#39;s en services voor webloganalyse beperken de mogelijkheid van een siteoperator om te definiëren wat een pagina in hun site is, op basis van de variabelen voor queryreeksen die voorkomen in de queryreeksen van de URL&#39;s van de site. De server van de gegevenswerkbank en gegevenswerkbank kunnen worden gevormd om dergelijke vraagnamen te gebruiken om unieke pagina&#39;s te bepalen. Dit is belangrijk omdat veel systemen de volgende URL&#39;s als dezelfde pagina zouden interpreteren, maar [!DNL Site] niet.
 
 ```
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME2
 ```
 
-Op dezelfde manier voegen de plaatsontwikkelaars en de toepassingen vaak vele variabelen van het vraagkoord in URLs van een plaats toe die niets met het identificeren van de daadwerkelijke pagina te doen hebben die wordt gevraagd. De voorbeelden worden hieronder getoond:
+Siteontwikkelaars en -toepassingen voegen vaak veel queryreeksvariabelen toe aan de URL&#39;s van een site die niets te maken hebben met het identificeren van de pagina die wordt aangevraagd. Hieronder vindt u voorbeelden:
 
 ```
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10001
@@ -37,9 +38,8 @@ http://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10002
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10003
 ```
 
-In dit voorbeeld, is de variabele CAMPAIGN= van het vraagkoord toegevoegd aan URL. Deze variabele CAMPAIGN wordt gebruikt om erop te wijzen welke marketing campagne een bezoeker veroorzaakte om dit URL te selecteren. [!DNL Site] kan worden gevormd om deze CAMPAIGN informatie te gebruiken, nog los het van de definitie van welke pagina een bezoeker bekeken zodat in uw lijst van pagina&#39;s voor rapportering en analysedoeleinden u eenvoudig het volgende zou zien:
+In dit voorbeeld is de variabele CAMPAIGN= van de querytekenreeks toegevoegd aan de URL. Deze CAMPAIGN-variabele wordt gebruikt om aan te geven welke marketingcampagne ertoe heeft geleid dat een bezoeker deze URL heeft geselecteerd. [!DNL Site] kan worden gevormd om deze informatie te gebruiken CAMPAIGN, maar het van de definitie van te scheiden welke pagina een bezoeker bekeken zodat in uw lijst van pagina&#39;s voor rapportering en analysedoeleinden u eenvoudig het volgende zou zien:
 
 ```
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME
 ```
-
