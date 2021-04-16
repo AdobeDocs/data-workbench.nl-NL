@@ -1,29 +1,31 @@
 ---
-description: Stappen om een ondergroep tot stand te brengen.
-solution: Analytics
-title: Ondergroepen maken
-topic: Data workbench
+description: Stappen om een subset te maken.
+title: Subsets maken
 uuid: e2f8d91b-ea66-46e1-9add-685aebe1d59e
+exl-id: 5386638a-43a0-4702-85c4-e72944a4201a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '74'
+ht-degree: 0%
 
 ---
 
+# Subsets maken{#create-subsets}
 
-# Ondergroepen maken{#create-subsets}
-
-Stappen om een ondergroep tot stand te brengen.
+Stappen om een subset te maken.
 
 >[!NOTE]
 >
->Om een ondergroep tot stand te brengen of te veranderen, moet u online werken.
+>Als u een subset wilt maken of wijzigen, moet u online werken.
 
-1. Terwijl het werken online, maak de gewenste selecties binnen één of meerdere visualisaties in uw werkruimte.
+1. Terwijl u online werkt, maakt u de gewenste selecties in een of meer visualisaties in uw werkruimte.
 
-   Voor meer informatie over het interpreteren van selecties, zie het [Maken Selecties in Visualisaties](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746).
+   Zie [Selecties maken in visualisaties](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746) voor meer informatie over het interpreteren van selecties.
 
-1. Klik binnen de werkruimte met de rechtermuisknop aan en klik **[!UICONTROL Data]** > **[!UICONTROL Subset]** > *&lt;**[!UICONTROL level name]**>*.
+1. Klik met de rechtermuisknop in de werkruimte en klik op **[!UICONTROL Data]** > **[!UICONTROL Subset]** > *&lt;**[!UICONTROL level name]**>*
+.
 
    ![](assets/mnu_Subset.png)
 
-X toont links van de [!DNL Subset menu] optie en links van het niveau van de ondergroep.
+Een X wordt links van de optie [!DNL Subset menu] en links van het niveau van de subset weergegeven.
