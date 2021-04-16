@@ -1,26 +1,27 @@
 ---
-description: Maakt een lijst van alle gesteunde browsers.
-solution: Analytics
+description: Hiermee geeft u alle ondersteunde browsers weer.
 title: Ondersteunde browsers
-topic: Data workbench
 uuid: 7add01cc-905f-46e8-8e0d-3e9d458c466c
+exl-id: 5f1dcd53-c0ee-436f-ad7c-8d669008a61c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
 
-
 # Ondersteunde browsers{#supported-browsers}
 
-Maakt een lijst van alle gesteunde browsers.
+Hiermee geeft u alle ondersteunde browsers weer.
 
-Het dashboard van het Inzicht van Adobe is een web-based toepassing die gebruikend de recentste Webbrowser technologie werkt. Het kan op om het even welk werkend systeem worden gebruikt aangezien het werkende systeem met compatibele Webbrowser is uitgerust.
+Het Adobe Insight-dashboard is een webtoepassing die de nieuwste webbrowsertechnologie gebruikt. Deze kan op elk besturingssysteem worden gebruikt, aangezien het besturingssysteem is uitgerust met een compatibele webbrowser.
 
-Omdat het dashboard uit eigenschappen voordeel haalt die niet in oudere versies van Webbrowsers worden gesteund, worden recentere browsers vereist voor een optimale ervaring wanneer het gebruiken van de toepassing. Terwijl vele variaties van browsers kunnen werken, slechts worden de volgende Webbrowsers officieel gesteund:
+Omdat het dashboard gebruik maakt van functies die niet worden ondersteund in oudere versies van webbrowsers, zijn recentere browsers vereist voor een optimale ervaring bij het gebruik van de toepassing. Hoewel veel variaties van browsers mogelijk werken, worden alleen de volgende webbrowsers officieel ondersteund:
 
 * Google Chrome 15 en hoger (beschikbaar op [https://www.google.com/chrome/](https://www.google.com/chrome/))
 * Microsoft Internet Explorer 9 en hoger (beschikbaar op [http://www.microsoft.com/windows/ie/](http://www.microsoft.com/windows/ie/))
 * Mozilla Firefox 3.6 en hoger (beschikbaar op [http://www.mozilla.org/en-US/firefox/all-older.html](http://www.mozilla.org/en-US/firefox/all-older.html))
 * Safari 5.1 en hoger (beschikbaar op [http://www.apple.com/safari](http://www.apple.com/safari))
 
-Naast het gebruiken van compatibele Webbrowser, moet geen extra software worden gedownload om het dashboard te gebruiken.
+Naast het gebruik van een compatibele webbrowser hoeft u geen extra software te downloaden om het dashboard te kunnen gebruiken.
