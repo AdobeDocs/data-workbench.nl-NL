@@ -1,24 +1,25 @@
 ---
-description: De vraag van de Uitvoering van de Markering van de Verwijzing wordt opgenomen in Web-pagina's waarvoor u meetgegevens wilt verzamelen.
-solution: Analytics
-title: Het toevoegen van de Vraag van de Markering van de Verwijzing de Uitvoering van de Vraag
-topic: Data workbench
+description: De oproep tot het uitvoeren van de referentiepagina-tag wordt ingevoegd in webpagina's waarvoor u meetgegevens wilt verzamelen.
+title: Aanroepen tot uitvoering van referentiepagina-tag toevoegen
 uuid: 8c682649-d1b1-40a6-a2b2-4ff5a92b732f
+exl-id: a4f9ab2b-50e8-4e0b-9c87-80dffb697316
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 0%
 
 ---
 
+# Aanroepen tot uitvoering van referentiepagina-tag toevoegen{#adding-reference-page-tag-execution-calls}
 
-# Het toevoegen van de Vraag van de Markering van de Verwijzing de Uitvoering van de Vraag{#adding-reference-page-tag-execution-calls}
+De oproep tot het uitvoeren van de referentiepagina-tag wordt ingevoegd in webpagina&#39;s waarvoor u meetgegevens wilt verzamelen.
 
-De vraag van de Uitvoering van de Markering van de Verwijzing wordt opgenomen in Web-pagina&#39;s waarvoor u meetgegevens wilt verzamelen.
+Het moet worden opgenomen in de hoofdtekst van het HTML-document en kan, indien van toepassing, worden geplaatst in een algemene include-voettekst. [!DNL Reference Page Tag Execution Call] kan door uw team worden gewijzigd om extra informatie te verzamelen die tijdens vereisten het verzamelen van vergaderingen met het team van de Diensten van de Raadpleging van Adobe zou kunnen worden geïdentificeerd.
 
-Het zou in het lichaam van het HTML- document moeten worden omvat en kan binnen globaal worden geplaatst omvat footer indien van toepassing. Het [!DNL Reference Page Tag Execution Call] kan door uw team worden gewijzigd om extra informatie te verzamelen die tijdens vereisten zou kunnen worden geïdentificeerd die vergaderingen met het team van de Diensten van het Raadplegen van Adobe verzamelen.
+Voer de volgende stappen uit om het verzamelen van gegevens te vergemakkelijken via de [!DNL Reference Page Tag]:
 
-Voer de volgende stappen uit om het verzamelen van gegevens door het gebruik van de [!DNL Reference Page Tag]gegevensbank te vergemakkelijken:
-
-1. Kopieer de volgende code in uw het documentlichaam van HTML:
+1. Kopieer de volgende code naar de hoofdtekst van het HTML-document:
 
    ```
    <!--//BEGIN REFERENCE PAGE TAG--> 
@@ -37,22 +38,21 @@ Voer de volgende stappen uit om het verzamelen van gegevens door het gebruik van
    <!-- END REFERENCE PAGE TAG-->
    ```
 
-1. Wijzig de weg aan de plaats van de [!DNL zig.js] en [!DNL zag.gif] dossiers. Bijvoorbeeld:
+1. Wijzig de weg aan de plaats van [!DNL zig.js] en [!DNL zag.gif] dossiers. Bijvoorbeeld:
 
    ```
    //www.mysite.com/scripts/zig.js 
    //www.mysite.com/images/zag.gif 
    ```
 
-Gelieve te zorgen ervoor dat de aangewezen HTTP caching-Controle kopballen op uw Webserver zijn geplaatst om ervoor te zorgen dat de [!DNL zig.js]en [!DNL zag.gif] - dossiers niet door browser in het voorgeheugen ondergebracht worden. U kunt de HTTP Cache-Controle kopbalinformatie plaatsen gebruikend één van twee methodes. De eerste methode is een HTTP- kopbal via de Webserver te plaatsen. De tweede methode moet een HTTP- kopbal voor elke specifieke pagina of ingebed voorwerp plaatsen gebruikend manuscript. Met de scripting methode, moet de Web-pagina gebruikend een programmeertaal zoals JSP of ASPIS gecreeerd zijn. De pagina wordt dan scripted zodat het de aangewezen kopbalinformatie verzendt. Deze methode gaat vergezeld van twee duidelijke nadelen: 1) alle pagina&#39;s moeten worden gecodeerd om de kopbal te verzenden, en 2) de pagina&#39;s kunnen geen statisch HTML zijn, dat één of ander effect op de prestaties van de Webserver heeft.
+Zorg ervoor dat de juiste HTTP Cache-Control headers op uw webserver zijn ingesteld om ervoor te zorgen dat de [!DNL zig.js]en [!DNL zag.gif] bestanden niet in de cache van de browser worden geplaatst. U kunt de HTTP Cache-Control koptekstinformatie instellen met een van twee methoden. De eerste methode is het instellen van een HTTP-header via de webserver. De tweede methode is het instellen van een HTTP-header voor elke specifieke pagina of elk ingesloten object met behulp van een script. Met de scriptmethode moet de webpagina zijn gemaakt met een programmeertaal zoals JSP of ASP. De pagina is dan gescripteerd zodat het de aangewezen kopbalinformatie verzendt. Deze methode kent twee duidelijke nadelen: 1) alle pagina&#39;s moeten worden gecodeerd om de header te verzenden, en 2) de pagina&#39;s mogen geen statische HTML zijn, wat enig effect heeft op de prestaties van de webserver.
 
-De websites die op Microsoft IIS lopen kunnen de aangewezen HTTP- kopbal door de Console van het Beheer van Microsoft toevoegen. De websites die van de Servers van het Web van Netscape worden gediend kunnen dit verwezenlijken door het [!DNL obj.conf] dossier binnen de de configuratiefolder van de plaats uit te geven. De Apache Server van het Web verstrekt webmasters de capaciteit om de kopballen van HTTP aan te passen gebruikend de inbegrepen mod_headers module waar AOLServer klantgericht door het gebruik van de modules van TCP wordt. Alvorens de de geheime voorgeheugen-Controle van HTTP- kopballen uit te voeren, zou u naar de documentatie specifiek voor uw platform van de Webserver moeten verwijzen.
+De websites die op Microsoft IIS lopen kunnen de aangewezen kopbal van HTTP door de Console van het Beheer van Microsoft toevoegen. Websites die via Netscape iPlanet Web Servers worden aangeboden, kunnen dit bereiken door het [!DNL obj.conf]-bestand in de configuratiemap van de site te bewerken. De Apache Web Server verstrekt webmasters de capaciteit om de kopballen van HTTP aan te passen gebruikend de inbegrepen module mod_headers waar AOLServer klantgericht door het gebruik van modules van TCP wordt. Voordat u HTTP Cache-Control headers implementeert, moet u de documentatie raadplegen die specifiek is voor uw webserverplatform.
 
-In het algemeen, zou de HTTP- kopbal als volgt moeten worden gestructureerd:
+Over het algemeen zou de kopbal van HTTP als volgt moeten worden gestructureerd:
 
 ```
 Cache-Control: no-cache 
 Pragma: no-cache 
 Expires: -1
 ```
-
