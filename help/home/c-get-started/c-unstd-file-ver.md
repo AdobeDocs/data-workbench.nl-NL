@@ -1,45 +1,46 @@
 ---
-description: Met de desktop kunt u eenvoudig bepalen waar elke werkruimte is opgeslagen, of deze nu op de server van de Data Workbench is, op uw lokale machine of op beide.
-solution: Analytics
-title: Bestandsversioning
-topic: Data workbench
+description: Met de desktop kunt u eenvoudig bepalen waar elke werkruimte is opgeslagen, of deze zich op de Data Workbench-server, op uw lokale computer of op beide bevindt.
+title: Bestandsversie
 uuid: 5e7430f3-1425-41d2-828b-bc8f5786bf3b
+exl-id: 82a70d51-a95c-4ddd-8d3c-cd0364940693
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 0%
 
 ---
 
+# Bestandsversie{#file-versioning}
 
-# Bestandsversioning{#file-versioning}
+Met de desktop kunt u eenvoudig bepalen waar elke werkruimte is opgeslagen, of deze zich op de Data Workbench-server, op uw lokale computer of op beide bevindt.
 
-Met de desktop kunt u eenvoudig bepalen waar elke werkruimte is opgeslagen, of deze nu op de server van de Data Workbench is, op uw lokale machine of op beide.
-
-## Bestandsversies identificeren {#section-d555c96b016344f19b356c12213dd2a9}
+## Bestandsversies {#section-d555c96b016344f19b356c12213dd2a9} identificeren
 
 **Server**
 
-Een serverwerkruimte wordt opgeslagen op de verbonden server van de Werkbank van Gegevens en is beschikbaar aan alle gebruikers die toegang tot dit profiel en tabel hebben. Een serverwerkruimte wordt weergegeven als één miniatuur.
+Een serverwerkruimte wordt opgeslagen op de verbonden server van de Data Workbench en is beschikbaar aan alle gebruikers die toegang tot dit profiel en lusje hebben. Een serverwerkruimte wordt weergegeven als één miniatuur.
 
 ![](assets/wsp_thumb_server.png)
 
-De werkruimten van de server worden opgeslagen door gebrek in de aangewezen subomslag binnen de omslag van Werkruimten op de verbonden server van de Werkbank van Gegevens.
+De werkruimten van de server worden door gebrek opgeslagen in de aangewezen subomslag binnen de omslag van Werkruimten op de aangesloten server van de Data Workbench.
 
 **Lokaal**
 
-Een lokale werkruimte is de lokale versie van een serverwerkruimte. Een lokale werkruimtevertoningen als twee overlappende duimnagels. De duimnagel op de bovenkant wordt aanvankelijk omringd door een gloed, die erop wijst dat de recente veranderingen plaatselijk aan de serverwerkruimte werden aangebracht. Deze gloed verdwijnt in de loop der tijd.
+Een lokale werkruimte is de lokale versie van een serverwerkruimte. Een lokale werkruimte wordt weergegeven als twee overlappende miniaturen. De miniatuur bovenaan wordt aanvankelijk omgeven door een gloed, wat aangeeft dat er onlangs wijzigingen zijn aangebracht in de werkruimte van de server. Deze gloed verdwijnt na verloop van tijd.
 
 ![](assets/wsp_thumb_local.png)
 
-De lokale werkruimten worden opgeslagen door gebrek in de [!DNL User\working profile name\Workspaces\tab] naamomslag binnen de de installatiefolder van de Werkbank van Gegevens (of van het Inzicht).
+Lokale werkruimten worden standaard opgeslagen in de naammap [!DNL User\working profile name\Workspaces\tab] in de installatiemap van de Data Workbench (of Insight).
 
 >[!NOTE]
 >
->Wanneer u een lokale versie van een serverwerkruimte hebt, moet u aan de serverversie terugkeren alvorens u een bijgewerkte versie van de serverwerkruimte kunt downloaden. Om terug naar de serverversie zonder lokale veranderingen terug te keren, klik de duimnagel van de lokale werkruimte met de rechtermuisknop aan en klik **[!UICONTROL Revert to server version]**.
+>Wanneer u een lokale versie van een serverwerkruimte hebt, moet u terugkeren naar de serverversie voordat u een bijgewerkte versie van de serverwerkruimte kunt downloaden. Als u de serverversie wilt herstellen zonder lokale wijzigingen, klikt u met de rechtermuisknop op de miniatuur van de lokale werkruimte en klikt u op **[!UICONTROL Revert to server version]**.
 
 **Gebruiker**
 
-Een gebruikerswerkruimte is een werkruimte die werd gecreeerd op en slechts op de lokale machine bestaat. Een gebruikerswerkruimte toont als één enkele duimnagel met een gestippeld overzicht van een lege werkruimte achter het, erop wijzend dat er geen bronwerkruimte op de verbonden server van de Werkbank van Gegevens is.
+Een gebruikerswerkruimte is een werkruimte die is gemaakt op en alleen bestaat op de lokale computer. Een gebruikerswerkruimte wordt weergegeven als één miniatuur met een gestippelde omtrek van een lege werkruimte erachter, wat aangeeft dat er geen bronwerkruimte is op de server van de verbonden Data Workbench.
 
 ![](assets/wsp_thumb_user.png)
 
-De werkruimten van de gebruiker worden opgeslagen door gebrek in de Gebruiker \*werk profielnaam*\Workspaces\*lusjenaam* omslag binnen de de installatiefolder van het Inzicht.
+Gebruikerswerkruimten worden standaard opgeslagen in de map User\*working profile name*\Workspaces\*tab name* in de installatiemap Insight.
