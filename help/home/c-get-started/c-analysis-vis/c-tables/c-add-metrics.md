@@ -1,29 +1,30 @@
 ---
-description: Informatie over het toevoegen van en het veranderen van metriek.
-solution: Analytics
-title: Metrisch toevoegen en veranderen
-topic: Data workbench
+description: Informatie over het toevoegen en wijzigen van metriek.
+title: Metrisch toevoegen en wijzigen
 uuid: fa4c1f8a-628e-4f51-b088-a398d6d7c315
+exl-id: 5b7d8880-4bd4-4086-8212-c3c23f6af972
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 0%
 
 ---
 
+# Een metrisch{#add-and-change-a-metric} toevoegen en wijzigen
 
-# Metrisch toevoegen en veranderen{#add-and-change-a-metric}
+Informatie over het toevoegen en wijzigen van metriek.
 
-Informatie over het toevoegen van en het veranderen van metriek.
+**Een nieuwe metrische waarde toevoegen**
 
-**Om nieuwe metrisch toe te voegen**
-
-* Klik het etiket of een element van metrisch met de rechtermuisknop aan, klik **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>.* Metrisch wordt toegevoegd rechts van metrisch die u oorspronkelijk selecteerde.
+* Klik met de rechtermuisknop op het label of een element van de metrische waarde en klik op **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>.* Metrisch wordt toegevoegd rechts van metrisch die u oorspronkelijk selecteerde.
 
    ![](assets/mnu_Table_AddMetric.png)
 
-Het volgende voorbeeld toont de Gemiddelde Metrische Score door de afmeting van de Film (in de hoogste lijst) en de zelfde lijst met een tweede metrische, Gemiddelde Fout van de Score, die aan de lijst wordt toegevoegd.
+In het volgende voorbeeld wordt de gemiddelde score weergegeven aan de hand van de afmetingen Film (in de bovenste tabel) en dezelfde tabel met een tweede metrische waarde, Gemiddelde score, toegevoegd aan de tabel.
 
 ![](assets/vis_Table_AddMetric.png)
 
-**Om metrisch te veranderen**
+**Een metrisch object wijzigen**
 
-* Klik het etiket of een element van metrisch met de rechtermuisknop aan dat u wilt veranderen, klik **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*. Nieuwe metrisch vervangt originele metrisch.
+* Klik met de rechtermuisknop op het label of een element van de metrische waarde dat u wilt wijzigen, en klik op **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*. Nieuwe metrisch vervangt originele metrisch.
