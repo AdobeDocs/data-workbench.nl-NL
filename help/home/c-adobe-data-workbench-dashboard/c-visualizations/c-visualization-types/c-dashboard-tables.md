@@ -1,22 +1,22 @@
 ---
-description: ongeldig
-solution: Analytics
+description: Tabellen
 title: Tabellen
-topic: Data workbench
 uuid: 3bfb5be4-5510-456b-8b3d-6e57cb93949e
+exl-id: 215ad990-92af-4c36-9946-89dbe36bbb8c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
-
 # Tabellen{#tables}
 
-De lijsten zijn de meest detail-georiënteerde visualisaties beschikbaar in de dashboardtoepassing. De lijsten staan u toe om metrische en afmetingsgegevens met elk die gegevenselement te visualiseren als rij in een lijst wordt vertegenwoordigd. Één kolom houdt de afmetingswaarden, terwijl de andere kolommen de overeenkomstige metrische waarden bevatten. De veelvoudige metriek kan worden getoond, en er is geen beperking op het aantal afmetingswaarden die in een lijst kunnen worden getoond. Alle waarden voor een geselecteerde afmeting die in de gegevens van de gegevenswerkbank bestaan zullen in de lijst worden getoond.
+Tabellen zijn de meest gedetailleerde visualisaties die beschikbaar zijn in de dashboardtoepassing. Tabellen maken het mogelijk metrische en dimensiegegevens te visualiseren met elk gegevenselement dat als een rij in een tabel wordt vertegenwoordigd. Eén kolom bevat de waarden van de afmetingen, terwijl de andere kolommen de overeenkomstige waarden van de metrische waarde bevatten. Meerdere metriek kan worden weergegeven en er geldt geen beperking voor het aantal waarden van afmetingen dat in een tabel kan worden weergegeven. Alle waarden voor een geselecteerde afmeting die in de gegevens van de gegevenswerkbank bestaan zullen in de lijst worden getoond.
 
-De orde van de kolom kan worden herschikt door te klikken-en-slepend één kolomkopbal aan een andere plaats in het gebied van de kolomkopbal. Het sorteren kan op elk ogenblik worden uitgevoerd door op de aangewezen kolomkopbal te klikken. Het klikken van de kolomkopbal zal opnieuw de soortorde omkeren.
+U kunt de kolomvolgorde opnieuw rangschikken door te klikken en de kolomkop naar een andere locatie in het kolomkopgebied te slepen. Sorteren kan op elk ogenblik worden uitgevoerd door op de aangewezen kolomkopbal te klikken. Als u nogmaals op de kolomkop klikt, wordt de sorteervolgorde omgekeerd.
 
-De selecties kunnen in lijsten worden gemaakt door een bepaalde rij te klikken. Als u op de **[!UICONTROL Control]** toets drukt en deze ingedrukt houdt, blijven selecties behouden wanneer u op extra items klikt. Het drukken van en het houden van de **[!UICONTROL Control]** sleutel wanneer het klikken zal ook de waarde van een selectie van een knevel voorzien. Dit is nuttig om slechts één selectie uit een groep reeds geselecteerde punten te verwijderen. Een waaier van rijen kan worden geselecteerd door een rij eerst te klikken om het te selecteren, dan de **[!UICONTROL Shift]** sleutel te drukken terwijl het klikken van de laatste rij.
+U kunt selecties aanbrengen in tabellen door op een bepaalde rij te klikken. Als u **[!UICONTROL Control]** ingedrukt houdt, blijven de selecties behouden wanneer u op andere items klikt. Als u **[!UICONTROL Control]** ingedrukt houdt wanneer u klikt, wordt de waarde van een selectie ook in- of uitgeschakeld. Dit is handig als u slechts één selectie uit een groep reeds geselecteerde items wilt verwijderen. U kunt een bereik van rijen selecteren door eerst op een rij te klikken om deze te selecteren en vervolgens op **[!UICONTROL Shift]** te drukken terwijl u op de laatste rij klikt.
 
 ![](assets/table.png)
-
