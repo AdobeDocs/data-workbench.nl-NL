@@ -1,20 +1,21 @@
 ---
 description: De werkbank van gegevens gebruikt regelmatige uitdrukkingen (regex) voor onderzoek en soortverrichtingen.
-solution: Analytics
-title: Regelmatige expressies
-topic: Data workbench
+title: Reguliere expressies
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
+exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 0%
 
 ---
 
-
-# Regelmatige expressies{#regular-expressions}
+# Reguliere expressies{#regular-expressions}
 
 De werkbank van gegevens gebruikt regelmatige uitdrukkingen (regex) voor onderzoek en soortverrichtingen.
 
-Binnen het **[!UICONTROL Search]** gebied kunt u een onderzoek na &quot;re:&quot;verklaring uitvoeren gebruikend gemeenschappelijke uitdrukkingen, bijvoorbeeld:
+In het veld **[!UICONTROL Search]** kunt u een zoekopdracht uitvoeren na de instructie &quot;re:&quot; met behulp van algemene expressies, bijvoorbeeld:
 
 ```
 <b>re: *.s</b>
@@ -23,7 +24,7 @@ Binnen het **[!UICONTROL Search]** gebied kunt u een onderzoek na &quot;re:&quot
 <table id="table_BA125AB039794EE382B33003BE4E0AFB"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> metacharacter </th> 
+   <th colname="col1" class="entry"> metateken </th> 
    <th colname="col2" class="entry"> beschrijving </th> 
   </tr> 
  </thead>
@@ -38,11 +39,11 @@ Binnen het **[!UICONTROL Search]** gebied kunt u een onderzoek na &quot;re:&quot
   </tr> 
   <tr> 
    <td colname="col1"> <p>? (jokerteken) </p> </td> 
-   <td colname="col2"> <p>De gelijken 0 of 1 van vorige uitdrukking aan kracht minimum aanpassing, bijvoorbeeld: <span class="filepath"> xy?z </span> komt overeen met "xy" en "xyz". </p> </td> 
+   <td colname="col2"> <p>Komt overeen met 0 of 1 van de vorige expressie om minimale overeenkomsten af te dwingen, bijvoorbeeld: <span class="filepath"> xy?z </span> komt overeen met "xy" en "xyz". </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-De extra gemeenschappelijke regelmatige uitdrukkingen kunnen ook worden gebruikt om complexere onderzoekskoorden tot stand te brengen. De regelmatige uitdrukkingen worden gebruikt over alle het onderzoeksgebieden van de Werkbank van Gegevens met inbegrip van de panelen van de vraagentiteit.
+Aanvullende reguliere expressies kunnen ook worden gebruikt om complexere zoekreeksen te maken. Reguliere expressies worden gebruikt in alle zoekvelden van Data Workbench, inclusief de deelvensters voor query-entiteiten.
 
-Zie diepgaande informatie bij [regelmatige uitdrukkingen](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
+Zie gedetailleerde informatie bij [reguliere expressies](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
