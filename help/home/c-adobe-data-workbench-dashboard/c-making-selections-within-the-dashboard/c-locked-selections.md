@@ -1,25 +1,26 @@
 ---
-description: De selecties binnen één of meerdere visualisaties op een dashboard kunnen worden gesloten om huidige selecties te bewaren en verdere verandering te verhinderen.
-solution: Analytics
+description: Selecties in een of meer visualisaties op een dashboard kunnen worden vergrendeld om de huidige selecties te behouden en verdere wijzigingen te voorkomen.
 title: Vergrendelde selecties
-topic: Data workbench
 uuid: 0466baa1-6ffb-4b7b-8dc6-118de97c8549
+exl-id: eaffe761-b2ac-4521-85ca-2c5227da3445
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 0%
 
 ---
 
-
 # Vergrendelde selecties{#locked-selections}
 
-De selecties binnen één of meerdere visualisaties op een dashboard kunnen worden gesloten om huidige selecties te bewaren en verdere verandering te verhinderen.
+Selecties in een of meer visualisaties op een dashboard kunnen worden vergrendeld om de huidige selecties te behouden en verdere wijzigingen te voorkomen.
 
-Het sluiten van visualisaties is nuttig om analyse te leiden aangezien bepaalde punten kunnen worden vooraf geselecteerd en permanent toegepast op het volledige dashboard. Dit verstrekt een visuele indicator op scherm van wat wordt gefiltreerd zonder het toe te laten om het worden veranderd.
+Het vergrendelen van visualisaties is handig voor het bepalen van de analyse, aangezien bepaalde items vooraf kunnen worden geselecteerd en permanent kunnen worden toegepast op het hele dashboard. Dit verstrekt een visuele indicator op het scherm van wat wordt gefilterd zonder het toe te laten om het worden veranderd.
 
-Het sluiten is ook nuttig om analyse te leiden door gebruikers slechts toe te staan om op visualisaties te selecteren die voor de analyse relevant zijn die het dashboard beoogt te bereiken. Bijvoorbeeld, in het steekproef dashboard hieronder, kan het boren tot het postcodeniveau voorbij het werkingsgebied van de analyse van het vraagvolume op hoog niveau zijn. In dit geval kan het steek houden dat de **[!UICONTROL Metric Breakdown by Zip]** lijst wordt gesloten en selecties slechts toegestaan op de Maand, Dag van Week, en visualisaties Datacenter heeft.
+Vergrendelen is ook handig als leidraad voor analyse door gebruikers alleen in staat te stellen visualisaties te selecteren die relevant zijn voor de analyse die het dashboard beoogt te maken. Bijvoorbeeld, in het hieronder steekproef dashboard, kan het boren tot het postcodeniveau voorbij het werkingsgebied van de analyse van het hoog vraagvolume zijn. In dit geval kan het logisch zijn dat de tabel **[!UICONTROL Metric Breakdown by Zip]** is vergrendeld en dat selecties alleen zijn toegestaan op de visualisaties Maand, Dag van week en Datacenter.
 
-Als u probeert om selecties op een gesloten visualisatie te maken, zult u een bericht zien erop wijzend dat de visualisatie gesloten is. U zult ook een gouden slotpictogram in de visualisatiekopbal zien wanneer de muiscurseur over de gesloten visualisatie wordt gehakt.
+Als u probeert selecties te maken op een vergrendelde visualisatie, wordt er een bericht weergegeven dat aangeeft dat de visualisatie is vergrendeld. Er verschijnt ook een gouden vergrendelingspictogram in de visualisatiekop wanneer de muiscursor boven de vergrendelde visualisatie wordt gehouden.
 
 ![](assets/selection_locked.png)
 
-Zoals met om het even welke selectie, worden de gesloten selecties bewaard wanneer een dashboard wordt bewaard en actief blijven wanneer een dashboard wordt geladen. Voor meer informatie zie het [Sluiten en het Ontgrendelen Visualisaties](../../../home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-locking-and-unlocking-visualizations.md#concept-9215bcdd5bb44dee8d92ef0cc82f44d2).
+Net als bij elke selectie blijven vergrendelde selecties behouden wanneer een dashboard wordt opgeslagen en blijven deze actief wanneer een dashboard wordt geladen. Zie [Visualisaties vergrendelen en ontgrendelen](../../../home/c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-locking-and-unlocking-visualizations.md#concept-9215bcdd5bb44dee8d92ef0cc82f44d2) voor meer informatie.
