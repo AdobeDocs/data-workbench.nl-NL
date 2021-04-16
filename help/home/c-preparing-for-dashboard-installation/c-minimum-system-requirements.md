@@ -1,26 +1,26 @@
 ---
-description: Maakt een lijst van de minimumconfiguratievereisten.
-solution: Analytics
+description: Hiermee geeft u de minimale configuratievereisten weer.
 title: Minimale systeemvereisten
-topic: Data workbench
 uuid: 15848e82-8c16-4ed8-a96f-d4293519203a
+exl-id: 6e679b17-99fc-40bc-b35c-0a0afbc4e807
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
 
-
 # Minimale systeemvereisten{#minimum-system-requirements}
 
-Maakt een lijst van de minimumconfiguratievereisten.
+Hiermee geeft u de minimale configuratievereisten weer.
 
-Het dashboard van de de gegevenswerkbank van Adobe wordt ontworpen om op een Op Windows gebaseerd serverplatform met slechts een paar configuratievereisten te lopen. Het dashboard vereist ten minste:
+Het dashboard van de de gegevenswerkbank van Adobe wordt ontworpen om op een Op Windows gebaseerd serverplatform met slechts een paar configuratievereisten in werking te stellen. Het dashboard vereist minstens:
 
 * Windows Server 2008 (x64 aanbevolen) of 2008 R2-besturingssysteem, met:
 
    * IIS Web Role ingeschakeld
    * Microsoft .NET Framework v4.0
-   * De Server 2008 van Microsoft SQL (de Uitdrukkelijke Uitgave is volledig compatibel.)
+   * Microsoft SQL Server 2008 (de Uitdrukkelijke Uitgave is volledig compatibel.)
 
-* Communicatie met een behoorlijk gevormde server die van de gegevenswerkbank gegevens in werking stelt werkbankversie 5.45 of hierboven met de vergunning van de Vraag API
-
+* Communicatie met een correct geconfigureerde gegevensworkbench server met gegevensworkbench versie 5.45 of hoger met Query API-licentie
