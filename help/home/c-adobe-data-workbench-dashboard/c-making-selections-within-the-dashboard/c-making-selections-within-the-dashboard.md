@@ -1,32 +1,32 @@
 ---
-description: De gegevens binnen een dashboard kunnen gemakkelijk worden gesegmenteerd en door het gebruik van selecties worden onderzocht.
-solution: Analytics
+description: Gegevens in een dashboard kunnen eenvoudig worden gesegmenteerd en verkend door selecties te gebruiken.
 title: Selecties maken in het dashboard
-topic: Data workbench
 uuid: b28bcc11-8fd3-4431-98ba-8adbd42a73d5
+exl-id: 18475e5c-97f4-42fd-883a-f822432b5301
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
 
-
 # Selecties maken in het dashboard{#making-selections-within-the-dashboard}
 
-De gegevens binnen een dashboard kunnen gemakkelijk worden gesegmenteerd en door het gebruik van selecties worden onderzocht.
+Gegevens in een dashboard kunnen eenvoudig worden gesegmenteerd en verkend door selecties te gebruiken.
 
-De selecties worden gemaakt door bepaalde elementen binnen visualisaties te klikken om te identificeren hoe de gegevens in het dashboard zouden moeten worden gesegmenteerd. Het maken van een selectie in één visualisatie zal de gegevens segmenteren die in de andere visualisaties binnen het dashboard worden vertegenwoordigd. Om het even welk aantal selecties kan op elk ogenblik worden gemaakt, worden aangepast, of worden verwijderd, en moedigt de gebruiker aan om met de gegevens in wisselwerking te staan om analytische informatie af te leiden.
+Selecties worden gemaakt door op bepaalde elementen in de visualisatie te klikken om te bepalen hoe de gegevens in het dashboard moeten worden gesegmenteerd. Als u een selectie maakt in één visualisatie, worden de gegevens gesegmenteerd die worden weergegeven in de andere visualisaties in het dashboard. Om het even welk aantal selecties kan worden gemaakt, worden aangepast, of op elk ogenblik worden verwijderd, en moedigt de gebruiker aan om met de gegevens in wisselwerking te staan om analytische informatie af te leiden.
 
-Wanneer het bewaren van een dashboard, zal de staat van om het even welke selecties op het tijdstip van sparen worden bewaard. Op dezelfde manier wanneer een dashboard wordt geladen, om het even welke selecties die tijdens sparen werden bewaard zullen effectief worden gemaakt wanneer het dashboard wordt geladen.
+Wanneer u een dashboard opslaat, blijft de status van selecties behouden op het moment van opslaan. Wanneer een dashboard wordt geladen, worden selecties die tijdens het opslaan zijn behouden, ook toegepast wanneer het dashboard wordt geladen.
 
-De selecties kunnen worden gemaakt door op één of meerdere gegevenselementen binnen één van de visualisaties van een dashboard te klikken. De elementen van gegevens worden vertegenwoordigd door dingen zoals bars in streepjesgrafieken, kolommen in kolomgrafieken, rijen in een lijst, etc. De selecties worden benadrukt aangezien zij worden gemaakt, en het maken van selecties binnen een visualisatie zal de visualisatie een oranje grens geven. De nauwkeurige methode om selecties te maken hangt van het type van visualisatie af die wordt gebruikt.
+U kunt selecties maken door op een of meer gegevenselementen in een van de visualisaties van een dashboard te klikken. De elementen van gegevens worden vertegenwoordigd door dingen zoals bars in bar grafieken, kolommen in kolomgrafieken, rijen in een lijst, etc. Selecties worden gemarkeerd wanneer ze worden gemaakt en als u selecties maakt in een visualisatie, krijgt de visualisatie een oranje rand. De exacte methode voor het maken van selecties is afhankelijk van het type visualisatie dat wordt gebruikt.
 
 ![](assets/selection_make.png)
 
-Voor elke selectie die uit een visualisatie is gemaakt, zal een ingang ook in het Menu van Selecties verschijnen. Deze ingang is vermeld gebruikend de geselecteerde afmetingsnaam, met één selectieingang die per visualisatie verschijnt.
+Voor elke selectie die uit een visualisatie is gemaakt, wordt ook een vermelding weergegeven in het menu Selecties. Dit item wordt weergegeven met de naam van de geselecteerde dimensie, waarbij per visualisatie één item voor selecties wordt weergegeven.
 
 ![](assets/selection_menu.png)
 
 >[!NOTE]
 >
->De visualiseerde gegevens worden niet automatisch bijgewerkt telkens als een selectie wordt gemaakt. Eerder, nadat u uw gewenste selecties hebt gemaakt, moet u een update in werking stellen om de gegevens te segmenteren en uw visualisaties bij te werken.
-
+>De visualiseerde gegevens worden niet automatisch bijgewerkt telkens als een selectie wordt gemaakt. Nadat u de gewenste selecties hebt gemaakt, moet u een update starten om de gegevens te segmenteren en uw visualisaties bij te werken.
