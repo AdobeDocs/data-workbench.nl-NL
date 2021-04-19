@@ -1,19 +1,17 @@
 ---
 description: Reguliere expressies worden gebruikt voor alle zoekvelden in de werkbank met gegevens, inclusief de deelvensters met query-entiteiten.
-solution: Analytics
 title: Reguliere expressies
-topic: Data workbench
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
+exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
 translation-type: tm+mt
-source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 1%
 
 ---
 
-
-# Reguliere expressies{#regular-expressions}
+# Gewone uitdrukkingen{#regular-expressions}
 
 Reguliere expressies worden gebruikt voor alle zoekvelden in de werkbank met gegevens, inclusief de deelvensters met query-entiteiten.
 
@@ -29,19 +27,19 @@ Een reguliere expressie is een tekstpatroon, bestaande uit een combinatie van al
 
 Om complexe tekenreekspatronen te identificeren en te extraheren, gebruikt de server van de gegevenswerkbank regelmatige uitdrukkingen in sommige transformaties en voorwaarden. Hierna volgt een korte handleiding voor reguliere expressies.
 
-Deze bijlage is geen uitgebreide inleiding op reguliere expressies. Een bijzonder goede verwijzing is de publicatie van O&#39;Reilly *Mastering Regular Expressions, 2e editie* door Jeffrey E. F. Friedl.
+Deze bijlage is geen uitgebreide inleiding op reguliere expressies. Een bijzonder goede verwijzing is de publicatie van O&#39;Reilly *Mastering Regular Expressions, 2nd Edition* door Jeffrey E. F. Friedl.
 
 ## Terminologie voor reguliere expressies {#section-80b0d54f731e448391532ab3eb3c525c}
 
 | Term | Definitie |
 |---|---|
-| Letterlijk | Een letterlijk teken is een teken dat we in een reguliere expressie gebruiken om een bepaalde reeks tekens te zoeken. Bijvoorbeeld, om product in te vinden [!DNL shop/products.html], is het koordproduct letterlijk, of wat wij letterlijk zoeken in het koord. |
+| Letterlijk | Een letterlijk teken is een teken dat we in een reguliere expressie gebruiken om een bepaalde reeks tekens te zoeken. Bijvoorbeeld, om product in [!DNL shop/products.html] te vinden, is het koordproduct letterlijk, of wat wij letterlijk zoeken in het koord. |
 | Metateken | Een metateken is een speciaal teken dat een unieke interpretatie heeft in de context van reguliere expressies. De punt (.) is een metateken dat wordt gebruikt om aan om het even welk karakter aan te passen. |
-| Escape-reeks | Een escapereeks is gewoon een manier om de reguliere-expressieengine te vertellen dat we een van de metatekens als letterlijk teken willen gebruiken. Escape-reeksen beginnen altijd met de backslash (`\`). Door de backslash (ook een metateken) vóór een metateken te plaatsen, interpreteert de engine voor de reguliere expressie het metateken zonder escape als letterlijk. Als u bijvoorbeeld de metateken-punt (`.`) wilt afstemmen, moet u een escapereeks gebruiken. Als u echter een van de punten in tekenreeks 168.196.0.11 wilt afstemmen, kunt u de reguliere expressie bestaande uit een backslash en een punt (`\.`) gebruiken. |
+| Escape-reeks | Een escapereeks is gewoon een manier om de reguliere-expressieengine te vertellen dat we een van de metatekens als letterlijk teken willen gebruiken. Escape-reeksen beginnen altijd met de backslash (`\`). Door de backslash (ook een metateken) vóór een metateken te plaatsen, interpreteert de engine voor de reguliere expressie het metateken zonder escape als letterlijk. Bijvoorbeeld, als u de metatekerperiode (`.`) wilt aanpassen, moet u een vluchtopeenvolging gebruiken. Nochtans, om één van de periodes in koord 168.196.0.11 aan te passen, kon u de regelmatige uitdrukking gebruiken die uit backslash en een periode (`\.`) bestaat. |
 | Patroon | Dit is een korte terminologie voor de reguliere expressie. In wezen is een reguliere expressie een patroon dat u probeert af te stemmen op de doeltekenreeks. |
 | Doeltekenreeks | Deze term verwijst naar de tekenreeks waarin we zoeken om het gewenste patroon te vinden. |
 
-## Letterlijke overeenkomsten {#section-ec4497e3160c47ba9b828d939761b3e0}
+## Informatie over letterlijke overeenkomsten {#section-ec4497e3160c47ba9b828d939761b3e0}
 
 Letterlijke overeenkomst neemt een letterlijke tekenreeks zonder escape-tekens en zoekt in de doeltekenreeks om te zien of het een subtekenreeks van de doeltekenreeks is.
 
@@ -59,7 +57,7 @@ Als u dus probeert vast te stellen welke sessies zijn gestart als gevolg van een
 
 `http://www.xyz.com/hello.html?pad=something`
 
-U hebt geen controle over de URL&#39;s die anderen gebruiken om koppelingen naar de site te maken. Letterlijke overeenkomsten zijn te eenvoudig om sessies te zoeken die zijn gestart als gevolg van de advertentiecampagne. In de volgende sectie wordt beschreven hoe u metatekens kunt gebruiken voor flexibelere en krachtigere overeenkomsten.
+U hebt geen controle over de URL&#39;s die anderen gebruiken om koppelingen naar de site te maken. Letterlijke overeenkomsten zijn te eenvoudig om sessies te zoeken die zijn gestart als gevolg van de advertentiecampagne. In de volgende sectie wordt besproken hoe u metatekens kunt gebruiken voor flexibelere en krachtigere overeenkomsten.
 
 ## Metatekens gebruiken {#section-e29a804336304ea1ba33d40d60139aa2}
 
@@ -106,12 +104,12 @@ Neem de volgende voorbeelden:
 |---|---|---|
 | Win9`[58]` | OS=Win95 | Win95 |
 | Win95 | 8 | OS=Win98 | Win98 |
-| `[0-9]` | Mozilla/3.0 | 3 |
+| `[0-9]` | Mozilla/3.0 | 1 |
 | Les`[A-Z]` | Les | Geen gelijke omdat laag-gecaased a niet in de waaier van bovenkast A door Z is. |
 
 **Negatie**
 
-Negatie is een manier om te zeggen dat je iets wilt zoeken behalve de opgegeven tekens. Het metateken van de negatie, de omtrek of het inlasteken (`^`), wordt gebruikt als eerste karakter binnen steunen om te zeggen dat u van de gelijke om het even wat behalve de resterende karakters in de steunen zou willen zijn. Als u bijvoorbeeld een willekeurig teken maar een puntkomma (`;`) wilt afstemmen, schrijft u
+Negatie is een manier om te zeggen dat je iets wilt zoeken behalve de opgegeven tekens. Het metateken van de negatie, de omtrek of het inlasteken (`^`), wordt gebruikt als eerste karakter binnen steunen om te zeggen dat u de gelijke om het even wat behalve de resterende karakters in de steunen zou willen zijn. Als u bijvoorbeeld een willekeurig teken maar een puntkomma (`;`) wilt afstemmen, schrijft u
 
 [`^;`]
 
@@ -123,8 +121,8 @@ Om een gelijke aan het begin of eind van een doelkoord te dwingen, wordt één v
 
 | Voor dit metateken... | De reguliere-expressieprocessor zal.. |
 |---|---|
-| Circumflex of Caret (`^`) | Komt overeen met het begin van de tekenreeks. ^`[Tt]`Hij zou bijvoorbeeld overeenkomen met de doeltekenreeks &quot;Het begin&quot;, maar niet met &quot;Dit is het begin&quot;. |
-| Dollarteken (`$`) | Komt overeen met het einde van de tekenreeks. $ `[Ee]`en$ komt bijvoorbeeld overeen met &#39;Dit is het einde&#39; maar niet met &#39;Het einde is een speciale tijd&#39;. |
+| Circumflex of Caret (`^`) | Komt overeen met het begin van de tekenreeks. Bijvoorbeeld, ^`[Tt]`hij zou het doelkoord &quot;het Begin&quot;aanpassen maar zou niet &quot;dit is het begin&quot;aanpassen.&quot; |
+| Dollarteken (`$`) | Komt overeen met het einde van de tekenreeks. `[Ee]`nd$ komt bijvoorbeeld overeen met &quot;This is the end&quot;, maar komt niet overeen met &quot;The end is a special time&quot;. |
 
 >[!NOTE]
 >
@@ -164,14 +162,14 @@ Met metatekens voor herhaling kunt u een patroon meerdere keren afstemmen.
   </tr> 
   <tr> 
    <td colname="col1"> {n,m} </td> 
-   <td colname="col2"> Pas het voorgaande teken minstens in keer en hoogstens m aan. Bijvoorbeeld, van {1}, 2} d zou voedsel en voedsel maar niet voedsel aanpassen. </td> 
+   <td colname="col2"> Pas het voorgaande teken minstens in keer en hoogstens m aan. Bijvoorbeeld, van {1,2} d zou voedsel en voedsel maar niet voedsel aanpassen. </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Patroonextractie {#section-4389779653b64f6cb7c47615b25c1a79}
 
-Patroonaanpassing is slechts een deel van de kracht van reguliere expressies. Reguliere expressies bieden ook een mechanisme voor het extraheren van belangrijke delen van een doeltekenreeks. Dit wordt gedaan door het gebruiken van linker en juiste haakjes. Deze extracties worden doorgaans gebruikt als invoer in een ander proces en zijn toegankelijk via het gebruik van *%position%*, waarbij de positie een geheel getal is dat verwijst naar het aantal ronde haakjes waarvan de set ronde haakjes is gevonden.
+Patroonaanpassing is slechts een deel van de kracht van reguliere expressies. Reguliere expressies bieden ook een mechanisme voor het extraheren van belangrijke delen van een doeltekenreeks. Dit wordt gedaan door het gebruiken van linker en juiste haakjes. Deze extracties worden doorgaans gebruikt als invoer in een ander proces en worden benaderd via het gebruik van *%position%*, waarbij de positie een geheel getal is dat verwijst naar het aantal ronde haakjes waarvoor een overeenkomende set ronde haakjes is gevonden.
 
 Bekijk de volgende voorbeelden van patroonextractie:
 
@@ -211,4 +209,3 @@ Bekijk de volgende voorbeelden van patroonextractie:
   </tr> 
  </tbody> 
 </table>
-
