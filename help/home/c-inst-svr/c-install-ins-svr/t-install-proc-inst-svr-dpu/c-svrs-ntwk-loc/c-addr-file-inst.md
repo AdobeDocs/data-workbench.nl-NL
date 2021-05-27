@@ -3,7 +3,6 @@ description: Het adresdossier dat op de Server van het Inzicht wordt geïnstalle
 title: Het adresdossier dat op de Server van het Inzicht wordt geïnstalleerd
 uuid: a58d36d8-e1a3-43e7-91c5-c57351e1be49
 exl-id: 12e9bfa2-99ac-4584-b761-38401d1bc3d1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '804'
