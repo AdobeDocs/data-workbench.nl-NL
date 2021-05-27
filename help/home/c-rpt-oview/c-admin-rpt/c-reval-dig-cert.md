@@ -3,7 +3,6 @@ description: Na installatie, handelt het digitale die certificaat door Adobe wor
 title: Het digitale certificaat opnieuw valideren
 uuid: 6c8533df-f459-41eb-84ac-344bad9fecdc
 exl-id: 810e3057-26a9-413c-b77c-525035d37756
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '147'
