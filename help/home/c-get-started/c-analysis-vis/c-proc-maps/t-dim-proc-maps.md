@@ -3,7 +3,6 @@ description: Stappen om een dimensie van een proceskaart te bewaren.
 title: Dimensies opslaan op basis van een proceskaart
 uuid: 9af8e5c5-9c20-47c5-8c30-221583b0b3c2
 exl-id: bd328918-1b5b-4c58-9d14-693f92e88c69
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '145'
