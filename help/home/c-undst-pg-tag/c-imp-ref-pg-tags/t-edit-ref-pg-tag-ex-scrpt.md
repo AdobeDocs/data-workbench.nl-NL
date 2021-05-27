@@ -3,7 +3,6 @@ description: De referentiepagina-tag bestaat uit een script voor de uitvoering v
 title: Het script voor de uitvoering van de referentiepagina-tag bewerken
 uuid: 0db00b89-e420-423d-9b88-8b724baa828f
 exl-id: bc922b59-716e-4e92-84b5-59a52620df03
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '231'
