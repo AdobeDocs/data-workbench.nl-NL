@@ -1,10 +1,9 @@
 ---
 description: Documentatie Data Workbench
 title: Help bij Data Workbench
-feature: Reports & Analytics Basics
+feature: Grondbeginselen van rapporten en analyses
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
-translation-type: tm+mt
 source-git-commit: 3223733866e82b4ce439ee55fe96fed89a02c5c4
 workflow-type: tm+mt
 source-wordcount: '273'
