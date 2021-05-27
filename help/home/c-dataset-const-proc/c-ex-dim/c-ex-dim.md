@@ -2,7 +2,6 @@
 description: Instructies om uitgebreide afmetingen te maken en beschrijf de typen uitgebreide afmetingen die u kunt definiëren voor het maken tijdens de transformatiefase van de constructie van gegevenssets.
 title: Uitgebreide Dimension
 uuid: 465682c2-5b08-4b94-817f-ff7b405142af
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '134'
