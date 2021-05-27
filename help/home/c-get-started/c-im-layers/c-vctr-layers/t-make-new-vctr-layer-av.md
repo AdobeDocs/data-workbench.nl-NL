@@ -3,7 +3,6 @@ description: Stappen om een vectorlaag beschikbaar te maken voor weergave op de 
 title: Nieuwe vectorlaag beschikbaar maken
 uuid: 7bfbae0d-e5db-4aa2-8a8b-15b4980aadb5
 exl-id: 6c084bac-1a6d-452a-bf07-e502d0f2145a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '171'
