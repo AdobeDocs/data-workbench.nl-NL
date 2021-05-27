@@ -3,7 +3,6 @@ description: Voer de volgende stappen uit om te beginnen met het dashboard voor 
 title: Aan de slag
 uuid: 9e2ed5fd-29d7-4e06-ad55-c4a35a9043c8
 exl-id: acaa7563-d462-4838-b2b5-3c010382da34
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '301'
