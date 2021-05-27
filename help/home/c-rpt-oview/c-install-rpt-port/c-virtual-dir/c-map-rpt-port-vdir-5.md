@@ -3,7 +3,6 @@ description: Stappen om het Portaal van het Rapport aan een virtuele folder (IIS
 title: Het Portaal van het Rapport van de toewijzing aan een Virtuele Folder (IIS 5.0)
 uuid: 9514c33e-c139-4cc2-97c2-8b241522c44d
 exl-id: 20d8e9ea-c5b6-4a1b-9b15-557cc71ad5d9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '404'
