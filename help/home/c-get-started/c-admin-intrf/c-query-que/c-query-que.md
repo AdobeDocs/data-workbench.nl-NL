@@ -3,7 +3,6 @@ description: Normaal, beantwoordt de server van de Data Workbench inkomende gebr
 title: Query-wachtrij
 uuid: 4d64bc89-b664-4532-9f17-be11812d36d4
 exl-id: 5d9b20bf-9396-4016-beed-cee8f533f3ea
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '417'
@@ -35,7 +34,7 @@ De standaardconfiguratie omvat een eenvoudige configuratie voor [!DNL Query Queu
 
    * **Actief:** (Vector) Schakelt het  [!DNL Query Queue]in of uit. Geldige waarden zijn true of false. De standaardinstelling is false.
 
-   * **Standaardgebruikersgroep:** (tekenreeks) Typ een naam van de gebruikersgroep waaraan gebruikers worden toegevoegd, als deze niet in een gebruikersgroep staan.
+   * **Standaardgebruikersgroep:** (String) Typ een naam van de gebruikersgroep waaraan gebruikers zijn toegevoegd, als deze niet in een gebruikersgroep staan.
    * **Bronmonitoren:** (Vector) Klik met de rechtermuisknop om een bronmonitor toe te voegen. U kunt specificeren of [!DNL Query Queue] geheugen of het aantal vragen controleert. Klik met de rechtermuisknop **[!UICONTROL Resource Monitor]** om Geheugenbudgetcontrole of Aantal query&#39;s te kiezen. Zie [Query Queue Resource Monitors](../../../../home/c-get-started/c-admin-intrf/c-query-que/c-query-que-res-mon.md#concept-0840967b228c4d5ba3b59b4b2759f325) voor meer informatie.
 
    * **Onaanraakbare prioriteit:** (Int) Hiermee geeft u op dat bunches met een prioriteit die groter is dan of gelijk is aan deze waarde, nooit voorrang krijgen op het plannen van hosprioriteitsbundels. Wordt gebruikt in combinatie met de [!DNL Memory Budget Monitor] die wordt beschreven in [Gebruikersgroepparameters Tabel](../../../../home/c-get-started/c-admin-intrf/c-query-que/c-query-que-user-grps.md#concept-5555f51402ed49419c067d61738474c1).
