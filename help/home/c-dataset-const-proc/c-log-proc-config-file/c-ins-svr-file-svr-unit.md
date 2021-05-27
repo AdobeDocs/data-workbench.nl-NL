@@ -3,7 +3,6 @@ description: Informatie over de eenheden van de het dossierserver van de Server 
 title: Een Data Workbench Server File Server-eenheid configureren
 uuid: ccb65952-f017-4434-b2f8-74c274450834
 exl-id: 19b8c08a-e9f2-47ab-ad9f-1fddfbd9d249
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1784'
