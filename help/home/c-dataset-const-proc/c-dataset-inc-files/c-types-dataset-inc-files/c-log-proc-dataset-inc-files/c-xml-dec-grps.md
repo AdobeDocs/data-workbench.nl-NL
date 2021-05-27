@@ -3,7 +3,6 @@ description: De verwerking van XML-bestanden als logbronnen om decoders te defin
 title: XML-decoderingsgroepen
 uuid: 8fc9ab80-9a71-4fe2-a646-e830ffeb67b9
 exl-id: 0b0534b7-8596-4528-a643-8a9b41dcaa33
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1295'
@@ -120,7 +119,7 @@ Een tabel met de uitvoer van deze decoder voor ons XML-voorbeeldbestand ziet er 
 | x-rowtype | cs—uri-stem | x-email | x-is-geregistreerd | x-event-time | x-tracking-id |
 |---|---|---|---|---|---|
 | VISITOR |  | foo@bar.com | 1 |  | 1 |
-| PAGEVIEW | /index.html |  |  | 2006-01-01 08:00:00 | 3 |
+| PAGEVIEW | /index.html |  |  | 2006-01-01 08:00:00 | 1 |
 | PAGEVIEW | / |  |  | 2006-01-01 08:00:30 | 1 |
 
 U kunt een tabel als de bovenstaande tabel maken in een werkbank voor gegevens met behulp van een interface voor veldviewers. Voor informatie over de interface van de gebiedskijker, zie [Hulpmiddelen van de Configuratie van de Dataset](../../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5).
