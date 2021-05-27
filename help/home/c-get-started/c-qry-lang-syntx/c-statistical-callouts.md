@@ -3,7 +3,6 @@ description: Statistische callouts meten betekenisvolle relaties om verborgen ka
 title: Statistische bijschriften
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
 exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '273'
@@ -52,7 +51,7 @@ De callout kan statistische waarden terugkeren die in de datasetkolommen worden 
   </tr>
   <tr>
    <td colname="col1"> Standaardafwijking </td>
-   <td colname="col2"> De standaardafwijking geeft aan hoeveel variatie er ten opzichte van het verwachte gemiddelde bestaat. Bij een lagere standaardafwijking worden de gegevenspunten dicht bij het gemiddelde weergegeven. Een hogere standaardafwijking laat zien dat de gegevenspunten worden verspreid over een groot waardebereik. </td>
+   <td colname="col2"> De standaardafwijking geeft aan hoeveel variatie er ten opzichte van het verwachte gemiddelde bestaat. Bij een lagere standaardafwijking worden de gegevenspunten dicht bij het gemiddelde weergegeven. Een hogere standaardafwijking laat zien dat de gegevenspunten over een groot waardebereik worden verspreid. </td>
   </tr>
   <tr>
    <td colname="col1"> Totaal </td>
