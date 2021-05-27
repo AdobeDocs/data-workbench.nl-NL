@@ -3,7 +3,6 @@ description: Woordenlijst Data Workbench
 title: Woordenlijst Data Workbench
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
 exl-id: 29d6560a-0394-4031-8152-20f7ea0de00b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '4201'
@@ -95,7 +94,7 @@ In de server van de gegevenswerkbank, een gegevenstransformatie die gegevens van
 
 **Crosstab**
 
-In de werkbank van gegevens, een tabelvormige visualisatie die de metriek toont verbonden aan de snijpunten van twee dimensies.
+In gegevenswerkbank, een tabelvormige visualisatie die de metriek toont verbonden aan de snijpunten van twee dimensies.
 
 **Kubus**
 
