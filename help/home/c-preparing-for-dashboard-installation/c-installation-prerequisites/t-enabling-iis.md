@@ -3,7 +3,6 @@ description: De eerste stap is de rol IIS op uw dashboardserver toe te laten.
 title: IIS inschakelen
 uuid: fbd194db-3307-41ae-8ece-05eb261d74ad
 exl-id: 0d431302-1e69-49b6-8757-9823fd70a3b4
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '126'
