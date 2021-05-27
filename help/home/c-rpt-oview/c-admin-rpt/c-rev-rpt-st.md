@@ -3,7 +3,6 @@ description: Informatie over uw status van de Server van het Rapport en de statu
 title: Revisierapportstatus
 uuid: 0f78a9fd-83d5-4e05-b7d1-d841033a5616
 exl-id: a986f148-f019-457c-ade8-a4eaecbb1de7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '293'
