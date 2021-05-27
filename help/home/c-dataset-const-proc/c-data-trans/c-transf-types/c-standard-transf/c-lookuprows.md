@@ -3,7 +3,6 @@ description: De transformatie LookupRows onderzoekt andere logboekingangen met z
 title: LookupRows
 uuid: 4cff7cf1-00c8-4ab1-8adc-3805518226d3
 exl-id: caa9a311-b056-4fe8-bb11-1605cc690375
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '946'
@@ -22,7 +21,7 @@ Om te werken, vereist de [!DNL LookupRows] transformatie dat de gegevens in tijd
 Let op het volgende terwijl u de beschrijvingen van de parameters in de volgende tabel bekijkt:
 
 * De uitvoerrij is de gegevensrij waaraan de transformatie op een bepaald tijdpunt werkt.
-* Invoerrijen zijn alle andere rijen met gegevens (voor, na of inclusief de uitvoerrij) waarvan de waarden van het invoerveld fungeren als invoer voor de transformatie.
+* Invoerrijen zijn alle andere gegevensrijen (voor, na of inclusief de uitvoerrij) waarvan de waarden van het invoerveld fungeren als invoer voor de transformatie.
 
 <table id="table_AB68A89ECD5C45F39B8433F994BBD7D8"> 
  <thead> 
