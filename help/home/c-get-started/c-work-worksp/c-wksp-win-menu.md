@@ -3,7 +3,6 @@ description: Met dit menu kunt u beschikbare visualisaties toevoegen aan uw werk
 title: Het menu Venster van de werkruimte gebruiken
 uuid: 0fa153c1-5d68-4777-98ee-9682fd4adc41
 exl-id: 1077087b-b985-4339-b465-736722b917a5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '365'
