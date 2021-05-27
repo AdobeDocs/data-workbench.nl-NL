@@ -3,7 +3,6 @@ description: Stappen om nieuwe metrisch toe te voegen of metrisch te veranderen.
 title: Metrisch toevoegen en wijzigen
 uuid: c0763e0e-081a-4f00-b655-359f5b790ead
 exl-id: b40ad2bc-410d-4c80-b9f3-bc7e7cc42407
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '127'
