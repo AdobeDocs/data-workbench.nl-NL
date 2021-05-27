@@ -3,7 +3,6 @@ description: De stappen om een nieuwe dataset tot stand te brengen omvatten doss
 title: Nieuwe gegevensset maken met include-bestanden
 uuid: 707bdd84-b12b-4226-b6aa-43c9fc7ec9fe
 exl-id: 8a7b343d-b695-41aa-b465-8c5cd68d6ef7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '393'
