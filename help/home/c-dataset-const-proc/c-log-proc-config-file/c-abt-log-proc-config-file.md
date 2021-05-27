@@ -3,7 +3,6 @@ description: Het dossier van Logboek Processing.cfg controleert de fase van de l
 title: Het configuratiebestand voor logbestanden verwerken
 uuid: 1f5f5d75-8a24-4122-adc8-8c8aef916631
 exl-id: 11ee3298-272d-46c8-bcfe-e485b01606b1
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '238'
