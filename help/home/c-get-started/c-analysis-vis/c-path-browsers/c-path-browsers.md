@@ -3,7 +3,6 @@ description: Met een padbrowser kunt u de volgorde analyseren waarin de elemente
 title: Padbrowsers
 uuid: 548091dc-935f-41ac-b67c-39080988f1ea
 exl-id: 563cf0e3-39d7-49b7-b808-b0233169fb1a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '907'
