@@ -3,7 +3,6 @@ description: Stel het bestand info.zbin in om de taal van de clienttoepassing in
 title: Gelokaliseerde talen instellen
 uuid: 7735e183-7ba3-4e11-bfe2-7f87e4c55fc8
 exl-id: bb57887f-f213-48a4-9a10-8da7ea33eda5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '468'
