@@ -3,7 +3,6 @@ description: Stappen om een tabblad van het bureaublad te verbergen, maar niet t
 title: Een tab verbergen of verwijderen
 uuid: 38af5ddc-798f-4969-aadd-d72b80b368f6
 exl-id: 0b5b1fc8-2ce4-4f99-b12f-023b161ceddc
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '198'
