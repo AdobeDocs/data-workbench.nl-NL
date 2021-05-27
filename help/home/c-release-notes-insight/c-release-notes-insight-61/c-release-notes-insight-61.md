@@ -3,7 +3,6 @@ description: Data Workbench 6.1 de versienota's omvat nieuwe eigenschappen, verb
 title: Opmerkingen bij de release Data Workbench 6.1
 uuid: 5bfb558a-ce85-4b4a-95dc-ccef337c4d1b
 exl-id: ed37a00f-b4cd-428e-abb7-7c52d5cfd2f9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '693'
