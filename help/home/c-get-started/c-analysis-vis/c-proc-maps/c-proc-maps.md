@@ -3,7 +3,6 @@ description: Met procesafbeeldingen kunt u de activiteitsstroom tussen elementen
 title: Proceskaart
 uuid: f1db41a9-400e-467a-ba59-39831fb166af
 exl-id: 019cee7b-a704-4b47-84c6-d3ddc277c43e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '737'
@@ -45,7 +44,7 @@ De standaardmontages voor de afmetingen en metrisch van een proceskaart hangen v
 
 * **Metrisch:** De grootte van de knoop voor een bepaald element is evenredig met de metrische waarde voor dat element. Grotere knooppunten geven hogere metrische waarden aan dan kleinere knooppunten.
 
-Als u bijvoorbeeld de toepassing [!DNL Site] of HBX gebruikt, kunt u standaard elementen van de pagina-dimensie naar het procesoverzicht slepen. De grootte van elk knooppunt is gerelateerd aan de hoeveelheid sessies (gedefinieerd door de metrische sessies) waarin die pagina is weergegeven.
+Als u bijvoorbeeld de toepassing [!DNL Site] of HBX gebruikt, kunt u standaard elementen van de pagina-dimensie naar het procesoverzicht slepen. De grootte van elk knooppunt is gerelateerd aan het aantal sessies (gedefinieerd door de metrische sessies) waarin die pagina is weergegeven.
 
 >[!NOTE]
 >
