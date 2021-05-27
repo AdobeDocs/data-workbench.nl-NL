@@ -3,7 +3,6 @@ description: Wanneer u een elementpuntlaag maakt met behulp van dynamische punte
 title: Elementpuntlagen definiëren met behulp van dynamische punten
 uuid: 5f1b4638-fe45-40be-b963-18dcd5d09afa
 exl-id: ad849fe7-b909-40ef-835f-f1764e008de9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '457'
