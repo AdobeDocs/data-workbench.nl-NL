@@ -3,7 +3,6 @@ description: De transformatie van het Exemplaar kopieert eenvoudig de waarde in 
 title: Kopiëren
 uuid: 073f53bf-befb-4fba-a8f8-260ffcdd007c
 exl-id: 04e97006-1e8e-4123-bbbc-b90a5231170f
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '176'
