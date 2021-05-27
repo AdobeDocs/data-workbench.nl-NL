@@ -3,7 +3,6 @@ description: Instructies om uw software van de Server van het Inzicht, van de Tr
 title: Insight Server upgraden
 uuid: b83dd5fe-f91b-43e3-9f5e-68ea88ed2132
 exl-id: bbcec501-1f6a-43c1-8107-258d5ef85751
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '80'
