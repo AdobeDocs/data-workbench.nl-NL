@@ -3,7 +3,6 @@ description: Een 2D proceskaart kan de metrische hoeveelheden tonen die de hoeve
 title: Een metrische hoeveelheid weergeven
 uuid: ec336af1-ff5b-4c0a-86a5-8186d76cdf07
 exl-id: fbe40dfa-0597-4d78-8673-4e9b63581c47
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '161'
