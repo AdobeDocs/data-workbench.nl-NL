@@ -3,7 +3,6 @@ description: Om uw implementatie grondiger te controleren, kunt u alle havens op
 title: Poorten en toepassingen bewaken
 uuid: 63d92718-81df-49eb-adda-8b49bde57a9d
 exl-id: 418b2e5c-42ec-40f0-9cae-375194288143
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '208'
