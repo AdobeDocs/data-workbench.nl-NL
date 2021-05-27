@@ -2,7 +2,6 @@
 description: Gebruikend de Server van het Rapport voor Data Workbench, kunt u rapportreeksen plannen en automatisch produceren en aan anderen verdelen.
 title: Data Workbench Report Server
 uuid: eac678de-58bf-46d2-aa09-592696c01fb2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '123'
