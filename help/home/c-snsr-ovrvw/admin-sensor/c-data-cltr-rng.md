@@ -3,7 +3,6 @@ description: Controleer of de verzamelaar andere methoden gebruikt.
 title: Bevestigend dat de Collector van Gegevens loopt
 uuid: e5b9b12a-b8a5-4c00-abe5-e824516d46b7
 exl-id: 1235d741-1ddf-4a65-8377-3d8a9b4ba0d3
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '455'
@@ -18,7 +17,7 @@ Controleer of de verzamelaar andere methoden gebruikt.
 **Aanbevolen frequentie:** elke 5-10 minuten
 
 * [Gebruik de functie Site Test in de zender.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-a5a697c3252e40f184c0b662926170f2)
-* [Controleer  [!DNL Sensor] of een cookie is ingesteld.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-365a0182474c4dc9a5372d3e984f53de)
+* [Controleer of [!DNL Sensor] een cookie instelt.](../../../home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md#section-365a0182474c4dc9a5372d3e984f53de)
 
 ## Sitetest gebruiken {#section-a5a697c3252e40f184c0b662926170f2}
 
