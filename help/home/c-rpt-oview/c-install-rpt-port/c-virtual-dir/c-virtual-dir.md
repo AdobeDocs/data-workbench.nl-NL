@@ -3,7 +3,6 @@ description: Om het Portaal van het Rapport te vormen, moet u zijn toepassingsdo
 title: Wijs de Poortpagina's van het Rapport aan Virtuele Folders toe
 uuid: 75ca85d5-d526-48f9-b2c4-ca77c903c6af
 exl-id: 13e457d4-7039-491a-a65d-f23ad7e9fe77
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '204'
@@ -17,7 +16,7 @@ Om het Portaal van het Rapport te vormen, moet u zijn toepassingsdossiers aan vi
 
 Een virtuele folder bepaalt het adres dat browser de cliënten gebruiken om van een fysieke middel op de IIS toepassingsserver de plaats te bepalen. Om toegang te krijgen tot [!DNL Report Portal], wijzen de cliënten hun browsers aan de virtuele folder die u aan het portaal toewijst.
 
-De naam van de virtuele folder die u aan [!DNL Report Portal] toewijst moet de naam aanpassen die u voor de omslag VSVirtualPortalName in Stap 3 van de vorige sectie gebruikte. Bijvoorbeeld, als u &quot;Portaal&quot;als naam van uw [!DNL Report Portal] wilt gebruiken, moet u de dossiers van het portaal aan een virtuele folder in kaart brengen genoemd &quot;Portaal.&quot; In het volgende voorbeeld wordt de URI weergegeven die clients zouden gebruiken om toegang te krijgen tot een [!DNL Report Portal] die is toegewezen aan de virtuele map [!DNL VisualReportPortal] op een server met de naam myWebServer:
+De naam van de virtuele folder die u aan [!DNL Report Portal] toewijst moet de naam aanpassen die u voor de omslag VSVirtualPortalName in Stap 3 van de vorige sectie gebruikte. Bijvoorbeeld, als u &quot;Portaal&quot;als naam van uw [!DNL Report Portal] wilt gebruiken, moet u de dossiers van het portaal aan een virtuele folder in kaart brengen genoemd &quot;Portaal.&quot; In het volgende voorbeeld ziet u de URI die clients zouden gebruiken om toegang te krijgen tot een [!DNL Report Portal] die is toegewezen aan de virtuele map [!DNL VisualReportPortal] op een server met de naam myWebServer:
 
 [!DNL http://myWebServer/VisualReportPortal]
 
