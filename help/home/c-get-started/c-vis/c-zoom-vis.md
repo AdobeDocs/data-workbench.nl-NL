@@ -3,7 +3,6 @@ description: U kunt in- of uitzoomen op gegevens in grafieken, globes, procesafb
 title: In- of uitzoomen in een visualisatie
 uuid: bc28f759-c4d3-4340-8ec7-27cf6aaf21e6
 exl-id: 27072e6b-3102-40b2-a617-3cd26bf6e840
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '400'
