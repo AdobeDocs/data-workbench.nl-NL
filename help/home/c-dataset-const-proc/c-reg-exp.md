@@ -3,7 +3,6 @@ description: Reguliere expressies worden gebruikt voor alle zoekvelden in de wer
 title: Reguliere expressies
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1418'
@@ -162,7 +161,7 @@ Met metatekens voor herhaling kunt u een patroon meerdere keren afstemmen.
   </tr> 
   <tr> 
    <td colname="col1"> {n,m} </td> 
-   <td colname="col2"> Pas het voorgaande teken minstens in keer en hoogstens m aan. Bijvoorbeeld, van {1,2} d zou voedsel en voedsel maar niet voedsel aanpassen. </td> 
+   <td colname="col2"> Pas het voorgaande teken minstens in keer en hoogstens m aan. For example, fo{1,2}d would match fod and food but not foood. </td> 
   </tr> 
  </tbody> 
 </table>
