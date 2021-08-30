@@ -3,9 +3,9 @@ description: Nadat u DWB hebt ingesteld, kunt u deze functies implementeren.
 title: Implementatie van functies voor Data Workbench
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Nadat u DWB hebt ingesteld, kunt u deze functies implementeren.
 
 * Als u de **Globe visualisatie** wilt implementeren, raadpleegt u [Globes](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html).
 
-* **Werkruimten voor Attributie** uitvoeren, zie [Op regels gebaseerde Attributie](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-rules-attrib.html) en [Best Fit Attribution](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html).
+* **Werkruimten voor Attributie** uitvoeren, zie [Op regels gebaseerde Attributie](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-rules-attrib.html?lang=en) en [Best Fit Attribution](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html?lang=en).
 
 * Als u **Predictive Analytics**-werkruimten wilt implementeren, raadpleegt u [Visualisaties](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-vis.html) en de hieronder vermelde visualisatie.
 
-* **Predictive Intelligence with Clustering visualizations** implementeren, zie [Clustering](https://docs.adobe.com/help/en/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html).
+* **Predictive Intelligence with Clustering visualizations** implementeren, zie [Clustering](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html?lang=en).
 
 * **Predictive Intelligence with Propensity Scoring** implementeren, zie [Propensiteitsscore](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-propensity/c-visitor-propensity.html).
 

@@ -2,9 +2,9 @@
 description: Adobe Data Workbench biedt tools en processen om uw gegevens gereed te maken om te voldoen aan de algemene gegevensbeschermingsvoorschriften (GDPR).
 title: Ondersteuning van Data Workbench voor GDPR
 exl-id: fdc43567-0c57-4851-9073-e295258a8074
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ In de GDPR-verordening worden de rollen en verplichtingen van de verschillende p
 
 * Uw organisatie fungeert als **gegevenscontroller** om de context en het bewaren van persoonlijke gegevens te bepalen op basis van uw behoeften en beperkingen. Adobe verwerkt en slaat deze gegevens vervolgens namens u op.
 * Adobe fungeert als de **gegevensprocessor** om de software en services te leveren voor het implementeren van GDPR-vereisten op basis van uw overeenkomst met Adobe.
-* Na integratie van de Data Workbench met de GDPR-service en volgens de GDPR-normen kunnen bezoekers van een site (de **betrokkenen**) hun &quot;recht om te worden vergeten&quot; uitoefenen door Adobe, de gegevensverwerker. Om het recht te verwezenlijken om te worden vergeten, kunt u als gegevenscontroller uitgevochten bezoeker-id&#39;s uploaden naar Adobe vanuit een gebruikersinterface of API. Zie de [Adobe Analytics GDPR Workflow](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) documentatie voor meer informatie, met inbegrip van [voorlegt toegang en schrapt verzoeken](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html) sectie.
+* Na integratie van de Data Workbench met de GDPR-service en volgens de GDPR-normen kunnen bezoekers van een site (de **betrokkenen**) hun &quot;recht om te worden vergeten&quot; uitoefenen door Adobe, de gegevensverwerker. Om het recht te verwezenlijken om te worden vergeten, kunt u als gegevenscontroller uitgevochten bezoeker-id&#39;s uploaden naar Adobe vanuit een gebruikersinterface of API. Zie de [Adobe Analytics GDPR Workflow](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=en) documentatie voor meer informatie, met inbegrip van [voorlegt toegang en schrapt verzoeken](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html) sectie.
 
 >[!NOTE]
 >
