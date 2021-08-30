@@ -2,14 +2,13 @@
 description: Creeer Dimension die door metrische attributen (Metrische Dims) worden bepaald gebruikend een geleidelijke tovenaar. Vervolgens test, bekijkt u een voorvertoning en slaat u de nieuwe metrische gedim op in de lijst met Dimension.
 title: wizard Metrische grijswaarden
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
-translation-type: tm+mt
-source-git-commit: 35e6e9280ab36e8b39e89039b791199d1de54e03
+exl-id: 4d283a00-409c-4d74-a558-40744caba71c
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '485'
 ht-degree: 1%
 
 ---
-
 
 # wizard Metrische grijswaarden{#metric-dim-wizard}
 
@@ -51,7 +50,7 @@ Een metrische vorm zet metrisch om in een nieuwe afmeting. Met een metrische gri
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   U kunt uw eigen [metrische uitdrukking](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) of besnoeiing en deeg van een andere metrische redacteur of visualisatie toevoegen. Syntaxisfouten, formulefouten, ongedefinieerde filters en andere fouten worden gerapporteerd in de wizard.
+   U kunt uw eigen [metrische uitdrukking](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) of besnoeiing en deeg van een andere metrische redacteur of visualisatie toevoegen. Syntaxisfouten, formulefouten, ongedefinieerde filters en andere fouten worden gerapporteerd in de wizard.
 
 1. Klik op **[!UICONTROL Next]**.
 
@@ -61,26 +60,26 @@ Een metrische vorm zet metrisch om in een nieuwe afmeting. Met een metrische gri
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   Het formaat bepaalt hoe metrisch wanneer geopend in visualisatie zal worden voorgesteld. Deze indelingen zijn geselecteerde [afdrukstandaarden](http://www.cplusplus.com/reference/cstdio/printf/), die hieronder worden gedefinieerd:
+   Het formaat bepaalt hoe metrisch wanneer geopend in visualisatie zal worden voorgesteld. Deze indelingen zijn geselecteerd [afdrukstandaarden](http://www.cplusplus.com/reference/cstdio/printf/), zoals hieronder gedefinieerd:
 
    ```
    %[flags][width][.precision][length][specifier]
    % 0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   In het **[!UICONTROL Preview]** veld wordt een waarde weergegeven op basis van de geselecteerde metrische waarde en notatie.
+   In het veld **[!UICONTROL Preview]** wordt een waarde weergegeven op basis van de geselecteerde metrische waarde en indeling.
 
 1. Voeg expressie Aantal emmertjes toe.
 
-   U kunt een metrische gedim met diverse waaiers, of emmers bepalen. Hiermee worden subsets van elementen geretourneerd op basis van grootte, zoals [0-4], [5-10],...). Elementen van het niveau Dimension hebben betrekking op de elementen waarvan het bereik de waarde van metrisch bevat. Zie de beschrijving van de bucket-expressie bij [Syntax voor Dimension-expressies](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
+   U kunt een metrische gedim met diverse waaiers, of emmers bepalen. Hiermee worden subsets van elementen geretourneerd op basis van grootte, zoals [0-4], [5-10],...). Elementen van het niveau Dimension hebben betrekking op de elementen waarvan het bereik de waarde van metrisch bevat. Zie de beschrijving van de bucket-expressie bij [Syntaxis voor Dimension-expressies](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
-1. Klik **[!UICONTROL Preview]** om de tabel met waarden voor de metrische grijswaarden te openen voordat u deze opslaat.
+1. Klik op **[!UICONTROL Preview]** om de tabel met waarden voor metrische grijswaarden te openen voordat u deze opslaat.
 
    ![](assets/6_4_workstation_metricdim_preview.png)
 
    De tabel geeft de metrische waarden per metrische afstand weer.
 
-1. Klik **[!UICONTROL Show in Dimension Menu]** om de nieuwe dimensie toe te voegen aan het tabblad **Dimension** in de **Finder**.
+1. Klik **[!UICONTROL Show in Dimension Menu]** om de pas gecreëerde dimensie aan **Dimension** tabel in **Vinder** toe te voegen.
 
 1. Klik op **[!UICONTROL Next]**.
 
@@ -94,7 +93,6 @@ Een metrische vorm zet metrisch om in een nieuwe afmeting. Met een metrische gri
    | **[!UICONTROL Launch Graph]** | Start een PNG-afbeelding van de tabel. |
    | **[!UICONTROL Launch Table]** | Start een tabel in de werkruimte met waarden in kolommen die de waarden van het nieuwe metrische element aangeven ten opzichte van de waarden van het geselecteerde metrische element. |
 
-1. Klik **[!UICONTROL Finish]** en sla op.
+1. Klik op **[!UICONTROL Finish]** en sla het bestand op.
 
    Er wordt een dialoogvenster voor opslaan geopend waarin u het bestand kunt opslaan. De geselecteerde opties voor het weergeven van waarden worden geopend in de werkruimte.
-

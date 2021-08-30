@@ -1,84 +1,86 @@
 ---
-description: Volg deze stappen om het instapproces voor de Werkbank van de Gegevens van Adobe (DWB), een component van de Premium van de Analyse van Adobe (AAP) te beginnen.
+description: Voer de volgende stappen uit om het instapproces voor Adobe Data Workbench (DWB), een onderdeel van Adobe Analytics Premium (AAP), te starten.
 title: Basisinstructies aan boord voor DWB Managed Services
 uuid: ad44a4eb-00ea-49c7-8401-58976d8fe39e
-translation-type: tm+mt
-source-git-commit: ded50c4eeadea80156c17a4cad985d0ceddd5500
+exl-id: 49fb6afe-b417-4554-9238-fd6381c00029
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '922'
+ht-degree: 0%
 
 ---
 
-
 # Basisinstructies aan boord voor DWB Managed Services{#basic-onboarding-instructions-for-dwb-managed-services}
 
-Volg deze stappen om het instapproces voor de Werkbank van de Gegevens van Adobe (DWB), een component van de Premium van de Analyse van Adobe (AAP) te beginnen.
+Voer de volgende stappen uit om het instapproces voor Adobe Data Workbench (DWB), een onderdeel van Adobe Analytics Premium (AAP), te starten.
 
-Deze onboarding instructies zijn voor klanten die de Werkbank van Gegevens met één enkele rapportreeks uitvoeren gebruikend de beheerde diensten van Adobe zonder de diensten te raadplegen. Als u een nieuwe klant bent die van het AAP DWB uitvoert, zal Adobe Onboarding team uw eerste contact zijn. Als bevordering van de norm van de Analyse van Adobe of van een vroegere versie van DWB, zal een Manager van het Succes van de Klant van Adobe u helpen.
+Deze instapinstructies zijn bedoeld voor klanten die Data Workbench implementeren met één rapportsuite die services met Adobe-beheer gebruikt zonder services te raadplegen. Als u een nieuwe klant bent van het AAP die DWB implementeert, zal het Adobe Onboarding team uw eerste contact zijn. Als u een upgrade uitvoert vanaf de Adobe Analytics-standaard of een eerdere versie van DWB, helpt een Adobe Customer Success Manager u.
 
-## Gegevens aan boord: Wat wij van u nodig hebben {#section-bdeb9aa26dc14e45a6c90920832becaa}
+## Info aan boord: Wat wij van u nodig hebben {#section-bdeb9aa26dc14e45a6c90920832becaa}
 
-Adobe zal u contacteren aan:
+Adobe zal contact met u opnemen om:
 
 * Identificeer een Primaire Gebruiker voor DWB om een certificaat specifiek voor die gebruiker op de netwerkfolder te produceren. De primaire gebruiker zal ook als puntpersoon handelen om met de Zorg van de Klant van Adobe in wisselwerking te staan.
 * Identificeer de rapportreeks die in DWB moet worden geladen.
 
-De digitale de Marketing teams van Adobe zullen dan uw informatie nemen om profielen tot stand te brengen, rekeningen te plaatsen, en een configuratiedossier voor DWB te leveren.
+De Adobe Digital Marketing-teams gebruiken vervolgens uw gegevens om profielen te maken, accounts in te stellen en een configuratiebestand voor DWB te leveren.
 
-**Adobe On-boarding Taken**
+**Adobe aan boord nemen van taken**
 
-* De Zorg van de Klant van Adobe leidt tot een DWB vergunning gegeven rekening. De Zorg van de Klant van Adobe produceert een DWB- certificaat voor de primaire gebruiker.
-* De Zorg van de Klant van Adobe bepaalt de primaire gebruiker als &quot;gesteunde gebruiker,&quot;de persoon die voor gesteunde vraag en probleemresolutie wordt geïdentificeerd.
-* De Klantzorg van Adobe laadt softwarepakket aan de DWB- vergunning en softwareportaal (SoftDocs/Software en het profiel van Dokken) om aan uw organisatie worden gedownload.
+* Adobe Customer Care maakt een DWB-account met licentie. De klantenservice van Adobe genereert een DWB-certificaat voor de primaire gebruiker.
+* De klantendienst van Adobe bepaalt de primaire gebruiker als &quot;gesteunde gebruiker,&quot;de persoon die voor gesteunde vraag en probleemresolutie wordt geïdentificeerd.
+* De klantenservice van Adobe laadt het softwarepakket naar de DWB-licentie en softwareportal (SoftDocs/Software en Docs-profiel) om naar uw organisatie te worden gedownload.
 * Het team van Adobe TechOps bereidt de milieu&#39;s van de Productie en van de Ontwikkeling en hun profielen (per contract) voor DWB voor.
-* Het team van Adobe TechOps vormt gegevensvoer en de manuscripten van het profielbeheer.
-* Het team van Adobe TechOps creeert en verzendt het DWB configuratiedossier (Insight.cfg) naar het team van Adobe Onboarding verantwoordelijk voor aan boord plaatsende taken verbonden aan uw organisatie.
+* Adobe TechOps-team configureert gegevensfeeds en scripts voor profielbeheer.
+* Het team van TechOps van Adobe creeert en verzendt het DWB- configuratiedossier (Insight.cfg) naar het Adobe Onboarding team verantwoordelijk voor aan boord komende taken verbonden aan uw organisatie.
 
-Na het aanpassen van uw gegevensvoer en het produceren van geloofsbrieven, certificaten, en een profielconfiguratie, zal de Zorg van de Klant van Adobe uw configuratiedossier en geloofsbrieven verzenden om de volgende stap te nemen.
+Na het aanpassen van uw gegevensvoer en het produceren van geloofsbrieven, certificaten, en een profielconfiguratie, zal de Zorg van de Klant van de Adobe uw configuratiedossier en geloofsbrieven verzenden om de volgende stap te nemen.
 
-## Heb toegang tot uw Douane installeert Dossiers {#section-26962bf57fef435dbd1c5486d4b6f688}
+## Toegang tot uw aangepaste installatiebestanden {#section-26962bf57fef435dbd1c5486d4b6f688}
 
-U zult deze opstellingsdossiers van de Zorg van de Klant van Adobe ontvangen om het Werkstation DWB op uw cliëntcomputer te installeren.
+U ontvangt deze installatiebestanden van de klantenservice van Adobe om het DWB-werkstation op uw clientcomputer te installeren.
 
-* Uw douaneDWB configuratiedossier (Insight.cfg)
+* Uw aangepaste DWB-configuratiebestand (Insight.cfg)
 
-   Dit configuratiedossier op de cliëntcomputer zal verbindingen aan uw beheerde servers DWB omvatten.
+   Dit configuratiebestand op de clientcomputer bevat verbindingen met uw beheerde DWB-servers.
 
-* Login geloofsbrieven voor het Portaal van het Verlenen van vergunningen om de Tovenaar van de Opstelling DWB en vereiste certificaat (.pem dossier) met de naam van uw primaire gebruiker te downloaden.
+* Aanmeldingsgegevens waarmee de Licentieportal de wizard DWB Setup en het vereiste certificaat (.pem-bestand) kan downloaden met de naam van uw primaire gebruiker.
 
-**Extra installatiebestanden downloaden**
+**Aanvullende instellingsbestanden downloaden**
 
-1. Bladeren naar: licence.visualsciences.com om u vergunningscertificaat en uitvoerbaar de Tovenaar van de Opstelling te downloaden DWB.
-1. Ga uw Organisatie (de Naam van de Rekening), de naam van de primaire Gebruiker, en het Wachtwoord in dat u van de Zorg van de Klant van Adobe ontving, dan login klikt.
+1. Bladeren naar: license.visualsciences.com om u vergunningscertificaat en uitvoerbaar DWB van de Tovenaar van de Opstelling te downloaden.
+1. Voer uw organisatie (accountnaam), de naam van de primaire gebruiker en het wachtwoord in dat u van de klantenservice van Adobe hebt ontvangen en klik op aanmelden.
 
    >[!NOTE]
    >
-   >Uw browser zou u kunnen ertoe aanzetten om een digitaal certificaat op dit punt voor te stellen. Als het, annuleert de klik om de dialoogdoos te verwerpen.
+   >Mogelijk wordt u in uw browser gevraagd om nu een digitaal certificaat voor te leggen. Als dit het geval is, klikt u op Annuleren om het dialoogvenster te sluiten.
 
-1. Bepaal de plaats van het certificaat dat voor uw geval van de Werkbank van de Gegevens van Adobe (`<PrimaryUser>`.pem) wordt uitgegeven in de sectie van Downloads en download.
-1. Bepaal de plaats van de StandaardInstallateur van de Cliënt in de sectie van Downloads om de Tovenaar van de Opstelling te downloaden DWB (InsightSetup-x.xx.exe- dossier).
-1. Na het ontvangen van en het downloaden van dossiers van de Zorg van de Klant van Adobe, stel de Tovenaar van de Opstelling DWB in werking om de werkstationsoftware aan uw cliëntcomputer te installeren.
-
->[!NOTE]
-De tovenaar van de Opstelling DWB zal u door installatie van het DWB cliëntwerkstation lopen en zal helpen van de dossiers van Insight.cfg en `<PrimaryUser>`.pem de plaats bepalen om in de vereiste omslagen te plaatsen. Het dossier Insight.cfg verblijft met het dossier Insight.exe in uw geïnstalleerd cliëntwerkstation. Het `<PrimaryUser>`.pem- dossier verblijft in de omslag van Certificaten met het trust_ca_cert.pem- dossier. Alle certificaat en configuratiedossiers moeten voor DWB aanwezig zijn om te functioneren.
-
-Voor extra informatie, zie de Tovenaar [van de Opstelling](https://docs.adobe.com/content/help/en/data-workbench/using/install/workstation-setup/install-setup.html)DWB.
-
-## Verbinding met uw DWB-servers {#section-8e79c4e07c2a4342a5bb8af6ee7be3c9}
-
-Uw beheerde servers worden geïdentificeerd in het Insight.cfg- dossier dat u van de Zorg van de Klant van Adobe ontvangt en op uw cliëntwerkstation verblijft. Adobe TechOps zal opstelling uw servers en de Zorg van de Klant van Adobe zal verwijzingen naar deze beheerde servers en profielen aan het Insight.cfg- dossier toevoegen alvorens het naar u te verzenden. (De Configure verbindingen aan server in stap 12 van de documentatie van de Tovenaar van de Opstelling DWB zullen worden voltooid.)
+1. Zoek het certificaat dat is uitgegeven voor uw exemplaar van Adobe Data Workbench (`<PrimaryUser>`.pem) in de sectie Downloads en download.
+1. Zoek het standaardinstallatieprogramma voor clients in de sectie Downloads om de wizard DWB Setup (InsightSetup-x.xx.exe-bestand) te downloaden.
+1. Nadat u bestanden van de klantenservice van Adobe hebt ontvangen en gedownload, voert u de wizard DWB Setup uit om de werkstationsoftware op de clientcomputer te installeren.
 
 >[!NOTE]
-In de werkruimte van de Configuratie van het Werkstation op het DWB cliëntwerkstation, zult u uw verbonden servers en profielen kunnen zien.
+De tovenaar van de Opstelling DWB zal u door installatie van het DWB cliëntwerkstation lopen en zal helpen van Insight.cfg en `<PrimaryUser>`.pem dossiers de plaats bepalen in de vereiste omslagen te plaatsen. Het Insight.cfg- dossier verblijft met het Insight.exe- dossier in uw geïnstalleerd cliëntwerkstation. Het bestand `<PrimaryUser>`.pem bevindt zich in de map Certificates met het bestand trust_ca_cert.pem. DWB werkt alleen als alle certificaat- en configuratiebestanden aanwezig zijn.
 
-**De Beheerde Diensten van Adobe**
+Voor extra informatie, zie [DWB Tovenaar van de Opstelling](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
 
-・ Adobe TechOps beheert de infrastructuur met inbegrip van netwerk, gegevenscentrum, servers, en opslag. De controle van de infrastructuur en de reactie op alarm komt op een 24x7 basis voor alarm voor dat de actie van TechOps vereist. Voor ander alarm, zal TechOps de Zorg van de Klant van Adobe om met u op de hoogte brengen te coördineren.
+## Verbinding maken met uw DWB-servers {#section-8e79c4e07c2a4342a5bb8af6ee7be3c9}
 
-・ Adobe TechOps zal onderhoud en ingebouwde programmatuurupdates voor uw beheerde servers uitvoeren. Voor onderhoud dat uitvaltijd veroorzaakt, ontvangt u minimaal twee weken van tevoren meldingen van de klantenservice voor het onderhoudvenster. Adobe TechOps zal op directe behoeften zo snel mogelijk gericht zijn. De kennisgeving hangt af van de urgentie en zal worden opgelost zodra het schema bekend is.
+Uw beheerde servers worden geïdentificeerd in het Insight.cfg- dossier dat u van de Zorg van de Klant van Adobe ontvangt en op uw cliëntwerkstation verblijft. Adobe TechOps stelt uw servers in en de klantenservice van Adobe voegt verwijzingen naar deze beheerde servers en profielen toe aan het bestand Insight.cfg voordat deze naar u worden verzonden. (De Configure verbindingen aan server in stap 12 van de documentatie van de Tovenaar van de Opstelling DWB zullen worden voltooid.)
 
-・ Adobe TechOps plaatst - omhoog een geplande taak om gegevens automatisch te beheren. De analytische voedergegevens worden verplaatst naar DWB voor verwerking en transformatie elke avond die bij 21:00 tijd van de rapportreeks begint.
+>[!NOTE]
+In de werkruimte Werkstationconfiguratie op het DWB-clientwerkstation kunt u de aangesloten servers en profielen bekijken.
 
-・ Adobe TechOps zal andere Adobe Beheerde Diensten verwerken omvat gegevenssteunen, de rekeningen van FTP, het archiveren van gegevens, en gegevensoverdracht wanneer nodig.
+**Beheerde services van Adobe**
 
-・ Adobe TechOps zal de primaire productiecluster vormen om drie maanden het rollen gegevens te bevatten die maandelijks moeten worden teruggesteld en worden opnieuw verwerkt. De updates aan raadplegingen (Geografie, DeviceAtlas, Standaard Classificaties) zullen ook als deel van de opwerkingstaak voorkomen. Door gebrek, de taaklooppas op de eerste Vrijdag van elke maand. Indien nodig kan het programma door de klantenservice worden gewijzigd.
+・ Adobe TechOps beheert de infrastructuur inclusief netwerk, datacenter, servers en opslag. De controle van de infrastructuur en de reactie op alarm komt op een 24x7 basis voor alarm voor vereist actie TechOps. Voor andere waarschuwingen zal TechOps de klantendienst van Adobe op de hoogte brengen om met u te coördineren.
 
-Voor extra informatie contacteer de Zorg van de Klant van [Adobe van de Klant](https://helpx.adobe.com/support/programs/enterprise-support-terms.html)van Adobe.
+・ Adobe TechOps zal onderhoud en ingebouwde programmatuurupdates voor uw beheerde servers uitvoeren. Voor onderhoud dat uitvaltijd veroorzaakt, ontvangt u minimaal twee weken van tevoren meldingen van de klantenservice voor onderhoudsvensters. Adobe TechOps zal aan directe behoeften zo snel mogelijk richten. De kennisgeving hangt af van de urgentie en zal worden opgelost zodra het schema bekend is.
+
+・ Adobe TechOps plaatst opstelling een geplande taak om gegevens automatisch te beheren. De gegevens van de analytische feed worden naar DWB verplaatst voor verwerking en omzetting elke avond vanaf 21:00 de tijd van de rapportsuite.
+
+・ Adobe TechOps verwerkt indien nodig andere door Adobe beheerde services, zoals gegevensback-ups, FTP-accounts, gegevensarchivering en gegevensoverdracht.
+
+・ Adobe TechOps zal de primaire productiecluster vormen om drie maanden rolgegevens te bevatten die maandelijks worden teruggesteld en opnieuw verwerkt. De updates aan raadplegingen (Geografie, DeviceAtlas, Standaard Classificaties) zullen ook als deel van de opwerkingstaak voorkomen. Standaard wordt de taak uitgevoerd op de eerste vrijdag van elke maand. Indien nodig kan het schema door de klantenservice worden gewijzigd.
+
+Neem voor aanvullende informatie contact op met [Adobe Klantenservice](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).

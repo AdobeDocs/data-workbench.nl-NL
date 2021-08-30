@@ -3,9 +3,9 @@ description: In Profielbeheer worden alle directory's weergegeven die aan uw wer
 title: Profielbeheer maken
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
 exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ In Profielbeheer worden alle directory&#39;s weergegeven die aan uw werkprofiel 
 
 U kunt tot subdirectory van [!DNL Profile Manager] willen toegang hebben zonder het moeten zijn volledige folderstructuur navigeren. Met de menuopties [!DNL Metrics] en [!DNL Workspaces] in het menu [!DNL Manage] van het menu van het werkruimtevenster kunt u bijvoorbeeld respectievelijk de mappen Metriek en Werkruimten van Profielbeheer openen.
 
-Zie [Profielbeheer](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html) voor meer informatie over [!DNL Profile Manager].
+Zie [Profielbeheer](https://experienceleague.adobe.com/docs/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html) voor meer informatie over [!DNL Profile Manager].
 
 Standaard hebt u toegang tot de volgende managers:
 

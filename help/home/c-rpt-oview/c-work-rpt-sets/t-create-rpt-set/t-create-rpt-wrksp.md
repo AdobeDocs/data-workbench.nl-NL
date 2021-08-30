@@ -3,18 +3,18 @@ description: U kunt veelvoudige werkruimten voor één enkel rapport tot stand b
 title: De werkruimten van de rapportserver maken
 uuid: 818569c7-fff9-4277-996b-8c47e4ef1dbc
 exl-id: 2bc068f1-c32f-4c14-b3fa-6b46e950abc7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 4%
+source-wordcount: '185'
+ht-degree: 0%
 
 ---
 
-# Creeer de Werkruimten van de Server van het Rapport{#create-the-report-server-workspaces}
+# De werkruimten van de rapportserver maken{#create-the-report-server-workspaces}
 
 U kunt veelvoudige werkruimten voor één enkel rapport tot stand brengen dat direct in de Desktop wordt geplaatst.
 
-Voor informatie over gegevenswerkbank en het gebruiken van de interface, zie [de Gids van de Cliënt van de Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html).
+Voor informatie over gegevenswerkbank en het gebruiken van de interface, zie [de Gids van de Cliënt van de Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html).
 
 **Als u een rapportwerkruimte wilt maken met de opdracht[!DNL Worktop]**
 

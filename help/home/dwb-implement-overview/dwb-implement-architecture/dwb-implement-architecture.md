@@ -1,17 +1,19 @@
 ---
-description: Overzicht van de Data Workbench-architectuur.
-title: Data Workbench-architectuur
+description: Overzicht van de architectuur van de Data Workbench.
+title: Architectuur van Data Workbench
 uuid: 68b3f20b-7707-49bd-a212-399227bd2fad
-translation-type: tm+mt
-source-git-commit: 1e65564796267c546768a97171c4f23373859923
+exl-id: fca4702c-7099-40e5-ad0b-7f8d44fa1a61
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '51'
+ht-degree: 0%
 
 ---
 
+# Architectuur van Data Workbench{#data-workbench-architecture}
 
-# Data Workbench-architectuur{#data-workbench-architecture}
+Overzicht van de architectuur van de Data Workbench.
 
-Overzicht van de Data Workbench-architectuur.
-
-* Overzicht van de [Te tellen structuren](../../../home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md#concept-9b8b9c5e0f7341699e14bb9e3be56a51)van het Ontwerp van het Schema.
-* Overzicht van de Interface van het Schema van de [Dataset](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html)
-* Documentatie voor het analyseschema (SiteCatalyst) in de handleiding [Dimensions en Metrics](/help/home/assets/dwb-analytics-implementation.pdf)
+* Overzicht van de [Aan het schemaontwerp telbare structuren](../../../home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md#concept-9b8b9c5e0f7341699e14bb9e3be56a51).
+* Overzicht van de [Dataset Schema Interface](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html)
+* Documentatie voor het SiteCatalyst-schema Analytics in de [Dimension and Metrics guide](/help/home/assets/dwb-analytics-implementation.pdf)

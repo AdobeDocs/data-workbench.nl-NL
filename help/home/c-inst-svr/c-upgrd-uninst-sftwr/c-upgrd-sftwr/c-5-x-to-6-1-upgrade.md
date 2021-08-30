@@ -3,14 +3,14 @@ description: Voer de volgende stappen uit om een update uit te voeren naar de ge
 title: Data Workbench 5.5 tot 6.1-upgrade
 uuid: 14e3612e-11a2-402a-9478-904ec55df23c
 exl-id: c730f6d5-2171-4d97-a967-509dc2517c86,3f25917b-b929-4e3b-84f0-1a81b30ba641
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
 
-# Data Workbench 5.5 tot 6.1 Upgrade{#data-workbench-to-upgrade}
+# Data Workbench 5.5 tot 6.1-upgrade{#data-workbench-to-upgrade}
 
 Voer de volgende stappen uit om een update uit te voeren naar de gegevenswerkbank v6.1 van uw Insight v5.5x-installatie.
 
@@ -24,7 +24,7 @@ Voer de volgende stappen uit om een update uit te voeren naar de gegevenswerkban
 >
 >De server, de rapportserver, en de cliëntcomponenten worden bevorderd om op werkende systemen met 64 bits van Vensters te lopen.
 
-## Server-upgrade {#section-08bd6fe3da8740fcb19688e8cac6f223}
+## Upgrade van server {#section-08bd6fe3da8740fcb19688e8cac6f223}
 
 Ga als volgt te werk om de **[!UICONTROL Server v6.1]** componenten bij te werken:
 
@@ -53,7 +53,7 @@ Ga als volgt te werk om de **[!UICONTROL Server v6.1]** componenten bij te werke
 
    1. [!DNL Server\Scripts] om [!DNL TnTSend.exe] bij te werken.
 
-1. Als u **[!UICONTROL DeviceAtlas]** in dienst neemt, dan zult u [de bundel](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) in [!DNL Server\Lookups] omslag moeten bijwerken.
+1. Als u **[!UICONTROL DeviceAtlas]** in dienst neemt, dan zult u [de bundel](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) in [!DNL Server\Lookups] omslag moeten bijwerken.
 1. Stel [!DNL Directories] in het [!DNL Profile.cfg]-bestand in om ervoor te zorgen dat de vector wordt bijgewerkt met het aantal items voor elk profiel.
 
    Als u bijvoorbeeld het profiel **[!UICONTROL Predictive Analytics]** wilt inschakelen, moet u deze instelling bijwerken.

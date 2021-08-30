@@ -1,36 +1,38 @@
 ---
-description: Dit is een snelle gids die u de minimumstappen geeft die worden vereist om de Interne en Externe opstelling van FTP te bevestigen.
+description: Dit is een snelle handleiding die u de minimale stappen geeft die nodig zijn om de interne en externe FTP-installatie te valideren.
 title: Validatie van interne en externe FTP-servers
 uuid: bc381c1d-df27-4009-920b-1a804b36c204
-translation-type: tm+mt
-source-git-commit: ded50c4eeadea80156c17a4cad985d0ceddd5500
+exl-id: 8eecfda7-ffa0-458c-a518-434758344bfe
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 0%
 
 ---
 
-
 # Validatie van interne en externe FTP-servers{#validation-of-internal-and-external-ftp-servers}
 
-Dit is een snelle gids die u de minimumstappen geeft die worden vereist om de Interne en Externe opstelling van FTP te bevestigen.
+Dit is een snelle handleiding die u de minimale stappen geeft die nodig zijn om de interne en externe FTP-installatie te valideren.
 
-Een intern FTP wordt gebruikt wanneer een consultant/architect intern met Adobe met de plaats van FTP voor dossier moet verbinden uploadt of downloadt, terwijl extern FTP hoofdzakelijk voor u als gebruiker is om de vereiste gegevensdossiers te uploaden.
+Een interne FTP wordt gebruikt wanneer een consultant/architect die intern is met Adobe verbinding moet maken met de FTP-site voor het uploaden of downloaden van bestanden, terwijl een externe FTP voornamelijk voor u als gebruiker is om de vereiste gegevensbestanden te uploaden.
 
-Voor extra informatie bij de servers van opstellingsFTP, zie het Protocol van de Overdracht van het [Dossier](https://docs.adobe.com/content/help/en/analytics/export/ftp-and-sftp/ftp-overview.html).
+Zie [File Transfer Protocol](https://experienceleague.adobe.com/docs/analytics/export/ftp-and-sftp/ftp-overview.html) voor meer informatie over het instellen van FTP-servers.
 
-## Bevestigingsstappen - Extern FTP {#section-24428111b5c542ce81a765cd63424b97}
+## Validatiestappen - Externe FTP {#section-24428111b5c542ce81a765cd63424b97}
 
-1. Open een Herinnering van het Bevel. (Windows+R en type cmd)
+1. Een opdrachtprompt openen. (Windows+R en type cmd)
 1. Type ftp `<ftp server>`
-1. Verstrek gebruikersnaam en wachtwoord. ![](assets/dwb_impl_ftp1.png)
+1. Geef een gebruikersnaam en wachtwoord op. ![](assets/dwb_impl_ftp1.png)
 
-1. De lokale folder van de verandering van waar één of ander dossier kan worden bewogen. Gebruik dit bevel:
+1. Wijzig de lokale map van waaruit een bestand kan worden verplaatst. Gebruik deze opdracht:
 
 [!DNL ftp> lcd C:\Users\andixit\Desktop]
 
-lokale map nu [!DNL C:\Users\andixit\Desktop].
+lokale directory nu [!DNL C:\Users\andixit\Desktop].
 
-1. Het dossier van het exemplaar van lokaal aan verre plaats. ![](assets/dwb_impl_ftp2.png)
+1. Kopieer het bestand van de lokale naar de externe locatie. ![](assets/dwb_impl_ftp2.png)
 
-1. Afmelden bij externe server. (Gebruik onder bevel)
+1. Afmelden bij externe server. (Gebruik onder opdracht)
 
 [!DNL ftp> bye]
 
@@ -38,10 +40,10 @@ lokale map nu [!DNL C:\Users\andixit\Desktop].
 
 >[!NOTE]
 >
->Een andere manier om FTP te bevestigen is Filezilla te gebruiken. Verstrek de Naam van de Gastheer, de Naam van de Gebruiker, het Wachtwoord en de Haven. De rechterkant van het paneel is verre plaats en de linkerkant is lokale plaats. Om FTP te bevestigen sleep en laat vallen dossiers van lokaal aan verre plaats en v.v.
+>Een andere manier om FTP te valideren is door Filezilla te gebruiken. Geef de hostnaam, gebruikersnaam, wachtwoord en poort op. De rechterzijde van het deelvenster is een externe site en de linkerzijde is een lokale site. Als u FTP wilt valideren, kunt u bestanden van de lokale naar de externe site en v.v. slepen en neerzetten.
 
 ![](assets/dwb_impl_ftp3.png)
 
-## Bevestigingsstappen - intern FTP {#section-b1f7a789ad6848cf9027f7953d81066e}
+## Validatiestappen - Interne FTP {#section-b1f7a789ad6848cf9027f7953d81066e}
 
-De bovengenoemde stappen kunnen worden gevolgd om interne FTP van om het even welke server van Adobe te bevestigen.
+De bovenstaande stappen kunnen worden uitgevoerd om interne ftp van elke Adobe-server te valideren.

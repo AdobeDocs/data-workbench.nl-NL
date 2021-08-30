@@ -2,17 +2,19 @@
 description: Verklaring van Tellingen in DataWorkbench (DWB) voor het ontwerpen van en het uitvoeren van het schema.
 title: Telbare structuren voor schemaontwerp
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
-translation-type: tm+mt
-source-git-commit: 8b0e9c8855a7c7228393dfab4bf78645f1953794
+exl-id: 4f2a2f8a-7b42-42bb-8ba1-2675ffe6b2c2
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 0%
 
 ---
-
 
 # Telbare structuren voor schemaontwerp{#schema-design-countable-structures}
 
 Verklaring van Tellingen in DataWorkbench (DWB) voor het ontwerpen van en het uitvoeren van het schema.
 
-## Tabellen begrijpen in Data Workbench {#section-6e6b8d1c17634d669e62c91a80a0bc62}
+## Inzicht in telbaar in Data Workbench {#section-6e6b8d1c17634d669e62c91a80a0bc62}
 
 Op het hoogste niveau zijn de dimensies te tellen. De telbare afmetingen hebben twee belangrijke functies. Ten eerste zijn het dimensies waarvan u de elementen wilt tellen. Met andere woorden, tellen beantwoorden de vragen als:
 
@@ -66,7 +68,7 @@ De telbare afmetingen worden bepaald door de volgende parameters:
   </tr> 
   <tr> 
    <td colname="col1"> Bovenliggend </td> 
-   <td colname="col2"> <p> De naam van de bovenliggende dimensie. Elke aftelbare dimensie kan een bovenliggende dimensie zijn. Om een afmeting de top-level afmeting in het schema van de dataset te maken, plaats de parameter aan "wortel." De bepaalde afmeting wordt de wortel telbare afmeting voor de dataset. Bijvoorbeeld, als u met Plaats werkt, is de dimensie van de Bezoeker de wortel telbare dimensie voor uw dataset. </p> <p>Opmerking: Hoewel uw wortel telbare afmeting niet met het volgen IDs in de gegevens moet worden geassocieerd, adviseert Adobe dat u de wortel telbare afmeting van uw dataset vormt om het volgende gebied van identiteitskaart (x-trackingid) als zijn Sleutel te gebruiken. Dientengevolge, wordt elk element van de wortel telbaar geassocieerd met een unieke waarde van x-trackingid, en alle gegevens over elk element worden gegroepeerd. Neem contact op met Adobe als u uw gegevensset anders wilt configureren. </p> </td> 
+   <td colname="col2"> <p> De naam van de bovenliggende dimensie. Elke aftelbare dimensie kan een bovenliggende dimensie zijn. Om een afmeting de top-level afmeting in het schema van de dataset te maken, plaats de parameter aan "wortel." De bepaalde afmeting wordt de wortel telbare afmeting voor de dataset. Bijvoorbeeld, als u met Plaats werkt, is de dimensie van de Bezoeker de wortel telbare dimensie voor uw dataset. </p> <p>Opmerking: Hoewel uw wortel telbare afmeting niet met het volgen IDs in de gegevens moet worden geassocieerd, adviseert Adobe dat u de wortel telbare afmeting van uw dataset vormt om het volgende gebied van identiteitskaart (x-trackingid) als zijn Sleutel te gebruiken. Dientengevolge, wordt elk element van de wortel telbaar geassocieerd met een unieke waarde van x-trackingid, en alle gegevens over elk element worden gegroepeerd. Als u uw dataset verschillend zou willen vormen, contacteer Adobe. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -85,10 +87,10 @@ Voer de volgende stappen uit om tot de Countable in DataWorkbench te leiden:
 
 1. Profielbeheer openen
 1. Onder de omslag van de Transformatie, creeer een config- dossier en open het in werkstation.
-1. Klik met de rechtermuisknop onder Uitgebreide afmetingen en kies Nieuw toevoegen -> Telbaar, zoals hieronder wordt weergegeven: ![](assets/dwb_impl_arch_4.png)
+1. Klik met de rechtermuisknop onder Uitgebreide Dimension en kies Nieuw toevoegen -> Telbaar, zoals hieronder wordt getoond: ![](assets/dwb_impl_arch_4.png)
 
 1. Ga Naam voor nieuwe Teller in. In het onderstaande voorbeeld is de klantentabel gedefinieerd. Als het het Hoogste niveau Teller is, dan in de Ouder schrijft Wortel. ![](assets/dwb_impl_arch_5.png)
 
    Als de Teller niet hoogste niveau één is, dan op het oudergebied de naam van de Parent Countable. In het onderstaande voorbeeld wordt Betrokkenheid aftelbaar gemaakt en de ouder voor deze aftelbare tabel is Klant. ![](assets/dwb_impl_arch_5.png)
 
-Voor extra informatie over de architectuur van de Werkbank van Gegevens voor schemaontwerp, telbare structuren, en off-line configuraties van de gegevensvoer, zie de Interface [van het Schema van de](https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html)Dataset.
+Voor extra informatie over de architectuur van de Data Workbench voor schemaontwerp, telbare structuren, en off-line configuraties van de gegevensvoer, zie [Dataset de Interface van het Schema](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).

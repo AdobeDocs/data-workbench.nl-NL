@@ -3,14 +3,14 @@ description: Het profiel van het Verkeer bevat de volgende metriek om bezoekersv
 title: Metrische gegevens verkeersprofiel
 uuid: 7dfa18ef-d2cd-44ae-8c56-a0630a9d5cf2
 exl-id: 38f191e5-5b30-4fe0-a680-bcb33fe52eca
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '709'
 ht-degree: 1%
 
 ---
 
-# Metrisch verkeersprofiel{#traffic-profile-metrics}
+# Metrische gegevens verkeersprofiel{#traffic-profile-metrics}
 
 Het profiel van het Verkeer bevat de volgende metriek om bezoekersverkeer te identificeren.
 
@@ -96,7 +96,7 @@ Het profiel van het Verkeer bevat de volgende metriek om bezoekersverkeer te ide
   <tr> 
    <td colname="col1"> Sessieduur </td> 
    <td colname="col2"> <p>Formule: <span class="filepath"> (som (exact_Page_Duration, Session)*.1/Sessions)[Session_Duration &lt;= '01:00:00']</span></p> <p>Niveau: Sessie </p> </td> 
-   <td colname="col3">De gemiddelde tijdsduur (MM:SS) een bezoeker besteedt in een zitting. <p><p>Opmerking: U kunt deze metrisch met de <a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external"> eigenschap van de Uitvoer van het Segment gebruiken </a>. </p></p></td> 
+   <td colname="col3">De gemiddelde tijdsduur (MM:SS) een bezoeker besteedt in een zitting. <p><p>Opmerking: U kunt deze metrisch met de <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external"> eigenschap van de Uitvoer van het Segment gebruiken </a>. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sessies per paginaweergave </td> 

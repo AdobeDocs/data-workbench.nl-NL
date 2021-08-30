@@ -1,14 +1,16 @@
 ---
 description: Nieuwe functies en correcties in Data Workbench 6.73.
-title: Opmerkingen bij de release Data Workbench 6.73
+title: Opmerkingen bij de release van Data Workbench 6.73
 uuid: bba63a8c-9cb7-4334-b66a-22db92153066
-translation-type: tm+mt
-source-git-commit: 9552a2f9fe4e450b1e212b38a09f77252a009419
+exl-id: 911c0cb7-ad95-4dbb-90ff-8e5c40b19f7f
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 1%
 
 ---
 
-
-# Opmerkingen bij de release Data Workbench 6.73{#data-workbench-release-notes}
+# Opmerkingen bij de release van Data Workbench 6.73{#data-workbench-release-notes}
 
 Nieuwe functies en correcties in Data Workbench 6.73.
 
@@ -31,14 +33,14 @@ Nieuwe functies en correcties in Data Workbench 6.73.
 
 ## Bekend probleem {#section-f2cb932f6225457a872fb916a78df89a}
 
-* Data Workbench Workstation versie 6.73 maakt geen verbinding met Data Workbench Servers versie 6.61 en ouder. De reden hiervoor is dat oudere serverversies een zwakke vorm van ciphers gebruiken die niet wordt ondersteund in versie 6.73. Ondersteuning voor oudere versies inschakelen
+* Data Workbench Workstation versie 6.73 maakt geen verbinding met versie 6.61 en ouder van de Servers van de Data Workbench. De reden hiervoor is dat oudere serverversies een zwakke vorm van ciphers gebruiken die niet wordt ondersteund in versie 6.73. Ondersteuning voor oudere versies inschakelen
 
    1. Overschrijf de standaard-SSL-ciphers-lijst op de server met een sterke lijst van citeurs die wordt ondersteund door OpenSSL-versie 1.0.1h. Als u de code wilt overschrijven, voegt u de sleutel &quot;SSL-ciphers&quot; toe aan de bestanden &quot;Communications.cfg&quot; in de mappen &quot;Components&quot; en &quot;Components for Processing Servers&quot;. Bijvoorbeeld: `SSL Ciphers = string: !aNULL:AESGCM`
 
       >[!NOTE]
       >
-      >Zorg ervoor dat de sleutel op het zelfde niveau wordt geplaatst zoals de SSL Haven. Voor details verwijs naar de Montages van de Configuratie van de [Mededelingen](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/config-settings/c-comm-cfg-stgs.html)
+      >Zorg ervoor dat de sleutel op het zelfde niveau wordt geplaatst zoals de SSL Haven. Voor details verwijs naar [Communicatie Montages van de Configuratie](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/config-settings/c-comm-cfg-stgs.html)
 
    1. Plaats het nieuwste bestand trust_ca_cert.pem op de server 6.61 en oudere servers. Deze instelling is van toepassing op alle 6,7x-werkstations.
 
-Zie [gearchiveerde releaseopmerkingen](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html) voor Data Workbench 5.3 tot en met 5.52.
+Zie [gearchiveerde releaseopmerkingen](https://experienceleague.adobe.com/docs/data-workbench/using/release-notes/release-notes.html) voor Data Workbench 5.3 tot en met 5.52.

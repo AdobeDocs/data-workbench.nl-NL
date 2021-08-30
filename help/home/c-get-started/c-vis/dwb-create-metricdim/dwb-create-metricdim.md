@@ -1,64 +1,66 @@
 ---
-description: Gebruik de Metrische tovenaar van de Mam om een nieuwe Metrische Dimensie tot stand te brengen.
-title: wizard Metrische schijf
+description: Met de wizard Metrische grijswaarden kunt u een nieuwe metrische Dimension maken.
+title: wizard Metrische grijswaarden
 uuid: 77b9bc8e-7625-4fef-9de4-f113f9b2debd
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 109fbefc-5608-493d-aec9-8337f21eaa70
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
+# wizard Metrische grijswaarden{#metric-dim-wizard}
 
-# wizard Metrische schijf{#metric-dim-wizard}
+Met de wizard Metrische grijswaarden kunt u een nieuwe metrische Dimension maken.
 
-Gebruik de Metrische tovenaar van de Mam om een nieuwe Metrische Dimensie tot stand te brengen.
+Een metrische vorm zet metrisch om in een nieuwe afmeting. Met een metrische grijstint op basis van een meting van de paginaweergaven en het bezoekersniveau worden bijvoorbeeld dimensie-elementen weergegeven op basis van de totale paginaweergaven voor elke bezoeker. Het laat u momenteel bepaalde metrisch uitbreiden die op afmetingselementen wordt gebaseerd om als nieuwe afmeting tot stand te brengen en te bewaren.
 
-Een metrische Duim zet metrisch in een nieuwe dimensie om. Bijvoorbeeld, zal een Metrische Mam die op metrisch van de Meningen van de Pagina en het niveau van Bezoeker wordt gebaseerd afmetingselementen tonen die op de totale Meningen van de Pagina voor elke Bezoeker worden gebaseerd. Het laat u momenteel bepaalde metrisch uitbreiden gebaseerd op afmetingselementen om als nieuwe afmeting tot stand te brengen en te bewaren.
+## Stap 1: dimensie en metrisch selecteren {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
 
-## Stap 1: uitgezochte afmeting en metrisch {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
+1. **Open de wizard** Metrische grijswaarden.
 
-1. **Open de Metrische Tovenaar** van de Mam.
+   Klik in een werkruimte met de rechtermuisknop en selecteer **Gereedschappen** > **Metrische gedim maken**.
 
-   In een werkruimte, klik en selecteer **Hulpmiddelen** met de rechtermuisknop aan > **creeer Metrische Duim**.
+1. **Geef de metrische gedim** een naam.
 
-1. **Noem de Metrische Dim**.
+   Standaard wordt het veld Naam automatisch ingevuld op basis van de selecties Niveau en Metrisch.
 
-   Als gebrek, zal het gebied van de Naam op Niveau en de Metrische selecties worden gebaseerd automatisch bevolken.
+1. **Selecteer een niveau Dimension.** Het dimensieniveau is de bovenliggende dimensie die alle elementwaarden bevat waarmee invoer wordt gefilterd en een dimensietype wordt gedefinieerd.
 
-1. **Selecteer een Dimension-niveau.** Het afmetingsniveau is de ouderafmeting die alle samenstellende elementenwaarden aan filterinput bevat en een afmetingstype bepaalt.
-
-   De niveaus van de afmetingen omvatten:
+   Tot de Dimension-niveaus behoren:
 
    * Klikken
-   * Hit
+   * Actief
    * Product
    * Bezoek
    * Bezoeker
 
 1. **Selecteer een metrisch**.
 
-   Selecteer vooraf ingebouwd metrisch om zich uit te breiden en te bewaren als metrische mijl.
+   Selecteer een vooraf gebouwde metrische waarde om uit te breiden en als metrische grootte te bewaren.
 
    ![](assets/6_4_workstation_metricdim_metric.png)
 
-1. (facultatief) **creeer een Metrische Formule**.
+1. (optioneel) **Een metrische formule maken**.
 
-   Klik de doos om een douane metrische formule in te gaan. De berekende waarde van de Voorproef zal het bevestigen van de uitdrukking lijken.
+   Klik op het vak om een aangepaste metrische formule in te voeren. De berekende waarde van de Voorproef zal het bevestigen van de uitdrukking verschijnen.
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   U kunt uw eigen [metrische uitdrukking](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) of besnoeiing en deeg van een andere metrische redacteur of visualisatie toevoegen. De fouten van de syntaxis, formulefouten, niet gedefiniëerde filters, en andere fouten worden gemeld in de tovenaar.
+   U kunt uw eigen [metrische uitdrukking](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) of besnoeiing en deeg van een andere metrische redacteur of visualisatie toevoegen. Syntaxisfouten, formulefouten, ongedefinieerde filters en andere fouten worden gerapporteerd in de wizard.
 
-1. Klik op **Volgende**.
+1. Klik **Volgende**.
 
 ## Stap 2: formaat en vastgestelde emmers {#section-5bddf3cd306545d7806a501637f80f77}
 
-U kunt het metrische formaat selecteren en de bucketwaarden voor een afmetingsuitdrukking plaatsen.
+U kunt de metrische indeling selecteren en de emmerwaarden instellen voor een dimensie-expressie.
 
-1. Selecteer een **Formaat** voor de nieuwe metrische mijl.
+1. Selecteer een **formaat** voor de nieuwe metrische dimensie.
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   Het formaat bepaalt hoe metrisch wanneer geopend in een visualisatie zal worden voorgesteld. Deze formaten worden geselecteerd [druk normen](http://www.cplusplus.com/reference/cstdio/printf/), die hieronder worden bepaald:
+   Het formaat bepaalt hoe metrisch wanneer geopend in visualisatie zal worden voorgesteld. Deze indelingen zijn geselecteerd [afdrukstandaarden](http://www.cplusplus.com/reference/cstdio/printf/), zoals hieronder gedefinieerd:
 
    ```
    %[flags][width][.precision][length][specifier]
@@ -66,32 +68,31 @@ U kunt het metrische formaat selecteren en de bucketwaarden voor een afmetingsui
    0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   Op het gebied van de **Voorproef** , zal een waarde gebaseerd op metrisch en geselecteerd formaat verschijnen.
+   In het veld **Voorvertoning** wordt een waarde weergegeven op basis van de geselecteerde metrische waarde en indeling.
 
-1. Voeg de uitdrukking van de Telling van de **Emmer** toe.
+1. Voeg **Aantal emmertjes** uitdrukking toe.
 
-   U kunt een metrische diepte met diverse waaiers, of emmers bepalen. Dit keert ondergroepen van elementen terug die op grootte worden gebaseerd, zoals [0-4], [5-10],...). De elementen van het Niveau van de Dimensie hebben op de elementen betrekking de waarvan waaier de waarde van metrisch bevat. Zie de beschrijving van de emmer uitdrukking bij [Syntax voor de Uitdrukkingen](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)van de Dimensie.
+   U kunt een metrische gedim met diverse waaiers, of emmers bepalen. Hiermee worden subsets van elementen geretourneerd op basis van grootte, zoals [0-4], [5-10],...). Elementen van het niveau Dimension hebben betrekking op de elementen waarvan het bereik de waarde van metrisch bevat. Zie de beschrijving van de bucket-expressie bij [Syntaxis voor Dimension-expressies](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
-1. Klik **Voorproef** aan open lijst van de Metrische waarden van de Duim alvorens te bewaren.
+1. Klik **Voorvertoning** om de tabel met waarden voor metrische grijstinten te openen voordat u deze opslaat.
 
    ![](assets/6_4_workstation_metricdim_preview.png)
 
-   De lijst detailleert metrische waarden per metrische diepte.
+   De tabel geeft de metrische waarden per metrische afstand weer.
 
-1. Klik **tonen in het Menu** van de Dimensie om de pas gecreëerde dimensie aan het lusje van de **Dimensie** in de **Vinder** toe te voegen.
-1. Klik op **Volgende**.
+1. Klik **Tonen in menu Dimension** om de nieuwe dimensie toe te voegen aan het tabblad **Dimension** in **Finder**.
+1. Klik **Volgende**.
 
-## Stap 3: afwerken en opslaan {#section-d9043235b18a425f9de0db668d4b1683}
+## Stap 3: voltooien en opslaan {#section-d9043235b18a425f9de0db668d4b1683}
 
-1. Selecteer om de Metrische Redacteur van de Duim, grafiekvisualisatie, of lijst na besparing te lanceren.
+1. Selecteer deze optie om de Metrische grijze editor, grafiekvisualisatie of tabel te starten na het opslaan.
 
    | Veld | Beschrijving |
    |---|---|
-   | Metrische map starten | Open de Metrische Redacteur van de Duim. |
+   | Metrische grijswaarden-editor starten | Open de Metrische grijze editor. |
    | Grafiek starten | Start een PNG-afbeelding van de tabel. |
-   | Tabel starten | Lanceer een lijst in de werkruimte met waarden in kolommen die van de nieuwe metrische mijl een lijst maken vergeleken met waarden van geselecteerde metrisch. |
+   | Tabel starten | Start een tabel in de werkruimte met waarden in kolommen die de waarden van het nieuwe metrische element aangeven ten opzichte van de waarden van het geselecteerde metrische element. |
 
-1. Klik op **Voltooien** en sla deze op.
+1. Klik **Voltooien** en sparen.
 
-   Een sparen dialoog zal openen toestaand u om het dossier op te slaan. De geselecteerde opties aan meningswaarden zullen in de werkruimte openen.
-
+   Er wordt een dialoogvenster voor opslaan geopend waarin u het bestand kunt opslaan. De geselecteerde opties voor het weergeven van waarden worden geopend in de werkruimte.

@@ -3,10 +3,10 @@ description: Informatie om rapporten als dossiers van Excel te produceren.
 title: Rapporten genereren als Microsoft Excel-bestanden
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 1%
+source-wordcount: '474'
+ht-degree: 0%
 
 ---
 
@@ -36,9 +36,9 @@ Als aan deze vereisten wordt voldaan, [!DNL Report Server] begint automatisch Mi
 
 Tenzij u een [!DNL Custom Title] voor visualisatie hebt gespecificeerd, wordt het type van venster (bijvoorbeeld, de Lijst van de Film) gebruikt als aantekenvelsnaam.
 
-Voor meer informatie over het specificeren van [!DNL Custom Titles] voor visualisaties, zie [de Gids van de Cliënt van de Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html).
+Voor meer informatie over het specificeren van [!DNL Custom Titles] voor visualisaties, zie [de Gids van de Cliënt van de Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html).
 
-## Sjabloonbestand {#section-40ab11916f464b1a88214ab969da6751} gebruiken
+## Een sjabloonbestand gebruiken {#section-40ab11916f464b1a88214ab969da6751}
 
 U kunt een rapport ook produceren als dossier van Excel gebruikend een malplaatjeExcel ( [!DNL .xls] of [!DNL .xlsx]) dossier. Het gebruik van een sjabloonbestand kan de hoeveelheid tijd verminderen die u besteedt aan het opmaken van de gegevens telkens wanneer het rapport wordt gegenereerd.
 

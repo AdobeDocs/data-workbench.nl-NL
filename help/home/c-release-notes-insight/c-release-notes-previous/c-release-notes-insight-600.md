@@ -3,9 +3,9 @@ description: Nieuwe functies die zijn geïntroduceerd in Data Workbench 6.0.4, w
 title: Opmerkingen bij de release Data Workbench 6.0
 uuid: b348425e-3304-4db7-a280-479a34452bdb
 exl-id: be69b3be-24e7-4a8c-9dc8-1360a9b6fb3a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
@@ -254,11 +254,11 @@ De nieuwe gegevensfeed SiteCatalyst gebruiken:
 
 * De toetsencombinatie om een werkruimte te verlaten zonder wijzigingen op te slaan is nu bijgewerkt naar **[!UICONTROL `<Ctrl>`+`<Backspace>`]**. Eerder hebt u wijzigingen doorgevoerd en een werkruimte gesloten door op `<Ctrl>` + `<Delete>` te drukken.
 
-## Opmerkingen bij de release van Data Workbench 6.0.4{#data-workbench-release-notes}
+## Opmerkingen bij de release Data Workbench 6.0.4{#data-workbench-release-notes}
 
 Nieuwe functies die zijn geïntroduceerd in Data Workbench 6.0.4, waaronder opgeloste problemen en bekende problemen.
 
-Als u vorige functies en oplossingen wilt bekijken die zijn gebaseerd op elke eerdere release, raadpleegt u de [releasearchieven](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html).
+Als u vorige functies en oplossingen wilt bekijken die zijn gebaseerd op elke eerdere release, raadpleegt u de [releasearchieven](https://experienceleague.adobe.com/docs/data-workbench/using/release-notes/release-notes.html).
 
 ## Nieuwe functies {#section-2-1225066ea8f44cf68e42e019d0bca816}
 

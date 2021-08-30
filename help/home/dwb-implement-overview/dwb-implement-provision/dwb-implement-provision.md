@@ -1,19 +1,21 @@
 ---
-description: Inhoud om te begrijpen, te installeren, opstelling, en de Werkbank van voorzieningsGegevens (DWB) voor de implementatie van de ter plaatse.
-title: Installatie en provisioning van gegevenswerkbanken
+description: Inhoud voor het begrijpen, installeren, instellen en inrichten van Data Workbench (DWB) voor implementatie op locatie.
+title: Installatie en provisioning van Data Workbench
 uuid: a557e6c8-b210-4cc8-b430-8ae3d04b6593
-translation-type: tm+mt
-source-git-commit: ded50c4eeadea80156c17a4cad985d0ceddd5500
+exl-id: 35aa64ae-fb63-46a1-8160-6773fe3a22ba
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 0%
 
 ---
 
+# Installatie en provisioning van Data Workbench{#data-workbench-installation-and-provisioning}
 
-# Installatie en provisioning van gegevenswerkbanken{#data-workbench-installation-and-provisioning}
+Inhoud voor het begrijpen, installeren, instellen en inrichten van Data Workbench (DWB) voor implementatie op locatie.
 
-Inhoud om te begrijpen, te installeren, opstelling, en de Werkbank van voorzieningsGegevens (DWB) voor de implementatie van de ter plaatse.
+Zie overzicht en opstellingsinstructies voor on-premise DWB servers bij [de Installatie en Installatie van de Server](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/install-servers/c-install-ins-svr.html).
 
-Zie overzicht en opstellingsinstructies voor op-gebouwservers DWB bij de Installatie en de Installatie [van de](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/install-servers/c-install-ins-svr.html)Server.
+Zie overzicht en opstellingsinstructies voor het DWB cliëntwerkstation bij [de Gids van de Installatie van de Cliënt](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html).
 
-Zie overzicht en opstellingsinstructies voor het DWB cliëntwerkstation bij de Gids [van de Installatie van de](https://docs.adobe.com/content/help/en/data-workbench/using/install/c-data-workbench-client-install.html)Cliënt.
-
-Zie [instapinstructies](../../../home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md#concept-e93aba41b26a410f959c5ca7f8e33355) voor het implementeren van DWB-beheerde services.
+Zie [Inboarding instructies](../../../home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md#concept-e93aba41b26a410f959c5ca7f8e33355) om DWB-beheerde services te implementeren.

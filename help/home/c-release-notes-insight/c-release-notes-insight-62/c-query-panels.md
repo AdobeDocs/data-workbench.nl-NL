@@ -2,9 +2,9 @@
 description: Gebruik de deelvensters Finder in Data Workbench om metriek, afmetingen en filters te selecteren. Deze deelvensters bieden ondersteuning voor zoeken, sorteeropties en slepen en neerzetten.
 title: Finders
 uuid: 7a4144f5-133f-48ed-9613-1e42b1313120
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ De **Finder** bevat de volgende functies:
     <ul id="ul_0F6F377E9906472E99008EBE7483F689"> 
      <li id="li_75857895EDB045C8B2960393854B257D"> <p>Patroonovereenkomst (eenvoudige zoekopdracht op een glob). Begin de naam van een vereiste afmeting, metrisch, of filterentiteit in het gebied van het Onderzoek te typen en slechts passende koorden overal in de naam zullen worden gefiltreerd en in de ruit van Vinders getoond. </p> <p>Voer bijvoorbeeld het volgende in: </p> <code><b>Search:</b>click</code> <p>U kunt de volgende resultaten ophalen in de Finder Dimension: </p> <p><img placement="break" id="image_7CBAAABA92BB47658B7F9F5C0263CF20" src="assets/finders_glob_search.png" /> </p> <p>Met de standaardpatroonovereenkomst kunt u jokertekens gebruiken, zoals . (punt), "?" en "*" (ster). </p> </li> 
      <li id="li_044F9EC1399B44CD81E1852F85137704"> <p>Reguliere expressies. Complexere reguliere expressies worden ook ondersteund voor extra zoekmogelijkheden. Voeg het voorvoegsel "re:" toe vóór de zoekterm (geen spaties) die u als een reguliere expressie wilt interpreteren. </p> <p>Voer bijvoorbeeld het volgende in: </p> <code><b>Search:</b>re.*ip</code> <p>U kunt de volgende resultaten ophalen in de Finder Dimension: </p> <p><img placement="break" id="image_F47DB90B36504997AA1C509855B89A47" src="assets/finders_regex_search.png" /> </p> </li> 
-    </ul> <p>Zie <a href="https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external"> reguliere expressies</a> voor diepgaande zoekinformatie. </p> </td> 
+    </ul> <p>Zie <a href="https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external"> reguliere expressies</a> voor diepgaande zoekinformatie. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>Type Dimension</b> </td> 

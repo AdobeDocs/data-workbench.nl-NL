@@ -2,10 +2,9 @@
 description: Data Workbench 6.2 bevat nieuwe updates van de gebruikersinterface naar het venster Bladwijzers, nieuwe pictogrammen in de werkruimtentoolbar, de mogelijkheid om de werkruimte binnen een scherm te slepen, nieuwe sneltoetsen en updates voor de visualisatie van het cirkeldiagram.
 title: UI-updates Data Workbench Client
 uuid: 1bc18c90-8b46-4c90-b7a7-2c6710e1e28c
-translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -21,12 +20,12 @@ U kunt nu bladwijzers maken voor belangrijke werkruimten, zodat u snel kunt scha
 
 **Werken met bladwijzers**
 
-1. U kunt een werkruimte bladwijzer maken door op het pictogram Bladwijzer ![](assets/bookmark_icon.png) in de rechterbovenhoek van de werkbalk te klikken.
+1. Bladwijzer een werkruimte door op het pictogram Bladwijzer ![](assets/bookmark_icon.png) in de rechterbovenhoek van de werkbalk te klikken.
 1. Klik op **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** in het linkervenster om een lijst met bladwijzers te openen.
 
    ![](assets/bookmarks_panel.png)
 
-1. Als u een werkruimte met bladwijzer wilt openen, klikt u op de naam van een werkruimte in de **[!UICONTROL Bookmark Panel]** werkruimte.
+1. Als u een werkruimte met bladwijzer wilt openen, klikt u op de naam van een werkruimte in **[!UICONTROL Bookmark Panel]**.
 
    ![](assets/bookmarks_panel_left.png)
 
@@ -34,9 +33,9 @@ U kunt nu bladwijzers maken voor belangrijke werkruimten, zodat u snel kunt scha
 
 **Een bladwijzer verwijderen:**
 
-* Klik in het venster Bladwijzer met de rechtermuisknop en selecteer **Verwijderen`<bookmark title>`** om een geselecteerde bladwijzer te verwijderen of selecteer **[!UICONTROL Clear All Bookmarks]** om alle bladwijzers te verwijderen.
+* Klik in het venster Bladwijzer met de rechtermuisknop en selecteer **Een geselecteerde bladwijzer verwijderen of **[!UICONTROL Clear All Bookmarks]**om alle bladwijzers te verwijderen.`<bookmark title>`**
 
-* U kunt ook met de rechtermuisknop op de werkruimte in de miniatuurweergave in de werkbalk klikken en selecteren **[!UICONTROL Clear Bookmark]**.
+* U kunt ook met de rechtermuisknop op de werkruimte in de miniatuurweergave in de werkbalk klikken en **[!UICONTROL Clear Bookmark]** selecteren.
 
 >[!IMPORTANT]
 >
@@ -46,14 +45,13 @@ U kunt nu bladwijzers maken voor belangrijke werkruimten, zodat u snel kunt scha
 >
 
 
-
 ## Nieuwe pictogrammen in werkruimte {#section-c108bbd1661249e79c146727ff3d2470}
 
-Data Workbench 6.2 vervangt nu de tekst in de werkruimte door pictogrammen. U kunt de aanwijzer nog steeds boven het knopinfo-bericht plaatsen en het pictogram, inclusief **[!UICONTROL File]**, **[!UICONTROL Add]** en **[!UICONTROL Export]**.
+Data Workbench 6.2 vervangt nu de tekst in de werkruimte door pictogrammen. U kunt de muisaanwijzer nog steeds boven het knopinfo-bericht plaatsen en het pictogram zien, zoals **[!UICONTROL File]**, **[!UICONTROL Add]** en **[!UICONTROL Export]**.
 
 ![](assets/new_icons.png)
 
-Er wordt een nieuw **[!UICONTROL Help]** pictogram toegevoegd voor toegang tot de documentatie en andere kenniscentra, waaronder de volgende koppelingen:
+Er wordt een nieuw pictogram **[!UICONTROL Help]** toegevoegd voor toegang tot de documentatie en andere kenniscentra, waaronder de volgende koppelingen:
 
 <table id="table_64BBC67B1BB44B1197FF7E5E7B067696"> 
  <thead> 
@@ -65,26 +63,26 @@ Er wordt een nieuw **[!UICONTROL Help]** pictogram toegevoegd voor toegang tot d
  <tbody> 
   <tr> 
    <td colname="col1"> Marketingrapporten en -analyses </td> 
-   <td colname="col2">Open op de Help-pagina <span class="uicontrol"> Adobe Marketing Reports &amp; Analytics</span> . </td> 
+   <td colname="col2">Open aan <span class="uicontrol"> de pagina van de Hulp van de Marketingrapporten &amp; van de Adobe </span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Idea Exchange </td> 
-   <td colname="col2">Open aan login <span class="uicontrol"> van de Uitwisseling van</span>Ideeën. Met dit online portaal kunnen gebruikers updates en verbeteringsideeën aanbieden aan de werkbank van gegevens. Deze klant-gerichte ideeën kunnen dan door alle gebruikers worden gestemd. </td> 
+   <td colname="col2">Open aan <span class="uicontrol"> login van de Uitwisseling van het Idee</span>. Met dit online portaal kunnen gebruikers updates en verbeteringsideeën aanbieden aan de werkbank van gegevens. Deze klant-gerichte ideeën kunnen dan door alle gebruikers worden gestemd. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Help </td> 
-   <td colname="col2">Open de documentatie <span class="uicontrol"> van de</span>Data Workbench. <p>U kunt ook op <span class="uicontrol"> &lt;F1&gt;</span> drukken om de Help in een werkruimte te openen. </p> </td> 
+   <td colname="col2">Open de <span class="uicontrol"> documentatie van de Data Workbench</span>. <p>U kunt <span class="uicontrol"> &lt;F1&gt;</span> ook drukken om hulp binnen een werkruimte te openen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Info </td> 
-   <td colname="col2">Openen om de <span class="uicontrol"> clientversie</span> van de gegevenswerkbank te identificeren. </td> 
+   <td colname="col2">Open om de <span class="uicontrol"> cliëntversie</span> van gegevenswerkbank te identificeren. </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->U kunt ook drukken `<F1>` om de documentatie van een werkruimte te openen.
+>U kunt ook op `<F1>` drukken om de documentatie vanuit een werkruimte te openen.
 
 ## Weergaven werkruimte slepen {#section-9129c340c21d45a3864c923884cd4382}
 
@@ -94,7 +92,7 @@ Als een werkruimte groter is dan het zichtbare scherm, kunt u de weergave verpla
 
 ## Sneltoetsen om werkruimtweergaven te wijzigen {#section-d8322f72423f437aa2e34f2188b1341c}
 
-Met de nieuwe sneltoetsen kunt u de grootte en de grootte van de werkruimten wijzigen tussen de weergaven van vensters en volledige pagina&#39;s. Zie de [Snelle Referentie](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-qk-ref.html) voor meer sneltoetsen op het toetsenbord.
+Met de nieuwe sneltoetsen kunt u de grootte en de grootte van de werkruimten wijzigen tussen de weergaven van vensters en volledige pagina&#39;s. Zie [Snelle Referentie](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-qk-ref.html) voor meer toetsenbordsneltoetsen.
 
 <table id="table_A01C514C99F043338D183A6839E03DEA"> 
  <thead> 

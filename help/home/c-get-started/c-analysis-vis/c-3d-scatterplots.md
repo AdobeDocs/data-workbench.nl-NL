@@ -3,18 +3,18 @@ description: Een 3D-spreidingsgrafiek geeft de elementen van een gegevensdimensi
 title: 3D-verstrooiingspunten
 uuid: 5e23547c-dbb4-490c-94bc-0731deee612e
 exl-id: 18f18cab-a31b-4ffe-89c5-412a5645af2e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 
-# 3D-verstrooiingsplokken{#d-scatter-plots}
+# 3D-verstrooiingspunten{#d-scatter-plots}
 
 Een 3D-spreidingsgrafiek geeft de elementen van een gegevensdimensie (zoals dagen of Referral-site) weer op een driedimensionaal raster waar de x-, y- en z-as verschillende metriek vertegenwoordigen.
 
-Net als bij [Spreidingspal 2D](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Scatter_Plots) is deze visualisatie handig wanneer u probeert de relatie te begrijpen tussen grote aantallen ongelijksoortige items die verschillende meetwaarden gebruiken.
+Net als bij [Spreidingspal 2D](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Scatter_Plots) is deze visualisatie handig wanneer u probeert de relatie te begrijpen tussen grote aantallen ongelijksoortige items die verschillende meetwaarden gebruiken.
 
 **U kunt als volgt de visualisatie voor 3D-spreidingspunten gebruiken:**
 

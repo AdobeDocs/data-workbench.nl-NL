@@ -3,14 +3,14 @@ description: Voer de volgende stappen uit om een update uit te voeren naar gegev
 title: Data Workbench 6.0 tot 6.1-upgrade
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
 
-# Data Workbench 6.0 tot 6.1 Upgrade{#data-workbench-to-upgrade}
+# Data Workbench 6.0 tot 6.1-upgrade{#data-workbench-to-upgrade}
 
 Voer de volgende stappen uit om een update uit te voeren naar gegevenswerkbank v6.1 van uw gegevenswerkbank v6.0x-installatie.
 
@@ -24,7 +24,7 @@ Voer de volgende stappen uit om een update uit te voeren naar gegevenswerkbank v
 >
 >De server, de rapportserver, en de cliëntcomponenten worden bevorderd om op werkende systemen met 64 bits van Vensters te lopen.
 
-## Server-upgrade {#section-7845393f76214aa7ad53ac4b2cca9e5b}
+## Upgrade van server {#section-7845393f76214aa7ad53ac4b2cca9e5b}
 
 Ga als volgt te werk om de **[!UICONTROL Server v6.1]** componenten bij te werken:
 
@@ -52,7 +52,7 @@ Ga als volgt te werk om de **[!UICONTROL Server v6.1]** componenten bij te werke
    1. De [!DNL Server\Software]-map vervangen om [!DNL Insight.exe] en [!DNL ReportServer.exe] bij te werken
    1. [!DNL Server\Scripts] om [!DNL TnTSend.exe] bij te werken.
 
-1. Als u **[!UICONTROL DeviceAtlas]** in dienst neemt, dan zult u [de bundel](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) in [!DNL Server\Lookups] omslag moeten bijwerken.
+1. Als u **[!UICONTROL DeviceAtlas]** in dienst neemt, dan zult u [de bundel](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) in [!DNL Server\Lookups] omslag moeten bijwerken.
 
 1. Configureer het [!DNL Profile.cfg]-bestand om ervoor te zorgen dat de vector wordt bijgewerkt met het aantal items voor elk profiel.
 

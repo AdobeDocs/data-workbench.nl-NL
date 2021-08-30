@@ -3,14 +3,14 @@ description: Informatie over de parameters van Server.cfg van het Rapport.
 title: Server.cfg-parameters rapporteren
 uuid: 506f30f7-c8c6-4580-8423-7da8d00b0d57
 exl-id: 339e4219-ff4d-4df6-b45a-7144927a843b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 0%
 
 ---
 
-# Server.cfg Parameters{#report-server-cfg-parameters} rapporteren
+# Server.cfg-parameters rapporteren{#report-server-cfg-parameters}
 
 Informatie over de parameters van Server.cfg van het Rapport.
 
@@ -166,7 +166,7 @@ De volgende tabel bevat beschrijvingen van de bestandsparameters [!DNL Report Se
   </tr> 
   <tr> 
    <td colname="col1"> Statusinterval </td> 
-   <td colname="col2"> <p>De frequentie (in seconden) waarmee <span class="wintitle"> Rapportserver </span> statusinformatie genereert en verzendt naar de werkbankserver voor gegevens die moet worden weergegeven in <span class="wintitle"> Gedetailleerde status </span>. </p> <p>De standaardwaarde is 120 seconden. Het wordt afgeraden dit op een kleine waarde in te stellen, bijvoorbeeld op twee minuten, omdat een rapportwachtrij uren kan duren. In dat geval kunt u een instelling van 600 tot 1200 seconden overwegen. </p> <p>Voor meer informatie over <span class="wintitle"> Gedetailleerde Status </span>, zie het Administratieve hoofdstuk van Interfaces van <a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> de Gids van de Gebruiker van het Inzicht </a>. </p> </td> 
+   <td colname="col2"> <p>De frequentie (in seconden) waarmee <span class="wintitle"> Rapportserver </span> statusinformatie genereert en verzendt naar de werkbankserver voor gegevens die moet worden weergegeven in <span class="wintitle"> Gedetailleerde status </span>. </p> <p>De standaardwaarde is 120 seconden. Het wordt afgeraden dit op een kleine waarde in te stellen, bijvoorbeeld op twee minuten, omdat een rapportwachtrij uren kan duren. In dat geval kunt u een instelling van 600 tot 1200 seconden overwegen. </p> <p>Voor meer informatie over <span class="wintitle"> Gedetailleerde Status </span>, zie het Administratieve hoofdstuk van Interfaces van <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> de Gids van de Gebruiker van het Inzicht </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Interval bijwerken </td> 

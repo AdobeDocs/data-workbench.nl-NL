@@ -1,46 +1,48 @@
 ---
-description: Gebruik Werkstation om uw gebruikers van de Werkbank van Gegevens te beheren.
-title: Zelfvoorziening van gebruikers
+description: Gebruik Workstation om de gebruikers van uw Data Workbench te beheren.
+title: Zelfinrichting van gebruikers
 uuid: e3c10bc4-2fa0-4368-9952-e38a4794aee9
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: fba916bf-66a1-4b69-a1c0-cad5b27bbbba
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '596'
+ht-degree: 0%
 
 ---
 
+# Zelfinrichting van gebruikers{#self-provisioning-of-users}
 
-# Zelfvoorziening van gebruikers{#self-provisioning-of-users}
+Gebruik Workstation om de gebruikers van uw Data Workbench te beheren.
 
-Gebruik Werkstation om uw gebruikers van de Werkbank van Gegevens te beheren.
+U kunt Werkstation gebruiken om met de Server van de Data Workbench te verbinden door het vereiste certificaat van Adobe te plaatsen. Dit certificaat is een hulpmiddel bij zowel SSL-communicatie als bij het gebruik van de gelicentieerde bronnen en functies. In op certificaat-gebaseerde authentificatie, moet u veelvoudige certificaten voor het gebruiken van het Werkstation op veelvoudige machines verkrijgen en opstelling. Ook, worden de gebruikerslevering en de toestemmingen beheerd door Adobe en u moet Adobe voor nieuwe certificaten of certificaatintrekking contacteren.
 
-U kunt Werkstation gebruiken om met de Server van de Werkbank van Gegevens te verbinden door opstelling het vereiste certificaat van Adobe. Dit certificaat verleent hulp in zowel SSL mededeling als vergunning om de vergunning gegeven middelen en de eigenschappen te gebruiken. In op certificaat-gebaseerde authentificatie, moet u veelvoudige certificaten verwerven en oprichten voor het gebruiken van het Werkstation op veelvoudige machines. Ook, worden de gebruikerslevering en de rechten beheerd door Adobe en u moet Adobe voor nieuwe certificaten of certificaatintrekking contacteren.
+Vanaf DWB 6.7 ondersteunt het werkstation gebruikersverificatie via gebruikersnaam en wachtwoord.
 
-Beginnend in DWB 6.7, steunt het Werkstation gebruikersauthentificatie door gebruikersbenaming en wachtwoord.
+Terwijl de op certificaat-gebaseerde authentificatie/vergunning nog voor uw opstelling zal werken, wordt het hoogst geadviseerd om aan de nieuwere op geloofsbrieven-gebaseerde authentificatie te migreren. In de nieuwere benadering, verifiëren uw gebruikers van het Werkstation zich door het Systeem van Adobe Identity Management (IMS). Alvorens zij het Werkstation kunnen gebruiken, moeten zij toegang tot de eigenschappen door [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) door de beheerder van de organisatie worden verleend.
 
-Terwijl de op certificaat-gebaseerde authentificatie/vergunning nog voor uw opstelling zal werken, wordt het hoogst geadviseerd om aan de nieuwere op geloofsbrieven-gebaseerde authentificatie te migreren. In de nieuwere benadering, verifiëren uw gebruikers van het Werkstation zich door het Systeem van het Beheer van de Identiteit van Adobe (IMS). Alvorens zij het Werkstation kunnen gebruiken, moeten zij toegang tot de eigenschappen door de Console [](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html) Admin door de beheerder van de organisatie worden gegeven.
+Het nieuwe verificatie- en gebruikersinrichtingsmodel helpt bij:
 
-Het nieuwe authentificatie en gebruikersleveringsmodel helpt in:
-
-* Self-provisioning van gebruikers en groepen via Admin Console. U moet geen Adobe contacteren om, vergunningsrechten voor gebruikers toe te voegen te verwijderen of te wijzigen.
-* Toegang hebbend tot Werkstation van veelvoudige machines zonder de configuratiestaat te verliezen door het programma te openen gebruikend geloofsbrieven. Het lokale geheime voorgeheugen wordt geschrapt op logout, is het huidige profiel gesloten, en het profiel van de Configuratie wordt actief.
+* Zelf-levering van gebruikers en groepen door Admin Console. U hoeft geen contact op te nemen met Adobe om licentierechten voor gebruikers toe te voegen, te verwijderen of te wijzigen.
+* Toegang tot Werkstation van veelvoudige machines zonder de configuratiestaat te verliezen door het programma te openen gebruikend geloofsbrieven. Het lokale cachegeheugen wordt verwijderd bij het afmelden, het huidige profiel wordt gesloten en het configuratieprofiel wordt actief.
 
 ## Aan de slag
 
-Alvorens u begint, contacteer Adobe om uw organisatie in de Console toe te voegen Admin. Afhankelijk van de diensten u hebt gekocht, zal Adobe voorziening de organisatie voor u. Bijvoorbeeld, kunnen de organisaties toegang tot de dienst van de Attributie hebben of Beta bouwt, of allebei. Zodra een organisatie wordt gevormd, kan de organisatiebeheerder gebruikers en groepen toevoegen. Zie Cloud-gebruikers en -producten [](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/admin-getting-started.html) beheren in Experience Cloud voor meer informatie. De organisatiebeheerder kan gebruiksbeperkingen voor verschillende gebruikers afhankelijk van hun rollen ook vormen. Bijvoorbeeld, niet-pre-versiegebruikers hebben geen toegang tot Beta nodig bouwt.
+Neem voordat u begint contact op met Adobe om uw organisatie in de Admin Console toe te voegen. Afhankelijk van de services die u hebt aangeschaft, zal Adobe u de organisatie ter beschikking stellen. Bijvoorbeeld, kunnen de organisaties toegang tot de dienst van de Attributie hebben of Beta bouwt, of allebei. Zodra een organisatie wordt gevormd, kan de organisatiebeheerder gebruikers en groepen toevoegen. Zie [Gebruikers en producten van Experience Cloud beheren](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html) in Experience Cloud voor meer informatie. De organisatiebeheerder kan gebruiksbeperkingen voor verschillende gebruikers afhankelijk van hun rollen ook vormen. Gebruikers die niet vooraf release ontvangen, hebben bijvoorbeeld geen toegang nodig tot de bètabuilds.
 
-Elke provisioned gebruiker die aan deze organisatie door de Console Admin wordt toegevoegd zal toegang hebben om de Werkbank van Gegevens te gebruiken. De sub-diensten kunnen slechts voor elke gebruiker afhankelijk van hun producttoegang worden toegelaten of worden onbruikbaar gemaakt. Wanneer een gebruiker van certificaat aan IMS wordt bevorderd, zullen alle lokale gegevens aan de nieuwe IMS gebruikersfolder worden gekopieerd.
+Elke provisioned gebruiker die aan deze organisatie door de Admin Console wordt toegevoegd zal toegang hebben om de Data Workbench te gebruiken. De subservices kunnen alleen voor elke gebruiker worden in- of uitgeschakeld, afhankelijk van de toegang tot het product. Wanneer een gebruiker van certificaat aan IMS wordt bevorderd, zullen alle lokale gegevens naar de nieuwe IMS gebruikersfolder worden gekopieerd.
 
 >[!NOTE]
 >
->Een zitting duurt 6 uur op Server en 23 uur op Cliënt tenzij het toegangsteken wordt verfrist. Wanneer het teken wordt verfrist, kunt u Cliënt gebruiken zonder opnieuw het programma te openen.
+>Een sessie duurt 6 uur op de server en 23 uur op de client, tenzij het toegangstoken wordt vernieuwd. Wanneer het token is vernieuwd, kunt u Client gebruiken zonder u opnieuw aan te melden.
 
-Minstens één Configuratie van het Niveau van het Product moet in Console Admin door de beheerder worden gecreeerd alvorens toegang tot om het even welke gebruiker te verlenen.
+Ten minste één configuratie op productniveau moet door de beheerder in Admin Console worden gemaakt voordat gebruikers toegang kunnen krijgen.
 
-Het booleense **Gebruik IMS** van de vlag kan aan reserve [!DNL Insight.cfg] aan certificaatwijze worden toegevoegd. Voor informatie bij het vormen van het Toegangsbeheer voor gebruikers IMS, zie het [Bijwerken van het Dossier](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/install-servers/insight-server-dpu/c-updt-accss-ctrl-file.html)van het Toegangsbeheer.
+De booleaanse markering **Gebruik IMS** kan aan [!DNL Insight.cfg] worden toegevoegd om aan fallback aan certificaatwijze. Voor informatie bij het vormen van Toegangsbeheer voor gebruikers IMS, zie [Bijwerken van het Dossier van het Toegangsbeheer](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/install-servers/insight-server-dpu/c-updt-accss-ctrl-file.html).
 
-## Conflictoplossing
+## Conflict oplossen
 
-Wanneer een gebruiker aan veelvoudige machines met de zelfde rekening IMS op het zelfde profiel het programma wordt geopend, en op off-line wijze op één van de machines is, `.conflict` kan een vorm vormen en een pop-up venster zal u informeren. Dit komt voor wanneer er een verschil in inhoud met om het even welke dossiers (werkruimten, afmetingen, filters, enz.) is gesynchroniseerd op beide machines in [!DNL User\Profile\] op server en cliënt. Er wordt een back-up gemaakt in het `.conflict` bestand en er gaan geen gegevens verloren. Een booleense vlag in [!DNL Insight.cfg] geeft u de capaciteit om dit conflict pop-up onbruikbaar te maken.
+Wanneer een gebruiker op veelvoudige machines met de zelfde rekening IMS op het zelfde profiel wordt het programma geopend, en offline wijze op één van de machines is, kan een `.conflict` vormen en een pop-up venster zal u op de hoogte brengen. Dit gebeurt wanneer de inhoud van bestanden verschilt (werkruimten, afmetingen, filters, enz.) gesynchroniseerd op beide computers in [!DNL User\Profile\] op server en client. Er wordt een back-up gemaakt in het `.conflict`-bestand en er gaan geen gegevens verloren. Een booleaanse vlag in [!DNL Insight.cfg] geeft u de capaciteit om dit conflict pop-up onbruikbaar te maken.
 
-Vlag: Conflictmeldingen
+Markering: Conflictmeldingen
 
-Dit is van toepassing op werkruimten, metriek, afmeting, enz. in de Omslag van de Gebruiker.
+Dit is van toepassing op werkruimten, metriek, dimensie, enz. in de map Gebruiker.

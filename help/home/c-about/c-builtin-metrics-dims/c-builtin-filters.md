@@ -3,9 +3,9 @@ description: Profielfilters beperken het bereik van de gegevens die beschikbaar 
 title: Ingebouwde profielfilters
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De volgende profielfilters zijn beschikbaar aan de gebruiker nadat een dataset i
 >
 >Extra filters kunnen worden gemaakt en toegepast door hun aanwezigheid in de map Filters van een profiel.
 
-## Subset van gegevens {#section-0defb44315d94254ab6e629ec3d6f420}
+## Gegevenssubset {#section-0defb44315d94254ab6e629ec3d6f420}
 
 Een gegevenssubset fungeert als een gegevensfilter doordat u alleen de dimensie-elementen van gegevens kunt selecteren die voor u van belang zijn.
 
@@ -37,7 +37,7 @@ Gebruikers kunnen zelf gegevenssubsets maken of ze kunnen toegang krijgen tot ge
 >
 >U kunt meerdere gegevenssubsets maken en deze schakelen om verschillende delen van de gegevens weer te geven. Vergeet niet om Subset van gegevens uit te schakelen wanneer u alle gegevens wilt weergeven. Anders, zullen uw metrische waarden niet representatief voor alle gegevens in de dataset zijn.
 
-## Verbroken sessiefilter {#section-1608e97da6464b11aea27cbb7f3160e4}
+## Filter verbroken sessie {#section-1608e97da6464b11aea27cbb7f3160e4}
 
 Het filter Gebroken Zitting is een metrische formule die gemakkelijk kan worden gewijzigd om het even welke het filtreren vereisten te ontmoeten. In de standaardsiteprofielen is het filter Gebroken sessie zo geconfigureerd dat het alle bezoekers bevat met een visitorized vlag die is ingesteld op 1. De waarde 1 geeft de aanwezigheid van een trackingcookie voor die bezoeker aan.
 
@@ -51,4 +51,4 @@ entity = derived_filter:
 
 Standaard wordt in werkruimten het filter Verbroken sessie toegepast op zowel de selectie als de bijbehorende benchmarks. U kunt schakelen door met de rechtermuisknop in de werkruimte te klikken en vervolgens te klikken op Gegevens > Verbroken sessiefilter.
 
-In filterexpressies kan naar het filter Verbroken sessie worden verwezen als Broken_Session_Filter, zelfs als dit filter niet is ingeschakeld voor de huidige werkruimte. Zie [filterexpressies](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) voor aanvullende informatie.
+In filterexpressies kan naar het filter Verbroken sessie worden verwezen als Broken_Session_Filter, zelfs als dit filter niet is ingeschakeld voor de huidige werkruimte. Zie [filterexpressies](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) voor aanvullende informatie.

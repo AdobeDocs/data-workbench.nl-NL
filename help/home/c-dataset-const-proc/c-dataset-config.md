@@ -3,9 +3,9 @@ description: De configuratie van de gegevensset verwijst naar het proces om de c
 title: Datasetconfiguratie begrijpen
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Hoewel niet vereist voor alle datasets, laten deze dossiers u toe om andere aspe
 
 * **Server.cfg:** Het  [!DNL Server.cfg] dossier specificeert de standaardgrootte van het gegevensgeheime voorgeheugen (in bytes) voor gegevens werkbankmachines die met de server van de gegevenswerkbank verbinden. Zie [Aanvullende configuratiebestanden](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
 
-* **Transform.cfg en Transform Mode.cfg:** Deze bestanden zijn alleen beschikbaar als u een licentie hebt verkregen voor de functionaliteit voor gegevenstransformatie die u kunt gebruiken met uw Adobe-toepassing. Het [!DNL Transform.cfg]-bestand bevat de parameters die de logbronnen en gegevenstransformaties voor transformatiefunctionaliteit definiëren. Met de transformaties die u definieert, worden de brongegevens gemanipuleerd en uitgevoerd in een indeling die u opgeeft. Het [!DNL Insight Transform Mode.cfg] dossier laat u toe om verwerking van gegevens in een dataset te pauzeren, off-line bronnen te specificeren, of de frequentie te specificeren waarbij de Server van het Inzicht die transformatiefunctionaliteit in werking stelt zijn staatsdossiers bewaart. Zie [Transformatiefunctionaliteit](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
+* **Transform.cfg en Transform Mode.cfg:** Deze bestanden zijn alleen beschikbaar als u een licentie hebt verkregen voor de functionaliteit voor gegevenstransformatie die u kunt gebruiken met uw Adobe-toepassing. Het [!DNL Transform.cfg]-bestand bevat de parameters die de logbronnen en gegevenstransformaties voor transformatiefunctionaliteit definiëren. Met de transformaties die u definieert, worden de brongegevens gemanipuleerd en uitgevoerd in een indeling die u opgeeft. Het [!DNL Insight Transform Mode.cfg] dossier laat u toe om verwerking van gegevens in een dataset te pauzeren, off-line bronnen te specificeren, of de frequentie te specificeren waarbij de Server van het Inzicht die transformatiefunctionaliteit in werking stelt zijn staatsdossiers bewaart. Zie [Transformatiefunctionaliteit](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
 
 <!--
 c_next_steps.xml
