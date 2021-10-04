@@ -3,9 +3,9 @@ description: Voer de volgende stappen uit om een update uit te voeren naar de ge
 title: Data Workbench 5.5 tot 6.1-upgrade
 uuid: 14e3612e-11a2-402a-9478-904ec55df23c
 exl-id: c730f6d5-2171-4d97-a967-509dc2517c86,3f25917b-b929-4e3b-84f0-1a81b30ba641
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -53,17 +53,17 @@ Ga als volgt te werk om de **[!UICONTROL Server v6.1]** componenten bij te werke
 
    1. [!DNL Server\Scripts] om [!DNL TnTSend.exe] bij te werken.
 
-1. Als u **[!UICONTROL DeviceAtlas]** in dienst neemt, dan zult u [de bundel](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) in [!DNL Server\Lookups] omslag moeten bijwerken.
+1. Als u **[!UICONTROL DeviceAtlas]** in dienst neemt, dan zult u [de bundel](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md) in [!DNL Server\Lookups] omslag moeten bijwerken.
 1. Stel [!DNL Directories] in het [!DNL Profile.cfg]-bestand in om ervoor te zorgen dat de vector wordt bijgewerkt met het aantal items voor elk profiel.
 
    Als u bijvoorbeeld het profiel **[!UICONTROL Predictive Analytics]** wilt inschakelen, moet u deze instelling bijwerken.
 
    ```
-   Directories = vector: 5 items 
-       0 = string: Base\\ 
-       1 = string: Geography\\ 
-       2 = string: Predictive Analytics\\ 
-       3 = string: Adobe SC\\ 
+   Directories = vector: 5 items
+       0 = string: Base\\
+       1 = string: Geography\\
+       2 = string: Predictive Analytics\\
+       3 = string: Adobe SC\\
        4 = string: Profile Name\\
    ```
 
@@ -85,7 +85,7 @@ Ga als volgt te werk om de **[!UICONTROL Server v6.1]** componenten bij te werke
    Als u geen Logbron-id hebt gedefinieerd, treedt de volgende fout op:
 
    ```
-   Missing Log Source ID in log processing.cfg.  
+   Missing Log Source ID in log processing.cfg.
    Log Source ID must be defined for all log sources.
    ```
 
@@ -116,10 +116,10 @@ De serverinstallatie is nu voltooid.
    De werkbank voor gegevens biedt momenteel ondersteuning voor Engels (-en-us) en Chinees (-zh-cn). U moet een lettertype instellen ter ondersteuning van single- en double-bytetekens:
 
    ```
-   Report Server.cfg - Add Fonts 
-      Fonts = vector: 2 items  
-      0 = string: SimSun  
-      1 = string: Arial 
+   Report Server.cfg - Add Fonts
+      Fonts = vector: 2 items
+      0 = string: SimSun
+      1 = string: Arial
    ```
 
    De vermelde lettertypen moeten ook op het Windows-besturingssysteem zijn geïnstalleerd.
@@ -138,7 +138,7 @@ De serverinstallatie is nu voltooid.
 1. Start de service op basis van de taalinstellingen:
 
    ```
-   ReportServer.exe -RegServer -Locale -en-us (English) 
+   ReportServer.exe -RegServer -Locale -en-us (English)
    ReportServer.exe -RegServer -Locale -zh-cn (Simplified Chinese)
    ```
 
@@ -166,8 +166,8 @@ De installatie van de rapportserver is nu voltooid.
    De werkbank voor gegevens ondersteunt momenteel zowel Engels als Vereenvoudigd Chinees. Selecteer lettertypen die beide talen ondersteunen:
 
    ```
-   Fonts = vector: 2 items  
-   0 = string: SimSun 
+   Fonts = vector: 2 items
+   0 = string: SimSun
    1 = string: Arial
    ```
 

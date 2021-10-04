@@ -3,9 +3,9 @@ description: Open kenmerk Best Fit in het menu Premium en voer de volgende stapp
 title: Een passend kenmerkmodel maken
 uuid: d1fd0340-1917-41bc-9a08-e78a79d084e7
 exl-id: e0a42374-2500-46a3-a72a-708ab2d228db
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Zie een overzicht van [Best Fit Attribution](../../../../home/c-get-started/c-at
 
    >[!NOTE]
    >
-   >De kenmerk Best Fit is een Adobe Analytics Premium-functie waarvoor u Premium in uw profiel moet inschakelen. Hiervoor moet u uw certificaat bijwerken en het Premium-profiel toevoegen aan het bestand profile.cfg. Zie [DWB-serverupgrade: 6.2 tot 6.3](https://experienceleague.adobe.com/docs/data-workbench/using/install/upgrade-dwb/c-6-2-to-6-3-upgrade.html) voor DWB 6.3.
+   >De kenmerk Best Fit is een Adobe Analytics Premium-functie waarvoor u Premium in uw profiel moet inschakelen. Hiervoor moet u uw certificaat bijwerken en het Premium-profiel toevoegen aan het bestand profile.cfg. Zie [DWB-serverupgrade: 6.2 tot 6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md) voor DWB 6.3.
 
 1. Stel de metrische waarde **[!UICONTROL Success]** in.
 
@@ -108,54 +108,54 @@ Wanneer de grafiek volledig is, zal een attributiemodel tonen dat per kanaal wor
 
 Het menu **Opties** biedt geavanceerde functies voor het instellen en weergeven van de analyse Best Fit Attribution.
 
-<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Menu Opties </th> 
-   <th colname="col2" class="entry"> Beschrijving </th> 
+<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Menu Opties </th>
+   <th colname="col2" class="entry"> Beschrijving </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Trainingsfilter instellen  </span> </td> 
-   <td colname="col2"> Het trainingsfilter wordt samen met het venster Succes gebruikt om de populatie te filteren bij het maken van het toewijzingsmodel. Dit levert een subset gegevens op die alleen de bezoekers bevat die u wilt analyseren. <p>Opmerking: Ervaren gebruikers kunnen ook gebruikmaken van de flexibiliteit van filters om zich na de tijdlijn van het venster Succes en Touch Windows te concentreren. Naast het selecteren van een tijdbereik kunt u bijvoorbeeld een set met <i>Refering Domains</i> selecteren om alleen de toewijzing voor gebruikers uit die domeinen te bekijken. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Omschrijving complex filter tonen  </span> </td> 
-   <td colname="col2"> Hiermee geeft u de filtercode weer voor Trainingsfilter, Venster Voltooien en Venster aanraken. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Model opslaan  </span> </td> 
-   <td colname="col2"> Hiermee slaat u het huidige toewijzingsmodel op voor toekomstig gebruik. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Model laden  </span> </td> 
-   <td colname="col2"> Opent een eerder opgeslagen attributiemodel. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Presentatieweergave  </span> </td> 
-   <td colname="col2"> Hiermee verbergt u de bovenste menubalk voor de presentatie. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Opties &gt; </b> Geavanceerd bevat functies waarmee u de omvang van de trainingsset kunt instellen en de aanpak kunt opgeven die moet worden gevolgd bij een onbalans tussen klassen. </p> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Geavanceerd &gt; Formaat trainingsset  </span> </td> 
-   <td colname="col2"> <p>Hiermee stelt u de grootte van de trainingsset in. </p> <p>Opmerking:  De standaardtrainingsgrootte is Groot voor 250.000 bezoekers. </p> 
-    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD"> 
-     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Tiny = 50.000 </li> 
-     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Klein = 75.000 </li> 
-     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">Normaal = 100,000 </li> 
-     <li id="li_0BB7F791603745028CFC661EBC94D8B4">Groot = 250,00 </li> 
-     <li id="li_34B60233C84F48F1BCB8040C5195411A">Groot = 500.000 </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><b>Geavanceerd &gt; Klassebalans  </b> </td> 
-   <td colname="col2"> <p>Identificeert en bepaalt het aantal inputverslagen voor een kwestie van de klassenonbalans te produceren die op de grootte van dataset wordt gebaseerd. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Trainingsfilter instellen  </span> </td>
+   <td colname="col2"> Het trainingsfilter wordt samen met het venster Succes gebruikt om de populatie te filteren bij het maken van het toewijzingsmodel. Dit levert een subset gegevens op die alleen de bezoekers bevat die u wilt analyseren. <p>Opmerking: Ervaren gebruikers kunnen ook gebruikmaken van de flexibiliteit van filters om zich na de tijdlijn van het venster Succes en Touch Windows te concentreren. Naast het selecteren van een tijdbereik kunt u bijvoorbeeld een set met <i>Refering Domains</i> selecteren om alleen de toewijzing voor gebruikers uit die domeinen te bekijken. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Omschrijving complex filter tonen  </span> </td>
+   <td colname="col2"> Hiermee geeft u de filtercode weer voor Trainingsfilter, Venster Voltooien en Venster aanraken. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Model opslaan  </span> </td>
+   <td colname="col2"> Hiermee slaat u het huidige toewijzingsmodel op voor toekomstig gebruik. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Model laden  </span> </td>
+   <td colname="col2"> Opent een eerder opgeslagen attributiemodel. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Presentatieweergave  </span> </td>
+   <td colname="col2"> Hiermee verbergt u de bovenste menubalk voor de presentatie. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p><b>Opties &gt; </b> Geavanceerd bevat functies waarmee u de omvang van de trainingsset kunt instellen en de aanpak kunt opgeven die moet worden gevolgd bij een onbalans tussen klassen. </p> </td>
+   <td colname="col2"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Geavanceerd &gt; Formaat trainingsset  </span> </td>
+   <td colname="col2"> <p>Hiermee stelt u de grootte van de trainingsset in. </p> <p>Opmerking:  De standaardtrainingsgrootte is Groot voor 250.000 bezoekers. </p>
+    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD">
+     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Tiny = 50.000 </li>
+     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Klein = 75.000 </li>
+     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">Normaal = 100,000 </li>
+     <li id="li_0BB7F791603745028CFC661EBC94D8B4">Groot = 250,00 </li>
+     <li id="li_34B60233C84F48F1BCB8040C5195411A">Groot = 500.000 </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><b>Geavanceerd &gt; Klassebalans  </b> </td>
+   <td colname="col2"> <p>Identificeert en bepaalt het aantal inputverslagen voor een kwestie van de klassenonbalans te produceren die op de grootte van dataset wordt gebaseerd. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 | Opties voor Opnieuw instellen en verwijderen | Beschrijving |
