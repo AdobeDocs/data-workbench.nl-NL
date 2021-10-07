@@ -3,14 +3,14 @@ description: Reguliere expressies worden gebruikt voor alle zoekvelden in de wer
 title: Reguliere expressies
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 1%
 
 ---
 
-# Gewone uitdrukkingen{#regular-expressions}
+# Reguliere expressies{#regular-expressions}
 
 Reguliere expressies worden gebruikt voor alle zoekvelden in de werkbank met gegevens, inclusief de deelvensters met query-entiteiten.
 
@@ -38,23 +38,23 @@ Deze bijlage is geen uitgebreide inleiding op reguliere expressies. Een bijzonde
 | Patroon | Dit is een korte terminologie voor de reguliere expressie. In wezen is een reguliere expressie een patroon dat u probeert af te stemmen op de doeltekenreeks. |
 | Doeltekenreeks | Deze term verwijst naar de tekenreeks waarin we zoeken om het gewenste patroon te vinden. |
 
-## Informatie over letterlijke overeenkomsten {#section-ec4497e3160c47ba9b828d939761b3e0}
+## Letterlijke overeenkomsten {#section-ec4497e3160c47ba9b828d939761b3e0}
 
 Letterlijke overeenkomst neemt een letterlijke tekenreeks zonder escape-tekens en zoekt in de doeltekenreeks om te zien of het een subtekenreeks van de doeltekenreeks is.
 
 In dit voorbeeld ziet u hoe letterlijke overeenkomst werkt. Overweeg een situatie waarin gegevens worden verzameld van websiteverkeer en het veld cs(reference) de volgende waarde bevat:
 
-`http://www.abc.com/adventurenews/today.html?ad=123AZ45`
+`https://www.abc.com/adventurenews/today.html?ad=123AZ45`
 
 Om te bepalen of de verwijzer iemand vertegenwoordigt die op één van de advertenties klikte, moet u zien of de verwijzer de koordadvertentie bevat. U kon de letterlijke koordadvertentie eenvoudig gebruiken om het doelkoord te zoeken en te bepalen of een reclame werd gebruikt om het verkeer aan de plaats te leiden. Hoewel dit met de doeltekenreeks zou overeenkomen, zou deze op twee locaties overeenkomen en dus dubbelzinnig zijn en tot onjuiste positieven kunnen leiden.
 
 De volgende URL bevat de tekenreeksadvertentie op twee verschillende plaatsen:
 
-`http://www.abc.com/ad vertnews/today.html?ad =123AZ45`
+`https://www.abc.com/ad vertnews/today.html?ad =123AZ45`
 
 Als u dus probeert vast te stellen welke sessies zijn gestart als gevolg van een bepaalde advertentiecampagne, is het duidelijk dat het gebruik van de letterlijke advertentie als reguliere expressie niet voldoende is. Als u de letterlijke waarde wijzigt in &quot;ad=&quot;, voorkomt u deze dubbelzinnigheid en resulteert de expressie in slechts één overeenkomst. Zelfs dit is misschien niet voldoende om te garanderen dat de verwijzende partij deel uitmaakte van de advertentiecampagne. Overweeg de volgende referentie:
 
-`http://www.xyz.com/hello.html?pad=something`
+`https://www.xyz.com/hello.html?pad=something`
 
 U hebt geen controle over de URL&#39;s die anderen gebruiken om koppelingen naar de site te maken. Letterlijke overeenkomsten zijn te eenvoudig om sessies te zoeken die zijn gestart als gevolg van de advertentiecampagne. In de volgende sectie wordt besproken hoe u metatekens kunt gebruiken voor flexibelere en krachtigere overeenkomsten.
 
@@ -74,27 +74,27 @@ Aanvullende reguliere expressies kunnen ook worden gebruikt om complexere zoekre
 
 Met letterlijke overeenkomsten kunt u één tekenreeks zoeken, maar met vierkante haken, streepjes en pijpen kunt u een lijst definiëren van de items die u wilt zoeken in de doeltekenreeks.
 
-<table id="table_18B86955EC3748079E7C176273ADE92B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Voor dit metateken... </th> 
-   <th colname="col2" class="entry"> De reguliere-expressieprocessor zal.. </th> 
-  </tr> 
+<table id="table_18B86955EC3748079E7C176273ADE92B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Voor dit metateken... </th>
+   <th colname="col2" class="entry"> De reguliere-expressieprocessor zal.. </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Vierkante haken ([ ]) </td> 
-   <td colname="col2"> Pas een van de tekens binnen de vierkante haken aan met één tekenpositie. [AB] is bijvoorbeeld een instructie die ofwel overeenkomt met de letter A of de letter B, en [0123456789] staat voor elk teken in het bereik 0 tot en met 9. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Streepje (-) </td> 
-   <td colname="col2"> <p>Overeenkomst met een tekenbereik. In plaats van [0123456789] te schrijven, zouden we dus gewoon [0-9] kunnen schrijven. </p> <p> Dit kan worden uitgebreid tot bereiken van tekens en meerdere bereiken binnen één set haakjes. [0-9A-C] komt bijvoorbeeld overeen met de tekens 0 tot en met 9 en A tot en met C. </p> <p> <p>Opmerking:  Als u op een streepje (-) wilt testen als letterlijk teken binnen de vierkante haakjes, moet het eerste of laatste streepje staan. [-0-9] test bijvoorbeeld op - en 0 tot en met 9. </p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Pijp (|) </td> 
-   <td colname="col2"> Kies een van de twee opties voor een bepaalde doeltekenreeks. Zo komt b|nat bijvoorbeeld overeen met bat of nat. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> Vierkante haken ([ ]) </td>
+   <td colname="col2"> Pas een van de tekens binnen de vierkante haken aan met één tekenpositie. [AB] is bijvoorbeeld een instructie die ofwel overeenkomt met de letter A of de letter B, en [0123456789] staat voor elk teken in het bereik 0 tot en met 9. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Streepje (-) </td>
+   <td colname="col2"> <p>Overeenkomst met een tekenbereik. In plaats van [0123456789] te schrijven, zouden we dus gewoon [0-9] kunnen schrijven. </p> <p> Dit kan worden uitgebreid tot bereiken van tekens en meerdere bereiken binnen één set haakjes. [0-9A-C] komt bijvoorbeeld overeen met de tekens 0 tot en met 9 en A tot en met C. </p> <p> <p>Opmerking:  Als u op een streepje (-) wilt testen als letterlijk teken binnen de vierkante haakjes, moet het eerste of laatste streepje staan. [-0-9] test bijvoorbeeld op - en 0 tot en met 9. </p> </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Pijp (|) </td>
+   <td colname="col2"> Kies een van de twee opties voor een bepaalde doeltekenreeks. Zo komt b|nat bijvoorbeeld overeen met bat of nat. </td>
+  </tr>
+ </tbody>
 </table>
 
 Neem de volgende voorbeelden:
@@ -103,7 +103,7 @@ Neem de volgende voorbeelden:
 |---|---|---|
 | Win9`[58]` | OS=Win95 | Win95 |
 | Win95 | 8 | OS=Win98 | Win98 |
-| `[0-9]` | Mozilla/3.0 | 1 |
+| `[0-9]` | Mozilla/3.0 | 3 |
 | Les`[A-Z]` | Les | Geen gelijke omdat laag-gecaased a niet in de waaier van bovenkast A door Z is. |
 
 **Negatie**
@@ -135,35 +135,35 @@ De punt (.) is een speciaal metateken dat overeenkomt met elk willekeurig teken 
 
 Met metatekens voor herhaling kunt u een patroon meerdere keren afstemmen.
 
-<table id="table_6A14333D6C264A48ADF1EBBAF687CADD"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Voor dit metateken... </th> 
-   <th colname="col2" class="entry"> De reguliere-expressieprocessor zal.. </th> 
-  </tr> 
+<table id="table_6A14333D6C264A48ADF1EBBAF687CADD">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Voor dit metateken... </th>
+   <th colname="col2" class="entry"> De reguliere-expressieprocessor zal.. </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Vraagteken (?) </td> 
-   <td colname="col2"> Geen instanties of één instantie van het teken direct voorafgaand aan het metateken (?). Het patroongebied komt bijvoorbeeld overeen met rood en gelezen. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Sterretje (*) </td> 
-   <td colname="col2"> Komt overeen met nul of meer exemplaren van het teken dat onmiddellijk voorafgaat aan het metateken (*). Het patroon [0-9]* komt bijvoorbeeld overeen met een willekeurig aantal tekens 0 tot en met 9 (een willekeurig geheel getal). </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Plus (+) </td> 
-   <td colname="col2"> Komt overeen met een of meer exemplaren van het voorgaande teken of bereik. Het patroon drie+ komt bijvoorbeeld overeen met drie, maar niet doorheen. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> {n} </td> 
-   <td colname="col2"> <p>Komt exact overeen met het normale teken of bereik. Het volgende patroon komt overeen met telefoonnummers in de Verenigde Staten: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> Hoewel het geen optimaal patroon is, wordt bepaald of de doeltekenreeks de juiste indeling heeft. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> {n,m} </td> 
-   <td colname="col2"> Pas het voorgaande teken minstens in keer en hoogstens m aan. For example, fo{1,2}d would match fod and food but not foood. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> Vraagteken (?) </td>
+   <td colname="col2"> Geen instanties of één instantie van het teken direct voorafgaand aan het metateken (?). Het patroongebied komt bijvoorbeeld overeen met rood en gelezen. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Sterretje (*) </td>
+   <td colname="col2"> Komt overeen met nul of meer exemplaren van het teken dat onmiddellijk voorafgaat aan het metateken (*). Het patroon [0-9]* komt bijvoorbeeld overeen met een willekeurig aantal tekens 0 tot en met 9 (een willekeurig geheel getal). </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Plus (+) </td>
+   <td colname="col2"> Komt overeen met een of meer exemplaren van het voorgaande teken of bereik. Het patroon drie+ komt bijvoorbeeld overeen met drie, maar niet doorheen. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> {n} </td>
+   <td colname="col2"> <p>Komt exact overeen met het normale teken of bereik. Het volgende patroon komt overeen met telefoonnummers in de Verenigde Staten: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> Hoewel het geen optimaal patroon is, wordt bepaald of de doeltekenreeks de juiste indeling heeft. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> {n,m} </td>
+   <td colname="col2"> Pas het voorgaande teken minstens in keer en hoogstens m aan. Bijvoorbeeld, voor {1,2} d gelijke voedsel en voedsel maar niet voedsel. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Patroonextractie {#section-4389779653b64f6cb7c47615b25c1a79}
@@ -172,39 +172,39 @@ Patroonaanpassing is slechts een deel van de kracht van reguliere expressies. Re
 
 Bekijk de volgende voorbeelden van patroonextractie:
 
-<table id="table_BC8D471B966844049FFFCDEC0F183941"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Patroon </th> 
-   <th colname="col2" class="entry"> String </th> 
-   <th colname="col3" class="entry"> Overeenkomst </th> 
-   <th colname="col4" class="entry"> Extractie </th> 
-  </tr> 
+<table id="table_BC8D471B966844049FFFCDEC0F183941">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Patroon </th>
+   <th colname="col2" class="entry"> String </th>
+   <th colname="col3" class="entry"> Overeenkomst </th>
+   <th colname="col4" class="entry"> Extractie </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Win(9[58]) </td> 
-   <td colname="col2"> OS=Win95 </td> 
-   <td colname="col3"> Win95 </td> 
-   <td colname="col4"> %1% = 95 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> (Win)(95|8) </td> 
-   <td colname="col2"> OS=Win98 </td> 
-   <td colname="col3"> Win98 </td> 
-   <td colname="col4"> <p>%1% = Win </p> <p> %2% = 98 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Mozilla/([0-9]).([0-9]) </td> 
-   <td colname="col2"> Mozilla/3.0 </td> 
-   <td colname="col3"> Mozilla/3.03 </td> 
-   <td colname="col4"> <p>%1% = 3 </p> <p> %2% = 0 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Les ([A-Z]) </td> 
-   <td colname="col2"> Les </td> 
-   <td colname="col3"> Geen overeenkomst omdat lower-cased a niet binnen de waaier van bovenkast A door Z is </td> 
-   <td colname="col4"> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> Win(9[58]) </td>
+   <td colname="col2"> OS=Win95 </td>
+   <td colname="col3"> Win95 </td>
+   <td colname="col4"> %1% = 95 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> (Win)(95|8) </td>
+   <td colname="col2"> OS=Win98 </td>
+   <td colname="col3"> Win98 </td>
+   <td colname="col4"> <p>%1% = Win </p> <p> %2% = 98 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Mozilla/([0-9]).([0-9]) </td>
+   <td colname="col2"> Mozilla/3.0 </td>
+   <td colname="col3"> Mozilla/3.03 </td>
+   <td colname="col4"> <p>%1% = 3 </p> <p> %2% = 0 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Les ([A-Z]) </td>
+   <td colname="col2"> Les </td>
+   <td colname="col3"> Geen overeenkomst omdat lower-cased a niet binnen de waaier van bovenkast A door Z is </td>
+   <td colname="col4"> </td>
+  </tr>
+ </tbody>
 </table>

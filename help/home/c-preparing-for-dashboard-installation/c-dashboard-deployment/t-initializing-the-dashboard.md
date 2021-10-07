@@ -3,18 +3,18 @@ description: De laatste stap bestaat uit het voor het eerst uitvoeren van het da
 title: Het dashboard initialiseren
 uuid: 847ba63e-29d8-4950-aa74-22d825388e2b
 exl-id: 47098d73-d8c4-4d14-964f-108a731d3733
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
 
 ---
 
-# Het dashboard{#initializing-the-dashboard} initialiseren
+# Het dashboard initialiseren{#initializing-the-dashboard}
 
 De laatste stap bestaat uit het voor het eerst uitvoeren van het dashboard, zodat het kan worden geïnitialiseerd.
 
-1. Open een webbrowser en voer de URL in naar de nieuwe site (bijvoorbeeld http://localhost/dashboard).
+1. Open een webbrowser en voer de URL in naar de nieuwe site (bijvoorbeeld https://localhost/dashboard).
 1. Als u voor het eerst verbinding maakt, worden de databasetabellen ingesteld, zodat u mogelijk een kleine vertraging hebt.
 1. De aanvankelijke aanmeldingsreferenties zijn:
 

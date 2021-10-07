@@ -4,7 +4,7 @@ solution: Analytics,Analytics
 title: Wat moet ik testen?
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -42,6 +42,6 @@ Om deze doelstellingen te bereiken, steunt de Plaats de volgende types van metho
 >
 >De gecontroleerde experimenten zijn gebaseerd op de vervanging van URI, niet de vervanging van het vraagkoord. De URI binnen een bepaalde URL wordt in het volgende voorbeeld gemarkeerd:
 >
->`http://www.omniture.com/index.asp?id=1`
+>`https://www.omniture.com/index.asp?id=1`
 >
 >Bijvoorbeeld, in uw gecontroleerd experiment kon u specificeren dat de controlegroep URI [!DNL index.asp] met de testgroep URI [!DNL index2.asp] wordt vervangen om te bepalen welk paginaontwerp in meer waarde zou resulteren.

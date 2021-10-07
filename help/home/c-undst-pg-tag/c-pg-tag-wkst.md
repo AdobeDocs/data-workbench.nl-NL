@@ -3,14 +3,14 @@ description: Tabellen met een lijst met constante en aangepaste variabelen.
 title: Werkblad Paginatabelvariabele toewijzing
 uuid: 1ecef047-5a04-401d-b3d5-f31fddb134e1
 exl-id: 647c6a14-58b4-4f87-bccf-fa7ac24811a5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
 
 ---
 
-# Werkblad voor variabele toewijzing paginatag{#page-tag-variable-mapping-worksheet}
+# Werkblad Paginatabelvariabele toewijzing{#page-tag-variable-mapping-worksheet}
 
 Tabellen met een lijst met constante en aangepaste variabelen.
 
@@ -42,12 +42,12 @@ Tabellen met een lijst met constante en aangepaste variabelen.
 | v_pe | Paginafout | v_pe=&quot;Validation_Error&quot; |
 | v_c | Klikdoorcampagne | v_c=&quot;Campagne 1&quot; |
 | v_ca | Campagne-element doorklikken | v_ca=&quot;72890ab&quot; |
-| v_cr | Doorklikken Campagnereferentie | v_cr=http://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
+| v_cr | Doorklikken Campagnereferentie | v_cr=https://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
 | v_ic | Impressiecampagne | v_c=&quot;Campagne 1&quot; |
 | v_ica | Element voor campagne voor onderdrukking | v_ca=&quot;72890ab&quot; |
-| v_icr | Refersor voor campagne voor depressie | v_cr=http://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
+| v_icr | Refersor voor campagne voor depressie | v_cr=https://money.cnn.com/markets/&amp;v_cp =CNNMy_Mkt&quot; |
 | v_ln | Koppelingsnaam | v_ln=&quot;About%20Us&quot; |
-| v_eurl | URL afsluiten | V_eurl=&quot;http://www.offsite.com/ |
+| v_eurl | URL afsluiten | V_eurl=&quot;https://www.offsite.com/ |
 | v_1 | aangepaste variabele 1 |  |
 | v_2 | aangepaste variabele 2 |  |
 | v_3 | aangepaste variabele 3 |  |

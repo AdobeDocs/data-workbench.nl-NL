@@ -3,7 +3,7 @@ description: Informatie om rapporten als dossiers van Excel te produceren.
 title: Rapporten genereren als Microsoft Excel-bestanden
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
@@ -22,9 +22,9 @@ Aan de volgende eisen moet worden voldaan:
    >[!NOTE]
    >
    >
-   >    
-   >    
-   >    * Wanneer u rapporten als dossiers van Excel produceert, opent u een nieuw geval van Excel. Zie [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757) voor meer informatie over dit proces.
+   >
+   >
+   >    * Wanneer u rapporten als dossiers van Excel produceert, opent u een nieuw geval van Excel. Zie [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757) voor meer informatie over dit proces.
    >    * Hoewel de werkbank van gegevens meer dan 256 kolommen en 65.536 rijen van gegevens steunt, Microsoft Excel niet.
 
 

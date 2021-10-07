@@ -3,14 +3,14 @@ description: Het Portaal van het Rapport gebruikt de informatie in een configura
 title: Het sessieconfiguratiebestand bewerken
 uuid: c1bcd4d2-9bf5-425a-bda2-7f805983cdc6
 exl-id: 98cf2e11-afb8-4530-aaa4-ea3c913effc1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
-# Bewerk het sessieconfiguratiebestand{#edit-the-session-configuration-file}
+# Het sessieconfiguratiebestand bewerken{#edit-the-session-configuration-file}
 
 Het Portaal van het Rapport gebruikt de informatie in een configuratiedossier genoemd global.asa om gebruikerszittingen te initialiseren.
 
@@ -30,8 +30,8 @@ Wanneer u [!DNL Report Portal] installeert, moet u dit dossier zoals aangewezen 
 1. Sla het bestand op.
 1. Als u wilt controleren of de [!DNL Report Portal]-bestanden correct zijn geïnstalleerd en via de toegewezen virtuele map kunnen worden bereikt, opent u de volgende pagina in uw browser:
 
-   http://*YourServerAddress*/*YourPortalName*
+   https://*YourServerAddress*/*YourPortalName*
 
-   Voorbeeld: [!DNL http://localhost/VisualReportPortal]
+   Voorbeeld: [!DNL https://localhost/VisualReportPortal]
 
    Als [!DNL Report Portal] ASPs correct geïnstalleerd is, zou u de poortlogin pagina moeten zien. Als u deze pagina niet ziet, verifieer dat ASPs op uw IIS wordt toegelaten en uw virtuele folderafbeeldingen tweemaal controleert.

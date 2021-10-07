@@ -3,7 +3,7 @@ description: U kunt een werkruimte exporteren als een .png-afbeeldingsbestand of
 title: Een werkruimte exporteren
 uuid: 59ea6e46-d2e9-41f9-9c8f-e3071eb65424
 exl-id: 87416ddf-2ac0-4f95-ae8e-71051061c757
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 0%
@@ -41,10 +41,9 @@ Als u werkruimten en afzonderlijke vensters wilt exporteren naar Microsoft Excel
 
 >[!NOTE]
 >
->* Wanneer u gegevens als dossiers van Excel uitvoert, opent u een nieuw geval van Excel. Zie [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757) voor meer informatie over dit proces.
+>* Wanneer u gegevens als dossiers van Excel uitvoert, opent u een nieuw geval van Excel. Zie [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757) voor meer informatie over dit proces.
 >* Hoewel de Data Workbench meer dan 256 kolommen en 65.536 rijen van gegevens steunt, de versies van Microsoft Excel voorafgaand aan 8.0 niet.
 >
-
 
 
 Als aan deze vereisten wordt voldaan, begint de Data Workbench automatisch Microsoft Excel en voert de gegevens naar een nieuw werkboek van Excel uit. Gegevens worden niet geëxporteerd uit de volgende visualisaties: grafieken, wegbrowsers, proceskaarten, verstrooiingspunten, en globes.

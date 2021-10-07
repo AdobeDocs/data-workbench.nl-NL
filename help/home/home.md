@@ -4,7 +4,7 @@ title: Help bij Data Workbench
 feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 3%
@@ -15,10 +15,10 @@ ht-degree: 3%
 
 ![Banner](/help/home/assets/doc_banner_workbench.png)
 
-[Data ](http://www.adobe.com/solutions/digital-analytics/data-workbench.html) Workbenchis onderdeel van  [Adobe Analytics](http://www.adobe.com/solutions/digital-analytics.html). Het heeft hoogst-flexibele, krachtige, multi-kanaalmogelijkheden die worden ontworpen om gegevens van online en off-line klanteninteractie over alle soorten Web, CRM, POS, en andere gegevenstypes te verzamelen, te verwerken, te analyseren en te visualiseren. De interactieve rapporten in Data Workbench laten u analyseren en op relevante statistische informatie reageren om activiteit te controleren en klantentendensen te voorspellen.
+[Data ](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) Workbenchis onderdeel van  [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html). Het heeft hoogst-flexibele, krachtige, multi-kanaalmogelijkheden die worden ontworpen om gegevens van online en off-line klanteninteractie over alle soorten Web, CRM, POS, en andere gegevenstypes te verzamelen, te verwerken, te analyseren en te visualiseren. De interactieve rapporten in Data Workbench laten u analyseren en op relevante statistische informatie reageren om activiteit te controleren en klantentendensen te voorspellen.
 
 * ![Analytics ](assets/analytics-icon-24.png) [iconAnalytics Documentation](https://experienceleague.adobe.com/docs/analytics/landing/home.html)
-* ![pdf-](assets/pdf_icon.png) [pictogramDownload alle documentatie van de Data Workbench in PDF](/help/home/assets/data-workbench.pdf)
+* ![pdf ](assets/pdf_icon.png) [iconDownload All Data Workbench documentation in PDF](/help/home/assets/data-workbench.pdf)
 
 ## Belangrijke onderwerpen
 

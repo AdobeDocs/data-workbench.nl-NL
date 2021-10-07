@@ -3,7 +3,7 @@ description: De transformatie AppendURI verstrekt een manier om informatie aan d
 title: AppendURI
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
 exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -29,7 +29,7 @@ De [!DNL AppendURI]-transformatie werkt alleen wanneer deze is gedefinieerd in h
 
 Neem bijvoorbeeld een website die is gemaakt met een traditionele Model-View-Controller-aanpak. In dergelijke systemen is het gebruikelijk dat één webpagina het toegangspunt tot het systeem is. Voor zo&#39;n plaats, zouden de visualisaties van verkeerspatronen in het systeem zeer oninteressant zijn en zouden geen inzichten in bezoekersgebruik en verkeersstroom verstrekken. Neem bijvoorbeeld een website die alle webaanvragen doorstuurt via een URI van het volgende formulier:
 
-* [!DNL http://www.examplesite.com/modelview.asp?id=login&name=bob]
+* [!DNL https://www.examplesite.com/modelview.asp?id=login&name=bob]
 
 De modelmeningASP- pagina ontvangt al verkeer en bepaalt zijn acties die op de waarde van het identiteitskaart- gebied in de vraag worden gebaseerd. Standaard zou de URI-dimensie één item bevatten:
 

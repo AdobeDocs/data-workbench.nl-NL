@@ -3,7 +3,7 @@ description: Stappen om het Portaal van het Rapport aan een virtuele folder (IIS
 title: Het Portaal van het Rapport van de toewijzing aan een Virtuele Folder (IIS 7.0 of hoger)
 uuid: 9d18fb85-f9d7-48b6-a19b-1e7b68a5adca
 exl-id: 2fa3439a-1fe5-4a20-83db-d233ae8b5263
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -61,4 +61,4 @@ Momenteel, hebben de meeste Beheerde cliënten van de Dienst servers met het wer
 * U hebt [!DNL ReportPortalSetup.xml] niet meer nodig, zodat kan het worden geschrapt.
 * Plaats, met het oog op standaardisering, de inhoud van dit ZIP-bestand in [!DNL E:\Portal].
 * Om de server SMTP voor beheerde de dienstencliënten te bepalen, kunt u hier gaan kijken.
-* Zet in een verzoek met NetOps om de ingang van de domeinnaam in IIS voor de rapportserver in iets vriendelijker - bijvoorbeeld, [!DNL reports.clientname.insight.omniture.com] te veranderen, zodat uw algemene portaal URL [!DNL http://reports.clientname.insight.omniture.com/Portal] is. Configureer uw [!DNL email.asa]-bestand nadat deze wijziging is aangebracht.
+* Zet in een verzoek met NetOps om de ingang van de domeinnaam in IIS voor de rapportserver in iets vriendelijker - bijvoorbeeld, [!DNL reports.clientname.insight.omniture.com] te veranderen, zodat uw algemene portaal URL [!DNL https://reports.clientname.insight.omniture.com/Portal] is. Configureer uw [!DNL email.asa]-bestand nadat deze wijziging is aangebracht.

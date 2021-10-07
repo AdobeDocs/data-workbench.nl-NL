@@ -3,7 +3,7 @@ description: Woordenlijst Data Workbench
 title: Woordenlijst Data Workbench
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
 exl-id: 29d6560a-0394-4031-8152-20f7ea0de00b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '4201'
 ht-degree: 0%
@@ -62,11 +62,11 @@ Een algemene variabele die een relatie vormt tussen de rijen in twee tabellarisc
 
 **Vertrouwelijk interval**
 
-Een reeks waarden met een opgegeven waarschijnlijkheid om de snelheid of trend te beperken. De betrouwbaarheidsintervallen 80% (p-waarde = 0,20), 95% (p-waarde = 0,05) en 99% (p-waarde = 0,01) zijn de meest gebruikte intervallen. (Bron: `http://www.nci.nih.gov/statistics/glossary`)
+Een reeks waarden met een opgegeven waarschijnlijkheid om de snelheid of trend te beperken. De betrouwbaarheidsintervallen 80% (p-waarde = 0,20), 95% (p-waarde = 0,05) en 99% (p-waarde = 0,01) zijn de meest gebruikte intervallen. (Bron: `https://www.nci.nih.gov/statistics/glossary`)
 
 **Vertrouwensniveau**
 
-De waarschijnlijkheid dat de steekproeffout in een onderzoeksresultaat binnen een gespecificeerde waaier zal vallen, die gewoonlijk in termen van standaardfouten wordt uitgedrukt (bijvoorbeeld, 1 standaardfout evenaart 68% waarschijnlijkheid, 2 standaardfouten evenaart 95.4% waarschijnlijkheid). (Bron: `http://www.magazine.org/research/3410.cfm`)
+De waarschijnlijkheid dat de steekproeffout in een onderzoeksresultaat binnen een gespecificeerde waaier zal vallen, die gewoonlijk in termen van standaardfouten wordt uitgedrukt (bijvoorbeeld, 1 standaardfout evenaart 68% waarschijnlijkheid, 2 standaardfouten evenaart 95.4% waarschijnlijkheid). (Bron: `https://www.magazine.org/research/3410.cfm`)
 
 **Conversietoewijzing**
 
@@ -94,7 +94,7 @@ In de server van de gegevenswerkbank, een gegevenstransformatie die gegevens van
 
 **Crosstab**
 
-In gegevenswerkbank, een tabelvormige visualisatie die de metriek toont verbonden aan de snijpunten van twee dimensies.
+In de werkbank van gegevens, een tabelvormige visualisatie die de metriek toont verbonden aan de snijpunten van twee dimensies.
 
 **Kubus**
 
@@ -238,7 +238,7 @@ Een relatie tussen twee gegevensdimensies waarin één element in één dimensie
 
 **Rangtelwoord**
 
-Een numerieke volgorde in een reeks zijn of aangeven. (Bron: `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) Als een afmeting normaal in gegevenswerkbank wordt gesorteerd, worden de elementen van de afmeting getoond in de orde waarin zij intern worden vertegenwoordigd.
+Een numerieke volgorde in een reeks zijn of aangeven. (Bron: `https://wordnet.princeton.edu/perl/webwn?s=ordinal`) Als een afmeting normaal in gegevenswerkbank wordt gesorteerd, worden de elementen van de afmeting getoond in de orde waarin zij intern worden vertegenwoordigd.
 
 **Outliers**
 

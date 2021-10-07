@@ -3,7 +3,7 @@ description: Creeer Dimension die door metrische attributen (Metrische Dims) wor
 title: wizard Metrische grijswaarden
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 exl-id: 4d283a00-409c-4d74-a558-40744caba71c
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 1%
@@ -60,7 +60,7 @@ Een metrische vorm zet metrisch om in een nieuwe afmeting. Met een metrische gri
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   Het formaat bepaalt hoe metrisch wanneer geopend in visualisatie zal worden voorgesteld. Deze indelingen zijn geselecteerd [afdrukstandaarden](http://www.cplusplus.com/reference/cstdio/printf/), zoals hieronder gedefinieerd:
+   Het formaat bepaalt hoe metrisch wanneer geopend in visualisatie zal worden voorgesteld. Deze indelingen zijn geselecteerd [afdrukstandaarden](https://www.cplusplus.com/reference/cstdio/printf/), zoals hieronder gedefinieerd:
 
    ```
    %[flags][width][.precision][length][specifier]
