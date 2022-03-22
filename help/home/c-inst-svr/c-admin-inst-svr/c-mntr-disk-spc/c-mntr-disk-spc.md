@@ -1,11 +1,11 @@
 ---
 description: U zou beschikbare schijfruimte regelmatig moeten controleren zodat alle machines van de Server van het Inzicht op het hoogst mogelijke niveau blijven presteren.
-title: Schijfruimte controleren
+title: Schijfruimte controleren (Insight Server)
 uuid: 13248e36-4e88-4212-816e-bcc12deefcb4
 exl-id: c2198edc-3961-4845-97cf-0ebe039f9a66
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 U zou beschikbare schijfruimte regelmatig moeten controleren zodat alle machines van de Server van het Inzicht op het hoogst mogelijke niveau blijven presteren.
 
-Op elke [!DNL Insight Server]-computer worden de volgende gegevenstypen opgeslagen:
+Elk [!DNL Insight Server] computer slaat de volgende soorten gegevens op:
 
 * Gegevens gegevensset
 * Gebeurtenisgegevens
@@ -23,7 +23,7 @@ Op elke [!DNL Insight Server]-computer worden de volgende gegevenstypen opgeslag
 * Uitvoergegevens
 * Systeemgegevens
 
-Zie het document *Minimale systeemvereisten* voor meer informatie over gegevensopslagvereisten dan in deze sectie wordt gegeven.
+Voor meer informatie over gegevensopslagvereisten dan in deze sectie wordt verstrekt, zie *Minimale systeemvereisten* document.
 
 >[!NOTE]
 >

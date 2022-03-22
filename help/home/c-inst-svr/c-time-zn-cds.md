@@ -1,11 +1,11 @@
 ---
 description: Instructies van het formaat over op tijd-gebaseerde parameters in de Server van het Inzicht.
-title: Tijdzonecodes
+title: Tijdzonecodes (Insight Server)
 uuid: dcc8aa15-5846-4f24-8b82-e25ff89871ba
 exl-id: d8923b01-24fe-4a70-9800-f2eedf567c6a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '365'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Instructies van het formaat over op tijd-gebaseerde parameters in de Server van het Inzicht.
 
-De meeste op tijd gebaseerde parameters in [!DNL Insight Server] worden gespecificeerd in het volgende formaat:
+Meest op tijd gebaseerde parameters in [!DNL Insight Server] worden gespecificeerd in de volgende indeling:
 
 *DD maand, YYYY HH:MM:SS TimeZone*
 
@@ -22,35 +22,35 @@ Voorbeeld: 13 augustus 2013 22:30:00 EST
 
 Tijdzones worden uitgedrukt in een systeemonafhankelijk tijdzoneformaat (Coordinated Universal Time) met de volgende notatie:
 
-UTC +hhm *dstrules*
+UTC +humuis *dstralen*
 
-Het teken (+) kan een plusteken (+) of een minteken (-) zijn, en *hhm* is de compensatie van UTC in uren en notulen. De facultatieve variabele *dstrules* specificeert een reeks regels om de Tijd van de Besparing van het Daglicht of een gelijkaardig klok-veranderende beleid uit te voeren.
+Het teken (+) kan een plusteken (+) of een minteken (-) zijn, en *hmmhmmhhhhhhumhhumhhumhumhumhumhumhumhumhumhumhumhumhumhumhumhumhumhumhumhhumhumhumhumhumhumhumhhuhhhhuhhhhhmhhhhhhhhhhhhhhhhhhhhhhmhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhmhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh* is de verschuiving van UTC in uren en minuten. De optionele variabele *dstralen* Hiermee geeft u een set regels op voor het uitvoeren van zomertijd of een vergelijkbaar beleid voor het verschuiven van de klok.
 
-Als u *dstrules* specificeert, moet een lusje-afgebakend dossier genoemd *&lt; [!DNL dstrules]* [!DNL .dst] aanwezig zijn binnen de folder Dataset \ TimeZone van of het profiel van de Basis (voor configuratiedossiers die niet met een bepaalde dataset worden geassocieerd) of het datasetprofiel (voor configuratiedossiers die datasetspecifiek zijn). In het bestand wordt een tijdzoneonafhankelijke set regels voor zomertijd opgegeven. Je kunt verschillende regels hebben voor verschillende jaren. In het [!DNL DST.dst]-bestand dat door Adobe in het basisprofiel wordt aangeboden, worden de standaard Amerikaanse regels opgegeven die zijn vastgelegd in de Energy Policy Act van 2005 (in feite vanaf 2007) en de Amerikaanse regels voor voorgaande jaren.
+Als u *dstralen*, een door tabs gescheiden bestand met de naam *&lt; [!DNL dstrules]>* [!DNL .dst] moet aanwezig zijn binnen de folder van Dataset \ TimeZone van of het profiel van de Basis (voor configuratiedossiers die niet met een bepaalde dataset worden geassocieerd) of het datasetprofiel (voor configuratiedossiers die dataset-specifiek zijn). In het bestand wordt een tijdzoneonafhankelijke set regels voor zomertijd opgegeven. You can have different sets of rules for different years. De [!DNL DST.dst] bestand dat door Adobe in het basisprofiel wordt verschaft, specificeert de standaard Amerikaanse regels die zijn vastgelegd in de Energy Policy Act van 2005 (die in feite van kracht is vanaf 2007) en de Amerikaanse regels voor voorgaande jaren.
 
-Hier worden voorbeelden van tijdzone-items vermeld:
+Sample time zone entries are listed below:
 
 * U.S. Eastern Daylight Time: Tijdzone = tekenreeks: UTC -0500 DST
-* UTC-tijd zonder verschuiving en geen *strules* (komt overeen met GMT): Tijdzone = tekenreeks: UTC -0000
+* UTC-tijd zonder verschuiving en zonder *dstralen* (komt overeen met GMT): Tijdzone = tekenreeks: UTC -0000
 
-Wanneer deze indeling wordt gebruikt, hoeft de systeemtijdzone van [!DNL Insight Server]-, [!DNL Insight]- en [!DNL Report]-computers niet gelijk te zijn aan de opgegeven tijdzone. Bovendien hoeven voor alle actieve gegevenssetprofielen op een [!DNL Insight Server]-computer niet dezelfde tijdzone-instelling te gelden.
+When this format is used, the system time zone of [!DNL Insight Server], [!DNL Insight], and [!DNL Report] machines need not be the same as the specified time zone. In addition, all active dataset profiles on an [!DNL Insight Server] machine need not have the same time zone setting.
 
-De volgende tabel bevat de lijst met codes die u kunt gebruiken om tijdzones op te geven in op tijd gebaseerde parameters.
+The following table contains the list of codes you can use to specify time zones in time-based parameters.
 
 ## Tijdzonecode tabel {#section-3cab225b864f4e54ac4f5bd83ab4ed36}
 
 >[!NOTE]
 >
->Als u zomertijd of een gelijkaardig klok-veranderende beleid uitvoert, moet u [!DNL .dst] dossier opslaan die de aangewezen regels in *profielnaam*\Dataset\Timezone directory on the [!DNL Insight Server] machine bevatten.
+>Als u de Tijd van de Besparing van het Daglicht of een gelijkaardig klok-veranderende beleid uitvoert, moet u sparen [!DNL .dst] het dossier met de toepasselijke regels in het *profielnaam*\Dataset\Timezone directory op de [!DNL Insight Server] machine.
 
 | Code | Tijdzone | Verschuiving vanaf GMT |
 |---|---|---|
 | gmt | Greenwich Mean | 0 |
 | testen | Eastern Standard | 5 |
 | edt | Oosters daglicht | 5 |
-| cst | Centrale standaard | 6 |
+| cst | Central Standard | 6 |
 | cdt | Centraal daglicht | 6 |
 | mst | Mountain Standard | 7 |
-| mdt | Berg daglicht | 7 |
+| mdt | Mountain Daylight | 7 |
 | pst | Pacific Standard | 8 |
 | pdt | Pacific Daylight | 8 |

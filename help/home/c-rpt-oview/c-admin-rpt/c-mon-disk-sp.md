@@ -1,37 +1,37 @@
 ---
 description: U zou beschikbare schijfruimte regelmatig moeten controleren zodat alle machines van de Server van het Rapport op het hoogst mogelijke niveau blijven presteren.
-title: Schijfruimte controleren
+title: Schijfruimte controleren (rapportserver)
 uuid: 590c8239-d20e-470e-b633-7785b75daaa6
 exl-id: 0debd601-494f-4d4e-9452-c4d32678dc95
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
 
 # Schijfruimte controleren{#monitoring-disk-space}
 
-U zou beschikbare schijfruimte regelmatig moeten controleren zodat alle machines van de Server van het Rapport op het hoogst mogelijke niveau blijven presteren.
+You should regularly monitor available disk space so that all Report Server machines continue to perform at the highest level possible.
 
-Op elke [!DNL Report Server]-computer worden de volgende gegevenstypen opgeslagen:
+Each [!DNL Report Server] machine stores the following types of data:
 
-* Gegevens besturingssysteem
+* Operating system data
 * Rapportgegevens
-* Systeemgegevens
+* System data
 
 >[!NOTE]
 >
->Adobe consultants kunnen uw gebruiksscenario evalueren om u te helpen de hoeveelheid gegevensopslag te projecteren die uw Adobe-softwaretoepassing genereert en nodig heeft. Neem contact op met de Adobe Consulting Services als u een dergelijke evaluatie wilt aanvragen.
+>Adobe consultants kunnen uw gebruiksscenario evalueren om u te helpen de hoeveelheid gegevensopslag te projecteren die uw Adobe-softwaretoepassing genereert en nodig heeft. To request such an evaluation, please contact Adobe Consulting Services.
 
-* [Gegevensruimte monitoringrapport](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-ad0a63f3a6824e68acd675da0b6c5c23)
-* [Back-up maken van besturingssystemen, rapporten en systeemgegevens](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-b5efb132ca5d4ee69a8608f9b4ab245b)
+* [Monitoring Report Data Space](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-ad0a63f3a6824e68acd675da0b6c5c23)
+* [Backing Up Operating System, Report, and System Data](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-b5efb132ca5d4ee69a8608f9b4ab245b)
 
-## Gegevensruimte van rapport controleren {#section-ad0a63f3a6824e68acd675da0b6c5c23}
+## Gegevensruimte monitoringrapport {#section-ad0a63f3a6824e68acd675da0b6c5c23}
 
-**Aanbevolen frequentie:** elke 5-10 minuten
+**Recommended Frequency:** Every 5-10 minutes
 
-Zorg ervoor dat u genoeg schijfruimte hebt om uw rapporten in de [!DNL Reports] omslag binnen [!DNL Report] installatiemap aan te passen.
+Zorg ervoor dat u voldoende schijfruimte hebt om uw rapporten in de [!DNL Reports] in de [!DNL Report] installatiemap.
 
 ## Back-up maken van besturingssystemen, rapporten en systeemgegevens {#section-b5efb132ca5d4ee69a8608f9b4ab245b}
 

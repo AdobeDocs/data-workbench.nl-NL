@@ -1,11 +1,11 @@
 ---
 description: Na installatie, handelt het digitale die certificaat door Adobe wordt uitgegeven als sleutel die u toelaat om de Server van het Rapport in werking te stellen.
-title: Het digitale certificaat opnieuw valideren
+title: Het digitale certificaat opnieuw valideren (overzicht)
 uuid: 6c8533df-f459-41eb-84ac-344bad9fecdc
 exl-id: 810e3057-26a9-413c-b77c-525035d37756
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Na installatie, handelt het digitale die certificaat door Adobe wordt uitgegeven als sleutel die u toelaat om de Server van het Rapport in werking te stellen.
 
-**Aanbevolen frequentie:** indien nodig
+**Aanbevolen frequentie:** Indien nodig
 
 Een digitaal certificaat moet actueel zijn om correct te werken.
 
