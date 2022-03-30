@@ -1,17 +1,17 @@
 ---
 description: Nadat u het nieuwe veld aan Log Processing.cfg hebt toegevoegd en de nieuwe gesplitste transformatie en uitgebreide dimensie hebt gemaakt, kunt u de nieuwe uitgebreide dimensie weergeven die u hebt gemaakt zodra de gegevensopwerkingsfase Snel invoer is voltooid.
-solution: Analytics,Analytics
+solution: Analytics
 title: De resultaten van het experiment weergeven
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
 exl-id: cada693c-79cb-4f49-a2f0-6ff60425be1c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
-# De experimentele resultaten weergeven{#viewing-the-experiment-results}
+# De resultaten van het experiment weergeven{#viewing-the-experiment-results}
 
 Nadat u het nieuwe veld aan Log Processing.cfg hebt toegevoegd en de nieuwe gesplitste transformatie en uitgebreide dimensie hebt gemaakt, kunt u de nieuwe uitgebreide dimensie weergeven die u hebt gemaakt zodra de gegevensopwerkingsfase Snel invoer is voltooid.
 
@@ -19,7 +19,7 @@ Deze dimensie geeft standaard het aantal sessies weer voor elk van uw experiment
 
 **De dimensie van het experiment weergeven**
 
-* Open binnen elke werkruimte in [!DNL Insight] een tabel met de experimentele dimensie die u hebt gemaakt.
+* Binnen elke werkruimte in [!DNL Insight]Open een tabel met de experimentele dimensie die u hebt gemaakt.
 
    De elementen van de experimentele dimensie, die elk experiment vertegenwoordigen u momenteel loopt en elke groep binnen elk experiment, tonen met het huidige aantal zittingen voor elke groep. Elke groep krijgt een naam in de volgende notatie met de naam van het experiment gevolgd door de naam van de groep:
 

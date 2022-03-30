@@ -1,10 +1,10 @@
 ---
 description: Als u een statistisch significant experiment wilt maken, moet u bepalen hoe lang u het experiment moet uitvoeren om voldoende bezoekers op te nemen om de resultaten van de wijzigingen op uw website effectief te evalueren.
-solution: Analytics,Analytics
+solution: Analytics
 title: Het aantal benodigde bezoekers bepalen
 uuid: 07fca0aa-031a-4335-bba4-fb00cb90e29d
 exl-id: c23f4c21-21e5-4694-a500-efe1369cd4bf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Als u een statistisch significant experiment wilt maken, moet u bepalen hoe lang u het experiment moet uitvoeren om voldoende bezoekers op te nemen om de resultaten van de wijzigingen op uw website effectief te evalueren.
 
-Als u hulp nodig hebt bij het bepalen van de minimumlengte van uw experiment, kunt u het spreadsheet van het proefontwerp dat door Adobe wordt verstrekt als hulpmiddel gebruiken om u te helpen uw experiment ontwerpen. Dit bestand met de naam [!DNL VS Controlled Experiment Design.xls] werkt standaard niet alleen als werkblad, maar ook als record van uw beslissingen over het experiment. Zie [Werkblad van experimenteel ontwerp](../../../home/c-undst-ctrld-exp/t-exp-dsn-spst.md#task-d7f674980fe9415d80371d6020bcf164) voor meer informatie over dit bestand.
+Als u hulp nodig hebt bij het bepalen van de minimumlengte van uw experiment, kunt u het spreadsheet van het proefontwerp dat door Adobe wordt verstrekt als hulpmiddel gebruiken om u te helpen uw experiment ontwerpen. Dit bestand, genaamd [!DNL VS Controlled Experiment Design.xls] werkt standaard niet alleen als werkblad, maar ook als overzicht van uw beslissingen over het experiment. Voor meer informatie over dit bestand raadpleegt u [Werkblad Experimenteel ontwerp](../../../home/c-undst-ctrld-exp/t-exp-dsn-spst.md#task-d7f674980fe9415d80371d6020bcf164).
 
 >[!NOTE]
 >

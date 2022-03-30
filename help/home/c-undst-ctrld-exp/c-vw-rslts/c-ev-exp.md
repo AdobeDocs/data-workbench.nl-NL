@@ -1,21 +1,21 @@
 ---
 description: Nadat u het experiment hebt uitgevoerd totdat het vereiste minimumaantal bezoekers aan het experiment heeft deelgenomen, kunt u verzekerd zijn van voldoende statistisch vertrouwen om de resultaten van het experiment te evalueren.
-solution: Analytics,Analytics
+solution: Analytics
 title: Het experiment evalueren
 uuid: 88fd81bc-b944-48ea-bd4d-8716979ec69e
 exl-id: 5add2168-f6bc-45c5-bf1d-1191a38c5bac
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
 
 ---
 
-# Evalueren van het experiment{#evaluating-the-experiment}
+# Het experiment evalueren{#evaluating-the-experiment}
 
 Nadat u het experiment hebt uitgevoerd totdat het vereiste minimumaantal bezoekers aan het experiment heeft deelgenomen, kunt u verzekerd zijn van voldoende statistisch vertrouwen om de resultaten van het experiment te evalueren.
 
-Vergelijk met [!DNL Insight] welke maatstaven of belangrijkste prestatie-indicatoren als onderdeel van de hypothese werden gedefinieerd om te bepalen of het experiment een succes was (de hypothese werd met het opgegeven vertrouwen gevalideerd).
+Gebruiken [!DNL Insight]Vergelijk de maatstaven of de belangrijkste prestatie-indicatoren die als onderdeel van de hypothese werden gedefinieerd om te bepalen of het experiment succesvol was (de hypothese werd met het opgegeven vertrouwen gevalideerd).
 
 In ons voorbeeldexperiment is onze hypothese juist gebleken als de bezoekersconversie met minstens 1,5 procent stijgt. Dat is het succescriterium dat we eerder hebben gedefinieerd.
 
@@ -29,13 +29,13 @@ Het volgende werkruimtevoorbeeld toont aan dat de Omzetting voor de index2 testg
 
 ## Samenvatting van de resultaten van het experiment {#section-24a496c080a04e929764094acb00bab7}
 
-Met [!DNL Insight] kunt u gedetailleerde rapporten maken om de resultaten van uw experiment samen te vatten en te illustreren.
+Gebruiken [!DNL Insight]kunt u gedetailleerde rapporten maken om de resultaten van uw experiment samen te vatten en te illustreren.
 
 Vervolgens kunt u uw rapporten gebruiken, zoals in het volgende voorbeeld wordt getoond, om aanbevelingen te doen die op de resultaten worden gebaseerd, die door de visuele informatie worden gesteund u in uw rapporten hebt verstrekt:
 
 ![](assets/experimentresults2.png)
 
-## Handeling uitvoeren op basis van resultaten {#section-1623e26ced524fd9beab48ac1f9165d9}
+## Handeling op basis van resultaten {#section-1623e26ced524fd9beab48ac1f9165d9}
 
 Nadat de resultaten duidelijk zijn, bent u bereid om op die resultaten te handelen door productie-vlakke veranderingen in de geteste pagina&#39;s aan te brengen, deze zelfde veranderingen op andere gebieden van uw website toe te passen, en ervoor te zorgen om de test, zijn resultaten, en de veranderingen volledig te documenteren die u hebt aangebracht.
 
