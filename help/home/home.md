@@ -4,7 +4,7 @@ title: Help bij Data Workbench
 feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
-source-git-commit: 3a446ecb2ad7f16d840dbd2bfde44e3298bc588f
+source-git-commit: 541751e1b8966a0816b7a42e117f4c69db1ed002
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 3%
@@ -15,10 +15,12 @@ ht-degree: 3%
 
 ![Banner](/help/home/assets/doc_banner_workbench.png)
 
-[Data ](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) Workbenchis onderdeel van  [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html). Het heeft hoogst-flexibele, krachtige, multi-kanaalmogelijkheden die worden ontworpen om gegevens van online en off-line klanteninteractie over alle soorten Web, CRM, POS, en andere gegevenstypes te verzamelen, te verwerken, te analyseren en te visualiseren. De interactieve rapporten in Data Workbench laten u analyseren en op relevante statistische informatie reageren om activiteit te controleren en klantentendensen te voorspellen.
+{{eol}}
 
-* ![Analytics ](assets/analytics-icon-24.png) [iconAnalytics Documentation](https://experienceleague.adobe.com/docs/analytics.html)
-* ![pdf ](assets/pdf_icon.png) [iconDownload All Data Workbench documentation in PDF](/help/home/assets/data-workbench.pdf)
+[Data Workbench](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) maakt deel uit van [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html). Het heeft hoogst-flexibele, krachtige, multi-kanaalmogelijkheden die worden ontworpen om gegevens van online en off-line klanteninteractie over alle soorten Web, CRM, POS, en andere gegevenstypes te verzamelen, te verwerken, te analyseren en te visualiseren. De interactieve rapporten in Data Workbench laten u analyseren en op relevante statistische informatie reageren om activiteit te controleren en klantentendensen te voorspellen.
+
+* ![analysepictogram](assets/analytics-icon-24.png) [Analytische documentatie](https://experienceleague.adobe.com/docs/analytics.html)
+* ![pdf-pictogram](assets/pdf_icon.png) [Alle documentatie over Data Workbench downloaden in PDF](/help/home/assets/data-workbench.pdf)
 
 ## Belangrijke onderwerpen
 
@@ -39,24 +41,24 @@ Data Workbench bevat de volgende voorspellende analysefuncties, gegevensvisualis
 
 ## Opmerkingen bij de release Data Workbench en nieuwe functies
 
-[Data Workbench 6.6.1 ](/help/home/c-release-notes-insight/c-6-6-1.md) wordt nu vrijgegeven. Dit omvat updates van de MMP-configuratie voor het splitsen van recordbestanden.
+[Data Workbench 6.6.1](/help/home/c-release-notes-insight/c-6-6-1.md) wordt nu vrijgegeven. Dit omvat updates van de MMP-configuratie voor het splitsen van recordbestanden.
 
 [Data Workbench 6.6](/help/home/c-release-notes-insight/c-6-6.md) wordt nu vrijgegeven. Het omvat updates aan de Score van de Volheid en een nieuwe Tovenaar van de Uitvoer van het Segment.
 
-[Data Workbench 6.52 ](/help/home/c-release-notes-insight/c-6-52.md) wordt vrijgegeven. Deze bevat een AVRO-upgrade voor het verwerken van gegevensbronlogbestanden.
+[Data Workbench 6.52](/help/home/c-release-notes-insight/c-6-52.md) wordt vrijgegeven. Deze bevat een AVRO-upgrade voor het verwerken van gegevensbronlogbestanden.
 
-[Data Workbench 6.51 ](/help/home/c-release-notes-insight/c-6-51.md) wordt vrijgegeven. Het bevat een nieuwe AVRO Feed- en verloopbedekkingen voor de staafgrafiek.
+[Data Workbench 6.51](/help/home/c-release-notes-insight/c-6-51.md) wordt vrijgegeven. Het bevat een nieuwe AVRO Feed- en verloopbedekkingen voor de staafgrafiek.
 
-[Data Workbench 6.5 ](/help/home/c-release-notes-insight/c-6-5.md) wordt vrijgegeven. Installeer de nieuwste versie van Data Workbench met nieuwe functies, waaronder:
+[Data Workbench 6.5](/help/home/c-release-notes-insight/c-6-5.md) wordt vrijgegeven. Installeer de nieuwste versie van Data Workbench met nieuwe functies, waaronder:
 
-* [Associations ](/help/home/c-get-started/c-analysis-vis/associations-visualization.md) Table and  [Associations ](/help/home/c-get-started/c-analysis-vis/associations-chord.md) Chordvisualizations.
-* [Optie ](/help/home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-regression.md) voor de regressiestructuur en andere updates voor Beslissingsbomen.
+* [Koppelingstabel](/help/home/c-get-started/c-analysis-vis/associations-visualization.md) en [Associatiekoord](/help/home/c-get-started/c-analysis-vis/associations-chord.md) visualisaties.
+* [Regressiestructuur, optie](/help/home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-regression.md) en andere actualiseringen voor Besluiten Trees.
 
-[Data Workbench 6.4 ](/help/home/c-release-notes-insight/c-6-4/c-6-4.md) omvat:
+[Data Workbench 6.4](/help/home/c-release-notes-insight/c-6-4/c-6-4.md) omvat:
 
 * [Exporteren naar Analytics Core Services](/help/home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
 * [Wizard Werkstation instellen](/help/home/c-install-insight/install-setup/dwb-client-installer.md)
 * [Presentatielaag voor het notiteren van visualisaties](/help/home/c-get-started/c-vis/c-present-layer.md)
 * [wizard Metrische grijswaarden](/help/home/c-get-started/c-vis/dwb-create-metricdim/dwb-create-metricdim.md)
 
-*Laatst bijgewerkt*:  **30-09-2019**
+*Laatst bijgewerkt*: **30-09-2019**

@@ -3,7 +3,7 @@ description: Het verkeersprofiel bevat de volgende afmetingen om bezoekersacties
 title: Dimension verkeersprofiel
 uuid: 9c0dabfc-67c9-4772-99ac-4c503c06ea78
 exl-id: 1e7d2904-aa5d-4848-a398-5d4669953be9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # Dimension verkeersprofiel{#traffic-profile-dimensions}
 
+{{eol}}
+
 Het verkeersprofiel bevat de volgende afmetingen om bezoekersacties te identificeren.
 
-De afmetingen in de volgende lijst worden bepaald in de dataset van de transformatie omvat dossiers in Traffic\Dataset\Transformation directory.
+De afmetingen in de volgende lijst worden bepaald in de transformatiedataset omvat dossiers in de folder van de Transformatie \ van de Dataset \ van het Verkeer.
 
 | Naam | Type | Niveau | Beschrijving |
 |---|---|---|---|
@@ -26,7 +28,7 @@ De afmetingen in de volgende lijst worden bepaald in de dataset van de transform
 | Maand | Eenvoudig | Sessie | De maand van de eerste logboekingang van een zitting. |
 | Paginaweergave | Tabelachtig | Sessie | Een logbestandvermelding of &quot;Gebeurtenisgegevensrecord&quot; die voldoet aan de weergavevoorwaarde voor de pagina. |
 | Referrer | Eenvoudig | Sessie | Het tweede niveaudomein van de verwijzer van de eerste logboekingang van de zitting (of niets als het een intern verwijzingsdomein is). |
-| Sessie | Tabelachtig | Bezoeker | Een periode van gerelateerde aaneengesloten activiteit door een bezoeker. Het wordt afgebakend door een periode van 30 minuten van inactiviteit en een extern verwijzersdomein of een maximum van de Duur van de Zitting 48 uur. Zowel van die onderbrekingen als de reeks domeinen die als intern worden beschouwd kunnen in het [!DNL Transformation.cfg] dossier worden gevormd. |
+| Sessie | Tabelachtig | Bezoeker | Een periode van gerelateerde aaneengesloten activiteit door een bezoeker. Het wordt afgebakend door een periode van 30 minuten van inactiviteit en een extern verwijzersdomein of een maximum van de Duur van de Zitting 48 uur. Zowel die onderbrekingen als de reeks domeinen die als intern worden beschouwd kunnen in worden gevormd [!DNL Transformation.cfg] bestand. |
 | URI | Eenvoudig | Paginaweergave | De URI-stam van een paginaweergave. De URI-dimensie kan opnieuw worden gedefinieerd met de transformaties ReplaceURI, PrependURI en AppendURI. |
 | Bezoeker | Tabelachtig | N.v.t. | Een unieke waarde van x-trackingid. Komt meestal overeen met een unieke browser als permanente cookies worden gebruikt. De x-trackingid kan anders op IP aantal of één of ander ander ander uniek herkenningsteken zoals x.509 gemeenschappelijke naam worden gebaseerd. |
 | Week | Eenvoudig | Sessie | De week van de eerste logboekingang van een zitting. |
