@@ -3,7 +3,7 @@ description: Nadat u de Insight-programmabestanden hebt geïnstalleerd, moet u h
 title: Het digitale certificaat downloaden en installeren (Insight)
 uuid: 93ab2222-a977-4279-9e1e-71038b1d1cfa
 exl-id: 0dff95ae-880b-45d5-96df-4eb6bea58891
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Het digitale certificaat downloaden en installeren{#downloading-and-installing-the-digital-certificate}
+
+{{eol}}
 
 Nadat u de Insight-programmabestanden hebt geïnstalleerd, moet u het digitale certificaat downloaden en installeren dat u van Adobe hebt ontvangen.
 
@@ -240,7 +242,7 @@ De volgende instructies beschrijven de procedures die moeten worden gevolgd om d
       ```
 
    1. Het certificaat heeft de CN, O, OU, enz. zoals vereist voor deze client in de servers [!DNL Access Control.cfg] bestand.
-   1. Het certificaat is afgegeven met een *doel **** van *client* (of beide *server* **en** *client*).
+   1. Het certificaat is afgegeven met een *doel&#42;&#42;&#42;* van *client* (of beide *server* **en** *client*).
 
       Om te verifiëren dat een certificaat een doelcode van server en/of cliënt heeft, kunnen de volgende bevelen worden gebruikt:
 

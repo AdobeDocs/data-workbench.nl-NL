@@ -3,7 +3,7 @@ description: Als de cliënten een Server van het Inzicht door veelvoudige netwer
 title: Meerdere IP-adressen voor een Insight Server
 uuid: 6ed00b47-8ba3-4127-a5db-7e684e573d9c
 exl-id: 71654a60-af82-45f2-826b-29ecc7127b0b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # Meerdere IP-adressen voor een Insight Server{#multiple-ip-addresses-for-an-insight-server}
 
+{{eol}}
+
 Als de cliënten een Server van het Inzicht door veelvoudige netwerken (bijvoorbeeld, door het collectieve Intranet en door Internet) kunnen bereiken, moet het adresdossier een afzonderlijke netwerkplaats voor elk van de IP van de server adressen bepalen.
 
-Als server [!DNL VS01.myCompany.com] bijvoorbeeld een IP-adres van 10.2.1.70 heeft op een intern netwerk en een IP-adres van 65.196.125.167 op internet, bevat het adresbestand een netwerklocatie voor elk van de adressen, zoals in het onderstaande voorbeeld wordt geïllustreerd:
+Bijvoorbeeld als server [!DNL VS01.myCompany.com] heeft een IP adres van 10.2.1.70 op een intern netwerk, en een IP adres van 65.196.125.167 op Internet, zou het adresdossier een netwerkplaats voor elk van de adressen omvatten zoals die in het voorbeeld hieronder worden geïllustreerd:
 
 ```
 0 = NetworkLocation: 
@@ -33,4 +35,4 @@ Als server [!DNL VS01.myCompany.com] bijvoorbeeld een IP-adres van 10.2.1.70 hee
   Parent = string:
 ```
 
-Wanneer gebruikers verbinding maken met een [!DNL Insight Server], gebruiken ze de parameter NetworkLocation (in de gebruikersinterface van de client) om de netwerklocatie op te geven waarlangs ze de algemene naam van de server willen laten oplossen. Bijvoorbeeld, gezien een adresdossier met de twee hierboven getoonde NetworkLocations, zou een gebruiker de parameter NetworkLocation aan &quot;MyCorporate Intranet&quot;plaatsen om met [!DNL Insight Server] door het interne netwerk en aan &quot;Internet&quot;te verbinden met de server door Internet.
+Wanneer gebruikers verbinding maken met een [!DNL Insight Server], gebruiken zij de parameter NetworkLocation (in het cliëntgebruikersinterface) om de netwerkplaats te specificeren waardoor zij de gemeenschappelijke naam van de server willen oplossen. Bijvoorbeeld, gezien een adresdossier met twee hierboven getoonde NetworkLocations, zou een gebruiker de parameter NetworkLocation aan &quot;MyCorporate Intranet&quot;plaatsen om te verbinden met [!DNL Insight Server] via het interne netwerk en op &quot;Internet&quot;om met de server door Internet te verbinden.

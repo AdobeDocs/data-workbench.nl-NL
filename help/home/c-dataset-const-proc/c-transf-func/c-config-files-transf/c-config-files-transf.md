@@ -3,7 +3,7 @@ description: De functionaliteit van de transformatie omvat drie configuratiedoss
 title: Configuratiebestanden voor transformatie
 uuid: abb5b7a4-ade6-4658-b3a1-7ce4c2c17507
 exl-id: 9cd5ae3a-e3fc-466f-a6ab-20582001fb4a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Configuratiebestanden voor transformatie{#configuration-files-for-transform}
+
+{{eol}}
 
 De functionaliteit van de transformatie omvat drie configuratiedossiers die de vereiste parameters voor het lezen en het uitvoeren van gegevens bevatten.
 
@@ -20,4 +22,4 @@ De functionaliteit van de transformatie omvat drie configuratiedossiers die de v
 
 >[!NOTE]
 >
->Bevestig voordat u begint met het configureren van de implementatie van de transformatiefunctionaliteit dat u de gegevenswerkbank [!DNL Transform.cfg] en de gegevenswerkbank T [!DNL ransform Mode.cfg] bestanden en alle Adobe-softwareproducten en -toepassingen die nodig zijn voor uw implementatie correct hebt geïnstalleerd. Voor installatieinstructies, zie *de Gids van de Installatie en van het Beleid van de Producten van de Server*.
+>Bevestig voordat u begint met het configureren van de implementatie van de transformatiefunctionaliteit dat u de gegevenswerkbank op de juiste wijze hebt geïnstalleerd [!DNL Transform.cfg] en gegevenswerkbank T [!DNL ransform Mode.cfg] en alle Adobe-softwareproducten en -toepassingen die nodig zijn voor uw-implementatie. Voor installatie-instructies raadpleegt u de *Handleiding voor installatie en beheer van serverproducten*.

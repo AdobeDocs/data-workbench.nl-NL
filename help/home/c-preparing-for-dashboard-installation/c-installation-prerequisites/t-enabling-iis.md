@@ -3,21 +3,23 @@ description: De eerste stap is de rol IIS op uw dashboardserver toe te laten.
 title: IIS inschakelen
 uuid: fbd194db-3307-41ae-8ece-05eb261d74ad
 exl-id: 0d431302-1e69-49b6-8757-9823fd70a3b4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 0%
 
 ---
 
-# IIS{#enabling-iis} inschakelen
+# IIS inschakelen{#enabling-iis}
+
+{{eol}}
 
 De eerste stap is de rol IIS op uw dashboardserver toe te laten.
 
-1. Open **[!UICONTROL Administrative Tools]** onder **[!UICONTROL Server Manager]**.
-1. Klik met de rechtermuisknop op het menu-item Rollen in het linkergedeelte van het venster **[!UICONTROL Server Manager]**.
-1. Selecteer **[!UICONTROL Add Roles]**.
-1. Selecteer **[!UICONTROL Web Server (IIS)]** en ga met **[!UICONTROL Add Roles Wizard]** verder. Zorg ervoor dat de volgende Diensten van de Rol worden toegelaten:
+1. Onder **[!UICONTROL Administrative Tools]**, opent u de **[!UICONTROL Server Manager]**.
+1. Klik met de rechtermuisknop op de menuoptie Rollen in het linkergedeelte van het dialoogvenster **[!UICONTROL Server Manager]** venster.
+1. Selecteren **[!UICONTROL Add Roles]**.
+1. Selecteren **[!UICONTROL Web Server (IIS)]** en doorgaan met de **[!UICONTROL Add Roles Wizard]**. Zorg ervoor dat de volgende Diensten van de Rol worden toegelaten:
 
    | Algemene HTTP-functies |
    |---|

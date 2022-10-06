@@ -3,7 +3,7 @@ description: De RETransform-transformatie (reguliere expressie) is een patroonov
 title: RETransform
 uuid: 60b5b60e-678a-416d-b5c3-57b1bbefce7d
 exl-id: 2595f782-0efb-4a2a-84bd-fdb04baf0852
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # RETransform{#retransform}
 
+{{eol}}
+
 De RETransform-transformatie (reguliere expressie) is een patroonovereenkomende transformatie die gebruikmaakt van reguliere expressies om een patroon op te geven dat moet worden gezocht naar en vastgelegd in de invoer en die de vastgelegde tekenreeks in een opgegeven uitvoerveld opslaat.
 
-Reguliere expressies worden geëvalueerd op basis van de gehele invoertekenreeks. Als de invoer niet overeenkomt met het patroon dat is opgegeven in de reguliere expressie, worden geen gegevens vastgelegd. Voor een korte gids aan het gebruiken van regelmatige uitdrukkingen, zie [Gewone Uitdrukkingen](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
+Reguliere expressies worden geëvalueerd op basis van de gehele invoertekenreeks. Als de invoer niet overeenkomt met het patroon dat is opgegeven in de reguliere expressie, worden geen gegevens vastgelegd. Voor een korte handleiding voor het gebruik van reguliere expressies raadpleegt u [Reguliere expressies](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
 
 >[!NOTE]
 >
->De [!DNL RETransform]-transformatie werkt op dezelfde manier als de [!DNL REMatch]-transformatie (zie [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)), die een uitvoerveld maakt voor elk onderpatroon van vastlegging in de reguliere expressie. U kunt [!DNL RETransform] als combinatie van [!DNL REMatch] en [!DNL Format] transformaties denken. Als de parameter van de Actie (zie Actie in de volgende lijst) aan &quot;RESULTATEN wordt geplaatst,&quot;dan werkt [!DNL RETransform] als een combinatie van [!DNL REMatch] en [!DNL Union] transformaties.
+>De [!DNL RETransform] de transformatie werkt op ongeveer dezelfde manier als de [!DNL REMatch] transformatie (zie [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)). Hiermee wordt een uitvoerveld gemaakt voor elk onderpatroon van vastlegging in de reguliere expressie. Je kunt denken aan [!DNL RETransform] als een combinatie van [!DNL REMatch] en [!DNL Format] transformaties. Als de parameter Actie (zie Actie in de volgende lijst) aan &quot;RESULTATEN wordt geplaatst, dan [!DNL RETransform] werkt als een combinatie van [!DNL REMatch] en [!DNL Union] transformaties.
 
 <table id="table_51B7342E6A5E4E31913BD0F6A6ACC424"> 
  <thead> 

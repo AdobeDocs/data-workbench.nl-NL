@@ -3,7 +3,7 @@ description: Met Data Workbench kunt u metriek, filters en dimensies maken om de
 title: Metriek, Dimension en filters uitbreiden
 uuid: eaec0731-1916-4063-9fda-3a92ee325024
 exl-id: 5a7719a3-ba2e-4361-87e0-4d0df23196df
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Metriek, Dimension en filters uitbreiden{#expanding-metrics-dimensions-and-filters}
+
+{{eol}}
 
 Met Data Workbench kunt u metriek, filters en dimensies maken om de informatie die beschikbaar is via een toepassing uit te breiden of om de definities in de toepassing eenvoudig aan te passen aan uw wensen. Door het open karakter van metriek, dimensies, en filters kunt u meer vragen beantwoorden aangezien u nieuwe metriek en afmetingen toevoegt.
 

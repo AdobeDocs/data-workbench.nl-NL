@@ -1,9 +1,9 @@
 ---
-description: U kunt een vectorlaag maken die verwijst naar een of meer vectorbestanden (.vec), die de gegevens bevat die de vectoren definiëren die op de bol moeten worden getekend.
+description: U kunt een vectorlaag maken die verwijst naar een of meer vectorbestanden (.vec), die de gegevens bevat die de vectoren definiëren die op de wereldbol moeten worden getekend.
 title: Vectorlagen definiëren die verwijzen naar vectorbestanden
 uuid: fe6639fb-98fb-4246-9cc1-1a928df6ae0a
 exl-id: d78fa7ea-e2a9-42b7-9071-5f72409c5b7a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -12,25 +12,27 @@ ht-degree: 0%
 
 # Vectorlagen definiëren die verwijzen naar vectorbestanden{#define-vector-layers-referencing-vector-files}
 
-U kunt een vectorlaag maken die verwijst naar een of meer vectorbestanden (.vec), die de gegevens bevat die de vectoren definiëren die op de bol moeten worden getekend.
+{{eol}}
 
-Als u een vectorlaag wilt definiëren die verwijst naar een of meer [!DNL .vec]-bestanden, moet u het volgende hebben:
+U kunt een vectorlaag maken die verwijst naar een of meer vectorbestanden (.vec), die de gegevens bevat die de vectoren definiëren die op de wereldbol moeten worden getekend.
 
-* **Een of meer  [!DNL .vec]** bestanden die de gegevens bevatten die worden gebruikt om de vectoren op de wereld te tekenen.
+Een vectorlaag definiëren die verwijst naar een of meer [!DNL .vec] hebt, moet u het volgende hebben:
 
-   >[!NOTE]
-   >
-   >Neem contact op met Adobe om [!DNL .vec] bestanden op te halen die u met uw vectorlagen wilt gebruiken.
-
-* **Een laagbestand** dat de locatie van de  [!DNL .vec] bestanden aangeeft. Zie [Vectorlaagbestandsindeling](../../../../home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md#section-83a0077cf0c8479b9e7b2939bc761af1) voor meer informatie over de vereiste indeling van het laagbestand.
+* **Een of meer [!DNL .vec] bestanden** die de gegevens bevatten die worden gebruikt om de vectoren op de wereld te tekenen.
 
    >[!NOTE]
    >
-   >Het [!DNL Boundaries.layer]-bestand met het profiel [!DNL Geography] is een vectorlaag die verwijst naar de bestanden [!DNL mwnation.vec], [!DNL mwstate.vec], [!DNL mwcoast.vec], [!DNL mwlake.vec] en [!DNL mwisland.vec].
+   >Om [!DNL .vec] Als u bestanden wilt gebruiken met uw vectorlagen, neemt u contact op met Adobe.
+
+* **Een laagbestand** die de locatie van de [!DNL .vec] bestanden. Ga voor meer informatie over de vereiste indeling van het laagbestand naar [Bestandsindeling voor vectorlagen](../../../../home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md#section-83a0077cf0c8479b9e7b2939bc761af1).
+
+   >[!NOTE]
+   >
+   >De [!DNL Boundaries.layer] het dossier, verstrekt met [!DNL Geography] profiel, is een vectorlaag die verwijst naar de [!DNL mwnation.vec], [!DNL mwstate.vec], [!DNL mwcoast.vec], [!DNL mwlake.vec], en [!DNL mwisland.vec] bestanden.
 
 ## Bestandsindeling voor vectorlagen {#section-83a0077cf0c8479b9e7b2939bc761af1}
 
-Elk vectorlaagbestand dat verwijst naar [!DNL .vec]-bestanden, moet worden opgemaakt met de volgende sjabloon:
+Elk vectorlaagbestand verwijst naar [!DNL .vec] bestanden moeten worden opgemaakt met de volgende sjabloon:
 
 ```
 Layer = VectorLayer:
@@ -47,13 +49,13 @@ Layer = VectorLayer:
 
 | Parameter | Beschrijving |
 |---|---|
-| Vec-bestanden | Pad(en) naar het [!DNL .vec]-bestand(en) met de vectorgegevens. |
-| Kleur | De RGB-kleurvector, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. |
-| Alfa | Hiermee regelt u de transparantie van de vectoren die op de wereldbol worden weergegeven. Het bereik loopt van 0 tot en met 1, waarbij 0 het meest transparant is. |
+| Vec-bestanden | Pad(en) naar de [!DNL .vec] bestand(en) met de vectorgegevens. |
+| Kleur | De kleurvector RGB, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. |
+| Alfa | Hiermee regelt u de transparantie van de vectoren die op de wereld worden weergegeven. Het bereik loopt van 0 tot en met 1, waarbij 0 het meest transparant is. |
 | Breedte | Optioneel. Hiermee stelt u de breedte van de gegevens in pixels in. Het aanbevolen bereik is 1 tot 4. |
 | Foutfactor | Bepaalt hoe nauwkeurig de vectoren worden getekend. Voor grotere waarden worden de vectoren minder nauwkeurig maar sneller getekend. De standaardwaarde is 5. |
 
-Het [!DNL Boundaries.layer]-bestand is als volgt opgemaakt:
+De [!DNL Boundaries.layer] bestand is als volgt opgemaakt:
 
 ```
  Boundaries.layer file is formatted as follows:

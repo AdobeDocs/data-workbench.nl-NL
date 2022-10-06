@@ -3,7 +3,7 @@ description: Een numerieke dimensie bestaat uit geordende, numerieke elementen e
 title: Numerieke Dimension
 uuid: 19fab770-1535-41b2-bad1-811eba5f3575
 exl-id: 69a4dfa6-8402-4c2b-8b04-e6e1a0fd5ccb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Numerieke Dimension{#numeric-dimensions}
+
+{{eol}}
 
 Een numerieke dimensie bestaat uit geordende, numerieke elementen en heeft een één-op-veel relatie met de bovenliggende telbare dimensie.
 
@@ -85,14 +87,14 @@ De numerieke afmetingen worden gedefinieerd door de volgende parameters:
    <td colname="col1"> Bewerking </td> 
    <td colname="col2"> <p>De beschikbare bewerkingen zijn als volgt: </p> <p> 
      <ul id="ul_E04733E5E8824A2BAAB90D9356078D99"> 
-      <li id="li_CAEE9167D45540BEAC538345F250B509"> TELLING: Het totale aantal niet-lege waarden in het <span class="wintitle"> Invoerveld</span> in alle logitems die aan de voorwaarde van de dimensie voldoen, wordt gebruikt. Als het veld <span class="wintitle"> Invoer</span> een vectorveld is, wordt het totale aantal niet-lege waarden in elke logbestandvermelding geteld. </li> 
-      <li id="li_64A4D671E78642BD9A9334F8098450B9"> EERSTE NONBLANK: De eerste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de eerste logboekingang komt. Als <span class="wintitle"> Invoer</span> een vectorgebied is, wordt de eerste rij in de vector voor de relevante logboekingang gebruikt. Wanneer de waarde geen getal is, wordt geen waarde gebruikt. </li> 
-      <li id="li_C967964729BD4A638FF78D8883CE513F"> EERSTE RIJ: De waarde voor de eerste logbestandvermelding die betrekking heeft op het bovenliggende dimensielement wordt gebruikt, zelfs als de invoer leeg is. Als <span class="wintitle"> Invoer</span> een vectorgebied is, wordt de eerste rij in de vector voor de relevante logboekingang gebruikt. Als deze waarde leeg is of geen getal, of als het relevante logbestandvermelding niet voldoet aan de voorwaarde van de dimensie, wordt geen waarde gebruikt. </li> 
-      <li id="li_74171B17F480478B8547E1A361B22DA4"> LAATSTE NONBLANK: De laatste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de laatste logboekingang komt. Als <span class="wintitle"> Invoer</span> een vectorgebied is, wordt de eerste rij in de vector voor de relevante logboekingang gebruikt. Wanneer de waarde geen getal is, wordt geen waarde gebruikt. </li> 
-      <li id="li_1253ECF507BD4BBF97CBB2FA12915045"> LAATSTE RIJ: De waarde voor de laatste logbestandvermelding die betrekking heeft op het bovenliggende dimensielement wordt gebruikt, zelfs als de invoer leeg is. Als <span class="wintitle"> Invoer</span> een vectorgebied is, wordt de eerste rij in de vector voor de relevante logboekingang gebruikt. Als deze waarde leeg is of geen getal, of als het relevante logbestandvermelding niet voldoet aan de voorwaarde van de dimensie, wordt geen waarde gebruikt. </li> 
-      <li id="li_20819E3944544F98853D6A02814F47B2"> SUM: Het totaal van alle numerieke waarden in het veld <span class="wintitle"> Invoer</span> voor alle logitems die aan de voorwaarde van de dimensie voldoen, wordt gebruikt. Als er geen logitems worden gevonden of geen numerieke waarden worden gevonden, wordt de numerieke waarde 0 gebruikt. </li> 
-      <li id="li_086C2E57604B4645A9203A984C6F9A04">MIN of MAX: De minimale of maximale numerieke waarde die in het veld <span class="wintitle"> Invoer</span> wordt gevonden voor alle logitems die aan de voorwaarde van de dimensie voldoen, wordt gebruikt. Als er geen logitems of numerieke waarden zijn, wordt geen waarde gebruikt. </li> 
-     </ul> </p> <p> <p>Opmerking:  Geef een bewerking op om ervoor te zorgen dat de dimensie op de juiste manier wordt gedefinieerd. </p> </p> </td> 
+      <li id="li_CAEE9167D45540BEAC538345F250B509"> TELLING: Het totale aantal niet-lege waarden in het dialoogvenster <span class="wintitle"> Invoer</span> wordt het gebied over alle logboekingangen gebruikt die de Voorwaarde van de afmeting voldoen. Als de <span class="wintitle"> Invoer</span> Veld is een vectorveld. Het totale aantal niet-lege waarden in elk logbestandvermelding wordt geteld. </li> 
+      <li id="li_64A4D671E78642BD9A9334F8098450B9"> EERSTE NONBLANK: De eerste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de eerste logboekingang komt. Indien <span class="wintitle"> Invoer</span> is een vectorveld, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. Wanneer de waarde geen getal is, wordt geen waarde gebruikt. </li> 
+      <li id="li_C967964729BD4A638FF78D8883CE513F"> EERSTE RIJ: De waarde voor de eerste logbestandvermelding die betrekking heeft op het bovenliggende dimensielement wordt gebruikt, zelfs als de invoer leeg is. Indien <span class="wintitle"> Invoer</span> is een vectorveld, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. Als deze waarde leeg is of geen getal, of als het relevante logbestandvermelding niet voldoet aan de voorwaarde van de dimensie, wordt geen waarde gebruikt. </li> 
+      <li id="li_74171B17F480478B8547E1A361B22DA4"> LAATSTE NONBLANK: De laatste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de laatste logboekingang komt. Indien <span class="wintitle"> Invoer</span> is een vectorveld, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. Wanneer de waarde geen getal is, wordt geen waarde gebruikt. </li> 
+      <li id="li_1253ECF507BD4BBF97CBB2FA12915045"> LAATSTE RIJ: De waarde voor de laatste logbestandvermelding die betrekking heeft op het bovenliggende dimensielement wordt gebruikt, zelfs als de invoer leeg is. Indien <span class="wintitle"> Invoer</span> is een vectorveld, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. Als deze waarde leeg is of geen getal, of als het relevante logbestandvermelding niet voldoet aan de voorwaarde van de dimensie, wordt geen waarde gebruikt. </li> 
+      <li id="li_20819E3944544F98853D6A02814F47B2"> SUM: Het totaal van alle numerieke waarden in de <span class="wintitle"> Invoer</span> wordt het gebied over alle logboekingangen gebruikt die de Voorwaarde van de afmeting voldoen. Als er geen logitems worden gevonden of geen numerieke waarden worden gevonden, wordt de numerieke waarde 0 gebruikt. </li> 
+      <li id="li_086C2E57604B4645A9203A984C6F9A04">MIN of MAX: De minimale of maximale numerieke waarde in het dialoogvenster <span class="wintitle"> Invoer</span> wordt het gebied over alle logboekingangen gebruikt die de Voorwaarde van de afmeting voldoen. Als er geen logitems of numerieke waarden zijn, wordt geen waarde gebruikt. </li> 
+     </ul> </p> <p> <p>Opmerking: Geef een bewerking op om ervoor te zorgen dat de dimensie op de juiste manier wordt gedefinieerd. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -110,7 +112,7 @@ De numerieke afmetingen worden gedefinieerd door de volgende parameters:
 
 >[!NOTE]
 >
->Als [!DNL Operation] geen waarde oplevert, of [!DNL Clip Values] vals is en de waarde niet tussen [!DNL Min] en [!DNL Max] is, is geen element van de numerieke dimensie verwant aan het element van de ouderafmeting.
+>Indien [!DNL Operation] geen waarde oplevert, of [!DNL Clip Values] is false en de waarde ligt niet tussen [!DNL Min] en [!DNL Max]Geen enkel element van de numerieke dimensie heeft betrekking op het element van de bovenliggende dimensie.
 
 Dit voorbeeld illustreert de definitie van een numerieke dimensie met behulp van gebeurtenisgegevens die zijn verzameld uit websiteverkeer. Deze numerieke dimensie, genaamd &#39;Teller advertentie-weergave&#39;, telt het aantal keren dat de bezoeker een advertentie ziet tijdens een bepaalde sessie. De veronderstelling is dat alle advertentiemiddelen van de Webserver met ad= als deel van cs-uri-vraag worden gevraagd. In het voorbeeld is het aantal keren (COUNT) dat de bezoeker een advertentie krijgt, de waarde van interesse, niet de werkelijke waarde in het veld.
 

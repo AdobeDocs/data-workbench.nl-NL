@@ -3,7 +3,7 @@ description: Conceptueel, dient het adresdossier het zelfde doel zoals ETC&bsol;
 title: Netwerklocaties
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 exl-id: 938217da-8935-4f2a-b5f8-9afc1dd489f3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # Netwerklocaties{#network-locations}
 
+{{eol}}
+
 Conceptueel, dient het adresdossier het zelfde doel zoals ETC&amp;bsol;HOSTS dossier op een genetwerkte machine.
 
 Nochtans, in tegenstelling tot het dossier van HOSTS, dat één enkele inzameling van namen beschrijft, bevat het adresdossier veelvoudige inzamelingen van namen genoemd netwerkplaatsen.
 
 Een netwerkplaats is een genoemde inzameling van adresdefinities. Elke adresdefinitie in de inzameling associeert een gemeenschappelijke naam met een IP adres.
 
-In het adresdossier, wordt een netwerkplaats bepaald in een structuur genoemd NetworkLocation. NetworkLocation in het volgende voorbeeld bepaalt een netwerkplaats genoemd &quot;MijnCollectief Intranet.&quot; Het bevat een adresdefinitie die de gemeenschappelijke naam [!DNL VS01.myCompany.com] aan het IP adres &quot;10.2.1.70.&quot;in kaart brengt
+In het adresdossier, wordt een netwerkplaats bepaald in een structuur genoemd NetworkLocation. NetworkLocation in het volgende voorbeeld bepaalt een netwerkplaats genoemd &quot;MijnCollectief Intranet.&quot; Het bevat een adresdefinitie die de gemeenschappelijke naam in kaart brengt [!DNL VS01.myCompany.com] aan het IP adres &quot;10.2.1.70.&quot;
 
 ```
 0 = NetworkLocation: 

@@ -3,7 +3,7 @@ description: De werkbank van gegevens gebruikt regelmatige uitdrukkingen (regex)
 title: Reguliere expressies
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # Reguliere expressies{#regular-expressions}
 
+{{eol}}
+
 De werkbank van gegevens gebruikt regelmatige uitdrukkingen (regex) voor onderzoek en soortverrichtingen.
 
-In het veld **[!UICONTROL Search]** kunt u een zoekopdracht uitvoeren na de instructie &quot;re:&quot; met behulp van algemene expressies, bijvoorbeeld:
+Binnen de **[!UICONTROL Search]** in het veld kunt u een zoekopdracht uitvoeren na de instructie &quot;re:&quot; met behulp van algemene expressies, bijvoorbeeld:
 
 ```
 <b>re: *.s</b>
@@ -45,4 +47,4 @@ In het veld **[!UICONTROL Search]** kunt u een zoekopdracht uitvoeren na de inst
 
 Aanvullende reguliere expressies kunnen ook worden gebruikt om complexere zoekreeksen te maken. Reguliere expressies worden gebruikt in alle zoekvelden van Data Workbench, inclusief de deelvensters voor query-entiteiten.
 
-Zie gedetailleerde informatie bij [reguliere expressies](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
+Zie de uitgebreide informatie op [reguliere expressies](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).

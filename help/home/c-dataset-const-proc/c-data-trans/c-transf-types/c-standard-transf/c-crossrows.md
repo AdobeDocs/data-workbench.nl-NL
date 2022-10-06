@@ -3,7 +3,7 @@ description: Net als andere transformaties wordt de CrossRows-transformatie toeg
 title: CrossRows
 uuid: 5910c150-6bec-4d98-b116-9b382fd54d3c
 exl-id: 321f986e-44a9-454c-9311-0ae37a11a088
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 0%
@@ -12,15 +12,17 @@ ht-degree: 0%
 
 # CrossRows{#crossrows}
 
+{{eol}}
+
 Net als andere transformaties wordt de CrossRows-transformatie toegepast op de gegevensrijen (logitems) in de logbronnen.
 
-Voor elke rij gegevens neemt de transformatie de waarde van het opgegeven invoerveld, voert een reeks verwerkingsstappen uit en registreert het resultaat in het uitvoerveld dat u opgeeft. Wanneer de [!DNL CrossRows]-transformatie echter op één rij gegevens werkt (deze rij wordt de uitvoerrij genoemd), wordt er rekening mee gehouden dat de rij plus een of meer andere rijen gegevens (deze rijen worden invoerrijen genoemd) die aan dezelfde volgingsidentiteitskaart zijn gekoppeld. Voor een bepaalde id voor reeksspatiëring is de waarde van het uitvoerveld voor elke uitvoerrij daarom gebaseerd op de waarden van het invoerveld voor een of meer invoerrijen.
+Voor elke rij gegevens neemt de transformatie de waarde van het opgegeven invoerveld, voert een reeks verwerkingsstappen uit en registreert het resultaat in het uitvoerveld dat u opgeeft. Wanneer echter [!DNL CrossRows] de transformatie werkt op één rij van gegevens (deze rij wordt genoemd de outputrij), houdt het rekening dat de rij plus één of meerdere andere rijen van gegevens (deze rijen worden genoemd inputrijen) die met zelfde het volgen identiteitskaart worden geassocieerd. Voor een bepaalde id voor reeksspatiëring is de waarde van het uitvoerveld voor elke uitvoerrij daarom gebaseerd op de waarden van het invoerveld voor een of meer invoerrijen.
 
-De transformatie biedt meerdere voorwaarden en beperkingen waarmee u de invoerrijen voor de transformatie kunt beperken. U kunt deze limieten uitgedrukt in termen van de voorwaarden van de gegevenswerkbankserver (zie [Voorwaarden](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)), een waaier van inputrijen met betrekking tot de outputrij, of een waaier van tijden met betrekking tot de tijd van de outputrij uitdrukken. Voor die invoerrijen die aan de voorwaarden en beperkingen van de transformatie voldoen, kunt u een verrichting (zoals SUM) toepassen die de waarde van outputgebied bepaalt.
+De transformatie biedt meerdere voorwaarden en beperkingen waarmee u de invoerrijen voor de transformatie kunt beperken. U kunt deze limieten uitgedrukt in termen van de voorwaarden van de gegevenswerkbankserver (zie [Voorwaarden](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)), een bereik van invoerrijen ten opzichte van de uitvoerrij of een bereik van tijden ten opzichte van de tijd van de uitvoerrij. Voor die invoerrijen die aan de voorwaarden en beperkingen van de transformatie voldoen, kunt u een verrichting (zoals SUM) toepassen die de waarde van outputgebied bepaalt.
 
 >[!NOTE]
 >
->Om te werken, vereist de [!DNL CrossRows] transformatie dat de gegevens in tijd worden bevolen en door volgende identiteitskaart in uw brongegevens worden gegroepeerd. [!DNL CrossRows] werkt daarom alleen wanneer dit is gedefinieerd in het [!DNL Transformation.cfg]-bestand of in een [!DNL Transformation Dataset Include]-bestand.
+>Om te werken, [!DNL CrossRows] voor transformatie moeten de gegevens in de tijd worden geordend en met de tracking-id in de brongegevens worden gegroepeerd. Daarom [!DNL CrossRows] werkt alleen wanneer deze zijn gedefinieerd in het dialoogvenster [!DNL Transformation.cfg] of in een [!DNL Transformation Dataset Include] bestand.
 
 Let op het volgende terwijl u de beschrijvingen van de parameters in de volgende tabel bekijkt:
 
@@ -63,7 +65,7 @@ Let op het volgende terwijl u de beschrijvingen van de parameters in de volgende
   </tr> 
   <tr> 
    <td colname="col1"> Sleutel </td> 
-   <td colname="col2"> <p>Optioneel. De naam van het veld dat als sleutel moet worden gebruikt. </p> <p> Als een sleutel wordt gespecificeerd, zijn de inputrijen voor een bepaalde outputrij beperkt tot het aangrenzende blok van rijen die de zelfde Zeer belangrijke waarde zoals de outputrij hebben. Deze beperking is naast alle andere beperkingen die op de inputrijen door andere parameters van de transformatie <span class="wintitle"> CrossRows</span> worden geplaatst. </p> <p> Als u bijvoorbeeld met webgegevens werkt en het veld x-session-key (met een unieke waarde voor elke sessie) als sleutel gebruikt, zijn de invoerrijen voor de transformatie beperkt tot die rijen met dezelfde x-session-key als de uitvoerrij. Daarom houdt u alleen rekening met invoerrijen die paginaweergaven vertegenwoordigen die voorkomen tijdens dezelfde sessie als de uitvoerrij. </p> </td> 
+   <td colname="col2"> <p>Optioneel. De naam van het veld dat als sleutel moet worden gebruikt. </p> <p> Als een sleutel wordt gespecificeerd, zijn de inputrijen voor een bepaalde outputrij beperkt tot het aangrenzende blok van rijen die de zelfde Zeer belangrijke waarde zoals de outputrij hebben. Deze beperking komt bovenop alle andere beperkingen die door andere parameters van de <span class="wintitle"> CrossRows</span> transformatie. </p> <p> Als u bijvoorbeeld met webgegevens werkt en het veld x-session-key (met een unieke waarde voor elke sessie) als sleutel gebruikt, zijn de invoerrijen voor de transformatie beperkt tot die rijen met dezelfde x-session-key als de uitvoerrij. Daarom houdt u alleen rekening met invoerrijen die paginaweergaven vertegenwoordigen die voorkomen tijdens dezelfde sessie als de uitvoerrij. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -103,10 +105,10 @@ Let op het volgende terwijl u de beschrijvingen van de parameters in de volgende
  </tbody> 
 </table>
 
-De [!DNL CrossRows]-transformatie in dit voorbeeld wordt toegepast op rijen met webgegevens om voor elke pagina de tijd van de volgende paginaweergave te zoeken. Omdat wij weten dat [!DNL CrossRows] slechts tijdens de transformatiefase van het proces van de datasetconstructie wordt toegepast, worden de rijen van gegevens bevolen door bezoeker (elke bezoeker heeft een unieke het volgen identiteitskaart) en tijd.
+De [!DNL CrossRows] transformatie in dit voorbeeld wordt toegepast op rijen webgegevens om voor elke pagina de tijd van de volgende paginaweergave te zoeken. Omdat we weten dat [!DNL CrossRows] alleen wordt toegepast tijdens de transformatiefase van het constructieproces van de gegevensset, worden de rijen met gegevens geordend door de bezoeker (elke bezoeker heeft een unieke tracking-id) en de tijd.
 
-Het invoerveld, x-timestamp, wordt alleen gebruikt voor invoerrijen waarin het veld voor de x-is-paginaweergave is ingevuld (de rij met gegevens wordt aangeduid als een paginaweergave). Het veld x-session-key (met een unieke waarde voor elke sessie) wordt opgegeven voor de parameter Key. Daarom zijn de inputrijen (logboekingangen) voor de transformatie beperkt tot het aangrenzende blok van rijen die de zelfde waarde van x-session-sleutel zoals de outputrij hebben. Met andere woorden, om voor de transformatie in aanmerking te komen, moet een inputrij een paginamening vertegenwoordigen die tijdens de zelfde zitting zoals de paginamening in de outputrij voorkomt. De eerste rijverrichting neemt de waarde van het outputgebied van de eerste inputrij die aan de [!DNL Input] Voorwaarde voldoet en de zelfde x-session-zeer belangrijke waarde zoals de outputrij heeft.
+Het invoerveld, x-timestamp, wordt alleen gebruikt voor invoerrijen waarin het veld voor de x-is-paginaweergave is ingevuld (de rij met gegevens wordt aangeduid als een paginaweergave). Het veld x-session-key (met een unieke waarde voor elke sessie) wordt opgegeven voor de parameter Key. Daarom zijn de inputrijen (logboekingangen) voor de transformatie beperkt tot het aangrenzende blok van rijen die de zelfde waarde van x-session-sleutel zoals de outputrij hebben. Met andere woorden, om voor de transformatie in aanmerking te komen, moet een inputrij een paginamening vertegenwoordigen die tijdens de zelfde zitting zoals de paginamening in de outputrij voorkomt. De eerste rijverrichting neemt de waarde van het outputgebied van de eerste inputrij die aan [!DNL Input] Voorwaarde en met dezelfde sleutelwaarde voor de x-sessie als de uitvoerrij.
 
 ![](assets/cfg_TransformationType_CrossRows.png)
 
-[!DNL CrossRows] wordt uitgevoerd in een hoeveelheid tijd die evenredig is aan de grootte van de invoer plus de grootte van de uitvoer. Dit betekent dat voor bewerkingen SUM, EERSTE RIJ en LAATSTE RIJ, deze niet minder efficiënt is dan andere transformaties. Voor ALLE, is de situatie complexer omdat het mogelijk is om [!DNL CrossRows] te vormen om een hoeveelheid gegevens voor elke rij van gegevens (logboekingang) uit te voeren die aan het totale aantal rijen (logboekingangen) voor een bepaalde volgende identiteitskaart evenredig is.
+[!DNL CrossRows] wordt uitgevoerd in een hoeveelheid tijd die evenredig is aan de grootte van de invoer plus de grootte van de uitvoer. Dit betekent dat voor bewerkingen SUM, EERSTE RIJ en LAATSTE RIJ, deze niet minder efficiënt is dan andere transformaties. Voor ALLES, is de situatie complexer omdat het mogelijk is te vormen [!DNL CrossRows] om een hoeveelheid gegevens voor elke rij gegevens (logboekingang) uit te voeren die aan het totale aantal rijen (logboekingangen) voor een bepaalde het volgen identiteitskaart evenredig is.

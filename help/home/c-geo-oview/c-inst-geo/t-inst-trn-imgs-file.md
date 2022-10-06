@@ -3,7 +3,7 @@ description: Stappen om het bestand Terrain Images.cfg te installeren op de gege
 title: Het bestand Terrain Images.cfg (server) installeren
 uuid: b692bff9-9356-4047-a2f7-f44310bf85fa
 exl-id: 4cc91839-ea36-4476-846a-59af4c5f684c
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Het bestand Terrain Images.cfg installeren{#installing-the-terrain-images-cfg-file}
+
+{{eol}}
 
 Stappen om het bestand Terrain Images.cfg te installeren op de gegevenswerkbankserver.
 

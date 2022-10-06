@@ -3,14 +3,16 @@ description: De grafieken van de Optillen en van de Aanwinst bieden visualisatie
 title: Hoogte- en oplichtdiagrammen
 uuid: 4f08277e-deea-48d3-ab15-214c43ad6664
 exl-id: 5ac08512-ac9c-4e85-a4f9-ea6d819095d8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
-# Hoogte- en oplichtgrafieken{#propensity-gain-and-lift-charts}
+# Hoogte- en oplichtdiagrammen{#propensity-gain-and-lift-charts}
+
+{{eol}}
 
 De grafieken van de Optillen en van de Aanwinst bieden visualisaties voor het evalueren van de potentiële prestaties van een genoteerd model om prestaties over bepaalde gedeelten van het publiek te evalueren.
 
@@ -18,19 +20,19 @@ De grafieken van de aanwinst en van de lift zijn visualisaties die worden gebouw
 
 **Een grafiek voor het optillen of vergroten openen**
 
-1. Selecteer [!DNL Add Visualization > Predictive Analytics > Scoring].
-1. Houd de muis boven **[!UICONTROL Model Complete]** van een opgeslagen score.
+1. Selecteren [!DNL Add Visualization > Predictive Analytics > Scoring] .
+1. Overslaan **[!UICONTROL Model Complete]** van een opgeslagen score.
 
 ![](assets/propensity_lift_gain_1.png)
 
 **Info Houtgrafieken optillen en verbreken**
 
-De grafieken van de Lift en van de Aanwinst zijn nuttige visuele hulpmiddelen om de waarde van een vooruitlopende model te meten. Beide grafieken bestaan uit een liftcurve (groen) en een basislijn (roze). Voor **Versterking Grafiek**, vertegenwoordigt de afstand tussen de liftkromme en de basislijn hoeveel u prestaties in reacties (of de &quot; aanwinst&quot;) kunt verbeteren van het gebruiken van de voorspellende wijze. De winst wordt gerealiseerd door voorrang te geven aan en zich te richten op de vooruitzichten (klanten/bezoekers) die het meest waarschijnlijk zullen worden omgezet, eerder dan aan marketing aan klanten/bezoekers willekeurig. Op deze manier, kunt u de verwachte waarde kwantificeren van het gebruiken van het vooruitlopende model om te kiezen welke vooruitzichten om te contacteren.
+De grafieken van de Lift en van de Aanwinst zijn nuttige visuele hulpmiddelen om de waarde van een vooruitlopende model te meten. Beide grafieken bestaan uit een liftcurve (groen) en een basislijn (roze). Voor de **Grafiek** De afstand tussen de liftcurve en de basislijn geeft aan hoeveel u de prestaties in de responsen (of de &quot; versterking&quot;) kunt verbeteren in de voorspellende modus. De winst wordt gerealiseerd door voorrang te geven aan en zich te richten op de vooruitzichten (klanten/bezoekers) die het meest waarschijnlijk zullen worden omgezet, eerder dan aan marketing aan klanten/bezoekers willekeurig. Op deze manier, kunt u de verwachte waarde kwantificeren van het gebruiken van het vooruitlopende model om te kiezen welke vooruitzichten om te contacteren.
 
-Net als in de Grafiek van de Aanwinst, toont **Lift Grafiek** hoeveel waarschijnlijker u positieve reacties zult ontvangen dan als u vooruitzichten bij willekeurig contacteerde. U wilt dat de afstand tussen de liftcurve en de basislijn zo groot mogelijk is, wat grotere verwachte voordelen vertegenwoordigt wanneer u het voorspellende model gebruikt om klanten te contacteren. Wiskundig worden de verbreding- en liftdiagrammen als volgt gedefinieerd:
+Net als in de Gain Chart geldt voor de **Grafiek optillen** toont hoeveel waarschijnlijker u positieve reacties zult ontvangen dan als u willekeurig vooruitzichten contacteerde. U wilt dat de afstand tussen de liftcurve en de basislijn zo groot mogelijk is, wat een grotere verwachte winst vertegenwoordigt wanneer u het voorspellende model gebruikt om klanten te contacteren. Wiskundig worden de verbreding- en liftdiagrammen als volgt gedefinieerd:
 
-* **Gain** = (Verwachte Reactie die het Predictieve Model aan Vooruitzichten van het Contact gebruikt) / (Verwachte Reactie van willekeurig Contacting Vooruitzichten)
-* **Lift** = (Verwachte Reactie onder een Specifieke Grootte van de Groep van Vooruitzichten die gebruikend het Predictieve Model worden geïdentificeerd) / (Verwachte Reactie onder de zelfde Specifieke Grootte van willekeurig geïdentificeerde Groepen van Vooruitzichten)
+* **Versterking** = (Verwachte reactie met gebruik van voorspellend model om vooruitzichten te contacteren) / (Verwachte reactie van willekeurig contacterende Vooruitzichten)
+* **Optillen** = (Verwacht antwoord onder een specifieke groepsgrootte van vooruitzichten die met behulp van het voorspellende model worden geïdentificeerd) / (Verwacht antwoord onder dezelfde specifieke groepsgrootte van willekeurig geïdentificeerde vooruitzichten)
 
 **Voorbeeld van retoucheerdiagrammen en versterkingsgrafieken**
 

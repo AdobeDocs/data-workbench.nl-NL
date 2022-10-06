@@ -3,7 +3,7 @@ description: Bij de visualisatie van de dichtheidskaart worden elementen weergeg
 title: Dichtheid-overzicht
 uuid: c13cecee-f322-4757-aa90-12039173ff9f
 exl-id: da37d954-cadb-42a6-a44b-9b38c0354a5d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Dichtheid-overzicht{#density-map}
+
+{{eol}}
 
 Bij de visualisatie van de dichtheidskaart worden elementen weergegeven als gearceerde rechthoeken binnen een vierkante kaart.
 
@@ -22,33 +24,33 @@ Een dichtheidsoverzicht maken:
 
 1. Open een nieuwe werkruimte.
 
-   Nadat u een nieuwe werkruimte hebt geopend, moet u mogelijk **Toevoegen** > **Tijdelijk ontgrendelen** klikken.
+   Nadat u een nieuwe werkruimte hebt geopend, moet u mogelijk op **Toevoegen** > **Tijdelijk ontgrendelen**.
 1. Klik op **[!UICONTROL Visualization]** > **[!UICONTROL Density Map]**.
 
-1. Selecteer een **[!UICONTROL Dimension]** van het menu.
+1. Selecteer een **[!UICONTROL Dimension]** in het menu.
 
    Selecteer bijvoorbeeld **[!UICONTROL Time]** > **[!UICONTROL Days]**.
 
-   Als u daarentegen **[!UICONTROL Time]** > **[!UICONTROL Hours]** selecteert, krijgt u meer elementen met kleinere waarden die als kleinere rechthoeken worden weergegeven.
+   Als u echter **[!UICONTROL Time]** > **[!UICONTROL Hours]** geeft u meer elementen met kleinere waarden die als kleinere rechthoeken worden weergegeven.
 
    >[!NOTE]
    >
    >U zult een afmeting met veelvoudige elementen willen kiezen aan uw behoeften. De huidige limiet is 200 van de grootste elementen voor elke dimensie.
 
-1. U kunt de weergave van dimensies wijzigen door **[!UICONTROL Visualization]** > **[!UICONTROL Table]** te openen en elementen in de tabel te selecteren die u wilt weergeven op de kaart.
+1. U kunt de weergave van dimensies wijzigen door **[!UICONTROL Visualization]** > **[!UICONTROL Table]** en selecteert u de elementen in de tabel die u wilt weergeven op de kaart.
 
    ![](assets/density_map_day_selections.png)
 
    De kaart reageert op selecties uit de tabel.
 
 1. Als u de muis boven kleine elementen houdt, worden de naam en de waarde van de elementen weergegeven in tekst die bij de muiscursor wordt weergegeven.
-1. Maskerelementen door met de rechtermuisknop te klikken en **[!UICONTROL Mask]** te selecteren en vervolgens een optie te kiezen.
+1. Elementen maskeren door met de rechtermuisknop te klikken en te selecteren **[!UICONTROL Mask]** en kiest u een optie.
 
    ![](assets/density_map_day_mask.png)
 
-   Selecteer **[!UICONTROL Unhide All]** om alle gemaskerde knooppunten weer te geven.
+   Selecteer **[!UICONTROL Unhide All]**.
 
-1. Spotlight-elementen door met de rechtermuisknop te klikken en **[!UICONTROL Spotlight]** te selecteren en vervolgens een optie te kiezen. Met spotlicht kunt u elementen in een bereik markeren en dimmen.
+1. Spotlight-elementen door met de rechtermuisknop te klikken en te selecteren **[!UICONTROL Spotlight]** en kiest u een optie. Met spotlicht kunt u elementen in een bereik markeren en dimmen.
 1. Voeg een legenda van de kleur aan de werkruimte toe. U kunt waarden op de kaart identificeren met behulp van de legenda van de kleur.
 
    U kunt een legenda aan de werkruimte toevoegen en de knooppunten veranderen de kleur op basis van de extra dimensie van gegevens.
@@ -56,11 +58,11 @@ Een dichtheidsoverzicht maken:
 
    ![](assets/density_map_change_dim.png)
 
-1. Voeg callouts toe door een cel met de rechtermuisknop aan te klikken en **[!UICONTROL Add Callout]** te selecteren. U kunt verschillende typen of visualisaties selecteren in het menu.
+1. Callouts toevoegen door met de rechtermuisknop op een cel te klikken en de optie **[!UICONTROL Add Callout]**. U kunt verschillende typen of visualisaties selecteren in het menu.
 
    ![](assets/density_map_callout.png)
 
-1. Zoals in alle visualisaties, kunt u boven de titelbar voor basisbevelen met de rechtermuisknop klikken om te sluiten, sparen, de Uitvoer naar Microsoft Excel, Orde, Exporteer, Exemplaar, minimaliseert, en Randen om een visualisatie zonder een grens te tonen.
+1. Zoals in alle visualisaties, kunt u boven de titelbar voor basisbevelen met de rechtermuisknop klikken om te sluiten, sparen, de Uitvoer naar Microsoft Excel, Orde, Exporteer, Exemplaar, minimaliseert, en Zonder grens om een visualisatie zonder een grens te tonen.
 
    ![](assets/density_map_export.png)
 
@@ -89,11 +91,11 @@ Klik met de rechtermuisknop op de dichtheidskaart om een menu met de volgende op
   </tr> 
   <tr> 
    <td colname="col1"> Masker </td> 
-   <td colname="col2">Met maskeropties kunt u geselecteerde elementen verbergen. Klik met de rechtermuisknop om maskeropties weer te geven. <p><span class="uicontrol"> Dit element</span> verbergen - Kies deze optie om één element te maskeren dat u hebt geselecteerd. </p> <p><span class="uicontrol"> Geselecteerde</span> elementen verbergen - Kies deze optie om meerdere geselecteerde elementen te maskeren. </p> <p><span class="uicontrol"> Bovenkant</span> tonen - Kies deze optie als u alleen de bovenste elementen van 100, 50, 25 of 10 wilt weergeven op basis van de waarden in de dichtheidstoewijzing. </p> <p><span class="uicontrol"> Onder</span> tonen - Kies deze optie als u alleen de bovenste elementen van 100, 50, 25 of 10 wilt weergeven op basis van de waarden in de dichtheidstoewijzing. </p> </td> 
+   <td colname="col2">Met maskeropties kunt u geselecteerde elementen verbergen. Klik met de rechtermuisknop om maskeropties weer te geven. <p><span class="uicontrol"> Dit element verbergen</span>—Kies deze optie om één element te maskeren dat u hebt geselecteerd. </p> <p><span class="uicontrol"> Geselecteerde verbergen</span>—Kies deze optie om meerdere elementen te maskeren die u hebt geselecteerd. </p> <p><span class="uicontrol"> Boven tonen</span>— Kies deze optie om alleen de bovenste elementen van 100, 50, 25 of 10 weer te geven op basis van de waarden in de dichtheidstoewijzing. </p> <p><span class="uicontrol"> Onder tonen</span>—Kies deze optie als u alleen de bovenste elementen onder de 100, 50, 25 of 10 wilt weergeven op basis van de waarden in de dichtheidstoewijzing. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Spotlicht </td> 
-   <td colname="col2"> Met spotlicht kunt u elementen in een bereik markeren en dimmen. Klik met de rechtermuisknop om een optiemenu te openen. <p><span class="uicontrol"> Bovenkant</span> tonen - Kies deze optie om alleen de bovenste elementen van 100, 50, 25 of 10 te markeren op basis van waarden in de dichtheidstoewijzing. </p> <p><span class="uicontrol"> Onder</span> tonen - Kies deze optie om alleen de bovenste elementen van 100, 50, 25 of 10 weer te geven op basis van waarden in de dichtheidstoewijzing. </p> </td> 
+   <td colname="col2"> Met spotlicht kunt u elementen in een bereik markeren en dimmen. Klik met de rechtermuisknop om een optiemenu te openen. <p><span class="uicontrol"> Boven tonen</span>— Kies deze optie om alleen de bovenste elementen van 100, 50, 25 of 10 te markeren op basis van waarden in de dichtheidstoewijzing. </p> <p><span class="uicontrol"> Onder tonen</span>—Kies deze optie als u alleen de bovenste elementen van 100, 50, 25 of 10 wilt markeren op basis van de waarden in de dichtheidstoewijzing. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Deselecteren </p> <p>Alle selecties opheffen </p> </td> 

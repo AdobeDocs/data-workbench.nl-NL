@@ -1,73 +1,77 @@
 ---
-description: De laag van de Presentatie laat u omhoog merken en uw werkruimtevisualisaties annoteren en dan met uw vraag-outs en commentaren publiceren. Voeg tekstbeschrijvingen, grafische voorwerpen, callout pijlen, kleurencodering, beelden, en andere eigenschappen in een bekleding toe om annotaties toe te voegen en belangrijke gegevenspunten te verduidelijken, en dan met belanghebbenden te delen.
-title: Annoteren van visualisaties
+description: De laag van de Presentatie laat u omhoog merken en annoteren uw werkruimtesvisualisaties en dan met uw vraag-outs en commentaren publiceren. Voeg tekstbeschrijvingen, grafische objecten, callout-pijlen, kleurcodering, afbeeldingen en andere functies in een overlay toe om annotaties toe te voegen en belangrijke gegevenspunten te verduidelijken en deel deze vervolgens met de belanghebbenden.
+title: Visualisaties annoteren
 uuid: f296b04e-4c02-4ee3-93cb-dd1163b855de
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 6adb7971-ef09-4e90-873b-586ae1d55f96
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 0%
 
 ---
 
+# Visualisaties annoteren{#annotating-visualizations}
 
-# Annoteren van visualisaties{#annotating-visualizations}
+{{eol}}
 
-De laag van de Presentatie laat u omhoog merken en uw werkruimtevisualisaties annoteren en dan met uw vraag-outs en commentaren publiceren. Voeg tekstbeschrijvingen, grafische voorwerpen, callout pijlen, kleurencodering, beelden, en andere eigenschappen in een bekleding toe om annotaties toe te voegen en belangrijke gegevenspunten te verduidelijken, en dan met belanghebbenden te delen.
+De laag van de Presentatie laat u omhoog merken en annoteren uw werkruimtesvisualisaties en dan met uw vraag-outs en commentaren publiceren. Voeg tekstbeschrijvingen, grafische objecten, callout-pijlen, kleurcodering, afbeeldingen en andere functies in een overlay toe om annotaties toe te voegen en belangrijke gegevenspunten te verduidelijken en deel deze vervolgens met de belanghebbenden.
 
-**Voeg annotaties aan uw visualisaties toe:**
+**Annotaties toevoegen aan uw visualisaties:**
 
 1. Open een werkruimte.
-1. Ga naar **Dossier** > de Laag **van de** Presentatie.
-1. Klik **toestaan de Laag** van de Presentatie.
+1. Ga naar **Bestand** > **Presentatielaag**.
+1. Klikken **Presentatielaag toestaan**.
 
-   Knevel het bevel in dit menu om het produceren van een presentatielaag toe te staan of te verbieden. Een controleteken zal verschijnen wanneer de presentatielaag wordt toegestaan.
+   Schakel de opdracht in dit menu in of uit om het genereren van een presentatielaag toe te staan of te weigeren. Er verschijnt een vinkje wanneer de presentatielaag is toegestaan.
 
    ![](assets/6_4_presentation_layer_select.png)
 
    Wanneer u de presentatielaag toestaat, zal een klikbaar pictogram in de rechterkant van de toolbar verschijnen.
 
-   ![](assets/dwb_presentation_icon2.png) Dit klikbare pictogram toont aan dat u op de wijze van de Laag **van de Presentatie van de** Huid bent maar geen annotaties kunt zien.
+   ![](assets/dwb_presentation_icon2.png) Dit klikbare pictogram toont aan dat u in **Presentatielaag verbergen** -modus, maar de annotaties kunnen niet worden weergegeven.
 
-1. Klik pictogram aan knevel om de Laag **van de Presentatie te** tonen.
+1. Klik op pictogram om te schakelen naar **Presentatielaag tonen**.
 
-   De annotaties van de mening in de presentatielaag.
+   Annotaties weergeven in de presentatielaag.
 
-   ![](assets/dwb_presentation_icon3.png) Dit klikbare pictogram toont aan dat u op de wijze van de Laag **van de Presentatie van de** Show bent maar niet kan uitgeven.
+   ![](assets/dwb_presentation_icon3.png) Dit klikbare pictogram toont aan dat u in **Presentatielaag tonen** maar kan niet worden bewerkt.
 
    >[!NOTE]
    >
-   >U kunt in de werkruimte ook met de rechtermuisknop klikken om wijzen te veranderen gebruikend menubevelen.
+   >U kunt ook met de rechtermuisknop in de werkruimte klikken om modi te wijzigen met behulp van menuopdrachten.
 
    ![](assets/6_4_presentation_layer_right_menu.png)
 
-1. **Bewerk en voeg callout-functies toe.**
+1. **Bijschriftfuncties bewerken en toevoegen.**
 
-   Klik opnieuw pictogram om een statische vertegenwoordiging van de werkruimtevisualisatie te vangen en een bekleding te openen om annotaties toe te voegen of uit te geven.
+   Klik nogmaals op het pictogram om een statische weergave van de werkruimte vast te leggen en een bedekking te openen om annotaties toe te voegen of te bewerken.
 
-   ![](assets/dwb_presentation_icon1.png) Dit klikbare pictogram toont aan dat u op de **Edit wijze van de Laag** van de Presentatie bent om annotaties toe te voegen en uit te geven.
+   ![](assets/dwb_presentation_icon1.png) Dit klikbare pictogram toont aan dat u in **Presentatielaag bewerken** om annotaties toe te voegen en te bewerken.
 
-   Een grijze bekleding verschijnt terwijl binnen uitgeeft wijze.
+   In de bewerkingsmodus wordt een grijze bedekking weergegeven.
 
-1. **Voeg callout eigenschappen** toe.
+1. **Bijschriftfuncties toevoegen**.
 
-   Klik de visualisatie met de rechtermuisknop aan om een nieuw tekstvakje toe te voegen. pijlen, en andere callout eigenschappen om voor presentatie te benadrukken en te annoteren.
+   Klik met de rechtermuisknop op de visualisatie om een nieuw tekstvak toe te voegen. pijlen en andere bijschriftfuncties om de presentatie te markeren en van aantekeningen te voorzien.
 
    ![](assets/6_4_presentation_layer_add_annotation.png)
 
-1. **Grafische eigenschappen** instellen.
+1. **Afbeeldingsfuncties instellen**.
 
-   Selecteer een grafisch voorwerp en klik met de rechtermuisknop aan om opties te plaatsen. U kunt kleuren voor een vakje of ander grafisch voorwerp plaatsen, tekstmontages in een tekstvakje aanpassen, en pijlen toevoegen of het plaatsen van het in lagen plaatsen voor lijnen.
+   Selecteer een grafisch object en klik met de rechtermuisknop om opties in te stellen. U kunt kleuren instellen voor een vak of ander grafisch object, de tekstinstellingen in een tekstvak aanpassen en pijlen toevoegen of de laag instellen voor lijnen.
 
    ![](assets/6_4_presentation_layer_options.png)
 
-1. **Voeg beelden aan de werkruimte** toe.
+1. **Afbeeldingen toevoegen aan de werkruimte**.
 
-   Klik met de rechtermuisknop om uw .png- en .jpg-afbeeldingen toe te voegen aan de overlay en het formaat ervan te wijzigen.
+   Klik met de rechtermuisknop om uw .png- en .jpg-afbeeldingen aan de overlay toe te voegen en de grootte te wijzigen.
 
-1. **Wijs kleuren aan grafische voorwerpen** toe.
+1. **Kleuren toewijzen aan grafische objecten**.
 
-   U kunt voorwerpen in de presentatielaag selecteren en kleuren toewijzen gebruikend de kleurenplukker. ![](assets/dwb_presentation_colorpicker.png)
+   U kunt objecten selecteren in de presentatielaag en kleuren toewijzen met de kleurkiezer. ![](assets/dwb_presentation_colorpicker.png)
 
-1. **De uitvoer en deelt presentatielaag**.
+1. **Presentatielaag exporteren en delen**.
 
-   Na het annoteren van uw werkruimtevisualisaties, kunt u de presentatielaag met visualisaties uitvoeren en als .png grafisch dossier delen.
+   Nadat u de werkruimte hebt voorzien van visualisaties, kunt u de presentatielaag met visualisaties exporteren en deze als een .png-afbeeldingsbestand delen.
 
-   Klik **de Uitvoer** > de **Uitvoer PNG**.
+   Klikken **Exporteren** > **PNG exporteren**.

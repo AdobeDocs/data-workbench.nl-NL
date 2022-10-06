@@ -3,14 +3,16 @@ description: Tabel die aangeeft welke conventies van toepassing zijn bij het sam
 title: Conventies voor het samenstellen van transformaties
 uuid: 91dddca6-4c17-4107-b78b-0f8b8870ef8d
 exl-id: c2552c52-c6d3-4c9f-8359-b5a58bf1a59f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
-# Conventies voor het construeren van transformaties{#conventions-for-constructing-transformations}
+# Conventies voor het samenstellen van transformaties{#conventions-for-constructing-transformations}
+
+{{eol}}
 
 Tabel die aangeeft welke conventies van toepassing zijn bij het samenstellen van transformaties.
 
@@ -24,7 +26,7 @@ Tabel die aangeeft welke conventies van toepassing zijn bij het samenstellen van
  <tbody> 
   <tr> 
    <td colname="col1"> Opeenvolgende uitvoering </td> 
-   <td colname="col2"> <p>De transformaties binnen een dossier van de datasetconfiguratie worden toegepast op de logboekingangen opeenvolgend (namelijk in de orde waarin zij in het configuratiedossier worden vermeld). Transformaties moeten daarom worden vermeld in de volgorde waarin hun outputs als input voor andere transformaties worden gebruikt. Meer specifiek, als de output van één transformatie als input aan een andere transformatie wordt gebruikt, is het belangrijk dat die vroegere transformatie voorafgaand aan de laatstgenoemde transformatie in de dossiers van de datasetconfiguratie wordt vermeld. Anders genereert de gegevenswerkbankserver een fout. </p> <p> De stadia van de verwerking verstrekken een manier om tot de transformaties opdracht te geven die binnen veelvoudige dataset worden bepaald omvatten dossiers. Voor alle dataset omvat dossiers verbonden aan een bepaald verwerkingsstadium, worden de transformaties bevolen gebaseerd op hun input en output. Als meerdere datasets bovendien bestanden in een werkgebied bevatten die als gevolg van een transformatie worden uitgevoerd naar hetzelfde veld, genereert de gegevenswerkbankserver een fout. </p> <p> Voor meer informatie over stadia, zie <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> het Dossier van de Configuratie van de Verwerking van het Logboek </a>, <a href="../../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md"> het Dossier van de Configuratie van de Transformatie</a>, en <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md"> Gegevensreeks omvat Dossiers</a>. </p> <p>Een <span class="wintitle"> Transformation Dependency Map</span> kan tonen hoe een gebied door een reeks transformaties wordt gewijzigd. Zie <a href="../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md"> Hulpmiddelen voor de configuratie van gegevenssets</a>. </p> </td> 
+   <td colname="col2"> <p>De transformaties binnen een dossier van de datasetconfiguratie worden toegepast op de logboekingangen opeenvolgend (namelijk in de orde waarin zij in het configuratiedossier worden vermeld). Transformaties moeten daarom worden vermeld in de volgorde waarin hun outputs als input voor andere transformaties worden gebruikt. Meer specifiek, als de output van één transformatie als input aan een andere transformatie wordt gebruikt, is het belangrijk dat die vroegere transformatie voorafgaand aan de laatstgenoemde transformatie in de dossiers van de datasetconfiguratie wordt vermeld. Anders genereert de gegevenswerkbankserver een fout. </p> <p> De stadia van de verwerking verstrekken een manier om tot de transformaties opdracht te geven die binnen veelvoudige dataset worden bepaald omvatten dossiers. Voor alle dataset omvat dossiers verbonden aan een bepaald verwerkingsstadium, worden de transformaties bevolen gebaseerd op hun input en output. Als meerdere datasets bovendien bestanden in een werkgebied bevatten die als gevolg van een transformatie worden uitgevoerd naar hetzelfde veld, genereert de gegevenswerkbankserver een fout. </p> <p> Voor meer informatie over stadia raadpleegt u <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Logboekverwerkingsconfiguratiebestand</a>, <a href="../../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md"> Configuratiebestand transformatie</a>, en <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md"> Gegevensset met bestanden</a>. </p> <p>A <span class="wintitle"> Transformatieafhankelijkheid</span> kan weergeven hoe een veld wordt gewijzigd door een reeks transformaties. Zie <a href="../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md"> Hulpprogramma's voor gegevensverzameling</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Uitvoernamen </td> 
@@ -32,7 +34,7 @@ Tabel die aangeeft welke conventies van toepassing zijn bij het samenstellen van
   </tr> 
   <tr> 
    <td colname="col1"> Invoervelden </td> 
-   <td colname="col2"> <p>Invoervelden verwijzen naar een van de basislijnvelden of een door de gebruiker gemaakt veld dat het resultaat is van een vorige transformatie. Wanneer een constante tekenreeks nodig is, kan een tekenreeks tussen aanhalingstekens worden gebruikt in plaats van een door de gebruiker gemaakt veld of basislijn. </p> <p> Zie <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md"> Gegevensrecordvelden van gebeurtenissen</a> voor een lijst met een aantal algemeen gedefinieerde gegevensvelden die de gegevenswerkbankserver kan verwerken. </p> </td> 
+   <td colname="col2"> <p>Invoervelden verwijzen naar een van de basislijnvelden of een door de gebruiker gemaakt veld dat het resultaat is van een vorige transformatie. Wanneer een constante tekenreeks nodig is, kan een tekenreeks tussen aanhalingstekens worden gebruikt in plaats van een door de gebruiker gemaakt veld of basislijn. </p> <p> Voor een lijst van enkele algemeen gedefinieerde gegevensvelden die de gegevenswerkbankserver kan verwerken, raadpleegt u <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md"> Gebeurtenisgegevensrecordvelden</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Eenvoudige tekenreeksen en vectoren van tekenreeksen </td> 

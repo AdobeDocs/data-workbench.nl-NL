@@ -3,7 +3,7 @@ description: Tabellen
 title: Dashboardtabellen
 uuid: 3bfb5be4-5510-456b-8b3d-6e57cb93949e
 exl-id: 215ad990-92af-4c36-9946-89dbe36bbb8c
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Tabellen{#tables}
+
+{{eol}}
 
 Tabellen zijn de meest gedetailleerde visualisaties die beschikbaar zijn in de dashboardtoepassing. Tabellen maken het mogelijk metrische en dimensiegegevens te visualiseren met elk gegevenselement dat als een rij in een tabel wordt vertegenwoordigd. Eén kolom bevat de waarden van de afmetingen, terwijl de andere kolommen de overeenkomstige waarden van de metrische waarde bevatten. Meerdere metriek kan worden weergegeven en er geldt geen beperking voor het aantal waarden van afmetingen dat in een tabel kan worden weergegeven. Alle waarden voor een geselecteerde afmeting die in de gegevens van de gegevenswerkbank bestaan zullen in de lijst worden getoond.
 

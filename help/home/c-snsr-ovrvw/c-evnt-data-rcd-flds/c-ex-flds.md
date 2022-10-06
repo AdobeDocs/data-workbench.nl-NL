@@ -3,7 +3,7 @@ description: Sensor kan bij gebruik op een server velden met gebeurtenisgegevens
 title: Uitbreidbare velden
 uuid: 91b9857e-44a4-497f-b157-51afd30306fe
 exl-id: e783d073-cf06-4415-80e1-567b55fdee12
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%
@@ -12,28 +12,30 @@ ht-degree: 0%
 
 # Uitbreidbare velden{#extensible-fields}
 
+{{eol}}
+
 Sensor kan bij gebruik op een server velden met gebeurtenisgegevens verzamelen van elke geldige HTTP-aanvraag- of antwoordheader of variabele die beschikbaar is via de API van de server.
 
-Als u dergelijke gegevensvelden wilt verzamelen, moet u de gewenste headervelden of variabelen opgeven in het configuratiebestand [!DNL txlogd.conf] voor [!DNL Sensor].
+Als u dergelijke gegevensvelden wilt verzamelen, moet u de gewenste koptekstvelden of variabelen opgeven in het dialoogvenster [!DNL txlogd.conf] configuratiebestand voor [!DNL Sensor].
 
 * [Aanvraagkoppen](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f)
 * [Servervariabelen](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-74b258bc3e8a4a93a0ee9fb01c067e4b)
 
 ## Aanvraagkoppen {#section-22766692b45546d8bfc93dbe3bc9368f}
 
-Hier volgt de syntaxis voor het opgeven van een aanvraagheaderveld dat moet worden verzameld (bijvoorbeeld Host, Accept-Encoding, Keep-Alive, enzovoort) in [!DNL txlogd.conf]:
+Hier volgt de syntaxis voor het opgeven van een aanvraagheaderveld dat moet worden verzameld (bijvoorbeeld Host, Accepteren, Coderen, Levend houden enzovoort) in [!DNL txlogd.conf]:
 
 ```
 LogHeader RequestHeaderName
 ```
 
-De verzamelde gegevens worden geregistreerd door [!DNL Sensor] aan een gebied genoemd &quot;cs (RequestHeaderName)&quot;in de [!DNL .vsl] dossiers die door [!DNL data workbench server] worden gecreeerd. Bijvoorbeeld, om de specifieke waarde van de verzoekkopbal van de verzoekkopbal &quot;Gastheer te verzamelen,&quot;zou u &quot;Gastheer LogHeader&quot;in [!DNL txlogd.conf] typen. De gegevens worden opgenomen in het veld &quot;cs(Host)&quot; in de record met gebeurtenisgegevens.
+De verzamelde gegevens worden geregistreerd door [!DNL Sensor] naar een veld met de naam &quot;cs(RequestHeaderName)&quot; in het dialoogvenster [!DNL .vsl] bestanden gemaakt door de [!DNL data workbench server]. Bijvoorbeeld, om de specifieke waarde van de verzoekkopbal van de verzoekkopbal &quot;Gastheer te verzamelen,&quot;zou u &quot;Gastheer LogHeader&quot;in typen [!DNL txlogd.conf]. De gegevens worden opgenomen in het veld &quot;cs(Host)&quot; in de record met gebeurtenisgegevens.
 
 ## Servervariabelen {#section-74b258bc3e8a4a93a0ee9fb01c067e4b}
 
-[!DNL Sensor] U kunt gegevensvelden verzamelen van responsheaders of API-toegankelijke servervariabelen met SpecialLogField-items die u in het  [!DNL txlogd.conf] bestand opneemt. U kunt ook &#39;SpecialLogField&#39;-items gebruiken naast of in plaats van &#39;LogHeader&#39;-items om aanvraagheaders te verzamelen. Zie [Kopteksten aanvragen](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f). De optie voor aanvraagheaders blijft beschikbaar voor achterwaartse compatibiliteit.
+[!DNL Sensor] U kunt gegevensvelden verzamelen van responsheaders of API-toegankelijke servervariabelen met SpecialLogField-items die u in de [!DNL txlogd.conf] bestand. U kunt ook &#39;SpecialLogField&#39;-items gebruiken naast of in plaats van &#39;LogHeader&#39;-items om aanvraagheaders te verzamelen. Zie [Aanvraagkoppen](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f). De optie voor aanvraagheaders blijft beschikbaar voor achterwaartse compatibiliteit.
 
-Hier volgt de syntaxis voor het opgeven van een &quot;SpecialLogField&quot; in [!DNL txlogd.conf]:
+Hieronder ziet u de syntaxis voor het opgeven van een &quot;SpecialLogField&quot; in [!DNL txlogd.conf]:
 
 ```
 SpecialLogField cs(log field) = serverVariable stage
@@ -51,11 +53,11 @@ De volgende tabel bevat beschrijvingen van de componenten van een item &quot;Spe
  <tbody> 
   <tr> 
    <td colname="col1"> cs (logveld) </td> 
-   <td colname="col2"> De naam van het veld waarin de verzamelde gegevens worden opgenomen in de record met gebeurtenisgegevens en de <span class="filepath"> .vsl </span>-bestanden die zijn gemaakt door de <span class="keyword">-werkbankserver </span>. </td> 
+   <td colname="col2"> De naam van het veld waarin de verzamelde gegevens worden opgenomen in de gebeurtenissengegevensrecord en de <span class="filepath"> .vsl </span> bestanden gemaakt door de <span class="keyword"> gegevenswerkbankserver </span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> serverVariable </td> 
-   <td colname="col2"> <p>Elke servervariabele die via de API van de server beschikbaar is voor <span class="wintitle"> Sensor </span> </p> <p>Voorbeeld: response.p3p </p> </td> 
+   <td colname="col2"> <p>Elke servervariabele die beschikbaar is voor <span class="wintitle"> Sensor </span> via de API van de server </p> <p>Voorbeeld: response.p3p </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> stadium </td> 
@@ -64,4 +66,4 @@ De volgende tabel bevat beschrijvingen van de componenten van een item &quot;Spe
  </tbody> 
 </table>
 
-Neem contact op met de Adobe Consulting Services voor hulp bij het configureren van [!DNL Sensor] voor het verzamelen van uitbreidbare velden voor het opnemen van gebeurtenisgegevens.
+Voor hulp bij het configureren [!DNL Sensor] Neem contact op met de Adobe Consulting Services voor het verzamelen van uitbreidbare velden voor het opnemen van gebeurtenisgegevens.

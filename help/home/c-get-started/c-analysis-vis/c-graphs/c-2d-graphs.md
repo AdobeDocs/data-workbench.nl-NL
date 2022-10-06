@@ -3,7 +3,7 @@ description: Tweedimensionale (2D) grafieken geven een metrische waarde over twe
 title: 2D-grafieken
 uuid: f8860fff-4614-4b1a-b217-760bf4d48f20
 exl-id: 9767124b-8507-4b25-842b-8e2729e57461
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # 2D-grafieken{#d-graphs}
+
+{{eol}}
 
 Tweedimensionale (2D) grafieken geven een metrische waarde over twee dimensies weer.
 

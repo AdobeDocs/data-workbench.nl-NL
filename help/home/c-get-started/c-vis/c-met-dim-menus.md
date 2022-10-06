@@ -3,18 +3,20 @@ description: De menu's die door metrisch of afmetingsgebied binnen een visualisa
 title: Metrische menu's en dimensiemenu's
 uuid: 0dfae2bd-6c33-4496-83ea-f7f6de960259
 exl-id: 59bed6c1-74b2-49e2-ac68-f22c8bed668a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
 
-# Metrische en dimensiemenu&#39;s{#metric-and-dimension-menus}
+# Metrische menu&#39;s en dimensiemenu&#39;s{#metric-and-dimension-menus}
+
+{{eol}}
 
 De menu&#39;s die door metrisch of afmetingsgebied binnen een visualisatie met de rechtermuisknop worden betreden verlenen toegang tot acties met betrekking tot metrisch of afmeting in die visualisatie die.
 
-Voor meer informatie over het gebruiken van deze menuopties met een bepaald type van visualisatie, zie de aangewezen visualisatiesectie binnen [Analyse Visualisaties](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
+Zie de desbetreffende sectie voor visualisatie in het gedeelte [Analyse visualisaties](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
 
 ## Het menu Metrisch {#section-115db63a26f04b57ac954a69972c6291}
 
@@ -42,11 +44,11 @@ In dit menu ziet u verschillende opties, afhankelijk van het type visualisatie w
   </tr> 
   <tr> 
    <td colname="col1"> <p>Zoomen op selectie </p> </td> 
-   <td colname="col2"> <p>Hiermee zoomt u in op een geselecteerde subset met gegevens in een lijngrafiek. Zie <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> Zoomen in visualisaties</a>. Zie <a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746"> Selecties maken in visualisaties</a> voor meer informatie over selecties. </p> </td> 
+   <td colname="col2"> <p>Hiermee zoomt u in op een geselecteerde subset met gegevens in een lijngrafiek. Zie <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> Zoomen in visualisaties</a>. Zie voor meer informatie over selecties <a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746"> Selecties maken in visualisaties</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metrische editor </p> </td> 
-   <td colname="col2"> <p>Laat u toe om de definitie van metrisch uit te geven die door het metrische naamgebied wordt geïdentificeerd. Zie <a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-db6d924cf4e14bcc8d57cfe1059fc797"> Bestaand Voortgekomen Metriek bewerken</a>. </p> </td> 
+   <td colname="col2"> <p>Laat u toe om de definitie van metrisch uit te geven die door het metrische naamgebied wordt geïdentificeerd. Zie <a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-db6d924cf4e14bcc8d57cfe1059fc797"> Bestaand afgeleide gegevens bewerken</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metrics </p> </td> 
@@ -79,7 +81,7 @@ In dit menu ziet u verschillende opties, afhankelijk van het type visualisatie w
  </tbody> 
 </table>
 
-## Het dimensiemenu {#section-e09de0aa6b74459a957b627ff7d07979} gebruiken
+## Het menu Dimensie gebruiken {#section-e09de0aa6b74459a957b627ff7d07979}
 
 U hebt toegang tot het menu Dimensies door met de rechtermuisknop te klikken op een gebied dat betrekking heeft op dimensies in een visualisatie.
 
@@ -97,11 +99,11 @@ In dit menu ziet u verschillende opties, afhankelijk van het type visualisatie w
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Bijschrift toevoegen </p> </td> 
-   <td colname="col2"> <p>Voegt een callout voor het geselecteerde element toe, dat de aandacht op dat element vestigt. Zie <a href="../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0"> Bijschriften toevoegen aan een Werkruimte</a>. </p> </td> 
+   <td colname="col2"> <p>Voegt een callout voor het geselecteerde element toe, dat de aandacht op dat element vestigt. Zie <a href="../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0"> Bijschriften toevoegen aan een werkruimte</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Naam element wijzigen </p> </td> 
-   <td colname="col2"> <p>Wijzigt de naam van het element. Klik op <span class="uicontrol"> Vorige versie</span> om terug te keren naar de oorspronkelijke naam. </p> </td> 
+   <td colname="col2"> <p>Wijzigt de naam van het element. Klikken <span class="uicontrol"> Vorige versie</span> om terug te keren naar de oorspronkelijke naam. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>dimensienaam</i> </p> </td> 
@@ -129,7 +131,7 @@ In dit menu ziet u verschillende opties, afhankelijk van het type visualisatie w
   </tr> 
   <tr> 
    <td colname="col1"> <p>Reeks legenda </p> </td> 
-   <td colname="col2"> <p>Color-codes de elementen binnen de geselecteerde afmeting als reeks. Zie <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12"> Gebruikend Reeksen Legends</a>. </p> </td> 
+   <td colname="col2"> <p>Color-codes de elementen binnen de geselecteerde afmeting als reeks. Zie <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12"> Reeks Legenda gebruiken</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Visualisatie toevoegen </p> </td> 

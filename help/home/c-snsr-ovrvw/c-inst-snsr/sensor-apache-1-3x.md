@@ -2,22 +2,23 @@
 description: Gedetailleerde instructies voor het installeren en configureren van Sensor voor een Apache Server 1.3.x op RedHat Linux 7.x of hoger, SUSE Linux 9.x of hoger, Sun Solaris SPARC 2.6 of hoger, Sun Solaris x86 9 of hoger, FreeBSD 4 of hoger of Mac OS X PowerPC.
 title: Apache Server 1.3.x op Linux, Sun Solaris, FreeBSD of Mac OS X
 uuid: bd46dd0f-fe36-4f8b-a87c-8ca7b64da609
-translation-type: tm+mt
-source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+exl-id: 087494fb-c8f0-457c-b3db-d9147a739998
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 0%
 
 ---
 
-
 # Apache Server 1.3.x op Linux, Sun Solaris, FreeBSD of Mac OS X{#apache-server-x-on-linux-sun-solaris-freebsd-or-mac-os-x}
+
+{{eol}}
 
 Gedetailleerde instructies voor het installeren en configureren van Sensor voor een Apache Server 1.3.x op RedHat Linux 7.x of hoger, SUSE Linux 9.x of hoger, Sun Solaris SPARC 2.6 of hoger, Sun Solaris x86 9 of hoger, FreeBSD 4 of hoger of Mac OS X PowerPC.
 
 De programmabestanden voor Sensor worden verpakt in een installatiebestand dat u van de downloadsite van de Adobe ontvangt. Als u nog geen Sensor-installatiebestand voor uw specifieke webserver hebt, downloadt u het bestand (of vraagt u het op bij uw Adobe-vertegenwoordiger) voordat u de volgende procedures start.
 
-U moet de volgende stappen op hoog niveau uitvoeren om Sensor te installeren en te configureren:
+Voor het installeren en configureren van Sensor moet u de volgende stappen op hoog niveau uitvoeren:
 
 ## De programmabestanden installeren {#section-aae323e252394212bf4096d65fdd280c}
 
@@ -94,7 +95,7 @@ Standaard hebben de programmabestanden in het teerbestand de volgende machtiging
 
 ## Het Sensor-configuratiebestand bewerken {#section-3f22a1c91d7d43b6b4c30f1b7448b17f}
 
-Het [!DNL txlogd.conf] bestand bevat de configuratieparameters voor Sensor.
+De [!DNL txlogd.conf] bevat de configuratieparameters voor Sensor.
 
 U moet het dossier uitgeven om, onder andere, de grootte van de schijfrij, het adres van de Server van het Inzicht, en identiteitskaart te specificeren die aan de gegevens zal worden vastgemaakt die door deze sensor worden geproduceerd.
 
@@ -138,7 +139,7 @@ Als u de verzamelaar aan uw webserver wilt toevoegen, moet u het bestand httpd.c
 
 Als Sensor gegevens vastlegt voor meerdere webservers op de servercomputer, moet u de volgende procedure voor elke webserver uitvoeren.
 
-1. Open met een teksteditor het [!DNL httpd.conf] bestand voor de webserver waarvan de gebeurtenissen worden vastgelegd door Sensor.
+1. Open met een teksteditor de [!DNL httpd.conf] bestand voor de webserver waarvan de gebeurtenissen worden vastgelegd door Sensor.
 1. Voeg de volgende regels toe aan het einde van het bestand:
 
    ```
@@ -172,9 +173,9 @@ Begin de zender en verifieer dat het met succes met de Server van het Inzicht ka
 1. Als Sensor gegevens niet verzendt, controleert u of:
 
    * De doelserver van het Inzicht loopt.
-   * De parameters [!DNL ServerAddress] en [!DNL ServerPort] worden correct ingesteld in [!DNL txtlogd.conf].
+   * De [!DNL ServerAddress] en [!DNL ServerPort] parameters worden correct ingesteld in [!DNL txtlogd.conf].
 
-   * Als u een servernaam hebt opgegeven, probeert u in plaats daarvan het numerieke IP-adres te gebruiken. [!DNL ServerAddress] De waarde van de [!DNL CertName] parameter komt precies overeen met de algemene naam die op het digitale certificaat van de doelserver van het Inzicht wordt weergegeven.
+   * Als u [!DNL ServerAddress] Probeer in plaats daarvan het numerieke IP-adres van de server te gebruiken. De waarde van de [!DNL CertName] parameter past precies de gemeenschappelijke naam aan die op het digitale certificaat van de doelserver van het Inzicht precies verschijnt.
 
 ## De zender toevoegen aan het opstartscript van het systeem {#section-4e1ffa6e043941ab91411d91d596477a}
 
@@ -198,4 +199,3 @@ Met deze opdracht start u de zender als een daemon. De werkende en foutenmelding
 >```
 >
 >De standaardinstelling Solaris is 60. Op basis van tests die zijn uitgevoerd met Sensor, waarbij voor elke instantie drie semafoons worden gebruikt, raadt Adobe u aan 1024 te gebruiken als de instelling. Dit aantal is hoog genoeg voor Sensor om samen met andere toepassingen op de server te functioneren die semafoons kunnen vereisen, maar beïnvloedt prestaties niet. Ter ondersteuning van deze aanbeveling merkt Adrian Cockcroft het volgende op in zijn boek Sun Performance and Tuning (Prentice Hall, oktober 1994): &quot;Databases gebruiken doorgaans veel gedeelde geheugen- en semafoore-instellingen. Deze zijn niet van invloed op de prestaties; zolang ze groot genoeg zijn , zullen de programma &#39; s lopen . &quot;
-

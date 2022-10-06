@@ -3,7 +3,7 @@ description: De kaarten van het proces kunnen worden gevormd om met om het even 
 title: Een proceskaart configureren
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
 exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -12,16 +12,18 @@ ht-degree: 0%
 
 # Een proceskaart configureren{#configure-a-process-map}
 
+{{eol}}
+
 De kaarten van het proces kunnen worden gevormd om met om het even welke combinatie basisdimensie, groepsdimensie, niveaudimensie, en metrisch te werken die voor uw toepassing en dataset zinvol is.
 
 Nadat u een proceskaart vormt, is het vermeld met andere proceskaarten in [!DNL Add Visualization menu].
 
-1. Klik in [!DNL Profile Manager] op **[!UICONTROL Menu]**, klik op **[!UICONTROL Add Visualization]** en klik vervolgens op het type proceskaart dat u wilt configureren (2D-metrische kaart, 2D-proceskaart of 3D-proceskaart).
+1. In de [!DNL Profile Manager], klikt u op **[!UICONTROL Menu]**, klikt u op **[!UICONTROL Add Visualization]** klikt u vervolgens op het type proceskaart dat u wilt configureren (2D-metrische kaart, 2D-proceskaart of 3D-proceskaart).
 
-   Ten minste één [!DNL *.vw]-bestand bevindt zich in de map.
+   Ten minste één [!DNL *.vw] het bestand zich in de map bevindt.
 
 1. Klik met de rechtermuisknop op het vinkje voor het gewenste bestand en klik op **[!UICONTROL Make Local]**.
-1. Klik met de rechtermuisknop op het vinkje voor het bestand in de kolom [!DNL User] en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Klik met de rechtermuisknop op het vinkje voor het bestand in het dialoogvenster [!DNL User] kolom en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Bewerk de parameters van het bestand met behulp van het volgende voorbeeldbestand en de volgende tabel als hulplijnen:
 
    ```
@@ -82,12 +84,12 @@ Nadat u een proceskaart vormt, is het vermeld met andere proceskaarten in [!DNL 
 >
 >Voor meer informatie over de basisdimensie, groepsdimensie, niveaudimensie, en metrisch voor een proceskaart, zie [Proceskaarten](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
 
-1. Klik in Kladblok op **[!UICONTROL File]** > **[!UICONTROL Save As]** om het bestand op te slaan met een nieuwe naam op basis van de basisdimensie, dat wil zeggen *Naam van basisdimensie*.vw.
+1. Klik in Kladblok op **[!UICONTROL File]** > **[!UICONTROL Save As]** om het bestand op te slaan met een nieuwe naam op basis van de basisdimensie, dat wil zeggen: *Naam van basisdimensie*.vw.
 
-   (Als u een metrische kaart 2D vormt, zou u het dossier met een naam moeten opslaan die op de metrische naam voor de metrische kaart wordt gebaseerd, namelijk *Metrische naam voor metrische kaart*.vw.) Zorg ervoor dat u het bestand opslaat in de juiste map met proceskaarten.
+   (Als u een metrische kaart 2D vormt, zou u het dossier met een naam moeten opslaan die op de metrische naam voor de metrische kaart wordt gebaseerd, namelijk: *Metrische naam voor metrische kaart*.vw.) Zorg ervoor dat u het bestand opslaat in de juiste map met proceskaarten.
 
    >[!NOTE]
    >
-   >Om ervoor te zorgen dat uw proceskaart als [!DNL *.vw] dossier, in het [!DNL Save As] venster wordt bewaard, plaats sparen als type aan Alle Dossiers.
+   >Om ervoor te zorgen dat uw proceskaart als a wordt bewaard [!DNL *.vw] in het [!DNL Save As] , stelt u Opslaan als type in op Alle bestanden.
 
-1. (Optioneel) Als u de wijzigingen beschikbaar wilt maken voor alle gebruikers van het werkprofiel, klikt u in [!DNL Profile Manager] met de rechtermuisknop op het vinkje voor het bestand in de kolom [!DNL User] en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. (Optioneel) Als u de wijzigingen beschikbaar wilt maken voor alle gebruikers van het werkprofiel, gaat u naar [!DNL Profile Manager]klikt u met de rechtermuisknop op het vinkje voor het bestand in het dialoogvenster [!DNL User] kolom en klik op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

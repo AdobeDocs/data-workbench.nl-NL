@@ -3,7 +3,7 @@ description: De Hash-transformatie maakt een bijna unieke tekenreeks die een 64-
 title: Hash
 uuid: 13bc14e6-75e2-4711-8f98-50fd18802be5
 exl-id: 6912a1d2-9ae8-42ba-94bd-a7a28cbdfae6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 1%
@@ -12,13 +12,15 @@ ht-degree: 1%
 
 # Hash{#hash}
 
+{{eol}}
+
 De Hash-transformatie maakt een bijna unieke tekenreeks die een 64-bits getal uit de invoerwaarden vertegenwoordigt.
 
 Deze transformatie levert dezelfde hash-waarde op bij dezelfde invoer.
 
 >[!NOTE]
 >
->De resulterende waarde is bijna uniek omdat bij de transformatie een 64-bits getal wordt gebruikt als de ruimte van mogelijke hashwaarden. Voor één miljoen unieke input aan de [!DNL hash] transformatie, is er 1 op 38.000.000 kans om een dubbele knoeiboelwaarde te krijgen.
+>De resulterende waarde is bijna uniek omdat bij de transformatie een 64-bits getal wordt gebruikt als de ruimte van mogelijke hashwaarden. Voor één miljoen unieke inputs voor de [!DNL hash] transformatie, is er een kans van 1 op 38.000.000 om een dubbele knoeiboelwaarde te krijgen.
 
 | Parameter | Beschrijving | Standaard |
 |---|---|---|

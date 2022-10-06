@@ -3,14 +3,16 @@ description: In dit hoofdstuk worden de stappen beschreven voor het installeren 
 title: Data Workbench Geography installeren
 uuid: 2c3d2e4a-97a7-4afc-b72d-c012db77e535
 exl-id: 3f32672c-e62b-4b8b-84f7-11ff732519ad
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 0%
 
 ---
 
-# Installeren van Data Workbench Geography{#installing-data-workbench-geography}
+# Data Workbench Geography installeren{#installing-data-workbench-geography}
+
+{{eol}}
 
 In dit hoofdstuk worden de stappen beschreven voor het installeren van gegevens op WorkbenchGeography op een gegevenswerkbankserver.
 
@@ -18,16 +20,16 @@ Om deze stappen te voltooien, moet u toegang tot de dossiers op de server van de
 
 Als u zich hebt geabonneerd op een van de twee optionele gegevensservices, moet u ook het profiel voor de gegevensservice en de opzoekbestanden installeren.
 
-Zie [!DNL Geography] document *Minimale systeemvereisten* voor informatie over de systeemvereisten voor het installeren, configureren en gebruiken van een werkbank voor gegevens.
+Voor informatie over de systeemvereisten voor het installeren, configureren en gebruiken van de werkbank voor gegevens [!DNL Geography], zie de *Minimale systeemvereisten* document.
 
-Adobe verspreidt het gegevenswerkbankproduct [!DNL Geography] als een [!DNL .zip] dossier. Dit bestand bevat twee mappen (zoekopdrachten en profielen). Als u gegevenswerkbank [!DNL Geography] op een gegevenswerkbankserver wilt installeren, moet u de volgende stappen uitvoeren:
+Adobe verspreidt de gegevenswerkbank [!DNL Geography] softwareproduct als [!DNL .zip] bestand. Dit bestand bevat twee mappen (zoekopdrachten en profielen). Gegevenswerkbank installeren [!DNL Geography] op een server van de gegevenswerkbank, moet u de volgende stappen uitvoeren:
 
-* Installeer het profiel [!DNL Geography]. Zie [Geografisch profiel installeren](../../../home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md).
+* Installeer de [!DNL Geography] profiel. Zie [Het geografische profiel installeren](../../../home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md).
 
-* Installeer de [!DNL Geography] raadplegingen. Zie [De geografische opzoekbestanden installeren](../../../home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md).
+* Installeer de [!DNL Geography] zoekopdrachten. Zie [De bestanden voor geografische opzoekopdrachten installeren](../../../home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md).
 
-* (Optioneel) Installeer het [!DNL Terrain Images.cfg]-bestand. Zie [Het bestand Terrain Images.cfg](../../../home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md) installeren.
+* (Optioneel) Installeer de [!DNL Terrain Images.cfg] bestand. Zie [Het bestand Terrain Images.cfg installeren](../../../home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md).
 
 >[!NOTE]
 >
->U moet de bestanden voor gegevenswerkbank [!DNL Geography] installeren op de computer van de gegevenswerkbank waarop u het gegevenssetprofiel verwerkt en uitvoert. Als u een servercluster van de gegevenswerkbank in werking stelt, moet u de dossiers op de master server installeren. Voor informatie over datasetprofielen, zie *de Gids van de Configuratie van de Dataset*.
+>U moet de bestanden installeren voor de gegevenswerkbank [!DNL Geography] op de computer van de gegevenswerkbankserver waarop u verwerkt en uw gegevenssetprofiel in werking stelt. Als u een servercluster van de gegevenswerkbank in werking stelt, moet u de dossiers op de master server installeren. Voor informatie over datasetprofielen, zie *Configuratie-handleiding voor gegevensset*.

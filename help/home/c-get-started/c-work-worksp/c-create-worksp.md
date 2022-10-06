@@ -3,7 +3,7 @@ description: U kunt bestaande werkruimten aanpassen door bestaande visualisaties
 title: Een werkruimte maken
 uuid: 8669b70f-5ddf-4424-9269-0e4860eac498
 exl-id: 9c1fb9e6-6cc8-4894-800b-187b047c41d2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Een werkruimte maken{#create-a-workspace}
+
+{{eol}}
 
 U kunt bestaande werkruimten aanpassen door bestaande visualisaties toe te voegen of te wijzigen of nieuwe werkruimten te maken.
 
@@ -26,11 +28,11 @@ In deze sectie worden de volgende taken beschreven:
 
 ## Nieuwe werkruimten toevoegen {#section-4236ae30e2884ea08f0885bf329f0778}
 
-Klik op de gewenste [!DNL Worktop] tab met de rechtermuisknop op een leeg gebied op de tab en klik op een van de volgende opties:
+Op het gewenste [!DNL Worktop] klikt u met de rechtermuisknop op een leeg gebied op de tab en klikt u op een van de volgende opties:
 
 * **[!UICONTROL New]** > **[!UICONTROL Blank Workspace]**. Met deze optie geeft u een standaardgrootte en een lege werkruimte weer.
 
-* **[!UICONTROL New]** >  **[!UICONTROL Report Template]**. Met deze optie geeft u een standaardformaatsjabloon weer waarmee u rapporten kunt maken.
+* **[!UICONTROL New]** > **[!UICONTROL Report Template]**. Met deze optie geeft u een standaardformaatsjabloon weer waarmee u rapporten kunt maken.
 
 ![](assets/mnu_workspaceManager.png)
 
@@ -40,7 +42,7 @@ De miniatuur voor het nieuwe type werkruimte wordt weergegeven op het tabblad.
 
 >[!NOTE]
 >
->Nadat u een nieuwe werkruimte hebt geopend, moet u mogelijk **Toevoegen** > **Tijdelijk ontgrendelen** klikken.
+>Nadat u een nieuwe werkruimte hebt geopend, moet u mogelijk op **Toevoegen** > **Tijdelijk ontgrendelen**.
 
 ## Bestaande werkruimten kopiëren en plakken {#section-f91ae89b845640c9a4a52820a6110e65}
 
@@ -48,11 +50,11 @@ U kunt een bestaande werkruimte naar een andere werkruimte kopiëren en plakken.
 
 **Een bestaande werkruimte kopiëren en plakken**
 
-1. Klik op de gewenste [!DNL Worktop]-tab met de rechtermuisknop op de werkruimte die u wilt kopiëren en klik op **[!UICONTROL Copy]**.
+1. Op het gewenste [!DNL Worktop] klikt u met de rechtermuisknop op de werkruimte die u wilt kopiëren en klikt u op **[!UICONTROL Copy]**.
 
    ![](assets/mnu_workspaceManager_Copywksp.png)
 
-1. Ga naar het lusje waarin u de werkruimte wilt kleven, klik een leeg gebied binnen het lusje met de rechtermuisknop aan, dan klik **[!UICONTROL Paste]**.
+1. Ga naar het tabblad waarop u de werkruimte wilt plakken, klik met de rechtermuisknop op een leeg gebied op het tabblad en klik vervolgens op **[!UICONTROL Paste]**.
 
    In het volgende voorbeeld ziet u een werkruimte die op een tabblad van een werkruimte wordt geplakt en een serverversie bevat:
 
@@ -66,11 +68,11 @@ In het volgende voorbeeld ziet u een werkruimte die op een tabblad van een werkr
 
 **De naam van een werkruimte wijzigen**
 
-1. Klik op de gewenste [!DNL Worktop]-tab op de miniatuur van de werkruimte die u wilt weergeven.
+1. Op het gewenste [!DNL Worktop] klikt u op de miniatuur van de werkruimte die u wilt weergeven.
 1. Klik in de werkruimte op de titeltekst in de titelbalk en typ de nieuwe titel, zoals in het volgende voorbeeld wordt getoond:
 
    ![](assets/wsp_changeTitle.png)
 
-## Een werkruimte {#section-fb04cc195e1a4a5491ff634f5f3ca972} verwijderen
+## Een werkruimte verwijderen {#section-fb04cc195e1a4a5491ff634f5f3ca972}
 
 **De naam van een werkruimte wijzigen**

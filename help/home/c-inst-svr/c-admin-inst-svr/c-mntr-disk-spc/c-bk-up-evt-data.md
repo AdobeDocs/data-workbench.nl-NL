@@ -3,7 +3,7 @@ description: Van gebeurtenisgegevens moet dagelijks een back-up worden gemaakt m
 title: Back-up maken van gebeurtenisgegevens
 uuid: 1b9e5dfe-0bf2-4ee9-bf70-1dd320a678d6
 exl-id: 5afeb3a2-a2e7-4155-8fb9-1abc9c22c3c6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Back-up maken van gebeurtenisgegevens{#backing-up-event-data}
+
+{{eol}}
 
 Van gebeurtenisgegevens moet dagelijks een back-up worden gemaakt met de normale back-upsystemen en procedures voor noodherstel van uw bedrijf.
 

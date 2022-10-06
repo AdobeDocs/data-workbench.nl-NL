@@ -3,14 +3,16 @@ description: Alvorens u rapporten en alarm kunt produceren, moet u de Server van
 title: De verbinding met de Insight Server configureren
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
 exl-id: a398a665-fe09-448a-977c-b0f9de4add09
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
-# Het vormen van de Verbinding aan de Server van het Inzicht{#configuring-the-connection-to-the-insight-server}
+# De verbinding met de Insight Server configureren{#configuring-the-connection-to-the-insight-server}
+
+{{eol}}
 
 Alvorens u rapporten en alarm kunt produceren, moet u de Server van het Rapport vormen om het adres van de server van het Inzicht te specificeren en de profielen te identificeren waarop u het wilt melden.
 
@@ -21,9 +23,9 @@ Alvorens u rapporten en alarm kunt produceren, moet u de Server van het Rapport 
 **Om de Server van het Rapport te vormen**
 
 1. Met de Ontdekkingsreiziger van Vensters, navigeer aan de folder waar u de Server van het Rapport installeerde.
-1. Open het [!DNL ReportServer.cfg] dossier in Blocnote en wijzig het dossier zoals gewenst.
+1. Open de [!DNL ReportServer.cfg] in Kladblok en wijzig het bestand naar wens.
 
-   Het volgende voorbeeld [!DNL Report Server.cfg] bevat standaard alleen de parameters die in het [!DNL Report Server.cfg]-bestand zijn opgenomen (en markeert de vereiste parameterinstellingen). Als u via een proxyserver contact opneemt met de Adobe-licentieserver, moet u de licentievector en de bijbehorende parameters toevoegen. Zie [De parameters van Server.cfg van het rapport](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) voor een gedetailleerde beschrijving.
+   Het volgende voorbeeld [!DNL Report Server.cfg] bevat alleen de parameters die zijn opgenomen in de [!DNL Report Server.cfg] bestand standaard (en markeert de vereiste parameterinstellingen). Als u via een proxyserver contact opneemt met de Adobe-licentieserver, moet u de licentievector en de bijbehorende parameters toevoegen. Zie [De parameters van Server.cfg van het rapport](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) voor een gedetailleerde beschrijving.
 
    ```
    Fonts = vector: 0 items

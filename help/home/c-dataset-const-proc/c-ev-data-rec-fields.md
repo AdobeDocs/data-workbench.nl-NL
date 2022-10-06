@@ -3,7 +3,7 @@ description: Informatie over de gebieden van gegevens die de server van de gegev
 title: Gebeurtenisgegevensrecordvelden
 uuid: b0232bfa-0a3b-4e3d-876e-6a15a3764eae
 exl-id: 35433b87-991a-4fb9-ba6a-3217e89eb769
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Gebeurtenisgegevensrecordvelden{#event-data-record-fields}
+
+{{eol}}
 
 Informatie over de gebieden van gegevens die de server van de gegevenswerkbank kan verwerken om een dataset te construeren.
 
@@ -22,9 +24,9 @@ Informatie over de gebieden van gegevens die de server van de gegevenswerkbank k
 
 De gebeurtenisgegevens die worden gebruikt om een dataset te bouwen verblijven in dossiers die als logboekbronnen worden bedoeld. De gegevens in de logbronnen worden gebeurtenisgegevens genoemd omdat elke gegevensrecord een transactierecord of één instantie van een gebeurtenis met een bijbehorende tijdstempel vertegenwoordigt.
 
-De gebeurtenisgegevens van een logbron worden in real time verzameld door [!DNL Sensors]. Gebeurtenisgegevens die door [!DNL Sensors] van HTTP- en toepassingsservers worden verzameld, worden verzonden naar workbench-gegevensservers, die de gegevens omzetten in gecomprimeerde logbestanden ( [!DNL .vsl]). Gebeurtenisgegevens die zich in een plat bestand, XML-bestand of een ODBC-gegevensbron bevinden, worden gelezen door de gegevensworkbench-server. Deze server biedt decoders die u definieert om een algemene set gegevensvelden uit deze verschillende indelingen te extraheren.
+De gebeurtenisgegevens van een logbron worden in real time verzameld door [!DNL Sensors]. Gebeurtenisgegevens verzameld door [!DNL Sensors] van HTTP en toepassingsservers wordt overgebracht naar de servers van de gegevenswerkbank, die de gegevens in gecomprimeerd logboek ( [!DNL .vsl]). Gebeurtenisgegevens die zich in een plat bestand, XML-bestand of een ODBC-gegevensbron bevinden, worden gelezen door de gegevensworkbench-server. Deze server biedt decoders die u definieert om een algemene set gegevensvelden uit deze verschillende indelingen te extraheren.
 
-De volgende secties bevatten informatie over de gegevensvelden (ook wel recordvelden voor gebeurtenisgegevens of velden voor logitems genoemd) die worden verzameld door [!DNL Sensors] of gelezen en beschikbaar worden gemaakt op de gegevenswerkbankserver.
+De volgende secties bevatten informatie over de gegevensvelden (ook wel recordvelden of velden voor logitems genoemd) die worden verzameld door [!DNL Sensors] of lezen en beschikbaar stellen aan de server van de gegevenswerkbank.
 
 >[!NOTE]
 >
@@ -38,7 +40,7 @@ De volgende secties bevatten informatie over de gegevensvelden (ook wel recordve
 
 ## Gegevensrecordvelden basislijngebeurtenis {#section-a882ed7aa6af41eeb45a55bf8c1ca3d7}
 
-Logbestanden ( [!DNL .vsl]) bevatten de velden met gebeurtenisgegevens die door [!DNL Sensors] van servers worden verzameld en door de gegevenswerkbench-server worden gebruikt in het constructieproces van de gegevensset. De volgende tabel bevat een lijst met de velden in een gegevensrecord voor een typische gebeurtenis zoals opgenomen door [!DNL Sensor]:
+Log ( [!DNL .vsl]) bevatten de velden met gebeurtenisgegevens die van servers worden verzameld door [!DNL Sensors] en gebruikt door de server van de gegevenswerkbank in het proces van de datasetconstructie. De volgende tabel bevat een lijst met velden in een gegevensrecord voor typische gebeurtenissen zoals opgenomen door [!DNL Sensor]:
 
 <table id="table_98E135FE4EAF44D6ADEB3C6C1C0BF6A4">
  <thead>
@@ -98,11 +100,11 @@ Logbestanden ( [!DNL .vsl]) bevatten de velden met gebeurtenisgegevens die door 
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> <p>De datum en tijd (GMT) waarop het verzoek door de server is ontvangen. De tijd wordt uitgedrukt als het aantal 100 nanoseconden sinds 1 januari 1600. </p> <p> Voorbeeld: 127710989320000000 zou de x-timestamp waarde voor 11:28:52.0000000 zijn op dinsdag 13 september 2005. </p> </td>
+   <td colname="col2"> <p>De datum en tijd (GMT) waarop het verzoek door de server is ontvangen. De tijd wordt uitgedrukt als het aantal 100 nanoseconden sinds 1 januari 1600. </p> <p> Voorbeeld: 127710989320000000 zou de x-tijdstempelwaarde voor 11 zijn:28:52.000000 op dinsdag 13 september 2005. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
-   <td colname="col2"> <p>De hexadecimale 64-bits waarde van de unieke browser-id die wordt gevonden in een permanente cookie, zoals ingesteld door een <span class="wintitle">-sensor </span> en verstrekt door de client met een aanvraag aan een server. </p> <p> Voorbeeld: 42FDF66DE610CF36 </p> </td>
+   <td colname="col2"> <p>De hexadecimale 64-bits waarde van de unieke browser-id die wordt gevonden in een permanente cookie, zoals ingesteld door een <span class="wintitle"> Sensor </span> en door de client worden verstrekt met een aanvraag aan een server. </p> <p> Voorbeeld: 42FDF66DE610CF36 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -125,15 +127,15 @@ In de onderstaande tabel staan voorbeelden van velden die door de gegevensworkbe
   </tr>
   <tr>
    <td colname="col1"> cs(reference-domain) </td>
-   <td colname="col2"> <p>De domeinnaam of het IP-adres van de HTTP-verwijzende URI. </p> <p> <p>Opmerking:  Dit veld is alleen-lezen. </p> </p> </td>
+   <td colname="col2"> <p>De domeinnaam of het IP-adres van de HTTP-verwijzende URI. </p> <p> <p>Opmerking: Dit veld is alleen-lezen. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referentie-host) </td>
-   <td colname="col2"> <p>De volledige hostnaam van de verwijzende. </p> <p> Voorbeeld: Als cs(reference) <span class="filepath"> https://my.domain.com/my/page </span> is, is cs(reference-host) <span class="filepath"> my.domain.com </span>. </p> </td>
+   <td colname="col2"> <p>De volledige hostnaam van de verwijzende. </p> <p> Voorbeeld: Als cs(referencerer) is <span class="filepath"> https://my.domain.com/my/page </span>, cs(reference-host) is <span class="filepath"> my.domain.com </span>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(reference-query)(name) </td>
-   <td colname="col2"> <p>De waarde van een queryqueryqueryqueryqueryqueryqueryqueryqueryqueryqueryqueryqueryqueryqueryreeks. </p> <p> <p>Opmerking:  U hebt geen toegang tot een stringwaarde van een verwijzersquery via het veld cs(reference)(name). </p> </p> </td>
+   <td colname="col2"> <p>De waarde van een queryqueryqueryqueryqueryqueryqueryqueryqueryqueryqueryqueryqueryqueryqueryreeks. </p> <p> <p>Opmerking: U hebt geen toegang tot een stringwaarde van een verwijzersquery via het veld cs(reference)(name). </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs-uri </td>
@@ -144,7 +146,7 @@ In de onderstaande tabel staan voorbeelden van velden die door de gegevensworkbe
    <td colname="col2"> <p>De waarde die aan de opgegeven naam is gekoppeld. Als er meerdere waarden bestaan voor de opgegeven naam, wordt in dit veld het laatste van deze waarden geretourneerd. </p> Voorbeelden:
     <ul id="ul_47BBB2E3076A46629BFCDB2A460F700B">
      <li id="li_AC9BB29505A54AE4AFF49438530C9EA4"> Voor de URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product2=casette&amp;product3=cd </span>, cs-uri-query(product3) retourneert cd. </li>
-     <li id="li_B036C1D0B25748E0A155DDC9B1B999CB"> Voor de URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product1=casette </span>, <span class="wintitle"> cs-uri-query(product1) </span> zou casette retourneren. </li>
+     <li id="li_B036C1D0B25748E0A155DDC9B1B999CB"> Voor de URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product1=casette </span>, <span class="wintitle"> cs-uri-query(product1) </span> retourneert casette. </li>
     </ul> <p> </p> </td>
   </tr>
   <tr>
@@ -157,23 +159,23 @@ In de onderstaande tabel staan voorbeelden van velden die door de gegevensworkbe
   </tr>
   <tr>
    <td colname="col1"> tijd </td>
-   <td colname="col2"> x-timestamp in formaat HH:MM:SS. </td>
+   <td colname="col2"> x-timestamp in de notatie HH:MM:SS. </td>
   </tr>
   <tr>
    <td colname="col1"> x-local-timestring </td>
-   <td colname="col2"> <p>x-timestamp omgezet in lokale timezone die in <span class="filepath"> Transformation.cfg </span> dossier voor de dataset wordt gespecificeerd. De notatie is YYY-MM-DD HH:MM:SS.mmm. </p> <p> <p>Opmerking:  U kunt ook tijdconversies definiëren, zoals x-local-timestring in het bestand <span class="filepath"> Log Processing.cfg </span>. Zie <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Configuratiebestand van logverwerking </a> voor meer informatie. </p> </p> </td>
+   <td colname="col2"> <p>x-timestamp omgezet in lokale timezone die in wordt gespecificeerd <span class="filepath"> Transformation.cfg </span> bestand voor de gegevensset. De notatie is YYY-MM-DD HH:MM:SS.mmm. </p> <p> <p>Opmerking: U kunt ook tijdconversies, zoals x-local-timestring, definiëren in het dialoogvenster <span class="filepath"> Logverwerking.cfg </span> bestand. Zie voor meer informatie <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Logboekverwerkingsconfiguratiebestand </a>. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-log-source-id </td>
-   <td colname="col2"> <p>De id die overeenkomt met de logbron voor een bepaald logbestandvermelding. Als u de id wilt opnemen, moet u deze opgeven in het veld <span class="wintitle"> Logbron-id </span> van het bestand <span class="filepath"> Log Processing.cfg </span> bij het definiëren van <span class="wintitle"> Sensor </span>, logbestand of ODBC-gegevensbronnen. Zie <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Configuratiebestand van logverwerking </a> voor meer informatie. </p> <p> Voorbeeld: VSensor01. </p> </td>
+   <td colname="col2"> <p>De id die overeenkomt met de logbron voor een bepaald logbestandvermelding. Als u de id wilt opnemen, moet u deze opgeven in het dialoogvenster <span class="wintitle"> Logbron-id </span> van het <span class="filepath"> Logverwerking.cfg </span> bestand bij definiëren <span class="wintitle"> Sensor </span>, logbestand of ODBC-gegevensbronnen. Zie voor meer informatie <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Logboekverwerkingsconfiguratiebestand </a>. </p> <p> Voorbeeld: VSensor01. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-mask </td>
-   <td colname="col2"> Het maskerpatroon van de <span class="wintitle"> Sensor </span> gegevensbronnen (afgeleid van de <span class="filepath"> .vsl </span> bestandsnamen). Voor een bestand waarvan de naam de indeling <span class="filepath"> YYYMMDD-SENSORID.VSL </span> heeft, is x-mask SENSORID. </td>
+   <td colname="col2"> Het maskerpatroon van het dialoogvenster <span class="wintitle"> Sensor </span> gegevensbronnen (afgeleid van de <span class="filepath"> .vsl </span> bestandsnamen). Voor een bestand waarvan de naam de indeling heeft <span class="filepath"> JJJMMDD-SENSORID.VSL </span>, x-mask is SENSORID. </td>
   </tr>
   <tr>
    <td colname="col1"> x-timestring </td>
-   <td colname="col2"> x-timestamp in het formaat YYYY-MM-DD HH:MM:SS.mmm. </td>
+   <td colname="col2"> x-timestamp in de notatie YYYY-MM-DD HH:MM:SS.mmm. </td>
   </tr>
   <tr>
    <td colname="col1"> x-unixtime </td>
@@ -182,4 +184,4 @@ In de onderstaande tabel staan voorbeelden van velden die door de gegevensworkbe
  </tbody>
 </table>
 
-[!DNL Sensor]Wanneer deze gegevens op een server worden gebruikt, kunnen ze velden met gebeurtenisgegevens verzamelen van elke geldige HTTP-aanvraag- of antwoordheader of variabele die beschikbaar is via de API van de server. Als u dergelijke gegevensvelden wilt verzamelen, moet u de gewenste headervelden of variabelen opgeven in het [!DNL txlogd.conf]configuratiebestand voor [!DNL Sensor]. Zie *Data Workbench [!DNL Sensor] Guide* voor meer informatie.
+[!DNL Sensor]Wanneer deze gegevens op een server worden gebruikt, kunnen ze velden met gebeurtenisgegevens verzamelen van elke geldige HTTP-aanvraag- of antwoordheader of variabele die beschikbaar is via de API van de server. Als u dergelijke gegevensvelden wilt verzamelen, moet u de gewenste koptekstvelden of variabelen opgeven in het dialoogvenster [!DNL txlogd.conf]configuratiebestand voor [!DNL Sensor]. Zie voor meer informatie de *Data Workbench [!DNL Sensor] Hulplijn*.

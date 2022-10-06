@@ -3,7 +3,7 @@ description: De volgende afmetingen zijn beschikbaar voor gebruik in het profiel
 title: Dimension in het statusprofiel van de Server van de Data Workbench
 uuid: 4cfe882a-2797-4af9-bd6d-75bc31ee909c
 exl-id: 002f6b95-f151-41d9-ae28-9c01c1f621ee
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Dimension in het statusprofiel van de Server van de Data Workbench{#dimensions-in-the-data-workbench-server-status-profile}
+
+{{eol}}
 
 De volgende afmetingen zijn beschikbaar voor gebruik in het profiel van de Status van de Server van de werkbank van gegevens.
 
@@ -50,11 +52,11 @@ De volgende afmetingen zijn beschikbaar voor gebruik in het profiel van de Statu
   </tr> 
   <tr> 
    <td colname="col1"> <b>Omgeving</b> </td> 
-   <td colname="col2">De waarde cs-uri-query(c) wordt gebruikt voor de milieu-id. De laatste rij voor een blok wordt gebruikt als waarde voor de dimensie. Deze Eenvoudige Dimension zal het Milieu tonen waarin uw Servers lopen (op voorwaarde dat het behoorlijk wordt gevormd). <p><p>Opmerking:  Deze dimensie wordt geplaatst in insight_monitor_agent.cfg. </p></p></td> 
+   <td colname="col2">De waarde cs-uri-query(c) wordt gebruikt voor de milieu-id. De laatste rij voor een blok wordt gebruikt als waarde voor de dimensie. Deze Eenvoudige Dimension zal het Milieu tonen waarin uw Servers lopen (op voorwaarde dat het behoorlijk wordt gevormd). <p><p>Opmerking: Deze dimensie wordt geplaatst in insight_monitor_agent.cfg. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Geschatte wiepper dekaseconds</b> </td> 
-   <td colname="col2"> Het veld x-estimated-sweep-dekaseconds wordt gebruikt in deze numerieke Dimension. Dit is de geschatte controletijd van de servers gedeeld door tien (verminderde resolutie van vegen meting om dimensie redelijker te maken). <p><p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></p></td> 
+   <td colname="col2"> Het veld x-estimated-sweep-dekaseconds wordt gebruikt in deze numerieke Dimension. Dit is de geschatte controletijd van de servers gedeeld door tien (verminderde resolutie van vegen meting om dimensie redelijker te maken). <p><p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Host</b> </td> 
@@ -66,31 +68,31 @@ De volgende afmetingen zijn beschikbaar voor gebruik in het profiel van de Statu
   </tr> 
   <tr> 
    <td colname="col1"> <b>Gemiddelde belasting</b> </td> 
-   <td colname="col2"> Dit is een Numerieke dimensie die de Laatste Rij voor de waarde van cs-uri-query(i) van een bepaalde Server gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. Deze dimensie wordt gebruikt om de gemiddelde lading op de servers in het systeem te berekenen die worden gecontroleerd. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> Dit is een Numerieke dimensie die de Laatste Rij voor de waarde van cs-uri-query(i) van een bepaalde Server gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. Deze dimensie wordt gebruikt om de gemiddelde lading op de servers in het systeem te berekenen die worden gecontroleerd. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Percentage geheugenpaginabestand</b> </td> 
-   <td colname="col2"> Dit is een Numerieke dimensie die de Laatste Rij voor de cs-uri-vraag (o) waarde van een bepaalde Server gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. Deze dimensie wordt gebruikt om het percentage van het geheugengebruik van het paginadossier te berekenen. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> Dit is een Numerieke dimensie die de Laatste Rij voor de cs-uri-vraag (o) waarde van een bepaalde Server gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. Deze dimensie wordt gebruikt om het percentage van het geheugengebruik van het paginadossier te berekenen. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Totaal aantal fysieke MegaBytes-geheugen</b> </td> 
-   <td colname="col2"> Dit is een Numerieke dimensie die de Laatste Rij voor de waarde van cs-uri-query(ag) van een bepaalde Server gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> Dit is een Numerieke dimensie die de Laatste Rij voor de waarde van cs-uri-query(ag) van een bepaalde Server gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Fysiek percentage geheugen</b> </td> 
-   <td colname="col2"> Dit is een Numerieke dimensie die de Laatste Rij voor de waarde van cs-uri-query(ag) van een bepaalde Server gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. Deze dimensie wordt gebruikt om het percentage van fysiek geheugengebruik van elke Server te berekenen. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> Dit is een Numerieke dimensie die de Laatste Rij voor de waarde van cs-uri-query(ag) van een bepaalde Server gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. Deze dimensie wordt gebruikt om het percentage van fysiek geheugengebruik van elke Server te berekenen. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Percentage geheugenquery</b> </td> 
-   <td colname="col2"> Dit is een numerieke dimensie die de Laatste Rij voor de cs-uri-vraag van een bepaalde Server waarde gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. Deze afmeting wordt gebruikt om het percentage van het gebruik van het vraaggeheugen van elke Server te berekenen. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> Dit is een numerieke dimensie die de Laatste Rij voor de cs-uri-vraag van een bepaalde Server waarde gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. Deze afmeting wordt gebruikt om het percentage van het gebruik van het vraaggeheugen van elke Server te berekenen. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Netwerkverbindingen</b> </td> 
-   <td colname="col2"> Dit is een Numerieke dimensie die de Laatste Rij voor de waarde van cs-uri-query (q) van een bepaalde Server gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. Dit wordt gebruikt om het aantal netwerkverbindingen te tonen er voor een bepaalde server zijn. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> Dit is een Numerieke dimensie die de Laatste Rij voor de waarde van cs-uri-query (q) van een bepaalde Server gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. Dit wordt gebruikt om het aantal netwerkverbindingen te tonen er voor een bepaalde server zijn. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Centiseconden opiniepeilingvertraging</b> </td> 
-   <td colname="col2"> Deze dimensie wordt gebruikt om de opiniepeilingslatentie te berekenen. De waarde cs-uri-query(m) wordt gedeeld door 10 om afmeting te verminderen, en gekopieerd in het x-poll-latency-centiseconds gebied. Dit is een numerieke dimensie die de Laatste Rij voor een bepaalde server neemt. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> Deze dimensie wordt gebruikt om de opiniepeilingslatentie te berekenen. De waarde cs-uri-query(m) wordt gedeeld door 10 om afmeting te verminderen, en gekopieerd in het x-poll-latency-centiseconds gebied. Dit is een numerieke dimensie die de Laatste Rij voor een bepaalde server neemt. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Snelle controle voltooid</b> </td> 
@@ -98,7 +100,7 @@ De volgende afmetingen zijn beschikbaar voor gebruik in het profiel van de Statu
   </tr> 
   <tr> 
    <td colname="col1"> <b>Ruimtepercentage tijdelijke database</b> </td> 
-   <td colname="col2"> De laatste rij van de waarde cs-uri-query(an) wordt gekopieerd naar het veld x-temp-db-space-percentage. Dit is een numerieke Dimension die wordt gebruikt om het percentage te berekenen van de gebruikte Temp DB-ruimte op een bepaalde server. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> De laatste rij van de waarde cs-uri-query(an) wordt gekopieerd naar het veld x-temp-db-space-percentage. Dit is een numerieke Dimension die wordt gebruikt om het percentage te berekenen van de gebruikte Temp DB-ruimte op een bepaalde server. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Inzichtsversie</b> </td> 
@@ -106,7 +108,7 @@ De volgende afmetingen zijn beschikbaar voor gebruik in het profiel van de Statu
   </tr> 
   <tr> 
    <td colname="col1"> <b>Groep</b> </td> 
-   <td colname="col2"> Het groeperen van woord dat u een andere manier geeft om de resulterende dataset te filtreren. <p>Opmerking:  Deze dimensie wordt geplaatst in insight_monitor_agent.cfg. </p></td> 
+   <td colname="col2"> Het groeperen van woord dat u een andere manier geeft om de resulterende dataset te filtreren. <p>Opmerking: Deze dimensie wordt geplaatst in insight_monitor_agent.cfg. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Cijfers</b> </td> 

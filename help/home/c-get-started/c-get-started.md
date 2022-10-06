@@ -2,7 +2,7 @@
 description: Een overzicht van de basiselementen, procedures, en terminologie die u moet begrijpen wanneer het werken met Data Workbench.
 title: Data Workbench-client
 uuid: 3f99e681-e68f-4aee-aa42-e72a1444b029
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 6%
@@ -12,9 +12,11 @@ ht-degree: 6%
 
 # Data Workbench-client{#data-workbench-client}
 
+{{eol}}
+
 Een overzicht van de basiselementen, procedures, en terminologie die u moet begrijpen wanneer het werken met Data Workbench.
 
-Voor details over het werken met de specifieke types van visualisaties, zie [Analyse Visualisaties](../../home/c-get-started/c-analysis-vis/c-analysis-vis.md#concept-cb5b9716d3404b2b888a55b3efec1fa5) en [Administratieve Interfaces](../../home/c-get-started/c-admin-intrf/c-admin-intrf.md#concept-855c1a91e1a948969fab592adca15f74).
+Voor meer informatie over het werken met de specifieke typen visualisaties raadpleegt u [Analyse visualisaties](../../home/c-get-started/c-analysis-vis/c-analysis-vis.md#concept-cb5b9716d3404b2b888a55b3efec1fa5) en [Administratieve interfaces](../../home/c-get-started/c-admin-intrf/c-admin-intrf.md#concept-855c1a91e1a948969fab592adca15f74).
 
 >[!NOTE]
 >

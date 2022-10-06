@@ -3,7 +3,7 @@ description: Een filter is een uitdrukking die een ondergroep van de gegevens in
 title: Syntaxis voor filterexpressies
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
 exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # Syntaxis voor filterexpressies{#syntax-for-filter-expressions}
 
+{{eol}}
+
 Een filter is een uitdrukking die een ondergroep van de gegevens in een dataset bepaalt.
 
 Een filter geeft elk element van elke dimensie toe of wijst dit af op basis van de relaties tussen de dimensies.
 
-Filters kunnen worden bewerkt met de [!DNL Filter Editor]. Zie [Editors filteren](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
+Filters kunnen worden bewerkt met de opdracht [!DNL Filter Editor]. Zie [Filtereditors](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
 
-In de volgende tabel bevat elke syntaxisbeschrijving een voorbeeld van een metrische expressie die dat filter gebruikt. Bijvoorbeeld, is Sessions[True] metrisch bepaald gebruikend de &quot;Waar&quot;filter. De metrische waarde van Sessies[True] is het zelfde als metrische Sessies omdat de True filter elk element van de dimensie van de Zitting toestaat.
+In de volgende tabel bevat elke syntaxisbeschrijving een voorbeeld van een metrische expressie die dat filter gebruikt. Bijvoorbeeld sessies[Waar] is metrisch bepaald gebruikend de &quot;Waar&quot;filter. De sessies[Waar] De metrische waarde is het zelfde als metrische zittingen omdat de Ware filter elk element van de dimensie van de Zitting toewijst.
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 
@@ -40,7 +42,7 @@ In de volgende tabel bevat elke syntaxisbeschrijving een voorbeeld van een metri
   </tr> 
   <tr> 
    <td colname="col1"> <p>FilterA of FilterB </p> </td> 
-   <td colname="col2"> <p>Hiermee worden elementen toegestaan die door FilterA of FilterB worden geaccepteerd. </p> <p>Voorbeeld: Sessies[ Page="A" of Page="B" ] is het aantal sessies dat pagina A, pagina B of beide heeft bezocht. </p> </td> 
+   <td colname="col2"> <p>Geeft elementen toe die door FilterA of FilterB worden geaccepteerd. </p> <p>Voorbeeld: Sessies[ Page="A" of Page="B" ] is het aantal sessies dat pagina A, pagina B of beide heeft bezocht. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Filteren op dimmen </p> </td> 

@@ -3,14 +3,16 @@ description: Er zijn verschillende typen dimensies beschikbaar in de gegevenswer
 title: Dimension-typen
 uuid: 07659373-8d9b-473d-8daa-ca8e7ac4afe8
 exl-id: cbc25504-2c1c-4622-adc1-c9bbac8e12fb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 0%
 
 ---
 
-# Dimension typen{#dimension-types}
+# Dimension-typen{#dimension-types}
+
+{{eol}}
 
 Er zijn verschillende typen dimensies beschikbaar in de gegevenswerkbankserver. Als dusdanig, is het belangrijk om het afmetingstype te kennen wanneer het gebruiken van een afmeting om metriek, filters, of afgeleide dimensies tot stand te brengen.
 
@@ -34,7 +36,7 @@ De Server van het inzicht kan de volgende types van afmetingen tot stand brengen
   </tr> 
   <tr> 
    <td colname="col1"> Numeriek </td> 
-   <td colname="col2">Een dimensie die geordend, numerieke waarden en een één-op-vele verhouding met een oudertelbare dimensie heeft. Een numerieke dimensie kan worden beschouwd als het vertegenwoordigen van een numerieke eigenschap van elementen van de bovenliggende dimensie. De numerieke afmetingen worden vaak gebruikt om "som"metriek te bepalen. <p>Voorbeeld: De numerieke dimensie van de Ontvangsten van de Zitting bepaalt de opbrengst, in dollars, voor elke Zitting. Elke Zitting heeft één enkel bedrag van opbrengst, maar om het even welk aantal Zittingen zou de zelfde opbrengst kunnen hebben, zodat is de Inkomsten van de Zitting "één-aan-velen"met Zitting. Een metrische "Inkomsten" kan worden gedefinieerd als <span class="filepath"> sum(Session_Revenue, Session)</span>, wat het totale bedrag aan inkomsten voor de geselecteerde sessies oplevert. </p></td> 
+   <td colname="col2">Een dimensie die geordend, numerieke waarden en een één-op-vele verhouding met een oudertelbare dimensie heeft. Een numerieke dimensie kan worden beschouwd als het vertegenwoordigen van een numerieke eigenschap van elementen van de bovenliggende dimensie. De numerieke afmetingen worden vaak gebruikt om "som"metriek te bepalen. <p>Voorbeeld: De numerieke dimensie van de Ontvangsten van de Zitting bepaalt de opbrengst, in dollars, voor elke Zitting. Elke Zitting heeft één enkel bedrag van opbrengst, maar om het even welk aantal Zittingen zou de zelfde opbrengst kunnen hebben, zodat is de Inkomsten van de Zitting "één-aan-velen"met Zitting. Een metrische "Opbrengst" kan worden gedefinieerd als <span class="filepath"> sum(Session_Revenue, Sessie)</span>, met vermelding van het totale bedrag aan inkomsten voor de geselecteerde sessies. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Velen-aan-Velen </td> 

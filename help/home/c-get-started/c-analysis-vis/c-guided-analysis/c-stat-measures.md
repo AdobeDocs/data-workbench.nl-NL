@@ -3,7 +3,7 @@ description: Om de statistieken te helpen, voorziet Data Workbench in drie stati
 title: Statistische maatregelen
 uuid: a8782cd2-d657-4c04-9c5d-8e0af2a3b76e
 exl-id: 166ff98b-d531-4b31-897e-0c7fedbd2f4d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -12,15 +12,17 @@ ht-degree: 0%
 
 # Statistische maatregelen{#statistical-measures}
 
+{{eol}}
+
 Om de statistieken te helpen, voorziet Data Workbench in drie statistische maatregelen in de geleide analyse visualisatie.
 
 >[!NOTE]
 >
 >Hoewel wiskunde u kan helpen oordelen over de correlaties in uw gegevens, moet de context rond de gegevens ook in overweging worden genomen.
 
-* **Chi Sq** pis een test van statistisch belang die het uiterlijk van het vinkje in de visualisatie bepaalt. Wiskundig gezien is het waarschijnlijk dat we de nulhypothese kunnen verwerpen, die stelt dat de verschillen tussen de twee groepen kunnen worden verklaard door willekeurige variaties. Praktisch gezien, als de Chi Sq p-waarde minder dan bijna 100% is, kunnen wij de correlatie ongeacht zijn gemeten sterkte (zoals beschreven in de volgende U statistic en V statistische secties) negeren.
-* **U** statistisch is een maat voor de sterkte van de statistische correlatie. Wiskundig komt het uit een tak van wiskunde, genaamd informatietheorie, en houdt nauw verband met het concept van wederzijdse informatie tussen de distributies van de twee groepen. Het kan ook worden beschouwd als de samendrukbaarheid van een groep bij een optimaal coderingsschema voor de andere groep. Deze maatregel functioneert in de praktijk zeer goed in het algemene geval van een dimensie met veel elementen die weinig bezoekers bevatten. De maatregel varieert van 0 (zwak) tot 1 (sterk).
-* **V** statistisch is ook een maat voor de sterkte van de statistische correlatie. Wiskundig gezien houdt het verband met de bekende V-statistiek van Cramer, die alleen verschilt door een normaliseringsstap die bedoeld is om de symmetrie van de maatregel met betrekking tot de omkering van de selectie te verbeteren. In de praktijk werkt deze maatregel redelijk goed met vele soorten dimensies en houdt hij verband met een veelgebruikte statistische maatstaf. De maatregel varieert van 0 (zwak) tot 1 (sterk).
+* **Chi Sq p** is een test van statistisch belang die het uiterlijk van het vinkje in de visualisatie bepaalt. Wiskundig gezien is het waarschijnlijk dat we de nulhypothese kunnen verwerpen, die stelt dat de verschillen tussen de twee groepen kunnen worden verklaard door willekeurige variaties. Praktisch gezien, als de Chi Sq p-waarde minder dan bijna 100% is, kunnen wij de correlatie ongeacht zijn gemeten sterkte (zoals beschreven in de volgende U statistic en V statistische secties) negeren.
+* **U statistiek** is een maat voor de sterkte van de statistische correlatie. Wiskundig komt het uit een tak van wiskunde, genaamd informatietheorie, en houdt nauw verband met het concept van wederzijdse informatie tussen de distributies van de twee groepen. Het kan ook worden beschouwd als de samendrukbaarheid van een groep bij een optimaal coderingsschema voor de andere groep. Deze maatregel functioneert in de praktijk zeer goed in het algemene geval van een dimensie met veel elementen die weinig bezoekers bevatten. De maatregel varieert van 0 (zwak) tot 1 (sterk).
+* **V statistiek** is ook een maat voor de sterkte van de statistische correlatie. Wiskundig gezien houdt het verband met de bekende V-statistiek van Cramer, die alleen verschilt door een normaliseringsstap die bedoeld is om de symmetrie van de maatregel met betrekking tot de omkering van de selectie te verbeteren. In de praktijk werkt deze maatregel redelijk goed met vele soorten dimensies en houdt hij verband met een veelgebruikte statistische maatstaf. De maatregel varieert van 0 (zwak) tot 1 (sterk).
 
 >[!NOTE]
 >
@@ -28,7 +30,7 @@ Om de statistieken te helpen, voorziet Data Workbench in drie statistische maatr
 
 Met deze visualisatie als richtlijn kunt u andere visualisaties toevoegen aan uw werkruimte voor meer inzicht in uw gegevens op basis van de selectie.
 
-Het volgende [!DNL Site] voorbeeld bevat een staafgrafiek die zittingen voor dagen in Januari, Februari, Maart, en April toont. Merk op dat één dag in Januari wordt geselecteerd.
+Het volgende [!DNL Site] Het voorbeeld bevat een staafgrafiek met sessies voor dagen in januari, februari, maart en april. Merk op dat één dag in Januari wordt geselecteerd.
 
 ![](assets/vis_GuidedAnalysis_withVis.png)
 

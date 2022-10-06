@@ -3,7 +3,7 @@ description: Stappen om het Portaal van het Rapport te openen en ervoor te zorge
 title: Test het rapportportaal
 uuid: eee0df5e-78e0-49b2-853c-40f1b332328b
 exl-id: 197ff815-9234-4dce-b30f-b9cacf259634
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
@@ -12,20 +12,22 @@ ht-degree: 0%
 
 # Test het rapportportaal{#test-the-report-portal}
 
+{{eol}}
+
 Stappen om het Portaal van het Rapport te openen en ervoor te zorgen dat u de rapporten voor uw profiel kunt met succes bekijken.
 
 >[!NOTE]
 >
->U kunt zich niet aanmelden bij [!DNL Report Portal] totdat rapporten worden weergegeven in de map Output.
+>U kunt zich niet aanmelden bij de [!DNL Report Portal] totdat rapporten worden weergegeven in de map Uitvoer.
 
-1. Open [!DNL Report Portal] vanuit uw webbrowser met de volgende URI-indeling:
+1. Open vanuit uw webbrowser de [!DNL Report Portal] de volgende URI-indeling gebruiken:
 
    https://*ServerAddress*/*PortalName*
 
    Voorbeeld: [!DNL https://localhost/VisualReportPortal]
 
-1. Als [!DNL Report Portal] u om login geloofsbrieven vraagt, ga een rekeningsnaam en wachtwoord (bijvoorbeeld, &quot;test&quot;rekening en wachtwoord &quot;gebruiker&quot;voor de standaardrekening) in.
-1. Wanneer [!DNL Report Portal] verschijnt, verifieer dat:
+1. Indien [!DNL Report Portal] vraagt u om aanmeldingsgegevens, voert u een accountnaam en wachtwoord in (bijvoorbeeld account &quot;test&quot; en wachtwoord &quot;user&quot; voor de standaardaccount).
+1. Wanneer de [!DNL Report Portal] wordt weergegeven, controleert u of:
 
    * Het portaal bevat een tab voor elke rapportset in de uitvoermap.
    * Op elk tabblad wordt het samenvattingsrapport van de rapportset weergegeven.

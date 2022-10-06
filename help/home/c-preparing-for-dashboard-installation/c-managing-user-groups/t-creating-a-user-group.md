@@ -3,16 +3,18 @@ description: Gebruikersgroepen maken
 title: Gebruikersgroepen maken
 uuid: 8a474480-81fa-4a86-9937-2fb82e949436
 exl-id: 8af9d635-ff07-486f-845a-44541d577fad
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 2%
 
 ---
 
-# Een gebruikersgroep maken{#creating-a-user-group}
+# Gebruikersgroepen maken{#creating-a-user-group}
 
-1. Klik op **[!UICONTROL Create Group]** om het formulier **[!UICONTROL New Group]** weer te geven.
+{{eol}}
+
+1. Klikken **[!UICONTROL Create Group]** om **[!UICONTROL New Group]** formulier.
 
    ![](assets/create_user_group.png)
 
@@ -37,14 +39,14 @@ ht-degree: 2%
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Toestemmingen</strong></td> 
-    <td class="chdesc stentry"> <p> <span class="uicontrol"> Beheerder</span>: Sla alle dashboards voor alle profielen op, geef deze weer, wijzig ze en verwijder ze. Met beheerdersrechten kan een gebruiker zich aanmelden bij het beheergebied en alle beheerfuncties uitvoeren. </p> <p> <span class="uicontrol"> Alleen</span>-lezen: Beperk machtigingen tot alleen-lezen voor dashboards. De gebruiker kan geen visualisaties toevoegen of wijzigen of dashboards opslaan. </p> <p> <b>Geen machtigingen ingeschakeld  </b>(standaard): Geen toestemmingen gecontroleerd verleent regelmatige gebruikers toestemmingen aan de groep. Deze gebruikers kunnen visualisaties maken en wijzigen, dashboards opslaan en de dashboards bekijken waartoe zij toegang hebben. </p> </td> 
+    <td class="chdesc stentry"> <p> <span class="uicontrol"> Beheerder</span>: Sla alle dashboards voor alle profielen op, geef deze weer, wijzig ze en verwijder ze. Met beheerdersrechten kan een gebruiker zich aanmelden bij het beheergebied en alle beheerfuncties uitvoeren. </p> <p> <span class="uicontrol"> Alleen-lezen</span>: Beperk machtigingen tot alleen-lezen voor dashboards. De gebruiker kan geen visualisaties toevoegen of wijzigen of dashboards opslaan. </p> <p> <b>Geen machtigingen ingeschakeld </b>(standaard): Geen toestemmingen gecontroleerd verleent regelmatige gebruikers toestemmingen aan de groep. Deze gebruikers kunnen visualisaties maken en wijzigen, dashboards opslaan en de dashboards bekijken waartoe zij toegang hebben. </p> </td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Beschikbare gebruikers/groepsleden</strong></td> 
-    <td class="chdesc stentry">Sleep gebruikers van de lijst van <span class="uicontrol"> Beschikbare Gebruikers</span> in <span class="uicontrol"> de Leden van de Groep </span>sectie. De groepsleden kunnen op elk gewenst moment worden gewijzigd. </td> 
+    <td class="chdesc stentry">Gebruikers slepen en neerzetten in de lijst met <span class="uicontrol"> Beschikbare gebruikers</span> in de <span class="uicontrol"> Groepsleden </span>sectie. De groepsleden kunnen op elk gewenst moment worden gewijzigd. </td> 
     </tr> 
     </table>
 
-1. Klik **[!UICONTROL Create Group]** om de gebruikersgroep tot stand te brengen.
+1. Klikken **[!UICONTROL Create Group]** om de gebruikersgroep te maken.
 
    Als de bewerking succesvol was, wordt een bericht weergegeven dat aangeeft dat de gebruikersgroep is gemaakt.

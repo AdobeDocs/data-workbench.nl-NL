@@ -3,7 +3,7 @@ description: Browsers van de weg kunnen worden gevormd om met om het even welke 
 title: Een padbrowser configureren
 uuid: 1ba3fb6e-b76f-428f-b6ec-077669c3b305
 exl-id: be6a68f7-e3e3-4207-a112-3a4fdd5c5f57
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%
@@ -12,16 +12,18 @@ ht-degree: 0%
 
 # Een padbrowser configureren{#configure-a-path-browser}
 
+{{eol}}
+
 Browsers van de weg kunnen worden gevormd om met om het even welke combinatie basisdimensie, groepsdimensie, niveaudimensie, en metrisch te werken die voor uw toepassing en dataset steek houdt.
 
-Nadat u een wegbrowser vormt, is het vermeld met andere wegbrowsers in het [!DNL Add Visualization] menu.
+Nadat u een wegbrowser vormt, is het vermeld met andere wegbrowsers in [!DNL Add Visualization] -menu.
 
-1. Klik in [!DNL Profile Manager] op **[!UICONTROL Menu]** en **[!UICONTROL Path Browser]**.**[!UICONTROL Add Visualization]**
+1. In de [!DNL Profile Manager], klikt u op **[!UICONTROL Menu]** en klik vervolgens op **[!UICONTROL Add Visualization]** en **[!UICONTROL Path Browser]**.
 
-   Ten minste één [!DNL *.vw]-bestand bevindt zich in de map Path Browser.
+   Ten minste één [!DNL *.vw] bestand bevindt zich in de map Path Browser.
 
 1. Klik met de rechtermuisknop op het vinkje voor het gewenste bestand en klik op **[!UICONTROL Make Local]**.
-1. Klik met de rechtermuisknop op het vinkje voor het bestand in de kolom [!DNL User] en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Klik met de rechtermuisknop op het vinkje voor het bestand in het dialoogvenster [!DNL User] kolom en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Bewerk de parameters van het bestand met behulp van het volgende voorbeeldbestand en de volgende tabel als hulplijnen:
 
    ```
@@ -67,14 +69,14 @@ Nadat u een wegbrowser vormt, is het vermeld met andere wegbrowsers in het [!DNL
 
 >[!NOTE]
 >
->Voor meer informatie over de basisafmeting, groepsafmeting, niveauafmeting, en metrisch voor wegbrowser, zie [Browsers van de Weg](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b).
+>Voor meer informatie over de basisafmeting, groepsafmeting, niveauafmeting, en metrisch voor wegbrowser, zie [Padbrowsers](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b).
 
-1. Klik in Kladblok op **[!UICONTROL File]** > **[!UICONTROL Save As]** om het bestand op te slaan met een nieuwe naam op basis van de groepsdimensie, dat wil zeggen *Naam van groepsdimensie*.vw.
+1. Klik in Kladblok op **[!UICONTROL File]** > **[!UICONTROL Save As]** om het bestand op te slaan onder een andere naam op basis van de groepsdimensie, dat wil zeggen: *Naam van groepsdimensie*.vw.
 
    Sla het bestand op in de map Path Browser.
 
    >[!NOTE]
    >
-   >Om ervoor te zorgen dat uw wegbrowser als [!DNL *.vw] dossier, in het [!DNL Save As] venster wordt bewaard, plaats sparen als type aan Alle Dossiers.
+   >Om ervoor te zorgen dat uw padbrowser wordt opgeslagen als een [!DNL *.vw] in het [!DNL Save As] , stelt u Opslaan als type in op Alle bestanden.
 
-1. (Optioneel) Als u de wijzigingen beschikbaar wilt maken voor alle gebruikers van het werkprofiel, klikt u in [!DNL Profile Manager] met de rechtermuisknop op het vinkje voor het bestand in de kolom [!DNL User] en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. (Optioneel) Als u de wijzigingen beschikbaar wilt maken voor alle gebruikers van het werkprofiel, gaat u naar [!DNL Profile Manager]klikt u met de rechtermuisknop op het vinkje voor het bestand in het dialoogvenster [!DNL User] kolom en klik op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

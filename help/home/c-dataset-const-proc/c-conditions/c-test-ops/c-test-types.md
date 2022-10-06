@@ -3,18 +3,20 @@ description: De vergelijkingsvoorwaarde en de voorwaarde van de Waaier vereisen 
 title: Testtypes voor testbewerkingen
 uuid: dc0433dd-a35e-472e-8975-f58347512c11
 exl-id: 8abed46e-e76d-47c0-bbe9-cf98cf2d61e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
 
-# Testtypes voor de Verrichtingen van de Test{#test-types-for-test-operations}
+# Testtypes voor testbewerkingen{#test-types-for-test-operations}
+
+{{eol}}
 
 De vergelijkingsvoorwaarde en de voorwaarde van de Waaier vereisen dat u het type van vergelijking specificeert dat voor de voorwaarde moet worden gemaakt.
 
-In de volgende tabel worden de beschikbare typen beschreven ( [!DNL LEXICAL], [!DNL NUMERIC] en [!DNL DATETIME]).
+In de volgende tabel worden de beschikbare typen beschreven ( [!DNL LEXICAL], [!DNL NUMERIC], en [!DNL DATETIME]).
 
 <table id="table_1B3AD8BDF0414D0AB8EE0E6D1B53E2CE"> 
  <thead> 
@@ -33,10 +35,10 @@ In de volgende tabel worden de beschikbare typen beschreven ( [!DNL LEXICAL], [!
   <tr> 
    <td colname="col1"> <p><span class="wintitle"> DATETIME</span> </p> </td> 
    <td colname="col2"> <p>Zet eerst het invoerveld in een datum. Als het invoerveld niet in een geldige datum kan worden omgezet, retourneert de voorwaardetest false. Als het veld in een datum kan worden omgezet, retourneert de test alleen de waarde "true" als de invoerdatum op of na de opgegeven minimumdatum valt en op of voor de opgegeven maximumdatum. </p> </td> 
-   <td colname="col3"> <p>Als de minimale en maximale datums niet geldig zijn, wordt de gegevensset niet samengesteld. </p> <p> Als de minimale of maximale data niet worden opgegeven, vervangt het systeem op de juiste wijze ofwel de minimale datum (1 januari 1600) ofwel de maximale datum (ergens in de 24e eeuw). </p> <p> Adobe raadt u aan een van de volgende indelingen te gebruiken voor <span class="wintitle"> DATETIME</span>: </p> 
+   <td colname="col3"> <p>Als de minimale en maximale datums niet geldig zijn, wordt de gegevensset niet samengesteld. </p> <p> Als de minimale of maximale data niet worden opgegeven, vervangt het systeem op de juiste wijze ofwel de minimale datum (1 januari 1600) ofwel de maximale datum (ergens in de 24e eeuw). </p> <p> Adobe raadt aan een van de volgende indelingen te gebruiken voor <span class="wintitle"> DATETIME</span>: </p> 
     <ul id="ul_44F469CC5D974382AF70D7B1975CF077"> 
      <li id="li_DB5FD4AFD6B34436ACD7C13282F64956"> 1 januari 2013 HH:MM:SS EDT </li> 
-     <li id="li_307580C3F97D495BB16F1212DB38CE37"> 1 januari 2013 UU:MM:SS GMT </li> 
+     <li id="li_307580C3F97D495BB16F1212DB38CE37"> 1 jan. 2013 HH:MM:SS GMT </li> 
     </ul> <p> De tijdzone wordt standaard ingesteld op GMT als dit niet is opgegeven. </p> </td> 
   </tr> 
   <tr> 

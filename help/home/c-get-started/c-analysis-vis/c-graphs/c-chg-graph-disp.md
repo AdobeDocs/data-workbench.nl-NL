@@ -3,7 +3,7 @@ description: Standaard worden in grafiekvisualisaties balken weergegeven, maar u
 title: Een grafiekweergave wijzigen
 uuid: 8448afab-a2b0-4f96-a0e5-920013e83905
 exl-id: b8d8d403-0432-42e1-8019-2d2d0a891e55
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Een grafiekweergave wijzigen{#change-a-graph-display}
+
+{{eol}}
 
 Standaard worden in grafiekvisualisaties balken weergegeven, maar u kunt de balken eenvoudig weergeven als lijnen en andersom.
 
@@ -26,7 +28,7 @@ Klik met de rechtermuisknop op het dimensielabel onder aan de grafiek en klik op
 
 **Verloopbedekking op een grafiek**
 
-U kunt met de rechtermuisknop klikken en een **Verloopbedekking** selecteren in het menu om grafiekelementen beter weer te geven.
+U kunt met de rechtermuisknop klikken en een **Verloopbedekking** in het menu om grafiekelementen beter weer te geven.
 
 ![](assets/6_51_gradient_graph.png)
 

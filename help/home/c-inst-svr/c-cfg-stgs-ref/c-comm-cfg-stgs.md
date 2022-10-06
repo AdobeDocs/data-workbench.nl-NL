@@ -3,14 +3,16 @@ description: Instructies om mededelingen voor de Server of Repeater van het Inzi
 title: Configuratie-instellingen voor communicatie
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 exl-id: a35788d1-de36-4350-a107-eee392e44503
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
 
 ---
 
-# Instellingen voor configuratie van communicatie{#communications-configuration-settings}
+# Configuratie-instellingen voor communicatie{#communications-configuration-settings}
+
+{{eol}}
 
 Instructies om mededelingen voor de Server of Repeater van het Inzicht te vormen.
 
@@ -32,11 +34,11 @@ Voltooi de parameters in het volgende bestand:
  <tbody> 
   <tr> 
    <td colname="col1"> Toegangscontrolebestand </td> 
-   <td colname="col2"> <p>Locatie van het bestand <span class="filepath"> Access Control.cfg </span>. De standaardlocatie is de map <span class="filepath"> Access Control </span> in de installatiemap <span class="keyword"> Insight Server </span> of <span class="wintitle"> Repeater </span>. </p> <p>Voorbeeld: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
+   <td colname="col2"> <p>Plaats van de <span class="filepath"> Toegangsbeheer.cfg </span> bestand. De standaardlocatie is <span class="filepath"> Toegangsbeheer </span> in de <span class="keyword"> Insight Server </span> of <span class="wintitle"> Repeater </span> installatiemap. </p> <p>Voorbeeld: <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Access Log Directory </td> 
-   <td colname="col2"> <p>Map waaraan u de controlelogboeken wilt toewijzen. </p> <p>Voorbeeld: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Opmerking:  U kunt controlelogboeken toewijzen aan een ander lokaal station (voorbeeld: <span class="filepath"> tekenreeks: P:\\Audit\\ </span>), maar wijs geen controlelogboeken aan een netwerkaandrijving toe. </p> </p> </td> 
+   <td colname="col2"> <p>Map waaraan u de controlelogboeken wilt toewijzen. </p> <p>Voorbeeld: <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Opmerking: U kunt controlelogboeken toewijzen aan een ander lokaal station (voorbeeld: <span class="filepath"> tekenreeks: P:\\Audit\\ </span>), maar geen controlelogboeken aan een netwerkaandrijving in kaart brengen. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Toegangslogbestand is volledig </td> 
@@ -70,20 +72,20 @@ Voltooi de parameters in het volgende bestand:
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Lokaal pad = tekenreeks: Logbestanden\\ </p> </td> 
    <td colname="col2"> <p>Map waarin u de logbestanden wilt opslaan. </p> <p>Voorbeeld: </p> <code> 9&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>Als u toegang tot deze map wilt krijgen vanuit het <span class="wintitle"> Server Files Manager </span>, moet de locatie die in deze parameter is opgegeven, overeenkomen met de locatie die u hebt opgegeven in de parameter Log Paths in het bestand <span class="filepath"> Log Processing.cfg </span>. Voor meer informatie over het wijzigen van de folder van Logs in <span class="filepath"> Logboek Processing.cfg </span> dossier, zie het hoofdstuk van het Dossier van de Configuratie van de Verwerking van het Logboek van <i>de Gids van de Configuratie van de Dataset</i>. </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>U kunt deze map openen vanuit de <span class="wintitle"> Serverbestandsbeheer </span>, moet de locatie die in deze parameter is opgegeven, overeenkomen met de locatie die u in de parameter Log Paths in het dialoogvenster <span class="filepath"> Logverwerking.cfg </span> bestand. Voor meer informatie over het wijzigen van de folder van Logs in <span class="filepath"> Logverwerking.cfg </span> dossier, zie het hoofdstuk van het Dossier van de Configuratie van de Verwerking van het Logboek van het <i>Configuratie-handleiding voor gegevensset</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Lokaal pad = tekenreeks: Audit\\ </p> </td> 
    <td colname="col2"> <p>Map waaraan u de controlelogboeken wilt toewijzen. </p> <p>Voorbeeld: </p> <code> 5&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Opmerking:  <p>U kunt controlelogboeken toewijzen aan een ander lokaal station (voorbeeld: <span class="filepath"> tekenreeks: P:\\Audit\\ </span>), maar wijs geen controlelogboeken aan een netwerkaandrijving toe. </p> <p>Als u toegang tot deze map wilt krijgen vanuit de <span class="wintitle"> Server Files Manager </span>, moet de locatie die in deze parameter is opgegeven, overeenkomen met de locatie die u in de parameter Access Log Directory in dit bestand hebt opgegeven. </p> </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Opmerking:  <p>U kunt controlelogboeken toewijzen aan een ander lokaal station (voorbeeld: <span class="filepath"> tekenreeks: P:\\Audit\\ </span>), maar geen controlelogboeken aan een netwerkaandrijving in kaart brengen. </p> <p>U kunt deze map openen vanuit de <span class="wintitle"> Serverbestandsbeheer </span>, moet de plaats die in deze parameter wordt gespecificeerd de plaats aanpassen die u in de parameter van de Folder van het Logboek van de Toegang in dit dossier. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>NormalizeServer: </td> 
-   <td colname="col2"> <p>Deze parameter is alleen van toepassing op <span class="keyword"> Insight Server </span>. </p> <p>Voor meer informatie over het specificeren van de Gecentraliseerde Server van de Normalisatie voor uw <span class="keyword"> cluster van de Server </span> van het Inzicht, zie het hoofdstuk van het Dossier van de Configuratie van de Verwerking van het Logboek van <i>Gids van de Configuratie van de Dataset</i>. </p> </td> 
+   <td colname="col2"> <p>Deze parameter is alleen van toepassing op <span class="keyword"> Insight Server </span>. </p> <p>Voor meer informatie over het specificeren van de Gecentraliseerde Server van de Normalisatie voor uw <span class="keyword"> Insight Server </span> cluster, zie het hoofdstuk van het Dossier van de Configuratie van de Verwerking van het Logboek van <i>Configuratie-handleiding voor gegevensset</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>ReportStatusServer: </p> <p> URI = tekenreeks: /ReportStatus.vsp </p> </td> 
-   <td colname="col2"> <p>Deze parameter is alleen van toepassing op <span class="keyword"> Insight Server </span>. </p> <p>Laat u toe om <span class="keyword"> status van het Rapport </span> in de Gedetailleerde interface van de Status voor <span class="keyword"> de Server van het Inzicht </span> te bekijken. </p> </td> 
+   <td colname="col2"> <p>Deze parameter is alleen van toepassing op <span class="keyword"> Insight Server </span>. </p> <p>Hiermee kunt u de weergave inschakelen <span class="keyword"> Rapportage </span> status in de Gedetailleerde interface van de Status voor <span class="keyword"> Insight Server </span>. </p> </td> 
   </tr> 
  </tbody> 
 </table>

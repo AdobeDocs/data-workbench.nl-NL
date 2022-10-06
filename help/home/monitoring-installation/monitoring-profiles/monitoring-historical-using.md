@@ -3,26 +3,28 @@ description: Gebruik het historisch profiel van de gegevenswerkbank om te zien h
 title: De werkruimte Historisch van Data Workbench
 uuid: 61c45cae-f255-4d20-bb6b-f318c8dd8214
 exl-id: e6d7e924-641e-468c-a828-16ebe1c8724f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
-# Historisch Data Workbench-werkruimte{#data-workbench-historic-workspace}
+# De werkruimte Historisch van Data Workbench{#data-workbench-historic-workspace}
+
+{{eol}}
 
 Gebruik het historisch profiel van de gegevenswerkbank om te zien hoe configuratie, hardware, en andere veranderingen prestaties, stabiliteit, en servercapaciteit in tijd beïnvloeden.
 
-Het historische profiel bevat een profielgebaseerde [Profile Performance](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-184a86f9de054970bf68515bb9dea85d) dataset en de servergebaseerde [Server Performance](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5dad5870384b40e094d50173fcd90a09) dataset onder het tabblad **[!UICONTROL Performance]**. Dit zijn de het meest algemeen gebruikte datasets die voor een verleden perspectief van de prestaties van de gegevenswerkbankserver worden bekeken. Daarnaast kunt u de [Componenten](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) en [Verwerkingsmodus](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) weergeven door het tabblad **[!UICONTROL Up Time]** te selecteren.
+Het profiel Historisch bevat een op een profiel gebaseerd profiel [Profielprestaties](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-184a86f9de054970bf68515bb9dea85d) dataset en op server-gebaseerde [Serverprestaties](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5dad5870384b40e094d50173fcd90a09) gegevensset onder de **[!UICONTROL Performance]** tab. Dit zijn de het meest algemeen gebruikte datasets die voor een verleden perspectief van de prestaties van de gegevenswerkbankserver worden bekeken. Bovendien kunt u de [Componenten](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) en [Verwerkingsmodus](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) door **[!UICONTROL Up Time]** tab.
 
 ![](assets/Historic_Performance.png)
 
-Daarnaast kunt u de [Componenten](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) en [Verwerkingsmodus](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) weergeven door het tabblad **[!UICONTROL Up Time]** te selecteren.
+Bovendien kunt u de [Componenten](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) en [Verwerkingsmodus](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) door **[!UICONTROL Up Time]** tab.
 
-Zie [Dimension in het historisch profiel van het Inzicht](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0) voor aanvullende referentiegegevens over de afmetingen die worden gebruikt in het historisch profiel van de gegevenswerkbank.
+Zie voor meer informatie over de afmetingen die worden gebruikt in het historisch profiel van de werkbank Gegevens [Dimension in het historisch profiel van het Inzicht.](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
 
-## Werkruimte voor profielprestaties {#section-184a86f9de054970bf68515bb9dea85d}
+## Werkruimte Profielprestaties {#section-184a86f9de054970bf68515bb9dea85d}
 
 Deze dataset omvat de volgende relevante metriek voor de controle van de gegevenswerkbank.
 
@@ -44,7 +46,7 @@ Deze dataset controleert servermetriek voorbij het werkingsgebied van inbegrepen
 
 ![](assets/Historic_Server_Performance.png)
 
-## Componentwerkruimte {#section-5be7223abb384784bafe7b37c764ea66}
+## De werkruimte Componenten {#section-5be7223abb384784bafe7b37c764ea66}
 
 Deze dataset wordt gevestigd onder de Up Tijd tabel.
 
@@ -57,9 +59,9 @@ De dataset van Componenten omvat twee aspecten voor componentengezondheid:
 
 ![](assets/Up_Time_components.png)
 
-## Werkruimte voor verwerkingsmodus {#section-3e1dedb9474e4b4ba513240943e76817}
+## Werkruimte Verwerkingsmodus {#section-3e1dedb9474e4b4ba513240943e76817}
 
-Deze werkruimte bevindt zich onder het tabblad Up Time. In deze werkruimte kunt u zien hoeveel tijd er wordt besteed in de modus Snel invoeren, Snel samenvoegen en In real-time.
+Deze werkruimte bevindt zich onder het tabblad Up Time. In deze werkruimte kunt u zien hoeveel tijd er wordt besteed in de modus voor snel invoeren, snel samenvoegen en realtime.
 
 ![](assets/Up_Time_Processing_mode.png)
 

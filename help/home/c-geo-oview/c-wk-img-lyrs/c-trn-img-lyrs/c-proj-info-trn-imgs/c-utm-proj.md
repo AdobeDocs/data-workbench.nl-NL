@@ -3,7 +3,7 @@ description: De Universal Transverse Mercator (UTM)-projectie wordt gedefinieerd
 title: Universal Transverse Mercator-projecties
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
 exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -12,19 +12,21 @@ ht-degree: 0%
 
 # Universal Transverse Mercator-projecties{#universal-transverse-mercator-projections}
 
+{{eol}}
+
 De Universal Transverse Mercator (UTM)-projectie wordt gedefinieerd door acht parameters.
 
 Wanneer u een Universal Transverse Mercator-projectie opgeeft voor een achtergrondafbeeldingslaag, moeten de bestanden van de terreinafbeelding worden uitgelijnd met false (geprojecteerd) ten noorden in de richting van de bovenkant van de afbeelding en met false ten oosten rechts van de afbeelding.
 
-Als u een UTM-projectie wilt opgeven voor een willekeurige terreinafbeeldingsbron, moet u het [!DNL Terrain Images.cfg]-bestand openen in een teksteditor zoals Kladblok, de parameter Projectie-info instellen op &quot;TransverseMercatorProjection&quot; en instellingen toevoegen voor de UTM-projectie.
+Als u een UTM-projectie wilt opgeven voor een willekeurige terreinafbeeldingsbron, moet u het dialoogvenster [!DNL Terrain Images.cfg] in een teksteditor, zoals Kladblok, de parameter Projectie-info instellen op &quot;TransverseMercatorProjection&quot; en instellingen toevoegen voor de UTM-projectie.
 
 **Een Universal Transverse Mercator-projectie opgeven**
 
-1. Klik in [!DNL Server Files Manager] op **[!UICONTROL Components]** om de inhoud ervan weer te geven. Het [!DNL Terrain Images.cfg]-bestand bevindt zich in deze map.
+1. In de [!DNL Server Files Manager], klikt u op **[!UICONTROL Components]** om de inhoud te bekijken. De [!DNL Terrain Images.cfg] bestand bevindt zich in deze map.
 
-1. Klik met de rechtermuisknop op het vinkje in de kolom *servernaam* voor [!DNL Terrain Images.cfg] en klik vervolgens op **[!UICONTROL Make Local]**. In de kolom [!DNL Temp] wordt een vinkje weergegeven voor [!DNL Terrain Images.cfg].
+1. Klik met de rechtermuisknop op het vinkje in het dialoogvenster *servernaam* kolom voor [!DNL Terrain Images.cfg]en klik vervolgens op **[!UICONTROL Make Local]**. Er verschijnt een vinkje in het dialoogvenster [!DNL Temp] kolom voor [!DNL Terrain Images.cfg].
 
-1. Klik met de rechtermuisknop op het nieuwe vinkje in de kolom [!DNL Temp] en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Het [!DNL Terrain Images.cfg]bestand wordt weergegeven in een Kladblok-venster.
+1. Klik met de rechtermuisknop op het nieuwe vinkje in het dialoogvenster [!DNL Temp] kolom en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. De [!DNL Terrain Images.cfg]wordt weergegeven in een Kladblok-venster.
 
 1. Bewerk de parameters voor projectie-info met behulp van het volgende voorbeeldbestandsfragment en de parametertabel als hulplijnen. Zorg ervoor dat u het projectietype opgeeft, zoals hieronder wordt gemarkeerd.
 

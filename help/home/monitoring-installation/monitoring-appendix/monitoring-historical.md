@@ -3,7 +3,7 @@ description: De volgende afmetingen zijn beschikbaar voor gebruik in de gegevens
 title: Dimension in het historisch profiel van de Data Workbench
 uuid: 6d93fba4-986b-46a4-9479-aeb54853dff5
 exl-id: 9df1f317-a985-4132-b32e-f2263e0c23b2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Dimension in het historisch profiel van de Data Workbench{#dimensions-in-the-data-workbench-historic-profile}
+
+{{eol}}
 
 De volgende afmetingen zijn beschikbaar voor gebruik in de gegevenswerkbank Historisch profiel.
 
@@ -22,7 +24,7 @@ De volgende afmetingen zijn beschikbaar voor gebruik in de gegevenswerkbank Hist
  <tbody> 
   <tr> 
    <td colname="col1"> <b>Blok</b> </td> 
-   <td colname="col2">Dit is het enige telbare in deze configuratie, is het de wortel voor alle dimensies. Een blok kan als een server worden beschouwd. Het veld x-trackingid wordt gebruikt. <p>Opmerking:  De blok-id is een hash van de servernaam plus de hostnaam. Er zal dus ongeveer één blok per server per profiel zijn. </p></td> 
+   <td colname="col2">Dit is het enige telbare in deze configuratie, is het de wortel voor alle dimensies. Een blok kan als een server worden beschouwd. Het veld x-trackingid wordt gebruikt. <p>Opmerking: De blok-id is een hash van de servernaam plus de hostnaam. Er zal dus ongeveer één blok per server per profiel zijn. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Ping</b> </td> 
@@ -82,19 +84,19 @@ De volgende afmetingen zijn beschikbaar voor gebruik in de gegevenswerkbank Hist
   </tr> 
   <tr> 
    <td colname="col1"> <b>Geschatte wiepper dekaseconds</b> </td> 
-   <td colname="col2"> Het veld x-estimated-sweep-dekaseconds wordt gebruikt in deze numerieke Dimension. Dit is de geschatte controletijd van de servers gedeeld door tien (verminderde resolutie van vegen meting om dimensie redelijker te maken). <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> Het veld x-estimated-sweep-dekaseconds wordt gebruikt in deze numerieke Dimension. Dit is de geschatte controletijd van de servers gedeeld door tien (verminderde resolutie van vegen meting om dimensie redelijker te maken). <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Snelle invoer MegaBytes per minuut</b> </td> 
-   <td colname="col2"> De waarde cs-uri-query(bj) wordt gebruikt voor deze dimensie. De laatste rij voor een blok wordt gebruikt als waarde voor de dimensie. Als de dataset Snelle Input deze Numerieke minieme waarde in zal tonen MB per waarbij het systeem gegevens invoert. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> De waarde cs-uri-query(bj) wordt gebruikt voor deze dimensie. De laatste rij voor een blok wordt gebruikt als waarde voor de dimensie. Als de dataset Snelle Input deze Numerieke minieme waarde in zal tonen MB per waarbij het systeem gegevens invoert. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Snel MegaBytes samenvoegen per minuut</b> </td> 
-   <td colname="col2">De waarde cs-uri-query(bk) wordt gebruikt voor deze dimensie. De laatste rij voor een blok wordt gebruikt als waarde voor de dimensie. Als de dataset Deze Numerieke waarde van de Fusie in Snelle is zal de MB per minuut tonen waarbij het systeem samenvoegt. <p><p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></p></td> 
+   <td colname="col2">De waarde cs-uri-query(bk) wordt gebruikt voor deze dimensie. De laatste rij voor een blok wordt gebruikt als waarde voor de dimensie. Als de dataset Deze Numerieke waarde van de Fusie in Snelle is zal de MB per minuut tonen waarbij het systeem samenvoegt. <p><p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Veld GigaBytes</b> </td> 
-   <td colname="col2">De waarde cs-uri-query(bg) wordt gebruikt voor deze dimensie. De waarde wordt gedeeld door 1000 en afgerond naar het dichtstbijzijnde gehele getal. Deze numerieke Dimension zal de hoeveelheid ruimte tonen de Gebieden in de dataset gebruiken. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2">De waarde cs-uri-query(bg) wordt gebruikt voor deze dimensie. De waarde wordt gedeeld door 1000 en afgerond naar het dichtstbijzijnde gehele getal. Deze numerieke Dimension zal de hoeveelheid ruimte tonen de Gebieden in de dataset gebruiken. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Groep</b> </td> 
@@ -110,31 +112,31 @@ De volgende afmetingen zijn beschikbaar voor gebruik in de gegevenswerkbank Hist
   </tr> 
   <tr> 
    <td colname="col1"> <b>Gemiddelde belasting</b> </td> 
-   <td colname="col2"> Dit is een Numerieke dimensie die de Laatste Rij voor de waarde van cs-uri-query(i) van een bepaalde Server gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. Deze dimensie wordt gebruikt om de gemiddelde lading op de servers in het systeem te berekenen die worden gecontroleerd. <p><p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></p></td> 
+   <td colname="col2"> Dit is een Numerieke dimensie die de Laatste Rij voor de waarde van cs-uri-query(i) van een bepaalde Server gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is. Deze dimensie wordt gebruikt om de gemiddelde lading op de servers in het systeem te berekenen die worden gecontroleerd. <p><p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Percentage voor logarittering</b> </td> 
-   <td colname="col2">De waarde cs-uri-query(be) wordt gebruikt voor deze numerieke dimensie, die op pingniveau wordt gebouwd. Deze afmeting wordt gebruikt om het percentage logboeken te berekenen die worden gelezen. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2">De waarde cs-uri-query(be) wordt gebruikt voor deze numerieke dimensie, die op pingniveau wordt gebouwd. Deze afmeting wordt gebruikt om het percentage logboeken te berekenen die worden gelezen. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Percentage geheugenpaginabestand</b> </td> 
-   <td colname="col2"> Dit is een Numerieke dimensie die cs-uri-vraag (o) waarde gebruikt, die op het Pingniveau wordt gebouwd. De voorwaarde is dat cs-uri-query(k) niet leeg is en dat cs-uri-query(a) overeenkomt met "1". Deze dimensie wordt gebruikt om het percentage van het geheugengebruik van het paginadossier te berekenen. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> Dit is een Numerieke dimensie die cs-uri-vraag (o) waarde gebruikt, die op het Pingniveau wordt gebouwd. De voorwaarde is dat cs-uri-query(k) niet leeg is en dat cs-uri-query(a) overeenkomt met "1". Deze dimensie wordt gebruikt om het percentage van het geheugengebruik van het paginadossier te berekenen. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Totaal aantal fysieke MegaBytes-geheugen</b> </td> 
-   <td colname="col2">Dit is een Numerieke dimensie die de cs-uri-vraag (ag) waarde gebruikt, die op het Pingniveau wordt gebouwd. De methode is afhankelijk van cs-uri-query(k) die niet leeg is en van cs-uri-query(a) die overeenkomt met "1. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2">Dit is een Numerieke dimensie die de cs-uri-vraag (ag) waarde gebruikt, die op het Pingniveau wordt gebouwd. De methode is afhankelijk van cs-uri-query(k) die niet leeg is en van cs-uri-query(a) die overeenkomt met "1. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Fysiek percentage geheugen</b> </td> 
-   <td colname="col2">Dit is een Numerieke dimensie die de cs-uri-vraag (ag) waarde gebruikt, die op het Pingniveau wordt gebouwd. De methode is afhankelijk van cs-uri-query(k) die niet leeg is en van cs-uri-query(a) die overeenkomt met "1. Deze dimensie wordt gebruikt om het percentage van fysiek geheugengebruik van elke Server te berekenen. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2">Dit is een Numerieke dimensie die de cs-uri-vraag (ag) waarde gebruikt, die op het Pingniveau wordt gebouwd. De methode is afhankelijk van cs-uri-query(k) die niet leeg is en van cs-uri-query(a) die overeenkomt met "1. Deze dimensie wordt gebruikt om het percentage van fysiek geheugengebruik van elke Server te berekenen. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Percentage geheugenquery</b> </td> 
-   <td colname="col2"> Dit is een numerieke dimensie die de cs-uri-vraag(s) waarde op pingniveau gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is en dat cs-uri-query(a) overeenkomt met "1. Deze afmeting wordt gebruikt om het percentage van het gebruik van het vraaggeheugen van elke Server te berekenen. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> Dit is een numerieke dimensie die de cs-uri-vraag(s) waarde op pingniveau gebruikt. De voorwaarde is dat cs-uri-query(k) niet leeg is en dat cs-uri-query(a) overeenkomt met "1. Deze afmeting wordt gebruikt om het percentage van het gebruik van het vraaggeheugen van elke Server te berekenen. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Netwerkverbindingen</b> </td> 
-   <td colname="col2"> Dit is een Numerieke dimensie die de cs-uri-vraag (q) waarde gebruikt die op het Pingniveau wordt gebouwd. De voorwaarde is dat cs-uri-query(k) niet leeg is en dat cs-uri-query(a) overeenkomt met "1. Dit wordt gebruikt om het aantal netwerkverbindingen te tonen er voor een bepaalde server zijn. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> Dit is een Numerieke dimensie die de cs-uri-vraag (q) waarde gebruikt die op het Pingniveau wordt gebouwd. De voorwaarde is dat cs-uri-query(k) niet leeg is en dat cs-uri-query(a) overeenkomt met "1. Dit wordt gebruikt om het aantal netwerkverbindingen te tonen er voor een bepaalde server zijn. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Rijen uitvoeren</b> </td> 
@@ -146,11 +148,11 @@ De volgende afmetingen zijn beschikbaar voor gebruik in de gegevenswerkbank Hist
   </tr> 
   <tr> 
    <td colname="col1"> <b>Centiseconden opiniepeilingvertraging</b> </td> 
-   <td colname="col2">De waarde cs-uri-query(m) wordt gedeeld door 10 om afmeting te verminderen, en gekopieerd in het x-poll-latency-centiseconds gebied. Dit is een Numerieke afmeting die op het pingniveau wordt gebouwd, wordt bepaald dat cs-uri-query (k) niet leeg is, en cs-uri-query(a) past "1"aan/ Deze afmeting wordt gebruikt om de opiniepeilingslatentie te berekenen. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2">De waarde cs-uri-query(m) wordt gedeeld door 10 om afmeting te verminderen, en gekopieerd in het x-poll-latency-centiseconds gebied. Dit is een Numerieke afmeting die op het pingniveau wordt gebouwd, wordt bepaald dat cs-uri-query (k) niet leeg is, en cs-uri-query(a) past "1"aan/ Deze afmeting wordt gebruikt om de opiniepeilingslatentie te berekenen. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Verwerkingsmodus-id</b> </td> 
-   <td colname="col2"> De waarde cs-uri-query(bb) wordt gebruikt voor deze Eenvoudige Dimension, die op pingniveau wordt gebouwd. Het wordt bepaald dat cs-uri-query(bb) niet leeg is, en dat cs-uri-query(a) "2"identiteitskaart van de Wijze van de Verwerking toestaat om te zien welke wijze van verwerking het systeem in (Snelle Invoer, Snelle Fusie, Echte Tijd) is. <p>Opmerking:  Deze dimensie wordt verborgen en vervolgens opnieuw blootgesteld aan vriendelijke waarden in de verwerkingsmodus voor afmetingen aan de clientzijde. </p></td> 
+   <td colname="col2"> De waarde cs-uri-query(bb) wordt gebruikt voor deze Eenvoudige Dimension, die op pingniveau wordt gebouwd. Het wordt bepaald dat cs-uri-query(bb) niet leeg is, en dat cs-uri-query(a) "2"identiteitskaart van de Wijze van de Verwerking toestaat om te zien welke wijze van verwerking het systeem in (Snelle Invoer, Snelle Fusie, Echte Tijd) is. <p>Opmerking: Deze dimensie wordt verborgen en vervolgens opnieuw blootgesteld aan vriendelijke waarden in de verwerkingsmodus voor afmetingen aan de clientzijde. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Profiel</b> </td> 
@@ -174,11 +176,11 @@ De volgende afmetingen zijn beschikbaar voor gebruik in de gegevenswerkbank Hist
   </tr> 
   <tr> 
    <td colname="col1"> <b>Ruimtepercentage tijdelijke database</b> </td> 
-   <td colname="col2">Numerieke Dimension die wordt gebouwd gebruikend de cs-uri-vraag (een) waarde, die op het Pingniveau wordt gebouwd. Er is een voorwaarde voor dat cs-uri-query(k) niet leeg is en dat cs-uri-query(a) overeenkomt met "1". Deze wordt gebruikt om het percentage te berekenen van de gebruikte Temp DB-ruimte op een bepaalde server. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2">Numerieke Dimension die wordt gebouwd gebruikend de cs-uri-vraag (een) waarde, die op het Pingniveau wordt gebouwd. Er is een voorwaarde voor dat cs-uri-query(k) niet leeg is en dat cs-uri-query(a) overeenkomt met "1". Deze wordt gebruikt om het percentage te berekenen van de gebruikte Temp DB-ruimte op een bepaalde server. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Transformatiepercentage</b> </td> 
-   <td colname="col2">De waarde cs-uri-query(bf) wordt gebruikt voor deze numerieke dimensie. Het wordt gebouwd op pingniveau. Deze dimensie wordt gebruikt om het percentage van volledige gegevenstransformatie te berekenen. <p><p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></p></td> 
+   <td colname="col2">De waarde cs-uri-query(bf) wordt gebruikt voor deze numerieke dimensie. Het wordt gebouwd op pingniveau. Deze dimensie wordt gebruikt om het percentage van volledige gegevenstransformatie te berekenen. <p><p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Versie Data Workbench</b> </td> 

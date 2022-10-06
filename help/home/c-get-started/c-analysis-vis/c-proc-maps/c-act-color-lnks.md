@@ -3,7 +3,7 @@ description: U kunt de paden tussen knooppunten in een procesafbeelding in kleur
 title: Een kleurkoppeling activeren
 uuid: 7046128e-6d52-4875-9979-c4c7bad59c9d
 exl-id: d210e54a-5f5e-4bcf-b2d2-7a748d7b90ba
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Een kleurkoppeling activeren{#activate-a-color-link}
+
+{{eol}}
 
 U kunt de paden tussen knooppunten in een procesafbeelding in kleur weergeven.
 

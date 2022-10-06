@@ -1,18 +1,20 @@
 ---
-description: Met een tijddimensie kunt u een set periodieke of absolute lokale tijdafmetingen maken (zoals Dag, Dag van Week, Uur van Dag, Reserveringstijd enzovoort) op basis van een tijdstempelveld dat u opgeeft voor de parameter Invoertijd (1970 tijdperk).
+description: Met een tijddimensie kunt u een set periodieke of absolute lokale tijdafmetingen maken (zoals Dag, Dag van Week, Uur van Dag, Reserveringstijd, enzovoort) op basis van een tijdstempelveld dat u opgeeft voor de parameter Invoertijd (1970 tijdperk).
 title: Dimension tijd
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
 exl-id: f9534b24-3a16-4220-bac2-bc541e121005
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 1%
 
 ---
 
-# Tijd Dimension{#time-dimensions}
+# Dimension tijd{#time-dimensions}
 
-Met een tijddimensie kunt u een set periodieke of absolute lokale tijdafmetingen maken (zoals Dag, Dag van Week, Uur van Dag, Reserveringstijd enzovoort) op basis van een tijdstempelveld dat u opgeeft voor de parameter Invoertijd (1970 tijdperk).
+{{eol}}
+
+Met een tijddimensie kunt u een set periodieke of absolute lokale tijdafmetingen maken (zoals Dag, Dag van Week, Uur van Dag, Reserveringstijd, enzovoort) op basis van een tijdstempelveld dat u opgeeft voor de parameter Invoertijd (1970 tijdperk).
 
 Wanneer u tijdafmetingen definieert, kunt u ook een andere dag dan maandag kiezen die als het begin van een week moet worden gebruikt door de parameter Begindag week op te geven. U kunt meer dan één reeks tijddimensies in uw dataset bepalen zolang de afmetingen verschillende namen hebben.
 
@@ -57,7 +59,7 @@ De tijdafmetingen worden gedefinieerd door de volgende parameters:
   </tr> 
   <tr> 
    <td colname="col1"> Invoertijd (1970 tijdperk) </td> 
-   <td colname="col2"> <p>De naam van het tijdstempelveld dat als invoer moet worden gebruikt. </p> <p> <p>Opmerking:  De waarden van het veld moeten het aantal seconden weergeven dat is verstreken sinds 1 januari 1970, 00:00:01. Als de invoertijd geen geldige tijd is (1970 tot 2037), zal het transformatieproces ontbreken, en de server van de gegevenswerkbank zal een fout produceren. </p> </p> </td> 
+   <td colname="col2"> <p>De naam van het tijdstempelveld dat als invoer moet worden gebruikt. </p> <p> <p>Opmerking: De waarden van het veld moeten het aantal seconden weergeven dat is verstreken sinds 1 januari 1970, op 00:00:01. Als de invoertijd geen geldige tijd is (1970 tot 2037), zal het transformatieproces ontbreken, en de server van de gegevenswerkbank zal een fout produceren. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

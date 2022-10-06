@@ -3,14 +3,16 @@ description: Het DeviceAtlas JSON-bestand wordt nu samen met de bestanden Device
 title: DeviceAtlas-distributie
 uuid: 1eb76c61-6696-4e6c-a3fd-61c00cc17b0a
 exl-id: e9671810-d32c-4ec4-a1cb-54b71c6f101c,333507bb-3e8b-4da1-8218-b35fcf8d5f80,aa811c7b-ef80-4f23-b395-0cbb7d2677a9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
 
 ---
 
-# DeviceAtlas Distribution{#deviceatlas-distribution}
+# DeviceAtlas-distributie{#deviceatlas-distribution}
+
+{{eol}}
 
 Het DeviceAtlas JSON-bestand wordt nu samen met de bestanden DeviceAtlas.dll en DeviceAtlas64.dll gedistribueerd in een .bundle-bestand (de naam .tar.gz).
 
@@ -22,7 +24,7 @@ Het bestand DeviceAtlas.bundle wordt geëxtraheerd naar [!DNL Server\Lookups\Dev
 
 Het bestand DeviceAtlas.bundle moet worden geplaatst in een map die is gesynchroniseerd met de DPU&#39;s en het bestand DeviceAtlas.cfg dat overeenkomt met de nieuwe DeviceAtlasComponent moet in de map &quot;Components for Processing Servers&quot; op de master synchronisatie worden geplaatst. Wanneer het bestand DeviceAtlas.bundle wordt gewijzigd, krijgt de volgende opzoekvraag van DeviceAtlas resultaten op basis van de bijgewerkte API- en/of JSON-bestanden.
 
-## Het bestand Transformation.cfg {#section-394823348f5740028666e62e2bd42754} wijzigen
+## Het bestand Transformation.cfg wijzigen {#section-394823348f5740028666e62e2bd42754}
 
 De transformaties DeviceAtlas hoeven niet langer het pad naar het JSON-bestand op te geven. Eerdere DeviceAtlasTransformation die in het bestand transformation.cfg is gedefinieerd, mag niet langer de parameter File bevatten die naar het verduisterde JSON-bestand wijst.
 
@@ -56,9 +58,9 @@ In dit voorbeeld wordt in het bestand Transformation.cfg het argument File weerg
 User Agent = string: x-ua  
 ```
 
-## Het bestand DeviceAtlas.cfg {#section-10b43705a6c846fd9ec54ea6be249f88} wijzigen
+## Het bestand DeviceAtlas.cfg wijzigen {#section-10b43705a6c846fd9ec54ea6be249f88}
 
-Dit is een voorbeeld van het argument [!DNL component] dat in het dossier DeviceAtlas.cfg wordt vereist.
+Dit is een voorbeeld van het [!DNL component] in het bestand DeviceAtlas.cfg is vereist.
 
 ```
 component = DeviceAtlasComponent: 
@@ -70,7 +72,7 @@ Dit bestand DeviceAtlas.bundle wordt vanuit het perspectief van de functie voor 
 
 Een nieuwe DeviceAtlasComponent, bij opstarten, vindt de .bundle samenklontering, de-obfuscates het JSON- dossier in geheugen, haalt de dossiers in een tijdelijke folder uit, en laadt aangewezen DLL voor het lopende platform. Deze component controleert ook de wijzigingen in het bundelbestand en laadt het DLL- en Cfg-bestand automatisch opnieuw als het wordt gewijzigd.
 
-## DeviceAtlas {#section-6ed37b39199d4ffd95d30b49a7ee9666} uitvoeren
+## DeviceAtlas uitvoeren {#section-6ed37b39199d4ffd95d30b49a7ee9666}
 
 De correcte configuratie maakt een groot verschil in de tijd die voor transformatie wordt vereist. De transformatie kan worden geconfigureerd om slechts eenmaal per bezoeker per sessie te worden uitgevoerd, zodat DeviceAtlas het proces kan versnellen.
 
@@ -78,8 +80,8 @@ De correcte configuratie maakt een groot verschil in de tijd die voor transforma
 
 Voer de transformaties tweemaal uit.
 
-1. Alleen het veld [!DNL mobile id] opzoeken en vervolgens
-1. Creëer voorwaarden om [!DNL mobile id] te negeren en dan de rest gebieden op te zoeken.
+1. Alleen de knop Opzoeken [!DNL mobile id] veld, dan
+1. Voorwaarden maken om de [!DNL mobile id] en dan de rest van de velden opzoeken.
 
 **Indien geïmplementeerd met Transformation.cfg**:
 

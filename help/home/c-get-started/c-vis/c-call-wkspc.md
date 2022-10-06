@@ -3,14 +3,16 @@ description: Bijschriften zijn vensters die u toevoegt aan een werkruimte om de 
 title: Callouts toevoegen aan een werkruimte
 uuid: fb3dd74d-da20-40cb-bc96-e56d25003e48
 exl-id: fcdb9231-d44a-4287-b799-6a66f7f79432
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
-# Bijschriften toevoegen aan een werkruimte{#adding-callouts-to-a-workspace}
+# Callouts toevoegen aan een werkruimte{#adding-callouts-to-a-workspace}
+
+{{eol}}
 
 Bijschriften zijn vensters die u toevoegt aan een werkruimte om de aandacht op een bepaald afmetingselement te vestigen door een nieuwe visualisatie met een virtuele selectie van dat element te creëren.
 
@@ -29,7 +31,7 @@ Standaard biedt Data Workbench de volgende callouts:
 >
 >Bijschriften functioneren niet als selecties (dat wil zeggen, ze hebben geen invloed op andere visualisaties in de werkruimte), tenzij u een selectie maakt in de bijschrift.
 
-U kunt callout definities toevoegen of uitgeven door de callout dossiers te vormen die in *profielnaam*\Context\Callout folder of the [!DNL Server] installatiemap worden opgeslagen. Zie [Het vormen Callouts](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-callouts.md#concept-f6e91e172f5e4c009245c9c549beb76a).
+U kunt callout definities toevoegen of uitgeven door de callout dossiers te vormen die in *profielnaam*\Context\Bijschriftmap van het dialoogvenster [!DNL Server] installatiemap. Zie [Bijschriften configureren](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-callouts.md#concept-f6e91e172f5e4c009245c9c549beb76a).
 
 ## Een annotatiebijschrift toevoegen aan een visualisatie {#section-7b6742160b3f4aed872a09c8c023f90d}
 
@@ -44,9 +46,9 @@ U kunt callout definities toevoegen of uitgeven door de callout dossiers te vorm
 1. Voer afhankelijk van uw selectie de juiste stap uit:
 
    * Voor een tekstannotatie typt of plakt u de gewenste tekst in het bijschrift en maakt u de tekst op. Zie [Werken met tekstannotaties](../../../home/c-get-started/c-analysis-vis/c-annots/c-text-annots.md#concept-55b4aa3e0c58470b8e3c9d452e12a777).
-   * Voor een afbeeldingsannotatie plakt u de gewenste afbeelding in het bijschrift door de afbeelding te kopiëren en vervolgens met de rechtermuisknop in het bijschrift te klikken. Klik op **[!UICONTROL Paste image]**. Zie [Werken met afbeeldingsannotaties](../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962).
+   * Voor een afbeeldingsannotatie plakt u de gewenste afbeelding in het bijschrift door de afbeelding te kopiëren en vervolgens met de rechtermuisknop in het bijschrift te klikken. Klik op **[!UICONTROL Paste image]**. Zie [Werken met afbeeldingsnotities](../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962).
 
-## Een lege tabel, lijngrafiek of spreidingsperceel toevoegen als bijschrift voor een visualisatie {#section-5dcc0504bdb64ed4976f880e2f7b277f}
+## Een lege tabel, lijngrafiek of spreidingsperceel toevoegen aan een visualisatie {#section-5dcc0504bdb64ed4976f880e2f7b277f}
 
 1. Klik met de rechtermuisknop op het element waarvoor u een bijschrift wilt maken en klik op **[!UICONTROL Add Callout]** > *&lt;**[!UICONTROL callout type]**>*.
 
@@ -54,7 +56,7 @@ U kunt callout definities toevoegen of uitgeven door de callout dossiers te vorm
 
    ![](assets/vis_callout_blank_bar_graph.png)
 
-1. Als u een dimensie wilt selecteren, klikt u met de rechtermuisknop **[!UICONTROL None]** en klikt u **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*.
+1. Als u een dimensie wilt selecteren, klikt u met de rechtermuisknop **[!UICONTROL None]** en klik op **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*.
 
    >[!NOTE]
    >
@@ -66,11 +68,11 @@ U kunt callout definities toevoegen of uitgeven door de callout dossiers te vorm
 
    ![](assets/vis_callout_confidenceLegend.png)
 
-1. Wijzig desgewenst het veld [!DNL Metric or Formula].
+1. Wijzig desgewenst de [!DNL Metric or Formula] veld.
 
-Voor de regels van de uitdrukkingssyntaxis, zie [Syntaxis van de Taal van de Vraag](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f). Zie [Vertrouwelijkheidshulpmiddelen](../../../home/c-get-started/c-analysis-vis/c-legends/c-conf-leg.md#concept-73db81c2c218427786c04068aa778efd).
+Zie voor syntaxisregels voor expressies [Syntaxis zoektaal](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f). Zie [Vertrouwen Legenda](../../../home/c-get-started/c-analysis-vis/c-legends/c-conf-leg.md#concept-73db81c2c218427786c04068aa778efd).
 
-## Een metrische legenda-callout toevoegen aan een visualisatie {#section-daa6d372c22246d9827880a9d6e804d8}
+## Een metrische legenda toevoegen aan een visualisatie {#section-daa6d372c22246d9827880a9d6e804d8}
 
 1. Klik met de rechtermuisknop op het element waarvoor u de callout wilt maken en klik op **[!UICONTROL Add Callout]** > **[!UICONTROL Metric Legend]**.
 

@@ -1,24 +1,28 @@
 ---
-description: U kunt CSV, TSV, de Uitvoer van het Segment, en de Uitvoer van het Segment met Kopbal nu gebruiken gebruikend de protocollen van FTP en van SFTP om segmentdossiers van de cliënt (werkstation) naar de server uit te voeren.
-title: Voer een segment uit gebruikend levering S/FTP
+description: U kunt CSV, TSV, de Uitvoer van het Segment, en de Uitvoer van het Segment met Kopbal nu gebruiken gebruikend FTP en protocollen SFTP om segmentdossiers van de cliënt (werkstation) naar de server uit te voeren.
+title: Een segment exporteren met S/FTP-levering
 uuid: 4d654368-cbf7-4e7f-8ab9-82f4e0261ac6
-translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+exl-id: 0f1dc0a1-f376-47fb-887c-612a654ed0f0
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '543'
+ht-degree: 0%
 
 ---
 
+# Een segment exporteren met S/FTP-levering{#export-a-segment-using-s-ftp-delivery}
 
-# Voer een segment uit gebruikend levering S/FTP{#export-a-segment-using-s-ftp-delivery}
+{{eol}}
 
-U kunt CSV, TSV, de Uitvoer van het Segment, en de Uitvoer van het Segment met Kopbal nu gebruiken gebruikend de protocollen van FTP en van SFTP om segmentdossiers van de cliënt (werkstation) naar de server uit te voeren.
+U kunt CSV, TSV, de Uitvoer van het Segment, en de Uitvoer van het Segment met Kopbal nu gebruiken gebruikend FTP en protocollen SFTP om segmentdossiers van de cliënt (werkstation) naar de server uit te voeren.
 
-**De configuratiedossiers van de Uitvoer van de vestiging S/FTP**
+**Configuratiebestanden voor S/FTP-export instellen**
 
-Om de de uitvoerconfiguratie te plaatsen, werden twee nieuwe dossiers van de de uitvoerconfiguratie toegevoegd aan opstelling een verbinding van FTP of van SFTP, die de details van de Server om van het dossier van *FTPServerInfo.cfg* toelaat worden geselecteerd en de geloofsbrieven zullen van *omslag FTPUserCredentials* (die aan de Naam van de Server beantwoordt die in de bevelargumenten wordt gegeven) worden geselecteerd.
+Om de exportconfiguratie in te stellen, zijn twee nieuwe exportconfiguratiebestanden toegevoegd aan een FTP- of SFTP-verbinding, zodat de serverdetails kunnen worden gekozen uit de *FTPServerInfo.cfg* en de referenties worden gekozen uit *FTPUserCredentials* map (die overeenkomt met de servernaam die is opgegeven in de opdrachtargumenten).
 
-* Stel het **FTPServerInfo.cfg** -bestand in.
+* Stel de **FTPServerInfo.cfg** bestand.
 
-   Ga de de serverinformatie van FTP in en vastgestelde verbinding opnieuw probeert toegestaan van het werkstation. Geef uit van het werkstation of de server bij [!DNL Server\Addresses\Export\] **[!DNL FTPServerInfo.cfg]** - dossier uit.
+   Voer de FTP-servergegevens in en stel verbindingspogingen in die vanaf het werkstation zijn toegestaan. Bewerken vanaf het werkstation of de server op  [!DNL Server\Addresses\Export\] **[!DNL FTPServerInfo.cfg]**bestand.
 
    ```
    FTP Servers = vector: 1 items 
@@ -32,9 +36,9 @@ Om de de uitvoerconfiguratie te plaatsen, werden twee nieuwe dossiers van de de 
        Server Name = string:
    ```
 
-* Plaats het **FTPUserCredentials.cfg** - dossier.
+* Stel de **FTPUserCredentials.cfg** bestand.
 
-   Ga gebruikersgeloofsbrieven in om met servers te verbinden gebruikend het [!DNL Server\Admin\Export\] **[!DNL FTPUserCredentials.cfg]** - dossier. Dit dossier bevat gebruikersgeloofsbrieven nodig om met servers te verbinden en kan slechts van server en niet van werkstation (cliënt) worden uitgegeven.
+   Geef gebruikersgegevens op om verbinding te maken met servers via de  [!DNL Server\Admin\Export\] **[!DNL FTPUserCredentials.cfg]**bestand. Dit bestand bevat gebruikersgegevens die nodig zijn om verbinding te maken met servers en kan alleen worden bewerkt vanaf de server en niet vanaf het werkstation (client).
 
    ```
    FTP User Credentials = vector: 1 items 
@@ -49,22 +53,24 @@ Om de de uitvoerconfiguratie te plaatsen, werden twee nieuwe dossiers van de de 
 
    >[!NOTE]
    >
-   >Zorg ervoor dat de sleutels van SSH u voor authentificatie produceert in het formaat identiek aan die zijn die worden geproduceerd wanneer u het bevel van het Sleutelgen van SSH gebruikt.
+   >Zorg ervoor dat SSH-sleutels die u voor verificatie genereert, dezelfde indeling hebben als de sleutels die worden gegenereerd wanneer u de opdracht SSH Keygen gebruikt.
    >
-   >Voorbeeld voor het genereren van SSH-sleutels met behulp van keygen:
+   >Voorbeeld voor het genereren van SSH-sleutels met behulp van sleutelgen:
    >
-   >```
+   >
+   ```
    >ssh-keygen -t rsa -b 4096 -C "<label>"
    >```
 
-   Er zijn zes parameters in het **FTPUserCredentials.cfg** - dossier dat voor diverse FTP of overdrachten SFTP wordt vereist.
+   Er zijn zes parameters in de **FTPUserCredentials.cfg** bestand vereist voor verschillende FTP- of SFTP-overdrachten.
 
    1. *Gebruikersnaam*
-   1. *Gebruikerswachtwoord*
+   1. *Wachtwoord gebruiker*
    1. *Servernaam*
-   1. *Pad openbare sleutel*
-   1. *Pad voor privésleutel*
+   1. *Pad naar openbare sleutel*
+   1. *Pad naar persoonlijke sleutel*
    1. *Passphrase*
+
    <table id="table_4EB416DC770D4D1AA4FAD9676C0D680C"> 
     <thead> 
       <tr> 
@@ -75,32 +81,32 @@ Om de de uitvoerconfiguratie te plaatsen, werden twee nieuwe dossiers van de de 
     <tbody> 
       <tr> 
       <td colname="col1"> <p>FTP </p> </td> 
-      <td colname="col2"> <p>Vastgestelde parameters 1, 2, 3. </p> </td> 
+      <td colname="col2"> <p>Stel de parameters 1, 2 en 3 in. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>SFTP die wachtwoordauthentificatie gebruiken </p> </td> 
-      <td colname="col2"> <p>Vastgestelde parameters 1, 2, 3 wanneer de overdracht wachtwoordauthentificatie (-p in de bevelargumenten) gebruikt. </p> </td> 
+      <td colname="col1"> <p>SFTP met wachtwoordverificatie </p> </td> 
+      <td colname="col2"> <p>Stel parameters 1, 2 en 3 in wanneer voor de overdracht wachtwoordverificatie wordt gebruikt (-p in de opdrachtargumenten). </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>SFTP die zeer belangrijke authentificatie gebruiken </p> </td> 
-      <td colname="col2"> <p>Vastgestelde parameters 1, 2, 3, 4, 5, 6 wanneer de overdracht zeer belangrijke authentificatie (-k in de bevelargumenten) gebruikt. </p> </td> 
+      <td colname="col1"> <p>SFTP met behulp van sleutelverificatie </p> </td> 
+      <td colname="col2"> <p>Stel parameters 1, 2, 3, 4, 5 en 6 in wanneer voor de overdracht sleutelverificatie wordt gebruikt (-k in de opdrachtargumenten). </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
-**Het plaatsen van de Bevelen van de Uitvoer van FTP en van SFTP**
+**FTP- en SFTP-exportopdrachten instellen**
 
-1. Open een de uitvoerlijst.
+1. Open een exporttabel.
 
-   Van het Werkstation, klik een Lijst *van het* Detail met de rechtermuisknop aan en kies één van de uitvoer type-CSV, TSV, de Uitvoer van het Segment, of de Uitvoer van het Segment met Kopbal. Of open het [!DNL .export] dossier van een bevel-herinnering en geef uit (zie het [Vormen Segmenten voor de Uitvoer](../../../home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md#task-8857f221fa66463990ec9b60db6db372)).
+   Klik in het werkstation met de rechtermuisknop op een *Detailtabel* en kies een van de exporttypen: CSV, TSV, Segment Export of Segment Exporteren met koptekst. Of open de [!DNL .export] bestand van een opdrachtprompt en bewerken (zie [Segmenten voor export configureren](../../../home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md#task-8857f221fa66463990ec9b60db6db372)).
 
-1. Op het gebied van het *Bevel* , plaats het aan punt aan uitvoerbaar de uitvoer:
+1. In de *Opdracht* -veld instellen zodat deze naar het uitvoerbare bestand verwijst:
 
    ```
    ExportIntegration.exe
    ```
 
-1. Plaats de gebieden van de Argumenten *van het* Bevel zoals hieronder getoond voor het vereiste protocol en de authentificatie:
+1. Stel de *Opdrachtargumenten* velden zoals hieronder weergegeven voor het vereiste protocol en de vereiste verificatie:
 
    **FTP**
 
@@ -111,14 +117,14 @@ Om de de uitvoerconfiguratie te plaatsen, werden twee nieuwe dossiers van de de 
 
    ![](assets/FTP_Command_arguments.png)
 
-   **SFTP** (als het gebruiken van wachtwoord voor authentificatie)
+   **SFTP** (als wachtwoord voor verificatie wordt gebruikt)
 
    ```
    <Command Arguments> set to  
    <sftp "%file%" ServerName ServerDestinationPath -p>
    ```
 
-   **SFTP** (als het gebruiken van sleutels voor authentificatie)
+   **SFTP** (als u verificatietoetsen gebruikt)
 
    ```
    <Command Arguments> set to  
@@ -127,32 +133,32 @@ Om de de uitvoerconfiguratie te plaatsen, werden twee nieuwe dossiers van de de 
 
    ![](assets/SFTP_command_arguments.png)
 
-Alle Argumenten van het Bevel zijn verplicht en moeten zijn ingegaan zoals getoond.
+Alle argumenten van het Bevel zijn verplicht en moeten worden ingegaan zoals getoond.
 
-## S/FTP-export met particuliere/openbare sleutels {#section-0534424d79a54a47b82594cfa7b3c17f}
+## S/FTP-export met persoonlijke/openbare sleutels {#section-0534424d79a54a47b82594cfa7b3c17f}
 
-Om de Uitvoer van FTP en van SFTP uit te voeren gebruikend privé en openbare sleutels, plaats de configuratiedossiers in deze omslagen:
+Als u de FTP- en SFTP-export wilt implementeren met persoonlijke en openbare sleutels, plaatst u de configuratiebestanden in de volgende mappen:
 
-* Plaats **FTPServerInfo.cfg** in de [!DNL Server/Addresses/Export/] omslag.
-* Plaats **FTPUserCredentials.cfg** in de [!DNL Server/Admin/Export/] omslag.
+* Plaatsen **FTPServerInfo.cfg** in de [!DNL Server/Addresses/Export/] map.
+* Plaatsen **FTPUserCredentials.cfg** in de [!DNL Server/Admin/Export/] map.
 
-Zes parameters zijn inbegrepen in het dossier **FTPServerInfo.cfg** :
+Er zijn zes parameters opgenomen in de **FTPServerInfo.cfg** bestand:
 
 1. *Gebruikersnaam*
-1. *Gebruikerswachtwoord*
+1. *Wachtwoord gebruiker*
 1. *Servernaam*
-1. *Pad openbare sleutel*
-1. *Privé Zeer belangrijke Weg —* Plaats de privé belangrijkste weg in het configuratiedossier zonder de uitbreiding, bijvoorbeeld:
+1. *Pad naar openbare sleutel*
+1. *Pad naar persoonlijke sleutel —* Plaats het pad naar de persoonlijke sleutel in het configuratiebestand zonder de extensie, bijvoorbeeld:
 
 [!DNL Private Key Path = string: E:\\Server\\campaign\\campaignprivatekey]
 
 1. *Passphrase*
 
-FTP gebruikt parameters 1, 2, en 3.
+FTP gebruikt de parameters 1, 2 en 3.
 
 SFTP gebruikt parameters 1, 2, en 3 wanneer de overdracht wachtwoordauthentificatie gebruikt.
 
-SFTP gebruikt alle zes parameters wanneer de overdracht gebruikend zeer belangrijke authentificatie wordt gedaan. Bijvoorbeeld, als u sleutels voor authentificatie gebruikt:
+SFTP gebruikt alle zes parameters wanneer de overdracht gebruikend zeer belangrijke authentificatie wordt gedaan. Als u bijvoorbeeld sleutels voor verificatie gebruikt:
 
 [!DNL 'Command Arguments' = sftp "%file%" ServerName ServerDestinationPath -k]
 
@@ -160,4 +166,4 @@ De configuratiedossiers moeten in de correcte plaats zijn.
 
 >[!NOTE]
 >
->De openbare sleutels moeten aan een **.pem** - dossier en niet aan een omslagplaats richten. U kunt sleutels tot stand brengen gebruikend een de zeer belangrijke generatiefunctie van SSH van toepassingen zoals Cygwin. (Het Putty produceert sleutels in een .ppk formaat dat niet wordt gesteund.)
+>De openbare sleutels moeten aan een **.pem** en niet naar een maplocatie. U kunt toetsen maken met behulp van een SSH-sleutelgeneratiefunctie van toepassingen zoals Cygwin. (Met Putty worden toetsen in de indeling .ppk gegenereerd die niet wordt ondersteund.)

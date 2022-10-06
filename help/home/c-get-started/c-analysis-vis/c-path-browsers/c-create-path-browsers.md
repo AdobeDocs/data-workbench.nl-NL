@@ -3,7 +3,7 @@ description: U kunt een padbrowser maken op basis van een grafiek, tabel of proc
 title: Padbrowsers maken
 uuid: 84a5e587-fb02-461b-aec8-1b6ad473ebc3
 exl-id: 9fa11b84-da73-447a-8b10-7eab381e3f66
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Padbrowsers maken{#creating-path-browsers}
+
+{{eol}}
 
 U kunt een padbrowser maken op basis van een grafiek, tabel of procesafbeelding.
 
@@ -22,7 +24,7 @@ U kunt een padbrowser maken op basis van een grafiek, tabel of procesafbeelding.
 
 >[!NOTE]
 >
->Als u een element naar een padbrowser sleept, kan de basisdimensie die aan de padbrowser is gekoppeld, veranderen, maar niet de afmetingen van het niveau, de groepsdimensie of de metrische waarde. Daarom moet u voorzichtigheid in het kiezen van een basisafmeting uitoefenen die wanneer gebruikt met de het niveauafmeting van de wegbrowser, groepsafmeting, en metrisch steek houdt. Om de niveauafmeting, groepsafmeting, of metrisch te veranderen, moet u het dossier van de wegbrowser [!DNL *.vw] in een tekstredacteur zoals Blocnote uitgeven. Zie [Padbrowsers configureren](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
+>Als u een element naar een padbrowser sleept, kan de basisdimensie die aan de padbrowser is gekoppeld, veranderen, maar niet de afmetingen van het niveau, de groepsdimensie of de metrische waarde. Daarom moet u voorzichtigheid in het kiezen van een basisafmeting uitoefenen die wanneer gebruikt met de het niveauafmeting van de wegbrowser, groepsafmeting, en metrisch steek houdt. Als u de afmetingen van het niveau, de groepsdimensie of de metrische waarde wilt wijzigen, moet u de browser van het pad bewerken [!DNL *.vw] bestand in een teksteditor, zoals Kladblok. Zie [Padbrowsers configureren](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
 
 **Een padbrowser maken op basis van een proceskaart**
 

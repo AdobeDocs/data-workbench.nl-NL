@@ -3,7 +3,7 @@ description: Om servergezondheid en prestaties met succes te identificeren, kunt
 title: Werkruimten voor het bewaken van de Data Workbench Server
 uuid: 07bd0749-1d3b-46ef-9c85-5e694a306db1
 exl-id: 9deee1a2-e102-4aaa-a68a-a31543aed07e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Werkruimten voor het bewaken van de Data Workbench Server{#workspaces-for-monitoring-the-data-workbench-server}
+
+{{eol}}
 
 Om servergezondheid en prestaties met succes te identificeren, kunt u standaardprofielen van gegevenswerkbanken gebruiken om de server van de geïnstalleerde agent te controleren gebruikend huidige gegevens, of profielen van historische gegevensreeksen aan te wenden om het effect van prestatiesveranderingen in tijd te bekijken.
 

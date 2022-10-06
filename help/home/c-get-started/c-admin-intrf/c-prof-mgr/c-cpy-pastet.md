@@ -3,7 +3,7 @@ description: Stappen voor het kopiëren en plakken van een bestand als e-mailbij
 title: Een bestand kopiëren en plakken als bijlage
 uuid: 15d67686-11b1-43f0-9ee9-a2f1fc145823
 exl-id: e45fbe0f-573f-4ac0-b5d4-a2f41002a70d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Een bestand kopiëren en plakken als bijlage{#copy-and-paste-a-file-as-an-attachment}
+
+{{eol}}
 
 Stappen voor het kopiëren en plakken van een bestand als e-mailbijlage in Microsoft Outlook.
 

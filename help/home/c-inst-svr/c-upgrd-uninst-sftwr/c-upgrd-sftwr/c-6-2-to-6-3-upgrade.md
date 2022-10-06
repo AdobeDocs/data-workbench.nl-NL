@@ -3,7 +3,7 @@ description: Servercomponenten bijwerken voor Data Workbench 6.3.
 title: DWB Server upgrade 6.2 tot 6.3
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 exl-id: 5106d9a3-179a-49f1-915a-c03b36ed5257
-source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
@@ -12,16 +12,18 @@ ht-degree: 0%
 
 # Upgrade van DWB-server: 6.2 t/m 6.3{#dwb-server-upgrade-to}
 
+{{eol}}
+
 Servercomponenten bijwerken voor Data Workbench 6.3.
 
 **Upgradeserver**
 
-Als u aangepaste profielen hebt die voorrang hebben op de standaardbestanden in het [!DNL Base]-pakket, moet u deze aangepaste bestanden bijwerken:
+Als u aangepaste profielen hebt die voorrang hebben op de standaardbestanden in het dialoogvenster [!DNL Base] -pakket, moet u deze aangepaste bestanden bijwerken:
 
-* **Werk het Meta.cfg- dossier**  (  [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]om bijgewerkte wachtwoordencryptie voor de Eenheid van het Systeem van het Dossier (server FSU) te plaatsen, en ingangen voor de transformaties van het Paar van de Waarde van de Naam toe te voegen om uit de groeperingen [ van het Koord van de ](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0)Vraag voordeel te halen.
+* **Het bestand Meta.cfg bijwerken** ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]om bijgewerkte wachtwoordencryptie voor de Eenheid van het Systeem van het Dossier (de server van FSU) te plaatsen, en ingangen voor de transformaties van het Paar van de Waarde van de Naam toe te voegen om voordeel te halen uit [Groepen queryreeks](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0).
 
-   1. Open het [!DNL meta.cfg] dossier op FSU.
-   1. Wijzig het gegevenstype voor **[!UICONTROL Proxy Password]** van &quot; [!DNL string"] in &quot; [!DNL EncryptedString]&quot; in de sectie *Werkstationconfiguratie*.
+   1. Open de [!DNL meta.cfg] op de FSU.
+   1. Het gegevenstype wijzigen voor **[!UICONTROL Proxy Password]** van &quot; [!DNL string"] naar &quot; [!DNL EncryptedString]&quot; in de *Werkstationconfiguratie* sectie.
 
       ```
         Proxy User Name = string:
@@ -32,23 +34,23 @@ Als u aangepaste profielen hebt die voorrang hebben op de standaardbestanden in 
 
    1. Voeg nieuwe ingangen toe om de nieuwe transformaties van het Paar van de Waarde van de Naam toe te laten: *BuildNameValuePair* en *ExtractNameValueParen*.
 
-      Open een werkruimte en klik met de rechtermuisknop **Admin** > **Profielbeheer**.
+      Een werkruimte openen en met de rechtermuisknop klikken **Beheer** > **Profielbeheer**.
 
-      Klik onder **Context** op het bestand **meta.cfg** in de kolom **Base** en klik vervolgens op **Lokaal maken**. Klik in de tabelkolom Gebruiker met de rechtermuisknop en selecteer **Open** > **in Workstation**.
+      Onder **Context** klikt u op de knop **meta.cfg** in het **Basis** kolom en klik vervolgens op **Lokaal maken**. Klik in de tabelkolom Gebruiker met de rechtermuisknop en selecteer **Openen** > **in werkstation**.
 
       ![](assets/meta_cfg.png)
 
-      * Klik in het nieuwe venster op **metadata** en voeg acceptabele onderliggende sjablonen toe.
+      * Klik in het nieuwe venster op **metagegevens** en voeg aanvaardbare kindmalplaatjes toe.
 
          ![](assets/meta_cfg_child.png)
 
-      * Open **transformatie** en voeg nieuwe malplaatjes toe.
+      * Openen **transformatie** en voeg nieuwe sjablonen toe.
 
          ![](assets/meta_cfg_template.png)
 
-* **Update voor snelle verbeteringen** in de samenvoeging. Voeg parameters toe of verander waarden aan de volgende configuratiedossiers om uit snelheidsverbeteringen in Data Workbench tijdens een transformatie voordeel te halen.
+* **Bijwerken voor verbeteringen in Snelle samenvoeging**. Voeg parameters toe of verander waarden aan de volgende configuratiedossiers om uit snelheidsverbeteringen in Data Workbench tijdens een transformatie voordeel te halen.
 
-   * **Communications.cfg** (  [!DNL E:\Server\Components\Communications.cfg])
+   * **Communications.cfg** ( [!DNL E:\Server\Components\Communications.cfg])
 
       ```
       18 = SourceListServer:
@@ -57,7 +59,7 @@ Als u aangepaste profielen hebt die voorrang hebben op de standaardbestanden in 
       <new>)
       ```
 
-   * **Disk Files.cfg** (at  [!DNL E:\Server\Components] en  [!DNL E:\Server\Components for Processing Servers])
+   * **Schijfbestanden.cfg** (om [!DNL E:\Server\Components] en [!DNL E:\Server\Components for Processing Servers])
 
       ```
       Disk Cache Size (MB) = double: 1024
@@ -66,7 +68,7 @@ Als u aangepaste profielen hebt die voorrang hebben op de standaardbestanden in 
       <(new)>
       ```
 
-   * **Log Processing Mode.cfg** (  [!DNL E:\Server\Profiles\<your profile>\Dataset\Log Processing Mode.cfg])
+   * **Modus Logverwerking.cfg** ( [!DNL E:\Server\Profiles\<your profile>\Dataset\Log Processing Mode.cfg])
 
       ```
       <(changed)
@@ -95,7 +97,7 @@ Als u aangepaste profielen hebt die voorrang hebben op de standaardbestanden in 
    >
    >Om uit de Snelle verbeteringen van de Fusie voordeel te halen, zorg ervoor u minstens 8 GBs van RAM per DPU hebt.
 
-* **Adobe Target met DWB-integratieupdate**. Een nieuw exportbestand, [!DNL ExportIntegration.exe], vervangt het bestaande [!DNL TnTSend.exe]-bestand op de Insight Server (`E:\Server\Scripts\TnTSend.exe`). Dit nieuwe exportbestand biedt ondersteuning voor integratie en coördinatie met het nieuwe Master marketingprofiel (MMP) en [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html).[](https://www.adobe.com/marketing/target.html)
+* **Adobe Target met DWB-integratieupdate**. Een nieuw exportbestand, [!DNL ExportIntegration.exe], vervangt de bestaande [!DNL TnTSend.exe] bestand op de Insight Server (`E:\Server\Scripts\TnTSend.exe`). Dit nieuwe exportbestand ondersteunt beide [Adobe Target](https://www.adobe.com/marketing/target.html) integratie en coördinatie met het nieuwe Master marketingprofiel (MMP) en [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html).
 
    U moet de volgende opdrachten voor Adobe Target-exportbewerkingen bijwerken.
 
@@ -116,13 +118,13 @@ Als u aangepaste profielen hebt die voorrang hebben op de standaardbestanden in 
    U kunt ook het volgende proberen om het oude exportproces te gebruiken:
 
    * Maak een nieuwe test- en doelexport in het werkstation.
-   * Wijzig de oude test en de uitvoer van het Doel die in [!DNL Server/Profiles/`<your profile>`/de Uitvoer wordt gevonden.]
+   * Wijzig de oude test- en doelexport in [!DNL Server/Profiles/`<your profile>`/Exporteren.]
 
-* **Werk het profiel Adobe SC bij.** Voor wijzigingen in het  [!DNL Exclude Hit.cfg] bestand moet een veld worden gedeclareerd in het bijbehorende  [!DNL Decoding Instructions.cfg] bestand.
+* **Werk het profiel Adobe SC bij.** Wijzigingen in de [!DNL Exclude Hit.cfg] bestand vereist dat een veld wordt gedeclareerd in het bijbehorende [!DNL Decoding Instructions.cfg] bestand.
 
    >[!NOTE]
    >
-   >Als uw Adobe SC-profiel een aangepast [!DNL Decoding Instructions.cfg]-bestand bevat, moet u een [!DNL DelimitedDecoder]-parameter aan uw aangepaste bestand toevoegen.
+   >Als uw Adobe SC-profiel een aangepast profiel bevat [!DNL Decoding Instructions.cfg] bestand, moet u een [!DNL DelimitedDecoder] aan uw aangepast bestand.
 
    ```
    0 = DelimitedDecoder:
@@ -135,4 +137,4 @@ Als u aangepaste profielen hebt die voorrang hebben op de standaardbestanden in 
    5 = string: x-hit_source
    ```
 
-   Door het veld [!DNL DelimitedDecoder] toe te voegen, kunt u gebruikmaken van functies-updates en kunt u mogelijke problemen met de logverwerking als gevolg van deze updates voorkomen.
+   Het toevoegen van [!DNL DelimitedDecoder] kunt u de functie-updates benutten en mogelijke problemen met de logverwerking als gevolg van deze updates voorkomen.

@@ -2,16 +2,17 @@
 description: Instructies voor het installeren en het vormen Sensor voor de StandaardUitgave 7 van de Server van de Toepassing van het Systeem van Zon Java die onder de Server 2000 van Vensters of later loopt.
 title: Sun Java Server op Windows Server 2000 of hoger
 uuid: 43f3eee0-2633-4bda-af6c-6c15433dd539
-translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+exl-id: 33f24073-8eff-4bf6-8f83-7a122d1505d8
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
 
 ---
 
-
 # Sun Java Server op Windows Server 2000 of hoger{#sun-java-server-on-windows-server-or-later}
+
+{{eol}}
 
 Instructies voor het installeren en het vormen Sensor voor de StandaardUitgave 7 van de Server van de Toepassing van het Systeem van Zon Java die onder de Server 2000 van Vensters of later loopt.
 
@@ -71,23 +72,23 @@ Procedure voor het uitpakken en installeren van de programmabestanden voor Senso
 
 ## Het configuratiebestand van de sensor bewerken {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
 
-Het [!DNL txlogd.conf] bestand bevat de configuratieparameters voor Sensor.
+De [!DNL txlogd.conf] bevat de configuratieparameters voor Sensor.
 
 U moet dit dossier uitgeven om, onder andere, de grootte en de plaats van het dossier van de schijfrij, het adres van de Server van het Inzicht, en identiteitskaart te specificeren die aan de gebeurtenisgegevens zal worden vastgemaakt die door deze sensor worden geproduceerd.
 
 Het configuratiebestand bevat vereiste parameters en optionele parameters.
 
-* **Vereiste parameters** zijn instellingen die u moet opgeven wanneer u Sensor installeert. Zonder deze instellingen wordt Sensor niet uitgevoerd.
-* **Optionele parameters** zijn instellingen die standaard op vooraf gedefinieerde waarden (die u kunt wijzigen) of optionele functies inschakelen.
+* **Vereiste parameters** Dit zijn instellingen die u moet opgeven wanneer u Sensor installeert. Zonder deze instellingen wordt Sensor niet uitgevoerd.
+* **Optionele parameters** Dit zijn instellingen die standaard op vooraf gedefinieerde waarden (die u kunt wijzigen) of die optionele functies inschakelen.
 
 **Het Sensor-configuratiebestand bewerken**
 
-* Open het [!DNL /etc/txlogd.conf] bestand in een teksteditor en stel de vereiste parameters en eventueel gewenste optionele parameters in.
+* Open de [!DNL /etc/txlogd.conf] in een teksteditor en stel de vereiste parameters en eventueel gewenste optionele parameters in.
 * Sla het bestand op en sluit het.
 
 **Het Sensor-configuratiebestand bewerken**
 
-1. Open het [!DNL /etc/txlogd.conf] bestand in een teksteditor en stel de vereiste parameters en eventueel gewenste optionele parameters in.
+1. Open de [!DNL /etc/txlogd.conf] in een teksteditor en stel de vereiste parameters en eventueel gewenste optionele parameters in.
 1. Sla het bestand op en sluit het.
 
 ## De zender starten en de schijfwachtrij maken {#section-55630de65f264274aefd771da2002852}
@@ -137,11 +138,10 @@ funcs="vys-cookie,vys-log,vys-init,vys-content-type"
 Init fn="vys-init" config-file="C:/VisualSciences/txlogd.conf"
 ```
 
-Voeg in het bestand obj.conf (bijvoorbeeld C:\Sun\AppServer7\domains\domain1\server1\config\ server1-obj.conf) de volgende regels direct onder de bestaande `<Object name="default">` regel toe:
+Voeg in het bestand obj.conf (bijvoorbeeld C:\Sun\AppServer7\domains\domain1\server1\config\ server1-obj.conf) de volgende regels direct onder de bestaande regels toe `<Object name="default">` regel:
 
 ```
 NameTrans fn="vys-cookie" 
 ObjectType fn="vys-content-type" 
 AddLog fn="vys-log"
 ```
-

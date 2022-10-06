@@ -3,7 +3,7 @@ description: Instructies over om Sensor voor de Diensten van de Informatie van I
 title: Microsoft IIS op Windows Server 2000 of hoger
 uuid: 26da0638-82c8-424f-9f00-aab3a940e5a9
 exl-id: e4b5ac44-b0ac-43be-9b9c-180a64354081
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 0%
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # Microsoft IIS op Windows Server 2000 of hoger{#microsoft-iis-on-windows-server-or-later}
 
+{{eol}}
+
 Instructies over om Sensor voor de Diensten van de Informatie van Internet (IIS) 5.x of 6.x te installeren en te vormen die onder de Server 2000 van Microsoft Windows of later lopen.
 
-Wanneer het gebruiken van IIS 6.x, moet het registreren voor Sensor worden toegelaten behoorlijk te functioneren. Als u het registreren hebt onbruikbaar gemaakt om schijf I/O te verminderen, kunt u het registreren toelaten zonder om het even welke gegevens aan het logboeken te schrijven. Hiervoor schakelt u logboekregistratie in en wist u vervolgens alle velden op het tabblad Geavanceerd van het tabblad Eigenschappen voor de indeling W3C Extended voor logbestanden. Neem contact op met de Adobe Consulting Services als u hulp nodig hebt.
+Wanneer het gebruiken van IIS 6.x, moet het registreren voor Sensor worden toegelaten behoorlijk te functioneren. Als u het registreren hebt onbruikbaar gemaakt om schijf I/O te verminderen, kunt u het registreren toelaten zonder om het even welke gegevens aan het logboeken te schrijven. Hiertoe schakelt u logbestanden in en wist u vervolgens alle velden op het tabblad Geavanceerd van het tabblad Eigenschappen voor de indeling W3C Extended voor logbestanden. Neem contact op met de Adobe Consulting Services als u hulp nodig hebt.
 
 De programmabestanden voor Sensor worden verpakt in een installatiebestand dat u van de downloadsite van de Adobe ontvangt. Als u nog geen Sensor-installatiebestand voor uw specifieke webserver hebt, downloadt u het bestand (of vraagt u het op bij uw Adobe-vertegenwoordiger) voordat u de volgende procedures start.
 
@@ -79,12 +81,12 @@ Het bestand txlogd.conf bevat de configuratieparameters voor Sensor.
 
 U moet het dossier uitgeven om, onder andere, de grootte van de schijfrij, het adres van de Server van het Inzicht, en identiteitskaart te specificeren die aan de gegevens zal worden vastgemaakt die door deze sensor worden geproduceerd. Het configuratiebestand bevat vereiste parameters en optionele parameters.
 
-* **De vereiste** parameters zijn montages die u moet specificeren wanneer u Sensor installeert. Zonder deze instellingen wordt Sensor niet uitgevoerd.
-* **Optionele** parameters zijn instellingen die standaard op vooraf gedefinieerde waarden (die u kunt wijzigen) of optionele functies inschakelen.
+* **Vereiste parameters** Dit zijn instellingen die u moet opgeven wanneer u Sensor installeert. Zonder deze instellingen wordt Sensor niet uitgevoerd.
+* **Optionele parameters** Dit zijn instellingen die standaard op vooraf gedefinieerde waarden (die u kunt wijzigen) of die optionele functies inschakelen.
 
 **Het Sensor-configuratiebestand bewerken**
 
-1. Open het `<SensorDirectory>/txlogd.conf` dossier in een tekstredacteur en plaats de vereiste parameters evenals om het even welke gewenste facultatieve parameters.
+1. Open de `<SensorDirectory>/txlogd.conf` in een teksteditor en stel de vereiste parameters en eventueel gewenste optionele parameters in.
 
    Voor beschrijvingen van parameters txlogd.conf, zie de Parameters van het Dossier van Txlogd.conf.
 

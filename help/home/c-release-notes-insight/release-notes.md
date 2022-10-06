@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release Data Workbench - Overzicht
 description: Nieuwe functies in Adobe Analytics Data Workbench
 exl-id: 2b4a20ce-fb27-4343-8f5a-412c25aab028
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 4%
@@ -10,6 +10,8 @@ ht-degree: 4%
 ---
 
 # Overzicht van opmerkingen bij de release
+
+{{eol}}
 
 * [Data Workbench 6.74 Opmerkingen bij de release](/help/home/c-release-notes-insight/dwb-6-74-release-notes.md)
 * [Opmerkingen bij de release van Data Workbench 6.73](/help/home/c-release-notes-insight/dwb-6-73-release-notes.md)

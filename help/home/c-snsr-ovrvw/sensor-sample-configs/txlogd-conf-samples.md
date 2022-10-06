@@ -1,20 +1,24 @@
 ---
-description: Voorbeelden van txlogd.conf-bestanden voor de ondersteunde combinaties webserver/besturingssysteem.
-title: Txlogd.conf de Steekproeven van het Dossier
+description: Voorbeelden van bestanden txlogd.conf voor de ondersteunde combinaties webserver/OS.
+title: Voorbeelden van Txlogd.conf-bestanden
 uuid: ba8f3938-b7d6-44bd-93ca-eb66f509ef4e
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 3bbb794f-c771-43c6-9ebf-8892c1d9a707
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 0%
 
 ---
 
+# Voorbeelden van Txlogd.conf-bestanden{#txlogd-conf-file-samples}
 
-# Txlogd.conf de Steekproeven van het Dossier{#txlogd-conf-file-samples}
+{{eol}}
 
-Voorbeelden van txlogd.conf-bestanden voor de ondersteunde combinaties webserver/besturingssysteem.
+Voorbeelden van bestanden txlogd.conf voor de ondersteunde combinaties webserver/OS.
 
-## IIS op de Server 2000 van Microsoft Windows of later {#section-d5d602c3e87b4ecf910e71772350e865}
+## IIS op Microsoft Windows Server 2000 of hoger {#section-d5d602c3e87b4ecf910e71772350e865}
 
-Steekproef van het txlogd.conf- dossier dat voor Sensor voor de Dienst van de Informatie van Internet (IIS) wordt vereist 5.x of 6.x die onder de Server 2000 van Microsoft Windows loopt of later.
+Voorbeeld van het bestand txlogd.conf dat is vereist voor Sensor for Internet Information Service (IIS) 5.x of 6.x die wordt uitgevoerd onder Microsoft Windows Server 2000 of hoger.
 
 ```
 # sample txlogd configuration file for IIS
@@ -115,9 +119,9 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Lotus Sametime op de Server 2000 van Vensters of later {#section-36265b8192484a268ebafc42e941fdf2}
+## Lotus Sametime op Windows Server 2000 of hoger {#section-36265b8192484a268ebafc42e941fdf2}
 
-Steekproef van het txlogd.conf- dossier dat voor Sensor voor Lotus Sametime wordt vereist die onder de Server 2000 loopt van Microsoft Windows of later.
+Voorbeeld van het bestand txlogd.conf dat is vereist voor Sensor for Lotus Sametime die wordt uitgevoerd onder Microsoft Windows Server 2000 of hoger.
 
 ```
 # sample txlogd configuration file for Lotus Sametime
@@ -193,7 +197,7 @@ SiteTest http,localhost,80,/test.html
 
 ## Lotus Domino op Windows Server 2000 of hoger {#section-d2fd9e0684fe460bbccaaabc4197bb48}
 
-Steekproef van het txlogd.conf- dossier dat voor Sensor voor Lotus Domino wordt vereist die onder de Server 2000 loopt van Microsoft Windows of later.
+Voorbeeld van het bestand txlogd.conf dat vereist is voor Sensor for Lotus Domino dat wordt uitgevoerd onder Microsoft Windows Server 2000 of hoger.
 
 ```
 # sample txlogd configuration file for Lotus Domino
@@ -273,7 +277,7 @@ SpecialLogField cs(cert)=vars.certificate vys_log
 
 ## IBM HTTP Server op IBM AIX 5.2 {#section-d7c88cc65b0b4c7a877bf7a084cbf4fb}
 
-Steekproef van het txlogd.conf- dossier dat voor Sensor voor de Server 2.0.x wordt vereist die van HTTP van IBM onder IBM AIX 5.2 loopt.
+Voorbeeld van het bestand txlogd.conf dat is vereist voor Sensor voor IBM HTTP Server 2.0.x en dat wordt uitgevoerd onder IBM AIX 5.2.
 
 ```
 # sample txlogd configuration file for IHS 2.0.x
@@ -410,9 +414,9 @@ DisableField cs(cookie)
 PrivacyID 0x1111111
 ```
 
-## Apache Server 1.3.x op RedHat Linux, Sun Solaris, FreeBSD, of Mac OSX {#section-36d0b6d761424d358280226a16e643d2}
+## Apache Server 1.3.x op RedHat Linux, Sun Solaris, FreeBSD of Mac OSX {#section-36d0b6d761424d358280226a16e643d2}
 
-Steekproef van het txlogd.conf- dossier dat voor Sensor voor Server 1.3.x wordt vereist die Apache onder RedHat Linux 7.x, Zon Solaris 2.6 of later, FreeBSD 4 of later, of MAC OS X PowerPC loopt.
+Voorbeeld van het bestand txlogd.conf dat vereist is voor Sensor voor Apache Server 1.3.x en dat wordt uitgevoerd onder RedHat Linux 7.x, Sun Solaris 2.6 of hoger, FreeBSD 4 of hoger of Mac OS X PowerPC.
 
 ```
 # sample txlogd configuration file for Apache 1.3
@@ -552,9 +556,9 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Apache Server 1.3.x op Windows 2000 Server of Later {#section-d225f200da28441895fb90a64c2a2ffd}
+## Apache Server 1.3.x op Windows 2000 Server of hoger {#section-d225f200da28441895fb90a64c2a2ffd}
 
-Steekproef van het txlogd.conf- dossier dat voor Sensor voor Server 1.3.x wordt vereist die Apache onder de Server 2000 loopt van Microsoft Windows of later.
+Voorbeeld van het bestand txlogd.conf dat vereist is voor Sensor voor Apache Server 1.3.x en dat wordt uitgevoerd onder Microsoft Windows Server 2000 of hoger.
 
 ```
 # sample txlogd configuration file for Apache 1.3
@@ -695,9 +699,9 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Apache Server 2.0.x of 2.2 op Linux, Sun Solaris, of FreeBSD {#section-b87565beba44472483348d442329c3fe}
+## Apache Server 2.0.x of 2.2 op Linux, Sun Solaris of FreeBSD {#section-b87565beba44472483348d442329c3fe}
 
-Steekproef van het txlogd.conf- dossier dat voor Sensor voor de volgende Servers Apache wordt vereist.
+Voorbeeld van het bestand txlogd.conf dat is vereist voor Sensor voor de volgende Apache-servers.
 
 ```
 Apache Server 2.0.40 running under RedHat Linux 7.x or later or Sun Solaris SPARC 2.6 or later
@@ -842,9 +846,9 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Apache Server 2.0.x of 2.2 op de Server 2000 of later van Vensters {#section-a1749d32a8aa4ca0b81f8b95c8dc511c}
+## Apache Server 2.0.x of 2.2 op Windows Server 2000 of hoger {#section-a1749d32a8aa4ca0b81f8b95c8dc511c}
 
-Steekproef van het txlogd.conf- dossier dat voor Sensor voor de Server 2.0.x van Apache of 2.2 wordt vereist die onder de Server 2000 lopen van Microsoft Windows of later.
+Voorbeeld van het bestand txlogd.conf dat is vereist voor Sensor voor Apache Server 2.0.x of 2.2 die wordt uitgevoerd onder Microsoft Windows Server 2000 of hoger.
 
 ```
 # sample txlogd configuration file for Apache 2.0.x or 2.2
@@ -989,5 +993,4 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Afdeling Titel {#section-f25d181e181e4bb7bf46d4410756e945}
-
+## Sectietitel {#section-f25d181e181e4bb7bf46d4410756e945}

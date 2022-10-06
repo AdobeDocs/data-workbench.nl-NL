@@ -1,9 +1,9 @@
 ---
-description: Vanuit de Trechter-visualisatie kunt u een padbrowser openen om extra gedetailleerde bezoekersfallout te identificeren en door paden te vallen.
+description: Vanuit de Trechter-visualisatie kunt u een Padbrowser openen om extra gedetailleerde bezoekersfallout te identificeren en door paden te vallen.
 title: Een padbrowser toevoegen
 uuid: 6b6879bf-81e5-4c6f-a4a6-eecac1ab0a29
 exl-id: d9ecb982-3b9d-497f-9cae-5c4220a5204f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -12,7 +12,9 @@ ht-degree: 0%
 
 # Een padbrowser toevoegen{#adding-a-path-browser}
 
-Vanuit de Trechter-visualisatie kunt u een padbrowser openen om extra gedetailleerde bezoekersfallout te identificeren en door paden te vallen.
+{{eol}}
+
+Vanuit de Trechter-visualisatie kunt u een Padbrowser openen om extra gedetailleerde bezoekersfallout te identificeren en door paden te vallen.
 
 <!-- <a id="section_874AAAA89CB440EA9EABC514E987B613"></a> -->
 
@@ -29,6 +31,6 @@ U kunt zien waar bezoekers het pad verlaten hebben of waar bezoekers doorlopen z
    In Browser van de Weg visualisatie, identificeert de breedte van de lijnen die binnen en uit de geselecteerde afmeting gaan het volume van verkeer. Voordat we bijvoorbeeld op de pagina van Men aanstegen, kwamen een paar bezoekers via andere routes binnen, maar de meesten kwamen binnen via de startpagina. Toen het wegging, gingen de meesten naar de Men Surfing pagina.
 
 1. Open de Padbrowser voor de &quot;fall-through&quot; bezoekers. Klik met de rechtermuisknop op de kegel in de trechter om het pad aan te geven voor bezoekers die door de trechter zijn gevallen of naar de volgende stap zijn verplaatst.
-1. Klik **Meer** knoop bij de bodem van Browser van de Weg visualisatie om een lijst met alle bezoeken te openen die in een tabelmening voor de vorige en huidige bezoeken worden vermeld.
+1. Klik op de knop **Meer** knoop bij de bodem van Browser van de Weg visualisatie om een lijst met alle bezoeken te openen die in een tabelmening voor de vorige en huidige bezoeken worden vermeld.
 
    ![](assets/path_browser_more.png)

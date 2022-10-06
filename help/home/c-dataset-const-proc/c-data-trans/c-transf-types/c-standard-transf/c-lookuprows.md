@@ -3,7 +3,7 @@ description: De transformatie LookupRows onderzoekt andere logboekingangen met z
 title: LookupRows
 uuid: 4cff7cf1-00c8-4ab1-8adc-3805518226d3
 exl-id: caa9a311-b056-4fe8-bb11-1605cc690375
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '946'
 ht-degree: 0%
@@ -12,16 +12,18 @@ ht-degree: 0%
 
 # LookupRows{#lookuprows}
 
+{{eol}}
+
 De transformatie LookupRows onderzoekt andere logboekingangen met zelfde volgende identiteitskaart en plaatst de waarde van het outputgebied aan de waarde van een aangewezen gebied in de inputrij.
 
-Omdat de [!DNL LookupRows] transformatie zijn raadpleging op logboekingangen en niet raadplegingsdossiers uitvoert, is het zeer gelijkaardig aan de [!DNL CrossRows] transformatie. Zie [CrossRows](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2).
+Omdat [!DNL LookupRows] de transformatie voert zijn raadpleging op logboekingangen uit en niet raadplegingsdossiers, is het zeer gelijkaardig aan [!DNL CrossRows] transformatie. Zie [CrossRows](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2).
 
-Om te werken, vereist de [!DNL LookupRows] transformatie dat de gegevens in tijd worden bevolen en door volgende identiteitskaart in uw brongegevens worden gegroepeerd. [!DNL LookupRows] werkt daarom alleen wanneer dit is gedefinieerd in het [!DNL Transformation.cfg]-bestand of in een [!DNL Transformation Dataset Include]-bestand.
+Om te werken, [!DNL LookupRows] voor transformatie moeten de gegevens in de tijd worden geordend en met de tracking-id in de brongegevens worden gegroepeerd. Daarom [!DNL LookupRows] werkt alleen wanneer deze zijn gedefinieerd in het dialoogvenster [!DNL Transformation.cfg] of in een [!DNL Transformation Dataset Include] bestand.
 
 Let op het volgende terwijl u de beschrijvingen van de parameters in de volgende tabel bekijkt:
 
 * De uitvoerrij is de gegevensrij waaraan de transformatie op een bepaald tijdpunt werkt.
-* Invoerrijen zijn alle andere gegevensrijen (voor, na of inclusief de uitvoerrij) waarvan de waarden van het invoerveld fungeren als invoer voor de transformatie.
+* Invoerrijen zijn alle andere rijen met gegevens (voor, na of inclusief de uitvoerrij) waarvan de waarden van het invoerveld fungeren als invoer voor de transformatie.
 
 <table id="table_AB68A89ECD5C45F39B8433F994BBD7D8"> 
  <thead> 
@@ -49,7 +51,7 @@ Let op het volgende terwijl u de beschrijvingen van de parameters in de volgende
   </tr> 
   <tr> 
    <td colname="col1"> Invoervoorwaarde </td> 
-   <td colname="col2">Accepteert invoer voor de transformatie van alleen bepaalde invoerrijen. Als aan de voorwaarde <span class="wintitle"> Invoer</span> voor een bepaalde inputrij niet wordt voldaan, wordt het inputgebied van die rij genegeerd en beïnvloedt geen andere outputrijen. Het uitvoerveld van die rij wordt echter nog steeds gewijzigd volgens de opgegeven voorwaarde. </td> 
+   <td colname="col2">Accepteert invoer voor de transformatie van alleen bepaalde invoerrijen. Als de <span class="wintitle"> Invoer</span> Er wordt niet voldaan aan de voorwaarde voor een bepaalde invoerrij, het invoerveld van die rij wordt genegeerd en heeft geen invloed op andere uitvoerrijen. Het uitvoerveld van die rij wordt echter nog steeds gewijzigd volgens de opgegeven voorwaarde. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -64,7 +66,7 @@ Let op het volgende terwijl u de beschrijvingen van de parameters in de volgende
   </tr> 
   <tr> 
    <td colname="col1"> Bewerking </td> 
-   <td colname="col2"> <p>Een bewerking die voor elke uitvoerrij wordt toegepast op alle invoerrijen die voldoen aan alle voorwaarden die zijn gedefinieerd door de parameters <span class="wintitle"> Invoer</span> Condition and Input Row Key Input om een uitvoer te produceren: 
+   <td colname="col2"> <p>Een bewerking die voor elke uitvoerrij wordt toegepast op alle invoerrijen die voldoen aan alle voorwaarden die zijn gedefinieerd in de <span class="wintitle"> Invoer</span> De parameters Condition en Input Row Key Input om een uitvoer te produceren: 
      <ul id="ul_16FB152CB558497794DDED72A2F05CDD"> 
       <li id="li_22DA9F814E4E42D0B21E90B63A2A7A0E"> EERST geeft als uitvoer de waarde van het veld in de invoerrij-waarde-invoerparameter uit de eerste overeenkomende invoerrij in de gegevens (niet de eerste overeenkomende rij na de uitvoerrij). </li> 
       <li id="li_45E00C3DE0494A1CB5C09B942088F161"> Bij LAATST wordt de waarde van het veld in de invoerrij-invoerparameter uitgevoerd vanaf de laatste invoerrij in de gegevens (niet de laatste overeenkomende rij vóór de uitvoerrij). </li> 
@@ -78,7 +80,7 @@ Let op het volgende terwijl u de beschrijvingen van de parameters in de volgende
   </tr> 
   <tr> 
    <td colname="col1"> Uitvoer van rijwaarde uitvoeren </td> 
-   <td colname="col2">De naam van het veld in de uitvoerrij waarvan de waarde uit het veld in de invoerrijwaarde-invoerparameter wordt gekopieerd als aan alle voorwaarden is voldaan. Alle uitvoerrijen met dezelfde waarden voor x-trackingid en <span class="wintitle"> Invoer uitvoerrij </span>hebben dezelfde waarde voor <span class="wintitle"> Waarde uitvoerrij</span>. </td> 
+   <td colname="col2">De naam van het veld in de uitvoerrij waarvan de waarde uit het veld in de invoerrijwaarde-invoerparameter wordt gekopieerd als aan alle voorwaarden is voldaan. Alle uitvoerrijen met dezelfde x-trackingid en <span class="wintitle"> Invoer van rijsleutel uitvoeren </span>waarden hebben dezelfde <span class="wintitle"> Uitvoer van rijwaarde uitvoeren</span> waarde. </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -100,13 +102,13 @@ Neem de volgende omtrek om de werking van de transformatie beter te begrijpen:
 
 Overwegingen voor [!DNL LookupRows]
 
-* Lege sleutelwaarden komen nooit overeen. Zelfs als er invoerrijen met lege sleutels en nonblank waarden zijn die [!DNL Input Condition] aanpassen, zal een [!DNL Output Row Key Input] van &quot;&quot; altijd een [!DNL Output Row Value Output] van &quot;&quot; produceren.
+* Lege sleutelwaarden komen nooit overeen. Zelfs als er invoerrijen zijn met lege sleutels en niet-lege waarden die overeenkomen met [!DNL Input Condition], en [!DNL Output Row Key Input] van &quot;&quot; zal altijd een [!DNL Output Row Value Output] van &quot;&quot;.
 
-* Als de [!DNL Input Condition] dit niet toestaat, kan een rij zichzelf opzoeken als de [!DNL Input Row Key Input]- en [!DNL Output Row Key Input]-waarden gelijk zijn.
+* Indien niet verboden door de [!DNL Input Condition], kan een rij zichzelf opzoeken als [!DNL Input Row Key Input] en [!DNL Output Row Key Input] waarden zijn hetzelfde.
 
-Als u veelvoudige zeer belangrijke waarden hebt, kunt u hen combineren gebruikend een [!DNL Format] transformatie (zie [Formaat](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b)) alvorens een [!DNL LookupRows] transformatie toe te passen.
+Als u meerdere sleutelwaarden hebt, kunt u deze combineren met behulp van een [!DNL Format] transformatie (zie [Indeling](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b)) vóór toepassing van een [!DNL LookupRows] transformatie.
 
-Stel dat u een website hebt met een pagina voor dierenregistratie, waar de naam en het ras worden ingevoerd, en een latere pagina &quot;speelgoed kopen&quot; waarop alleen de naam van het gezelschapsdier wordt gebruikt. U wilt de naam van het gezelschapsdier kunnen koppelen aan het dierenras dat op de registratiepagina is ingevoerd. Hiervoor kunt u de volgende [!DNL LookupRows]-transformatie maken:
+Stel dat u een website hebt met een pagina voor dierenregistratie, waar de naam en het ras worden ingevoerd, en een latere pagina &quot;speelgoed kopen&quot; waarop alleen de naam van het gezelschapsdier wordt gebruikt. U wilt de naam van het gezelschapsdier kunnen koppelen aan het dierenras dat op de registratiepagina is ingevoerd. Hiertoe kunt u het volgende maken: [!DNL LookupRows] transformatie:
 
 ![](assets/cfg_TransformationType_LookupRows.png)
 
@@ -122,4 +124,4 @@ Dit voorbeeld analyseren met de vorige omtrek:
 
 * en stel de waarde van het x-pet-ras van de uitvoerrij in op de waarde van cs-uri-query(petras) van de invoerrij.
 
-Bij de [!DNL LookupRows]-transformatie wordt de naam van het gezelschapsdier (de sleutel) gebruikt om ervoor te zorgen dat het gezelschapsras gekoppeld is aan zowel de registratie van gezelschapsdieren als de pagina&#39;s voor speelgoed, zodat u het speelgoed kunt analyseren dat voor elk gezelschapsras is gekocht, zelfs voor bezoekers met meerdere huisdieren.
+De [!DNL LookupRows] bij transformatie wordt de naam van het gezelschapsdier ( de sleutel ) gebruikt om ervoor te zorgen dat het gezelschapsras gekoppeld is aan zowel de registratie als de aankoop van speelgoedpagina &#39; s , zodat u het gekochte speelgoed voor elk gezelschapsras kunt analyseren , zelfs voor bezoekers met meerdere huisdieren .

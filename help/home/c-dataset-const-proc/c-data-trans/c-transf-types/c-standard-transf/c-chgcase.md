@@ -3,7 +3,7 @@ description: Met de ChangeCase-transformatie wordt het hoofdlettergebruik van de
 title: ChangeCase
 uuid: 676e79e6-324e-43d1-8982-b44596d0eeac
 exl-id: 2002fe22-d31c-4286-9f73-59ef205f1384
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # ChangeCase{#changecase}
+
+{{eol}}
 
 Met de ChangeCase-transformatie wordt het hoofdlettergebruik van de tekenreeks in de invoerparameter gewijzigd, zoals opgegeven door de parameter Action.
 

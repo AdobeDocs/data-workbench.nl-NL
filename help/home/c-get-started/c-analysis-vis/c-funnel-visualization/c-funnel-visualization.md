@@ -3,7 +3,7 @@ description: Met de Trechter-visualisatie kunt u bepalen waar klanten een market
 title: Trechter visualisatie
 uuid: 7973a7a9-ed17-4d3d-be14-37b3c17fa371
 exl-id: 2fc261fa-7c93-4de1-af32-ae5b9cbcdc0e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Trechter visualisatie{#funnel-visualization}
+
+{{eol}}
 
 Met de Trechter-visualisatie kunt u bepalen waar klanten een marketingcampagne verlaten of van een gedefinieerd conversiepad afwijken tijdens het werken met uw website- of kanaalcampagne.
 
@@ -20,7 +22,7 @@ Dankzij een goed begrip van klantnavigatie kunnen architecten webpagina&#39;s on
 
 ## Informatie over de trechter {#section-bf0ee36bb8ce47ec910ca23629e7c53a}
 
-De Trechter visualisatie is veel als Browser van de Weg in het bouwen van een weg om de opeenvolging van klappen van uw bezoeker te analyseren, om te identificeren wie uit valt (die de weg verlaten) of door (wie de weg volgde) valt. Het identificeert ook waar de bezoekers na elke stap langs de campagneweg gingen, en waar zij navigeerden nadat zij uit of door de bepaalde stappen vielen.
+De Trechter visualisatie is veel als Browser van de Weg in het bouwen van een weg om de opeenvolging van klappen van uw bezoeker te analyseren, om te identificeren wie uit valt (die de weg verlaten) of door (wie de weg volgde) valt. Het identificeert ook waar bezoekers na elke stap langs de weg van de campagne gingen, en waar zij navigeerden na het vallen of het vallen door de bepaalde stappen.
 
 ![](assets/funnel_visualization_capture_min.png)
 
@@ -30,7 +32,7 @@ De Trechter visualisatie verstrekt diverse niveaus van gegevens:
 
 * **[!UICONTROL Funnel by Visit]**. Deze trechter is gebaseerd op een interactie &quot;per bezoek&quot;.
 * **[!UICONTROL Funnel by Visitor]**. Deze trechter is gebaseerd op een interactie &quot;per bezoeker&quot;. In deze weergave worden de gegevens weergegeven op basis van het bezoek dat door de bezoeker is georganiseerd.
-* De **Afmeting** en **Afmeting Niveau**. De afmetingen van de trechter kunnen worden gewijzigd door Clickthrough, Hit, Product, Bezoek of het Niveau van de Bezoeker te kiezen.
+* De **Clip** dimensie en **Niveau** dimensie. De afmetingen van de trechter kunnen worden gewijzigd door Clickthrough, Hit, Product, Bezoek of het Niveau van de Bezoeker te kiezen.
 
 * **Cijfers**. U kunt de onderliggende metriek van de Trechter van Bezoekingen veranderen die worden gebruikt om het trechter aan om het even welke metrisch in uw profiel te bouwen. De visualisatie van de Trechter staat u toe om in uw gegevens te boor en de patronen van bezoekers met veelvoudige basislijnmetriek te analyseren.
 

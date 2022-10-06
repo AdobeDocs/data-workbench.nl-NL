@@ -3,7 +3,7 @@ description: Een denormale dimensie heeft een één-op-één verhouding met zijn
 title: Denormale Dimension
 uuid: f172fbce-e967-41ce-9958-9062561ecbcc
 exl-id: 0c4fad38-bc7c-4b63-98ec-c9121e576a36
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 0%
@@ -12,21 +12,23 @@ ht-degree: 0%
 
 # Denormale Dimension{#denormal-dimensions}
 
+{{eol}}
+
 Een denormale dimensie heeft een één-op-één verhouding met zijn oudertelbare dimensie.
 
-U zou een denormale afmeting bepalen wanneer de gewenste afmeting een uniek element voor elk element van zijn ouder bevat. [!DNL EMail Address] is bijvoorbeeld een denormale dimensie met een bovenliggend item van Visitor. Elke bezoeker heeft een e-mailadres en elk element in de e-mailadresdimensie is het e-mailadres van één bezoeker. Zelfs als twee bezoekers hetzelfde e-mailadres hebben, zijn de adressen verschillende elementen van de dimensie E-mailadres.
+U zou een denormale afmeting bepalen wanneer de gewenste afmeting een uniek element voor elk element van zijn ouder bevat. Bijvoorbeeld: [!DNL EMail Address] is een denormale dimensie met een ouder van Bezoeker. Elke bezoeker heeft een e-mailadres en elk element in de e-mailadresdimensie is het e-mailadres van één bezoeker. Zelfs als twee bezoekers hetzelfde e-mailadres hebben, zijn de adressen verschillende elementen van de dimensie E-mailadres.
 
-U kunt denormale afmetingen gebruiken in elke tabelvisualisatie, in gedetailleerde tabellen of om filters te maken. Daarnaast kunt u denormale afmetingen gebruiken met de functionaliteit voor het exporteren van segmenten van de gegevenswerkbank-server om waarden te exporteren van velden (zoals [!DNL Tracking ID] of [!DNL EMail Address]) met veel waarden. Omdat segmentgegevens die u wilt exporteren, moeten worden gedefinieerd als een dimensie binnen het profiel, moet u een denormale dimensie maken waarin de onbewerkte tekenreeksen van de gegevens van het veld worden opgeslagen.
+U kunt denormale afmetingen gebruiken in elke tabelvisualisatie, in gedetailleerde tabellen of om filters te maken. Daarnaast kunt u denormale afmetingen gebruiken met de functionaliteit voor het exporteren van segmenten van de gegevenswerkbank-server om waarden van velden te exporteren (zoals [!DNL Tracking ID] of [!DNL EMail Address]) met veel waarden. Omdat segmentgegevens die u wilt exporteren, moeten worden gedefinieerd als een dimensie binnen het profiel, moet u een denormale dimensie maken waarin de onbewerkte tekenreeksen van de gegevens van het veld worden opgeslagen.
 
 >[!NOTE]
 >
 >Wanneer het gebruiken van een denormale afmeting in een lijst of andere visualisatie die een normale afmeting verwacht, wordt een afgeleide ontsporingsafmeting automatisch gecreeerd. De afgeleide denormale dimensie heeft een één-aan-vele verhouding met de ouderdimensie.
 
-Voor informatie over de detail lijstvisualisatie en filters, zie het hoofdstuk van de Visualisaties van de Analyse in *de Gids van de Gebruiker van de Data Workbench*. Voor informatie over segmentuitvoer, zie het het Vormen hoofdstuk van de Eigenschappen van de Interface en van de Analyse in *de Gids van de Gebruiker van de Data Workbench*.
+Voor informatie over de visualisatie en de filters van de detaillijst, zie het hoofdstuk van de Visualisaties van de Analyse in *Gebruikershandleiding voor Data Workbench*. Voor informatie over segmentuitvoer, zie het Vormen het hoofdstuk van de Eigenschappen van de Interface en van de Analyse in *Gebruikershandleiding voor Data Workbench*.
 
 >[!NOTE]
 >
->Denormale afmetingen kunnen zeer duur in vraagtijd en schijfruimte zijn. Een denormale afmeting met ouder [!DNL Page View]en een 50 byte gemiddelde inputkoord kon 25 GB van gegevens aan de buffers in een typische, grote dataset toevoegen, gelijkwaardig aan ongeveer 13 eenvoudige of numerieke afmetingen van de paginamening, of ongeveer 125 zittingsniveaudimensies. Voeg nooit een denormale dimensie aan een dataset zonder een zorgvuldige evaluatie van het prestatieseffect toe.
+>Denormale afmetingen kunnen zeer duur in vraagtijd en schijfruimte zijn. Een denormale dimensie met bovenliggend element [!DNL Page View]en een 50 byte gemiddelde inputkoord kon 25 GB van gegevens aan de buffers in een typische, grote dataset, gelijkwaardig aan ongeveer 13 eenvoudige of numerieke afmetingen van de paginamening, of ongeveer 125 zittingsniveaudimensies toevoegen. Voeg nooit een denormale dimensie aan een dataset zonder een zorgvuldige evaluatie van het prestatieseffect toe.
 
 De denormale afmetingen worden bepaald door de volgende parameters:
 
@@ -73,11 +75,11 @@ De denormale afmetingen worden bepaald door de volgende parameters:
    <td colname="col1"> Bewerking </td> 
    <td colname="col2"> <p>De beschikbare bewerkingen zijn als volgt: </p> <p> 
      <ul id="ul_CCDC45838A3941BD949B6D21EA0492B3"> 
-      <li id="li_F33898192A82437692B5C15684EFCF64"> EERSTE NONBLANK: De eerste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de eerste logboekingang komt. Als <span class="wintitle"> Invoer</span> een vectorgebied is, wordt de eerste rij in de vector voor de relevante logboekingang gebruikt. </li> 
-      <li id="li_4ADD0A368BB74B64AD29126C8E7B333F"> EERSTE RIJ: De waarde voor de eerste logbestandvermelding die betrekking heeft op het bovenliggende dimensielement wordt gebruikt, zelfs als de invoer leeg is. Als <span class="wintitle"> Invoer</span> een vectorgebied is, wordt de eerste rij in de vector voor de relevante logboekingang gebruikt. Als deze waarde leeg is of geen getal, of als het relevante logbestandvermelding niet voldoet aan de voorwaarde van de dimensie, wordt geen waarde gebruikt. </li> 
-      <li id="li_C93CA22ADA634F21A6488BB3BEE7CB23"> LAATSTE NONBLANK: De laatste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de laatste logboekingang komt. Als <span class="wintitle"> Invoer</span> een vectorgebied is, wordt de eerste rij in de vector voor de relevante logboekingang gebruikt. </li> 
-      <li id="li_2FFE585521B14FE5ABBF66AAC47F22C4"> LAATSTE RIJ: De waarde voor de laatste logbestandvermelding die betrekking heeft op het bovenliggende dimensielement wordt gebruikt, zelfs als de invoer leeg is. Als <span class="wintitle"> Invoer</span> een vectorgebied is, wordt de eerste rij in de vector voor de relevante logboekingang gebruikt. Als deze waarde leeg is of geen getal, of als het relevante logbestandvermelding niet voldoet aan de voorwaarde van de dimensie, wordt geen waarde gebruikt. </li> 
-     </ul> </p> <p> <p>Opmerking:  Als de Bewerking geen waarde oplevert, wordt een lege waarde ("") gebruikt. </p> </p> <p> Geef een bewerking op om ervoor te zorgen dat de dimensie op de juiste manier wordt gedefinieerd. </p> </td> 
+      <li id="li_F33898192A82437692B5C15684EFCF64"> EERSTE NONBLANK: De eerste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de eerste logboekingang komt. Indien <span class="wintitle"> Invoer</span> is een vectorveld, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. </li> 
+      <li id="li_4ADD0A368BB74B64AD29126C8E7B333F"> EERSTE RIJ: De waarde voor de eerste logbestandvermelding die betrekking heeft op het bovenliggende dimensielement wordt gebruikt, zelfs als de invoer leeg is. Indien <span class="wintitle"> Invoer</span> is een vectorveld, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. Als deze waarde leeg is of geen getal, of als het relevante logbestandvermelding niet voldoet aan de voorwaarde van de dimensie, wordt geen waarde gebruikt. </li> 
+      <li id="li_C93CA22ADA634F21A6488BB3BEE7CB23"> LAATSTE NONBLANK: De laatste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de laatste logboekingang komt. Indien <span class="wintitle"> Invoer</span> is een vectorveld, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. </li> 
+      <li id="li_2FFE585521B14FE5ABBF66AAC47F22C4"> LAATSTE RIJ: De waarde voor de laatste logbestandvermelding die betrekking heeft op het bovenliggende dimensielement wordt gebruikt, zelfs als de invoer leeg is. Indien <span class="wintitle"> Invoer</span> is een vectorveld, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. Als deze waarde leeg is of geen getal, of als het relevante logbestandvermelding niet voldoet aan de voorwaarde van de dimensie, wordt geen waarde gebruikt. </li> 
+     </ul> </p> <p> <p>Opmerking: Als de Bewerking geen waarde oplevert, wordt een lege waarde ("") gebruikt. </p> </p> <p> Geef een bewerking op om ervoor te zorgen dat de dimensie op de juiste manier wordt gedefinieerd. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

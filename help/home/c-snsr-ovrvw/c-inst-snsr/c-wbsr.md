@@ -3,7 +3,7 @@ description: Gedetailleerde instructies voor het installeren en configureren van
 title: WebSphere op AIX
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
 exl-id: e560d265-dc84-4ff2-ac86-7a2ac5261451
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 0%
@@ -12,15 +12,17 @@ ht-degree: 0%
 
 # WebSphere op AIX{#websphere-on-aix}
 
+{{eol}}
+
 Gedetailleerde instructies voor het installeren en configureren van Sensor voor WebSphere 5.x die op AIX 5.1 of hoger wordt uitgevoerd.
 
-De programmabestanden voor [!DNL Sensor] worden verpakt in een installatiebestand dat u ontvangt van de downloadsite van Adobe. Als u nog niet over het [!DNL Sensor]-installatiebestand voor uw specifieke webserver beschikt, downloadt u het bestand (of vraagt u het op bij uw Adobe-vertegenwoordiger) voordat u de volgende procedures start.
+De programmabestanden voor [!DNL Sensor] worden verpakt in een installatiebestand dat u van de downloadsite van de Adobe ontvangt. Als u nog geen [!DNL Sensor] het installatiebestand voor uw specifieke webserver te downloaden (of bij uw Adobe-vertegenwoordiger aan te vragen) voordat u de volgende procedures start.
 
 >[!NOTE]
 >
->De [!DNL Sensor] for WebSphere-servers bieden geen ondersteuning voor gecontroleerde experimenten. Zie de *Gids met gecontroleerde experimenten voor Data Workbench voor informatie over gecontroleerde experimenten.*
+>De [!DNL Sensor] voor WebSphere-servers biedt geen ondersteuning voor gecontroleerde experimenten. Voor informatie over gecontroleerde experimenten raadpleegt u de *Gids met experimenten voor Data Workbench.*
 
-## Program Files {#section-86f69127278c41bc90b97b68bb40bc6e} installeren
+## De programmabestanden installeren {#section-86f69127278c41bc90b97b68bb40bc6e}
 
 Procedure voor het uitpakken en installeren van de programmabestanden voor Sensorto op de servercomputer.
 
@@ -99,7 +101,7 @@ Als u de machtigingen wilt terugzetten op de aanbevolen standaardinstellingen, g
 
 Als u toestemmingen buiten de geadviseerde gebreken wilt gebruiken, herzie de informatie in de Toestemmingen van het Dossier van UNIX van de Sensor, om zeker te zijn u begrijpt hoe deze dossiers worden gebruikt.
 
-## Het Sensor Configuration-bestand {#section-283c8a92fa8841c1b6034e5f834ef4e7} bewerken
+## Het Sensor-configuratiebestand bewerken {#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 Het bestand txlogd.conf bevat de configuratieparameters voor Sensor.
 
@@ -138,14 +140,14 @@ Procedure om de schijfrij tot stand te brengen, nadat u het txlogd.conf- dossier
    1. Controleer of het apparaat waaraan de schijfrij wordt toegewezen operationeel is en voldoende ruimte beschikbaar heeft om een dossier van de grootte te houden die in de parameter QueueSize wordt gespecificeerd.
    1. Breng de nodige correcties aan en herhaal deze procedure.
 
-## Voeg de Collector aan de Toepassing van het Web {#section-d17297b1193f4e3cb150fb41f754ef12} toe
+## Voeg de Collector aan de Toepassing van het Web toe {#section-d17297b1193f4e3cb150fb41f754ef12}
 
 Voor servers WebSphere, werkt de inzamelaar als filter in de servlet container.
 
 Als u de verzamelaar aan de webtoepassing wilt toevoegen, voegt u het filter toe aan de web.xml-implementatiebeschrijving van de webtoepassing en start u de webtoepassing opnieuw.
 
 1. Open met behulp van een teksteditor het bestand web.xml voor de webserver waarvan de gebeurtenissen worden vastgelegd door Sensor.
-1. Voeg de volgende `<filter>` en `<filter-mapping>` elementen aan het beschrijvingsdossier toe. Als u txlogd.conf niet in de /etc folder installeerde, moet u de correcte weg aan dit dossier in het `<param-value>` element ingaan.
+1. Voeg het volgende toe `<filter>` en `<filter-mapping>` elementen naar het descriptorbestand. Als u txlogd.conf niet hebt geïnstalleerd in de map /etc, moet u het juiste pad naar dit bestand invoeren in de map `<param-value>` element.
 
    ```
    <filter>
@@ -173,7 +175,7 @@ Als u de verzamelaar aan de webtoepassing wilt toevoegen, voegt u het filter toe
 
 1. Start de webtoepassing opnieuw. De verzamelaar wordt met de toepassing geladen en begint gebeurtenisgegevens te verzamelen en naar de schijfwachtrij te schrijven.
 
-## Declareer de Plaats van de Dossiers van de Collector en van het Gedeelde Voorwerp {#section-e641f08999d34a648aaee2111b69ca25}
+## De locatie van de bestanden voor verzamelingen en gezamenlijke objecten opgeven {#section-e641f08999d34a648aaee2111b69ca25}
 
 Procedure voor het bewerken van het opstartscript van Websphere om de locatie van de bestanden J2EECollector.jar en libvisual_sciences.so te declareren.
 
@@ -190,9 +192,9 @@ Procedure voor het bewerken van het opstartscript van Websphere om de locatie va
    WAS_LIBPATH="$WAS_LIBPATH":/usr/local/visual_sciences
    ```
 
-1. Sla het [!DNL setupCmdLine.sh]-bestand op.
+1. Sla de [!DNL setupCmdLine.sh] bestand.
 
-## De sensor {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5} testen
+## De sensor testen {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
 
 Procedure om de zender te beginnen en te verifiëren dat het met succes met de Server van het Inzicht kan verbinden en gebeurtenisgegevens naar het over te brengen.
 
@@ -226,7 +228,7 @@ Voeg het volgende bevel (dat de zender) aan uw systeem startscript toe.
 
 Met deze opdracht start u de zender als een daemon. De werkende en foutenmeldingen die de zender produceert worden geschreven aan syslog.
 
-## Aanvullende gegevens {#section-d5ccf8ee50914a87938e0c17480757e6} vastleggen
+## Aanvullende gegevens vastleggen {#section-d5ccf8ee50914a87938e0c17480757e6}
 
 De sensoren voor alle platforms kunnen om het even welke gegevens verzamelen beschikbaar in de HTTP- verzoek en antwoordkopballen.
 
@@ -240,7 +242,7 @@ Bijvoorbeeld, kan de inzamelaar J2EE worden gebruikt om kosten per klikgegevens 
 
 Wanneer een sensor voor het Platform J2EE een verzoek ontvangt, roept het een inzamelaarklasse aan die de appendToLog functie invoert. De functie appendToLog voegt aan de eerste aanvraag de parameters van de queryreeks toe die in de functie appendToLog zijn opgegeven. Dit resulteert in URI van het aanvankelijke verzoek die extra naam-waardeparen van het vraagkoord bevatten die aan de namen en de waarden van de gegevens beantwoorden die worden gevangen. Bijvoorbeeld, zou CPC=20 aan het aanvankelijke verzoek worden toegevoegd wanneer de waarde van een bepaalde advertentie plaatsing of klik-door verbinding 20 cent is. De Server van het inzicht verwerkt deze waarden in de dataset voor analyse. Een extra voordeel van deze verzamelingsmethode is dat extra gegevens kunnen worden verzameld zonder dat extra logbestandvermeldingen worden gemaakt, zoals mogelijk wordt gemaakt met methoden voor het coderen van pagina&#39;s.
 
-Voor meer informatie over verwerking, zie *de Gids van de Configuratie van de Dataset*.
+Zie voor meer informatie over verwerking de *Configuratie-handleiding voor gegevensset*.
 
 1. Voeg de volgende code aan de bovenkant van de .jsp pagina toe waarvan u gegevens wilt vangen:
 

@@ -3,7 +3,7 @@ description: De staafgrafiek in Data Workbench bevat nu een regressievergelijkin
 title: Regressieanalyse grafiek
 uuid: 8512890e-f42b-4dce-826a-2b4bf2a215f4
 exl-id: bfc76c4a-edd5-41fe-b875-c199ea3beab5
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # Regressieanalyse grafiek{#regression-analysis-graph}
 
+{{eol}}
+
 De staafgrafiek in Data Workbench bevat nu een regressievergelijking voor meerdere meetwaarden in meerdere grafieken.
 
-[Met staafgrafieken ](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/graphs/c-graphs.html) in Data Workbench kunt u metriek in een grafiek verkleinen tot metriek in een andere grafiek. Als u meerdere grafieken hebt, kunt u een metrische waarde (als de onafhankelijke variabele) vergelijken met een grafiek die andere metrische gegevens evalueert (als afhankelijke variabelen). Dit laat u de sterkte van het verband tussen één afhankelijke variabele (metrisch gevestigd eerst) en een reeks andere veranderende metriek (regressies met gevestigde afhankelijke metrisch) bepalen.
+[Staafgrafieken](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/graphs/c-graphs.html) in Data Workbench kunt u metriek in één grafiek aan metriek in een andere grafiek verminderen. Als u meerdere grafieken hebt, kunt u een metrische waarde (als de onafhankelijke variabele) vergelijken met een grafiek die andere metrische gegevens evalueert (als afhankelijke variabelen). Dit laat u de sterkte van het verband tussen één afhankelijke variabele (metrisch gevestigd eerst) en een reeks andere veranderende metriek (regressies met gevestigde afhankelijke metrisch) bepalen.
 
 Met de regressieanalyse op basis van een grafiekvisualisatie kunnen analisten &#39;wat-als&#39;-scenario&#39;s uitvoeren. Welke gevolgen zal deze verhoging bijvoorbeeld hebben voor de inkomsten als de bezoeken tot dit niveau stijgen?
 

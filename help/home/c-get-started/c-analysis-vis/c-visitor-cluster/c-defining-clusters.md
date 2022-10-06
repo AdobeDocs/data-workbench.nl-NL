@@ -3,38 +3,40 @@ description: Selecteer inputvariabelen, het aantal clusters, en een doelpopulati
 title: Clusters samenstellen
 uuid: f8462445-b7d2-48ae-aed7-2a3abc491cfb
 exl-id: 60bc75bf-2f89-455b-8be9-aa20bb837752
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 0%
 
 ---
 
-# Clusters maken{#building-clusters}
+# Clusters samenstellen{#building-clusters}
+
+{{eol}}
 
 Selecteer inputvariabelen, het aantal clusters, en een doelpopulatie (indien gewenst) om clusters in uw dataset te bepalen.
 
 **Clusters samenstellen**
 
-1. Open **[!UICONTROL Cluster Builder]**.
+1. Open de **[!UICONTROL Cluster Builder]**.
 
-   Klik **Visualisatie** > **Predictieve Analytics** > **Clustering** > **Cluster Builder**.
+   Klikken **Visualisatie** > **Predictieve analyse** > **Clustering** > **Cluster Builder**.
 
    ![](assets/cluster-builder-step1.png)
 
 1. Selecteer invoervariabelen.
 
-   * Voeg metriek toe aan de **[!UICONTROL Input Variables]** lijst door van **[!UICONTROL Metric]** menu in de toolbar te selecteren.
+   * Metrische gegevens toevoegen aan de **[!UICONTROL Input Variables]** lijst door uit de lijst te selecteren **[!UICONTROL Metric]** op de werkbalk.
 
       ![](assets/cluster_metric_select.png)
 
-   * Voeg afmetingselementen aan **[!UICONTROL Input Variables]** lijst toe door hen van een Dimension te slepen.
+   * Dimensie-elementen toevoegen aan de **[!UICONTROL Input Variables]** lijst door hen van een Dimension te slepen.
 
-      Druk op **[!UICONTROL Ctrl + Alt]** en sleep geselecteerde dimensie-elementen naar de **[!UICONTROL Input Variables]**-lijst of naar het vak **[!UICONTROL Element]** in de werkbalk.
+      Druk **[!UICONTROL Ctrl + Alt]** en sleep geselecteerde dimensie-elementen naar de **[!UICONTROL Input Variables]** of de **[!UICONTROL Element]** in de werkbalk.
 
       ![](assets/cluster_dim_select.png)
-   Door gebrek, wordt het groeperen uitgevoerd op de volledige dataset. Alle invoervariabelen worden weergegeven in het linkerdeelvenster **[!UICONTROL Preprocessing]**.
-1. Gebruik het menu **[!UICONTROL Options]** om het gewenste aantal clusters te selecteren.
+   Door gebrek, wordt het groeperen uitgevoerd op de volledige dataset. Alle invoervariabelen worden links weergegeven **[!UICONTROL Preprocessing]** venster.
+1. Gebruik de **[!UICONTROL Options]** om het gewenste aantal clusters te selecteren.
 
    ![](assets/build_cluster_2.png)
 
@@ -42,11 +44,11 @@ Selecteer inputvariabelen, het aantal clusters, en een doelpopulatie (indien gew
 
    ![](assets/build_cluster_3.png)
 
-   Begin door de gewenste ondergroep te bepalen gebruikend selecties in uw Werkruimte of door **[!UICONTROL Filter Editor]** te gebruiken. Als u de gewenste subset hebt geselecteerd, stelt u de doelpopulatie in het menu **[!UICONTROL Options]** in. U wordt aangeraden de doelgroep een identificatienaam te geven.
+   Begin door de gewenste ondergroep te bepalen gebruikend selecties in uw Werkruimte of door te gebruiken **[!UICONTROL Filter Editor]**. Als u de gewenste subset hebt geselecteerd, stelt u de doelpopulatie in het dialoogvenster **[!UICONTROL Options]** -menu. U wordt aangeraden de doelgroep een identificatienaam te geven.
 
-   Het **[!UICONTROL Options]** menu heeft ook montages om het maximumaantal overgangen en de aanvaardbare drempel voor centrumconvergentie te controleren.
+   De **[!UICONTROL Options]** menu heeft ook instellingen om het maximumaantal controles en de aanvaardbare drempel voor centrumconvergentie te bepalen.
 
-1. Nadat de input en de opties zijn gevormd, klik **Go** knoop om zich plaatselijk in werking te stellen of **[!UICONTROL Submit]** te drukken om de taak naar de Predictive Server van Analytics te verzenden. De voorlegging aan de server zal de resulterende afmeting aan de dataset bewaren wanneer de convergentie volledig is.
+1. Nadat de input en de opties zijn gevormd, klik **Ga** knoop om het groeperen plaatselijk in werking te stellen of druk **[!UICONTROL Submit]** om de taak naar de Predictive Analytics Server te verzenden. De voorlegging aan de server zal de resulterende afmeting aan de dataset bewaren wanneer de convergentie volledig is.
 
    Wanneer het lopen plaatselijk, zult u de Bouwer van de Cluster door vier kanopie zich groeperende stadia zien aangezien het intelligente centra bepaalt die op de input worden gebaseerd.
 
@@ -62,7 +64,7 @@ Selecteer inputvariabelen, het aantal clusters, en een doelpopulatie (indien gew
 
    >[!NOTE]
    >
-   >Als u input tijdens convergentie toevoegt of verwijdert, zal het proces pauzeren tot u **Go** opnieuw drukt.
+   >Als u input tijdens convergentie toevoegt of verwijdert, zal het proces pauzeren tot u drukt **Ga** opnieuw.
 
    Nadat u clusters hebt gemaakt, kunt u de kleurkiezer openen om kleuren toe te wijzen voor verschillende distributieresultaten.
 
@@ -72,10 +74,10 @@ Selecteer inputvariabelen, het aantal clusters, en een doelpopulatie (indien gew
 
    ![](assets/build_cluster_6.png)
 
-1. Als u deze clusterdimensie in andere visualisaties wilt gebruiken, kunt u het plaatselijk **[!UICONTROL Save]** of **[!UICONTROL Submit]** het aan de server.
+1. Als u deze clusterdimensie in andere visualisaties wilt gebruiken, kunt u **[!UICONTROL Save]** lokaal of **[!UICONTROL Submit]** naar de server.
 
 Als u convergentie wilt opnieuw in werking stellen of de relevantie van input zien, kan de Bouwer van de Cluster bestaande clusterdimensies ook laden.
 
 >[!TIP]
 >
->Als deze optie is geselecteerd, worden alle invoervariabelen volledig vrijgegeven en krijgt u een lege clusterbuildervisualisatie om nieuwe clusters te definiëren.**[!UICONTROL Reset]**
+>Wanneer geselecteerd, **[!UICONTROL Reset]** geeft alle invoervariabelen volledig vrij en geeft u een lege clusterbouwer visualisatie om nieuwe clusters te bepalen.

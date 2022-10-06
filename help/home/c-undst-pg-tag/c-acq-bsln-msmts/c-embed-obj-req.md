@@ -3,7 +3,7 @@ description: Nadat de HTML van een pagina door een browser wordt aangevraagd, ve
 title: Verzoeken om ingesloten objecten verkrijgen (paginatags)
 uuid: 7fe561d1-aa5a-4ac9-82ba-aa27c7d208dd
 exl-id: 593e49bc-9619-4e85-8ce3-2e9d23d175c9
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 1%
@@ -12,15 +12,17 @@ ht-degree: 1%
 
 # Verzoeken om ingesloten objecten verkrijgen (paginatags){#acquiring-embedded-object-requests-page-tags}
 
+{{eol}}
+
 Nadat de HTML van een pagina door een browser wordt aangevraagd, verzoekt de browser de ingesloten objecten waarnaar in de HTML van die pagina wordt verwezen, van een webserver om de pagina in te vullen die door de browser wordt weergegeven.
 
 Dergelijke ingesloten objectaanvragen zijn doorgaans aanvragen voor afbeeldingsbestanden of JavaScript-bestanden, hoewel er momenteel honderden of misschien duizenden typen ingesloten objecten op internet worden gebruikt. Veel van deze ingebedde objecten verzoeken zijn over het algemeen niet nuttig in het analyseren van of het melden van de bedrijfsactiviteit van een Website; veel van dergelijke verzoeken zijn derhalve niet wenselijk voor verwerving , tenzij zij een specifiek bedrijfsdoel hebben , zoals het aanbieden van een advertentie of het nemen van een andere meting van de activiteit van de locatie .
 
-Een afbeelding kan bijvoorbeeld een advertentie zijn en u wilt waarschijnlijk weten dat de advertentie onder de indruk is van een bezoeker. Een JavaScript-fragment wordt mogelijk gebruikt om te meten of de specifieke browser een bepaalde eigenschap heeft en dit naar een [!DNL Sensor] doorgeeft voor aankoop. Elke pagina op een site kan 10 of 100 ingesloten objectaanvragen bevatten. Als een site de loginformatie voor elk van deze aanvragen opslaat, wordt de hoeveelheid gegevensopslag die nodig is om de loggegevens beschikbaar te houden voor toekomstige analyse vermenigvuldigd met het aantal ingesloten objectaanvragen voor elke gevraagde pagina. Om deze reden, [!DNL Site] laat u de verzoeken houden die voor analyse belangrijk zijn en anderen verwerpen alvorens u onnodige opslagkosten aangaat.
+Een afbeelding kan bijvoorbeeld een advertentie zijn en u wilt waarschijnlijk weten dat de advertentie onder de indruk is van een bezoeker. Een JavaScript-fragment wordt mogelijk gebruikt om te meten of de specifieke browser een bepaalde eigenschap heeft en dit door te geven aan een [!DNL Sensor] voor acquisitie. Elke pagina op een site kan 10 of 100 ingesloten objectaanvragen bevatten. Als een site de loginformatie voor elk van deze aanvragen opslaat, wordt de hoeveelheid gegevensopslag die nodig is om de loggegevens beschikbaar te houden voor toekomstige analyse vermenigvuldigd met het aantal ingesloten objectaanvragen voor elke gevraagde pagina. Daarom [!DNL Site] Hiermee kunt u de verzoeken die belangrijk zijn voor analyse behouden en andere negeren voordat u onnodige opslagkosten maakt.
 
-Door de functie van de opheffing te gebruiken die in de inhoud-type het filtreren mogelijkheden van [!DNL Sensor] (toevoegend &quot;Log=1&quot;aan het vraagkoord van een ingebedde objecten verzoek URL) wordt verstrekt, kan dat bepaalde ingebedde objecten verzoek en de verwante metingsgegevens worden verworven zonder de plaatsleider te vereisen om alle verzoeken van dat type op te slaan (bijvoorbeeld, alle `<image>` verzoeken).
+Door de opheffingsfunctie te gebruiken die wordt geboden in de filtermogelijkheden van het inhoudstype van [!DNL Sensor] (het toevoegen van &quot;Log=1&quot;aan het vraagkoord van een ingebedde objecten verzoek URL), kan dat bepaalde ingebedde objecten verzoek en de verwante metingsgegevens worden verkregen zonder de plaatsleider te vereisen om alle verzoeken van dat type op te slaan (bijvoorbeeld al `<image>` verzoeken).
 
-[!DNL Sensor] verzamelt de meetgegevens in de volgende tabel voor elk ingesloten objectverzoek van de webserver, ervan uitgaande dat dit niet  [!DNL Sensor] is geconfigureerd om het uit te filteren of dat het filter is overschreven. De verzamelde informatie heeft betrekking op de bezoeker en de sessie en volgende sessies via de logitems van het x-trackingid- of cs(cookie)-logboek.
+[!DNL Sensor] verzamelt de meetgegevens in de volgende tabel voor elk ingesloten objectverzoek van de webserver, ervan uitgaande dat [!DNL Sensor] is niet geconfigureerd om het filter uit te filteren of om te negeren. De verzamelde informatie heeft betrekking op de bezoeker en de sessie en volgende sessies via de logitems van het x-trackingid- of cs(cookie)-logboek.
 
 <table id="table_11BE08A798E743EC8E76F738F0CE5884">
  <thead>
@@ -35,14 +37,14 @@ Door de functie van de opheffing te gebruiken die in de inhoud-type het filtrere
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> Tracking-id (unieke bezoeker) </td>
-   <td colname="col3"> Identifier gelezen van een cookie die door <span class="wintitle"> Sensor </span> op eerste verzoek in de browser van de gebruiker is geplaatst </td>
+   <td colname="col3"> Id gelezen uit een cookie die door de gebruiker in de browser is geplaatst <span class="wintitle"> Sensor </span> op eerste verzoek </td>
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Datum </p> <p>Tijd </p> </td>
    <td colname="col2"> Tijdstempel </td>
    <td colname="col3"> Tijdstip waarop het verzoek door de server werd verwerkt (bij precisie 100 ns; nauwkeurigheid is afhankelijk van serveromgeving en NTP) </td>
-   <td colname="col4"> 2002-11-21 17:21: </td>
+   <td colname="col4"> 2002-11-21 17:21:45,123 </td>
   </tr>
   <tr>
    <td colname="col1"> sc (inhoudstype) </td>
@@ -72,13 +74,13 @@ Door de functie van de opheffing te gebruiken die in de inhoud-type het filtrere
    <td colname="col1"> s-dns </td>
    <td colname="col2"> Domeinnaam server </td>
    <td colname="col3"> Domeinnaam van de webserver die de aanvraag verwerkt </td>
-   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referentie) </td>
    <td colname="col2"> URL verwijzen </td>
    <td colname="col3"> Inhoud van het veld HTTP-referentie die door de client is verzonden </td>
-   <td colname="col4"> <span class="filepath"> https://www.referringsite.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> https://www.referringsite.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs (user-agent) </td>

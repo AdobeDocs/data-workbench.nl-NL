@@ -3,14 +3,16 @@ description: De vector van de middelmonitor bevat de Monitor van de Begroting va
 title: Bronnen voor query-wachtrij
 uuid: 6b516bed-7f9a-4821-869e-19e720f20313
 exl-id: 6d445a4d-a415-41ce-9d45-1bdd0e726edd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
-# De Monitoren van het Middel van de Rij van de vraag{#query-queue-resource-monitors}
+# Bronnen voor query-wachtrij{#query-queue-resource-monitors}
+
+{{eol}}
 
 De vector van de middelmonitor bevat de Monitor van de Begroting van het Geheugen en het Aantal Monitor van Vragen.
 
@@ -38,7 +40,7 @@ De volgende lijst beschrijft de gebieden van de middelmonitor die voor vraag het
   <tr> 
    <td colname="col1"> <p>Lage drempelwaarde </p> </td> 
    <td colname="col2"> <p>double </p> </td> 
-   <td colname="col3"> <p>De lage drempel voor geheugengebruik (bytes). Als <span class="wintitle"> de waarde van de Monitor van de Begroting van het Geheugen </span> onder deze waarde is, worden de nieuwe bunches toegestaan om te plannen, en de geplande bunches worden toegestaan om te groeien. Stapels groeien bijvoorbeeld wanneer een gebruiker een visualisatie toevoegt aan een werkruimte. </p> </td> 
+   <td colname="col3"> <p>De lage drempel voor geheugengebruik (bytes). Indien <span class="wintitle"> Geheugenbudgetcontrole</span> de waarde is lager dan deze waarde, nieuwe bunches mogen worden gepland en geplande bunches mogen groeien. Stapels groeien bijvoorbeeld wanneer een gebruiker een visualisatie toevoegt aan een werkruimte. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Reactietijd </p> </td> 
@@ -58,7 +60,7 @@ De volgende lijst beschrijft de gebieden van de middelmonitor die voor vraag het
   <tr> 
    <td colname="col1"> <p>Lage drempelwaarde </p> </td> 
    <td colname="col2"> </td> 
-   <td colname="col3"> <p>De lage drempel voor geheugengebruik (bytes). Als <span class="wintitle"> de waarde van de Monitor van de Begroting van het Geheugen </span> onder deze waarde is, kunnen de nieuwe bunches worden gepland, en de geplande bunches kunnen groeien. </p> </td> 
+   <td colname="col3"> <p>De lage drempel voor geheugengebruik (bytes). Indien <span class="wintitle"> Geheugenbudgetcontrole</span> de waarde ligt onder deze waarde, nieuwe bunches kunnen worden gepland en geplande bunches kunnen groeien. </p> </td> 
   </tr> 
  </tbody> 
 </table>

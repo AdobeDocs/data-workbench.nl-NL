@@ -3,7 +3,7 @@ description: Pagina-overlays worden alleen geconfigureerd in de sitetoepassing, 
 title: Een paginabedekking configureren
 uuid: c4c612ed-5154-4b20-96ab-24b74fba19a2
 exl-id: 4e0dfce8-def2-49f3-93e8-41d82922fb88
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Een paginabedekking configureren{#configure-a-page-overlay}
+
+{{eol}}
 
 Pagina-overlays worden alleen geconfigureerd in de sitetoepassing, maar ze kunnen ook worden geconfigureerd voor andere toepassingen.
 
@@ -22,7 +24,7 @@ Bij paginabedekking worden alleen gegevens weergegeven wanneer u een kleurlegend
 
 >[!NOTE]
 >
->Voor het configureren van paginaoverlay is een zorgvuldige configuratie vereist en het is mogelijk om misleidende resultaten te maken als koppelingen op onjuiste wijze aan de gegevens worden toegewezen. Het werk betrokken bij het vormen van paginaoverlay voor een specifieke plaats hangt van hoe de verbindingen binnen de code van de HTML op de pagina&#39;s van de plaats worden voorgesteld.
+>Voor het configureren van paginaoverlay is een zorgvuldige configuratie vereist en het is mogelijk om misleidende resultaten te maken als koppelingen op onjuiste wijze aan de gegevens zijn toegewezen. Het werk betrokken bij het vormen van paginaoverlay voor een specifieke plaats hangt van hoe de verbindingen binnen de code van de HTML op de pagina&#39;s van de plaats worden voorgesteld.
 
 Door de aard van de paginaoverlapping wordt aan de gebruiker het mentale model voorgesteld dat het toont &quot;waar de mensen klikken.&quot; Als de gegevens die de visualisatie ondersteunen niet overeenkomen met dit model, is de kans op verwarring groot.
 
@@ -32,10 +34,10 @@ In [!DNL Site], vertegenwoordigt een verbinding typisch een element van Volgende
 >
 >Het wordt niet aanbevolen de pagina-afmeting voor paginabedekking te gebruiken. Gebruikers kunnen de naam van de elementen van de pagina-afmetingen wijzigen en zo de koppelingssyntaxis wijzigen waarop de functie voor paginaoverlay is gebaseerd.
 
-Als u paginabedekking voor [!DNL Site] wilt configureren, moet u twee bestanden bewerken:
+Pagina-overlay configureren voor [!DNL Site], moet u twee bestanden bewerken:
 
 * **[!DNL Page Overlay.vw]:** Dit bestand is een sjabloonbestand voor het maken van paginaoverlayvisualisaties. Er moet ten minste één sjabloonbestand aanwezig zijn in het profiel waarvoor u paginaoverlay configureert.
-* **[!DNL Page Overlay Link Templates.cfg]:** Wanneer de pagina-overlayvisualisatie een pagina laadt, worden automatisch de koppelingen op de pagina en hun bestemmingen geïdentificeerd. Als u deze koppelingen wilt koppelen aan elementen in de gegevens, moet u een set reguliere expressies definiëren in dit bestand.
+* **[!DNL Page Overlay Link Templates.cfg]:** Wanneer de paginabedekking een pagina laadt, worden automatisch de koppelingen op de pagina en hun bestemmingen geïdentificeerd. Als u deze koppelingen wilt koppelen aan elementen in de gegevens, moet u een set reguliere expressies definiëren in dit bestand.
 
    U kunt meerdere reguliere expressies definiëren die overeenkomen met de elementen van de dimensie. De volgorde waarin u de expressies definieert, is belangrijk. Wanneer u een bedekking voor een bepaalde pagina aanvraagt, neemt de Data Workbench een momentopname van de daadwerkelijke pagina zoals het in Webbrowser zou verschijnen en ontleedt de code van de HTML die verbindingen volgens een lijst van regelmatige uitdrukkingen vertegenwoordigt die u bepaalt. Voor elke koppeling op de geselecteerde pagina probeert de software een overeenkomende reguliere-expressiepatroon te vinden door onderaan de lijst te werken totdat de eerste overeenkomst is gevonden. De eerste expressie die moet overeenkomen met een dimensie-element is de expressie die wordt gebruikt. Daarom is het beter om eerst de reguliere expressie met het meest specifieke overeenkomende patroon weer te geven, gevolgd door minder specifieke expressies. Als er een overeenkomst is, wordt de koppeling gemarkeerd weergegeven in de visualisatie van de paginabedekking.
 
@@ -43,13 +45,13 @@ Als u paginabedekking voor [!DNL Site] wilt configureren, moet u twee bestanden 
 
 1. I
 
-   Navigeer in [!DNL Profile Manager] naar **[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**.
+   n de [!DNL Profile Manager], navigeer naar **[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**.
 
    >[!NOTE]
    >
    >De map Dimension Element bevat de contextmenu-items die worden weergegeven wanneer u met de rechtermuisknop op een dimensie-element klikt. Open bijvoorbeeld een URI-tabel en selecteer vervolgens een URI-element. Klik met de rechtermuisknop op de URI en de paginaoverlay.
 
-1. Klik in de map URI met de rechtermuisknop op het vinkje naast het bestand [!DNL Page Overlay.vw] en klik op **[!UICONTROL Make Local]**. Er wordt een vinkje voor dit bestand weergegeven in de kolom [!DNL User].
+1. Klik in de map URI met de rechtermuisknop op het vinkje naast de knop [!DNL Page Overlay.vw] bestand en klik op **[!UICONTROL Make Local]**. Er wordt een vinkje voor dit bestand weergegeven in het dialoogvenster [!DNL User] kolom.
 1. Klik met de rechtermuisknop op het nieuwe vinkje en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Geef het domein op (en Browserhoogte, indien nodig).
 
@@ -74,18 +76,18 @@ Als u paginabedekking voor [!DNL Site] wilt configureren, moet u twee bestanden 
    ```
 
 1. Sla het bestand op.
-1. Als u deze wijziging beschikbaar wilt maken voor alle gebruikers van het werkprofiel, klikt u in [!DNL Profile Manager] met de rechtermuisknop op het vinkje voor het bestand [!DNL .vw] in de kolom [!DNL User] en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. Als u deze wijziging beschikbaar wilt maken voor alle gebruikers van het werkprofiel, gaat u naar [!DNL Profile Manager], klikt u met de rechtermuisknop op het vinkje voor de [!DNL .vw] in het [!DNL User] kolom en klik op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
 
    >[!NOTE]
    >
-   >U kunt aanvullende sjabloonbestanden maken voor andere sites of subdomeinen. Elke sjabloon die u maakt, wordt weergegeven in de [!DNL Page Overlay menu].
+   >U kunt aanvullende sjabloonbestanden maken voor andere sites of subdomeinen. Elke sjabloon die u maakt, wordt weergegeven in [!DNL Page Overlay menu].
 
-1. Klik in de map Context van het [!DNL Profile Manager] met de rechtermuisknop op het vinkje naast het bestand [!DNL Page Overlay Link Templates.cfg] en klik op **[!UICONTROL Make Local]**.
+1. In de map Context van het dialoogvenster [!DNL Profile Manager], klikt u met de rechtermuisknop op het vinkje naast de knop [!DNL Page Overlay Link Templates.cfg] bestand en klik op **[!UICONTROL Make Local]**.
 
-   Er wordt een vinkje voor dit bestand weergegeven in de kolom [!DNL User].
+   Er wordt een vinkje voor dit bestand weergegeven in het dialoogvenster [!DNL User] kolom.
 
 1. Klik met de rechtermuisknop op het nieuwe vinkje en klik op **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
-1. Klik met de rechtermuisknop **[!UICONTROL Link Templates]** en klik **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
+1. Klikken met rechtermuisknop **[!UICONTROL Link Templates]** en klik op **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
 1. Bewerk indien nodig de parameters voor de LinkRegex-vector:
 
 <table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B">
@@ -102,7 +104,7 @@ Als u paginabedekking voor [!DNL Site] wilt configureren, moet u twee bestanden 
   </tr>
   <tr>
    <td colname="col1"> <p>Uitdrukking </p> </td>
-   <td colname="col2"> <p>De reguliere expressie die wordt gebruikt om het desbetreffende deel van de koppeling HTML te selecteren om het volgende element van de Dimension te zoeken. De reguliere expressie moet exact overeenkomen en het gewenste uitvoerpatroon wordt tussen haakjes gegroepeerd. Voor details over regelmatige uitdrukkingen, zie <i>de Gids van de Configuratie van de Dataset</i>. </p> </td>
+   <td colname="col2"> <p>De reguliere expressie die wordt gebruikt om het desbetreffende deel van de koppeling HTML te selecteren om het volgende element van de Dimension te zoeken. De reguliere expressie moet exact overeenkomen en het gewenste uitvoerpatroon wordt tussen haakjes gegroepeerd. Zie voor meer informatie over reguliere expressies de <i>Configuratie-handleiding voor gegevensset</i>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Uitvoerpatroon </p> </td>
@@ -115,5 +117,5 @@ In het volgende voorbeeldbestand worden drie reguliere expressies getoond:
 
 ![](assets/cfg_PageOverlayLinkTemplates_Example.png)
 
-1. Als u het bestand wilt opslaan, klikt u met de rechtermuisknop **[!UICONTROL (modified)]** boven in het venster en klikt u op **[!UICONTROL Save]**.
-1. Als u deze wijziging beschikbaar wilt maken voor alle gebruikers van het werkprofiel, klikt u met de rechtermuisknop op het vinkje voor [!DNL Page Overlay Link Templates.cfg] in de kolom [!DNL User] en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. Als u het bestand wilt opslaan, klikt u met de rechtermuisknop **[!UICONTROL (modified)]** boven aan het venster en klik op **[!UICONTROL Save]**.
+1. Als u deze wijziging beschikbaar wilt maken voor alle gebruikers van het werkprofiel, klikt u met de rechtermuisknop op het vinkje voor [!DNL Page Overlay Link Templates.cfg] in de [!DNL User] kolom en klik op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Help bij Data Workbench
 user-guide-description: Meer informatie over de mogelijkheden van Data Workbench met meerdere kanalen. Omvat de Cliënt van de Data Workbench, Installatie, gidsen van de Configuratie van de Dataset, en meer.
-source-git-commit: aab669c31131eb455749ae5667441f604ee1a252
+source-git-commit: 90b9fff995cb37a62024f454f009e9e0d7b927cd
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3498'
 ht-degree: 0%
 
 ---
@@ -859,7 +859,7 @@ ht-degree: 0%
          + [Visualisaties vergrendelen en ontgrendelen](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-locking-and-unlocking-visualizations.md)
          + [Invouwen en uitvouwen van visualisaties](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-collapsing-and-expanding-visualizations.md)
          + [Visualisaties exporteren](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-exporting-visualizations.md)
-         + [Visualisaties configureren](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
+         + [Visualisaties configureren en opnieuw configureren](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
          + [Visualisatie verwijderen](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-remove-visualizations.md)
          + [Visualisaties vergroten/verkleinen](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-sizing-visualizations.md)
          + [Bewegende visualisatie](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
@@ -902,7 +902,7 @@ ht-degree: 0%
    + Servercommunicatie {#servers-communication}
       + [Communicatie tussen dashboard en Data Workbench Servers](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [Inschakelen van Query API controleren](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
-      + [Toegangsbeheer configureren](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
+      + [Toegangsbeheer dashboard configureren](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + Implementatie van dashboard {#dashboard-deployment}
       + [Implementatie van dashboard](c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
       + [Het dashboard implementeren](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)

@@ -3,7 +3,7 @@ description: Statistische callouts meten betekenisvolle relaties om verborgen ka
 title: Statistische bijschriften
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
 exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 
 # Statistische bijschriften{#statistical-callouts}
 
+{{eol}}
+
 Statistische callouts meten betekenisvolle relaties om verborgen kansen en variabelen van belang te identificeren voor meer geavanceerde mogelijkheden voor datamining in publiekscategorieën en scoring van bezoekersreacties.
 
 Met statistische callouts worden de algoritmen uitgebreid, zodat meer gegevenstypen kunnen worden gecorreleerd, zoals binomiale variabelen (ja/neen, 0/1, of koper/niet-koper) die gecorreleerd zijn met aftelbare meetgegevens (bezoeken, orders of downloads).
@@ -19,7 +21,7 @@ Met statistische callouts worden de algoritmen uitgebreid, zodat meer gegevensty
 Om statistische callouts toe te voegen:
 
 1. In een lijst, klik de metrische kopbal met de rechtermuisknop aan.
-1. Selecteer **[!UICONTROL Statistics]** en selecteer of ontruim dan de controletekens voor elk vereist plaatsen. Alles in de callout Weergave wordt geselecteerd als de standaardinstelling.
+1. Selecteren **[!UICONTROL Statistics]** en selecteert of wist dan de controletekens voor elke vereiste het plaatsen. Alles in de callout Weergave wordt geselecteerd als de standaardinstelling.
 
    ![](assets/statistical_callouts.png)
 
@@ -51,7 +53,7 @@ De callout kan statistische waarden terugkeren die in de datasetkolommen worden 
   </tr>
   <tr>
    <td colname="col1"> Standaardafwijking </td>
-   <td colname="col2"> De standaardafwijking geeft aan hoeveel variatie er ten opzichte van het verwachte gemiddelde bestaat. Bij een lagere standaardafwijking worden de gegevenspunten dicht bij het gemiddelde weergegeven. Een hogere standaardafwijking laat zien dat de gegevenspunten over een groot waardebereik worden verspreid. </td>
+   <td colname="col2"> De standaardafwijking geeft aan hoeveel variatie er ten opzichte van het verwachte gemiddelde bestaat. Bij een lagere standaardafwijking worden de gegevenspunten dicht bij het gemiddelde weergegeven. Een hogere standaardafwijking laat zien dat de gegevenspunten worden verspreid over een groot waardebereik. </td>
   </tr>
   <tr>
    <td colname="col1"> Totaal </td>

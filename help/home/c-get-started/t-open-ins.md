@@ -3,7 +3,7 @@ description: Nadat Data Workbench is geïnstalleerd en met de server is verbonde
 title: Data Workbench openen
 uuid: d1da143d-6302-4467-a989-842b54b87c2e
 exl-id: 898c9dc7-969c-4e62-be6b-1d2e0086b1d6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -12,10 +12,12 @@ ht-degree: 0%
 
 # Data Workbench openen{#opening-data-workbench}
 
+{{eol}}
+
 Nadat Data Workbench is geïnstalleerd en met de server is verbonden, kunt u het gebruiken om uw verwerkte gegevens te analyseren.
 
 1. Navigeer naar de installatiemap van de Data Workbench.
-1. Dubbelklik [!DNL insight.exe] om de toepassing te starten.
+1. Dubbelklikken [!DNL insight.exe] om de toepassing te starten.
 1. Klik op **[!UICONTROL Login]**.
 
    ![](assets/dwb_login.png)
@@ -24,17 +26,17 @@ Nadat Data Workbench is geïnstalleerd en met de server is verbonden, kunt u het
 
    ![](assets/dwb_signin.png)
 
-   De eerste keer dat u start, geeft het systeem de pagina [!DNL Start] weer en wordt begonnen met het downloaden van profielgegevens en de gegevenscache.
+   De eerste keer dat u start, geeft het systeem de [!DNL Start] pagina en begint met het downloaden van profielgegevens en de gegevenscache.
 
-1. Klik op **[!UICONTROL Start]** nadat de gegevenscache is gevuld.
+1. Klik op **[!UICONTROL Start]**.
 
-   Het systeem toont [!DNL Worktop].
+   Het systeem geeft de [!DNL Worktop].
 
    ![](assets/wtp_open.png)
 
-   De volgende keer dat u de Data Workbench start, slaat het systeem de [!DNL Start]-pagina over en geeft de [!DNL Worktop] weer, tenzij een nieuw profiel aan de server is toegevoegd.
+   De volgende keer dat u de Data Workbench start, slaat het systeem de [!DNL Start] en geeft de [!DNL Worktop], tenzij een nieuw profiel aan de server is toegevoegd.
 
-   Updates van het profiel en de bijbehorende gegevens worden alleen gedownload als u online werkt en een netwerkverbinding met de Data Workbench-server hebt. Zie [Offline werken en Online](../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54) voor meer informatie over online werken.
+   Updates van het profiel en de bijbehorende gegevens worden alleen gedownload als u online werkt en een netwerkverbinding met de Data Workbench-server hebt. Ga voor meer informatie over online werken naar [Offline werken en online werken](../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
 
    >[!NOTE]
    >

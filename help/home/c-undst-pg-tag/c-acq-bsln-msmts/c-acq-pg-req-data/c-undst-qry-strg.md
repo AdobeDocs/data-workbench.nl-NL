@@ -3,7 +3,7 @@ description: De querytekenreeks (cs-uri-query) wordt vaak gebruikt door webtoepa
 title: De queryreeks begrijpen
 uuid: 7403277d-fbce-4e98-bd42-894142e38d0d
 exl-id: b5281e5f-3eb7-4d6a-a7b3-9958cb430621
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # De queryreeks begrijpen{#understanding-the-query-string}
 
+{{eol}}
+
 De querytekenreeks (cs-uri-query) wordt vaak gebruikt door webtoepassingen en siteontwikkelaars om informatie van pagina naar pagina door te geven vanwege de stateless aard van HTTP.
 
-In veel gevallen kan informatie worden doorgegeven in de queryreeks wanneer deze wordt aangeschaft door [!DNL Sensor] op de webserver. Dergelijke informatie kan door [!DNL Site] worden gebruikt om de ware structuur van de plaats, en de weg van bezoekers door het, evenals andere informatie te verlichten.
+In veel gevallen kan informatie in het vraagkoord worden overgegaan wanneer het door wordt verworven [!DNL Sensor] op de webserver. Dergelijke informatie kan worden gebruikt door [!DNL Site] om de ware structuur van de site en het pad van de bezoekers erdoorheen te belichten, alsmede andere informatie.
 
 In sommige dynamische websites zijn naam=waarde paren (variabelen) in de queryreeks belangrijk om te bepalen welke pagina daadwerkelijk wordt aangevraagd door een bezoeker. In dergelijke gevallen kunnen URL&#39;s op de volgende of soortgelijke wijze worden gestructureerd:
 
@@ -29,7 +31,7 @@ https://www.myserver.com/pageserved.asp?PAGENAME=HOME
 https://www.myserver.com/pageserved.asp?PAGENAME=HOME2
 ```
 
-Siteontwikkelaars en -toepassingen voegen vaak veel queryreeksvariabelen toe aan de URL&#39;s van een site die niets te maken hebben met het identificeren van de pagina die wordt aangevraagd. Hieronder vindt u voorbeelden:
+Siteontwikkelaars en -toepassingen voegen vaak veel queryreeksvariabelen toe aan de URL&#39;s van een site die niets te maken hebben met het identificeren van de pagina die wordt opgevraagd. Hieronder vindt u voorbeelden:
 
 ```
 https://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10001

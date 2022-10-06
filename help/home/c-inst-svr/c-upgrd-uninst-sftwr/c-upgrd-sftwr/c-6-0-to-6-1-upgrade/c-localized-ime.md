@@ -2,8 +2,8 @@
 description: De werkbank voor gegevens ondersteunt nu de IME (Input Method Editor) als secundair tekstinvoerproces voor internationale talen.
 title: De Invoermethode-editor installeren
 uuid: 2a4dc6de-9dd7-4280-b410-fb88a135fe45
-exl-id: 3fcc58f5-29a9-427e-831a-44d527614b56,0bdc7d95-b49a-4ca5-9fde-9c1ce2cd14ec,e4e1c016-0544-434a-b82e-fdd2a4af316c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+exl-id: 3fcc58f5-29a9-427e-831a-44d527614b56
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # De Invoermethode-editor installeren{#installing-the-input-method-editor}
+
+{{eol}}
 
 De werkbank voor gegevens ondersteunt nu de IME (Input Method Editor) als secundair tekstinvoerproces voor internationale talen.
 
@@ -20,29 +22,29 @@ Met IME&#39;s kunt u internationale tekens invoeren met behulp van verschillende
 >
 >Voor de gegevenswerkbank 6.1-release wordt alleen het virtuele vereenvoudigde Chinese toetsenbord ondersteund. Het invoeren van andere talen via de IME kan leiden tot onverwacht gedrag.
 
-## IME {#section-5f008d75a7b24119ab6aebc55454f927} gebruiken
+## Een IME gebruiken {#section-5f008d75a7b24119ab6aebc55454f927}
 
 De functie voor het invoeren van zwevende IME-tekst gebruiken:
 
-1. Klik **[!UICONTROL Alt + Space]** voor om het even welk gebied van de tekstinput.
+1. Klikken **[!UICONTROL Alt + Space]** voor een tekstinvoergebied.
 1. Voer waarden in met behulp van de IME van uw systeem.
-1. Sluit het invoerdialoogvenster door de **[!UICONTROL Enter]**-toets te selecteren of op de **[!UICONTROL OK]**-knop te klikken.
+1. Sluit het dialoogvenster voor invoer door het **[!UICONTROL Enter]** of op de toets **[!UICONTROL OK]** knop.
 
    Het dialoogvenster verdwijnt en de tekens verschijnen in het geselecteerde veld.
 
 **Het bestand Insight.cfg bijwerken**
 
-Als u de IME wilt gebruiken, moet u het [!DNL Insight.cfg]-bestand met deze instelling bijwerken:
+Als u de IME wilt gebruiken, moet u de [!DNL Insight.cfg] bestand met deze instelling:
 
 ```
 Localized IME = bool: true
 ```
 
-Als deze instelling niet bestaat in het configuratiebestand en u op **[!UICONTROL Alt + Space]** drukt, wordt de IME-functie niet geactiveerd.
+Als deze instelling niet bestaat in het configuratiebestand, drukt u op **[!UICONTROL Alt + Space]** zal de IME-functie niet inschakelen.
 
-**Beginnend Inzicht in een andere taal:** om gelokaliseerde activa zoals een splash scherm beter te steunen en veelvoudige talen in de toekomst te steunen, vereist de werkbank van gegevens bevel-lijn argumenten die de te laden taal identificeren. De standaardtaal is Engels.
+**Inzicht starten in een andere taal:** Voor een betere ondersteuning van gelokaliseerde elementen, zoals een welkomstscherm, en voor de ondersteuning van meerdere talen in de toekomst, zijn in de werkbank voor gegevens opdrachtregelargumenten vereist waarmee de te laden taal wordt geïdentificeerd. De standaardtaal is Engels.
 
-Voor het starten van een gegevenswerkbank in het Chinees moet u [!DNL Insight.exe] aanroepen met het argument &quot;-zh-cn&quot;:
+Voor het starten van een gegevenswerkbank in het Chinees moet u een oproep doen [!DNL Insight.exe] met het argument &quot;-zh-cn&quot;:
 
 ```
 Insight.exe -zh-cn

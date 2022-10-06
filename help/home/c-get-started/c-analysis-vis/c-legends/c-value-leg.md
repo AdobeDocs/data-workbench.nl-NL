@@ -3,7 +3,7 @@ description: Een legenda van de waarde toont bepaalde waardegebeurtenissen.
 title: Waardelegenda
 uuid: 7779f442-2f45-4bf8-a62a-585aaceaeb3a
 exl-id: b28ba604-93ef-4081-ae55-937fb537c068
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Waardelegenda{#value-legends}
 
+{{eol}}
+
 Een legenda van de waarde toont bepaalde waardegebeurtenissen.
 
-De waarde legenda wordt gevormd slechts in de HBX en [!DNL Site] toepassingen, maar zij kunnen voor andere toepassingen worden gevormd. Neem voor meer informatie contact op met de Adobe Consulting Services.
+De legenda van de waarde wordt gevormd slechts in de HBX en [!DNL Site] toepassingen, maar zij kunnen voor andere toepassingen worden gevormd. Neem voor meer informatie contact op met de Adobe Consulting Services.
 
-In HBX en [!DNL Site] wordt een value-gebeurtenis gedefinieerd als een sessie die bedrijfswaarde heeft gegenereerd. Zo kunnen de records met gebeurtenisgegevens die aan bepaalde paginaweergaven zijn gekoppeld (bijvoorbeeld een pagina om u te bedanken voor uw bestelling of een pagina om de toepassing te voltooien) waardegebeurtenissen vertegenwoordigen voor een bedrijfsorganisatie.
+In HBX en [!DNL Site]Een value-gebeurtenis wordt gedefinieerd als een sessie die een zakelijke waarde heeft gegenereerd. Zo kunnen de records met gebeurtenisgegevens die aan bepaalde paginaweergaven zijn gekoppeld (bijvoorbeeld een pagina om u te bedanken voor uw bestelling of een pagina om de toepassing te voltooien) waardegebeurtenissen vertegenwoordigen voor een bedrijfsorganisatie.
 
 Met waardegebeurtenissen kunt u de hoeveelheid waarde meten en bijhouden die door de website wordt gegenereerd. U kunt de bedrijfswaarde in dollars voor elke gebeurtenis beoordelen en vragen beantwoorden zoals:
 
@@ -35,7 +37,7 @@ In de volgende tabel worden de metriek weergegeven die betrekking heeft op waard
 
 U kunt eenvoudig alles wat bezoekers op de website doen, definiëren als een waardegebeurtenis: het posten van een verzoek van de klantendienst, het voltooien van een toepassing, het bekijken van een stuk van inhoud, of het voltooien van een aankoop. Elke gebeurtenis value komt overeen met een gebruiker die een bepaalde pagina of set pagina&#39;s op de website opent en is gekoppeld aan een bedrijfswaarde in dollars. Stel bijvoorbeeld dat elke gebruiker die op de pagina &quot;Bedankt voor uw aankoop&quot; komt, een dekkingsbijdrage van gemiddeld $20 genereert. U zou een waardegebeurtenis voor die pagina bepalen die een waarde van $20 heeft.
 
-## Nieuwe waardegebeurtenissen {#section-2ea4d168336e4d2e98b22b636ed43853} definiëren
+## Gebeurtenissen voor nieuwe waarden definiëren {#section-2ea4d168336e4d2e98b22b636ed43853}
 
 **Een nieuwe waardegebeurtenis definiëren in HBX of[!DNL Site]**
 
@@ -57,7 +59,7 @@ Wanneer u een waardegebeurtenis maakt, sleept u websitepagina&#39;s die waarde v
 
 1. Wijs in de legenda-waarde een bedrijfswaarde toe aan elke sessie waarvoor de gebeurtenis plaatsvindt:
 
-   1. Klik in de kolom [!DNL Value per Event] op de cel die overeenkomt met de pagina die u als waardegebeurtenis hebt toegevoegd.
+   1. In de [!DNL Value per Event] klikt u op de cel die overeenkomt met de pagina die u als waardegebeurtenis hebt toegevoegd.
    1. Typ het dollarbedrag om voor de waarde van die gebeurtenis toe te wijzen en te drukken binnengaan.
 
    ![](assets/lgd_ValueLegend_Value.png)
@@ -66,7 +68,7 @@ Wanneer u een waardegebeurtenis maakt, sleept u websitepagina&#39;s die waarde v
 
 Nadat u minstens één waardegebeurtenis hebt bepaald, wordt de dimensie van het Segment van de Waarde beschikbaar voor gebruik. Deze dimensie vertegenwoordigt de totale waarde die een bezoeker in alle sessies heeft gegenereerd.
 
-## Waardegebeurtenissen {#section-25cd90a859384ca183c0fc0998f888cf} verwijderen
+## Waardegebeurtenissen verwijderen {#section-25cd90a859384ca183c0fc0998f888cf}
 
 * Klik met de rechtermuisknop op de gewenste gebeurtenis en klik op **[!UICONTROL Delete Event]**.
 
@@ -74,8 +76,8 @@ Nadat u minstens één waardegebeurtenis hebt bepaald, wordt de dimensie van het
 
 >[!NOTE]
 >
->De server van de Data Workbench berekent metriek over de volledige reeks gegevens die voor het profiel toegankelijk zijn u gebruikt. Door gebrek, [!DNL Data Workbench Server] berekent dergelijke metriek zoals Waarde, de Gebeurtenissen van de Waarde, Gemiddelde Waarde, en Omzetting over alle gegevens in de dataset van de analyse, zelfs als de gegevens niet uit de zelfde logische bron zijn.
+>De server van de Data Workbench berekent metriek over de volledige reeks gegevens die voor het profiel toegankelijk zijn u gebruikt. Standaard worden de [!DNL Data Workbench Server] berekent dergelijke metriek zoals Waarde, de Gebeurtenissen van de Waarde, Gemiddelde Waarde, en Omzetting over alle gegevens in de dataset van de analyse, zelfs als de gegevens niet uit de zelfde logische bron zijn.
 
 ## Exporteren naar Microsoft Excel {#section-feaa7a8eb8124fafbc74169bebaed6d8}
 
-Zie [Venstergegevens exporteren](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349) voor informatie over het exporteren van vensters.
+Voor informatie over het exporteren van vensters raadpleegt u [Venstergegevens exporteren](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

@@ -3,7 +3,7 @@ description: Net als bij de AppendURI-transformatie beïnvloedt de PrependURI-tr
 title: PrependURI
 uuid: 3f2fb1a7-83f7-481e-b892-0937acd379f9
 exl-id: c39d9241-ed66-446e-b59d-fdb11942d0e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # PrependURI{#prependuri}
 
+{{eol}}
+
 Net als bij de AppendURI-transformatie beïnvloedt de PrependURI-transformatie het interne veld dat door de gegevenswerkbench-server wordt gebruikt om de URI-dimensie te maken.
 
-De transformatie [!DNL PrependURI] werkt door de waarde in het geïdentificeerde inputgebied aan de voorzijde van de waarde momenteel in URI toe te voegen.
+De [!DNL PrependURI] Deze transformatie werkt door de waarde in het opgegeven invoerveld toe te voegen aan de voorzijde van de waarde die momenteel in de URI voorkomt.
 
 | Parameter | Beschrijving | Standaard |
 |---|---|---|

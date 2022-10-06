@@ -3,7 +3,7 @@ description: Een gebruikersaccount toevoegen
 title: Een gebruikersaccount toevoegen
 uuid: c322eeaa-a3f4-41e8-b38c-dd892ec29a87
 exl-id: c99f3189-4d89-443a-be5b-84352c4ec6e8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -12,7 +12,9 @@ ht-degree: 0%
 
 # Een gebruikersaccount toevoegen{#adding-a-user-account}
 
-1. Klik **[!UICONTROL Add User]** om de **[!UICONTROL New User]** herinnering omhoog te brengen.
+{{eol}}
+
+1. Klikken **[!UICONTROL Add User]** om **[!UICONTROL New User]** prompt.
 
    ![](assets/add_user_account.png)
 

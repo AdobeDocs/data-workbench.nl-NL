@@ -3,7 +3,7 @@ description: Als u met webgegevens werkt, kunt u de ExtractValue-transformatie g
 title: ExtractValue
 uuid: 305827a2-04e6-421f-82cb-923d62b02e70
 exl-id: 5bafe64f-081a-49ec-997e-68e8f6915a71
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # ExtractValue{#extractvalue}
+
+{{eol}}
 
 Als u met webgegevens werkt, kunt u de ExtractValue-transformatie gebruiken om een waarde te extraheren uit een queryreeks, cookie of vergelijkbaar gecodeerd veld in uw websitegegevens.
 
@@ -42,7 +44,7 @@ De namen die overeenkomen met de waarde die moet worden geëxtraheerd, kunnen in
   </tr> 
   <tr> 
    <td colname="col1"> Invoernaam </td> 
-   <td colname="col2"> <p>De naam of namen van de velden die uit de invoerquery moeten worden geëxtraheerd. </p> <p> <p>Opmerking:  Als de Invoernaam een vector is (er zijn meerdere namen aanwezig), wordt slechts één waarde geëxtraheerd. </p> </p> </td> 
+   <td colname="col2"> <p>De naam of namen van de velden die uit de invoerquery moeten worden geëxtraheerd. </p> <p> <p>Opmerking: Als de Invoernaam een vector is (er zijn meerdere namen aanwezig), wordt slechts één waarde geëxtraheerd. </p> </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -58,8 +60,8 @@ De namen die overeenkomen met de waarde die moet worden geëxtraheerd, kunnen in
  </tbody> 
 </table>
 
-Als u een zoekfragment wilt extraheren, kunt u de volledige woordgroep extraheren en desgewenst de woordgroep splitsen in zoektermen met een transformatie [!DNL Tokenize]. Zie [Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c) voor informatie over de [!DNL Tokenize]-transformatie.
+Als u een zoekfragment wilt extraheren, kunt u de hele woordgroep extraheren en desgewenst de woordgroep splitsen in zoektermen met een [!DNL Tokenize] transformatie. Voor informatie over de [!DNL Tokenize] transformatie, zie [Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c).
 
-In dit voorbeeld wordt een [!DNL ExtractValue]-transformatie geconfigureerd om waarden uit het veld x-v-search-querynames uit cs(reference-query) te extraheren en deze op te slaan in het veld x-search-speak.
+In dit voorbeeld wordt een [!DNL ExtractValue] transformatie om waarden van het veld x-v-search-querynames uit cs(reference-query) te extraheren en op te slaan in het veld x-search-express.
 
 ![](assets/cfg_TransformationType_ExtractValue.png)

@@ -3,7 +3,7 @@ description: Installeer en configureer de sensor voor Microsoft IIS 7.x of 8.x d
 title: Microsoft IIS op Windows Server 2008 of hoger
 uuid: 7fd8da68-1553-4395-b13e-b08a6ee1948e
 exl-id: cc909daa-60c0-4188-8e90-035c41bf3105
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1589'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Microsoft IIS op Windows Server 2008 of hoger{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 Installeer en configureer de sensor voor Microsoft IIS 7.x of 8.x die wordt uitgevoerd onder Microsoft Windows Server 2008 of hoger.
 
@@ -83,20 +85,20 @@ Het bestand txlogd.conf bevat de configuratieparameters voor Sensor.
 
 U moet het dossier uitgeven om, onder andere, de grootte van de schijfrij, het adres van de Server van het Inzicht, en identiteitskaart te specificeren die aan de gegevens zal worden vastgemaakt die door deze sensor worden geproduceerd. Het configuratiebestand bevat vereiste parameters en optionele parameters.
 
-* **De vereiste** parameters zijn montages die u moet specificeren wanneer u Sensor installeert. Zonder deze instellingen wordt Sensor niet uitgevoerd.
-* **Optionele** parameters zijn instellingen die standaard op vooraf gedefinieerde waarden (die u kunt wijzigen) of optionele functies inschakelen.
+* **Vereiste parameters** Dit zijn instellingen die u moet opgeven wanneer u Sensor installeert. Zonder deze instellingen wordt Sensor niet uitgevoerd.
+* **Optionele parameters** Dit zijn instellingen die standaard op vooraf gedefinieerde waarden (die u kunt wijzigen) of die optionele functies inschakelen.
 
 **Het Sensor-configuratiebestand bewerken**
 
-1. Open het `<SensorDirectory>/txlogd.conf` dossier in een tekstredacteur en plaats de vereiste parameters evenals om het even welke gewenste facultatieve parameters.
+1. Open de `<SensorDirectory>/txlogd.conf` in een teksteditor en stel de vereiste parameters en eventueel gewenste optionele parameters in.
 
-   Zie [Sensor Txlogd.conf File Parameters](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed) voor beschrijvingen van [!DNL txlogd.conf]-parameters.
+   Voor beschrijvingen van [!DNL txlogd.conf] parameters, zie [Sensor Txlogd.conf, bestandsparameters](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed).
 
 1. Sla het bestand op en sluit het.
 
 ## De zender starten en de schijfwachtrij maken {#section-2b8dfd06996d4ab49998eeb99bd9f5f0}
 
-Nadat u het [!DNL txlogd.conf]dossier vormt, kunt u het zendprogramma beginnen, het als dienst van Vensters registreren, en de schijfrij creëren.
+Nadat u vormt [!DNL txlogd.conf]kunt u het verzendprogramma starten, het registreren als Windows-service en de schijfwachtrij maken.
 
 1. Selecteer in het menu Start in Windows Accessoires > Opdrachtprompt.
 1. Navigeer in het opdrachtpromptvenster naar de map waarin u Sensor hebt geïnstalleerd en voer de volgende opdracht uit:
@@ -147,15 +149,15 @@ De zender is ontworpen om continu te werken. Als u de computer opnieuw opstart, 
 
 Voor IIS, is de inzamelaar een filter ISAPI dat u aan uw Webserver in IIS toevoegt.
 
-1. Open de Manager IIS gebruikend **Begin > Administratieve Hulpmiddelen > de Manager van de Informatie van Internet van de Diensten (IIS)**.
-1. Breid **Lokale Computer** en **Sites** knopen uit.
-1. Selecteer de website en dubbelklik in het rechterdeelvenster op **ISAPI-filters**.
-1. Klik in het deelvenster **Handelingen** op **Toevoegen**.
+1. IIS Manager openen met **Start > Systeembeheer > Internet Information Services (IIS) Manager**.
+1. Breid uit **Lokale computer** en **Sites** knooppunten.
+1. Selecteer de website en dubbelklik in het rechterdeelvenster **ISAPI-filters**.
+1. Onder de **Handelingen** deelvenster, klikt u op **Toevoegen**.
 
-1. Voer in het veld **Filternaam** een weergavenaam voor het filter in. De voorgestelde filternaam is &quot;Sensor&quot;.
-1. Klik **Bladeren**, selecteer het bestand qlog.dll (in de map waarin u Sensor hebt geïnstalleerd) en klik op **OK**.
+1. In de **Filternaam** voert u een weergavenaam voor het filter in. De voorgestelde filternaam is &quot;Sensor&quot;.
+1. Klikken **Bladeren**, selecteert u het bestand qlog.dll (in de map waarin u Sensor hebt geïnstalleerd) en klikt u op **OK**.
 
-1. Klik **OK** om het filter toe te voegen.
+1. Klikken **OK** om het filter toe te voegen.
 
    Nadat u het filter hebt toegevoegd, is de verzamelaar direct operationeel en klaar om gegevens te verzamelen.
 
@@ -167,9 +169,9 @@ Voer de volgende stappen uit als de groene pijl niet wordt weergegeven nadat het
    >
    >Deze bevelopeenvolging zou kunnen variëren afhankelijk van welke versie van Vensters u gebruikt.
 
-1. Selecteer in het linkerdeelvenster van het venster van de Event Viewer het logboek **Application**.
-1. Zoek in het rechterdeelvenster naar gebeurtenissen met &quot;Adobe&quot; in de kolom **Bron**.
-1. Als u een fout vindt, dubbelklikt u op de fout om het venster **Gebeurtenis-eigenschappen** weer te geven.
+1. Selecteer in het linkerdeelvenster van het venster van de Event Viewer de optie **Toepassing** log.
+1. Zoek in het rechterdeelvenster naar gebeurtenissen met &quot;Adobe&quot; in het dialoogvenster **Bron** kolom.
+1. Als u een fout vindt, dubbelklikt u op de fout om de fout weer te geven **Gebeurteniseigenschappen** venster.
 
 ## Extra gegevens vastleggen {#section-98db9625efdc4b60bfd76f7adf4af74d}
 

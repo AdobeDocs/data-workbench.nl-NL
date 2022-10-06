@@ -3,7 +3,7 @@ description: Richtlijnen voor het opgeven van de uitvoerindeling.
 title: Uitvoerindeling
 uuid: 12086f14-bad1-4d27-82fb-533e877d0a04
 exl-id: e695eaf4-ebe5-4dd1-8191-8045021d6411
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Uitvoerindeling{#output-format}
+
+{{eol}}
 
 Richtlijnen voor het opgeven van de uitvoerindeling.
 
@@ -24,8 +26,8 @@ Richtlijnen voor het opgeven van de uitvoerindeling.
 
 >[!NOTE]
 >
->Als u de Ctrl-toets ingedrukt houdt en met de rechtermuisknop klikt in het veld [!DNL Output Format], wordt een [!DNL Insert menu] weergegeven. Dit menu bevat een lijst met speciale tekens (bijvoorbeeld Tab) die vaak als scheidingstekens worden gebruikt.
+>Als u de Ctrl-toets ingedrukt houdt en met de rechtermuisknop klikt in het dialoogvenster [!DNL Output Format] veld, en [!DNL Insert menu] wordt weergegeven. Dit menu bevat een lijst met speciale tekens (bijvoorbeeld Tab) die vaak als scheidingstekens worden gebruikt.
 
-Als u de gegevens van de zittingsduur voor uw segment wilt uitvoeren, moet u nieuwe metrisch tot stand brengen die op metrische waarde van de Duur van de Zitting wordt gebaseerd. De nieuwe metrische waarde, die slechts voor gebruik met [!DNL Output Format] gebied van segmentuitvoer is, laat Microsoft Excel toe om zittingen correct te interpreteren die minder dan één uur duren. Als u een nieuwe metrische waarde voor de sessieduur wilt maken, opent u het [!DNL Session Duration.metric]-bestand (van [!DNL Profile Manager]) en voegt u een hekje (#) in de ftime-tekenreeks in: [!DNL ftime = string: %#H:%M:%S]
+Als u de gegevens van de zittingsduur voor uw segment wilt uitvoeren, moet u nieuwe metrisch tot stand brengen die op metrische waarde van de Duur van de Zitting wordt gebaseerd. De nieuwe metrisch, die slechts voor gebruik met [!DNL Output Format] in het veld voor segmentexport kunnen Microsoft Excel sessies van minder dan een uur correct interpreteren. Als u een nieuwe metrische sessieduur wilt maken, opent u de [!DNL Session Duration.metric] bestand (van de [!DNL Profile Manager]) en voeg een hekje (#) in het ftime koord in: [!DNL ftime = string: %#H:%M:%S]
 
-Het hekje zorgt ervoor dat een voorloopteken &quot;0&quot; wordt toegevoegd aan sessieduur van minder dan 1 uur. Het resultaat is dat Excel 0:53:21 interpreteert als 53 minuten en 21 seconden. Sla de nieuwe metrische gegevens op onder een andere naam en upload deze naar het juiste profiel voor anderen. Klik hiertoe met de rechtermuisknop op het vinkje voor het bestand in de kolom [!DNL User] en klik op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
+Het hekje zorgt ervoor dat een voorloopteken &quot;0&quot; wordt toegevoegd aan sessieduur van minder dan 1 uur. Dientengevolge, interpreteert Excel 0:53:21 als 53 minuten en 21 seconden. Sla de nieuwe metrische gegevens op onder een andere naam en upload deze naar het juiste profiel voor anderen, zodat u deze kunt gebruiken door met de rechtermuisknop op het vinkje voor het bestand in het dialoogvenster [!DNL User] kolom en klikken **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.

@@ -3,14 +3,16 @@ description: Door middel van clustering bij bezoekers kunt u klantkenmerken gebr
 title: Bezoekersclustering
 uuid: 0c16aaa0-1d86-43a6-a7e2-b43b3ea80dc5
 exl-id: 68c1845d-9c49-4ad9-adf3-c123d08cf758
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 1%
 
 ---
 
-# Bezoekerclustering{#visitor-clustering}
+# Bezoekersclustering{#visitor-clustering}
+
+{{eol}}
 
 Door middel van clustering bij bezoekers kunt u klantkenmerken gebruiken om bezoekers dynamisch te categoriseren en clustersets te genereren op basis van geselecteerde gegevensinvoer. Zo kunt u groepen identificeren die vergelijkbare belangen en gedragingen hebben voor klantanalyse en -gerichtheid.
 
@@ -25,22 +27,22 @@ Het clusterende proces vereist u om metriek en afmetingselementen te identificer
 * Het gemiddelde van elk van de clusters van K wordt het nieuwe centrum.
 * Het algoritme wordt herhaald in stap 2 en 3 tot convergentie wordt bereikt. Dit kan meerdere stappen duren.
 
-Met **[!UICONTROL Maximum Iterations]** in het menu **[!UICONTROL Options]** kan de analist het maximumaantal herhalingen opgeven dat door het clusteringsalgoritme moet worden uitgevoerd. Het instellen van deze optie kan resulteren in een snellere voltooiing van het clusteringproces op basis van het plafond voor maximale herhalingen ten koste van de exacte convergentie van de clustercentra.
+De **[!UICONTROL Maximum Iterations]** in de **[!UICONTROL Options]** kan de analist het maximumaantal herhalingen specificeren dat door het clusterende algoritme moet worden uitgevoerd. Het instellen van deze optie kan resulteren in een snellere voltooiing van het clusteringproces op basis van het plafond voor maximale herhalingen ten koste van de exacte convergentie van de clustercentra.
 
 >[!NOTE]
 >
 >Zodra de clusters zijn bepaald, kan de Dimension van de Cluster voor gebruik enkel als om het even welke andere dimensie worden bewaard. Het kan ook in de Ontdekkingsreiziger van de Cluster worden geladen om de scheiding van clustercentra te onderzoeken.
 
-In de Bouwer van de Cluster, kunt u **[!UICONTROL Options]** > **[!UICONTROL Algorithm]** selecteren om algoritmen te selecteren wanneer het bepalen van clusters. Er zijn momenteel drie ondersteunde algoritmen:
+In de Bouwer van de Cluster, kunt u selecteren **[!UICONTROL Options]** > **[!UICONTROL Algorithm]** om algoritmen te selecteren bij het definiëren van clusters. Er zijn momenteel drie ondersteunde algoritmen:
 
 * KMeans
-* Kmeans`++`
+* Kant`++`
 * Maximalisatie verwachting
 
 Er zijn twee manieren om het het groeperen proces in werking te stellen:
 
-* Methode 1 - klik **[!UICONTROL Go]** in het venster van de clustervisualisatie.
-* Methode 2 - Klik **[!UICONTROL Submit]** in het venster van de clustervisualisatie, dat direct de het groeperen baan naar de Server verzendt. U kunt de vooruitgang volgen door de &quot;Gedetailleerde Status voor Vraag&quot;optie.
+* Methode 1 - klik **[!UICONTROL Go]** in het venster voor clustervisualisatie.
+* Methode 2 - klik **[!UICONTROL Submit]** in het venster van de clustervisualisatie, dat direct de het groeperen baan naar de Server verzendt. U kunt de vooruitgang volgen door de &quot;Gedetailleerde Status voor Vraag&quot;optie.
 
 ![](assets/dwb_visitorclustering.png)
 
@@ -51,7 +53,7 @@ Het algoritme heeft de volgende beperkingen:
 
 >[!NOTE]
 >
->In het [!DNL DPU.cfg] dossier, wordt de waarde voor &quot;Vraag, de Limiet van het Geheugen&quot;geplaatst aan 500 MB door gebrek. Deze waarde moet worden verhoogd wanneer meerdere clusteringtaken worden uitgevoerd. Bijvoorbeeld, als u 5 het groeperen banen parallel in werking stelt, verhoog deze waarde tot 1 GB. Er is geen manier om de het groeperen baan te annuleren zonder de Server opnieuw te beginnen.
+>In de [!DNL DPU.cfg] bestand, wordt de waarde voor &#39;Query, Geheugenlimiet&#39; standaard ingesteld op 500 MB. Deze waarde moet worden verhoogd wanneer meerdere clusteringtaken worden uitgevoerd. Bijvoorbeeld, als u 5 het groeperen banen parallel in werking stelt, verhoog deze waarde tot 1 GB. Er is geen manier om de het groeperen baan te annuleren zonder de Server opnieuw te beginnen.
 
 **Aanbevelingen**
 

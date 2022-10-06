@@ -3,14 +3,16 @@ description: Als u een knooppunt selecteert door erop te klikken, worden de ande
 title: Een knooppunt selecteren
 uuid: d63b39f6-edec-4b4c-b36b-f6e6881d3419
 exl-id: a483547f-e338-4d13-8a0b-6cb7971b7790
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
 
 ---
 
-# Selecteer een knooppunt{#select-a-node}
+# Een knooppunt selecteren{#select-a-node}
+
+{{eol}}
 
 Als u een knooppunt selecteert door erop te klikken, worden de andere knooppunten gedimd, zodat u de pijlen van en naar het gemarkeerde knooppunt gemakkelijker kunt zien.
 

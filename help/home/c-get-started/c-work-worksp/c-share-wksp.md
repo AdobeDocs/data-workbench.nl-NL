@@ -3,7 +3,7 @@ description: Met het menu van de werkruimte Exporteren kunt u werkruimten afdruk
 title: Een werkruimte delen
 uuid: 6100143a-d602-42d7-b742-987fe5f835d6
 exl-id: c05b0f8f-cd73-4025-825b-32471c8681b8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Een werkruimte delen{#share-a-workspace}
+
+{{eol}}
 
 Met het menu van de werkruimte Exporteren kunt u werkruimten afdrukken en exporteren naar .png-bestanden of naar Excel.
 
@@ -49,11 +51,11 @@ Klik in een werkruimte op **[!UICONTROL Export]**.
   </tr> 
   <tr> 
    <td colname="col1"> Excel </td> 
-   <td colname="col2"> Als Microsoft Excel op de machine van de Data Workbench wordt geïnstalleerd, begint automatisch Microsoft Excel en voert de gegevens van bepaalde visualisaties, bepaalde legends, en tekstannotaties naar een nieuw dossier van Excel (.xls of .xlsx) uit. Zie <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> Het Uitvoeren van de Gegevens van de Werkruimte aan Microsoft Excel</a>. </td> 
+   <td colname="col2"> Als Microsoft Excel op de machine van de Data Workbench wordt geïnstalleerd, begint automatisch Microsoft Excel en voert de gegevens van bepaalde visualisaties, bepaalde legends, en tekstannotaties naar een nieuw dossier van Excel (.xls of .xlsx) uit. Zie <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> Werkruimtegegevens exporteren naar Microsoft Excel</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Exporteren (Excel) vanuit sjabloon </td> 
-   <td colname="col2"> Als Microsoft Excel op de machine van de Data Workbench wordt geïnstalleerd, begint automatisch Microsoft Excel en voert de gegevens van bepaalde visualisaties, bepaalde legenda, en tekstannotaties aan het dossier van malplaatjeExcel (<span class="filepath"> .xls</span> of <span class="filepath"> .xlsx</span>) uit dat u selecteert. Zie <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Exporteren naar een dossier van Excel van het Malplaatje</a>. </td> 
+   <td colname="col2"> Als Microsoft Excel op de machine van de Data Workbench wordt geïnstalleerd, begint automatisch Microsoft Excel en voert de gegevens van bepaalde visualisaties, bepaalde legenda, en tekstannotaties naar het dossier van malplaatjeExcel uit (<span class="filepath"> .xls</span> of <span class="filepath"> .xlsx</span>) die u selecteert. Zie <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Exporteren naar een Excel-sjabloonbestand</a>. </td> 
   </tr> 
  </tbody> 
 </table>

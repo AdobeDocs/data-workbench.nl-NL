@@ -3,7 +3,7 @@ description: Voer de volgende stappen uit om het instapproces voor Adobe Data Wo
 title: Basisinstructies aan boord voor DWB Managed Services
 uuid: ad44a4eb-00ea-49c7-8401-58976d8fe39e
 exl-id: 49fb6afe-b417-4554-9238-fd6381c00029
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Basisinstructies aan boord voor DWB Managed Services{#basic-onboarding-instructions-for-dwb-managed-services}
+
+{{eol}}
 
 Voer de volgende stappen uit om het instapproces voor Adobe Data Workbench (DWB), een onderdeel van Adobe Analytics Premium (AAP), te starten.
 
@@ -60,9 +62,9 @@ U ontvangt deze installatiebestanden van de klantenservice van Adobe om het DWB-
 1. Nadat u bestanden van de klantenservice van Adobe hebt ontvangen en gedownload, voert u de wizard DWB Setup uit om de werkstationsoftware op de clientcomputer te installeren.
 
 >[!NOTE]
-De tovenaar van de Opstelling DWB zal u door installatie van het DWB cliëntwerkstation lopen en zal helpen van Insight.cfg en `<PrimaryUser>`.pem dossiers de plaats bepalen in de vereiste omslagen te plaatsen. Het Insight.cfg- dossier verblijft met het Insight.exe- dossier in uw geïnstalleerd cliëntwerkstation. Het bestand `<PrimaryUser>`.pem bevindt zich in de map Certificates met het bestand trust_ca_cert.pem. DWB werkt alleen als alle certificaat- en configuratiebestanden aanwezig zijn.
+De tovenaar van de Opstelling DWB zal u door installatie van het DWB cliëntwerkstation lopen en zal helpen van Insight.cfg de plaats bepalen en `<PrimaryUser>`.pem-bestanden die in de vereiste mappen moeten worden geplaatst. Het Insight.cfg- dossier verblijft met het Insight.exe- dossier in uw geïnstalleerd cliëntwerkstation. De `<PrimaryUser>`Het .pem-bestand bevindt zich in de map Certificates met het bestand trust_ca_cert.pem. DWB werkt alleen als alle certificaat- en configuratiebestanden aanwezig zijn.
 
-Voor extra informatie, zie [DWB Tovenaar van de Opstelling](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
+Zie voor meer informatie de [Wizard DWB-instellingen](https://experienceleague.adobe.com/docs/data-workbench/using/install/workstation-setup/install-setup.html).
 
 ## Verbinding maken met uw DWB-servers {#section-8e79c4e07c2a4342a5bb8af6ee7be3c9}
 
@@ -83,4 +85,4 @@ In de werkruimte Werkstationconfiguratie op het DWB-clientwerkstation kunt u de 
 
 ・ Adobe TechOps zal de primaire productiecluster vormen om drie maanden rolgegevens te bevatten die maandelijks worden teruggesteld en opnieuw verwerkt. De updates aan raadplegingen (Geografie, DeviceAtlas, Standaard Classificaties) zullen ook als deel van de opwerkingstaak voorkomen. Standaard wordt de taak uitgevoerd op de eerste vrijdag van elke maand. Indien nodig kan het schema door de klantenservice worden gewijzigd.
 
-Neem voor aanvullende informatie contact op met [Adobe Klantenservice](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
+Voor meer informatie contact op met [Adobe Klantenservice](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).

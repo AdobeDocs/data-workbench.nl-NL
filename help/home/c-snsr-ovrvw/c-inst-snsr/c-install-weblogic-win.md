@@ -1,32 +1,36 @@
 ---
-description: Gedetailleerde instructies voor het installeren en het vormen van Sensor voor Server 6.x WebLogic of later lopend onder de Server 2000 van Microsoft Windows of later.
-title: WebLogic-server op Windows Server 2000 of hoger
+description: Gedetailleerde instructies voor het installeren en configureren van Sensor voor WebLogic Server 6.x of hoger die worden uitgevoerd onder Microsoft Windows Server 2000 of hoger.
+title: WebLogic Server op Windows Server 2000 of hoger
 uuid: 80dbf544-bd09-4af8-bb05-4032eb49dd5d
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: cf5b5284-dd61-4c55-8319-483bfe60930c
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 0%
 
 ---
 
+# WebLogic Server op Windows Server 2000 of hoger{#weblogic-server-on-windows-server-or-later}
 
-# WebLogic-server op Windows Server 2000 of hoger{#weblogic-server-on-windows-server-or-later}
+{{eol}}
 
-Gedetailleerde instructies voor het installeren en het vormen van Sensor voor Server 6.x WebLogic of later lopend onder de Server 2000 van Microsoft Windows of later.
+Gedetailleerde instructies voor het installeren en configureren van Sensor voor WebLogic Server 6.x of hoger die worden uitgevoerd onder Microsoft Windows Server 2000 of hoger.
 
-De programmadossiers voor Sensor worden verpakt in een installatiedossier dat u van de de downloadplaats van Adobe verkrijgt. Als u niet reeds het de installatiedossier van de Sensor voor uw bepaalde Webserver hebt, download het (of verkrijg het van uw vertegenwoordiger van Adobe) alvorens u met de volgende procedures begint.
+De programmabestanden voor Sensor worden verpakt in een installatiebestand dat u van de downloadsite van de Adobe ontvangt. Als u nog geen Sensor-installatiebestand voor uw specifieke webserver hebt, downloadt u het bestand (of vraagt u het op bij uw Adobe-vertegenwoordiger) voordat u de volgende procedures start.
 
-Om Sensor te installeren en te vormen, moet u de volgende stappen uitvoeren:
+Als u Sensor wilt installeren en configureren, moet u de volgende stappen uitvoeren:
 
 ## De programmabestanden installeren {#section-2f3e85083b4f4aa989a85997330e86ae}
 
-Procedure om de programmadossiers voor Sensor te halen en te installeren.
+Procedure voor het uitpakken en installeren van de programmabestanden voor Sensor.
 
-1. Voor uw Server WebLogic, creeer een folder waarin om de het programmadossiers van de Sensor te installeren. Houd in mening dat uw schijfrij in deze folder verblijft, zodat ben zeker het apparaat u kiest voldoende ruimte heeft om een rij van de grootte te houden u wenst.
+1. Maak op uw WebLogic-server een directory waarin u de Sensor-programmabestanden wilt installeren. Onthoud dat de schijfwachtrij zich in deze map bevindt. Zorg er dus voor dat het apparaat dat u kiest, voldoende ruimte heeft om een wachtrij met de gewenste grootte vast te houden.
 
    ```
    C:\VisualSensor
    ```
 
-1. Haal de inhoud van het installatiedossier in de folder uit u enkel creeerde. Tijdens deze stap installeert de sensor de volgende bestanden:
+1. Pak de inhoud van het installatiebestand uit in de map die u net hebt gemaakt. Tijdens deze stap installeert Sensor de volgende bestanden:
 
 <table id="table_ABFF5F92271B4F3CB0AC68DAB6A5709F"> 
  <thead> 
@@ -39,27 +43,27 @@ Procedure om de programmadossiers voor Sensor te halen en te installeren.
  <tbody> 
   <tr> 
    <td colname="col1"> visual_sciences.dll </td> 
-   <td colname="col2"> De module van de inzamelaarbelasting. </td> 
+   <td colname="col2"> De module voor het laden van verzamelingen. </td> 
    <td colname="col3"> In elke directory. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> J2EECollector.jar </td> 
-   <td colname="col2"> De de modulebibliotheken van de collectorlading </td> 
+   <td colname="col2"> De bibliotheken van de module voor het laden van verzamelingen </td> 
    <td colname="col3"> WEB-INF/lib </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>txlogd.exe </p> </td> 
-   <td colname="col2"> Het uitzendprogramma. </td> 
+   <td colname="col2"> Het verzendprogramma. </td> 
    <td colname="col3"> In elke directory </td> 
   </tr> 
   <tr> 
    <td colname="col1"> txlogd.conf </td> 
-   <td colname="col2"> Het de configuratiedossier van de Sensor. </td> 
+   <td colname="col2"> Het Sensor-configuratiebestand. </td> 
    <td colname="col3"> In elke directory </td> 
   </tr> 
   <tr> 
    <td colname="col1"> trust_ca_cert.pem </td> 
-   <td colname="col2"> Het certificaat dat wordt gebruikt om het digitale certificaat te bevestigen dat de Server van het Inzicht tijdens het verbindingsproces voorstelt </td> 
+   <td colname="col2"> Het certificaat dat wordt gebruikt om het digitale certificaat te bevestigen dat de Server van het Inzicht tijdens het verbindingsproces presenteert </td> 
    <td colname="col3"> In elke directory </td> 
   </tr> 
  </tbody> 
@@ -67,35 +71,35 @@ Procedure om de programmadossiers voor Sensor te halen en te installeren.
 
 >[!NOTE]
 >
->Het installatiepakket bevat een spreadsheetdossier genoemd [!DNL TestExperiment.xls]. Deze spreadsheet is een hulpmiddel dat de architecten gebruiken om een gecontroleerd experiment te vormen. De sensor zelf gebruikt dit dossier niet, zodat is het niet noodzakelijk om het dossier op de machine te installeren waar de Sensor loopt (hoewel u kunt verkiezen om dit te doen). U zou, in plaats daarvan, het dossier aan een plaats kunnen willen kopiëren waar uw architecten tot het kunnen toegang hebben of eenvoudig het dossier uit het installatiepakket halen zoals nodig. Voor meer informatie over gecontroleerde experimentatie, zie de Gids van de Experimenten van het Inzicht de Gecontroleerde.
+>Het installatiepakket bevat een spreadsheetbestand met de naam [!DNL TestExperiment.xls]. Dit spreadsheet is een hulpmiddel dat de architecten gebruiken om een gecontroleerd experiment te vormen. Sensor zelf gebruikt dit bestand niet. U hoeft het bestand dus niet te installeren op de computer waarop de Sensor wordt uitgevoerd (maar u kunt dit desgewenst doen). In plaats daarvan kunt u het bestand kopiëren naar een locatie waar uw architecten het kunnen openen of het bestand gewoon uit het installatiepakket extraheren. Zie de Gids met gecontroleerde experimenten voor meer informatie over gecontroleerde experimenten.
 
-## Geef het Dossier van de Configuratie van de Sensor uit {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
+## Het configuratiebestand van de sensor bewerken {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
 
-Het [!DNL txlogd.conf] dossier bevat de configuratieparameters voor Sensor.
+De [!DNL txlogd.conf] bevat de configuratieparameters voor Sensor.
 
 U moet dit dossier uitgeven om, onder andere, de grootte en de plaats van het dossier van de schijfrij, het adres van de Server van het Inzicht, en identiteitskaart te specificeren die aan de gebeurtenisgegevens zal worden vastgemaakt die door deze sensor worden geproduceerd.
 
-Het configuratiedossier bevat vereiste parameters en facultatieve parameters.
+Het configuratiebestand bevat vereiste parameters en optionele parameters.
 
-* **De vereiste parameters** zijn montages die u moet specificeren wanneer u Sensor installeert. Zonder deze montages, loopt de Sensor niet met succes.
-* **De facultatieve parameters** zijn montages die aan vooraf bepaalde waarden (die u kunt wijzigen) in gebreke blijven of facultatieve eigenschappen toelaten.
+* **Vereiste parameters** Dit zijn instellingen die u moet opgeven wanneer u Sensor installeert. Zonder deze instellingen wordt Sensor niet uitgevoerd.
+* **Optionele parameters** Dit zijn instellingen die standaard op vooraf gedefinieerde waarden (die u kunt wijzigen) of die optionele functies inschakelen.
 
-**Om het de configuratiedossier van de Sensor uit te geven**
+**Het Sensor-configuratiebestand bewerken**
 
-* Open het [!DNL /etc/txlogd.conf] dossier in een tekstredacteur en plaats de vereiste parameters evenals om het even welke gewenste facultatieve parameters.
-* Sparen en sluit het dossier.
+* Open de [!DNL /etc/txlogd.conf] in een teksteditor en stel de vereiste parameters en eventueel gewenste optionele parameters in.
+* Sla het bestand op en sluit het.
 
-**Om het de configuratiedossier van de Sensor uit te geven**
+**Het Sensor-configuratiebestand bewerken**
 
-1. Open het [!DNL /etc/txlogd.conf] dossier in een tekstredacteur en plaats de vereiste parameters evenals om het even welke gewenste facultatieve parameters.
-1. Sparen en sluit het dossier.
+1. Open de [!DNL /etc/txlogd.conf] in een teksteditor en stel de vereiste parameters en eventueel gewenste optionele parameters in.
+1. Sla het bestand op en sluit het.
 
-## Start de zender en maak de schijfwachtrij {#section-55630de65f264274aefd771da2002852}
+## De zender starten en de schijfwachtrij maken {#section-55630de65f264274aefd771da2002852}
 
-Nadat u het txlogd.conf- dossier vormt, kunt u het transmissieprogramma beginnen, het registreren als dienst van Vensters, en de schijfrij creëren.
+Nadat u het bestand txlogd.conf hebt geconfigureerd, kunt u het verzendprogramma starten, het registreren als Windows-service en de schijfwachtrij maken.
 
-1. Van het menu van het Begin in Vensters, uitgezochte Toebehoren > de Herinnering van het Bevel.
-1. In het bevel snelle venster, navigeer aan de folder waarin u Sensor installeerde en voer het volgende bevel uit:
+1. Selecteer in het menu Start in Windows Accessoires > Opdrachtprompt.
+1. Navigeer in het opdrachtpromptvenster naar de map waarin u Sensor hebt geïnstalleerd en voer de volgende opdracht uit:
 
    ```
    txlog /regserver
@@ -103,46 +107,46 @@ Nadat u het txlogd.conf- dossier vormt, kunt u het transmissieprogramma beginnen
 
    Dit bevel begint de zender, leidt tot de schijfrij, en registreert Sensor als dienst van Vensters.
 
-1. Om te bevestigen dat de zender correct loopt, klik Begin > Controlebord > Administratieve Hulpmiddelen > de Diensten.
+1. Klik op Start > Configuratiescherm > Systeembeheer > Services om te bevestigen dat de zender correct wordt uitgevoerd.
 
    >[!NOTE]
    >
    >Deze bevelopeenvolging zou kunnen variëren afhankelijk van welke versie van Vensters u gebruikt.
 
    1. In de de dienstlijst, bepaal de plaats van de ingang voor Sensor en bevestig dat zijn status Begonnen is en zijn starttype Automatisch is.
-   1. Sluit het de controlepaneel van de Diensten.
+   1. Sluit het configuratiescherm Services.
 
-1. Om te controleren of de zender tijdens het opstarten fouten ondervond, klik Begin > Controlebord > Administratieve Hulpmiddelen > de Kijker van de Gebeurtenis om de Kijker van de Gebeurtenis te openen.
+1. Als u wilt controleren of er bij het opstarten fouten zijn opgetreden in de zender, klikt u op Start > Configuratiescherm > Systeembeheer > Gebeurtenisviewer om de Event Viewer te openen.
 
-   1. In de linkerruit van het venster van de Kijker van de Gebeurtenis, selecteer het logboek van Toepassingen.
-   1. In de juiste ruit, zoek gebeurtenissen met &quot;Adobe&quot;in de Bronkolom.
-   1. Als u een fout van &quot;Adobe vindt,&quot;klik de fout tweemaal om het venster van de Eigenschappen van de Gebeurtenis te tonen. Dit venster verstrekt gedetailleerde informatie over de fout.
+   1. Selecteer in het linkerdeelvenster van het venster van de Event Viewer het logboek Toepassingen.
+   1. Zoek in het rechterdeelvenster naar gebeurtenissen met &quot;Adobe&quot; in de kolom Bron.
+   1. Als er een fout optreedt bij &quot;Adobe&quot;, dubbelklikt u op de fout om het venster Eigenschappen van gebeurtenis weer te geven. Dit venster bevat gedetailleerde informatie over de fout.
 
-1. Wanneer u klaar bent met het onderzoeken van het logboek van Toepassingen, sluit de Kijker van de Gebeurtenis.
+1. Wanneer u klaar bent met het controleren van het logboek Toepassingen, sluit u de Event Viewer.
 1. Verifieer dat de zender de schijfrij (Diskq2000.log) in de folder heeft gecreeerd waar u de het programmadossiers van de Sensor installeerde en dat het de grootte is die u in de parameter QueueSize in het txlogd.conf- dossier specificeerde.
 
-   Als de rij niet correct is gecreeerd:
+   Als de wachtrij niet correct is gemaakt:
 
    1. Onderzoek het txtlogd.conf- dossier en verifieer dat de parameter QueueSize correct wordt geplaatst.
-   1. Controle dat het apparaat waarop u Sensor installeerde voldoende ruimte beschikbaar heeft om een dossier van de grootte te houden die in de parameter QueueSize wordt gespecificeerd.
-   1. Gebruikend het de controlepaneel van de Diensten in Vensters, houd de zender tegen.
-   1. Schrap het rijdossier.
-   1. Sensor opnieuw registreren als Windows-service: van het menu van het Begin in Vensters, uitgezochte Toebehoren > de Herinnering van het Bevel. In het bevel snelle venster, navigeer aan de folder waarin u Sensor installeerde en voer het volgende bevel uit:
+   1. Controleer of het apparaat waarop u Sensor hebt geïnstalleerd voldoende ruimte heeft om een bestand van de grootte op te slaan die in de parameter QueueSize is opgegeven.
+   1. Stop de zender met behulp van het configuratiescherm Services in Windows.
+   1. Verwijder het bestand in de wachtrij.
+   1. Registreer Sensor opnieuw als Windows-service: Selecteer in het menu Start in Windows Accessoires > Opdrachtprompt. Navigeer in het opdrachtpromptvenster naar de map waarin u Sensor hebt geïnstalleerd en voer de volgende opdracht uit:
 
       ```
       txlog /regserver
       ```
 
-De zender is ontworpen om continu te werken. Als u de machine opnieuw start, wordt de zender automatisch opnieuw opgestart. Als u de zender moet beginnen en tegenhouden manueel, kunt u dit doen gebruikend het de controlepaneel van de Diensten in Vensters.
+De zender is ontworpen om continu te werken. Als u de computer opnieuw opstart, wordt de zender automatisch opnieuw opgestart. Als u de zender handmatig moet starten en stoppen, kunt u dit doen met het configuratiescherm Services in Windows.
 
 ## Voeg de Collector aan de Server van het Web toe {#section-c5b83ae4ebce430aa764f951e849b333}
 
-Voor servers JBoss, werkt de inzamelaar als filter in de servletcontainer.
+Voor JBoss servers, werkt de inzamelaar als filter in de servlet container.
 
-Om de inzamelaar aan uw Webserver toe te voegen, moet u het [!DNL web.xml] dossier uitgeven zoals hieronder beschreven en uw Webtoepassing opnieuw beginnen.
+Als u de verzamelaar aan uw webserver wilt toevoegen, moet u de opdracht [!DNL web.xml] en start de webtoepassing opnieuw op.
 
-1. Gebruikend een tekstredacteur, open het [!DNL web.xml] dossier voor de Webserver de waarvan gebeurtenissenSensor vangt.
-1. Voeg de volgende `<filter>` en `<filter-mapping>` elementen aan het beschrijvingsdossier toe. Als u txlogd.conf in de /etc folder niet installeerde, moet u de correcte weg aan dit dossier in het `<param-value>` element ingaan:
+1. Open met een teksteditor de [!DNL web.xml] bestand voor de webserver waarvan de gebeurtenissen worden vastgelegd door Sensor.
+1. Voeg het volgende toe `<filter>` en `<filter-mapping>` elementen naar het descriptorbestand. Als u txlogd.conf niet hebt geïnstalleerd in de map /etc, moet u het juiste pad naar dit bestand invoeren in de map `<param-value>` element:
 
    ```
    <filter> 
@@ -166,24 +170,24 @@ Om de inzamelaar aan uw Webserver toe te voegen, moet u het [!DNL web.xml] dossi
 
    >[!NOTE]
    >
-   >Deze lijnen zijn hoofdlettergevoelig. Typ hen precies zoals zij hierboven verschijnen.
+   >Deze regels zijn hoofdlettergevoelig. Typ deze precies zoals ze hierboven worden weergegeven.
 
-1. Start het webserverproces opnieuw op (u hoeft de volledige servercomputer niet opnieuw op te starten, start het webserverproces gewoon opnieuw op). De inzamelaar wordt geladen met de Webserver en begint inzamelend gebeurtenisgegevens en schrijvend het aan de schijfrij.
+1. Start het webserverproces opnieuw (u hoeft niet de gehele servercomputer opnieuw op te starten, start gewoon het webserverproces opnieuw). De verzamelaar wordt met de webserver geladen en begint gebeurtenisgegevens te verzamelen en naar de schijfwachtrij te schrijven.
 
 ## Het opstartscript wijzigen {#section-0dae181ef8884f10a57f6cfda8500969}
 
-Instructies voor startmanuscriptwijziging.
+Instructies voor het aanpassen van het opstartscript.
 
-In het manuscript dat wordt gebruikt om WebLogic (bijvoorbeeld, C:\bea\user_projects\mydomain\startServer.cmd) te beginnen, geef de &quot;vastgestelde lijn JAVA_OPTIONS=&quot;uit om de definitie java.library.path aan de folder te plaatsen die het visual_sciences.dll- dossier bevat.
+In het script dat wordt gebruikt om WebLogic te starten (bijvoorbeeld C:\bea\user_projects\mydomain\startServer.cmd), bewerkt u de regel &quot;set JAVA_OPTIONS=&quot; om de definitie java.library.path in te stellen op de map met het bestand visual_sciences.dll.
 
 ```
 set JAVA_OPTIONS=-Djava.library.path=C:\Sensor 
     directory
 ```
 
-## Bijkomende gegevens vastleggen {#section-9483b663cbd0432daaca50c1089c7fca}
+## Aanvullende gegevens vastleggen {#section-9483b663cbd0432daaca50c1089c7fca}
 
-U kunt extra meetgegevens van op J2EE gebaseerde webtoepassingen vastleggen met de functie appendToLog().
+U kunt aanvullende meetgegevens vastleggen uit J2EE-webtoepassingen met behulp van de appendToLog()-functionaliteit.
 
 1. Voeg de volgende code aan de bovenkant van de .jsp pagina toe waarvan u gegevens wilt vangen:
 
@@ -191,7 +195,7 @@ U kunt extra meetgegevens van op J2EE gebaseerde webtoepassingen vastleggen met 
    <%@ page import="com.visualsciences.collector.VSCollector" %> 
    ```
 
-1. Gebruik de methode appendToLog() van het verzamelaarobject om de gewenste naam-waarde paren toe te voegen aan de query string van de gevraagde .jsp pagina. Het volgende voorbeeld voegt &quot;A=1&quot;en &quot;B=2&quot;aan het gevraagde .jsp de vraagkoord van de pagina voor de /index.jsp pagina toe:
+1. Gebruik de methode appendToLog() van het verzamelaarobject om de gewenste naam-waardeparen toe te voegen aan de queryreeks van de opgevraagde .jsp-pagina. In het volgende voorbeeld worden &quot;A=1&quot; en &quot;B=2&quot; toegevoegd aan de queryreeks van de opgevraagde .jsp-pagina voor de pagina /index.jsp:
 
    ```
    <html> 
@@ -206,7 +210,6 @@ U kunt extra meetgegevens van op J2EE gebaseerde webtoepassingen vastleggen met 
    </html> 
    ```
 
-   Het resulterende verzoek URI is /index.jsp?A=1&amp;B=2.
+   De resulterende aanvraag-URI is /index.jsp?A=1&amp;B=2.
 
 1. Herhaal deze procedure voor elke .jsp pagina waarvan u extra gegevens wilt vangen.
-

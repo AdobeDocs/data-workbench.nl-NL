@@ -3,7 +3,7 @@ description: Waarden die in een formulier op een webpagina worden ingevoerd, kun
 title: Algemene informatie
 uuid: 401816a5-1d95-48e6-bedf-ee2a5dbd2d50
 exl-id: 9effc72b-e75f-423c-87ec-6ac25edee8d6
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Algemene informatie{#general-information}
+
+{{eol}}
 
 Waarden die in een formulier op een webpagina worden ingevoerd, kunnen met behulp van JavaScript worden verzameld en toegevoegd aan de queryreeks van de pagina die daarna wordt aangevraagd (bij het verzenden van het formulier).
 
@@ -53,7 +55,7 @@ In dit voorbeeld worden de waarden die door de browsergebruiker in het formulier
 https://www.myserver.com/thankyou.asp?v_1=John Smith&v_2=Los Angeles&v_3=California&v_4=90210
 ```
 
-De volgende uitgebreide metingen zouden met dit verzoek worden verkregen naast de basismetingen die door [!DNL Sensor] worden verzameld:
+De volgende uitgebreide metingen zouden met dit verzoek worden verkregen naast de basismetingen die door [!DNL Sensor]:
 
 | Gegevens verzameld | Toelichting | Voorbeeld |
 |---|---|---|

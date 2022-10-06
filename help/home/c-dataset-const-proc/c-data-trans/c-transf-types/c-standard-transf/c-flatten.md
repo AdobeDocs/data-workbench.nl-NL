@@ -3,7 +3,7 @@ description: Bij de transformatie Afvlakken wordt een vector met tekenreeksen ge
 title: Afvlakken
 uuid: 00b06a5c-506b-45fe-9773-44d65b8ec233
 exl-id: 63f3e4bc-238f-4e15-8ae5-2f805bd080d3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Afvlakken{#flatten}
+
+{{eol}}
 
 Bij de transformatie Afvlakken wordt een vector met tekenreeksen gebruikt en wordt elke waarde toegewezen aan een eigen veld.
 
@@ -28,7 +30,7 @@ Overwegingen voor [!DNL Flatten]
 * Als de invoervector meer waarden bevat dan er gedefinieerde uitvoervelden zijn, gaan de extra invoerwaarden gewoon verloren.
 * Als de invoervector minder waarden bevat dan er gedefinieerde uitvoervelden zijn, krijgen de extra uitvoervelden de standaardwaarde (indien gedefinieerd) of een lege tekenreeks als er geen standaardwaarde is gedefinieerd.
 
-Hier wordt de [!DNL Flatten]-transformatie gebruikt om een vector met producten (x-producten) te nemen en deze in vier velden te scheiden (x-product1, ..., x-product4).
+Hier, de [!DNL Flatten] de verwerking wordt gebruikt om een vector van producten (x-producten) te nemen en deze in vier velden te scheiden (x-product1, ..., x-product4).
 
 ![](assets/cfg_TransformationType_Flatten.png)
 

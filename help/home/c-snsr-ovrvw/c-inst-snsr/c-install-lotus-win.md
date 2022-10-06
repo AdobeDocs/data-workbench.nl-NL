@@ -1,32 +1,36 @@
 ---
 description: Instructies over het installeren en configureren van Sensor voor Lotus Sametime voor Windows 3.1 of hoger onder Microsoft Windows Server 2000 of hoger.
-title: Lotus Sametime op de Server 2000 van Vensters of later
+title: Lotus Sametime op Windows Server 2000 of hoger
 uuid: 5e24da54-7ef6-42cf-b693-cc4fd267af93
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 9292bfca-ad3b-436d-9d22-be67a61b8c05
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1023'
+ht-degree: 0%
 
 ---
 
+# Lotus Sametime op Windows Server 2000 of hoger{#lotus-sametime-on-windows-server-or-later}
 
-# Lotus Sametime op de Server 2000 van Vensters of later{#lotus-sametime-on-windows-server-or-later}
+{{eol}}
 
 Instructies over het installeren en configureren van Sensor voor Lotus Sametime voor Windows 3.1 of hoger onder Microsoft Windows Server 2000 of hoger.
 
-De programmadossiers voor Sensor worden verpakt in een installatiedossier dat u van de de downloadplaats van Adobe verkrijgt. Als u niet reeds het de installatiedossier van de Sensor voor uw bepaalde Webserver hebt, download het (of verkrijg het van uw vertegenwoordiger van Adobe) alvorens u met de volgende procedures begint.
+De programmabestanden voor Sensor worden verpakt in een installatiebestand dat u van de downloadsite van de Adobe ontvangt. Als u nog geen Sensor-installatiebestand voor uw specifieke webserver hebt, downloadt u het bestand (of vraagt u het op bij uw Adobe-vertegenwoordiger) voordat u de volgende procedures start.
 
-Om Sensor te installeren en te vormen, moet u de volgende stappen op hoog niveau uitvoeren:
+Voor het installeren en configureren van Sensor moet u de volgende stappen op hoog niveau uitvoeren:
 
 ## De programmabestanden installeren {#section-2f3e85083b4f4aa989a85997330e86ae}
 
-Wanneer het lopen van Sensor op Sametime, moeten de programmadossiers en het dossier van de schijfrij in de zelfde folder verblijven.
+Als Sensor wordt uitgevoerd op Sametime, moeten de programmabestanden en het bestand met de schijfwachtrij zich in dezelfde map bevinden.
 
-Daarom alvorens de programmadossiers te installeren, moet u bepalen waar u de schijfrij wilt handhaven, omdat dat ook is waar u de programmadossiers moet installeren.
+Voordat u de programmabestanden installeert, moet u dus bepalen waar u de schijfwachtrij wilt behouden, omdat dat ook de locatie is waar u de programmabestanden moet installeren.
 
-Gebruik de volgende procedure om de programmadossiers voor Sensor te halen en te installeren.
+Gebruik de volgende procedure om de programmabestanden voor Sensor te extraheren en te installeren.
 
-1. Stop de Lotus Domino Server en de dienst van het Registreren van het Praatje Sametime.
-1. Op uw machine van Vensters, in de folder van de Domino van Lotus, schrap of steun het dossier genoemd StChatLog.dll.
-1. Haal de inhoud van het installatiebestand uit de directory Lotus Domino. Tijdens deze stap installeert de sensor de volgende bestanden:
+1. Stop de Lotus Domino Server en de Sametime Chat Logging Service.
+1. Verwijder of maak een back-up van het bestand StChatLog.dll op uw Windows-computer in de Lotus Domino-map.
+1. Pak de inhoud van het installatiebestand uit in de Lotus Domino-map. Tijdens deze stap installeert Sensor de volgende bestanden:
 
 <table id="table_ABFF5F92271B4F3CB0AC68DAB6A5709F"> 
  <thead> 
@@ -38,19 +42,19 @@ Gebruik de volgende procedure om de programmadossiers voor Sensor te halen en te
  <tbody> 
   <tr> 
    <td colname="col1"> EventMessages.dll </td> 
-   <td colname="col2"> Event Viewer-berichten </td> 
+   <td colname="col2"> Gebeurtenisviewerberichten </td> 
   </tr> 
   <tr> 
    <td colname="col1"> stchatlog.dll </td> 
-   <td colname="col2"> De collectormodule </td> 
+   <td colname="col2"> De verzamelaarmodule </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>TestExperiment.xls </p> </td> 
-   <td colname="col2"> <p>Een de spreadsheetdossier van Excel dat de architecten kunnen gebruiken om een gecontroleerd experiment te vormen </p> <p>De sensor gebruikt dit dossier niet. </p> </td> 
+   <td colname="col2"> <p>Een Excel-spreadsheetbestand dat architecten kunnen gebruiken om een gecontroleerd experiment te configureren </p> <p>Sensor gebruikt dit bestand niet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> trust_ca_cert.pem </td> 
-   <td colname="col2"> Het certificaat dat wordt gebruikt om het digitale certificaat te bevestigen dat de Server van het Inzicht tijdens het verbindingsproces voorstelt </td> 
+   <td colname="col2"> Het certificaat dat wordt gebruikt om het digitale certificaat te bevestigen dat de Server van het Inzicht tijdens het verbindingsproces presenteert </td> 
   </tr> 
   <tr> 
    <td colname="col1"> TXLog.exe </td> 
@@ -58,48 +62,48 @@ Gebruik de volgende procedure om de programmadossiers voor Sensor te halen en te
   </tr> 
   <tr> 
    <td colname="col1"> <p>txlogd.conf </p> </td> 
-   <td colname="col2"> Het de configuratiedossier van de Sensor </td> 
+   <td colname="col2"> Het Sensor-configuratiebestand </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Het installatiepakket bevat een spreadsheetdossier genoemd TestExperiment.xls. Deze spreadsheet is een hulpmiddel dat de architecten gebruiken om een gecontroleerd experiment te vormen. De sensor zelf gebruikt dit dossier niet, zodat is het niet noodzakelijk om het dossier op de machine te installeren waar de Sensor loopt (hoewel u kunt verkiezen om dit te doen). U zou, in plaats daarvan, het dossier aan een plaats kunnen willen kopiëren waar uw architecten tot het kunnen toegang hebben of eenvoudig het dossier uit het installatiepakket halen zoals nodig. Voor meer informatie over gecontroleerde experimentatie, zie de Gids van de Experimenten van het Inzicht de Gecontroleerde.
+>Het installatiepakket bevat een spreadsheetbestand met de naam TestExperiment.xls. Dit spreadsheet is een hulpmiddel dat de architecten gebruiken om een gecontroleerd experiment te vormen. Sensor zelf gebruikt dit bestand niet. U hoeft het bestand dus niet te installeren op de computer waarop de Sensor wordt uitgevoerd (maar u kunt dit desgewenst doen). In plaats daarvan kunt u het bestand kopiëren naar een locatie waar uw architecten het kunnen openen of het bestand gewoon uit het installatiepakket extraheren. Zie de Gids met gecontroleerde experimenten voor meer informatie over gecontroleerde experimenten.
 
-## Aanmelden inschakelen op Sametime Server {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
+## Aanmelding inschakelen op de Sametime-server {#section-2e2f1875a5304cdfa2cbcd0680683cfd}
 
-Stappen die u toestaan om aan de Server te registreren Sametime.
+Stappen die u toestaan om aan de Server van Sametime aan te melden.
 
 1. Gebruik de Lotus Domino Administrator-client om verbinding te maken met de Lotus Domino-server waarop Sametime wordt uitgevoerd.
-1. In de Beheerder van de Domino van Lotus, klik het lusje van Dossiers, dan tweemaal klik Configuratie Sametime - stconfig.nsf om het dossier van de Configuratie te openen Sametime.
-1. In het dossier van de Configuratie Sametime, open het formulier van de Diensten van de Gemeenschap en klik overal op het formulier tweemaal om binnen te gaan uitgeven wijze.
-1. De vastgestelde Vlag van de Registratie van het Praatje aan &quot;streng&quot;en vangt het Type van Dienst aan &quot;0x1000.&quot;
-1. Sparen en sluit de vorm van de Diensten Communautaire, dan sluit het dossier van de Configuratie Sametime.
+1. Klik in Lotus Domino Administrator op het tabblad Bestanden en dubbelklik vervolgens op Sametime-configuratie - stconfig.nsf om het Sametime-configuratiebestand te openen.
+1. Open in het Sametime-configuratiebestand het formulier Community Services en dubbelklik ergens op het formulier om de bewerkingsmodus te activeren.
+1. Stel Chatlogingvlag in op &quot;strikt&quot; en stel Servicetype vastleggen in op &quot;0x1000&quot;.
+1. Sla het formulier Community Services op en sluit het. Sluit vervolgens het Sametime-configuratiebestand.
 1. Start de Sametime-server opnieuw.
 
-## Geef het Dossier van de Configuratie van de Sensor uit {#section-de0eb4a646394b61abb6cd5a2b706de0}
+## Het configuratiebestand van de sensor bewerken {#section-de0eb4a646394b61abb6cd5a2b706de0}
 
-Het txlogd.conf- dossier bevat de configuratieparameters voor Sensor.
+Het bestand txlogd.conf bevat de configuratieparameters voor Sensor.
 
 U moet dit dossier uitgeven om, onder andere, de grootte en de plaats van het dossier van de schijfrij, het adres van de Server van het Inzicht, en identiteitskaart te specificeren die aan de gebeurtenisgegevens zal worden vastgemaakt die door deze sensor worden geproduceerd.
 
-Het configuratiedossier bevat vereiste parameters en facultatieve parameters.
+Het configuratiebestand bevat vereiste parameters en optionele parameters.
 
-* **De vereiste parameters** zijn montages die u moet specificeren wanneer u Sensor installeert. Zonder deze montages, loopt de Sensor niet met succes.
-* **De facultatieve parameters** zijn montages die aan vooraf bepaalde waarden (die u kunt wijzigen) in gebreke blijven of facultatieve eigenschappen toelaten.
+* **Vereiste parameters** Dit zijn instellingen die u moet opgeven wanneer u Sensor installeert. Zonder deze instellingen wordt Sensor niet uitgevoerd.
+* **Optionele parameters** Dit zijn instellingen die standaard op vooraf gedefinieerde waarden (die u kunt wijzigen) of die optionele functies inschakelen.
 
-**Om het de configuratiedossier van de Sensor uit te geven**
+**Het Sensor-configuratiebestand bewerken**
 
-* Open het `<Sensor directory>/txlogd.conf` dossier in een tekstredacteur en plaats de vereiste parameters evenals om het even welke gewenste facultatieve parameters.
-* Sparen en sluit het dossier.
+* Open de `<Sensor directory>/txlogd.conf` in een teksteditor en stel de vereiste parameters en eventueel gewenste optionele parameters in.
+* Sla het bestand op en sluit het.
 
-## Start de zender en maak de schijfwachtrij {#section-55630de65f264274aefd771da2002852}
+## De zender starten en de schijfwachtrij maken {#section-55630de65f264274aefd771da2002852}
 
-Nadat u het txlogd.conf- dossier vormt, kunt u het transmissieprogramma beginnen, het registreren als dienst van Vensters, en de schijfrij creëren.
+Nadat u het bestand txlogd.conf hebt geconfigureerd, kunt u het verzendprogramma starten, het registreren als Windows-service en de schijfwachtrij maken.
 
-1. Van het menu van het Begin in Vensters, uitgezochte Toebehoren > de Herinnering van het Bevel.
-1. In het bevel snelle venster, navigeer aan de folder waarin u Sensor installeerde en voer het volgende bevel uit:
+1. Selecteer in het menu Start in Windows Accessoires > Opdrachtprompt.
+1. Navigeer in het opdrachtpromptvenster naar de map waarin u Sensor hebt geïnstalleerd en voer de volgende opdracht uit:
 
    ```
    txlog /regserver
@@ -107,41 +111,40 @@ Nadat u het txlogd.conf- dossier vormt, kunt u het transmissieprogramma beginnen
 
    Dit bevel begint de zender, leidt tot de schijfrij, en registreert Sensor als dienst van Vensters.
 
-1. Om te bevestigen dat de zender correct loopt, klik Begin > Controlebord > Administratieve Hulpmiddelen > de Diensten.
+1. Klik op Start > Configuratiescherm > Systeembeheer > Services om te bevestigen dat de zender correct wordt uitgevoerd.
 
    >[!NOTE]
    >
    >Deze bevelopeenvolging zou kunnen variëren afhankelijk van welke versie van Vensters u gebruikt.
 
    1. In de de dienstlijst, bepaal de plaats van de ingang voor Sensor en bevestig dat zijn status Begonnen is en zijn starttype Automatisch is.
-   1. Sluit het de controlepaneel van de Diensten.
+   1. Sluit het configuratiescherm Services.
 
-1. Om te controleren of de zender tijdens het opstarten fouten ondervond, klik Begin > Controlebord > Administratieve Hulpmiddelen > de Kijker van de Gebeurtenis om de Kijker van de Gebeurtenis te openen.
+1. Als u wilt controleren of er bij het opstarten fouten zijn opgetreden in de zender, klikt u op Start > Configuratiescherm > Systeembeheer > Gebeurtenisviewer om de Event Viewer te openen.
 
    >[!NOTE]
    >
    >Deze bevelopeenvolging zou kunnen variëren afhankelijk van welke versie van Vensters u gebruikt.
 
-   1. In de linkerruit van het venster van de Kijker van de Gebeurtenis, selecteer het logboek van Toepassingen.
-   1. In de juiste ruit, zoek gebeurtenissen met &quot;Adobe&quot;in de Bronkolom.
-   1. Als u een fout van &quot;Adobe vindt,&quot;klik de fout tweemaal om het venster van de Eigenschappen van de Gebeurtenis te tonen. Dit venster verstrekt gedetailleerde informatie over de fout.
+   1. Selecteer in het linkerdeelvenster van het venster van de Event Viewer het logboek Toepassingen.
+   1. Zoek in het rechterdeelvenster naar gebeurtenissen met &quot;Adobe&quot; in de kolom Bron.
+   1. Als er een fout optreedt bij &quot;Adobe&quot;, dubbelklikt u op de fout om het venster Eigenschappen van gebeurtenis weer te geven. Dit venster bevat gedetailleerde informatie over de fout.
 
-1. Wanneer u klaar bent met het onderzoeken van het logboek van Toepassingen, sluit de Kijker van de Gebeurtenis.
+1. Wanneer u klaar bent met het controleren van het logboek Toepassingen, sluit u de Event Viewer.
 1. Verifieer dat de zender de schijfrij (Diskq2000.log) in de folder heeft gecreeerd waar u de het programmadossiers van de Sensor installeerde en dat het de grootte is die u in de parameter QueueSize in het txlogd.conf- dossier specificeerde.
 
-   Als de rij niet correct is gecreeerd:
+   Als de wachtrij niet correct is gemaakt:
 
    1. Onderzoek het txtlogd.conf- dossier en verifieer dat de parameter QueueSize correct wordt geplaatst.
-   1. Controle dat het apparaat waarop u Sensor installeerde voldoende ruimte beschikbaar heeft om een dossier van de grootte te houden die in de parameter QueueSize wordt gespecificeerd.
-   1. Gebruikend het de controlepaneel van de Diensten in Vensters, houd de zender tegen.
-   1. Schrap het rijdossier.
-   1. Sensor opnieuw registreren als Windows-service: van het menu van het Begin in Vensters, uitgezochte Toebehoren > de Herinnering van het Bevel. In het bevel snelle venster, navigeer aan de folder waarin u Sensor installeerde en voer het volgende bevel uit:
+   1. Controleer of het apparaat waarop u Sensor hebt geïnstalleerd voldoende ruimte heeft om een bestand van de grootte op te slaan die in de parameter QueueSize is opgegeven.
+   1. Stop de zender met behulp van het configuratiescherm Services in Windows.
+   1. Verwijder het bestand in de wachtrij.
+   1. Registreer Sensor opnieuw als Windows-service: Selecteer in het menu Start in Windows Accessoires > Opdrachtprompt. Navigeer in het opdrachtpromptvenster naar de map waarin u Sensor hebt geïnstalleerd en voer de volgende opdracht uit:
 
       ```
       txlog /regserver
       ```
 
-      De zender is ontworpen om continu te werken. Als u de machine opnieuw start, wordt de zender automatisch opnieuw opgestart. Als u de zender moet beginnen en tegenhouden manueel, kunt u dit doen gebruikend het de controlepaneel van de Diensten in Vensters.
+      De zender is ontworpen om continu te werken. Als u de computer opnieuw opstart, wordt de zender automatisch opnieuw opgestart. Als u de zender handmatig moet starten en stoppen, kunt u dit doen met het configuratiescherm Services in Windows.
 
 1. Start de Lotus Domino Server en de Sametime Chat Logging Service opnieuw.
-

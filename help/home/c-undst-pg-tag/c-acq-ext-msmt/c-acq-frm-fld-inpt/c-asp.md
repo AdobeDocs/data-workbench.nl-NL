@@ -3,7 +3,7 @@ description: Webpagina's zijn vaak gestructureerd met de programmeertaal ASP (Ac
 title: ASP-specifieke informatie
 uuid: 552288cb-b775-4121-8869-322f2a26932b
 exl-id: f73235e1-d44a-4056-b1f4-a86879c19483
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # ASP-specifieke informatie{#asp-specific-information}
+
+{{eol}}
 
 Webpagina&#39;s zijn vaak gestructureerd met de programmeertaal ASP (Active Server Pages).
 
@@ -32,7 +34,7 @@ Response.AppendToLog("&v_3=" +  sState);
 Response.AppendToLog("&v_4=" +  sZip);
 ```
 
-Hierbij worden de formulierwaarden zoals gedefinieerd toegevoegd aan de aanvraaggegevens voor de pagina [!DNL Form Processing]. Binnen de logboekgegevens, zouden de toegevoegde waarden als vraagkoorden van de [!DNL Form Processing] pagina zoals hieronder geïllustreerd beschikbaar zijn. v_1, v_2, v_3 en v_4 zijn nu bijvoorbeeld queryreeksen die de gegevens bevatten die in de desbetreffende formuliervelden zijn ingevoerd. De syntaxis die in het bovenstaande voorbeeld wordt beschreven, kan worden gedupliceerd voor extra formuliervelden en waarden die u wilt vastleggen.
+Met dit proces worden de formulierwaarden toegevoegd die zijn gedefinieerd voor de aanvraaggegevens voor de [!DNL Form Processing] pagina. Binnen de logboekgegevens, zouden de toegevoegde waarden als vraagkoorden van [!DNL Form Processing] pagina zoals hieronder weergegeven. v_1, v_2, v_3 en v_4 zijn nu bijvoorbeeld queryreeksen die de gegevens bevatten die in de desbetreffende formuliervelden zijn ingevoerd. De syntaxis die in het bovenstaande voorbeeld wordt beschreven, kan worden gedupliceerd voor extra formuliervelden en waarden die u wilt vastleggen.
 
 ```
 https://www.myserver.com/path/to/formprocessingpage.asp?v_1=John+Smith&v_2=Los+Angeles&v_3=California&v_4=90210
@@ -45,7 +47,7 @@ var formvalues = Response.Form;
 Response.AppendToLog(formvalues);
 ```
 
-In dit voorbeeld worden alle formuliervelden gebruikt die zich in de HTML bevinden, samen met de respectieve waarden, en worden deze als queryreeksen toegevoegd aan de logbestandvermelding voor de pagina [!DNL Form Processing]. Opgemerkt zij dat dit alle verborgen velden in het formulier zou omvatten.
+In dit voorbeeld worden alle formuliervelden in de HTML samen met de respectieve waarden gebruikt en worden deze als queryreeksen toegevoegd aan de logbestandvermelding voor de [!DNL Form Processing] pagina. Opgemerkt zij dat dit alle verborgen velden in het formulier zou omvatten.
 
 De loggegevens worden aangevuld zoals in de volgende tabel wordt beschreven:
 

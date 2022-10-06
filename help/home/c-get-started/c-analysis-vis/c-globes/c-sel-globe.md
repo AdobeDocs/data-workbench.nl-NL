@@ -3,7 +3,7 @@ description: Wanneer u een selectie maakt op een bol van een bepaalde laag, word
 title: Selecties maken op een globe
 uuid: 265206f8-2437-4490-8e7c-0a00ce56fd7f
 exl-id: 83e3b08b-b2a8-455b-87a4-bf48c619b3b9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Selecties maken op een globe{#make-selections-on-a-globe}
+
+{{eol}}
 
 Wanneer u een selectie maakt op een bol van een bepaalde laag, worden op alle andere lagen alleen gegevens weergegeven die betrekking hebben op de geselecteerde gegevens.
 

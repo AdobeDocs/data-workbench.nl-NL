@@ -3,7 +3,7 @@ description: De managers, de analisten, en de marketing beroeps kunnen het dashb
 title: Zakelijke mogelijkheden
 uuid: 05848be7-6eca-4ed2-928c-5e951bcdafe8
 exl-id: b98ebf0b-abf1-4093-b8b0-93b62cf0e1aa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Zakelijke mogelijkheden{#business-opportunities}
+
+{{eol}}
 
 De managers, de analisten, en de marketing beroeps kunnen het dashboard van de gegevenswerkbank voor een verscheidenheid van taken gebruiken.
 

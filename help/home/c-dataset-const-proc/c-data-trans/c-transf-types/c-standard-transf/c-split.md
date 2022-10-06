@@ -3,7 +3,7 @@ description: Met de gesplitste transformatie wordt een tekenreeks gesplitst in e
 title: Splitsen
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
 exl-id: ea85b095-1306-4938-906d-35d421db6c98
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Splitsen{#split}
+
+{{eol}}
 
 Met de gesplitste transformatie wordt een tekenreeks gesplitst in een vector met subtekenreeksen op basis van een opgegeven scheidingsteken.
 
@@ -62,7 +64,7 @@ Neem bijvoorbeeld een website waar de producten die een klant heeft aangeschaft,
 
 * /checkout/confirmed.asp?prod_selected=B57481,C46355,Z97123
 
-Het veld cs-uri-stem wordt gebruikt om te bepalen of de pagina die door de logbestandvermelding wordt aangevraagd, de bevestigingspagina is. De codes voor de producten die de klant heeft gekocht zijn vermeld als komma-gescheiden waarden van de naam prod_selected in cs-uri-query. De [!DNL Split]-transformatie kan worden gebruikt om deze informatie te extraheren door de productcodes onder de komma te splitsen als de waarde van cs-uri-stem overeenkomt met de waarde die is opgegeven in de voorwaarde [!DNL String Match]. Zie [Tekenreeksovereenkomst](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). In de volgende transformatie wordt de oplossing voor dit probleem beschreven.
+Het veld cs-uri-stem wordt gebruikt om te bepalen of de pagina die door de logbestandvermelding wordt aangevraagd, de bevestigingspagina is. De codes voor de producten die de klant heeft gekocht zijn vermeld als komma-gescheiden waarden van de naam prod_selected in cs-uri-query. De [!DNL Split] transformatie kan worden gebruikt om deze informatie te extraheren door de productcodes onder een komma te splitsen als de waarde van cs-uri-stem overeenkomt met de waarde die in het [!DNL String Match] voorwaarde. Zie [Tekenreeks afstemmen](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). In de volgende transformatie wordt de oplossing voor dit probleem beschreven.
 
 ![](assets/cfg_TransformationType_Split.png)
 

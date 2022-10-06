@@ -3,7 +3,7 @@ description: Tekst of expressies kunnen in elke cel van een werkblad worden inge
 title: Werken met gegevens in werkbladen
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
 exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Werken met gegevens in werkbladen{#work-with-data-in-worksheets}
 
+{{eol}}
+
 Tekst of expressies kunnen in elke cel van een werkblad worden ingevoerd.
 
-Alle expressies in een werkblad worden voorafgegaan door een gelijk teken (=), tenzij [!DNL eval( )] wordt gebruikt, dat de tekst in de cel waarnaar wordt verwezen als een expressie behandelt.
+Alle expressies in een werkblad worden voorafgegaan door een gelijkteken (=), tenzij u het werkblad gebruikt [!DNL eval( )], die de tekst in de cel waarnaar wordt verwezen als een expressie behandelt.
 
-Voor een volledige lijst van metrische, afmeting, en de regels van de filtersyntaxis, zie [Syntaxis van de Taal van de Vraag](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+Voor een volledige lijst van metrische, afmeting, en de regels van de filtersyntaxis, zie [Syntaxis zoektaal](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 **Gegevens typen in een werkblad**
 
@@ -77,23 +79,23 @@ Data Workbench werkt automatisch de verwijzingen in de nieuwe cel bij om naar de
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Getal </p> </td> 
-   <td colname="col2"> <p>Hiermee past u de geselecteerde numerieke notatie toe op uw gegevens, zoals tijd, datum, percentage of decimaal. </p> <p>Klik <span class="uicontrol"> Standaard</span> om het geselecteerde formatteren te verwijderen. </p> </td> 
+   <td colname="col2"> <p>Hiermee past u de geselecteerde numerieke notatie toe op uw gegevens, zoals tijd, datum, percentage of decimaal. </p> <p>Klikken <span class="uicontrol"> Standaard</span> om de geselecteerde opmaak te verwijderen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Uitvullen </p> </td> 
-   <td colname="col2"> <p>Hiermee vult u de gegevens in de cel uit op links, midden of rechts. De standaarduitvulling blijft behouden. </p> <p>Klik <span class="uicontrol"> Standaard</span> om het geselecteerde formatteren te verwijderen. </p> </td> 
+   <td colname="col2"> <p>Hiermee vult u de gegevens in de cel uit op links, midden of rechts. De standaarduitvulling blijft behouden. </p> <p>Klikken <span class="uicontrol"> Standaard</span> om de geselecteerde opmaak te verwijderen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Kleur </p> </td> 
-   <td colname="col2"> <p>Past de geselecteerde doopvontkleur op de gegevens binnen de cel toe. De standaardkleur van het lettertype is wit. </p> <p>Klik <span class="uicontrol"> Standaard</span> om het geselecteerde formatteren te verwijderen. </p> </td> 
+   <td colname="col2"> <p>Past de geselecteerde doopvontkleur op de gegevens binnen de cel toe. De standaardkleur van het lettertype is wit. </p> <p>Klikken <span class="uicontrol"> Standaard</span> om de geselecteerde opmaak te verwijderen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Indicator </p> </td> 
-   <td colname="col2"> <p>Hiermee maakt u een metrische indicator met deze cel. Zie <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Metrische indicatoren maken</a> voor meer informatie. </p> <p>Klik <span class="uicontrol"> Standaard</span> om het geselecteerde formatteren te verwijderen. </p> </td> 
+   <td colname="col2"> <p>Hiermee maakt u een metrische indicator met deze cel. Zie voor meer informatie <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Metrische indicatoren maken</a>. </p> <p>Klikken <span class="uicontrol"> Standaard</span> om de geselecteerde opmaak te verwijderen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Invoercel </p> </td> 
-   <td colname="col2"> <p>Hiermee maakt u van de geselecteerde cel een invoercel. Zie <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Invoercellen maken</a> voor meer informatie. </p> <p>Klik <span class="uicontrol"> Standaard</span> om het geselecteerde formatteren te verwijderen. </p> </td> 
+   <td colname="col2"> <p>Hiermee maakt u van de geselecteerde cel een invoercel. Zie voor meer informatie <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Invoercellen maken</a>. </p> <p>Klikken <span class="uicontrol"> Standaard</span> om de geselecteerde opmaak te verwijderen. </p> </td> 
   </tr> 
  </tbody> 
 </table>

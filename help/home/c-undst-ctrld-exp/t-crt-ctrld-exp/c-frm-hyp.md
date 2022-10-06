@@ -4,7 +4,7 @@ solution: Analytics
 title: Een hypothese opmaken
 uuid: 3973060a-f49e-44e1-aa49-25059cb33783
 exl-id: d7e77d85-4655-49c5-adeb-15402e48dd7b
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Een hypothese opmaken{#forming-a-hypothesis}
+
+{{eol}}
 
 Een hypothese is een veronderstelling, die voor het argument als juist kan worden beschouwd, die een voorzichtige verklaring biedt die door verder onderzoek kan worden getest.
 

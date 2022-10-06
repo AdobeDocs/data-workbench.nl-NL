@@ -3,14 +3,16 @@ description: De interface van de Monitor van de Server is nuttig voor het oploss
 title: Servermonitorinterface
 uuid: 609dd8ea-31a9-44c1-ab75-ca783ec85650
 exl-id: fb8baae9-ac1e-4355-ba38-fef6621e22bb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
 
 # Servermonitorinterface{#server-monitor-interface}
+
+{{eol}}
 
 De interface van de Monitor van de Server is nuttig voor het oplossen van problemen of eenvoudig het volgen van de prestatiesparameters van de servercomputers van de Data Workbench en de computers van het Rapport die cliënten van de servercomputers van de Data Workbench zijn.
 
@@ -18,19 +20,19 @@ De interface van de Monitor van de Server toont of een groene punt of een rode p
 
 Het lagere gedeelte van de interface van de Monitor van de Server maakt een lijst van de verwerkingsstatus van elk van uw beschikbare profielen evenals prestatiesdetails over de computer.
 
-Voor meer informatie over [!DNL Data Workbench servers], zie *de Gids van de Installatie en van het Beleid van de Producten van de Server*. Voor meer informatie over [!DNL Report], zie *de Gids van het Rapport van de Data Workbench*.
+Meer informatie over [!DNL Data Workbench servers], zie de *Handleiding voor installatie en beheer van serverproducten*. Meer informatie over [!DNL Report], zie de *Data Workbench Report Guide*.
 
 **Om de interface van de Monitor van de Server te openen**
 
-* Klik in Serverbeheer met de rechtermuisknop op het knooppunt van de Data Workbench-server of [!DNL Report]-computer. t
+* Klik in Serverbeheer met de rechtermuisknop op het knooppunt van de Data Workbench-server of [!DNL Report] computer. t
 
-Klik **[!UICONTROL Server Monitor]** om details over één server te bekijken, of **[!UICONTROL Related Servers]** > **[!UICONTROL Server Monitor List]** om details over een cluster van verwante servers te bekijken.
+Klikken **[!UICONTROL Server Monitor]** om details over één server te bekijken, of klik **[!UICONTROL Related Servers]** > **[!UICONTROL Server Monitor List]** om details over een cluster van verwante servers te bekijken.
 
 ![](assets/vis_ServerMonitor.png)
 
 De [!DNL Server Monitor]interface werkt automatisch om de 10 seconden bij.
 
-De volgende lijst maakt een lijst van de taken die kunnen worden voltooid gebruikend de [!DNL Server Monitor] interface.
+In de volgende tabel worden de taken weergegeven die u kunt voltooien met de opdracht [!DNL Server Monitor] interface.
 
 <table id="table_A65426669ADE44B5A6BAD9D4E99A5CAC"> 
  <thead> 
@@ -42,7 +44,7 @@ De volgende lijst maakt een lijst van de taken die kunnen worden voltooid gebrui
  <tbody> 
   <tr> 
    <td colname="col1"> <p>De logverwerkingsstatus van een profiel controleren </p> </td> 
-   <td colname="col2"> <p>Geef de profielvector <i>Profiel</i> Naam weer. In het bovenstaande voorbeeld zou u de Profile ExampleProfile-vector bekijken om te zien dat het ExampleProfile-profiel op één server wordt verwerkt en dat de logverwerking 100% is voltooid. </p> </td> 
+   <td colname="col2"> <p>Profiel weergeven <i>Profiel</i> Geef de vector een naam. In het bovenstaande voorbeeld zou u de Profile ExampleProfile-vector bekijken om te zien dat het ExampleProfile-profiel op één server wordt verwerkt en dat de logverwerking 100% is voltooid. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Om te bepalen hoe lang de computer duurt om op verzoeken te antwoorden </p> </td> 
@@ -50,11 +52,11 @@ De volgende lijst maakt een lijst van de taken die kunnen worden voltooid gebrui
   </tr> 
   <tr> 
    <td colname="col1"> <p>Een schatting weergeven van hoe lang het kan duren voordat de transformatie is voltooid of de query is uitgevoerd </p> </td> 
-   <td colname="col2"> <p>Bekijk het veld Zoektijd (uu:mm:ss), dat alleen aanwezig is tijdens transformatie of query. </p> </td> 
+   <td colname="col2"> <p>De sweep-tijd weergeven (uh:mm:ss). Dit veld is alleen aanwezig tijdens transformatie of query. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Het huidige aantal netwerkverbindingen met de computer bepalen </p> </td> 
-   <td colname="col2"> <p>Bekijk de laatste regel van de informatie <span class="wintitle"> van de Server Monitor</span> van de computer. In het bovenstaande voorbeeld ziet u dat momenteel twee netwerkverbindingen van één computer afkomstig zijn. </p> </td> 
+   <td colname="col2"> <p>De laatste regel van de computer weergeven <span class="wintitle"> Servercontrole</span> informatie. In het bovenstaande voorbeeld ziet u dat momenteel twee netwerkverbindingen van één computer afkomstig zijn. </p> </td> 
   </tr> 
  </tbody> 
 </table>

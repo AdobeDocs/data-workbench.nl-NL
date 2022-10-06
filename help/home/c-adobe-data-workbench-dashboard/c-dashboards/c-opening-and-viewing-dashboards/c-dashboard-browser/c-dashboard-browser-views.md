@@ -3,7 +3,7 @@ description: Verklaart de Mening van de Duimnagel en de Mening van de Lijst.
 title: Weergaven dashboardbrowser
 uuid: 8e5ef06a-6c5a-4792-a732-fe7574aed8ab
 exl-id: 94da6ee1-30ab-426f-9be3-fd56f172aadb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Weergaven dashboardbrowser{#dashboard-browser-views}
+
+{{eol}}
 
 Verklaart de Mening van de Duimnagel en de Mening van de Lijst.
 

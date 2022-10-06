@@ -3,7 +3,7 @@ description: Met de ReplaceURI-transformatie wordt de waarde in de interne URI-d
 title: ReplaceURI
 uuid: f9fc6d51-6eb6-4ace-8c19-2c0200555363
 exl-id: 03a6f306-5e2e-488c-8d79-a14938dcd635
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # ReplaceURI{#replaceuri}
 
+{{eol}}
+
 Met de ReplaceURI-transformatie wordt de waarde in de interne URI-dimensie gewijzigd in een nieuwe waarde.
 
-Als [!DNL URI Prefix] wordt gespecificeerd, is de resulterende waarde eenvoudig het voorvoegsel van URI samengevoegd met de verstrekte inputwaarde.
+Indien [!DNL URI Prefix] wordt opgegeven, is de resulterende waarde gewoon het URI-voorvoegsel dat met de opgegeven invoerwaarde is samengevoegd.
 
 | Parameter | Beschrijving | Standaard |
 |---|---|---|
@@ -23,13 +25,13 @@ Als [!DNL URI Prefix] wordt gespecificeerd, is de resulterende waarde eenvoudig 
 | Voorwaarde | De omstandigheden waaronder deze transformatie wordt toegepast. |  |
 | Standaard | De standaardwaarde die moet worden gebruikt als aan de voorwaarde is voldaan en de invoerwaarde niet beschikbaar is. |  |
 | Invoer | De waarde die de URI moet vervangen. |  |
-| URI-voorvoegsel | De waarde (tekenreeks) die aan de waarde in het veld [!DNL Input] moet worden toegevoegd. |  |
+| URI-voorvoegsel | De waarde (tekenreeks) die moet worden toegevoegd aan de waarde in het dialoogvenster [!DNL Input] veld. |  |
 
 >[!NOTE]
 >
->Voordat u [!DNL ReplaceURI]-transformaties toepast, moet u een nieuwe, eenvoudige dimensie maken met een bovenliggend element van [!DNL Page View]uit een kopie van cs-uri-stem of cs-uri. Neem contact op met Adobe voor hulp.
+>Voor het toepassen [!DNL ReplaceURI] transformaties, zou u een nieuwe eenvoudige afmeting met een ouder van moeten creëren [!DNL Page View]een kopie van de cs-uri-stem of cs-uri. Neem contact op met Adobe voor hulp.
 
-In dit voorbeeld wordt het gebruik van [!DNL ReplaceURI] getoond om de querytekenreeksen &quot;page=*pageid*&quot; te vervangen door &quot; [!DNL homepage.html]&quot; wanneer *pageid* aangeeft dat de homepage van de website is weergegeven. Het eindresultaat is een gebruikersvriendelijker mening van URI.
+In dit voorbeeld wordt het gebruik van [!DNL ReplaceURI] ter vervanging van &quot;page=*pageid*&quot; query strings met &quot; [!DNL homepage.html]&quot;telkens *pageid* Hiermee wordt aangegeven dat de website is weergegeven. Het eindresultaat is een gebruikersvriendelijker mening van URI.
 
 ![](assets/cfg_TransformationType_ReplaceURI.bmp)
 

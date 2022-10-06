@@ -3,7 +3,7 @@ description: Informatie over de verschillende typen proceskaarten.
 title: Typen procesafbeeldingen
 uuid: 19473b77-13c1-4829-b018-d3316e434ba4
 exl-id: 8bac7036-c7fe-4566-8e59-08e1ddc7ddb7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 0%
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # Typen procesafbeeldingen{#types-of-process-maps}
 
+{{eol}}
+
 Informatie over de verschillende typen proceskaarten.
 
-## 2D-procesmaps {#section-ea7fbdb80b1b44aebcd9e4090b6540bf}
+## 2D-proceskaarten {#section-ea7fbdb80b1b44aebcd9e4090b6540bf}
 
 Tweedimensionale proceskaarten bieden een tweedimensionale weergave van de activiteit tussen dimensie-elementen. De grootte van een knoop in een 2D proceskaart is evenredig aan de waarde metrisch verbonden aan die knoop. Bovendien zijn zowel de dikte als de intensiteit van een pijl tussen twee knooppunten evenredig met het gemiddelde van de waarden van de meting voor die knooppunten.
 
@@ -32,9 +34,9 @@ De 2D proceskaart in het volgende voorbeeld toont knopen die aan de namen van fi
 
 ![](assets/vis_2DProcessMap_MovieNodes.png)
 
-In het voorbeeld zijn de grootte van elk knooppunt en de dikte en intensiteit van elke pijl proportioneel ten opzichte van de maateenheid voor beoordelingen. Dit is een telling van classificaties die een film heeft ontvangen. Daarom heeft een film met een grote knoop, zoals *Onafhankelijkheidsdag*, meer classificaties dan een film met een kleine knoop, zoals *Event Horizon*. U kunt ook zien dat meer filmviewers *Onafhankelijkheidsdag* voor *Koude berg* hebben beoordeeld dan dezelfde films in de tegenovergestelde volgorde. De pijlen geven niet aan dat viewers *Onafhankelijkheidsdag* hebben beoordeeld en vervolgens *Koude berg* direct daarna hebben geclassificeerd, of andersom. Viewers hebben mogelijk andere films beoordeeld, maar deze films worden niet weergegeven op deze kaart.
+In het voorbeeld zijn de grootte van elk knooppunt en de dikte en intensiteit van elke pijl proportioneel ten opzichte van de maateenheid voor beoordelingen. Dit is een telling van classificaties die een film heeft ontvangen. Daarom een film met een grote knoop, zoals *Onafhankelijkheidsdag* heeft meer scores dan een film met een klein knooppunt, zoals *Gebeurtenishorizon*. U ziet ook dat er meer filmviewers zijn beoordeeld *Onafhankelijkheidsdag* voor *Koude bergen* dan geeft u dezelfde films een andere score. De pijlen geven niet aan dat viewers een score hebben *Onafhankelijkheidsdag* en vervolgens beoordeeld *Koude bergen* onmiddellijk daarna, of vice versa. Viewers hebben mogelijk andere films beoordeeld, maar deze films worden niet weergegeven op deze kaart.
 
-## 2D metrische kaarten {#section-a9b846fc71224058918fbc378315effe}
+## 2D-metrische kaarten {#section-a9b846fc71224058918fbc378315effe}
 
 Tweedimensionale metrische kaarten zijn een type van 2D proceskaart die knooppunten plaatsen die op de waarde van bepaalde metrisch worden gebaseerd. In veel gevallen, metrisch die met de 2D metrische kaart wordt gebruikt is of Omzetting of Behoud. De kaarten van de omzetting en van het behoud helpen u begrijpen welke stappen in de processen van uw klant-onder ogen ziet kanalen klantenomzetting en behoud beïnvloeden.
 
@@ -54,7 +56,7 @@ Op dezelfde manier tonen retentiekaarten elementen met 0 procent retentie aan de
 >
 >U kunt knooppunten op 2D-metrische toewijzingen niet horizontaal verplaatsen. De metrische kaarten worden ontworpen om knopen links aan recht te plaatsen die op hun metrische waarden worden gebaseerd.
 
-## 3D-processtructuren {#section-80acb63ea0994af1af7faef3c6264e51}
+## 3D-procesmaps {#section-80acb63ea0994af1af7faef3c6264e51}
 
 Driedimensionale proceskaarten bieden een driedimensionale weergave van de activiteit tussen dimensie-elementen. De hoogte van een bar in een 3D proceskaart is proportioneel aan de waarde metrisch verbonden aan die knoop. Net als bij 2D-proceskaarten zijn zowel de dikte als de intensiteit van de connectoren tussen twee knooppunten evenredig aan het gemiddelde van de waarden van de metrische waarde voor die knooppunten. In een 3D-proceskaart kunt u de volgende taken uitvoeren:
 

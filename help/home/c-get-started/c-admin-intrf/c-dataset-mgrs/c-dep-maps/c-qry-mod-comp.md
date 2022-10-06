@@ -3,14 +3,16 @@ description: Conceptuele informatie over de componenten van het vraagmodel.
 title: Componenten van query-modellen
 uuid: 708fab0b-dc10-4306-b410-49268069ac3b
 exl-id: 1f5d0a3a-6647-4762-ab20-9d80e467d48f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
 
 ---
 
-# Componenten van querymodel{#query-model-components}
+# Componenten van query-modellen{#query-model-components}
+
+{{eol}}
 
 Conceptuele informatie over de componenten van het vraagmodel.
 
@@ -26,4 +28,4 @@ Het volgende cijfer toont een gebiedsdeelkaart de waarvan knopen de metriek van 
 
 >[!NOTE]
 >
->Omdat de gebiedsdeelkaart wordt ontworpen om acyclische gebiedsdelen aan te passen, kunnen de knopen betrokken bij cirkelgebiedsdelen niet behoorlijk op de kaart tonen. U kunt naar kringafhankelijkheden zoeken door &quot;kringafhankelijkheden&quot; te typen in het tekstvak [!DNL Search]. Voor meer informatie over de [!DNL Search] eigenschap, zie [Zoeken binnen een Kaart](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb).
+>Omdat de gebiedsdeelkaart wordt ontworpen om acyclische gebiedsdelen aan te passen, kunnen de knopen betrokken bij cirkelgebiedsdelen niet behoorlijk op de kaart tonen. U kunt naar kringafhankelijkheden zoeken door &quot;kringafhankelijkheden&quot; te typen in het dialoogvenster [!DNL Search] tekstvak. Voor meer informatie over de [!DNL Search] functie, zie [Zoeken binnen een kaart](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb).

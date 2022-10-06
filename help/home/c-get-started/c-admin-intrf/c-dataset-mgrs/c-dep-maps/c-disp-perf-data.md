@@ -3,7 +3,7 @@ description: Informatie over het weergeven van prestatiegegevens voor een transf
 title: Prestatiegegevens weergeven
 uuid: 7149c565-79a6-4e01-acae-d6eea1f5fa39
 exl-id: 665716c7-08e2-4797-9e98-7b5dba5facb5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # Prestatiegegevens weergeven{#display-performance-data}
 
+{{eol}}
+
 Informatie over het weergeven van prestatiegegevens voor een transformatie of uitgebreide dimensie.
 
-* Klik met de rechtermuisknop in de afhankelijkheidskaart en klik op **[!UICONTROL Show Performance Data]**. Als deze optie is ingeschakeld, wordt een X links van [!DNL Show Performance Data] weergegeven. Wanneer u met de rechtermuisknop op een transformatie- of uitgebreid dimensiknooppunt klikt, wordt de volgende informatie over de prestaties weergegeven:
+* Klik met de rechtermuisknop in de afhankelijkheidskaart en klik op **[!UICONTROL Show Performance Data]**. Als deze optie is ingeschakeld, verschijnt er een X links van [!DNL Show Performance Data]. Wanneer u met de rechtermuisknop op een transformatie- of uitgebreid dimensiknooppunt klikt, wordt de volgende informatie over de prestaties weergegeven:
 
    * Aantal CPU-seconden dat vereist is om de transformatie uit te voeren of de uitgebreide dimensie te maken
    * De hoeveelheid geheugen die nodig is om de uitgebreide dimensie op te slaan

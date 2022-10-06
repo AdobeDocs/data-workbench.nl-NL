@@ -3,7 +3,7 @@ description: Een snelle handleiding voor verschillende methoden voor bestandsove
 title: Bestandsoverdrachtsbeheer
 uuid: a3e19f8a-1cc4-437c-9661-408f675109c0
 exl-id: a0ecd8e1-6d6f-4811-9869-092837dc9e55
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Bestandsoverdrachtsbeheer{#file-transfer-governance}
+
+{{eol}}
 
 Een snelle handleiding voor verschillende methoden voor bestandsoverdracht in DWB.
 
@@ -20,7 +22,7 @@ Bestandsoverdrachtsbeheer is een standaardproces voor het overbrengen van bestan
 
 1. AWS (Amazon Web Services)
 
-   1. Verhoog een Ticket om AWS opdrachtregelinterface op de server te installeren als deze nog niet is geïnstalleerd (zie [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)).
+   1. Verhoog een ticket om AWS opdrachtregelinterface op de server te installeren als deze nog niet is geïnstalleerd (zie [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)).
    1. Hoe te controleren? Probeer de AWS te configureren met behulp van opdrachtprompt (zie [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)).
 
 1. Zet bestanden over van de FTP-server naar de NAS-map.
@@ -53,10 +55,10 @@ Bestandsoverdrachtsbeheer is een standaardproces voor het overbrengen van bestan
 
       >[!NOTE]
       >
-      >Zie [Wekelijks opnieuw verwerken](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) om de map te downloaden als de map Scriptplaats niet beschikbaar is.
+      >Als de map Scriptplaats niet beschikbaar is, raadpleegt u [Wekelijks opnieuw verwerken](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) om de map te downloaden.
 
    1. Plan het script op basis van de beschikbaarheid van bestanden op ftp_address.
-   1. Naamgevingsconventie voor bestanden moet JJJMMDD-&lt;offline_feed_name>-00 zijn.*
+   1. Naamgevingsconventie voor bestand moet JJJMMDD- zijn&lt;offline_feed_name>-00.&#42;
 
 1. Zet bestanden over van de NAS-map naar de FTP-server.
 
@@ -228,12 +230,12 @@ Bestandsoverdrachtsbeheer is een standaardproces voor het overbrengen van bestan
       ```
 
    1. Plan het script op basis van de beschikbaarheid van bestanden op ftp_address.
-   1. Naamgevingsconventie voor bestanden moet JJJMMDD-&lt;offline_feed_name>-00 zijn.*
+   1. Naamgevingsconventie voor bestand moet JJJMMDD- zijn&lt;offline_feed_name>-00.&#42;
 
 1. Bestanden overbrengen van de ene NAS-map naar de andere NAS-map.
 
    1. Kopieer en plak het bestand dat rechtstreeks verbinding maakt met de ene NAS-map vanuit de andere. Hieronder volgen:)
 
-      aanmelden bij server -> ga naar Uitvoeren -> \\server_name\E$ [nieuwe map wordt geopend en kopieert of verplaatst de bestanden rechtstreeks]
+      aanmelden bij server -> Ga naar Uitvoeren -> \\server_naam\E$ [nieuwe map opent en kopieert of verplaatst de bestanden]
 
    1. Gebruik het script &quot;copy_files.pl&quot; om bestanden van de ene server naar de andere te kopiëren of &quot;move_files.pl&quot; om bestanden van de ene server naar de andere te verplaatsen. (Deze bestanden zijn beschikbaar in E:\scripts\Scripository)

@@ -2,20 +2,21 @@
 description: Voer de volgende stappen uit om te upgraden naar Data Workbench v6.4.
 title: Upgrade van 6.3 naar 6.4
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
-translation-type: tm+mt
-source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+exl-id: 540deb86-2463-4820-b67a-a32d68b4346e
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
-
 # Upgrade van 6.3 naar 6.4{#upgrading-to}
+
+{{eol}}
 
 Voer de volgende stappen uit om te upgraden naar Data Workbench v6.4.
 
-## Upgradevereisten en aanbevelingen {#section-8704a9ac358246cd81233dd0982d534f}
+## Upgradevereisten en Recommendations {#section-8704a9ac358246cd81233dd0982d534f}
 
 Volg deze eisen en aanbevelingen bij de upgrade naar Data Workbench 6.4.
 
@@ -23,26 +24,27 @@ Volg deze eisen en aanbevelingen bij de upgrade naar Data Workbench 6.4.
 >
 >U wordt aangeraden de nieuw geïnstalleerde standaardconfiguratiebestanden te gebruiken en deze aan te passen in plaats van bestanden van een vorige installatie te verplaatsen, met de volgende uitzonderingen:
 
-* **Voeg** ***Uitgesloten Processen*** voor de Bescherming van het Eindpunt van het Centrum van het *Systeem van MS in Vensters 2012 Servers* voor de volgende uitvoerbare lijnen toe:
+* **Toevoegen** ***Uitgesloten processen*** for *MS System Center Endpoint Protection in Windows 2012 Servers* voor de volgende uitvoerbare bestanden:
 
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   Dit zal allowlist rechten voor deze interface uitvoerbare voorwerpen toelaten.
 
-* **Werk het *certificaat Trust_ca_cert.pem*bij op de servers**.
-* **Reorganisatie van kenmerkprofielen**.
+   Dit zal de rechten van de lijst van gewenste personen voor deze interface uitvoerbare voorwerpen toelaten.
 
-   * De naam van de map *Attribution* is gewijzigd in ***Attribution - Premium*** (in de standaardinstallatie van *Profiles*\*Attribution - Premium*).
+* **Werk de *Trust_ca_cert.pem* certificaat op de servers**.
+* **Herorganisatie van kenmerkprofielen**.
 
-   * Het *Premium* -profiel is verwijderd en de werkruimte is verplaatst naar de nieuwe map ***Attribution - Premium*** .
+   * De *Attributie* map is hernoemd naar ***Attributie - Premium*** (bevindt zich in de standaardinstallatie op *Profielen*\*Attributie - Premium*).
 
-* **Werk *Attribution-Premium*-instellingen** bij. Als u aangepaste profielen hebt met parameterinstellingen die het standaard *Adobe SC* -profiel overschrijven, moet u de aangepaste velden in deze configuratiebestanden bijwerken:
+   * De *Premium* profiel is verwijderd en de werkruimte is verplaatst naar het nieuwe ***Attributie - Premium*** map.
+
+* **Bijwerken *Attribution-Premium* instellingen**. Als u aangepaste profielen hebt met parameterinstellingen die de standaardinstellingen overschrijven *Adobe SC* -profiel, moet u de aangepaste velden in deze configuratiebestanden bijwerken:
 
    * **[!DNL Decoding Instructions.cfg]**
    * **[!DNL SC Fields.cfg]**
 
-* Vanwege deze reorganisatie wilt u de oude mappen *Attribution* en *Premium* verwijderen uit de serverinstallatie.
+* Vanwege deze reorganisatie wilt u de oude *Attributie* en *Premium* mappen vanaf de installatie van de server.
 
    **Deze instellingen wijzigen**
 
@@ -72,11 +74,11 @@ Volg deze eisen en aanbevelingen bij de upgrade naar Data Workbench 6.4.
        4 = string: Attribution - Premium\\
    ```
 
-* **Werk aangepaste bestanden** Meta.cfg bij (indien nodig).
+* **Aangepaste bestanden Meta.cfg bijwerken** (indien nodig).
 
-   De **[!DNL Meta.cfg]** bestanden in **[!DNL Base\Context and AdobeSC\Context]** mappen zijn bijgewerkt in deze release.
+   De **[!DNL Meta.cfg]** bestanden in **[!DNL Base\Context and AdobeSC\Context]** zijn bijgewerkt in deze versie.
 
-   Als u het bestand **meta.cfg** tijdens de installatie overschrijft, moet uw profielkopie worden bijgewerkt met deze parameters en moet de juiste **metagegevensvector** worden ingevoerd:
+   Als u de **meta.cfg** moet uw profielkopie tijdens de installatie worden bijgewerkt met deze parameters en de **metagegevensvector** op passende wijze ingevoerd:
 
    ```
    94 = meta: 
@@ -97,9 +99,9 @@ Volg deze eisen en aanbevelingen bij de upgrade naar Data Workbench 6.4.
          value = string:
    ```
 
-* **Stel Rapportservermachtigingen** in om Microsoft Excel-rapporten te genereren op Windows 2012-servers.
+* **Machtigingen rapportserver instellen** om Microsoft Excel-rapporten te genereren op Windows 2012-servers.
 
-   1. Stel machtigingen voor de hoofdmap (**[!DNL E:\ReportServer\]**) in op *Iedereen = volledige controle*.
+   1. Toestemming voor de hoofdmap instellen (**[!DNL E:\ReportServer\]**) naar *Iedereen = volledige controle*.
 
    1. Maak de volgende mappen met de juiste machtigingen:
 
@@ -116,7 +118,7 @@ Volg deze eisen en aanbevelingen bij de upgrade naar Data Workbench 6.4.
 
    1. Wijs &quot;SYSTEM&quot;als eigenaar voor deze omslagen toe.
 
-* **Voeg doopvonten aan de Server van het Rapport toe.** Voeg in het bestand **[!DNL ReportServer.cfg]**deze lettertypen toe (voor alle talen):
+* **Voeg doopvonten aan de Server van het Rapport toe.** In de **[!DNL ReportServer.cfg]**bestand, voeg deze lettertypen toe (voor alle talen):
 
    ```
    Fonts = vector: 3 items 
@@ -127,12 +129,12 @@ Volg deze eisen en aanbevelingen bij de upgrade naar Data Workbench 6.4.
 
 * **Werk uw versie van Microsoft Excel bij **(indien nodig).
 
-   Met de versie van Data Workbench 6.4, is de steun voor Excel 2007 gestopt. Ook omdat de Data Workbench slechts op Microsoft Windows voor architectuur met 64 bits loopt, adviseert men dat u ook een versie met 64 bits van Microsoft Excel installeert.
+   Met de versie van Data Workbench 6.4, is de steun voor Excel 2007 gestopt. Ook omdat de Data Workbench slechts op Microsoft Vensters voor architectuur met 64 bits loopt, wordt het geadviseerd dat u ook een versie met 64 bits van Microsoft Excel installeert.
 
-* **64-bits architectuur** vereist voor Workstation (client)-installatie.
-* **Voer de wizard** Workstation instellen uit.
+* **64-bits architectuur** vereist voor installatie van Workstation (client).
+* **Voer de Tovenaar van de Opstelling van het Werkstation in**.
 
-   Installeer de nieuwe versie van het werkstation (cliënt) door ***InsightSetup.exe*** te downloaden en te lanceren en door de opstellingsinstructies te stappen. De installatiewizard installeert uw bestanden standaard op een nieuwe locatie:
+   Installeer de nieuwe versie van het werkstation (client) door te downloaden en te starten ***InsightSetup.exe*** en door de opstellingsinstructies te gaan. De installatiewizard installeert uw bestanden standaard op een nieuwe locatie:
 
    Programmabestanden worden nu standaard opgeslagen in:
 
@@ -146,9 +148,9 @@ Volg deze eisen en aanbevelingen bij de upgrade naar Data Workbench 6.4.
    C:\Users\<username>\AppData\Local\Adobe\Adobe Analytics\Data Workbench\
    ```
 
-* **Voeg lettertypen toe aan het werkstation**.
+* **Lettertypen toevoegen aan het werkstation**.
 
-   Voeg in het **[!DNL Insight.cfg]** bestand de volgende lettertypen toe (voor alle talen):
+   In de **[!DNL Insight.cfg]** bestand, voeg deze lettertypen toe (voor alle talen):
 
    ```
    Fonts = vector: 3 items 
@@ -156,4 +158,3 @@ Volg deze eisen en aanbevelingen bij de upgrade naar Data Workbench 6.4.
      1 = string: SimSun 
      2 = string: MS Mincho
    ```
-

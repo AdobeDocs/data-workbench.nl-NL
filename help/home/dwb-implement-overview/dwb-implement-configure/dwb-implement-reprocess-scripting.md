@@ -1,58 +1,61 @@
 ---
-description: Deze sectie is een snelle gids die u de minimumstappen geeft die aan opstelling worden vereist en manuscripten plannen om uw logboekdossiers wekelijks te verwerken. Dit kan als verwijzingsgids aan opstelling worden gebruikt of uw profielen wijzigen.
+description: Deze sectie is een snelle gids die u de minimale stappen geeft die worden vereist om manuscripten op te zetten en te plannen om uw logboekdossiers wekelijks te verwerken. Dit kan als naslaggids worden gebruikt om uw profielen in te stellen of te wijzigen.
 title: Scripting voor wekelijkse herverwerking
 uuid: d3cd163d-6129-4883-ac7c-b2f75b5eb247
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: f1b6f12e-629e-47c7-aa15-41f76d1c3192
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 0%
 
 ---
 
-
 # Scripting voor wekelijkse herverwerking{#scripting-to-weekly-reprocess}
 
-Deze sectie is een snelle gids die u de minimumstappen geeft die aan opstelling worden vereist en manuscripten plannen om uw logboekdossiers wekelijks te verwerken. Dit kan als verwijzingsgids aan opstelling worden gebruikt of uw profielen wijzigen.
+{{eol}}
+
+Deze sectie is een snelle gids die u de minimale stappen geeft die worden vereist om manuscripten op te zetten en te plannen om uw logboekdossiers wekelijks te verwerken. Dit kan als naslaggids worden gebruikt om uw profielen in te stellen of te wijzigen.
 
 ## Wat is opnieuw verwerken {#section-7e335aacc199488592e78a835e2649fe}
 
-Het laden van de gegevens aan DWB die op veranderingen in gegevensbronnen, off-line gegevensbronnen, of tijdspanne wordt gebaseerd. Het manuscript zal de parameter van de begindatum in het dossier van het *Logboek Processing.cfg* opnieuw verwerken.
+De gegevens laden naar DWB op basis van wijzigingen in gegevensbronnen, offlinegegevensbronnen of tijdsperiode. Het script verwerkt de begindatumparameter in *Logverwerking.cfg* bestand.
 
-## Voorwaarden {#section-804acce5df4942469c9313535627038a}
+## Vereisten {#section-804acce5df4942469c9313535627038a}
 
-ID van de Reeks van het rapport, het Aantal maandgegevens zou in DWB beschikbaar moeten zijn. De omslag Perl64 zou in uw C:\ drive beschikbaar moeten zijn.
+De Reeks ID van het rapport, Aantal maandgegevens zou in DWB beschikbaar moeten zijn. De map Perl64 moet beschikbaar zijn in uw C:\ drive.
 
 ## Logbestanden opnieuw verwerken {#section-565d3e1f0df14127a97d9beecd14f02f}
 
-Verstrek hierboven details (eerste vereisten) in het manuscript van het venstersbevel *Reprocess.bat* beschikbaar bij omslag *\scripts\Log Processing* bij de Belangrijkste server van FSU.
+Verstrek hierboven details (eerste vereisten) in het manuscript van het venstersbevel *Opnieuw verwerken.bat* beschikbaar in map *\scripts\Log Processing* op de hoofdserver van de FSU.
 
-Dit manuscript zal intern twee cliënt-specifieke manuscripten roepen: Een om de gegevens en andere voor e-mailberichten opnieuw te verwerken. Deze twee manuscripten zijn ook beschikbaar in de omslag *\scripts\Log Processing* .
+Dit script roept intern twee clientspecifieke scripts op: Eén om de gegevens opnieuw te verwerken en een andere voor een e-mailwaarschuwing. Deze twee scripts zijn ook beschikbaar in het dialoogvenster *\scripts\Log Processing* map.
 
-Het manuscript zal herprocesparameters in het *Logboek Processing.cfg* - dossier veranderen.
+Het script wijzigt de parameters voor opnieuw verwerken in het dialoogvenster *Logverwerking.cfg* bestand.
 
-## Rollend Venster voor Logboeken {#section-ed5f44d890b34523ab33da7aa0ae3990}
+## Rolvenster voor logbestanden {#section-ed5f44d890b34523ab33da7aa0ae3990}
 
-Verstrek details (eerste vereisten) in het manuscript van het venstersbevel *logprocessing date.bat* beschikbaar bij omslag *\scripts\Scripository* op de server van de maing FSU. Dit manuscript zal intern twee cliënt-specifieke manuscripten roepen: Eén voor het instellen van begindatum van logboeken en een andere voor e-mailwaarschuwingen. Deze twee scripts zijn ook beschikbaar in* \scripts\Scripository*
+Verstrek details (eerste vereisten) in het manuscript van het venstersbevel *logprocessingDate.bat* beschikbaar in map *\scripts\Scripting* op de overeenkomstige FSU-server. Dit script roept intern twee clientspecifieke scripts op: Eén voor het instellen van de begindatum van logboeken en een andere voor e-mailwaarschuwingen. Deze twee scripts zijn ook beschikbaar in* \scripts\Scripts*
 
-Verstrek de Reeks van het Rapport identiteitskaart en aantal maanden in het* logprocessing date.bat* dossier.
+Geef de rapportsuite-id en het aantal maanden op in het bestand* logprocessing date.bat*.
 
-Het manuscript zal de parameter van de begindatum in *Logboek Processing.cfg* veranderen.
+Het script wijzigt de begindatumparameter in *Logverwerking.cfg*.
 
 >[!NOTE]
 >
->Als de map *Bewaarplaats* niet beschikbaar is, volgt u het onderstaande proces om de map *Bewaarplaats* te kopiëren en wijzigingen in bovenstaande bestanden aan te brengen met behulp van specifieke gegevens voor de klant. En geef je e-mailadres op om een melding te ontvangen in het geval van een fout.
+>Als de *Scriptplaats* de map is niet beschikbaar, volgt u het onderstaande proces om de map te kopiëren *Scriptplaats* en breng wijzigingen aan in bovenstaande bestanden met gebruik van specifieke gegevens voor de klant. Geef uw e-mailadres op om een waarschuwing op te halen in het geval van een fout.
 
 ## Scripts plannen {#section-063cf0c755dc47d28d60947d8d43d0e9}
 
-Volg deze stappen om de manuscripten in de de taakplanner van Vensters te plannen.
+Volg deze stappen om de manuscripten in de taakplanner van Vensters te plannen.
 
 1. Plan het manuscript in de taakplanner van Vensters.
 
-   * Open taakplanner: Klik met de rechtermuisknop op de **taakplannerbibliotheek** en klik op **Taak** maken.
+   * Taakplanner openen: Klik met de rechtermuisknop op de knop **Taakplanningsbibliotheek** en klik op **Taak maken**.
 
-   * In het **Algemene** lusje verstrek een taaknaam en selecteer **Opties**.
+   * In de **Algemeen** tabblad geeft een taaknaam op en selecteert u **Opties**.
 
-   * Onder het lusje van **Trekkers** , klik **Nieuw** en een nieuw venster zal openen.
+   * Onder de **Triggers** tabblad, klikt u op **Nieuw** en er wordt een nieuw venster geopend.
 
-   * Onder het lusje van **Acties** , klik **Nieuw** en een nieuw venster zal openen. Dan verstrek manuscriptdetails en andere opties. (Het Begin binnen zal een weg hebben waar het manuscript wordt geplaatst).
+   * Onder de **Handelingen** tabblad, klikt u op **Nieuw** en er wordt een nieuw venster geopend. Geef vervolgens scriptdetails en andere opties op. (Begin in zal een weg hebben waar het manuscript wordt geplaatst).
 
-1. Validatie: Klik en stel de baan in werking en verifieer veranderingen in het *Logprocessing.cfg* - dossier met de rechtermuisknop aan. Er wordt een e-mail gestuurd naar de e-mailid die in het script wordt opgegeven.
-
+1. Validatie: Klik met de rechtermuisknop en voer de taak uit en controleer de wijzigingen in het dialoogvenster *Logverwerking.cfg* bestand. Er wordt een e-mail verzonden naar de e-mailid die in het script is opgegeven.

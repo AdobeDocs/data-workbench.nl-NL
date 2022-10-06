@@ -3,7 +3,7 @@ description: De transformatie van het Formaat neemt een reeks input en formattee
 title: Indeling
 uuid: c596902e-21bc-4ce6-9ca4-7ca86dfc0a6c
 exl-id: 842b502e-cd16-45b3-ada8-6f2d899f1d54
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Indeling{#format}
+
+{{eol}}
 
 De transformatie van het Formaat neemt een reeks input en formatteert hen om tot een output te leiden die de bepaalde structuur aanpast.
 
@@ -47,7 +49,7 @@ De transformatie werkt op eenvoudige tekenreeksen of tekenreeksvectoren en produ
   </tr> 
   <tr> 
    <td colname="col1"> Invoer </td> 
-   <td colname="col2"> <p>Velden met eenvoudige tekenreeksen of tekenreeksvectoren. In het geval van tekenreeksvectoren als invoer is de uitvoer ook een tekenreeksvector die het resultaat is van de toepassing van de parameter <span class="wintitle"> Format</span> op elke set invoerwaarden. </p> <p> <p>Opmerking:  De nummering van invoer begint bij 0, maar de nummering van de vervangende waarden voor indeling begint bij %1%. </p> </p> </td> 
+   <td colname="col2"> <p>Velden met eenvoudige tekenreeksen of tekenreeksvectoren. In het geval van tekenreeksvectoren als invoer is de uitvoer ook een tekenreeksvector die het resultaat is van de toepassing van de <span class="wintitle"> Indeling</span> aan elke reeks inputwaarden. </p> <p> <p>Opmerking: De nummering van invoer begint bij 0, maar de nummering van de vervangende waarden voor indeling begint bij %1%. </p> </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 

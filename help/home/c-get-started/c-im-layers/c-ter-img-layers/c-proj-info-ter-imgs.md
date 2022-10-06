@@ -3,7 +3,7 @@ description: Gegevenswerkbank ondersteunt zowel breedtegraad-lengteprojecties al
 title: Projectiegegevens opgeven voor terreinbeelden
 uuid: cc1e1e35-6b23-4121-a9f5-489001cb2ef8
 exl-id: 2638c5d4-164d-411b-8464-0a3af81b6537
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 0%
@@ -12,21 +12,23 @@ ht-degree: 0%
 
 # Projectiegegevens opgeven voor terreinbeelden{#specify-projection-information-for-terrain-images}
 
+{{eol}}
+
 Gegevenswerkbank ondersteunt zowel breedtegraad-lengteprojecties als UTM-projecties (Universal Transverse Mercator) voor alle terreinafbeeldingslaagbronnen.
 
-Projectie-informatie is vereist voor onbewerkte, niet-geprojecteerde bitmaps en algemene afbeeldingen. U kunt projectiegegevens opgeven voor afbeeldingen met ingesloten projectiegegevens, maar dit is gewoonlijk niet nodig omdat de parameters van de projectie automatisch worden bepaald op basis van geordetische gegevens die in de afbeelding zelf zijn ingesloten. De volgende secties geven informatie over het opgeven van deze projectie-indelingen in het [!DNL Terrain Images.cfg]-bestand.
+Projectie-informatie is vereist voor onbewerkte, niet-geprojecteerde bitmaps en algemene afbeeldingen. U kunt projectiegegevens opgeven voor afbeeldingen met ingesloten projectiegegevens, maar dit is gewoonlijk niet nodig omdat de parameters van de projectie automatisch worden bepaald op basis van geordetische gegevens die in de afbeelding zelf zijn ingesloten. In de volgende secties vindt u informatie over het opgeven van deze projectindelingen in de [!DNL Terrain Images.cfg] bestand.
 
-## Latitude-lengteprojecties {#section-6e335357ec28462ba39c565e0a5986c7}
+## Breedtegraad-lengteprojecties {#section-6e335357ec28462ba39c565e0a5986c7}
 
-De breedte-lengteprojectie-indeling (LatLonProjection) in het [!DNL Terrain Images.cfg]-bestand wordt gedefinieerd door vier parameters voor breedte en lengte.
+De breedte-lengteprojectie-indeling (LatLonProjection) in de [!DNL Terrain Images.cfg] bestand wordt gedefinieerd door vier parameters voor breedte en lengte.
 
-Als u een LatLonProjection wilt opgeven voor niet-geprojecteerde afbeeldingen (onbewerkte niet-geprojecteerde bitmaps en algemene afbeeldingen, niet geprojecteerd), kunt u instellingen voor de LatLonProjection opgeven in het venster [!DNL Terrain Images.cfg] in Data Workbench.
+Als u een LatLonProjection wilt opgeven voor niet-geprojecteerde afbeeldingen (onbewerkte niet-geprojecteerde bitmaps en algemene afbeeldingen, niet-geprojecteerd), kunt u instellingen voor de LatLonProjection opgeven in het gedeelte [!DNL Terrain Images.cfg] venster in Data Workbench.
 
-Als u een LatLonProjection wilt opgeven voor afbeeldingen met ingesloten projectiegegevens, moet u het [!DNL Terrain Images.cfg]-bestand openen in een teksteditor zoals Kladblok, de parameter Projectie-info instellen op LatLonProjection en instellingen toevoegen voor [!DNL LatLonProjection].
+Als u een LatLonProjection wilt opgeven voor afbeeldingen met ingesloten projectiegegevens, moet u het dialoogvenster [!DNL Terrain Images.cfg] bestand in een teksteditor, zoals Kladblok, stelt de parameter Projectie-info in op LatLonProjection en voegt instellingen voor de [!DNL LatLonProjection].
 
 **Een LatLonProjection opgeven voor niet-geprojecteerde afbeeldingen**
 
-1. Open het [!DNL Terrain Images.cfg] dossier in Data Workbench en voeg een bron van de de beeldlaag van het terrein toe zoals die in [wordt beschreven om een laag van het gebiedsafbeelding ](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f) te bepalen.
+1. Open de [!DNL Terrain Images.cfg] bestand in Data Workbench en voeg een laagbron voor terreinafbeelding toe zoals beschreven in [Een achtergrondafbeeldingslaag definiëren](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f).
 1. Bewerk de parameters voor projectie-info met behulp van de volgende parametertabel als richtlijn:
 
 <table id="table_32F6EADB2DA34592ABD6FFAC9E00BB27"> 
@@ -56,16 +58,16 @@ Als u een LatLonProjection wilt opgeven voor afbeeldingen met ingesloten project
  </tbody> 
 </table>
 
-1. Sla het bestand op door met de rechtermuisknop op **[!UICONTROL (modified)]** boven in het venster te klikken en op **[!UICONTROL Save]** te klikken.
-1. Als u de lokaal aangebrachte wijzigingen op de servercomputer van de Data Workbench wilt opslaan, klikt u in [!DNL Server Files Manager] met de rechtermuisknop op het vinkje voor [!DNL Terrain Images.cfg] in de kolom [!DNL Temp] en vervolgens op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
+1. Sla het bestand op door met de rechtermuisknop te klikken **[!UICONTROL (modified)]** boven aan het venster en klikken op **[!UICONTROL Save]**.
+1. Om plaatselijk aangebrachte veranderingen in de servercomputer van de Data Workbench op te slaan, in [!DNL Server Files Manager], klikt u met de rechtermuisknop op het vinkje voor [!DNL Terrain Images.cfg] in de [!DNL Temp] kolom, klik vervolgens op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
 
 **Een LatLonProjection opgeven voor afbeeldingen binnen ingesloten projectiegegevens**
 
-Klik in [!DNL Server Files Manager] op **[!UICONTROL Components]** om de inhoud ervan weer te geven. Het [!DNL Terrain Images.cfg]-bestand bevindt zich in deze map.
+In de [!DNL Server Files Manager], klikt u op **[!UICONTROL Components]** om de inhoud te bekijken. De [!DNL Terrain Images.cfg] bestand bevindt zich in deze map.
 
-Klik met de rechtermuisknop op het vinkje in de kolom Servernaam voor [!DNL Terrain Images.cfg] en klik vervolgens op **[!UICONTROL Make Local]**. In de kolom [!DNL Temp] wordt een vinkje weergegeven voor [!DNL Terrain Images.cfg].
+Klik met de rechtermuisknop op het vinkje in de kolom Servernaam voor [!DNL Terrain Images.cfg]en klik vervolgens op **[!UICONTROL Make Local]**. Er verschijnt een vinkje in het dialoogvenster [!DNL Temp] kolom voor [!DNL Terrain Images.cfg].
 
-Klik met de rechtermuisknop op het nieuwe vinkje in de kolom [!DNL Temp] en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Het [!DNL Terrain Images.cfg] dossier verschijnt in een venster van de Blocnote.
+Klik met de rechtermuisknop op het nieuwe vinkje in het dialoogvenster [!DNL Temp] kolom en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. De [!DNL Terrain Images.cfg] wordt weergegeven in een Kladblok-venster.
 
 Bewerk de parameters voor projectie-info met behulp van het volgende voorbeeldbestandsfragment als richtlijn. Zorg ervoor dat u het projectietype opgeeft, zoals hieronder wordt gemarkeerd. Voor beschrijvingen van de parameters, zie de lijst van Parameters LatLonProjection in de vorige procedure.
 
@@ -81,13 +83,13 @@ Projection Info = LatLonProjection:
 
 De Universal Transverse Mercator (UTM)-projectie wordt gedefinieerd door acht parameters. Wanneer u een Universal Transverse Mercator-projectie opgeeft voor een achtergrondafbeeldingslaag, moeten de bestanden van de terreinafbeelding worden uitgelijnd met false (geprojecteerd) ten noorden in de richting van de bovenkant van de afbeelding en met false ten oosten rechts van de afbeelding.
 
-Als u een UTM-projectie wilt opgeven voor een willekeurige terreinafbeeldingsbron, moet u het [!DNL Terrain Images.cfg]-bestand openen in een teksteditor zoals Kladblok, de parameter Projectie-info instellen op &quot;TransverseMercatorProjection&quot; en instellingen toevoegen voor de UTM-projectie.
+Als u een UTM-projectie wilt opgeven voor een willekeurige terreinafbeeldingsbron, moet u het dialoogvenster [!DNL Terrain Images.cfg] in een teksteditor, zoals Kladblok, de parameter Projectie-info instellen op &quot;TransverseMercatorProjection&quot; en instellingen toevoegen voor de UTM-projectie.
 
 **Een Universal Transverse Mercator-projectie opgeven**
 
-1. Klik in [!DNL Server Files Manager] op **[!UICONTROL Components]** om de inhoud ervan weer te geven. Het [!DNL Terrain Images.cfg]-bestand bevindt zich in deze map.
-1. Klik met de rechtermuisknop op het vinkje in de kolom Servernaam voor [!DNL Terrain Images.cfg] en klik vervolgens op **[!UICONTROL Make Local]**. Een vinkje verschijnt in [!DNL Temp] kolom voor [!DNL Terrain Images.cfg.]
-1. Klik met de rechtermuisknop op het nieuwe vinkje in de kolom [!DNL Temp] en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Het [!DNL Terrain Images.cfg] dossier verschijnt in een venster van de Blocnote.
+1. In de [!DNL Server Files Manager], klikt u op **[!UICONTROL Components]** om de inhoud te bekijken. De [!DNL Terrain Images.cfg] bestand bevindt zich in deze map.
+1. Klik met de rechtermuisknop op het vinkje in de kolom Servernaam voor [!DNL Terrain Images.cfg]en klik vervolgens op **[!UICONTROL Make Local]**. Er verschijnt een vinkje in het dialoogvenster [!DNL Temp] kolom voor [!DNL Terrain Images.cfg.]
+1. Klik met de rechtermuisknop op het nieuwe vinkje in het dialoogvenster [!DNL Temp] kolom en klik op **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. De [!DNL Terrain Images.cfg] wordt weergegeven in een Kladblok-venster.
 1. Bewerk de parameters voor projectie-info met behulp van het volgende voorbeeldbestandsfragment en de parametertabel als hulplijnen. Zorg ervoor dat u het projectietype opgeeft, zoals hieronder wordt gemarkeerd.
 
    ```

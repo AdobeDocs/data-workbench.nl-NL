@@ -3,7 +3,7 @@ description: Informatie over recordvelden voor basislijngebeurtenissen, zoals va
 title: Gegevensrecordvelden basislijngebeurtenis
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Gegevensrecordvelden basislijngebeurtenis{#baseline-event-data-record-fields}
+
+{{eol}}
 
 Informatie over recordvelden voor basislijngebeurtenissen, zoals vastgelegd door de sensor.
 
@@ -72,13 +74,13 @@ Informatie over recordvelden voor basislijngebeurtenissen, zoals vastgelegd door
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> <p>De datum en tijd (GMT) waarop het verzoek door de server is ontvangen. </p> <p>De tijd wordt uitgedrukt als het aantal 100 nanoseconden sinds 1 januari 1600. </p> <p>Voorbeeld: 127710989320000000 zou de x-timestamp waarde voor 11:28:52.0000000 zijn op dinsdag 13 september 2005. </p> </td>
+   <td colname="col2"> <p>De datum en tijd (GMT) waarop het verzoek door de server is ontvangen. </p> <p>De tijd wordt uitgedrukt als het aantal 100 nanoseconden sinds 1 januari 1600. </p> <p>Voorbeeld: 127710989320000000 zou de x-tijdstempelwaarde voor 11 zijn:28:52.000000 op dinsdag 13 september 2005. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
-   <td colname="col2"> <p>De hexadecimale 64-bits waarde van de unieke browser-id die wordt gevonden in een permanente cookie, zoals ingesteld door een <span class="wintitle">-sensor </span> en verstrekt door de client met een aanvraag aan een server. </p> <p>Voorbeeld: 42FDF66DE610CF36 </p> </td>
+   <td colname="col2"> <p>De hexadecimale 64-bits waarde van de unieke browser-id die wordt gevonden in een permanente cookie, zoals ingesteld door een <span class="wintitle"> Sensor </span> en door de client worden verstrekt met een aanvraag aan een server. </p> <p>Voorbeeld: 42FDF66DE610CF36 </p> </td>
   </tr>
  </tbody>
 </table>
 
-De [!DNL data workbench server] kan een aantal variabelen van de gebieden van het de verslagverslag van de basislijngebeurtenis afleiden. Voor meer informatie, zie *de Gids van de Configuratie van de Dataset*.
+De [!DNL data workbench server] U kunt een aantal variabelen afleiden van de recordvelden voor basislijngebeurtenissen. Zie voor meer informatie de *Configuratie-handleiding voor gegevensset*.

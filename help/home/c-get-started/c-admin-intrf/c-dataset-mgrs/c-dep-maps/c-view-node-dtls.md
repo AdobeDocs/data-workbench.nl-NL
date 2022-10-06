@@ -3,7 +3,7 @@ description: Informatie over het weergeven van identificatiegegevens over een pr
 title: Details van knooppunt weergeven
 uuid: 2016a650-b021-4295-8313-d6287578ed10
 exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Details van knooppunt weergeven{#view-node-details}
+
+{{eol}}
 
 Informatie over het weergeven van identificatiegegevens over een profielcomponent.
 
@@ -36,7 +38,7 @@ Het type en de naam van de transformatie, de naam van het bestand waarin de tran
 
 >[!NOTE]
 >
->De informatie van prestaties voor de transformatie wordt getoond slechts als [!DNL Show Performance Data] optie voor de gebiedsdeelkaart wordt toegelaten. Zie [Prestatiegegevens weergeven](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb) voor meer informatie.
+>Prestatiegegevens voor de transformatie worden alleen weergegeven als de [!DNL Show Performance Data] optie wordt toegelaten voor de gebiedsdeelkaart. Zie voor meer informatie [Prestatiegegevens weergeven](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Uitgebreide Dimension**
 
@@ -46,7 +48,7 @@ De naam en het type van de uitgebreide dimensie, de naam van het dossier waarin 
 
 >[!NOTE]
 >
->De informatie van prestaties voor de uitgebreide afmeting wordt getoond slechts als de [!DNL Show Performance Data] optie voor de gebiedsdeelkaart wordt toegelaten. Zie [Prestatiegegevens weergeven](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb) voor meer informatie.
+>De informatie van prestaties voor de uitgebreide afmeting wordt getoond slechts als [!DNL Show Performance Data] optie wordt toegelaten voor de gebiedsdeelkaart. Zie voor meer informatie [Prestatiegegevens weergeven](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Metrisch**
 

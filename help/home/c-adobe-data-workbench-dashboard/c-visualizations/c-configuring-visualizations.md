@@ -3,7 +3,7 @@ description: Toont hoe te om Titel, Profiel, Dimension, Metrisch, Filter, de Bov
 title: Visualisaties configureren
 uuid: aca77188-8f28-4554-8913-412b252f688c
 exl-id: 153adf94-5689-4917-9d71-625caef49903
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Visualisaties configureren{#configuring-visualizations}
+
+{{eol}}
 
 Toont hoe te om Titel, Profiel, Dimension, Metrisch, Filter, de Boven van de Vertoning, Soort door, en Periode te vormen.
 
@@ -20,9 +22,9 @@ Elke visualisatie op het dashboardcanvas heeft zijn eigen configuratie. Wanneer 
 >
 >De configuratieopties variëren enigszins afhankelijk van het type visualisatie dat wordt weergegeven.
 
-## Visualisatietitel {#section-0414844283d745ae912e85f8ea14a51d}
+## Titel visualisatie {#section-0414844283d745ae912e85f8ea14a51d}
 
-In dit veld kunt u de titel aanpassen die boven aan de visualisatie wordt weergegeven. De titel wordt standaard ingesteld op **[!UICONTROL Automatic Title]**, waardoor automatisch een titel voor het visualisatievenster wordt gegenereerd. Door de **[!UICONTROL Automatic Title]** knoop te ontruimen, kunt u om het even welke titel op dit gebied plaatsen. (Dit veld is van toepassing op alle visualisaties.)
+In dit veld kunt u de titel aanpassen die boven aan de visualisatie wordt weergegeven. Standaard is de titel ingesteld op **[!UICONTROL Automatic Title]**, die automatisch een titel voor het visualisatievenster genereert. Door de **[!UICONTROL Automatic Title]** kunt u een willekeurige titel in dit veld plaatsen. (Dit veld is van toepassing op alle visualisaties.)
 
 ![](assets/title.png)
 
@@ -40,7 +42,7 @@ Profielen zijn gegevenssets die zijn gedefinieerd in de Data Workbench en die ge
 
 ## Dimension {#section-4ebb8c4308a146c3a35c7ac7ab6b579f}
 
-Hiermee selecteert u de dimensie die u wilt visualiseren. De lijst wordt gevuld vanuit de lijst met afmetingen die beschikbaar is via het profiel dat is geselecteerd in het veld Profiel. Klik op de gewenste dimensie en klik vervolgens op de knop Selecteren. (Dit veld is niet van toepassing op weergaven van metrische legenda en RTF.)
+Hiermee selecteert u de dimensie die u wilt visualiseren. De lijst wordt gevuld vanuit de lijst met afmetingen die beschikbaar is in het profiel dat is geselecteerd in het veld Profiel. Klik op de gewenste dimensie en klik vervolgens op de knop Selecteren. (Dit veld is niet van toepassing op weergaven van metrische legenda en RTF.)
 
 Dimension zijn categorieën van soortgelijke gegevenstypen. De dimensie Dagen van week bestaat bijvoorbeeld uit de volgende gegevenselementen: Zondag, maandag, dinsdag, woensdag, donderdag, vrijdag, en zaterdag. Dimension laten zien wat er wordt gemeten.
 
@@ -60,7 +62,7 @@ Multimetrische visualisaties hebben een multi-metrisch selectievenster:
 
 De lijst wordt gevuld vanuit de lijst met beschikbare metriek van het profiel dat is geselecteerd in het veld Profiel.
 
-Klik op de gewenste metriek en klik dan **[!UICONTROL Select]**. (Dit veld is niet van toepassing op RTF-visualisaties.)
+Klik op de gewenste meetgegevens en klik vervolgens op **[!UICONTROL Select]**. (Dit veld is niet van toepassing op RTF-visualisaties.)
 
 ## Filters {#section-f8619ae2f8e54735a2c1b0fbb8bb1281}
 
@@ -72,7 +74,7 @@ Selecteer de filters die u op uw visualisatie wilt toepassen. In het venster met
 
 ![](assets/filter.png)
 
-## Tops {#section-7ce71cb0fa6446998b710b427e68b133} weergeven
+## Knoppen weergeven {#section-7ce71cb0fa6446998b710b427e68b133}
 
 Visualisaties in het dashboard zijn niet ontworpen om alle gegevens weer te geven. In plaats daarvan kunt u hiermee het aantal dimensie-records opgeven dat u wilt weergeven op de visualisatie. Hierdoor wordt het bovenste aantal dimensies weergegeven, afhankelijk van de onderstaande sorteerwaarde. (Dit veld is niet van toepassing op tabellen, metrische legenda en RTF-visualisaties.)
 
@@ -94,9 +96,9 @@ Op deze manier kunt u opgeven hoe de gegevens moeten worden gesorteerd wanneer d
 
 Met deze visualisatie kunt u de gewenste begin- en/of einddatum opgeven voor de gegevens die binnen de visualisatie worden weergegeven.
 
-Als u **[!UICONTROL All Dates]**selecteert, wordt het volledige datumbereik weergegeven dat beschikbaar is in het profiel.
+Selecteren **[!UICONTROL All Dates]**geeft het volledige datumbereik weer dat beschikbaar is in het profiel.
 
-Als u **[!UICONTROL Range]** selecteert, worden alleen de gegevens weergegeven die binnen een opgegeven bereik vallen. Als u het datumbereik wilt invoeren, typt u de begin- en/of einddatum of gebruikt u een kalenderinvoer door het kalenderpictogram te selecteren.
+Selecteren **[!UICONTROL Range]** Hiermee worden alleen de gegevens weergegeven die binnen een opgegeven bereik vallen. Als u het datumbereik wilt invoeren, typt u de begin- en/of einddatum of gebruikt u een kalenderinvoer door het kalenderpictogram te selecteren.
 
 (Dit veld is niet van toepassing op RTF-visualisaties.)
 

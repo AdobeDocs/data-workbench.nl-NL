@@ -3,7 +3,7 @@ description: De werkbank van gegevens verstrekt een reeks transformaties die de 
 title: Opzoekgegevens integreren
 uuid: 35fd48f7-c0c4-4a83-919d-c15902f27495
 exl-id: 150d3aae-4431-488f-8f19-b522637ee935
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Opzoekgegevens integreren{#integrating-lookup-data}
+
+{{eol}}
 
 De werkbank van gegevens verstrekt een reeks transformaties die de server van de gegevenswerkbank toelaat om raadplegingsgegevens in de dataset op te nemen.
 
@@ -31,4 +33,4 @@ Om raadplegingsgegevens op te nemen, moet u een raadplegingsdossier eerst produc
 
 >[!NOTE]
 >
->De [!DNL ODBCLookup]-transformatie werkt alleen wanneer deze is gedefinieerd in het [!DNL Transformation.cfg]-bestand of in een [!DNL Transformation Dataset Include]-bestand.
+>De [!DNL ODBCLookup] de transformatie werkt alleen wanneer deze is gedefinieerd in het dialoogvenster [!DNL Transformation.cfg] of in een [!DNL Transformation Dataset Include] bestand.

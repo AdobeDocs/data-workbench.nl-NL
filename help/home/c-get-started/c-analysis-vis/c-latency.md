@@ -1,34 +1,38 @@
 ---
-description: De visualisatie van de Latentie laat u latent klantengedrag binnen een vastgesteld aantal dagen analyseren alvorens of nadat een gebeurtenis na een campagne of een ander type van gebeurtenis of periode voorkwam.
+description: Met de latentie-visualisatie kunt u het gedrag van latente klanten binnen een bepaald aantal dagen vóór of na een gebeurtenis na een campagne of een ander type gebeurtenis of een periode analyseren.
 title: Latentieanalyse
 uuid: 80760420-0e21-420a-b585-9cf2d9a207bd
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 3b645ddc-6ba0-4cd5-89e6-737257d382b3
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 0%
 
 ---
 
-
 # Latentieanalyse{#latency-analysis}
 
-De visualisatie van de Latentie laat u latent klantengedrag binnen een vastgesteld aantal dagen analyseren alvorens of nadat een gebeurtenis na een campagne of een ander type van gebeurtenis of periode voorkwam.
+{{eol}}
 
-De **[!UICONTROL Latency]** visualisatie staat u toe om metrisch te plaatsen om gedrag vóór, tijdens, of na een gebeurtenis te identificeren voorkwam om zijn effect op klantengedrag te bepalen. Bijvoorbeeld, kunt u de doeltreffendheid van een marketing campagne identificeren door de opbrengst een week te bekijken nadat een gebeurtenis voorkwam. Of u kunt klantengedrag een week voorafgaand aan de gebeurtenis als basislijn tonen om het effect van een gebeurtenis op gedrag te zien.
+Met de latentie-visualisatie kunt u het gedrag van latente klanten binnen een bepaald aantal dagen vóór of na een gebeurtenis na een campagne of een ander type gebeurtenis of een periode analyseren.
 
-Gebruikend de visualisatie van de Latentie, kunt u de dimensie van de Tijd van dag, uur, week, of andere tijdspanne veranderen, om te bezoeken, door te klikken, te raken, of andere telbare afmeting.
+De **[!UICONTROL Latency]** Met visualisatie kunt u een metrische waarde instellen om het gedrag vóór, tijdens of na een gebeurtenis te identificeren om het effect ervan op het gedrag van de klant te bepalen. U kunt bijvoorbeeld de doeltreffendheid van een marketingcampagne vaststellen door de inkomsten een week na een gebeurtenis weer te geven. Of u kunt het gedrag van de klant een week vóór de gebeurtenis als basislijn weergeven om het effect van een gebeurtenis op het gedrag te zien.
+
+Gebruikend de Latentie visualisatie, kunt u de afmeting van de Tijd van dag, uur, week, of andere tijdspanne veranderen, om te bezoeken, te klikken door, te raken, of andere telbare afmeting.
 
 **Latentieanalyse instellen**
 
-1. Open een werkruimte en klik met de rechtermuisknop [!DNL Visualization] > [!DNL Latency].
+1. Een werkruimte openen en met de rechtermuisknop klikken [!DNL Visualization] > [!DNL Latency].
 
-1. Van het menu, selecteer het aantal dagen om voor latentiegebeurtenissen te analyseren. ![](assets/latency_vis.png)
+1. Selecteer in het menu het aantal dagen dat u wilt analyseren op latentiegebeurtenissen. ![](assets/latency_vis.png)
 
-1. Klik met de rechtermuisknop op het **[!UICONTROL Latency]** label om het menu te openen.
+1. Klik met de rechtermuisknop op de knop **[!UICONTROL Latency]** label om het menu te openen.
 
-   * Gebruikend de **[!UICONTROL Set Countable]** optie, plaats een telbare dimensie zoals bezoek, klik, klap, en anderen.
-   * Gebruikend de **[!UICONTROL Set Countable (Time)]** optie, plaats een tijddimensie zoals dag, uur, week, dag van week, en uur van dag.
+   * Met de **[!UICONTROL Set Countable]** , stelt u een aftelbare dimensie in, zoals een bezoek, doorklikken, aanraken en andere.
+   * Met de **[!UICONTROL Set Countable (Time)]** , stelt u een tijddimensie in, zoals dag, uur, week, dag van de week en uur van de dag.
+
    ![](assets/latency_vis_countable.png)
 
-1. Wijzig de Latentie visualisatie.
+1. Wijzig de Latentie-visualisatie.
 
-   Klik op de **[!UICONTROL Latency]** kopbal met de rechtermuisknop aan om menuopties te selecteren om tellers, afmetingen te veranderen, om, andere montages te heretiketteren of te selecteren of te veranderen.
-
+   Klik met de rechtermuisknop op de knop **[!UICONTROL Latency]** om menuopties te selecteren om tellen, afmetingen te veranderen, opnieuw te etiketteren, of andere montages te selecteren of te veranderen.

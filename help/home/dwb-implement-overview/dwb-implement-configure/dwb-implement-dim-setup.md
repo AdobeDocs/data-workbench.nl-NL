@@ -3,7 +3,7 @@ description: In deze sectie worden de verschillende typen Dimension beschreven e
 title: Dimension instellen
 uuid: 5b40cb43-7790-4b87-a0bb-be395a420157
 exl-id: 04afd773-e938-49f7-83c9-1d706a6dc525
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Dimension instellen{#dimension-setup}
+
+{{eol}}
 
 In deze sectie worden de verschillende typen Dimension beschreven en wordt uitgelegd hoe u deze instelt in DWB.
 
@@ -20,7 +22,7 @@ Op het meest basisniveau zijn dimensies categorieën waarin de gegevens in de ge
 
 Beste praktijken: Dimension in het gegevensschema kunnen elke naam hebben. De namen van Dimension die in deze cursus worden gebruikt en uitgelegd, worden beschouwd als een beste praktijk. Dimension kunnen een andere naam krijgen. Aangezien u blootstelling aan andere datasets krijgt, zult u beginnen verschillen in datasets te zien. Het is belangrijk om het doel van de dimensies te begrijpen in plaats van hun naam. Of het bijvoorbeeld &quot;Bezoeker&quot;, &quot;Klant&quot;, &quot;Persoon&quot;, &quot;Consumenten&quot; of &quot;Gebruiker&quot; wordt genoemd, het is belangrijk om te begrijpen dat deze termen vaak worden gebruikt om naar de hoogste aftelbare dimensie te verwijzen die wordt gebruikt om informatie over een enkelvoudige persoon te verzamelen.
 
-Voor volledige informatie, zie [de gids van de Configuratie van de Dataset](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html).
+Voor volledige informatie raadpleegt u de [Configuratie gegevensset](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html) hulplijn.
 
 ## Typen Dimension in DWB {#section-a4fbb7bf2bde44528ac0f94a96465862}
 
@@ -69,7 +71,7 @@ Vele-aan-vele dimensies hebben een vele-aan-vele verhouding met een oudertelbare
 **4) Numerieke Dimension**
 
 Numerieke afmetingen zijn een type eenvoudige afmeting met een numerieke waarde. De numerieke afmetingen worden vaak gecreeerd om in metriek te worden gebruikt. Voorbeelden van numerieke afmetingen zijn &#39;Revenue&#39;, &#39;Orders&#39; en &#39;Units&#39;. In het bovenstaande voorbeeld is &#39;Bestellingen van klanten&#39; een numerieke dimensie.
-**5) Denormale** DimensionsDenormale afmetingen zijn dimensies die een één-op-één verhouding met een oudertelbare dimensie hebben. Denormale afmetingen worden vaak gebruikt met dimensies die een hoge kardinaliteit hebben (veel unieke elementen), zoals identificatiegegevens. Een bezoeker kan bijvoorbeeld slechts één gebruikersnaam hebben en een gebruikersnaam kan slechts bij één bezoeker horen. Dit is dus een één-op-één relatie en kan een denormale dimensie hebben.
+**5) Denormale Dimension** De formele afmetingen zijn dimensies die een één-aan-één verhouding met een oudertelbare dimensie hebben. Denormale afmetingen worden vaak gebruikt met dimensies die een hoge kardinaliteit hebben (veel unieke elementen), zoals identificatiegegevens. Een bezoeker kan bijvoorbeeld slechts één gebruikersnaam hebben en een gebruikersnaam kan slechts bij één bezoeker horen. Dit is dus een één-op-één relatie en kan een denormale dimensie hebben.
 
 Bijvoorbeeld, is de Gebruiker van het Web van de Geometrixx - identiteitskaart een denormale dimensie op het klantenniveau. Aangezien het ontkennend is, heeft het een één-aan-één verhouding met zijn ouderafmeting, betekenend dat elke Gebruiker van het Web één klant heeft en elke klant slechts één identiteitskaart van de Gebruiker van het Web heeft. Aldus, kan metrische &quot;Klanten&quot;slechts &quot;1&quot;voor elk element van de Gebruiker van het Web van de Geometrixx zijn - identiteitskaart
 
@@ -79,7 +81,7 @@ Met tijdafmetingen kunt u een set periodieke of absolute lokale tijdafmetingen m
 
 >[!NOTE]
 >
->De %-escapes die worden gebruikt voor weergave-opmaak zijn gelijk aan de standaard C-bibliotheek *strftime*.
+>De escape-waarde van % die wordt gebruikt voor weergave-opmaak is gelijk aan de standaard C-bibliotheek *strftime*.
 
 ## Uitgebreide Dimension definiëren {#section-38ee124ec74b43fb95f13194a9582b97}
 
@@ -97,7 +99,7 @@ Stappen voor het definiëren van de uitgebreide Dimension:
    * [Denormale Dimension](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-denormal-dim.html)
    * [Dimension tijd](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-time-dim.html)
 
-1. Voor om het even welke uitgebreide afmeting die u bepaalt, kunt u één of meerdere commentaarlijnen aan de parameter van Commentaren toevoegen om de afmeting verder te beschrijven of nota&#39;s over zijn gebruik toe te voegen. Als u een opmerking wilt toevoegen, klikt u met de rechtermuisknop op het label *Opmerkingen* en klikt u op* Nieuwe toevoegen > Opmerkingsregel*.
+1. Voor om het even welke uitgebreide afmeting die u bepaalt, kunt u één of meerdere commentaarlijnen aan de parameter van Commentaren toevoegen om de afmeting verder te beschrijven of nota&#39;s over zijn gebruik toe te voegen. Als u een opmerking wilt toevoegen, klikt u met de rechtermuisknop op de knop *Opmerkingen* label en klik op* Nieuwe toevoegen > Opmerkingsregel*.
 
 1. Nadat u uw uitgebreide afmeting(en) in het configuratiebestand hebt gedefinieerd, slaat u het bestand lokaal op en slaat u het op in uw gegevenssetprofiel op de DWB-server.
 

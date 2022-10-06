@@ -3,20 +3,22 @@ description: Een lijst weergeven met gebruikersinterfaceacties en sneltoetsen va
 title: Snelle verwijzing
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
 exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
-# Snelle referentie{#quick-reference}
+# Snelle verwijzing{#quick-reference}
+
+{{eol}}
 
 Een lijst weergeven met gebruikersinterfaceacties en sneltoetsen van de Data Workbench-client.
 
 Zie ook [Sneltoetsen](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a).
 
-## Handelingen voor de Data Workbench-client {#section-dfea35452c2e4f0b92229a4974bc24fa}
+## Handelingen voor de client Data Workbench {#section-dfea35452c2e4f0b92229a4974bc24fa}
 
 Gebruik deze handelingen wanneer u taken uitvoert binnen de gebruikersinterface van de client.
 
@@ -132,7 +134,7 @@ Gebruik deze sneltoetsen voor werkruimten en configuratiebestanden.
 | Ctrl + S | Hiermee slaat u een werkruimte op. |
 | Ctrl + O | Hiermee opent u een visualisatiebestand. Dit is hetzelfde als het selecteren van Toevoegen > Openen in het menu van de werkruimte. |
 | Ctrl + E | Open een configuratie (standaard) of andere bestanden. Dit is hetzelfde als het selecteren van Toevoegen > Bewerken in het menu van de werkruimte. Selecteer Alles om andere bestanden te openen. |
-| Menu met veelgebruikte bestanden | Klik op **Toevoegen > Openen** in een werkruimte om onlangs geopende bestanden te openen (de laatste tien) of bestanden die u &quot;vastzet&quot; in het nieuwe menu. Vanuit het menu kunt u op het speldpictogram in de lijst klikken om de visualisatie op te slaan. |
+| Menu met veelgebruikte bestanden | Klikken **Toevoegen > Openen** in een werkruimte om onlangs geopende bestanden te openen (de laatste tien) of bestanden die u &quot;vastzet&quot; in het nieuwe menu. Vanuit het menu kunt u op het speldpictogram in de lijst klikken om de visualisatie op te slaan. |
 
 <table id="table_99414A5999F94A2EAB2BBBA27EE487F5"> 
  <thead> 
@@ -144,11 +146,11 @@ Gebruik deze sneltoetsen voor werkruimten en configuratiebestanden.
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Klik met de rechtermuisknop op een knooppunt en klik op <span class="uicontrol"> Plakken</span> </p> </td> 
-   <td colname="col2"> <p>Hiermee plakt u een knooppunt in een <span class="filepath"> .cfg</span>-bestand </p> </td> 
+   <td colname="col2"> <p>Hiermee wordt een knooppunt in een <span class="filepath"> .cfg</span> file </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1">Klik met de rechtermuisknop op de vector en klik op <span class="uicontrol"> Plakken als onderliggend item</span> </td> 
-   <td colname="col2">Hiermee plakt u een vector in een <span class="filepath"> .cfg</span>-bestand op vectorniveau </td> 
+   <td colname="col1">Klik met de rechtermuisknop op de vector en klik op <span class="uicontrol"> Plakken als onderliggend</span> </td> 
+   <td colname="col2">Een vector plakken in een <span class="filepath"> .cfg</span> bestand op vectorniveau </td> 
   </tr> 
  </tbody> 
 </table>

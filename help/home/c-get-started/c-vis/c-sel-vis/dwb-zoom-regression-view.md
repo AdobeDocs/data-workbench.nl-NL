@@ -1,15 +1,19 @@
 ---
-description: Gebruik de eigenschap van het Gezoem om metrische etiketten in een visualisatie met een hoge ongelijkheid van waarden te zien.
-title: Zoomen om visualisaties te bekijken
+description: Met de functie Zoomen kunt u metrische labels weergeven in een visualisatie met grote verschillen in waarden.
+title: Zoomen naar weergaveweergave
 uuid: f2ce3324-46df-4b86-9aa8-2003e7a327b6
-translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+exl-id: f941a8d1-a409-41f0-a258-f40170656def
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 0%
 
 ---
 
+# Zoomen naar weergaveweergave{#zoom-to-view-visualizations}
 
-# Zoomen om visualisaties te bekijken{#zoom-to-view-visualizations}
+{{eol}}
 
-Gebruik de eigenschap van het Gezoem om metrische etiketten in een visualisatie met een hoge ongelijkheid van waarden te zien.
+Met de functie Zoomen kunt u metrische labels weergeven in een visualisatie met grote verschillen in waarden.
 
-Gebruik de gezoemeigenschap om metrische etiketten beter te bekijken wanneer de waarden een hogere ongelijkheid bereiken. Bijvoorbeeld, wanneer u een hogere metrische regressiewaarde tegenover vorige waarden plaatst. Vroeger zou het label verdwijnen met de verandering in het contrast van waarden. U kunt nu aan de visualisatie inzoomen door het muiswiel te klikken **`<Ctrl>`** en te bewegen terwijl het hangen over de grafiek.
+Met de functie Zoomen kunt u metrische labels beter weergeven wanneer de waarden een hogere mate van ongelijkheid bereiken. Wanneer u bijvoorbeeld een hogere waarde voor de metrische regressie instelt ten opzichte van vorige waarden. Eerder zou het label verdwijnen als het contrast van waarden zou veranderen. U kunt nu inzoomen op de visualisatie door op **`<Ctrl>`** en het muiswiel verplaatsen terwijl u de muisaanwijzer boven de grafiek houdt.

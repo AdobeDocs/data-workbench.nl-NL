@@ -3,7 +3,7 @@ description: Als u werkt met gegevens die zijn verzameld uit websiteverkeer, kun
 title: Sessioneren
 uuid: c6e2487a-80e5-4e00-b4d4-2ce013fac3ea
 exl-id: bb25cb4b-7185-4524-8ff5-740b672e1cd9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # Sessioneren{#sessionize}
 
+{{eol}}
+
 Als u werkt met gegevens die zijn verzameld uit websiteverkeer, kunt u met de transformatie Sessioneren bepalen hoe sessies worden gedefinieerd.
 
 De transformatie neemt als invoer een tijdstempel en een trackingsidentiteitskaart en voert een zittingsaantal voor elke logboekingang uit. Het sessienummer is &quot;1&quot; voor de eerste sessie met een bepaalde id voor bijhouden, &quot;2&quot; voor de tweede sessie met dezelfde id, enzovoort. De uitvoer kan rechtstreeks als een sessiesleutel worden gebruikt, omdat deze voor elke sessie een unieke waarde heeft.
 
 >[!NOTE]
 >
->Om te werken, vereist de [!DNL Sessionize] transformatie dat de gegevens in tijd worden bevolen en door volgende identiteitskaart in uw brongegevens worden gegroepeerd. [!DNL Sessionize] werkt daarom alleen wanneer dit is gedefinieerd in het [!DNL Transformation.cfg]-bestand of in een [!DNL Transformation Dataset Include]-bestand.
+>Om te werken, [!DNL Sessionize] voor transformatie moeten de gegevens in de tijd worden geordend en met de tracking-id in de brongegevens worden gegroepeerd. Daarom [!DNL Sessionize] werkt alleen wanneer deze zijn gedefinieerd in het dialoogvenster [!DNL Transformation.cfg] of in een [!DNL Transformation Dataset Include] bestand.
 
 <table id="table_34984DF9340149C0A5016F08EABAD158"> 
  <thead> 
@@ -56,7 +58,7 @@ De transformatie neemt als invoer een tijdstempel en een trackingsidentiteitskaa
   </tr> 
   <tr> 
    <td colname="col1"> <p>Maximale sessieduur </p> </td> 
-   <td colname="col2">De langste duur van de sessie voordat een nieuwe sessie wordt gestart. (Zo blijven webpagina's waarvan de inhoud automatisch wordt vernieuwd, bestaan uit het maken van sessies die willekeurig lang zijn.) Als <span class="wintitle"> de Voorwaarde van de Onderbreking </span> wordt tevredengesteld en de verwijzer van een klik aan één van de ingangen in de Interne parameter van Domeinen wordt geplaatst, wordt de Maximale Duur van de Zitting gebruikt om het eind van een zitting te bepalen. Geen enkele sessie kan langer zijn dan de opgegeven maximale sessieduur, ongeacht het aantal klikken dat deze bevat. De aanbevolen waarde is 48 uur. Voor meer informatie over de Maximale Duur van de Zitting en de Interne parameters van Domeinen, zie <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> de Montages van de Configuratie voor de Gegevens van het Web</a>. </td> 
+   <td colname="col2">De langste duur van de sessie voordat een nieuwe sessie wordt gestart. (Zo blijven webpagina's waarvan de inhoud automatisch wordt vernieuwd, bestaan uit het maken van sessies die willekeurig lang zijn.) Als de <span class="wintitle"> Time-outvoorwaarde</span> is tevreden en de referentie van een klik wordt geplaatst aan één van de ingangen in de Interne parameter van Domeinen, wordt de Maximale Duur van de Zitting gebruikt om het eind van een zitting te bepalen. Geen enkele sessie kan langer zijn dan de opgegeven maximale sessieduur, ongeacht het aantal klikken dat deze bevat. De aanbevolen waarde is 48 uur. Voor meer informatie over de Maximale duur van de Zitting en de Interne parameters van Domeinen, zie <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> Configuratie-instellingen voor webgegevens</a>. </td> 
    <td colname="col3"> 48 uur </td> 
   </tr> 
   <tr> 
@@ -66,7 +68,7 @@ De transformatie neemt als invoer een tijdstempel en een trackingsidentiteitskaa
   </tr> 
   <tr> 
    <td colname="col1"> Time-out sessie </td> 
-   <td colname="col2"> <p>De hoeveelheid tijd die tussen logboekingangen van een bepaalde bezoeker moet overgaan om het eind van één zitting en het begin van een nieuwe zitting te bepalen (namelijk de typische onderbreking die wordt gebruikt om een gebruikerszitting te bepalen). De aanbevolen waarde van deze parameter is 30 minuten. Als de timeout-voorwaarde niet wordt vervuld en de referentie van een klik niet is ingesteld op een van de referenties in de parameter Internal Domains, wordt de Session Timeout gebruikt om de sessie te definiëren. </p> <p> Als de Voorwaarde van de Onderbreking wordt tevredengesteld en cs (verwijzing-domein) voor een logboekingang in de lijst van interne domeinen is, dan bepaalt de Maximale Duur van de Zitting of de huidige logboekingang deel van een bestaande zitting of de aanvang van een nieuwe zitting uitmaakt. </p> <p> Voor meer informatie over de parameter van de Onderbreking van de Zitting, zie <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> de Montages van de Configuratie voor de Gegevens van het Web</a>. </p> </td> 
+   <td colname="col2"> <p>De hoeveelheid tijd die tussen logboekingangen van een bepaalde bezoeker moet overgaan om het eind van één zitting en het begin van een nieuwe zitting te bepalen (namelijk de typische onderbreking die wordt gebruikt om een gebruikerszitting te bepalen). De aanbevolen waarde van deze parameter is 30 minuten. Als de timeout-voorwaarde niet wordt vervuld en de referentie van een klik niet is ingesteld op een van de referenties in de parameter Internal Domains, wordt de Session Timeout gebruikt om de sessie te definiëren. </p> <p> Als de Voorwaarde van de Onderbreking wordt tevredengesteld en cs (verwijzing-domein) voor een logboekingang in de lijst van interne domeinen is, dan bepaalt de Maximale Duur van de Zitting of de huidige logboekingang deel van een bestaande zitting of de aanvang van een nieuwe zitting uitmaakt. </p> <p> Voor meer informatie over de parameter van de Onderbreking van de Zitting, zie <a href="../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519"> Configuratie-instellingen voor webgegevens</a>. </p> </td> 
    <td colname="col3"> 30 minuten </td> 
   </tr> 
   <tr> 
@@ -85,10 +87,10 @@ Een nieuwe sessie begint wanneer een van de volgende situaties zich voordoet:
 
 >[!NOTE]
 >
->Als u de Maximale duur van de Zitting en Onderbreking van de Zitting reeds als parameters in het [!DNL Session Parameters.cfg] dossier hebt bepaald, ga geen waarden voor hen in de configuratie in. U kunt naar de parameters verwijzen door *$ (parameternaam)* te typen zoals aangetoond in het volgende voorbeeld. Voor meer informatie over deze parameters, zie [De Montages van de Configuratie voor Gegevens van het Web](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
+>Als u de maximale sessieduur en sessietime-out al hebt gedefinieerd als parameters in het dialoogvenster [!DNL Session Parameters.cfg] geen waarden voor de bestanden in de configuratie. U kunt naar de parameters verwijzen door te typen *$(parameternaam)* zoals getoond in het volgende voorbeeld. Zie voor meer informatie over deze parameters [Configuratie-instellingen voor webgegevens](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
 
-De [!DNL Sessionize] transformatie in dit voorbeeld neemt als input de x-timestamp en x-trackingid gebieden en registreert het zittingsaantal voor elke logboekingang in het x-session-belangrijkste gebied. De [!DNL Timeout Condition] van de transformatie is gebaseerd op een [!DNL Neither] voorwaarde: Als het veld cs(reference-domain) voor een logbestandvermelding overeenkomt met een lid van de parameter Internal Domains, levert de voorwaarde false op. Neem nota van de verwijzingen naar de Interne Domeinen en parameters van de Onderbreking van de Zitting.
+De [!DNL Sessionize] De transformatie in dit voorbeeld neemt als input de x-timestamp en x-trackingid gebieden en registreert het zittingsaantal voor elke logboekingang in het x-session-zeer belangrijke gebied. De transformaties [!DNL Timeout Condition] is gebaseerd op een [!DNL Neither] voorwaarde: Als het veld cs(reference-domain) voor een logbestandvermelding overeenkomt met een lid van de parameter Internal Domains, levert de voorwaarde false op. Neem nota van de verwijzingen naar de Interne Domeinen en parameters van de Onderbreking van de Zitting.
 
-Voor informatie over [!DNL NeitherCondition], zie [Voorwaarden](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md). Voor informatie over de Interne Domeinen en parameters van de Onderbreking van de Zitting, zie [Montages van de Configuratie voor de Gegevens van het Web](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
+Voor informatie over de [!DNL NeitherCondition], zie [Voorwaarden](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md). Voor informatie over de interne parameters van Domeinen en van de Onderbreking van de Zitting, zie [Configuratie-instellingen voor webgegevens](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
 
 ![](assets/cfg_TransformationType_Sessionize.png)

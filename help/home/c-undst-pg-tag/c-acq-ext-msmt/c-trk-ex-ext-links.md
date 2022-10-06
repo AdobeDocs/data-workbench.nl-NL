@@ -3,7 +3,7 @@ description: Vastleggen van activiteit over derdewebsiteverbindingen om de analy
 title: Afsluiten bij externe koppelingen bijhouden
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
 exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Afsluiten bij externe koppelingen bijhouden{#tracking-exits-to-external-links}
+
+{{eol}}
 
 Vastleggen van activiteit over derdewebsiteverbindingen om de analyse van het Doel van het Uitgang toe te laten.
 
@@ -20,7 +22,7 @@ Webpagina&#39;s kunnen koppelingen naar websites van derden bevatten, en activit
 <A HREF=”https://www.myserver.com/PageExit.htm?v_eurl=https://www.othersite.com”>
 ```
 
-Het bestand [!DNL PageExit.htm] waarnaar wordt verwezen, moet worden gemaakt en gestructureerd met het volgende script:
+De verwijzing [!DNL PageExit.htm] bestand moet worden gemaakt en gestructureerd met het volgende script:
 
 ```
 <html>
@@ -51,7 +53,7 @@ location.replace(getExitURLQuery("v_eurl"));
 </html>
 ```
 
-Door het verzoek om het [!DNL PageExit.htm] dossier te doen, wordt de v_eurl waarde verzameld voor analysedoeleinden. Wanneer [!DNL PageExit.htm] is geladen, wordt deze bovendien direct doorgestuurd naar de opgegeven doellocatie v_eurl.
+Door het verzoek om [!DNL PageExit.htm] file, wordt de v_eurl waarde verzameld voor analysedoeleinden. Bovendien, wanneer [!DNL PageExit.htm] wordt geladen, wordt het onmiddellijk doorgestuurd naar de opgegeven doellocatie v_eurl.
 
 | Gegevens verzameld | Toelichting | Voorbeeld |
 |---|---|---|

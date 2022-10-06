@@ -3,7 +3,7 @@ description: Met de desktop kunt u eenvoudig bepalen waar elke werkruimte is opg
 title: Bestandsversie
 uuid: 5e7430f3-1425-41d2-828b-bc8f5786bf3b
 exl-id: 82a70d51-a95c-4ddd-8d3c-cd0364940693
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -12,9 +12,11 @@ ht-degree: 0%
 
 # Bestandsversie{#file-versioning}
 
+{{eol}}
+
 Met de desktop kunt u eenvoudig bepalen waar elke werkruimte is opgeslagen, of deze zich op de Data Workbench-server, op uw lokale computer of op beide bevindt.
 
-## Bestandsversies {#section-d555c96b016344f19b356c12213dd2a9} identificeren
+## Bestandsversies identificeren {#section-d555c96b016344f19b356c12213dd2a9}
 
 **Server**
 
@@ -30,7 +32,7 @@ Een lokale werkruimte is de lokale versie van een serverwerkruimte. Een lokale w
 
 ![](assets/wsp_thumb_local.png)
 
-Lokale werkruimten worden standaard opgeslagen in de naammap [!DNL User\working profile name\Workspaces\tab] in de installatiemap van de Data Workbench (of Insight).
+Lokale werkruimten worden standaard opgeslagen in het dialoogvenster [!DNL User\working profile name\Workspaces\tab] naammap in de installatiemap van de Data Workbench (of Insight).
 
 >[!NOTE]
 >
@@ -42,4 +44,4 @@ Een gebruikerswerkruimte is een werkruimte die is gemaakt op en alleen bestaat o
 
 ![](assets/wsp_thumb_user.png)
 
-Gebruikerswerkruimten worden standaard opgeslagen in de map User\*working profile name*\Workspaces\*tab name* in de installatiemap Insight.
+Gebruikerswerkruimten worden standaard opgeslagen in de map Gebruiker\*werkprofielnaam*\Workspaces\*tabnaam* in de installatiemap van Insight.

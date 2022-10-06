@@ -3,7 +3,7 @@ description: Wanneer u een elementpuntlaag maakt die verwijst naar een opzoekbes
 title: Elementpuntlagen definiëren die verwijzen naar opzoekbestanden
 uuid: 32c8de7a-4316-4f91-9810-7f584bc7fb0b
 exl-id: 2275fa8e-82fe-49e4-ab3e-91ec6ecb6233
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Elementpuntlagen definiëren die verwijzen naar opzoekbestanden{#define-element-point-layers-referencing-lookup-files}
+
+{{eol}}
 
 Wanneer u een elementpuntlaag maakt die verwijst naar een opzoekbestand om breedte- en lengtegegevens te verkrijgen, wordt de locatie van het punt opgehaald door elk element en de bijbehorende breedte en lengte op te halen uit het opzoekbestand.
 
@@ -20,29 +22,29 @@ Wanneer u een elementpuntlaag maakt die verwijst naar een opzoekbestand om breed
 
 Als u een elementpuntlaag wilt definiëren die verwijst naar een opzoekbestand, moet u het volgende maken of al beschikbaar hebben:
 
-* **Een** dimensie die in het  [!DNL Transformation.cfg file] of een  [!DNL transformation dataset include] bestand is gedefinieerd. Voor informatie over de dossiers van de transformatieconfiguratie, zie *de Gids van de Configuratie van de Dataset*.
+* **Een dimensie** in de [!DNL Transformation.cfg file] of [!DNL transformation dataset include] bestand. Voor informatie over de dossiers van de transformatieconfiguratie, zie *Configuratie-handleiding voor gegevensset*.
 
-* **Een opzoekbestand** met de gegevens die worden gebruikt om elk gegevenspunt te plotten. Dit bestand moet ten minste drie kolommen gegevens bevatten voor elk gegevenspunt: de sleutel, de lengtegraad en de breedtegraad. Voor meer informatie over het vereiste formaat van het raadplegingsdossier, zie [het Formaat van het Dossier van de Laag van het Punt van het Element](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
+* **Een opzoekbestand** met de gegevens die worden gebruikt om elk gegevenspunt te plotten. Dit bestand moet ten minste drie kolommen gegevens bevatten voor elk gegevenspunt: de sleutel, de lengtegraad en de breedtegraad. Voor meer informatie over het vereiste formaat van het raadplegingsdossier, zie [Laagbestandsindeling voor elementpunt](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
 
-* **Een laagbestand** dat de locatie van het opzoekbestand opgeeft en dat de gerelateerde afmetingen en metrische waarden en de namen van de kolommen sleutel, lengte en breedte in het opzoekbestand aangeeft. Voor meer informatie over het vereiste formaat van het laagdossier, zie [het Formaat van het Dossier van de Laag van het Punt van het Element](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
+* **Een laagbestand** Hiermee geeft u de locatie van het opzoekbestand op en geeft u de gerelateerde afmetingen en metrische waarde, alsmede de namen van de kolommen sleutel, lengte en breedte in het opzoekbestand aan. Ga voor meer informatie over de vereiste indeling van het laagbestand naar [Laagbestandsindeling voor elementpunt](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
 
    >[!NOTE]
    >
-   >Het [!DNL Zip Points.layer]-bestand met het profiel [!DNL Geography] is een elementpuntlaag die het [!DNL Zipcode.dim]-bestand, het [!DNL Sessions.metric]-bestand, het [!DNL Zip Points.txt]-opzoekbestand en de namen van de sleutelkolommen, lengtegraad, breedtegraad en naamkolommen in het opzoekbestand aangeeft.
+   >De [!DNL Zip Points.layer] het dossier, verstrekt met [!DNL Geography] profiel, is een elementpuntlaag die de [!DNL Zipcode.dim] bestand, de [!DNL Sessions.metric] bestand, de [!DNL Zip Points.txt] opzoekbestand en de namen van de kolommen key, longitude, latitude en name in het opzoekbestand.
 
-## Bestandsindeling {#section-0bc8c652c1bd40eb84078f2af71a5c06} voor het opzoeken van elementpunten
+## Opzoekbestandsindeling voor elementpunten {#section-0bc8c652c1bd40eb84078f2af71a5c06}
 
 Het opzoekbestand van de elementpuntlaag moet ten minste de volgende drie kolommen bevatten:
 
-* **[!DNL Key]kolom:** Deze kolom zou gemeenschappelijke zeer belangrijke gegevens moeten bevatten, die de server van de Data Workbench toelaat om de gegevens in het raadplegingsdossier met dat in de dataset te verbinden. De [!DNL key] kolom moet de eerste kolom in het raadplegingsdossier zijn. Elke rij in deze kolom identificeert een element van de dimensie.
+* **[!DNL Key]kolom:** Deze kolom zou gemeenschappelijke zeer belangrijke gegevens moeten bevatten, die de server van de Data Workbench toelaat om de gegevens in het raadplegingsdossier met dat in de dataset te verbinden. De [!DNL key] de kolom moet de eerste kolom in het raadplegingsdossier zijn. Elke rij in deze kolom identificeert een element van de dimensie.
 
-* **[!DNL Longitude]kolom:** Deze kolom moet de lengtegraad bevatten voor elk gegevenspunt in de  [!DNL Key] kolom.
+* **[!DNL Longitude]kolom:** Deze kolom moet de lengtegraad bevatten voor elk gegevenspunt in het dialoogvenster [!DNL Key] kolom.
 
-* **[!DNL Latitude]kolom:** Deze kolom moet de breedtegraad voor elk gegevenspunt in de  [!DNL Key] kolom bevatten.
+* **[!DNL Latitude]kolom:** Deze kolom moet de breedtegraad bevatten voor elk gegevenspunt in het dialoogvenster [!DNL Key] kolom.
 
-* **[!DNL Name]kolom (Optioneel):** Als u voor elk gegevenspunt een naam wilt opgeven die op de kaart moet worden weergegeven, kunt u een  [!DNL Name] kolom in het opzoekbestand opnemen.
+* **[!DNL Name]kolom (optioneel):** Als u een naam wilt opgeven die voor elk gegevenspunt op de kaart moet worden weergegeven, kunt u een [!DNL Name] in het opzoekbestand.
 
-Elke rij in het opzoekbestand [!DNL Zip Points.txt] bevat een ZIP-code in de eerste kolom, gevolgd door de lengte, breedte en de bijbehorende plaatsnaam.
+Elke rij in de [!DNL Zip Points.txt] Het opzoekbestand bevat een ZIP-code in de eerste kolom gevolgd door de lengte, breedtegraad en de naam van de desbetreffende stad.
 
 ```
 tude, and associated city name.
@@ -52,9 +54,9 @@ ZIP_CODE LATITUDE LONGITUDE NAME
 ...
 ```
 
-## Bestandsindeling voor elementpuntlagen {#section-52d7e92be8354d979af9e7a2210b76f2}
+## Bestandsindeling elementpuntlaag {#section-52d7e92be8354d979af9e7a2210b76f2}
 
-Elk elementpuntbestand [!DNL .layer] dat verwijst naar een opzoekbestand, moet worden opgemaakt met de volgende sjabloon:
+Elke elementpuntlaag [!DNL .layer] bestand dat verwijst naar een opzoekbestand, moet worden opgemaakt met de volgende sjabloon:
 
 ```
 Layer = ElementPointLayer:
@@ -97,11 +99,11 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Toetskolom </td> 
-   <td colname="col2"> <p>De naam van de kolom in het raadplegingsdossier dat de gemeenschappelijke zeer belangrijke gegevens bevat, die de server van de Data Workbench toelaat om de gegevens in het raadplegingsdossier in de dataset te integreren. Dit moet de eerste kolom in het opzoekbestand zijn. </p> <p>Elke rij in deze kolom is een element van een dimensie. Deze dimensie moet worden gedefinieerd in het bestand Transformation.cfg</span> of in een <span class="wintitle">-transformatiedataset include</span> en opgegeven in de Dimension-parameter van dit bestand. <span class="filepath"> Voor meer informatie over de dossiers van de transformatieconfiguratie, zie <i>de Gids van de Configuratie van de Dataset</i>. </span></p> </td> 
+   <td colname="col2"> <p>De naam van de kolom in het raadplegingsdossier dat de gemeenschappelijke zeer belangrijke gegevens bevat, die de server van de Data Workbench toelaat om de gegevens in het raadplegingsdossier in de dataset te integreren. Dit moet de eerste kolom in het opzoekbestand zijn. </p> <p>Elke rij in deze kolom is een element van een dimensie. Deze dimensie moet worden gedefinieerd in het <span class="filepath"> Transformation.cfg</span> of een <span class="wintitle"> gegevensset voor transformatie bevat</span> en opgegeven in de parameter Dimension van dit bestand. Voor meer informatie over de dossiers van de transformatieconfiguratie, zie <i>Configuratie-handleiding voor gegevensset</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimension </td> 
-   <td colname="col2">De naam van de dimensie (die in een dossier van de transformatieconfiguratie wordt bepaald) die elementen bevat die aan de gegevensrijen in <span class="wintitle"> Sleutel</span> kolom beantwoorden. </td> 
+   <td colname="col2">De naam van de dimensie (gedefinieerd in een transformatieconfiguratiebestand) die elementen bevat die overeenkomen met de gegevensrijen in de <span class="wintitle"> Sleutel</span> kolom. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Metrisch </td> 
@@ -113,7 +115,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Kleur </td> 
-   <td colname="col2"> Optioneel. De RGB-kleurvector, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. </td> 
+   <td colname="col2"> Optioneel. De kleurvector RGB, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Rendermodus </td> 
@@ -127,7 +129,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Het [!DNL Zip Points.layer]-bestand is als volgt opgemaakt:
+De [!DNL Zip Points.layer] bestand is als volgt opgemaakt:
 
 ```
 Layer = ElementPointLayer:

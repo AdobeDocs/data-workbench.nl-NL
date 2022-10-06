@@ -3,20 +3,22 @@ description: In het volgende voorbeeld worden de metriek weergegeven die is opge
 title: Metriek in het historisch controleprofiel van de Data Workbench
 uuid: 47b874f7-8acb-4593-9ac9-5997d5279e52
 exl-id: 65f0f605-f128-45bb-8f6c-95284b2da740
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 0%
 
 ---
 
-# Metriek in het Historische de Controleprofiel van de Data Workbench{#metrics-in-the-data-workbench-historical-monitoring-profile}
+# Metriek in het historisch controleprofiel van de Data Workbench{#metrics-in-the-data-workbench-historical-monitoring-profile}
+
+{{eol}}
 
 In het volgende voorbeeld worden de metriek weergegeven die is opgenomen in het Historische controleprofiel van de gegevenswerkbank en hoe deze zijn afgeleid.
 
 | **Waarschuwingscritici** | De som van de waarschuwingsdimensie voor elke pingelt. |
 |---|---|
-| **Waarschuwingspunten** | De som van de Waarschuwing neer afmeting voor elke Ping. |
+| **Alert Downs** | De som van de Waarschuwing neer afmeting voor elke Ping. |
 | **Waarschuwingen** | De som van de waarschuwingsafmetingen voor elke pingelt. |
 | **Alle componenten** | De telling van Pings waar de Succes van de Controle van de Component &quot;1&quot;gedeeld door metrische pings vermenigvuldigd met 100 gelijk is. |
 | **Vanaf vertragingsminuten** | Deze metrisch is de som van de notulen van de Vertraging van elke pingelt, dan die door metrisch pingelt wordt gedeeld. |
@@ -49,6 +51,6 @@ In het volgende voorbeeld worden de metriek weergegeven die is opgenomen in het 
 | **Rijen uitvoeren** | De som afmeting van de Rijen van de Output voor elk pingelt gedeeld door metrisch pingelt, vermenigvuldigd met 100000. |
 | **Real-time modus** | Het aantal pingen waar de afmeting van de Wijze van de Verwerking &quot;real time&quot;gelijk is, gedeeld door metrisch pingelt, allen vermenigvuldigd met 100. |
 | **Verwerkingsmodus** | 100 minus het aantal Pings waar de Wijze van de Verwerking &quot;real time&quot;gedeeld door metrische Pings, vermenigvuldigd met 100 gelijk is. |
-| **Gestopt** | The sum of the Processing Stalled afmetingen in the Insight [Profile Status](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64) profile. |
+| **Gestopt** | De som van de Afmetingen van de Verwerking in het Inzicht [Profielstatus](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64) profiel. |
 | **Temp DB** | De som van het Ruimtepercentage van de Ruimte van TempDB voor elke pingelt, gedeeld door metrisch pingelt. |
 | **Transformatie** | De som van het Percentage van de Transformatie voor elke pingelt die door metrische pingelt allen wordt gedeeld gedeeld door 10. |

@@ -1,36 +1,39 @@
 ---
-description: Volg deze stappen om aan de Werkbank van Gegevens v6.5 te bevorderen.
-title: Verbetering 6.4 tot 6.5
+description: Voer de volgende stappen uit om te upgraden naar Data Workbench v6.5.
+title: Upgrade van 6.4 naar 6.5
 uuid: b90b7b0c-7467-405f-a5ca-c40e69975d49
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: bcfd1ab1-2fb8-4bcd-b6c9-329143274ca4
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 
+# Upgrade van 6.4 naar 6.5{#upgrading-to}
 
-# Verbetering 6.4 tot 6.5{#upgrading-to}
+{{eol}}
 
-Volg deze stappen om aan de Werkbank van Gegevens v6.5 te bevorderen.
+Voer de volgende stappen uit om te upgraden naar Data Workbench v6.5.
 
-## Vereisten en aanbevelingen voor upgrades {#section-8704a9ac358246cd81233dd0982d534f}
+## Upgradevereisten en Recommendations {#section-8704a9ac358246cd81233dd0982d534f}
 
-Volg deze vereisten en aanbevelingen wanneer het bevordering aan de Werkbank van Gegevens 6.5.
+Volg deze eisen en aanbevelingen wanneer het bevorderen aan Data Workbench 6.5.
 
-* De veranderingen in het **[!DNL Components for Processing Servers\Communications.cfg]** dossier vereisen u om dit dossier voor de versie bij te werken DWB 6.5. De *ingangen SourceListServer*, *SegmentExportServer*, en *NormalizeServer* werden verwijderd. ( DPU&#39;s zouden geen *sourcelist*, *segmentuitvoer*, of *normaliseer servers* moeten in werking stellen. )
+* Wijzigingen in de **[!DNL Components for Processing Servers\Communications.cfg]** moet u dit bestand bijwerken voor de DWB 6.5-release. De *SourceListServer*, *SegmentExportServer*, en *NormalizeServer* items zijn verwijderd. ( DPU&#39;s moeten niet worden uitgevoerd *sourcelist*, *segmentexport*, of *servers normaliseren*. )
 
-* Correlatiekoord, correlatiematrix, Associatiekoord, Associatiematrix, Propensiteitsscore en visualisaties van de Attributie van de Beste Geschikte zijn nu multi-pass visualisaties.
+* Correlatiekoord, correlatiematrix, Associatiekoord, Associatiematrix, Propensiteitsscore en Best Fit Attribution-visualisaties zijn nu visualisaties met meerdere controles.
 
-   Wanneer er meer dan één multipass visualisaties in een werkruimte zijn, zal de Server van het Rapport er niet in slagen om rapporten door gebrek met de fout te produceren:
+   Wanneer er meer dan één multi-pass visualisaties in een werkruimte zijn, zal de Server van het Rapport er niet in slagen rapporten door gebrek met de fout te produceren:
 
    ```
    Too many Multipass visualizations in workspace ....... (has #, 1 allowed).
    ```
 
-   Vermijd deze fout door uw [!DNL ReportServer.cfg] dossier bij te werken of deze lijn toe te voegen aan uw bestaand dossier in de sectie van de *Rapportering* .
+   Vermijd deze fout door uw [!DNL ReportServer.cfg] of voeg deze regel toe aan het bestaande bestand in het dialoogvenster *Rapportage* sectie.
 
    ```
    Max Multipass Per Slice = int: n
    ```
 
-   waar n het maximumaantal multi-pass visualisaties is die door de Server van het Rapport in een werkruimte worden gesteund.
-
+   waarin n het maximumaantal multi-pass visualisaties is die door de Server van het Rapport in een werkruimte worden gesteund.

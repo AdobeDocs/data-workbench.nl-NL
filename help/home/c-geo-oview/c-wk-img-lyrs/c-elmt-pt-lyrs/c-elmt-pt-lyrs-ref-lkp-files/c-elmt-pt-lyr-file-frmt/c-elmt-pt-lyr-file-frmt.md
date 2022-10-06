@@ -3,18 +3,20 @@ description: Opmaakgegevens over het elementpuntlaagbestand.
 title: Laagbestandsindeling voor elementpunt
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
 exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 1%
 
 ---
 
-# Bestandsindeling van elementpuntlaag{#element-point-layer-file-format}
+# Laagbestandsindeling voor elementpunt{#element-point-layer-file-format}
+
+{{eol}}
 
 Opmaakgegevens over het elementpuntlaagbestand.
 
-Elk elementpuntbestand [!DNL .layer] dat verwijst naar een opzoekbestand, moet worden opgemaakt met de volgende sjabloon:
+Elke elementpuntlaag [!DNL .layer] bestand dat verwijst naar een opzoekbestand, moet worden opgemaakt met de volgende sjabloon:
 
 ```
 Layer = ElementPointLayer:
@@ -57,11 +59,11 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Toetskolom </td> 
-   <td colname="col2"> <p>De naam van de kolom in het raadplegingsdossier dat de gemeenschappelijke zeer belangrijke gegevens bevat, die de server van de gegevenswerkbank toelaat om de gegevens in het raadplegingsdossier in de dataset te integreren. Dit moet de eerste kolom in het opzoekbestand zijn. </p> <p>Elke rij in deze kolom is een element van een dimensie. Deze dimensie moet worden gedefinieerd in het bestand Transformation.cfg</span> of een gegevensset voor transformatie moet bestand bevatten en worden opgegeven in de parameter Dimension van dit bestand. <span class="filepath"> Voor meer informatie over de dossiers van de transformatieconfiguratie, zie <i>de Gids van de Configuratie van de Dataset</i>. </span></p> </td> 
+   <td colname="col2"> <p>De naam van de kolom in het raadplegingsdossier dat de gemeenschappelijke zeer belangrijke gegevens bevat, die de server van de gegevenswerkbank toelaat om de gegevens in het raadplegingsdossier in de dataset te integreren. Dit moet de eerste kolom in het opzoekbestand zijn. </p> <p>Elke rij in deze kolom is een element van een dimensie. Deze dimensie moet worden gedefinieerd in het <span class="filepath"> Transformation.cfg</span> bestand of een gegevensset met transformaties bevat bestand en opgegeven in de parameter Dimension van dit bestand. Voor meer informatie over de dossiers van de transformatieconfiguratie, zie <i>Configuratie-handleiding voor gegevensset</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimension </td> 
-   <td colname="col2">De naam van de dimensie (die in een dossier van de transformatieconfiguratie wordt bepaald) die elementen bevat die aan de gegevensrijen in <span class="wintitle"> Sleutel</span> kolom beantwoorden. </td> 
+   <td colname="col2">De naam van de dimensie (gedefinieerd in een transformatieconfiguratiebestand) die elementen bevat die overeenkomen met de gegevensrijen in de <span class="wintitle"> Sleutel</span> kolom. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Metrisch </td> 
@@ -73,7 +75,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Kleur </td> 
-   <td colname="col2"> Optioneel. De RGB-kleurvector, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. </td> 
+   <td colname="col2"> Optioneel. De kleurvector RGB, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Rendermodus </td> 
@@ -87,7 +89,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Het [!DNL Zip Points.layer]-bestand is als volgt opgemaakt:
+De [!DNL Zip Points.layer] bestand is als volgt opgemaakt:
 
 ```
 Layer = ElementPointLayer:

@@ -3,7 +3,7 @@ description: Met de optie Aanpassen aan venster kunnen de gegevenskolommen in ee
 title: Gegevens aanpassen aan een venster
 uuid: a45283e1-56df-4110-a052-2135baeaf709
 exl-id: 79eb1177-11bd-44ad-aafc-4de6f961f78f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Gegevens aanpassen aan een venster{#fit-data-to-a-window}
+
+{{eol}}
 
 Met de optie Aanpassen aan venster kunnen de gegevenskolommen in een tabel automatisch worden vergroot of verkleind om in het venster te passen wanneer u het formaat ervan wijzigt.
 
@@ -22,7 +24,7 @@ Wanneer [!DNL Fit to Window] is uitgeschakeld, moet de grootte van de gegevensko
 
    ![](assets/mnu_Table_Fit.png)
 
-Als deze optie is ingeschakeld, wordt een X links van [!DNL Fit to Window] weergegeven.
+Als deze optie is ingeschakeld, verschijnt er een X links van [!DNL Fit to Window].
 
 **Gegevenskolommen handmatig vergroten/verkleinen**
 

@@ -3,7 +3,7 @@ description: Verklaring van Tellingen in DataWorkbench (DWB) voor het ontwerpen 
 title: Telbare structuren voor schemaontwerp
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
 exl-id: 4f2a2f8a-7b42-42bb-8ba1-2675ffe6b2c2
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Telbare structuren voor schemaontwerp{#schema-design-countable-structures}
+
+{{eol}}
 
 Verklaring van Tellingen in DataWorkbench (DWB) voor het ontwerpen van en het uitvoeren van het schema.
 
@@ -20,7 +22,7 @@ Op het hoogste niveau zijn de dimensies te tellen. De telbare afmetingen hebben 
 
 * Hoeveel bezoekers hebben uw homepage bezocht?
 
-* Hoeveel bezoeken zijn er gekomen van Google.com?
+* Hoeveel bezoeken kwamen van Google.com?
 
 `<discoiqbr>`De telbare afmetingen worden typisch gebruikt om samenvattingsmetriek tot stand te brengen, die de telling, of de som, van alle elementen van de afmeting terugkeren. U kunt aftelbare afmetingen definiëren om instanties zoals boekingen of productbestellingen te tellen. U kunt bijvoorbeeld de aftelbare afmetingsvolgorde definiëren waarvan de elementen (logbestandvermeldingen die overeenkomen met bestellingen van uw online winkel) kunnen worden geteld. Als u een telling van orden binnen een visualisatie wilt tonen, zou u de orde metrische som bepalen, die over een afmeting kan worden geëvalueerd of filters hebben op het worden toegepast.
 
@@ -87,10 +89,10 @@ Voer de volgende stappen uit om tot de Countable in DataWorkbench te leiden:
 
 1. Profielbeheer openen
 1. Onder de omslag van de Transformatie, creeer een config- dossier en open het in werkstation.
-1. Klik met de rechtermuisknop onder Uitgebreide Dimension en kies Nieuw toevoegen -> Telbaar, zoals hieronder wordt getoond: ![](assets/dwb_impl_arch_4.png)
+1. Klik met de rechtermuisknop onder Uitgebreide Dimension en kies Nieuw toevoegen -> Telbaar, zoals hieronder wordt weergegeven: ![](assets/dwb_impl_arch_4.png)
 
 1. Ga Naam voor nieuwe Teller in. In het onderstaande voorbeeld is de klantentabel gedefinieerd. Als het het Hoogste niveau Teller is, dan in de Ouder schrijft Wortel. ![](assets/dwb_impl_arch_5.png)
 
    Als de Teller niet hoogste niveau één is, dan op het oudergebied de naam van de Parent Countable. In het onderstaande voorbeeld wordt Betrokkenheid aftelbaar gemaakt en de ouder voor deze aftelbare tabel is Klant. ![](assets/dwb_impl_arch_5.png)
 
-Voor extra informatie over de architectuur van de Data Workbench voor schemaontwerp, telbare structuren, en off-line configuraties van de gegevensvoer, zie [Dataset de Interface van het Schema](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).
+Voor extra informatie over de architectuur van de Data Workbench voor schemaontwerp, telbare structuren, en de off-line configuraties van de gegevensvoer, zie [Dataset-schema-interface](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).

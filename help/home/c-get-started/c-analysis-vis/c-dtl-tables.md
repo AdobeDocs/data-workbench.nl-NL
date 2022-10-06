@@ -3,14 +3,16 @@ description: Met detailtabellen kunt u aanvullende informatie over een subset ge
 title: Detailtabel
 uuid: 2becff5e-c78d-4ac7-8cda-814ad0193efd
 exl-id: d7f0b768-f341-41e8-904b-ec98a25f7aa9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
-# Detail tabel{#detail-table}
+# Detailtabel{#detail-table}
+
+{{eol}}
 
 Met detailtabellen kunt u aanvullende informatie over een subset gegevens weergeven. Deze informatie wordt gedefinieerd door de selecties die u in andere visualisaties maakt.
 
@@ -55,7 +57,7 @@ Voer de volgende stappen uit om de hierboven beschreven details weer te geven:
 
 1. Klik met de rechtermuisknop in de tabel met details en klik op **[!UICONTROL Add Level]** > **[!UICONTROL Visitor]**.
 1. Klik met de rechtermuisknop in de tabel met details en klik op **[!UICONTROL Add Level]** > **[!UICONTROL Page View]**.
-1. Klik met de rechtermuisknop op de niveaukop **[!UICONTROL Visitors]** en klik op **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
+1. Klik met de rechtermuisknop op de knop **[!UICONTROL Visitors]** level heading en click **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
 1. Klik met de rechtermuisknop in de kop Bezoekersniveau en klik op **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL City]**.
 1. Klik met de rechtermuisknop in de kop Bezoekersniveau en klik op **[!UICONTROL Add Metric]** > **[!UICONTROL Page Views]**.
 1. Klik met de rechtermuisknop in de kop Pagina-weergaven en klik op **[!UICONTROL Add Attribute]** > **[!UICONTROL Page]** > **[!UICONTROL Page]**.
@@ -64,30 +66,30 @@ In de volgende voorbeeldwerkruimte ziet u de verwante details voor een willekeur
 
 ![](assets/client-tab1.png)
 
-## Een niveau {#section-f948d3361fd84906ac4d9ebce520bfd0} toevoegen
+## Een niveau toevoegen {#section-f948d3361fd84906ac4d9ebce520bfd0}
 
-* Klik met de rechtermuisknop in de tabel met details en klik op **[!UICONTROL Add Level]** > *&lt;**[!UICONTROL dimension name]***.
+* Klik met de rechtermuisknop in de detailtabel en klik op **[!UICONTROL Add Level]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 ![](assets/mnu_DetailsTable_AddLevel.png)
 
-## Een niveau {#section-a8c820e0b656451e98e5ea75373edefc} verwijderen
+## Een niveau verwijderen {#section-a8c820e0b656451e98e5ea75373edefc}
 
-* Klik met de rechtermuisknop op de kop van het bestaande niveau en klik op **[!UICONTROL Remove Level]** > *&lt;**[!UICONTROL dimension name]***.
+* Klik met de rechtermuisknop op de bestaande kop Niveau en klik op **[!UICONTROL Remove Level]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 ![](assets/mnu_DetailsTable_Level.png)
 
-## Kenmerken en meetgegevens toevoegen {#section-cdda2df3c9a448d5b9770686c8b8efb3}
+## Kenmerken en metriek toevoegen {#section-cdda2df3c9a448d5b9770686c8b8efb3}
 
-* Klik met de rechtermuisknop op een kenmerk of metrische kop en klik op **[!UICONTROL Add Attribute]** > *&lt;**[!UICONTROL attribute name]**>* of **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]***.
+* Klik met de rechtermuisknop op een kenmerk of metrische kop en klik op **[!UICONTROL Add Attribute]** > *&lt;**[!UICONTROL attribute name]**>* of **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_DetailsTable.png)
 
 ## Kenmerken en meetgegevens verwijderen {#section-4002ac957a2846678f9940270987d651}
 
-* Klik met de rechtermuisknop op de kolom die u wilt verwijderen en klik op **[!UICONTROL Remove Attribute]** > *&lt;**[!UICONTROL attribute name]*** of **[!UICONTROL Remove Metric]** > *&lt;**[!UICONTROL metric name]**>*.
+* Klik met de rechtermuisknop op de kolom die u wilt verwijderen en klik op **[!UICONTROL Remove Attribute]** > *&lt;**[!UICONTROL attribute name]**>* of **[!UICONTROL Remove Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_DetailsTable.png)
 
 ## Exporteren naar Microsoft Excel {#section-a9eaba63c88a4598836a34669ba8cac1}
 
-Zie [Venstergegevens exporteren](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349) voor informatie over het exporteren van vensters.
+Voor informatie over het exporteren van vensters raadpleegt u [Venstergegevens exporteren](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

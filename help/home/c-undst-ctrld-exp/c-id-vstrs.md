@@ -4,7 +4,7 @@ solution: Analytics
 title: Hoe kunnen bezoekers van de site worden geïdentificeerd?
 uuid: e1e451b8-e827-4010-bda9-9147c3b09958
 exl-id: 2783ee11-6d6a-463d-86b5-dd63e490201f
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Hoe kunnen bezoekers van de site worden geïdentificeerd?{#how-does-site-identify-visitors}
+
+{{eol}}
 
 Een typische configuratie van de Plaats gebruikt koekjes om bezoekers aan uw website uniek te identificeren en hun gedrag in tijd te volgen.
 

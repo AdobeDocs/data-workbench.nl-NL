@@ -3,7 +3,7 @@ description: Lijngrafieken
 title: Lijngrafieken
 uuid: 6f525c49-6679-4234-886b-52a3c7df98ff
 exl-id: 75532aff-15ff-4be8-8000-f503b2bf60a2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Lijngrafieken{#line-charts}
+
+{{eol}}
 
 Met lijngrafiekvisualisaties kunt u metrische en dimensiegegevens visualiseren met elk gegevenselement dat als een punt op een x-y-as wordt vertegenwoordigd, en kunt u lijnen verbinden die aangrenzende punten verbinden. Met lijngrafieken kunnen maximaal 200 unieke gegevenselementen tegelijk op het diagram worden weergegeven. De waarden van de afmetingen worden geëtiketteerd langs de x-as, terwijl de metrische toename langs de y-as wordt geëtiketteerd. Als u de muis op een punt in het lijndiagram plaatst, wordt de exacte metrische waarde op dat punt weergegeven.
 

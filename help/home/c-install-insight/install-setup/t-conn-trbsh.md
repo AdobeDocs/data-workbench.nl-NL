@@ -1,27 +1,31 @@
 ---
-description: Als het Inzicht geen verbinding kan maken met de Insight Server(s) met behulp van de opgegeven instellingen, wordt een rode node weergegeven in de Servers Manager.
-title: Problemen met verbindingen oplossen
+description: Als Insight geen verbinding kan maken met de Insight Server(s) met behulp van de opgegeven instellingen, wordt een rood knooppunt weergegeven in de Servers Manager.
+title: Verbindingsproblemen oplossen
 uuid: 17190cee-da5c-449f-aca5-8e9e35e0a5fd
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 7938d4d6-e1ab-46d9-9ccb-cf79677c5688
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '196'
+ht-degree: 0%
 
 ---
 
+# Verbindingsproblemen oplossen{#connection-troubleshooting}
 
-# Problemen met verbindingen oplossen{#connection-troubleshooting}
+{{eol}}
 
-Als het Inzicht geen verbinding kan maken met de Insight Server(s) met behulp van de opgegeven instellingen, wordt een rode node weergegeven in de Servers Manager.
+Als Insight geen verbinding kan maken met de Insight Server(s) met behulp van de opgegeven instellingen, wordt een rood knooppunt weergegeven in de Servers Manager.
 
-Dit zou kunnen voorkomen, bijvoorbeeld, als u verkeerd de verbinding vormt of u hebt geen toestemming om de [!DNL Insight Server’s] status te bekijken.
+Dit kan bijvoorbeeld gebeuren als u de verbinding onjuist configureert of als u geen toestemming hebt om de [!DNL Insight Server’s] status.
 
-**Om te bepalen waarom het Inzicht geen verbinding kan vestigen**
+**Om te bepalen waarom Insight geen verbinding kan vestigen**
 
-1. Klik de rode serverknoop met de rechtermuisknop aan en klik **[!UICONTROL Detailed Status]**.
-1. In de [!DNL Detailed Status] interface, klik **[!UICONTROL Network Connections]** en breid de genummerde punten uit. De [!DNL Status] parameter verstrekt informatie over waarom het Inzicht geen verbinding kan vestigen:
+1. Klik met de rechtermuisknop op het rode serverknooppunt en klik op **[!UICONTROL Detailed Status]**.
+1. In de [!DNL Detailed Status] interface, klik **[!UICONTROL Network Connections]** en breid de genummerde items uit. De [!DNL Status] parameter verstrekt informatie over waarom Insight geen verbinding kan vestigen:
 
-   * Een statuscode in de 500s wijst op een configuratiefout.
-   * Een statuscode van 403 wijst gewoonlijk erop dat u geen toestemming hebt om de status van de server te bekijken.
+   * Een statuscode in de jaren 500 geeft een configuratiefout aan.
+   * Een statuscode van 403 geeft meestal aan dat u geen toestemming hebt om de status van de server weer te geven.
 
-U kunt extra statusinformatie in het [!DNL insight.log] dossier bekijken. Dit logboekdossier wordt gevestigd in de [!DNL Trace] omslag in de folder waar u Inzicht installeerde. Om het dossier te bekijken, open het in een tekstredacteur zoals Blocnote.
+U kunt aanvullende statusinformatie weergeven in het dialoogvenster [!DNL insight.log] bestand. Dit logbestand bevindt zich in het dialoogvenster [!DNL Trace] map in de map waarin u Insight hebt geïnstalleerd. Open het bestand in een teksteditor, zoals Kladblok, om het bestand weer te geven.
 
-Als u hulp nodig hebt die de informatie in het [!DNL insight.log] dossier begrijpt, contacteer eerst uw systeembeheerder. Als u verdere hulp vereist, contacteer de Zorg van de Klant van Adobe.
+Als u hulp nodig hebt om de informatie in de [!DNL insight.log] , neemt u eerst contact op met de systeembeheerder. Neem contact op met de klantenservice van Adobe als u verdere hulp nodig hebt.

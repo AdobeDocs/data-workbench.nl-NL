@@ -3,26 +3,28 @@ description: Bijroepen brengen aandacht aan een bepaald afmeting element door ee
 title: Een bijschrift configureren
 uuid: 779764bd-86c3-49cf-aabc-edb39caf0490
 exl-id: 509163b2-0bd1-47b4-8612-aac460a501cc
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
 
 ---
 
-# Een callout{#configure-a-callout} configureren
+# Een bijschrift configureren{#configure-a-callout}
+
+{{eol}}
 
 Bijroepen brengen aandacht aan een bepaald afmeting element door een nieuwe visualisatie met een virtuele selectie van een bepaald afmeting element in een visualisatie te creëren.
 
-U kunt callouts toevoegen of uitgeven door de callout dossiers te vormen die in een Profiles \*profielnaam*\Context\Callout folder of the [!DNL Server] installatiemap worden opgeslagen. Bijschriften die aandacht aan bepaalde metrisch in een aantekenvelvisualisatie brengen worden genoemd metrische callouts. Metrische bijschriftbestanden worden opgeslagen in de profielnaam\*\Context\Metric Callout folder.
+U kunt callouts toevoegen of uitgeven door de callout dossiers te vormen die in een Profiles \*profiel naam* \ van de Context \ omslag Bijschrift van Profiles worden opgeslagen [!DNL Server] installatiemap. Bijschriften die aandacht aan bepaalde metrisch in een aantekenvelvisualisatie brengen worden genoemd metrische callouts. Metrische bijschriftbestanden worden opgeslagen in de map Profielen\*profielnaam*\Context\Metric Bijschrift.
 
-Voor instructies om een callout of metrische callout aan een visualisatie toe te voegen, zie [Bijschrijvingen aan een Werkruimte](../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0) toevoegen.
+Voor instructies om een callout of metrische callout aan een visualisatie toe te voegen, zie [Bijschriften toevoegen aan een werkruimte](../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0).
 
 **Een nieuw type bijschrift maken**
 
 1. In om het even welke werkruimte, creeer een visualisatie die de gegevens bevat die u in het nieuwe bijschrifttype wilt verschijnen. Als u bijvoorbeeld wilt dat de callout een tabel is, maakt u een tabelvisualisatie met de gewenste metrische en afmeting.
 1. Klik met de rechtermuisknop op de bovenrand van het bijschriftvenster en klik op **[!UICONTROL Save]**.
-1. Klik in het venster [!DNL Save] op ![](assets/btn_folder_up.png), dubbelklik **[!UICONTROL Context]** en dubbelklik vervolgens op **[!UICONTROL Callout]**. Typ in het veld [!DNL File Name] een naam voor het bestand en klik op **[!UICONTROL Save]**. Het callout dossier wordt bewaard aan de Gebruiker \*het werkende profielnaam*\Context\Callout folder.
+1. In de [!DNL Save] venster, klikt u op ![](assets/btn_folder_up.png), dubbelklikken **[!UICONTROL Context]** en dubbelklik vervolgens **[!UICONTROL Callout]**. In de [!DNL File Name] veld, typt u een naam voor het bestand en klikt u op **[!UICONTROL Save]**. Het bijschriftbestand wordt opgeslagen in de map User\*working profile name*\Context\Bijschrift.
 
    >[!NOTE]
    >
@@ -30,19 +32,19 @@ Voor instructies om een callout of metrische callout aan een visualisatie toe te
 
 1. (Optioneel) Deze wijziging beschikbaar stellen voor alle gebruikers van het werkprofiel:
 
-   1. Klik in [!DNL Profile Manager] op **[!UICONTROL Context]** en vervolgens op **[!UICONTROL Callout]**. Deze map bevat alle visualisatiebestanden ( [!DNL .vw]) die de bestaande bijschrifttypen definiëren.
+   1. In de [!DNL Profile Manager], klikt u op **[!UICONTROL Context]** en klik vervolgens op **[!UICONTROL Callout]**. Deze map bevat alle visualisatiebestanden ( [!DNL .vw]) die de bestaande bijschrifttypen definiëren.
 
-   1. Klik met de rechtermuisknop op het vinkje naast de bestandsnaam van de nieuwe callout in de kolom [!DNL User] en klik **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+   1. Klik met de rechtermuisknop op het vinkje naast de bestandsnaam van het nieuwe bijschrift in het dialoogvenster [!DNL User] kolom en klik op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
 
 **Een callout wijzigen in een metrische callout**
 
-1. Klik in [!DNL Profile Manager] op **[!UICONTROL Context]** en vervolgens op **[!UICONTROL Callout]**. Deze map bevat alle visualisatiebestanden ( [!DNL .vw]) die de bestaande bijschrifttypen definiëren.
+1. In de [!DNL Profile Manager], klikt u op **[!UICONTROL Context]** en klik vervolgens op **[!UICONTROL Callout]**. Deze map bevat alle visualisatiebestanden ( [!DNL .vw]) die de bestaande bijschrifttypen definiëren.
 
-1. Klik met de rechtermuisknop op het vinkje naast de bestandsnaam van het type bijschrift dat u wilt wijzigen en klik op **[!UICONTROL Make Local]**. Nadat het bestand naar de lokale computer is gedownload, wordt een vinkje weergegeven in de kolom [!DNL User].
+1. Klik met de rechtermuisknop op het vinkje naast de bestandsnaam van het type bijschrift dat u wilt wijzigen en klik op **[!UICONTROL Make Local]**. Nadat het bestand naar de lokale computer is gedownload, wordt in het dialoogvenster [!DNL User] kolom.
 
-1. Klik met de rechtermuisknop op het vinkje naast de bestandsnaam in de kolom [!DNL User] en klik op **[!UICONTROL Open]** > **[!UICONTROL In Notepad]**.
+1. Klik met de rechtermuisknop op het vinkje naast de bestandsnaam in het dialoogvenster [!DNL User] kolom en klik op **[!UICONTROL Open]** > **[!UICONTROL In Notepad]**.
 
-1. Zoek het [!DNL metric_y = ref:]-item in het bijschriftbestand en vervang de bestaande waarde door het woord Metrisch. De gemarkeerde tekst in het volgende bestandsfragment laat zien waar u dit woord invoegt.
+1. Zoek de [!DNL metric_y = ref:] in het bijschriftbestand en vervangt u de bestaande waarde door het woord Metrisch. De gemarkeerde tekst in het volgende bestandsfragment laat zien waar u dit woord invoegt.
 
    ```
    window = simpleBorderWindow: 
@@ -61,6 +63,6 @@ Voor instructies om een callout of metrische callout aan een visualisatie toe te
    . . . 
    ```
 
-1. Klik op **[!UICONTROL File]** > **[!UICONTROL Save As]**. Klik in het venster **[!UICONTROL Save As]** eenmaal en dubbelklik vervolgens **[!UICONTROL Metric Callout]**. Typ in het veld [!DNL File Name] een naam voor het bestand en klik op **[!UICONTROL Save]**. Het metrische callout dossier wordt bewaard aan de Gebruiker \*het werkende profielnaam*\Context\Metric Callout folder.
+1. Klik op **[!UICONTROL File]** > **[!UICONTROL Save As]**. In de **[!UICONTROL Save As]** venster, klikt u eenmaal en dubbelklikt u vervolgens **[!UICONTROL Metric Callout]**. In de [!DNL File Name] veld, typt u een naam voor het bestand en klikt u op **[!UICONTROL Save]**. Het metrische bijschriftbestand wordt opgeslagen in de map voor metrische bijschriften in de map Gebruiker\*werkprofielnaam*\Context\Metric.
 
-1. (Optioneel) Als u deze metrische callout beschikbaar wilt maken voor alle gebruikers van het werkprofiel, klikt u in [!DNL Profile Manager] met de rechtermuisknop op het vinkje naast de bestandsnaam in de kolom [!DNL User] en klikt u op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. (Optioneel) U kunt deze metrische bijschrift als volgt beschikbaar maken voor alle gebruikers van het werkprofiel: [!DNL Profile Manager]klikt u met de rechtermuisknop op het vinkje naast de bestandsnaam in het dialoogvenster [!DNL User] kolom en klik op **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

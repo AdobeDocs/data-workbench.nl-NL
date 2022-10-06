@@ -3,7 +3,7 @@ description: Reguliere expressies worden gebruikt voor alle zoekvelden in de wer
 title: Reguliere expressies
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Reguliere expressies{#regular-expressions}
+
+{{eol}}
 
 Reguliere expressies worden gebruikt voor alle zoekvelden in de werkbank met gegevens, inclusief de deelvensters met query-entiteiten.
 
@@ -26,15 +28,15 @@ Een reguliere expressie is een tekstpatroon, bestaande uit een combinatie van al
 
 Om complexe tekenreekspatronen te identificeren en te extraheren, gebruikt de server van de gegevenswerkbank regelmatige uitdrukkingen in sommige transformaties en voorwaarden. Hierna volgt een korte handleiding voor reguliere expressies.
 
-Deze bijlage is geen uitgebreide inleiding op reguliere expressies. Een bijzonder goede verwijzing is de publicatie van O&#39;Reilly *Mastering Regular Expressions, 2nd Edition* door Jeffrey E. F. Friedl.
+Deze bijlage is geen uitgebreide inleiding op reguliere expressies. Een bijzonder goede verwijzing is de publicatie van O&#39;Reilly *Reguliere expressies beheren, tweede editie* door Jeffrey E. F. Friedl.
 
 ## Terminologie voor reguliere expressies {#section-80b0d54f731e448391532ab3eb3c525c}
 
 | Term | Definitie |
 |---|---|
-| Letterlijk | Een letterlijk teken is een teken dat we in een reguliere expressie gebruiken om een bepaalde reeks tekens te zoeken. Bijvoorbeeld, om product in [!DNL shop/products.html] te vinden, is het koordproduct letterlijk, of wat wij letterlijk zoeken in het koord. |
+| Letterlijk | Een letterlijk teken is een teken dat we in een reguliere expressie gebruiken om een bepaalde reeks tekens te zoeken. Als u bijvoorbeeld het product wilt zoeken in [!DNL shop/products.html]Het tekenreeksproduct is letterlijk, of wat we letterlijk zoeken in de tekenreeks. |
 | Metateken | Een metateken is een speciaal teken dat een unieke interpretatie heeft in de context van reguliere expressies. De punt (.) is een metateken dat wordt gebruikt om aan om het even welk karakter aan te passen. |
-| Escape-reeks | Een escapereeks is gewoon een manier om de reguliere-expressieengine te vertellen dat we een van de metatekens als letterlijk teken willen gebruiken. Escape-reeksen beginnen altijd met de backslash (`\`). Door de backslash (ook een metateken) vóór een metateken te plaatsen, interpreteert de engine voor de reguliere expressie het metateken zonder escape als letterlijk. Bijvoorbeeld, als u de metatekerperiode (`.`) wilt aanpassen, moet u een vluchtopeenvolging gebruiken. Nochtans, om één van de periodes in koord 168.196.0.11 aan te passen, kon u de regelmatige uitdrukking gebruiken die uit backslash en een periode (`\.`) bestaat. |
+| Escape-reeks | Een escapereeks is gewoon een manier om de reguliere-expressieengine te vertellen dat we een van de metatekens als letterlijk teken willen gebruiken. Escape-reeksen beginnen altijd met de backslash (`\`). Door de backslash (ook een metateken) vóór een metateken te plaatsen, interpreteert de engine voor de reguliere expressie het metateken zonder escape als letterlijk. Als u bijvoorbeeld de metatekenpunt (`.`), moet u een escapereeks gebruiken. Als u echter een van de punten in tekenreeks 168.196.0.11 wilt afstemmen, kunt u de reguliere expressie bestaande uit een backslash en een punt (`\.`). |
 | Patroon | Dit is een korte terminologie voor de reguliere expressie. In wezen is een reguliere expressie een patroon dat u probeert af te stemmen op de doeltekenreeks. |
 | Doeltekenreeks | Deze term verwijst naar de tekenreeks waarin we zoeken om het gewenste patroon te vinden. |
 
@@ -84,11 +86,11 @@ Met letterlijke overeenkomsten kunt u één tekenreeks zoeken, maar met vierkant
  <tbody>
   <tr>
    <td colname="col1"> Vierkante haken ([ ]) </td>
-   <td colname="col2"> Pas een van de tekens binnen de vierkante haken aan met één tekenpositie. [AB] is bijvoorbeeld een instructie die ofwel overeenkomt met de letter A of de letter B, en [0123456789] staat voor elk teken in het bereik 0 tot en met 9. </td>
+   <td colname="col2"> Pas een van de tekens binnen de vierkante haken aan met één tekenpositie. [AB] is bijvoorbeeld een instructie die ofwel overeenkomt met de letter A of de letter B, en [0123456789] zegt overeen te komen met een willekeurig teken in het bereik 0 tot en met 9. </td>
   </tr>
   <tr>
    <td colname="col1"> Streepje (-) </td>
-   <td colname="col2"> <p>Overeenkomst met een tekenbereik. In plaats van [0123456789] te schrijven, zouden we dus gewoon [0-9] kunnen schrijven. </p> <p> Dit kan worden uitgebreid tot bereiken van tekens en meerdere bereiken binnen één set haakjes. [0-9A-C] komt bijvoorbeeld overeen met de tekens 0 tot en met 9 en A tot en met C. </p> <p> <p>Opmerking:  Als u op een streepje (-) wilt testen als letterlijk teken binnen de vierkante haakjes, moet het eerste of laatste streepje staan. [-0-9] test bijvoorbeeld op - en 0 tot en met 9. </p> </p> </td>
+   <td colname="col2"> <p>Overeenkomst met een tekenbereik. In plaats van [0123456789] te schrijven, zouden we dus gewoon [0-9] kunnen schrijven. </p> <p> Dit kan worden uitgebreid tot bereiken van tekens en meerdere bereiken binnen één set haakjes. [0-9A-C] komt bijvoorbeeld overeen met de tekens 0 tot en met 9 en A tot en met C. </p> <p> <p>Opmerking: Als u op een streepje (-) wilt testen als letterlijk teken binnen de vierkante haakjes, moet het eerste of laatste streepje staan. [-0-9] test bijvoorbeeld op - en 0 tot en met 9. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> Pijp (|) </td>
@@ -108,7 +110,7 @@ Neem de volgende voorbeelden:
 
 **Negatie**
 
-Negatie is een manier om te zeggen dat je iets wilt zoeken behalve de opgegeven tekens. Het metateken van de negatie, de omtrek of het inlasteken (`^`), wordt gebruikt als eerste karakter binnen steunen om te zeggen dat u de gelijke om het even wat behalve de resterende karakters in de steunen zou willen zijn. Als u bijvoorbeeld een willekeurig teken maar een puntkomma (`;`) wilt afstemmen, schrijft u
+Negatie is een manier om te zeggen dat je iets wilt zoeken behalve de opgegeven tekens. Het metateken voor negatie, de omtrek of het invoegpunt (`^`), wordt gebruikt als eerste teken binnen vierkante haakjes om aan te geven dat de overeenkomst iets anders moet zijn dan de resterende tekens tussen de haakjes. Als u bijvoorbeeld een teken wilt afstemmen op een puntkomma (`;`), zou u schrijven
 
 [`^;`]
 
@@ -120,8 +122,8 @@ Om een gelijke aan het begin of eind van een doelkoord te dwingen, wordt één v
 
 | Voor dit metateken... | De reguliere-expressieprocessor zal.. |
 |---|---|
-| Circumflex of Caret (`^`) | Komt overeen met het begin van de tekenreeks. Bijvoorbeeld, ^`[Tt]`hij zou het doelkoord &quot;het Begin&quot;aanpassen maar zou niet &quot;dit is het begin&quot;aanpassen.&quot; |
-| Dollarteken (`$`) | Komt overeen met het einde van de tekenreeks. `[Ee]`nd$ komt bijvoorbeeld overeen met &quot;This is the end&quot;, maar komt niet overeen met &quot;The end is a special time&quot;. |
+| Circumflex of Caret (`^`) | Komt overeen met het begin van de tekenreeks. Bijvoorbeeld ^`[Tt]`Hij zou overeenkomen met de doeltekenreeks &quot;Het begin&quot;, maar niet met &quot;Dit is het begin&quot;. |
+| Dollar-teken (`$`) | Komt overeen met het einde van de tekenreeks. Bijvoorbeeld: `[Ee]`en$ komt overeen met &quot;This is the end&quot;, maar komt niet overeen met &quot;The end is a special time&quot;. |
 
 >[!NOTE]
 >
@@ -129,7 +131,7 @@ Om een gelijke aan het begin of eind van een doelkoord te dwingen, wordt één v
 
 **Alles afstemmen**
 
-De punt (.) is een speciaal metateken dat overeenkomt met elk willekeurig teken in de doeltekenreeks. De reguliere expressie `^…$` komt bijvoorbeeld overeen met elke doeltekenreeks die precies drie tekens lang is. De reguliere expressie &quot;...&quot; komt overeen met elke doeltekenreeks die ten minste drie tekens bevat.
+De punt (.) is een speciaal metateken dat overeenkomt met elk willekeurig teken in de doeltekenreeks. De reguliere expressie `^…$` komt overeen met elke doeltekenreeks die precies drie tekens lang is. De reguliere expressie &quot;...&quot; komt overeen met elke doeltekenreeks die ten minste drie tekens bevat.
 
 **Herhaalde patronen**
 
@@ -161,14 +163,14 @@ Met metatekens voor herhaling kunt u een patroon meerdere keren afstemmen.
   </tr>
   <tr>
    <td colname="col1"> {n,m} </td>
-   <td colname="col2"> Pas het voorgaande teken minstens in keer en hoogstens m aan. Bijvoorbeeld, voor {1,2} d gelijke voedsel en voedsel maar niet voedsel. </td>
+   <td colname="col2"> Pas het voorgaande teken minstens in keer en hoogstens m aan. For example, fo{1,2}d would match fod and food but not foood. </td>
   </tr>
  </tbody>
 </table>
 
 ## Patroonextractie {#section-4389779653b64f6cb7c47615b25c1a79}
 
-Patroonaanpassing is slechts een deel van de kracht van reguliere expressies. Reguliere expressies bieden ook een mechanisme voor het extraheren van belangrijke delen van een doeltekenreeks. Dit wordt gedaan door het gebruiken van linker en juiste haakjes. Deze extracties worden doorgaans gebruikt als invoer in een ander proces en worden benaderd via het gebruik van *%position%*, waarbij de positie een geheel getal is dat verwijst naar het aantal ronde haakjes waarvoor een overeenkomende set ronde haakjes is gevonden.
+Patroonaanpassing is slechts een deel van de kracht van reguliere expressies. Reguliere expressies bieden ook een mechanisme voor het extraheren van belangrijke delen van een doeltekenreeks. Dit wordt gedaan door het gebruiken van linker en juiste haakjes. Deze extracties worden doorgaans gebruikt als invoer in een ander proces en zijn toegankelijk via het gebruik van *%position%*, waarbij position een geheel getal is dat verwijst naar het aantal ronde haakjes waarvoor een set ronde haakjes is gevonden.
 
 Bekijk de volgende voorbeelden van patroonextractie:
 

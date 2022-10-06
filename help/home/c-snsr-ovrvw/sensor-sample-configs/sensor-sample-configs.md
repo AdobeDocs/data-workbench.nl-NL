@@ -1,20 +1,24 @@
 ---
-description: De dossiers van de steekproef voor de configuratiedossiers.
+description: Voorbeeldbestanden voor de configuratiebestanden.
 title: Voorbeeldconfiguratiebestanden
 uuid: 9bc5c0a9-e67a-4c63-952d-9a39d75e6975
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 8a9abadb-228b-4da6-bfe6-8e828bb6ace9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 0%
 
 ---
 
-
 # Voorbeeldconfiguratiebestanden{#sample-configuration-files}
 
-De dossiers van de steekproef voor de configuratiedossiers.
+{{eol}}
 
-## Magnus.conf de Steekproef van het Dossier {#section-aec81c734d0f483591c3ede1fe588b6a}
+Voorbeeldbestanden voor de configuratiebestanden.
 
-Voorbeeld van een volledig magnus.conf- dossier voor de Server van de Onderneming van Netscape, iPlanet, Zon ÉÉN, en de het Webserverinstallatie en configuratie van het Systeem van Java van de Zon van de Zon.
+## Voorbeeld van bestand Magnus.conf {#section-aec81c734d0f483591c3ede1fe588b6a}
+
+Voorbeeld van een volledig magnus.conf- dossier voor de Server van de Onderneming van Netscape, iPlanet, Zon ONE, en de de Webserverinstallatie en configuratie van het Systeem van Zon Java.
 
 ```
 #ServerRoot /usr/iplanet/servers/https-nova.visualsciences.net
@@ -44,7 +48,7 @@ Init fn="vys-init" config-file="/etc/txlogd.conf"
 
 ## Voorbeeld van Obj.conf-bestand {#section-1acd3ae557074ee6a46492eb98f89805}
 
-Voorbeeld van een volledig obj.conf- dossier voor de Server van de Onderneming van Netscape, iPlanet, Zon ÉÉN, en de het Webserverinstallatie en configuratie van het Systeem van Java van de Zon.
+Voorbeeld van een volledig obj.conf- dossier voor de Server van de Onderneming van Netscape, iPlanet, Zon ONE, en de Webserverinstallatie en configuratie van het Systeem van Zon Java.
 
 ```
 <Object name=default>
@@ -94,4 +98,3 @@ Voorbeeld van een volledig obj.conf- dossier voor de Server van de Onderneming v
   PathCheck fn="check-acl" acl="es-internal"
 </Object>
 ```
-

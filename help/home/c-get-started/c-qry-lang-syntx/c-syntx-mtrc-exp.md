@@ -3,7 +3,7 @@ description: Metrische gegevens kunnen worden bewerkt met de metrische editor en
 title: Syntaxis voor metrische expressies
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 0%
@@ -12,23 +12,25 @@ ht-degree: 0%
 
 # Syntaxis voor metrische expressies{#syntax-for-metric-expressions}
 
+{{eol}}
+
 Metrische gegevens kunnen worden bewerkt met de metrische editor en worden opgeslagen in de map Metriek van een profiel.
 
-Voor meer informatie, zie [het Creëren en het uitgeven Afgeleide Metriek](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). Metrische expressies kunnen ook in werkbladen worden gebruikt. Zie [Werkbladen](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581) voor meer informatie. De volgende syntaxis wordt gebruikt om metrische uitdrukkingen te bepalen.
+Zie voor meer informatie [Afgeleide metriek maken en bewerken](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). Metrische expressies kunnen ook in werkbladen worden gebruikt. Zie voor meer informatie [Werkbladen](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). De volgende syntaxis wordt gebruikt om metrische uitdrukkingen te bepalen.
 
 Opmerkingen:
 
 1. Onderstreept woorden moeten letterlijk in de expressietekst worden ingevoerd.
 1. Het formulier `{TEXT}?` vertegenwoordigt optionele tekst.
 1. Het formulier `{TEXT}*` vertegenwoordigt tekst die nul of meer keren kan voorkomen.
-1. Het formulier `{A | B | C |...}` vertegenwoordigt tekst die uit exact een van de opgegeven opties bestaat, zoals A, B of C...
-1. De vorm `[A,B)` vertegenwoordigt een waaier van aantallen, van A tot maar zonder B.
+1. Het formulier `{A | B | C |...}` Hiermee wordt tekst weergegeven die uit exact een van de opgegeven opties bestaat, zoals A, B of C...
+1. Het formulier `[A,B)` vertegenwoordigt een waaier van aantallen, van A tot maar zonder B.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Id </p> </td> 
-   <td colname="col2"> <p>Een id verwijst naar een benoemde metrische waarde. Zie <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntaxis voor id's </a> voor de regels die van toepassing zijn op wettelijke id's. </p> <p>Voorbeeld: Opbrengst = Totaal_Prijs </p> </td> 
+   <td colname="col2"> <p>Een id verwijst naar een benoemde metrische waarde. Voor de regels betreffende wettelijke identificatoren, zie <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntaxis voor id's </a>. </p> <p>Voorbeeld: Opbrengst = Totaal_Prijs </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(metrisch) </p> </td> 
@@ -56,7 +58,7 @@ Opmerkingen:
   </tr> 
   <tr> 
    <td colname="col1"> <p>betrouwbaarheid (metrisch) </p> </td> 
-   <td colname="col2"> <p>Een schatting van de standaardafwijking van de meting. Dit wordt berekend met behulp van een bemonsteringstechniek die bekend staat als jacnifing. </p> <p>Deze metrische waarde is geheugenintensief en mag niet worden gebruikt in grote tabellen. </p> <p>Als u deze syntaxis wilt gebruiken, moet u een jacnife-dimensie (met de naam "jackknife") met de juiste eigenschappen hebben. Neem voor meer informatie contact op met de Adobe Consulting Services. </p> <p>Voorbeeld: Trust(Gemiddelde_Score) </p> <p> <p>Opmerking:  De betrouwbaarheidsmetrische types, met inbegrip van vertrouwen (metrisch) en vertrouwen (metrisch, vechtmachine), zijn vooral nuttig wanneer het gebruiken van de gecontroleerde experimenteringsfunctionaliteit van Adobe. Als een metrische sprong van 12% aan 16% tijdens een gecontroleerd experiment, kon u een betrouwbaarheidsbijschrift gebruiken om de kansen te berekenen die de sprong aan willekeurige variatie toe te schrijven was. Dit kan u helpen voorkomen de verkeerde conclusies te trekken uit beperkt bewijsmateriaal, en omgekeerd de zekerheid te verschaffen dat een twijfelachtige verandering in werkelijkheid is. </p> </p> </td> 
+   <td colname="col2"> <p>Een schatting van de standaardafwijking van de meting. Dit wordt berekend met behulp van een bemonsteringstechniek die bekend staat als jacnifing. </p> <p>Deze metrische waarde is geheugenintensief en mag niet worden gebruikt in grote tabellen. </p> <p>Als u deze syntaxis wilt gebruiken, moet u een jacnife-dimensie (met de naam "jackknife") met de juiste eigenschappen hebben. Neem voor meer informatie contact op met de Adobe Consulting Services. </p> <p>Voorbeeld: Trust(Gemiddelde_Score) </p> <p> <p>Opmerking: De betrouwbaarheidsmetrische types, met inbegrip van vertrouwen (metrisch) en vertrouwen (metrisch, vechtmachine), zijn vooral nuttig wanneer het gebruiken van de gecontroleerde experimenteringsfunctionaliteit van Adobe. Als een metrische sprong van 12% aan 16% tijdens een gecontroleerd experiment, kon u een betrouwbaarheidsbijschrift gebruiken om de kansen te berekenen die de sprong aan willekeurige variatie toe te schrijven was. Dit kan u helpen voorkomen de verkeerde conclusies te trekken uit beperkt bewijsmateriaal, en omgekeerd de zekerheid te verschaffen dat een twijfelachtige verandering in werkelijkheid is. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>betrouwbaarheid (metrisch, jackrenkend) </p> </td> 

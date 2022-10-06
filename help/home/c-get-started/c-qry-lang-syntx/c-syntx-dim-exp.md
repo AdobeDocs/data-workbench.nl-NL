@@ -3,7 +3,7 @@ description: Dimension-expressies worden nooit alleen gebruikt, maar kunnen over
 title: Syntaxis voor dimensie-expressies
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 exl-id: 58609e31-8ad8-418b-9a9f-40462d6443f7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 0%
@@ -12,19 +12,21 @@ ht-degree: 0%
 
 # Syntaxis voor dimensie-expressies{#syntax-for-dimension-expressions}
 
+{{eol}}
+
 Dimension-expressies worden nooit alleen gebruikt, maar kunnen overal worden gebruikt waar een dimensie wordt aangeroepen in een metrische expressie of filterexpressie.
 
 1. Onderstreept woorden moeten letterlijk in de expressietekst worden ingevoerd.
 1. Het formulier `{TEXT}?` vertegenwoordigt optionele tekst.
 1. Het formulier `{TEXT}*` vertegenwoordigt tekst die nul of meer keren kan voorkomen.
-1. Het formulier `{A | B | C |...}` vertegenwoordigt tekst die uit exact een van de opgegeven opties bestaat, zoals A, B of C...
-1. De vorm `[A,B)` vertegenwoordigt een waaier van aantallen, van A tot maar zonder B.
+1. Het formulier `{A | B | C |...}` Hiermee wordt tekst weergegeven die uit exact een van de opgegeven opties bestaat, zoals A, B of C...
+1. Het formulier `[A,B)` vertegenwoordigt een waaier van aantallen, van A tot maar zonder B.
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Id </p> </td> 
-   <td colname="col2"> <p>Een id verwijst naar een benoemde dimensie. Zie <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntaxis voor id's </a> voor de regels die van toepassing zijn op wettelijke id's. </p> <p>Voorbeeld: Sessies[ Session_Number = "1" ] is het aantal sessies met het sessienummer "1." Sessienummer is een benoemde dimensie waarnaar wordt verwezen door de id. </p> </td> 
+   <td colname="col2"> <p>Een id verwijst naar een benoemde dimensie. Voor de regels betreffende wettelijke identificatoren, zie <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntaxis voor id's </a>. </p> <p>Voorbeeld: Sessies[ Session_Number = "1" ] is het aantal sessies met het sessienummer "1." Sessienummer is een benoemde dimensie waarnaar wordt verwezen door de id. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Dimension) </p> </td> 
@@ -48,7 +50,7 @@ Dimension-expressies worden nooit alleen gebruikt, maar kunnen overal worden geb
   </tr> 
   <tr> 
    <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Start {, Size}? }?) </p> </td> 
-   <td colname="col2"> <p>Definieert een dimensie waarvan de elementen reeksen getallen zijn (van vaste grootte, bijvoorbeeld [0-9], [10-19],...). Elementen van Niveau hebben betrekking op het element van het emmertje waarvan het bereik de waarde van Metrisch voor dat element van niveau bevat. Format is de tekenreeks voor de afdrukindeling die wordt gebruikt om de elementen van Metric op te maken. </p> <p>Voorbeeld: Als Page_Duration_Minutes een pagina mening-vlakke afmeting vertegenwoordigt die het aantal notulen aan elke pagina wordt doorgebracht, dan is emmertje (Zitting, som(Page_Duration_Minutes, Page_View), 100, "%0.0f notulen", 0, 5) een zitting-vlakke afmeting die het aantal notulen vertegenwoordigt dat in elke Zitting wordt doorgebracht; de elementen zijn intervallen van 5 minuten <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Het begin is de beginnende waarde van het eerste interval (gebrek: 0) en Size is de grootte van het interval (gebrek: 1). </p> </td> 
+   <td colname="col2"> <p>Definieert een dimensie waarvan de elementen reeksen getallen zijn (van vaste grootte, bijvoorbeeld [0-9], [10-19],...). Elementen van Niveau hebben betrekking op het element van het emmertje waarvan het bereik de waarde van Metrisch voor dat element van niveau bevat. Format is de tekenreeks voor de afdrukindeling die wordt gebruikt om de elementen van Metric op te maken. </p> <p>Voorbeeld: Als Page_Duration_Minutes een pagina mening-vlakke afmeting vertegenwoordigt die het aantal notulen aan elke pagina wordt doorgebracht, dan is emmertje (Zitting, som(Page_Duration_Minutes, Page_View), 100, "%0.0f notulen", 0, 5) een zitting-vlakke afmeting die het aantal notulen vertegenwoordigt dat in elke Zitting wordt doorgebracht; de elementen zijn vijf minuten <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Het begin is de beginnende waarde van het eerste interval (gebrek: 0) en Size is de grootte van het interval (gebrek: 1). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>prefix(Level {,ElementName-&gt;(Prefix{,Prefix}* )}* ) </p> </td> 
@@ -64,7 +66,7 @@ Dimension-expressies worden nooit alleen gebruikt, maar kunnen overal worden geb
   </tr> 
   <tr> 
    <td colname="col1"> <p>nearest_countable(Dim) </p> </td> 
-   <td colname="col2"> <p>Verwijst naar een reeds bestaande dimensie: de dichtstbijzijnde telbare voorouder van Dim in het schema. De dichtstbijzijnde teller (URI) is bijvoorbeeld gelijk aan Page_View. </p> </td> 
+   <td colname="col2"> <p>Verwijst naar een reeds bestaande dimensie: de dichtstbijzijnde telbare voorouder van Dim in het schema. De dichtstbijzijnde teller(URI) is bijvoorbeeld gelijk aan Page_View. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>genormaliseerd (grijs, Aantal) </p> </td> 

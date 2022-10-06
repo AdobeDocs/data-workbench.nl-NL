@@ -3,7 +3,7 @@ description: Met de URI-transformatie Unescape worden alle tekens in een tekenre
 title: UnescapeURI
 uuid: 25e87cc7-812d-4d77-be94-16093e8955fe
 exl-id: abf20906-5052-4bbe-9ffb-522b850669a6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # UnescapeURI{#unescapeuri}
+
+{{eol}}
 
 Met de URI-transformatie Unescape worden alle tekens in een tekenreeks die zijn beschermd, verwijderd.
 

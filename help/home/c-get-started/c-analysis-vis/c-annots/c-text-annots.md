@@ -3,7 +3,7 @@ description: Tekstannotaties zijn vensters waarin u willekeurige tekst kunt invo
 title: Tekstannotaties
 uuid: 08dd7f57-ccab-430a-b2a3-469f86b86dd2
 exl-id: 6915b341-d7a0-4e17-a260-223c0cb26422
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # Tekstannotaties{#text-annotations}
 
+{{eol}}
+
 Tekstannotaties zijn vensters waarin u willekeurige tekst kunt invoeren om beschrijvende informatie of opmerkingen aan een werkruimte toe te voegen.
 
 U verplaatst of bewerkt tekstannotaties binnen een werkruimte op dezelfde manier als andere typen visualisatie. U kunt ook de vormgeving van de tekst opmaken, de tekst een naam geven, bewerken of de tekstannotatie opslaan die u aan een werkruimte toevoegt. Tekstannotaties kunnen ook worden geëxporteerd naar Microsoft Excel en worden gegenereerd en gedistribueerd door [!DNL Report].
 
-Voor meer informatie over [!DNL Reports], zie *de Gids van het Rapport van het Inzicht*.
+Meer informatie over [!DNL Reports], zie de *Handleiding voor Inzichtsrapport*.
 
-## Tekst {#section-8ecc44e0eeb24c5990050102013c0aed} toevoegen of bewerken
+## Tekst toevoegen of bewerken {#section-8ecc44e0eeb24c5990050102013c0aed}
 
 * Klik in de tekst om de bewerkingsmodus te activeren en te beginnen met typen.
 
@@ -44,11 +46,11 @@ Voor meer informatie over [!DNL Reports], zie *de Gids van het Rapport van het I
 
 Met deze optie bepaalt u of en hoe de tekst in de annotatie om de visualisaties in de werkruimte loopt.
 
-* Klik met de rechtermuisknop in de tekst, klik op **[!UICONTROL Options]** > **[!UICONTROL Word Wrap]** en klik vervolgens op de gewenste optie:
+* Klik met de rechtermuisknop in de tekst en klik op **[!UICONTROL Options]** > **[!UICONTROL Word Wrap]** en klikt u op de gewenste optie:
 
-   * **Geen:** deze optie verwijdert tekstterugloop uit deze aantekening.
-   * **Beide kanten:** Deze optie staat de tekst binnen de annotatie toe om rond beide kanten van visualisaties in de werkruimte te lopen.
-   * **Beste zijde: met** deze optie kan de tekst in de annotatie slechts om één zijde van de visualisaties in de werkruimte lopen.
+   * **Geen:** Met deze optie wordt tekstomloop uit deze aantekening verwijderd.
+   * **Beide kanten:** Met deze optie kan de tekst in de annotatie rond beide zijden van visualisaties in de werkruimte lopen.
+   * **Beste zijde:** Met deze optie kan de tekst in de annotatie slechts om één zijde van de visualisaties in de werkruimte lopen.
 
 ![](assets/mnu_Text_OptionsWrap.png)
 
@@ -56,13 +58,13 @@ Met deze optie bepaalt u of en hoe de tekst in de annotatie om de visualisaties 
 
 Met deze optie bepaalt u het aantal kolommen waarin de tekst in de annotatie moet worden weergegeven.
 
-* Klik met de rechtermuisknop in de tekst, klik op **[!UICONTROL Options]** > **[!UICONTROL Columns]** en klik vervolgens op de gewenste optie:
+* Klik met de rechtermuisknop in de tekst en klik op **[!UICONTROL Options]** > **[!UICONTROL Columns]** en klikt u op de gewenste optie:
 
-   * **Automatisch: met** deze optie selecteert u de meest geschikte kolomindeling voor de breedte en lengte van de tekst.
-   * **1-4:Met** deze opties kunt u de tekst weergeven in één, twee, drie of vier kolommen.
+   * **Automatisch:** Met deze optie selecteert u de meest geschikte kolomindeling voor de breedte en lengte van de tekst.
+   * **1-4:** Met deze opties kunt u de tekst weergeven in één, twee, drie of vier kolommen.
 
 ![](assets/mnu_Text_OptionsColumns.png)
 
 ## Exporteren naar Microsoft Excel {#section-b239057b822348849fd17a83c3a03c22}
 
-Zie [Venstergegevens exporteren](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349) voor informatie over het exporteren van vensters.
+Voor informatie over het exporteren van vensters raadpleegt u [Venstergegevens exporteren](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

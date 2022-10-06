@@ -3,18 +3,20 @@ description: De interface van het Schema van de Dataset toont de uitgebreide dim
 title: Dataset-schema
 uuid: 4ef5f14b-dc19-4118-a2f2-d680ded8092c
 exl-id: b80e6e8e-9147-46ec-8602-2d7e5d33f077
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 0%
 
 ---
 
-# Datasetschema{#dataset-schema}
+# Dataset-schema{#dataset-schema}
+
+{{eol}}
 
 De interface van het Schema van de Dataset toont de uitgebreide dimensies (telbare, eenvoudige, vele-aan-vele, numerieke, denormale, en tijddimensies) die in om het even welk dossier van de Configuratie van de Dataset van de Transformatie en de verhoudingen tussen die dimensies worden bepaald.
 
-Bovendien toont de [!DNL Dataset Schema] interface om het even welke afgeleide dimensies die u, evenals om het even welke uitgebreide dimensies hebt bepaald die om worden gevormd verborgen.
+Bovendien [!DNL Dataset Schema] de interface toont om het even welke afgeleide dimensies die u, evenals om het even welke uitgebreide dimensies hebt bepaald die om worden gevormd verborgen.
 
 ![](assets/vis_DatasetSchema_Example.png)
 
@@ -24,9 +26,9 @@ In deze sectie worden de volgende onderwerpen besproken:
 * [De standaardvisualisatie voor een dimensie weergeven](../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md#section-1bbb73a5cbb34ffb844eb1932db85318)
 * [Een specifieke visualisatie voor een dimensie weergeven](../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md#section-d46626df90bc4c44ae60c4b71eaeac7f)
 
-## Om Dimension Type te interpreteren gebruikend de Interface {#section-16a0a12b11334c07bec558c0b7d260b1} van het Schema van de Dataset
+## Om het Type van Dimension te interpreteren gebruikend de Interface van het Schema van de Dataset {#section-16a0a12b11334c07bec558c0b7d260b1}
 
-De volgende lijst maakt een lijst van de afmetingstypes en de kleuren waarin hun namen in de [!DNL Dataset Schema] interface verschijnen. Ook de bovenliggende elementen voor de steekproefafmetingen (uit het bovenstaande voorbeeld) worden vermeld.
+In de volgende tabel worden de typen dimensies en de kleuren weergegeven waarin de namen van deze typen worden weergegeven in het dialoogvenster [!DNL Dataset Schema] interface. Ook de bovenliggende elementen voor de steekproefafmetingen (uit het bovenstaande voorbeeld) worden vermeld.
 
 <table id="table_20D1A9EAAED247338476C475C63255F5"> 
  <thead> 
@@ -80,14 +82,14 @@ De volgende lijst maakt een lijst van de afmetingstypes en de kleuren waarin hun
  </tbody> 
 </table>
 
-## De standaardvisualisatie voor een Dimension {#section-1bbb73a5cbb34ffb844eb1932db85318} weergeven
+## De standaardvisualisatie voor een Dimension weergeven {#section-1bbb73a5cbb34ffb844eb1932db85318}
 
-* Klik in de interface [!DNL Dataset Schema] op de gewenste dimensie. De standaardvisualisatie wordt weergegeven. Als de standaardvisualisatie bijvoorbeeld een tabel is waarin de sessies en de geselecteerde dimensie worden weergegeven en u klikt op de URI-dimensie, wordt in de werkbank voor gegevens een tabel weergegeven met URI per sessie.
+* In de [!DNL Dataset Schema] klikt u op de gewenste dimensie. De standaardvisualisatie wordt weergegeven. Als de standaardvisualisatie bijvoorbeeld een tabel is waarin de sessies en de geselecteerde dimensie worden weergegeven en u klikt op de URI-dimensie, wordt in de werkbank voor gegevens een tabel weergegeven met URI per sessie.
 
 >[!NOTE]
 >
->Als u de standaardvisualisatie wilt veranderen die toont, zie het Vormen het hoofdstuk van de Eigenschappen van de Interface en van de Analyse in *de Gids van de Gebruiker van de Data Workbench*.
+>Als u de standaardvisualisatie wilt veranderen die toont, zie het Vormen het hoofdstuk van de Eigenschappen van de Interface en van de Analyse in het *Gebruikershandleiding voor Data Workbench*.
 
-## Een specifieke visualisatie voor een Dimension tonen {#section-d46626df90bc4c44ae60c4b71eaeac7f}
+## Een specifieke visualisatie voor een Dimension weergeven {#section-d46626df90bc4c44ae60c4b71eaeac7f}
 
-* Klik in de [!DNL Dataset Schema]-interface met de rechtermuisknop op de gewenste dimensie en klik op **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.
+* In de [!DNL Dataset Schema] interface, klik de gewenste afmeting met de rechtermuisknop aan en klik **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.

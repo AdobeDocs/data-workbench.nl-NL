@@ -3,14 +3,16 @@ description: In de dashboardbrowser kunt u dashboards die u en andere leden van 
 title: Dashboardbrowser
 uuid: ab4f81dc-c32e-408b-bcfd-3531766c9054
 exl-id: 02ee7120-2d94-4033-afce-9556383d1eba
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
 
 ---
 
-# Dashboard Browser{#dashboard-browser}
+# Dashboardbrowser{#dashboard-browser}
+
+{{eol}}
 
 In de dashboardbrowser kunt u dashboards die u en andere leden van uw organisatie hebben gemaakt en opgeslagen, doorbladeren, zoeken en openen.
 
@@ -18,7 +20,7 @@ U kunt doorbladeren en tot alle dashboards toegang hebben die u toestemmingen aa
 
 ## De dashboardbrowser openen {#section-10e158d738684219ab997ef050b675d7}
 
-Wanneer u zich aanmeldt bij het dashboard voor de Adobe Data Workbench, wordt de Dashboard Browser standaard weergegeven. U kunt de Dashboardbrowser ook op elk gewenst moment openen door op het dashboardmenu in de werkbalk te klikken en **[!UICONTROL Browse…]** te selecteren.
+Wanneer u zich aanmeldt bij het dashboard voor de Adobe Data Workbench, wordt de Dashboard Browser standaard weergegeven. U kunt de dashboardbrowser ook op elk gewenst moment openen door op het menu Dashboard op de werkbalk te klikken en **[!UICONTROL Browse…]**.
 
 ![](assets/browse.png)
 

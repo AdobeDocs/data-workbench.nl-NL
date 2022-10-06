@@ -1,9 +1,9 @@
 ---
-description: Identificeer minimumeisen en aanbevelingen voor Data Workbench (vroeger [!DNL Insight]) servercomponenten alvorens uw systeem te plannen en uit te voeren.
+description: Minimumvereisten en aanbevelingen voor Data Workbench identificeren (voorheen [!DNL Insight]) servercomponenten voordat u uw systeem gaat plannen en implementeren.
 title: Serversysteemvereisten
 uuid: c4487c76-03b9-4755-893b-555d451b1e69
 exl-id: 6dd78331-8370-400e-b580-9b9bad13e62c
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Serversysteemvereisten{#server-system-requirements}
+
+{{eol}}
 
 Identificeer minimumvereisten en aanbevelingen voor de servercomponenten van de Data Workbench alvorens uw systeem te plannen en uit te voeren.
 
@@ -20,15 +22,14 @@ De eenheid van de Gegevensverwerking van de server (DPU) is de belangrijkste com
 
 ### Gelicentieerde capaciteit {#section-71850e13783443798b3df9eb22cc63dc}
 
-Raadpleeg de beschrijving van de services in de *Adobe [!DNL Data Workbench (Insight)] Serviceovereenkomst* voor informatie over licentiecapaciteit.
+Raadpleeg de beschrijving van de services in het gedeelte *Adobe [!DNL Data Workbench (Insight)] Serviceovereenkomst* voor informatie over de licentiecapaciteit.
 
 >[!NOTE]
 >
->Voor *MS System Center Endpoint Protection* in Windows 2012 Servers moeten deze uitvoerbare bestanden worden toegevoegd aan de ***Uitgesloten processen:*** >
+>Voor *MS System Center Endpoint Protection* in Windows 2012-servers moeten deze uitvoerbare bestanden worden toegevoegd aan de ***Uitgesloten processen:*** >
 >* [!DNL InsightServer64.exe]
 >* [!DNL ReportServer.exe]
 >* [!DNL ExportIntegration.exe]
-
 >
 
 
@@ -153,7 +154,7 @@ De Sensor van de Data Workbench verzamelt gebeurtenisgegevens van Web, toepassin
 
 ### Sensor System Recommendations {#section-0a981c3a47b644c1a1a56974ba033b9c}
 
-In de volgende tabel worden de systeemaanbevelingen voor [!DNL Sensor] beschreven:
+De volgende lijst beschrijft systeemaanbevelingen voor [!DNL Sensor]:
 
 <table id="table_A132E06D6B8146C1B199B82464EA0898">
  <thead>
@@ -169,15 +170,15 @@ In de volgende tabel worden de systeemaanbevelingen voor [!DNL Sensor] beschreve
   </tr>
   <tr>
    <td colname="col1"> <p>RAM </p> </td>
-   <td colname="col2"> <p>32 MB RAM moet beschikbaar zijn voor <span class="wintitle"> Sensor </span> op de HTTP-server of andere servercomputer die de host is. </p> </td>
+   <td colname="col2"> <p>32 MB RAM moet beschikbaar zijn voor <span class="wintitle"> Sensor </span> op de HTTP- of andere servercomputer die de host is. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Netwerkprestaties </p> </td>
-   <td colname="col2"> <p>1 Mbps of meer netwerkverbinding met een herhalingsserver of <span class="keyword"> gegevenswerkbankserver </span>. <span class="wintitle"> De sensor verbruikt  </span> typisch veel minder bandbreedte dan één (1) Mbps. Uw Adobe consultants zullen u helpen de daadwerkelijke hoeveelheid bandbreedte te schatten die op routinebasis wordt vereist. </p> </td>
+   <td colname="col2"> <p>1 Mbps of meer netwerkverbinding met een herhalingsserver of <span class="keyword"> gegevenswerkbankserver </span>. <span class="wintitle"> Sensor </span> verbruikt typisch veel minder bandbreedte dan één (1) Mbps. Uw Adobe consultants zullen u helpen de daadwerkelijke hoeveelheid bandbreedte te schatten die op routinebasis wordt vereist. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Netwerkpoorten en Firewalls </p> </td>
-   <td colname="col2"> <p> <span class="wintitle"> De sensor  </span> verbindt met de server van de  <span class="keyword"> gegevenswerkbank  </span> gebruikend HTTPS (typisch haven 443, hoewel dit configureerbaar is) of HTTP (typisch haven 80, hoewel dit configureerbaar is). </p> <p>De juiste poort op een firewall tussen een <span class="wintitle">-sensor </span> en de doelserver <span class="keyword"> voor gegevenswerkbank </span> of herhalingsserver mag alleen worden geopend tussen de respectieve <span class="wintitle">-sensor </span>-hostcomputer en de <span class="keyword">-gegevenswerkbench-server </span> of herhalingsserver voordat de <span class="wintitle">-sensor wordt gestart </span> installatieproces. <span class="wintitle"> Sensor  </span> maakt een uni-directionele HTTPS- of HTTP-verbinding met een  <span class="keyword"> gegevensworkbench-server  </span> of -repeaterserver. </p> </td>
+   <td colname="col2"> <p> <span class="wintitle"> Sensor </span> maakt verbinding met de <span class="keyword"> gegevenswerkbankserver </span> het gebruiken van HTTPS (typisch haven 443, hoewel dit configureerbaar is) of HTTP (typisch haven 80, hoewel dit configureerbaar is). </p> <p>De aangewezen haven op om het even welke firewall die tussen a verblijft <span class="wintitle"> Sensor </span> en het doel <span class="keyword"> gegevenswerkbankserver </span> of repeaterserver alleen tussen de respectieve <span class="wintitle"> Sensor </span> hostcomputer en de <span class="keyword"> gegevenswerkbankserver </span> of herhalingsserver vóór het begin van de <span class="wintitle"> Sensor </span> installatieproces. <span class="wintitle"> Sensor </span> maakt een eenrichtings-HTTPS- of HTTP-verbinding met een <span class="keyword"> gegevenswerkbankserver </span> of repeaterserver. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Netwerkbeheersystemen </p> </td>
@@ -185,18 +186,18 @@ In de volgende tabel worden de systeemaanbevelingen voor [!DNL Sensor] beschreve
   </tr>
   <tr>
    <td colname="col1"> <p>Tijdsynchronisatie van server </p> </td>
-   <td colname="col2"> <p>Zorg ervoor dat de systeemtijd van de computer voortdurend wordt gesynchroniseerd op elke computer waarop een <span class="wintitle">-sensor </span> wordt gehost. De de servertoepassingen en computers van het Web die door <span class="wintitle"> Sensor </span> worden gecontroleerd moeten gesynchroniseerde systeemtijden hebben voor de gebeurtenisgegevens die van hen worden verzameld nauwkeurig zijn. Raadpleeg de documentatie bij het besturingssysteem van uw besturingssysteem voor stappen om systeemtijden doorlopend te synchroniseren met NTP of een andere dergelijke tijdsynchronisatiefaciliteit. </p> </td>
+   <td colname="col2"> <p>Zorg ervoor dat de systeemtijd van de computer voortdurend wordt gesynchroniseerd op elke computer die als host fungeert voor een <span class="wintitle"> Sensor </span>. De de servertoepassingen en computers van het Web die door worden gecontroleerd <span class="wintitle"> Sensor </span> De gebeurtenisgegevens die van hen worden verzameld, moeten gesynchroniseerde systeemtijden hebben om nauwkeurig te zijn. Raadpleeg de documentatie bij het besturingssysteem van uw besturingssysteem voor stappen om systeemtijden doorlopend te synchroniseren met NTP of een andere dergelijke tijdsynchronisatiefaciliteit. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>DNS-naamgebruik </p> </td>
-   <td colname="col2"> <p>Adobe raadt aan dat <span class="wintitle"> Sensors </span> een DNS-naam (in plaats van een IP-adres) gebruiken om het netwerkadres op te lossen van een <span class="keyword">-gegevenswerkbankserver </span> of een herhalingsserver. Wanneer een <span class="wintitle">-sensor </span> een DNS-naam gebruikt, moet het DNS- of lokale hostbestand van de hostwebserver worden geconfigureerd om de naam van de <span class="keyword">-gegevenswerkbankserver </span> of herhalingsserver op te lossen. </p> </td>
+   <td colname="col2"> <p>Adobe beveelt aan dat <span class="wintitle"> Sensoren </span> gebruik een DNS naam (in plaats van een IP adres) om het netwerkadres van een op te lossen <span class="keyword"> gegevenswerkbankserver </span> of repeaterserver. Wanneer een <span class="wintitle"> Sensor </span> gebruikt een DNS-naam, het DNS- of lokale hostbestand van de hostwebserver moet worden geconfigureerd om de naam van de server op te lossen <span class="keyword"> gegevenswerkbankserver </span> of repeaterserver. </p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Ondersteuningsserversoftware {#section-d6071706539f49d9a861d87b98e6f382}
 
-De volgende lijst maakt een lijst van de gemeenschappelijkste combinaties die [!DNL Sensor] steunt:
+De volgende tabel bevat de meest voorkomende combinaties die [!DNL Sensor] ondersteunt:
 
 <table id="table_99EA23BBC1A148B49643F4B5E4341C08">
  <thead>
@@ -225,17 +226,17 @@ De volgende lijst maakt een lijst van de gemeenschappelijkste combinaties die [!
  </tbody>
 </table>
 
-Voor andere server- en besturingssysteemcombinaties raadpleegt u Adobe over de beschikbaarheid. Niet alle functies van [!DNL Sensor] zijn beschikbaar bij alle combinaties van web/toepassingsserver en besturingssysteem. Voor meer informatie over bepaalde [!DNL Sensor] versies, gelieve te contacteren de Steun van Adobe.
+Voor andere server- en besturingssysteemcombinaties raadpleegt u Adobe over de beschikbaarheid. Niet alle functies van [!DNL Sensor] beschikbaar zijn bij alle combinaties van web/toepassingsserver en besturingssysteem. Meer informatie over specifieke [!DNL Sensor] Neem contact op met de Adobe Support.
 
 ## Vereisten rapportserver{#report-server-requirements}
 
-De server van het het werkbankrapport van gegevens is de component die de output van geplande rapportering toestaat. De uitvoerrapporten kunnen de vorm hebben van .PNG-afbeeldingen of .XLS-spreadsheets die in een bestandssysteem zijn geplaatst, of als e-mailberichten. Zijn hardwarevereisten zijn identiek aan [Data Workbench Cliënt](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html).
+De server van het het werkbankrapport van gegevens is de component die de output van geplande rapportering toestaat. De uitvoerrapporten kunnen de vorm hebben van .PNG-afbeeldingen of .XLS-spreadsheets die in een bestandssysteem zijn geplaatst, of als e-mailberichten. De hardwarevereisten zijn identiek aan die van [Data Workbench Client](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html).
 
-De volgende vereisten gelden voor [!DNL report server]:
+De volgende eisen gelden voor: [!DNL report server]:
 
 * Toegang tot het bestandssysteem voor de uitvoer van gegevens (delen van netwerk of lokaal station).
 * Toegang tot de geconfigureerde SMTP-server.
-* Microsoft Excel 2003 of hoger geïnstalleerd op [!DNL report]-server. Zie [Overwegingen voor server-zijAutomatisering van Bureau](https://support.microsoft.com/kb/257757) voor extra informatie.
+* Microsoft Excel 2003 of hoger geïnstalleerd op [!DNL report] server. Zie [Overwegingen voor server-zijAutomatisering van Bureau](https://support.microsoft.com/kb/257757) voor aanvullende informatie.
 
 ## Netwerkbeheer{#network-management}
 
@@ -259,6 +260,6 @@ Overwegingen in mening te houden wanneer het werken met netwerken DPU en FSU.
 
 * Voor netwerkdistributie van logbestanden moet elk netwerkopslagsysteem dat logboekbestanden host, ten minste 10 MB aan continue bandbreedte per DPU bieden.
 * DPU, FSU, en de Data Workbench communiceren bidirectioneel via HTTP of HTTPS op haven 80 of 443 (door gebrek; de havens kunnen alternatief worden gevormd).
-* Data Workbench [!DNL Sensor(s)] moet in staat zijn (eenrichtingsverkeer) verbinding te maken met de servers.
+* Data Workbench [!DNL Sensor(s)] moet in staat zijn (eenzijdig) verbinding te maken met de servers.
 * Om DPU toe te staan om waakzame berichten via SMTP te verzenden, moet het de gevormde server kunnen contacteren SMTP.
 * Adobe adviseert dat FSUs en DPUs netwerknamen zoals FSU01.CLIENT.COM worden gegeven om herconfiguratie te vermijden als het geval van een IP-adres verandert.

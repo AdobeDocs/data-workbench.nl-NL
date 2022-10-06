@@ -3,14 +3,16 @@ description: Bij de samenvoegtransformatie worden de waarden uit het invoerveld 
 title: Samenvoegen
 uuid: 9ca2ab22-d854-47b0-8189-f563c1e83d1c
 exl-id: 75fa824b-f68d-4ec4-a75d-0f742a7bb1ba
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '253'
 ht-degree: 1%
 
 ---
 
 # Samenvoegen{#merge}
+
+{{eol}}
 
 Bij de samenvoegtransformatie worden de waarden uit het invoerveld genomen (doorgaans een vector met tekenreeksen), gecombineerd tot één tekenreeks die door het opgegeven scheidingsteken wordt gescheiden, en wordt de resulterende tekenreeks in het opgegeven uitvoerveld geplaatst.
 
@@ -45,7 +47,7 @@ Bij de samenvoegtransformatie worden de waarden uit het invoerveld genomen (door
   </tr> 
   <tr> 
    <td colname="col1"> Scheidingsteken </td> 
-   <td colname="col2"> <p>Tekenreeks die wordt gebruikt om de afzonderlijke elementen van de invoertekenreeksvector te scheiden in de enkele uitvoertekenreeks. </p> <p> Als u de sleutel van CTRL onderdrukt en binnen de parameter van Scheidingsteken met de rechtermuisknop klikt, <span class="wintitle"> Tussenvoegsel</span> verschijnt een menu. Dit menu bevat een lijst met speciale tekens die vaak als scheidingstekens worden gebruikt. </p> </td> 
+   <td colname="col2"> <p>Tekenreeks die wordt gebruikt om de afzonderlijke elementen van de invoertekenreeksvector te scheiden in de enkele uitvoertekenreeks. </p> <p> Als u de Ctrl-toets ingedrukt houdt en met de rechtermuisknop klikt in de parameter Scheidingsteken, wordt een <span class="wintitle"> Invoegen</span> wordt weergegeven. Dit menu bevat een lijst met speciale tekens die vaak als scheidingstekens worden gebruikt. </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -65,4 +67,4 @@ In dit voorbeeld wordt aangenomen dat een invoervector met tekenreeksen een set 
 
 ![](assets/cfg_TransformationType_Merge.png)
 
-Dus als het invoerveld x-products de tekenreekswaarden B57481, C46355 en Z97123 bevatte, zou de resulterende uitvoertekenreeks x-show-products B57481:C46355:Z97123 zijn.
+Dus als het invoerveld x-products de tekenreekswaarden B57481, C46355 en Z97123 bevatte, zou de resulterende uitvoertekenreeks x-show-products B57481 zijn::C46355::Z97123.

@@ -3,7 +3,7 @@ description: Wanneer u een elementpuntlaag maakt met behulp van dynamische punte
 title: Elementpuntlagen definiëren met behulp van dynamische punten
 uuid: f4b41969-329a-4c33-a8db-8d85597fa577
 exl-id: 5f6e264c-5804-47fa-a3ca-8608a3f7e9d3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 1%
@@ -12,23 +12,25 @@ ht-degree: 1%
 
 # Elementpuntlagen definiëren met behulp van dynamische punten{#define-element-point-layers-using-dynamic-points}
 
+{{eol}}
+
 Wanneer u een elementpuntlaag maakt met behulp van dynamische punten, worden de breedte- en lengtegegevens ingesloten in elk element van de dimensie.
 
 Als u een elementpuntlaag wilt definiëren met behulp van dynamische punten, moet u het volgende maken of al beschikbaar hebben:
 
-* Een dimensie, gedefinieerd in het [!DNL Transformation.cfg]-bestand of een [!DNL transformation dataset include]-bestand, waarin elk element de tekenreeks &quot;latitude,longitude&quot; of &quot;latitude,longitude,name&quot; bevat.
+* Een dimensie, gedefinieerd in het dialoogvenster [!DNL Transformation.cfg] of een [!DNL transformation dataset include] bestand waarin elk element de tekenreeks &quot;latitude,longitude&quot; of &quot;latitude,longitude,name&quot; bevat.
 
-   Voor stappen om een afmeting tot stand te brengen, zie *de Gids van de Configuratie van de Dataset*.
+   Voor stappen om een dimensie te maken, raadpleegt u de *Configuratie-handleiding voor gegevensset*.
 
 * Een laagbestand dat de gerelateerde dimensie opgeeft.
 
-Voor meer informatie over het vereiste formaat van het laagdossier, zie [het Formaat van het Dossier van de Laag van het Punt van het Element](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#section-0645fbc761c14bb986f3d6f02df407a0).
+Ga voor meer informatie over de vereiste indeling van het laagbestand naar [Laagbestandsindeling voor elementpunt](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#section-0645fbc761c14bb986f3d6f02df407a0).
 
 >[!NOTE]
 >
->Wanneer u [!DNL Dynamic Points] gebruikt, is het van essentieel belang dat de kardinaliteit van de afmetingen die in het laagbestand zijn opgegeven redelijk is. Als elke rij van een gegevensset een andere breedte en lengte heeft, wordt de afmeting snel gevuld en vallen de meeste rijen in een element Small Elements. Omdat het element Small Elements geen breedte en lengte heeft, wordt het niet op de wereldschaal weergegeven.
+>Wanneer u [!DNL Dynamic Points]is het van essentieel belang ervoor te zorgen dat de kardinaliteit van de in het laagbestand gespecificeerde afmetingen redelijk is. Als elke rij van een gegevensset een andere breedte en lengte heeft, wordt de afmeting snel gevuld en vallen de meeste rijen in een element Small Elements. Omdat het element Small Elements geen breedte en lengte heeft, wordt het niet op de wereldschaal weergegeven.
 
-## Bestandsindeling voor elementpuntlagen {#section-0645fbc761c14bb986f3d6f02df407a0}
+## Bestandsindeling elementpuntlaag {#section-0645fbc761c14bb986f3d6f02df407a0}
 
 Elk elementpuntlaagbestand dat gebruikmaakt van dynamische punten, moet worden opgemaakt met de volgende sjabloon:
 
@@ -72,7 +74,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Kleur </td> 
-   <td colname="col2"> Optioneel. De RGB-kleurvector, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. </td> 
+   <td colname="col2"> Optioneel. De kleurvector RGB, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Rendermodus </td> 
@@ -86,7 +88,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Het [!DNL IP Coordinates.layer]-bestand is als volgt opgemaakt:
+De [!DNL IP Coordinates.layer] bestand is als volgt opgemaakt:
 
 ```
 Layer = ElementPointLayer:

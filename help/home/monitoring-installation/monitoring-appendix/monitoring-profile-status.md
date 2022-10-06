@@ -3,14 +3,16 @@ description: De volgende afmetingen zijn beschikbaar voor gebruik in het statusp
 title: Dimension in het statusprofiel van het profiel Data Workbench
 uuid: bd84a3e5-d1ea-4768-9dac-62f5dfbad49a
 exl-id: 57b3ff16-26db-4292-819b-f6cd8e024c2a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 0%
 
 ---
 
-# Dimension in het statusprofiel van het Profiel van de Data Workbench{#dimensions-in-the-data-workbench-profile-status-profile}
+# Dimension in het statusprofiel van het profiel Data Workbench{#dimensions-in-the-data-workbench-profile-status-profile}
+
+{{eol}}
 
 De volgende afmetingen zijn beschikbaar voor gebruik in het statusprofiel van het gegevenswerkbankprofiel.
 
@@ -30,15 +32,15 @@ De volgende afmetingen zijn beschikbaar voor gebruik in het statusprofiel van he
   </tr> 
   <tr> 
    <td colname="col1"> <b>Snelle invoer MegaBytes per minuut</b> </td> 
-   <td colname="col2"> De waarde cs-uri-query(bj) wordt gebruikt voor deze dimensie. De laatste rij voor een blok wordt gebruikt als waarde voor de dimensie. Als de dataset Snelle Input deze Numerieke minieme waarde in zal tonen MB per waarbij het systeem gegevens invoert. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> De waarde cs-uri-query(bj) wordt gebruikt voor deze dimensie. De laatste rij voor een blok wordt gebruikt als waarde voor de dimensie. Als de dataset Snelle Input deze Numerieke minieme waarde in zal tonen MB per waarbij het systeem gegevens invoert. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Snel MegaBytes samenvoegen per minuut</b> </td> 
-   <td colname="col2">De waarde cs-uri-query(bk) wordt gebruikt voor deze dimensie. De laatste rij voor een blok wordt gebruikt als waarde voor de dimensie. Als de dataset Deze Numerieke waarde van de Fusie in Snelle is zal de MB per minuut tonen waarbij het systeem samenvoegt. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2">De waarde cs-uri-query(bk) wordt gebruikt voor deze dimensie. De laatste rij voor een blok wordt gebruikt als waarde voor de dimensie. Als de dataset Deze Numerieke waarde van de Fusie in Snelle is zal de MB per minuut tonen waarbij het systeem samenvoegt. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Veld GigaBytes</b> </td> 
-   <td colname="col2"> De waarde cs-uri-query(bg) wordt gebruikt voor deze dimensie. De waarde wordt gedeeld door 1000 en afgerond naar het dichtstbijzijnde gehele getal. Deze numerieke Dimension zal de hoeveelheid ruimte tonen de Gebieden in de dataset gebruiken. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> De waarde cs-uri-query(bg) wordt gebruikt voor deze dimensie. De waarde wordt gedeeld door 1000 en afgerond naar het dichtstbijzijnde gehele getal. Deze numerieke Dimension zal de hoeveelheid ruimte tonen de Gebieden in de dataset gebruiken. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Host</b> </td> 
@@ -46,19 +48,19 @@ De volgende afmetingen zijn beschikbaar voor gebruik in het statusprofiel van he
   </tr> 
   <tr> 
    <td colname="col1"> <b>Laatste pingel</b> </td> 
-   <td colname="col2">x-last-pingel is x-unixtime verdelen door 10 (om numerieke groottebeperkingen aan te passen). Laatste pingelt is de Laatste Rij voor een bepaald Blok, en het vertegenwoordigt de laatste tijd de controleagent het programma opende de systeemgezondheid. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2">x-last-pingel is x-unixtime verdelen door 10 (om numerieke groottebeperkingen aan te passen). Laatste pingelt is de Laatste Rij voor een bepaald Blok, en het vertegenwoordigt de laatste tijd de controleagent het programma opende de systeemgezondheid. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Percentage voor logarittering</b> </td> 
-   <td colname="col2">De waarde cs-uri-query(be) wordt gebruikt voor deze numerieke dimensie. Het is de Laatste Rij voor een bepaald Blok. Deze afmeting wordt gebruikt om het percentage logboeken te berekenen die worden gelezen. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2">De waarde cs-uri-query(be) wordt gebruikt voor deze numerieke dimensie. Het is de Laatste Rij voor een bepaald Blok. Deze afmeting wordt gebruikt om het percentage logboeken te berekenen die worden gelezen. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Verwerkingsmodus-id</b> </td> 
-   <td colname="col2"> De waarde cs-uri-query(bb) wordt gebruikt voor deze eenvoudige Dimension. Het is de laatste rij voor een bepaald blok. De identiteitskaart van de Wijze van de verwerking staat één toe om te zien welke wijze van verwerking het systeem is (Snelle Input, Snelle Fusie, Echte Tijd). <p>Opmerking:  Deze dimensie wordt verborgen en vervolgens opnieuw blootgesteld aan vriendelijke waarden in de verwerkingsmodus voor afmetingen aan de clientzijde. </p></td> 
+   <td colname="col2"> De waarde cs-uri-query(bb) wordt gebruikt voor deze eenvoudige Dimension. Het is de laatste rij voor een bepaald blok. De identiteitskaart van de Wijze van de verwerking staat één toe om te zien welke wijze van verwerking het systeem is (Snelle Input, Snelle Fusie, Echte Tijd). <p>Opmerking: Deze dimensie wordt verborgen en vervolgens opnieuw blootgesteld aan vriendelijke waarden in de verwerkingsmodus voor afmetingen aan de clientzijde. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Verwerking gestapeld</b> </td> 
-   <td colname="col2"> Het veld met de opmaakfunctie voor x-verwerking wordt onder verschillende omstandigheden gemaakt om aan te geven of het profiel al dan niet wordt uitgevoerd. Het is een eenvoudige dimensie. <p>Opmerking:  Deze dimensie werkt het best wanneer er een groot aantal inputlogboeken zijn om onder DPUs eerlijk te verdelen. Als er bijvoorbeeld slechts één groot bestand per dag wordt geladen, kan de werkbank voor gegevens een uur of langer 'vastlopen', wat resulteert in een fout positief lezen van deze dimensie. </p></td> 
+   <td colname="col2"> Het veld met de opmaakfunctie voor x-verwerking wordt onder verschillende omstandigheden gemaakt om aan te geven of het profiel al dan niet wordt uitgevoerd. Het is een eenvoudige dimensie. <p>Opmerking: Deze dimensie werkt het best wanneer er een groot aantal inputlogboeken zijn om onder DPUs eerlijk te verdelen. Als er bijvoorbeeld slechts één groot bestand per dag wordt geladen, kan de werkbank voor gegevens een uur of langer 'vastlopen', wat resulteert in een fout positief lezen van deze dimensie. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Profiel</b> </td> 
@@ -70,7 +72,7 @@ De volgende afmetingen zijn beschikbaar voor gebruik in het statusprofiel van he
   </tr> 
   <tr> 
    <td colname="col1"> <b>Transformatiepercentage</b> </td> 
-   <td colname="col2"> De waarde cs-uri-query(bf) wordt gebruikt voor deze numerieke dimensie. Het is de Laatste Rij voor een bepaald Blok. Deze dimensie wordt gebruikt om het percentage van volledige gegevenstransformatie te berekenen. <p>Opmerking:  Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
+   <td colname="col2"> De waarde cs-uri-query(bf) wordt gebruikt voor deze numerieke dimensie. Het is de Laatste Rij voor een bepaald Blok. Deze dimensie wordt gebruikt om het percentage van volledige gegevenstransformatie te berekenen. <p>Opmerking: Deze dimensie is verborgen omdat het alleen nuttig is wanneer het gemiddelde in een metrische waarde wordt genomen. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Dimension tijd</b> </td> 

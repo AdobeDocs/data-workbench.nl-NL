@@ -3,14 +3,16 @@ description: U kunt 2D- en 3D-procesafbeeldingen maken door elementen van staafg
 title: Een proceskaart maken
 uuid: dbcde637-0411-4296-99ca-5510e0285e4b
 exl-id: 2e417a8e-5b1c-4dce-9e4e-ac7ed044564c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
-# Een procesafbeelding maken{#create-a-process-map}
+# Een proceskaart maken{#create-a-process-map}
+
+{{eol}}
 
 U kunt 2D- en 3D-procesafbeeldingen maken door elementen van staafgrafieken, tabellen en hiërarchische weergaven naar een lege kaart te slepen.
 
@@ -32,16 +34,16 @@ De elementen die u kunt toevoegen moeten elementen van de de basisdimensie van d
 >
 >Adobe raadt u aan knooppunten toe te voegen van het hoogste niveau van de hiërarchie die u analyseert.
 
-1. Klik in een tabel- of staafgrafiek met dezelfde basisafmeting als de procesafbeelding met de rechtermuisknop op een element of het label van de basisafmeting en klik op **[!UICONTROL Hierarchy View]**.
+1. Klik vanuit een tabel- of staafgrafiek met dezelfde basisafmeting als de procesafbeelding met de rechtermuisknop op een element of het label van de basisafmeting en klik op **[!UICONTROL Hierarchy View]**.
 1. Druk op Ctrl+Alt terwijl u op elementen klikt en deze naar het procesdiagram sleept. Uw muiscursor geeft het woord &quot;Nee&quot; weer totdat uw muis de kaart heeft bereikt.
 
    >[!NOTE]
    >
    >De elementen die u kunt toevoegen moeten elementen van de de basisdimensie van de proceskaart zijn.
 
-   Als u één element naar een proceskaart sleept, wordt alleen voor dat element een toewijzingsknooppunt gemaakt. Als u echter meerdere elementen (een groep) of een map met meerdere elementen selecteert en u sleept vanuit de hiërarchie, wordt één knooppunt voor die groep of map gemaakt. Als u bijvoorbeeld met websitegegevens werkt en een map met de naam [!DNL site.com/cgi-bin] naar een map sleept, wordt een knooppunt met de naam [!DNL site.com/cgi-bin/*] gemaakt. Dit knooppunt vertegenwoordigt alle pagina&#39;s en mappen die onderliggende items van die map zijn.
+   Als u één element naar een proceskaart sleept, wordt alleen voor dat element een toewijzingsknooppunt gemaakt. Als u echter meerdere elementen (een groep) of een map met meerdere elementen selecteert en u sleept vanuit de hiërarchie, wordt één knooppunt voor die groep of map gemaakt. Als u bijvoorbeeld met websitegegevens werkt, sleept u een map met de naam [!DNL site.com/cgi-bin] op een kaart maakt een knooppunt dat wordt aangeroepen [!DNL site.com/cgi-bin/*], die alle pagina&#39;s en mappen vertegenwoordigt die onderliggende items zijn van die map.
 
-Zie [Hiërarchieweergaven toepassen](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff) voor meer informatie over paginahiërarchieweergaven.
+Voor meer informatie over de weergaven van de paginahiërarchie raadpleegt u [Hiërarchieweergaven toepassen](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff).
 
 **Om knopen aan een proceskaart van een andere proceskaart toe te voegen**
 

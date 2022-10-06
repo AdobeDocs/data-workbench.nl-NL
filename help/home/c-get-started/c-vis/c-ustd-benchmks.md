@@ -3,7 +3,7 @@ description: Benchmarks geven kwalitatieve verschillen in gegevens weer door de 
 title: Benchmarks
 uuid: 2e5255cd-eafd-45de-a16f-70d719d2ac0c
 exl-id: 6294c4f9-a338-409a-a157-86cdfbbb6f76
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -12,13 +12,15 @@ ht-degree: 0%
 
 # Benchmarks{#benchmarks}
 
+{{eol}}
+
 Benchmarks geven kwalitatieve verschillen in gegevens weer door de distributie van een metrische waarde op basis van alle gegevens te vergelijken met de distributie van een metrische waarde op basis van een selectie in de gegevens.
 
 Ze bieden een snelle referentie van normaal gedrag door te laten zien hoe een visualisatie eruit zou zien als er geen selecties werden gemaakt. De verschillen in de gegevens zijn gebaseerd op relatieve waarden, niet op absolute waarden.
 
 >[!NOTE]
 >
->De benchmarks kunnen verschillen in gegevens voor de dataset of voor om het even welke gegevenssubsets vertegenwoordigen die u creeert. Zie [Werken met subsets](../../../home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md#concept-43809322b6374d5cb2536630a13e943b) voor meer informatie over subsets.
+>De benchmarks kunnen verschillen in gegevens voor de dataset of voor om het even welke gegevenssubsets vertegenwoordigen die u creeert. Zie voor meer informatie over subsets [Werken met subsets](../../../home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md#concept-43809322b6374d5cb2536630a13e943b).
 
 In de volgende grafieken worden de sessies op een website tegen dag van de week en het uur van de dag weergegeven. De visualisatie op de linkerzijde verstrekt een goede vertegenwoordiging van het patroon dat het plaatsverkeer in tijd neemt. Om het algemene patroon van het plaatsverkeer met het verkeerspatroon op weekends te vergelijken, zou u Zaterdag en Zondag in de grafiek van Zittingen tegen Dag van Week zoals aangetoond in visualisatie op het recht selecteren.
 

@@ -3,7 +3,7 @@ description: Een werkruimte is een container voor een bepaalde analyse en visual
 title: Werkruimten weergeven
 uuid: 848035e5-7b7f-4e33-b61d-3759335e459b
 exl-id: 18db0cd4-6cb0-4514-9056-1c1e82b2092e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Werkruimten weergeven{#display-workspaces}
 
+{{eol}}
+
 Een werkruimte is een container voor een bepaalde analyse en visualisatietaak.
 
 Een werkruimte kan veelvoudige visualisaties bevatten, die allen tegen een gemeenschappelijke reeks gegevens werken (namelijk alle visualisaties in de werkruimte geven de zelfde reeks vraagresultaten terug). Wanneer u een het filtreren verrichting in één visualisatie uitvoert, wordt de geselecteerde ondergroep weerspiegeld door de volledige werkruimte.
 
-Hieronder ziet u een voorbeeld van verschillende miniaturen in de werkruimte op [!DNL Worktop].
+Hieronder ziet u een voorbeeld van verschillende miniaturen in de werkruimte [!DNL Worktop].
 
 ![](assets/client-wksp.png)
 
@@ -28,4 +30,4 @@ U analyseert uw gegevens door verschillende soorten visualisatie in een werkruim
 
 >[!NOTE]
 >
->Nadat u een nieuwe werkruimte hebt geopend, moet u mogelijk **[!UICONTROL Add]** > **[!UICONTROL Temporarily Unlock]** klikken om het scherm te ontgrendelen.
+>Nadat u een nieuwe werkruimte hebt geopend, moet u mogelijk op **[!UICONTROL Add]** > **[!UICONTROL Temporarily Unlock]** om het scherm te ontgrendelen.

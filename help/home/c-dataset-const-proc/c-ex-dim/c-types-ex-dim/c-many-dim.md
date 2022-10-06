@@ -3,14 +3,16 @@ description: Een vele-aan-vele dimensie heeft een vele-aan-vele verhouding met z
 title: Veel-tot-veel Dimension
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
 exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 1%
 
 ---
 
-# Vele-aan-Vele Dimension{#many-to-many-dimensions}
+# Veel-tot-veel Dimension{#many-to-many-dimensions}
+
+{{eol}}
 
 Een vele-aan-vele dimensie heeft een vele-aan-vele verhouding met zijn oudertelbare dimensie.
 
@@ -49,7 +51,7 @@ Vele-aan-vele dimensies worden bepaald door de volgende parameters:
   </tr> 
   <tr> 
    <td colname="col1"> Invoer </td> 
-   <td colname="col2"> <p>De waarde die gerelateerd is aan de bovenliggende dimensie (parent). Als dit veld een vector met tekenreeksen is, heeft elk element van de vector zijn eigen relatie met het bovenliggende element. </p> <p> <p>Opmerking:  Als de inputwaarde voor elke logboekingang voor een element van de ouderafmeting leeg is, zal geen element van de vele-aan-vele afmeting op dat element van de ouderafmeting betrekking hebben. </p> </p> </td> 
+   <td colname="col2"> <p>De waarde die gerelateerd is aan de bovenliggende dimensie (parent). Als dit veld een vector met tekenreeksen is, heeft elk element van de vector zijn eigen relatie met het bovenliggende element. </p> <p> <p>Opmerking: Als de inputwaarde voor elke logboekingang voor een element van de ouderafmeting leeg is, zal geen element van de vele-aan-vele afmeting op dat element van de ouderafmeting betrekking hebben. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

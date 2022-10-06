@@ -3,7 +3,7 @@ description: Radargrafieken geven snel focus op de gebieden die de meeste aandac
 title: Radarvisualisatie
 uuid: 39d67743-b6c1-46f1-99fd-7c71dfe07932
 exl-id: 5385d903-422b-4936-bbb3-0d5ee4d286de
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Radarvisualisatie{#radar-visualization}
+
+{{eol}}
 
 Radargrafieken geven snel focus op de gebieden die de meeste aandacht behoeven, door een visuele weergave van een set meetgegevens te bieden, en hoe ze zich verhouden of verschillen.
 
@@ -29,8 +31,8 @@ Elke radiaal van een radargrafiek is metrisch, en een minimum van drie metriek w
 1. Als u metriek wilt toevoegen, klikt u met de rechtermuisknop in de visualisatie en selecteert u **[!UICONTROL Add Metric]**.
 1. Als u een metrische waarde aan het diagram wilt verankeren, klikt u met de rechtermuisknop op een metrische waarde en kiest u de volgende optie:
 
-   **Anker aan deze metrische waarde:** gebruikt deze metrische waarde als benchmark waaraan andere metriek worden getrokken. U kunt één metrische waarde tegelijk verankeren. Elke metrische waarde in het diagram wordt gefilterd door de actieve werkruimteselectie of door geen filter. De benchmarkverhouding tussen deze twee waarden wordt uitgezet op de as tussen het middelpunt van de grafiek en de metrische naam op de radar. Nul wordt uitgezet in het midden.
+   **Anker aan deze metrische waarde:** Gebruikt deze metrische waarde als de benchmark waaraan andere metriek worden getrokken. U kunt één metrische waarde tegelijk verankeren. Elke metrische waarde in het diagram wordt gefilterd door de actieve werkruimteselectie of door geen filter. De benchmarkverhouding tussen deze twee waarden wordt uitgezet op de as tussen het middelpunt van de grafiek en de metrische naam op de radar. Nul wordt uitgezet in het midden.
 
 1. Als u een metrische waarde wilt schalen met de verankerde metrische waarde, klikt u met de rechtermuisknop op de metrische waarde en kiest u de volgende optie:
 
-   **Schalen met anker:** Wanneer deze optie is ingeschakeld, wordt de as van deze metrische waarde zo geschaald dat de benchmarkverhouding voor de geselecteerde ankermetrische waarde in de cirkel wordt uitgezet, met nul in het midden. Als deze optie niet is geselecteerd, is de cirkel een benchmarkverhouding van 1. Doorgaans schakelt u Schaal met anker in voor aftelbare meetgegevens, zoals bezoekers of Paginaweergaven, en schakelt u Schaal uit voor maateenheden voor de verhouding, zoals Omzetting, Gemiddelde sessieduur of Paginaweergaven per sessie.
+   **Schalen met anker:** Als deze optie is ingeschakeld, wordt de as van deze metrische waarde zo geschaald dat de benchmarkverhouding voor de geselecteerde ankermeting in de cirkel wordt uitgezet, met nul in het midden. Als deze optie niet is geselecteerd, is de cirkel een benchmarkverhouding van 1. Doorgaans schakelt u Schaal met anker in voor aftelbare meetgegevens, zoals bezoekers of Paginaweergaven, en schakelt u Schaal uit voor maateenheden voor de verhouding, zoals Omzetting, Gemiddelde sessieduur of Paginaweergaven per sessie.

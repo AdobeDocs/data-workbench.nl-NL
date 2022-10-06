@@ -3,7 +3,7 @@ description: Met Data Workbench kunt u bestanden exporteren om deze te integrere
 title: Master marketingprofiel exporteren
 uuid: bae0f0c5-a452-4afd-9f2c-5f3ab69a12d2
 exl-id: 9fc89815-d31d-41a7-a0c0-de1e84b24baa
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # Master marketingprofiel exporteren{#master-marketing-profile-export}
 
+{{eol}}
+
 Met Data Workbench kunt u bestanden exporteren en integreren met profielen en soorten publiek als onderdeel van een geïntegreerde Adobe Experience Cloud.
 
 <!-- <a id="section_731922BC8628479198A41EF3EA72F2FF"></a> -->
 
-Profielen en soorten publiek maken deel uit van [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html), een kernservice van [!DNL Adobe Experience Cloud]. Met de export van profielen en soorten publiek kunnen soorten publiek via de Experience Cloud worden gedeeld met behulp van een unieke Experience Cloud-id (ECID) die aan elke bezoeker is toegewezen en vervolgens door [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html) wordt gebruikt. De [!DNL ExportIntegration.exe]-toepassing ( [!DNL E:\Server\Scripts]) wordt gebruikt om zowel MMP- als Adobe Target-export te genereren.
+Profielen en soorten publiek maken deel uit van de [Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html), een kerndienst van de [!DNL Adobe Experience Cloud]. Met de export Profielen en Soorten publiek kunnen soorten publiek door de Experience Cloud worden gedeeld met behulp van een unieke Experience Cloud-id (ECID) die aan elke bezoeker is toegewezen en die vervolgens door [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html). De [!DNL ExportIntegration.exe] application ( [!DNL E:\Server\Scripts]) wordt gebruikt om zowel MMP- als Adobe Target-export te genereren.
 
 **De FSU-server configureren voor het gebruik van profielen en soorten publiek**
 
@@ -51,7 +53,7 @@ Profielen en soorten publiek maken deel uit van [Experience Cloud Identity Servi
 
    >[!NOTE]
    >
-   >Met het bestand [!DNL MMPExport.cfg]kunt u ook alle records vastleggen, deze in sets splitsen en records maken. De stukjes records worden vervolgens geëxporteerd naar Amazon S3. Er zijn drie verplichte parameters nodig om records te maken: [!DNL numRecordsPerChunk], [!DNL numThreads] en [!DNL maxRetriesOnSendFailure].
+   >De [!DNL MMPExport.cfg]Met dit bestand kunt u ook alle records vastleggen, deze in sets splitsen en records maken. De stukjes records worden vervolgens geëxporteerd naar Amazon S3. Er zijn drie verplichte parameters nodig om records te maken: [!DNL numRecordsPerChunk], [!DNL numThreads], en [!DNL maxRetriesOnSendFailure].
 
 **Definitie van parameters**
 
@@ -65,11 +67,11 @@ Profielen en soorten publiek maken deel uit van [Experience Cloud Identity Servi
  <tbody> 
   <tr> 
    <td colname="col1"> <i>s3 Emmertje</i> </td> 
-   <td colname="col2"> Het AWS S3-emmertje waarnaar de export wordt overgebracht. </td> 
+   <td colname="col2"> Het AWS S3-emmertje waarnaar de uitvoer wordt overgedragen. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>s3 Object Directory</i> </td> 
-   <td colname="col2"> Een pad om s3-bestanden op te slaan. Dit ondersteunt submappen. <p> <p>Belangrijk:  Spatie- en multibyte-tekens zijn niet toegestaan in het pad en leiden tot fouten bij het exporteren. (Het afbreekstreepje is toegestaan.) </p> </p> </td> 
+   <td colname="col2"> Een pad om s3-bestanden op te slaan. Dit ondersteunt submappen. <p> <p>Belangrijk: Spatie- en multibyte-tekens zijn niet toegestaan in het pad en leiden tot fouten bij het exporteren. (Het afbreekstreepje is toegestaan.) </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>s3 Regio</i> </td> 
@@ -105,7 +107,7 @@ Profielen en soorten publiek maken deel uit van [Experience Cloud Identity Servi
   </tr> 
   <tr> 
    <td colname="col1"> <i>numRecordsPerChunk</i> </td> 
-   <td colname="col2"> <p>Bepaalt de brokgrootte in termen van aantal verslagen. </p> <p>De implementatie knipt de door de gebruiker opgegeven waarde tot min = 1000 records&amp;nbsp;(~50 kB blokken)&amp;nbsp;en max = 50000 records (~2,5 MB blokken).&amp;nbsp;Een standaardwaarde van 10000 wordt gebruikt voor het geval de gebruiker dit configuratiebezit niet specificeert. </p> </td> 
+   <td colname="col2"> <p>Bepaalt de brokgrootte in termen van aantal verslagen. </p> <p>De implementatie knipt de door de gebruiker opgegeven waarde tot min = 1000 records&amp;nbsp;(~50 kB blokken)&amp;nbsp; en max = 50000 records (~2,5 MB blokken).&amp;nbsp;Een standaardwaarde van 10000 wordt gebruikt voor het geval de gebruiker dit configuratiebezit niet specificeert. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>numThreads</i> </td> 
@@ -120,22 +122,22 @@ Profielen en soorten publiek maken deel uit van [Experience Cloud Identity Servi
 
 **MMP-export van de client genereren**
 
-1. Open vanuit de client een werkruimte en klik met de rechtermuisknop op **[!UICONTROL Tools]** **[!UICONTROL Detail Table]**.
-1. **Niveau** toevoegen.
+1. Open vanuit de client een werkruimte en klik met de rechtermuisknop **[!UICONTROL Tools]**> **[!UICONTROL Detail Table]**.
+1. Toevoegen **Niveau**.
 1. Klik met de rechtermuisknop op de koptekst en selecteer **Kenmerken toevoegen**.
 1. Klik met de rechtermuisknop op de koptekst en selecteer **Nieuw Master marketingprofiel exporteren**. ![](assets/mmp_mmp_export.png)
-1. Breid **Vraag** uit.
+1. Uitbreiden **Query**.
 
    ![](assets/mmp_mmp_query.png)
 
-1. Breid **MMP Configuratie** uit.
-1. (Vereist) ga **MMP de Naam van het Segment** en **MMP het Gebied van Bezoeker ID** in. Deze parameters mogen niet leeg blijven.
-1. De **MMP-segmentnaam** moet overeenkomen met de Segment-id die is gedefinieerd in de MMP.
-1. De **MMP-bezoeker-id** is de kenmerkkolom die is gedefinieerd in stap 4 en die overeenkomt met de **Bezoeker-id**.
-1. Nadat u deze velden hebt ingevoerd, kunt u de exportbewerking opslaan door met de rechtermuisknop op de koptekst voor de exportbewerking te klikken en **Opslaan** als &quot;Gebruiker\.export&quot; te kiezen.
-1. Open **Admin** > **Profielbeheer** en sla het exporteren op in het profiel.
+1. Uitbreiden **MMP-configuratie**.
+1. (vereist) Voer de **Naam van MMP-segment** en **Veld voor MMP-bezoeker-id**. Deze parameters mogen niet leeg blijven.
+1. De **Naam van MMP-segment** moet overeenkomen met de Segment-id die is gedefinieerd in het MMP.
+1. De **Id van MMP-bezoeker** is de in stap 4 gedefinieerde kenmerkkolom die overeenkomt met de **Bezoeker-id**.
+1. Nadat u deze velden hebt ingevoerd, kunt u het exporteren opslaan door met de rechtermuisknop op de koptekst voor het exporteren te klikken en **Opslaan** als &quot;Gebruiker\.export&quot;.
+1. Openen **Beheer** > **Profielbeheer** en sla het exporteren naar het profiel op.
 
-   Als alle gegevens correct zijn ingevoerd, wordt een exportbestand in de FSU ([!DNL Server/Exports]) gegenereerd en wordt de export naar de AWS ook verzonden met behulp van de informatie in [!DNL MMPExport.cfg]. Het logboek voor dit wordt verstrekt in [!DNL Server/Trace/]. bijv. [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
+   Als alle gegevens correct zijn ingevoerd, wordt een exportbestand gegenereerd in de FSU ([!DNL Server/Exports]) en zal de uitvoer naar de AWS ook met behulp van de in [!DNL MMPExport.cfg]. Het logboek hiervoor is beschikbaar in [!DNL Server/Trace/]. bijv. [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
 
 ```
 Query = SegmentExportQuery: 

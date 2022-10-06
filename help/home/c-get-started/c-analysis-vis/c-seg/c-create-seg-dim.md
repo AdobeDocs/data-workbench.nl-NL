@@ -3,7 +3,7 @@ description: Als u een segmentdimensie wilt maken, maakt u eerst een selectie in
 title: Segmentafmetingen maken
 uuid: 68dcf3bf-fbc9-4924-a0dd-d112cf366131
 exl-id: 393d544e-e821-49e3-8cfb-5a3496aa7380
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Segmentafmetingen maken{#create-a-segment-dimensions}
+
+{{eol}}
 
 Als u een segmentdimensie wilt maken, maakt u eerst een selectie in een werkruimte en voegt u vervolgens het segment toe aan een visualisatie.
 
@@ -25,7 +27,7 @@ Als u een segmentdimensie wilt maken, maakt u eerst een selectie in een werkruim
 
    >[!NOTE]
    >
-   >Als u een nieuw eerste segment wilt maken, klikt u met de rechtermuisknop op het label **[!UICONTROL Segments]** en klikt u op **[!UICONTROL Add Segment]**.
+   >Als u een nieuw eerste segment wilt maken, klikt u met de rechtermuisknop op de knop **[!UICONTROL Segments]** label en klik **[!UICONTROL Add Segment]**.
 
    ![](assets/vis_SegmentNew.png)
 
@@ -36,13 +38,13 @@ Als u een segmentdimensie wilt maken, maakt u eerst een selectie in een werkruim
 
    >[!NOTE]
    >
-   >Als een metrische waarde, zoals een bepaalde bezoeker in [!DNL Site], aan de criteria van veelvoudige segmenten voldoet, is de metrische waarde inbegrepen in slechts het eerste vermelde segment dat het aanpast.
+   >Als een metrische waarde, zoals een bepaalde bezoeker binnen [!DNL Site], voldoet aan de criteria van meerdere segmenten, wordt de metrische waarde alleen opgenomen in het eerste weergegeven segment dat ermee overeenkomt.
 
 **De segmentdimensie opslaan**
 
-1. Klik met de rechtermuisknop op het label Segmenten en klik op **[!UICONTROL Save Dimension]**. Het venster [!DNL Save Dimension As] verschijnt. De standaardopslaglocatie is de map Gebruiker\*profielnaam*\Dimension.
-1. Typ in het veld [!DNL File name] een beschrijvende naam voor de segmenten die u opslaat als een dimensie en klik op **[!UICONTROL Save]**.
+1. Klik met de rechtermuisknop op het label Segmenten en klik op **[!UICONTROL Save Dimension]**. De [!DNL Save Dimension As] wordt weergegeven. De standaardopslaglocatie is de map Gebruiker\*profielnaam*\Dimension.
+1. In de [!DNL File name] veld, typt u een beschrijvende naam voor de segmenten die u opslaat als een dimensie en klikt u op **[!UICONTROL Save]**.
 
 U kunt tot de segmentdimensie toegang hebben wanneer u met een visualisatie werkt. U kunt ook gegevens exporteren die zijn gekoppeld aan de elementen in uw opgeslagen dimensie met de functie voor het exporteren van segmenten.
 
-Voor meer informatie over de eigenschap van de segmentuitvoer en instructies om het voor uw behoeften te vormen, zie [Het Vormen Segmenten voor de Uitvoer](../../../../home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md#task-8857f221fa66463990ec9b60db6db372).
+Voor meer informatie over de de uitvoereigenschap van het segment en instructies om het voor uw behoeften te vormen, zie [Segmenten voor export configureren](../../../../home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md#task-8857f221fa66463990ec9b60db6db372).

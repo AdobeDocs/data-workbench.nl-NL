@@ -3,7 +3,7 @@ description: Wanneer u een elementpuntlaag maakt met behulp van dynamische punte
 title: Elementpuntlagen definiëren met behulp van dynamische punten
 uuid: 5f1b4638-fe45-40be-b963-18dcd5d09afa
 exl-id: ad849fe7-b909-40ef-835f-f1764e008de9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 1%
@@ -12,23 +12,25 @@ ht-degree: 1%
 
 # Elementpuntlagen definiëren met behulp van dynamische punten{#defining-element-point-layers-using-dynamic-points}
 
+{{eol}}
+
 Wanneer u een elementpuntlaag maakt met behulp van dynamische punten, worden de breedte- en lengtegegevens ingesloten in elk element van de dimensie.
 
 Als u een elementpuntlaag wilt definiëren met behulp van dynamische punten, moet u het volgende maken of al beschikbaar hebben:
 
-* **Een dimensie**, die in het  [!DNL Transformation.cfg] dossier of een transformatiedataset wordt bepaald omvat dossier, waarin elk element de koord &quot;breedtegraad, lengtegraad&quot;of &quot;breedtegraad, lengtegraad, naam bevat.&quot;
+* **Een dimensie**, gedefinieerd in de [!DNL Transformation.cfg] bestand of een gegevensset voor transformatie bevat een bestand waarin elk element de tekenreeks &quot;latitude,longitude&quot; of &quot;latitude,longitude,name&quot; bevat.
 
-   Voor stappen om een afmeting tot stand te brengen, zie *de Gids van de Configuratie van de Dataset*.
+   Voor stappen om een dimensie te maken, raadpleegt u de *Configuratie-handleiding voor gegevensset*.
 
-* **Een laagbestand** dat de gerelateerde dimensie opgeeft.
+* **Een laagbestand** dat de gerelateerde dimensie aangeeft.
 
-   Voor meer informatie over het vereiste formaat van het laagdossier, zie [het Formaat van het Dossier van de Laag van het Punt van het Element](../../../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-elmt-pt-lyr-file-frmt.md#concept-678a95cb69644105a7af1b86ad5a5981).
+   Ga voor meer informatie over de vereiste indeling van het laagbestand naar [Laagbestandsindeling voor elementpunt](../../../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-elmt-pt-lyr-file-frmt.md#concept-678a95cb69644105a7af1b86ad5a5981).
 
 >[!NOTE]
 >
->Wanneer u [!DNL Dynamic Points] gebruikt, is het van essentieel belang dat de kardinaliteit van de afmetingen die in het laagbestand zijn opgegeven redelijk is. Als elke rij van een gegevensset een andere breedte en lengte heeft, wordt de afmeting snel gevuld en vallen de meeste rijen in een element Small Elements. Omdat het element Small Elements geen breedte en lengte heeft, wordt het niet op de wereldschaal weergegeven.
+>Wanneer u [!DNL Dynamic Points]is het van essentieel belang ervoor te zorgen dat de kardinaliteit van de in het laagbestand gespecificeerde afmetingen redelijk is. Als elke rij van een gegevensset een andere breedte en lengte heeft, wordt de afmeting snel gevuld en vallen de meeste rijen in een element Small Elements. Omdat het element Small Elements geen breedte en lengte heeft, wordt het niet op de wereldschaal weergegeven.
 
-## Bestandsindeling van elementpuntlaag {#section-bbcc2baa2f754dba81eba93339a97cbd}
+## Laagbestandsindeling voor elementpunt {#section-bbcc2baa2f754dba81eba93339a97cbd}
 
 Elk elementpuntlaagbestand dat gebruikmaakt van dynamische punten, moet worden opgemaakt met de volgende sjabloon:
 
@@ -72,7 +74,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Kleur </td> 
-   <td colname="col2"> Optioneel. De RGB-kleurvector, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. </td> 
+   <td colname="col2"> Optioneel. De kleurvector RGB, die wordt uitgedrukt als (rood, groen, blauw). Voor elke kleur in de vector kunt u een waarde tussen 0,0 en 1,0 invoeren. (1,0, 0,0, 0,0) is bijvoorbeeld helderrood en (0,5, 0,5, 0,5, 0,5) is grijs. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Rendermodus </td> 
@@ -86,7 +88,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Het [!DNL IP Coordinates.layer]-bestand is als volgt opgemaakt:
+De [!DNL IP Coordinates.layer] bestand is als volgt opgemaakt:
 
 ```
 Layer = ElementPointLayer:

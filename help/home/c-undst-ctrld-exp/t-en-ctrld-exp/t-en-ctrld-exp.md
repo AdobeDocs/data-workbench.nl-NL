@@ -4,7 +4,7 @@ solution: Analytics
 title: Gecontroleerde experimenten inschakelen
 uuid: 27d68fad-ae2d-4a2e-b449-fbaf88286cfa
 exl-id: 53c18524-6050-4708-af63-9e8ef8da389e
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Gecontroleerde experimenten inschakelen{#enabling-controlled-experimentation}
+
+{{eol}}
 
 Om gecontroleerde experimenteren toe te laten, moet iemand met beheerdertoegang tot uw Web of toepassingsservers de parameter ExpFile in het de configuratiedossier van de Sensor (gewoonlijk genoemd gebruikend txlogd.conf) op elke Web of toepassingsserver in uw Webcluster wijzigen waarop een Sensor wordt geïnstalleerd.
 

@@ -3,14 +3,16 @@ description: Stappen om de het programmadossiers van de Server van het Rapport t
 title: De rapportprogrammabestanden installeren
 uuid: 9c250783-7080-4c27-bd8c-add208b2b1bf
 exl-id: 8f871e5c-1267-4564-a168-398f9dc793a4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
 
 ---
 
-# Het installeren van de Dossiers van het Programma van het Rapport{#installing-the-report-program-files}
+# De rapportprogrammabestanden installeren{#installing-the-report-program-files}
+
+{{eol}}
 
 Stappen om de het programmadossiers van de Server van het Rapport te installeren.
 
@@ -27,8 +29,8 @@ De Server van het rapport is een cliënt van de Server van de Data Workbench en 
    Voor Windows 2008 Server 64-bits: [!DNL C:\Windows\SysWOW64\config\systemprofile\Desktop].
 
 1. Klik met de rechtermuisknop op de map.
-1. Selecteer **[!UICONTROL Properties]**.
-1. Selecteer **[!UICONTROL Security]**.
+1. Selecteren **[!UICONTROL Properties]**.
+1. Selecteren **[!UICONTROL Security]**.
 1. Klik op **[!UICONTROL Edit]**.
-1. **[!UICONTROL Everyone]** toevoegen.
+1. Toevoegen **[!UICONTROL Everyone]**.
 1. Volledige controle verlenen voor **[!UICONTROL Everyone]**.

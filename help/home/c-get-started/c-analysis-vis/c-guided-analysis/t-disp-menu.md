@@ -3,7 +3,7 @@ description: Stappen om informatie of opties voor een dimensie weer te geven.
 title: Het menu Dimension weergeven
 uuid: e2c4fa8d-3559-45bd-8ec5-d064c763b20b
 exl-id: 55b2cb3a-d82e-4e42-b1b6-079ca3667be8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Het menu Dimension weergeven{#display-the-dimension-menu}
+
+{{eol}}
 
 Stappen om informatie of opties voor een dimensie weer te geven.
 

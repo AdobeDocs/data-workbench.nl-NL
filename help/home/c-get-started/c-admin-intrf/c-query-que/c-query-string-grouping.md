@@ -1,20 +1,24 @@
 ---
-description: De Groepering van het Koord van de vraag laat u een groot aantal gebieden samen integreren.
-title: De Groepering van het Koord van de vraag
+description: Met Tekenreeksgroepering voor query kunt u een groot aantal velden samenvoegen.
+title: Groepering queryreeks
 uuid: 7dc5ba71-984f-4899-99d2-f79b57fb616d
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 4052cf7e-abdf-4e16-9f42-521c4e719786
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '147'
+ht-degree: 0%
 
 ---
 
+# Groepering queryreeks{#query-string-grouping}
 
-# De Groepering van het Koord van de vraag{#query-string-grouping}
+{{eol}}
 
-De Groepering van het Koord van de vraag laat u een groot aantal gebieden samen integreren.
+Met Tekenreeksgroepering voor query kunt u een groot aantal velden samenvoegen.
 
-De Groepering van het Koord van de vraag is specifiek voor elk profiel, maar de werken goed in transformaties zoals aangetoond in dit voorbeeld:
+De Groepering van het Koord van de vraag is specifiek voor elk profiel, maar werkt goed in transformaties zoals aangetoond in dit voorbeeld:
 
-1. Creeer de paren u wenst om te bundelen door een dossier van de douaneconfiguratie ( [!DNL E:\...\Dataset\Log Processing\SC Fields.cfg]) toe te voegen en dan het Type van Transformatie toe te voegen *BuildNameValuePair* als parameter.
+1. Maak de paren die u wilt bundelen door een aangepast configuratiebestand toe te voegen ( [!DNL E:\...\Dataset\Log Processing\SC Fields.cfg]) en voegt vervolgens het transformatietype toe *BuildNameValuePair* als parameter.
 
    ```
    2 = BuildNameValuePair:  
@@ -31,7 +35,7 @@ De Groepering van het Koord van de vraag is specifiek voor elk profiel, maar de 
              Output = string: x-event-list       
    ```
 
-1. Creeer een nieuw dossier voor het halen van de gecondenseerde gegevens in de gebieden u wenst te gebruiken door een dossier van de douaneconfiguratie ( [!DNL E:\...\Dataset\Transformation\SC Fields Transformation.cfg]) toe te voegen en dan het Type van Transformatie toe te voegen *ExtractNamePairs* als parameter.
+1. Maak een nieuw bestand om de gecondenseerde gegevens uit te pakken naar de velden die u wilt gebruiken door een aangepast configuratiebestand toe te voegen ( [!DNL E:\...\Dataset\Transformation\SC Fields Transformation.cfg]) en voegt vervolgens het transformatietype toe *ExtractNameValueParen* als parameter.
 
    ```
    2 = ExtractNameValuePairs:  
@@ -52,6 +56,6 @@ De Groepering van het Koord van de vraag is specifiek voor elk profiel, maar de 
 
 ## Andere toepassingen {#section-cc5d2b0c9e194fc88a5a18a06ef22f5e}
 
-Als u vele gebieden met douanevars, steunen, en variabelen hebt, tijdens logboekverwerking kunt u een paar van de naamwaarde bouwen om gebieden in een rapport te combineren. Bijvoorbeeld, kunt u genoemde-waardeparen in gecombineerde gebieden bouwen om de [!DNL tempDB] dossiergrootte te verminderen.
+Als u vele gebieden met douanevars, steunen, en variabelen hebt, tijdens logboekverwerking kunt u een paar van de naamwaarde bouwen om gebieden in een rapport te combineren. U kunt bijvoorbeeld benoemde-waardeparen samenstellen in gecombineerde velden om de [!DNL tempDB] bestandsgrootte.
 
 ![](assets/query_string_grouping.png)

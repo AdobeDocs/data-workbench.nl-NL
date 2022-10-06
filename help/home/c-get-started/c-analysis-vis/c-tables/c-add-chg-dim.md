@@ -3,7 +3,7 @@ description: U kunt meerdere dimensies aan een tabel toevoegen om een gedetaille
 title: Dimensies toevoegen, wijzigen en verplaatsen
 uuid: d8e67374-3b2b-4548-9322-e83c52941331
 exl-id: d2249f39-f4ab-4ec6-a2fb-90f8ecb2e3d1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Dimensies toevoegen, wijzigen en verplaatsen{#add-change-and-move-a-dimension}
+
+{{eol}}
 
 U kunt meerdere dimensies aan een tabel toevoegen om een gedetailleerdere cross-tablatie van de gegevens te verkrijgen.
 
@@ -32,7 +34,7 @@ In het volgende voorbeeld ziet u welke sessies metrisch worden weergegeven over 
 
 U kunt een dimensie naar een andere positie op dezelfde as of naar de tegenoverliggende as verplaatsen.
 
-* Klik met de rechtermuisknop op een element of op het label van de dimensie die u wilt verplaatsen, klik op **[!UICONTROL Move]***&lt; **[!UICONTROL dimension name]**>*en voer de gewenste stap uit:
+* Klik met de rechtermuisknop op een element of op het label van de dimensie die u wilt verplaatsen, en klik op **[!UICONTROL Move]***&lt; **[!UICONTROL dimension name]**>*Voer vervolgens de gewenste stap uit:
 
    * Als u een dimensie naar de tegenoverliggende as wilt verplaatsen, klikt u op de bovenste of de linkeras.
    * Als u locaties wilt omwisselen met een andere dimensie op dezelfde as, klikt u op **[!UICONTROL (move here)]**.

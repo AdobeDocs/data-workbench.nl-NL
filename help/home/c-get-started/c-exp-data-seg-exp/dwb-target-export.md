@@ -1,33 +1,37 @@
 ---
-description: De gegevens van de Werkbank van de Gegevens van de uitvoer naar het Doel van Adobe gebruikend TargetBulkUpload.exe van de Lijst van het Detail.
+description: De gegevens van de Data Workbench van de uitvoer naar Adobe Target gebruikend TargetBulkUpload.exe van de Lijst van het Detail.
 title: Exporteren naar Adobe Target
 uuid: 0eb99e6f-f0b5-495e-a3b6-df30f61378a7
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 41e885bb-182a-4983-98e8-65eec1da9fe9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '329'
+ht-degree: 0%
 
 ---
 
-
 # Exporteren naar Adobe Target{#export-to-adobe-target}
 
-De gegevens van de Werkbank van de Gegevens van de uitvoer naar het Doel van Adobe gebruikend TargetBulkUpload.exe van de Lijst van het Detail.
+{{eol}}
 
-De Werkbank van gegevens laat u dossiers uitvoeren om met het Doel van Adobe als deel van een geïntegreerde Wolk van de Ervaring van Adobe te integreren.
+De gegevens van de Data Workbench van de uitvoer naar Adobe Target gebruikend TargetBulkUpload.exe van de Lijst van het Detail.
 
-Het **[!DNL TargetBulkUpload]** dossier wordt gevonden in de omslag van Manuscripten *van de* Server \ in de dossiers van de serverinstallatie. Uitvoerbaar heeft retry logica, evenals extra logica om prestaties te optimaliseren.
+Met Data Workbench kunt u bestanden exporteren en integreren met Adobe Target als onderdeel van een geïntegreerde Adobe Experience Cloud.
 
-U kunt het `TargetBulkUpload.cfg` dossier wijzigen en het verplaatsen naar de omslag van de *Server/Admin/van de Uitvoer* alvorens in werking te stellen uploadt manuscript. Bijvoorbeeld, kunt u een Maximum Interval van de Onderbreking aan 720 minuten (gebrek) plaatsen om uit te onderbreken upload na de gespecificeerde periode.
+De **[!DNL TargetBulkUpload]** bestand is gevonden in het dialoogvenster *Server\Scripts* in de serverinstallatiebestanden. Het uitvoerbare bestand heeft een logica voor opnieuw proberen en aanvullende logica voor het optimaliseren van de prestaties.
 
-**Hoe werkt het?**
+U kunt de `TargetBulkUpload.cfg` bestand en verplaatsen naar *Server/beheerder/export* map voordat het uploadscript wordt uitgevoerd. U kunt bijvoorbeeld een max. time-outinterval instellen op 720 minuten (standaard) om een time-out in te stellen voor de upload na de opgegeven periode.
 
-Nadat de gegevens met succes naar Doel worden verzonden, wordt de status van upload onophoudelijk gecontroleerd. Als upload slaagt, wordt een succesbericht geregistreerd. Als upload ontbreekt of hangend is, gaat de controle verder. U kunt het onderbrekingsinterval in het `TargetBulkUpload.cfg` dossier vormen. Als upload vast bij Doel wordt, wordt een bericht geregistreerd en de status kan nog worden gecontroleerd.
+**Hoe werkt het**
 
-Er zijn twee logboekdossiers die in het spoor voor de teweeggebrachte uitvoer onder worden geproduceerd [!DNL /server/Trace/]:
+Nadat de gegevens naar Target zijn verzonden, wordt de status van de upload voortdurend gecontroleerd. Als het uploaden slaagt, wordt een succesbericht geregistreerd. Als het uploaden mislukt of in behandeling is, gaat de controle verder. U kunt het timeout interval configureren in het dialoogvenster `TargetBulkUpload.cfg` bestand. Als het uploaden bij Doel vastloopt, wordt een bericht geregistreerd en kan de status nog steeds worden gecontroleerd.
+
+Er worden twee logbestanden gegenereerd in de tracering voor de geactiveerde export onder [!DNL /server/Trace/]:
 
 * `targetbulkuploadexportname.log`
 * `targetbulkuploadexportname.log.completed`
 
-Het `targetbulkuploadexportname.log` dossier heeft de gedetailleerde status voor alle verslagen van veelvoudige partijen, de randserver die zij gaan, en de status (succesvol, ontbroken, gevonden niet profiel, onbekende status, en geplakt) gaan. Indien wordt vastgesteld dat een partij vast zit, wordt de partij niet verder verwerkt. Een geplakte partij URL is beschikbaar om de status te volgen. Zie de volgende voorbeeldgegevens van het `targetbulkuploadexportname.log.completed` dossier:
+De `targetbulkuploadexportname.log` bestand heeft de gedetailleerde status voor alle records van meerdere batches, de Edge-server waarnaar deze gaan en de status (geslaagd, mislukt, profiel niet gevonden, status onbekend en geplakt). Indien wordt vastgesteld dat een partij vast zit, wordt de partij niet verder verwerkt. Er is een vastgezette batch-URL beschikbaar om de status bij te houden. Zie de volgende voorbeeldgegevens van de `targetbulkuploadexportname.log.completed` bestand:
 
 ```
 1205057 total rows 
@@ -38,9 +42,8 @@ Het `targetbulkuploadexportname.log` dossier heeft de gedetailleerde status voor
 492339 stuck status
 ```
 
-De geplakte statuswaarde wordt verhoogd met de totale geplakte partijgrootte ongeacht hoeveel uploads succesvol of ontbroken zijn. De totale rijenwaarde wordt ook verhoogd door het zelfde aantal geplakt partijgrootte.
+De waarde voor de status &#39;plak&#39; wordt verhoogd met de totale omvang van de geplakte batch, ongeacht het aantal uploads dat is gelukt of mislukt. De totale rijwaarde wordt ook verhoogd met hetzelfde aantal geplakte batch-grootten.
 
 >[!NOTE]
 >
->Eerder, werden de gegevens DWB uitgevoerd gebruikend [!DNL ExportIntegration.exe]. Momenteel slechts worden MMP, CRS, en de uitvoer S/FTP gebruikt met dit uitvoerbaar. De integratie van het Doel van Adobe gebruikt nu [!DNL TargetBulkUpload.exe] in de Werkbank van Gegevens.
-
+>Eerder werden DWB-gegevens geëxporteerd met de [!DNL ExportIntegration.exe]. Momenteel worden slechts de uitvoer MMP, CRS, en S/FTP gebruikt met dit uitvoerbare dossier. Adobe Target-integratie gebruikt nu de [!DNL TargetBulkUpload.exe] in de Data Workbench.

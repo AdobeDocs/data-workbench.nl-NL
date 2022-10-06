@@ -3,7 +3,7 @@ description: De transformatie AppendURI verstrekt een manier om informatie aan d
 title: AppendURI
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
 exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
@@ -12,11 +12,13 @@ ht-degree: 0%
 
 # AppendURI{#appenduri}
 
+{{eol}}
+
 De transformatie AppendURI verstrekt een manier om informatie aan de standaardwaarde toe te voegen die uit de logboekingangen komt die worden gebruikt om de dataset te bouwen.
 
-De transformatie plaatst een naam-waardepaar aan het einde van het interne veld dat wordt gebruikt om de URI-dimensie te maken. Het naam-waarde paar wordt gebouwd gebruikend de Belangrijkste parameter van het Koord van de Vraag als naam en waarde van de geïdentificeerde parameter van de Input als waarde van het paar. Met de opdracht [!DNL AppendURI] voegt u de juiste ? en &amp; symbolen nodig om de naam-waardeparen van de [!DNL URI] stam en van om het even welke vorige [!DNL AppendURI] verrichtingen te scheiden die op URI kunnen zijn toegepast.
+De transformatie plaatst een naam-waardepaar aan het einde van het interne veld dat wordt gebruikt om de URI-dimensie te maken. Het naam-waarde paar wordt gebouwd gebruikend de Belangrijkste parameter van het Koord van de Vraag als naam en waarde van de geïdentificeerde parameter van de Input als waarde van het paar. De [!DNL AppendURI] voegt bevel om het even welk aangewezen toe? en &amp; symbolen nodig om de naam-waardeparen te scheiden van de [!DNL URI] stammen en uit een vorige [!DNL AppendURI] bewerkingen die mogelijk zijn toegepast op de URI.
 
-De [!DNL AppendURI]-transformatie werkt alleen wanneer deze is gedefinieerd in het [!DNL Transformation.cfg]-bestand of een [!DNL Transformation Dataset Include]-bestand.
+De [!DNL AppendURI] de transformatie werkt alleen wanneer deze is gedefinieerd in het dialoogvenster [!DNL Transformation.cfg] of een [!DNL Transformation Dataset Include] bestand.
 
 | Parameter | Beschrijving | Standaard |
 |---|---|---|
@@ -35,8 +37,8 @@ De modelmeningASP- pagina ontvangt al verkeer en bepaalt zijn acties die op de w
 
 * [!DNL modelview.asp]
 
-Dit zou in een vrij oninteressante afbeelding van het verkeer door de plaats resulteren, aangezien al verkeer door één enkele URI wordt gefundeerd. Om dit bepaalde scenario te richten en een informatieve mening in de onderliggende architectuur van de website te verstrekken, [!DNL AppendURI] kan worden gebruikt om enkele unieke naam-waarde paren van cs-uri-vraag gebied aan de dimensie van URI te bewegen die voor visualisaties wordt gebruikt. De hieronder getoonde transformatie geeft de details van een dergelijke transformatie:
+Dit zou in een vrij oninteressante afbeelding van het verkeer door de plaats resulteren, aangezien al verkeer door één enkele URI wordt gefundeerd. Om dit specifieke scenario aan te pakken en een meer informatief beeld te geven van de onderliggende architectuur van de website, [!DNL AppendURI] U kunt gebruiken om enkele unieke naam-waarde paren van het cs-uri-vraag gebied naar de dimensie van URI te verplaatsen die voor visualisaties wordt gebruikt. De hieronder getoonde transformatie geeft de details van een dergelijke transformatie:
 
 ![](assets/cfg_TransformationType_AppendURI.png)
 
-In dit voorbeeld worden door het systeem twee pagina&#39;s gebruikt om alle aanvragen af te handelen: [!DNL modelview.asp] en [!DNL xmlmodelview.asp]. Één pagina wordt gebruikt voor browser verkeer, en andere wordt gebruikt voor systeem-aan-systeem de mededelingen van XML. Het proces van de toepassingsserver gebruikt de id naam van cs-uri-vraag om te bepalen welke actie moet worden ondernomen. Daarom kunt u de waarde uit het gebied van identiteitskaart halen en het toevoegen aan URI. Het resultaat is een verzameling URI&#39;s met een variatiebereik die bezoekersverkeer via de website weerspiegelt. Hier bepaalt een voorwaarde [!DNL String Match] de logitems waarop de transformatie wordt toegepast door in het veld cs-uri-stem te zoeken naar de twee betrokken webpagina&#39;s en alle andere te negeren. De invoer (de waarde van ons naam-waardepaar) is het resultaat van cs-uri-query(id), die &quot;login is.&quot; Zoals gespecificeerd door de Belangrijkste parameter van het Koord van de Vraag, is de naam die wordt toegevoegd &quot;id.&quot; Voor de binnenkomende cs-uri-waarde van ons voorbeeld, is de resulterende URI die door de [!DNL URI] dimensie wordt gebruikt [!DNL /modelview.asp&id=login].
+In dit voorbeeld worden door het systeem twee pagina&#39;s gebruikt om alle aanvragen af te handelen: [!DNL modelview.asp] en [!DNL xmlmodelview.asp]. Één pagina wordt gebruikt voor browser verkeer, en andere wordt gebruikt voor systeem-aan-systeem de mededelingen van XML. Het proces van de toepassingsserver gebruikt de id naam van cs-uri-vraag om te bepalen welke actie moet worden ondernomen. Daarom kunt u de waarde uit het gebied van identiteitskaart halen en het toevoegen aan URI. Het resultaat is een verzameling URI&#39;s met een variatiebereik die bezoekersverkeer via de website weerspiegelt. Hier, a [!DNL String Match] De voorwaarde bepaalt de logboekingangen waarop de transformatie wordt toegepast door het cs-uri-stem gebied naar de twee Web-pagina&#39;s van belang te zoeken en alle anderen te negeren. De invoer (de waarde van ons naam-waardepaar) is het resultaat van cs-uri-query(id), die &quot;login is.&quot; Zoals gespecificeerd door de Belangrijkste parameter van het Koord van de Vraag, is de naam die wordt toegevoegd &quot;id.&quot; Voor de binnenkomende cs-uri-waarde van ons voorbeeld wordt de resulterende URI gebruikt door de [!DNL URI] dimensie is [!DNL /modelview.asp&id=login].

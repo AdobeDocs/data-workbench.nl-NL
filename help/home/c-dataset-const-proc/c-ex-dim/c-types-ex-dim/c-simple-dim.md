@@ -3,7 +3,7 @@ description: Een eenvoudige dimensie heeft een één-aan-vele verhouding met zij
 title: Eenvoudige Dimension
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
 exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Eenvoudige Dimension{#simple-dimensions}
+
+{{eol}}
 
 Een eenvoudige dimensie heeft een één-aan-vele verhouding met zijn oudertelbare dimensie.
 
@@ -69,7 +71,7 @@ Eenvoudige afmetingen worden gedefinieerd door de volgende parameters:
       <li id="li_0FBE7F0B7B9744D994ECEDAA08F0045C"> EERSTE RIJ: De waarde voor de eerste logbestandvermelding die betrekking heeft op het bovenliggende dimensielement wordt gebruikt, zelfs als de invoer leeg is. Als Invoer een vectorveld is, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. Als deze waarde leeg is of geen getal, of als het relevante logbestandvermelding niet voldoet aan de voorwaarde van de dimensie, wordt geen waarde gebruikt. </li> 
       <li id="li_C17190BC699D4A099DC5326C07D1044D"> LAATSTE NONBLANK: De laatste niet-lege inputwaarde wordt gebruikt, ongeacht of het uit de laatste logboekingang komt. Als Invoer een vectorveld is, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. </li> 
       <li id="li_00BAE86F12004C098F6A455908DB7062"> LAATSTE RIJ: De waarde voor de laatste logbestandvermelding die betrekking heeft op het bovenliggende dimensielement wordt gebruikt, zelfs als de invoer leeg is. Als Invoer een vectorveld is, wordt de eerste rij in de vector voor het desbetreffende logbestandvermelding gebruikt. Als deze waarde leeg is of geen getal, of als het relevante logbestandvermelding niet voldoet aan de voorwaarde van de dimensie, wordt geen waarde gebruikt. </li> 
-     </ul> </p> <p> <p>Opmerking:  Als de Verrichting geen waarde of een lege waarde voor een bepaalde logboekingang oplevert, zal het overeenkomstige element van de ouderafmeting op "niets"element van de eenvoudige afmeting betrekking hebben. </p> </p> <p> Geef een bewerking op om ervoor te zorgen dat de dimensie op de juiste manier wordt gedefinieerd. </p> </td> 
+     </ul> </p> <p> <p>Opmerking: Als de Verrichting geen waarde of een lege waarde voor een bepaalde logboekingang oplevert, zal het overeenkomstige element van de ouderafmeting op "niets"element van de eenvoudige afmeting betrekking hebben. </p> </p> <p> Geef een bewerking op om ervoor te zorgen dat de dimensie op de juiste manier wordt gedefinieerd. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -84,7 +86,7 @@ Dit voorbeeld illustreert de definitie van een eenvoudige dimensie met behulp va
 
 Bekijk het voorbeeld van een opiniepeiling van favoriete Girl Scout cookies van sitebezoekers. Een webpagina legt deze stem vast en retourneert deze naar de webserver in de naam-waardeparen-favoriet. Er wordt slechts één stem per bezoeker geteld, maar bezoekers kunnen hun mening wijzigen en desgewenst opnieuw stemmen. Dit is een één-op-veel relatie: een bezoeker kan veel stemmen hebben , maar elke stem heeft slechts betrekking op één bezoeker . Daarom is de ouder van de dimensie bezoekers (slechts één stem per bezoeker) en de operatie is LAST ROW (zodat zij hun mening kunnen veranderen en opnieuw kunnen stemmen).
 
-Voor alle soorten cookies moeten plaatsaanduidingen aanwezig zijn, zodat de cookietypen die geen stemmen ontvangen, worden weergegeven in de weergave op de werkbank. Daarom is een laadbestand gedefinieerd dat de lijst bevat met cookietypen die kunnen worden geselecteerd. De inhoud van dit bestand, opgeslagen in een bestand met de naam [!DNL cookietypes.txt], ziet er ongeveer als volgt uit:
+Voor alle soorten cookies moeten plaatsaanduidingen aanwezig zijn, zodat de cookietypen die geen stemmen ontvangen, worden weergegeven in de weergave op de werkbank. Daarom is een laadbestand gedefinieerd dat de lijst bevat met cookietypen die kunnen worden geselecteerd. De inhoud van dit bestand wordt opgeslagen in een bestand met de naam [!DNL cookietypes.txt]ziet er ongeveer als volgt uit:
 
 Dierlijke schatten
 

@@ -3,7 +3,7 @@ description: De afmetingen van de latentie worden geconstrueerd van een oudertel
 title: Een latentiedimensie maken
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
 exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -12,15 +12,17 @@ ht-degree: 0%
 
 # Een latentiedimensie maken{#create-a-latency-dimension}
 
+{{eol}}
+
 De afmetingen van de latentie worden geconstrueerd van een oudertelbare afmeting, zoals Zittingen, en een tijdafmeting, zoals Dag.
 
 Wanneer u een latentietabel in Data Workbench maakt, voegt u automatisch een latentiedimensie toe aan het visualisatiebestand (.vw). U kunt de latentiedimensie van een tabel bewerken door de onderstaande stappen te volgen.
 
 **Een latentiedimensie bewerken**
 
-1. Open de latentietabel die u in een teksteditor zoals Kladblok hebt gemaakt. U vindt deze in de map Gebruiker > `working profile name` > Werkmap in de installatiemap van de Data Workbench.
+1. Open de latentietabel die u in een teksteditor zoals Kladblok hebt gemaakt. Deze bevindt zich in de map Gebruiker > `working profile name` > Werkmap in de installatiemap van de Data Workbench.
 
-   De gedefinieerde latentiedimensie bevat de parameters die in het volgende voorbeeld worden getoond. (De definitie van de latentiedimensie kan aanvullende parameters bevatten.) De [!DNL line entity = LatencyDim:] geeft het begin van de definitie van de latentiedimensie aan.
+   De gedefinieerde latentiedimensie bevat de parameters die in het volgende voorbeeld worden getoond. (De definitie van de latentiedimensie kan aanvullende parameters bevatten.) De [!DNL line entity = LatencyDim:] Hiermee wordt het begin van de definitie van de latentiedimensie aangegeven.
 
    ```
    entity = LatencyDim:
@@ -55,7 +57,7 @@ Wanneer u een latentietabel in Data Workbench maakt, voegt u automatisch een lat
    </tr> 
    <tr> 
       <td colname="col1"> <p>Clip </p> </td> 
-      <td colname="col2"> <p>Een aftelbare dimensie die een één-op-vele verhouding met het niveau van de latentiedimensie heeft. Latentie wordt niet berekend over de grenzen van deze dimensie. Als u bijvoorbeeld een niveau van paginaweergave en een clip van sessie opgeeft, worden latentie berekend voor de paginaweergaven die tijdens dezelfde sessie als de gebeurtenis hebben plaatsgevonden. </p> <p>Voor informatie over één-aan-vele (eenvoudige) afmetingen, zie <i>Gids van de Configuratie van de Dataset</i>. </p> </td> 
+      <td colname="col2"> <p>Een aftelbare dimensie die een één-op-vele verhouding met het niveau van de latentiedimensie heeft. Latentie wordt niet berekend over de grenzen van deze dimensie. Als u bijvoorbeeld een niveau van paginaweergave en een clip van sessie opgeeft, worden latentie berekend voor de paginaweergaven die tijdens dezelfde sessie als de gebeurtenis hebben plaatsgevonden. </p> <p>Zie voor informatie over een-op-veel (eenvoudige) afmetingen de <i>Configuratie-handleiding voor gegevensset</i>. </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> <p>Tijd </p> </td> 
@@ -80,7 +82,7 @@ Wanneer u een latentietabel in Data Workbench maakt, voegt u automatisch een lat
    </tbody> 
    </table>
 
-1. Sla het [!DNL .vw]-bestand op in de map User\*working profile name*\Work.
+1. Sla de [!DNL .vw] bestand naar de map User\*working profile name*\Work.
 
    Hier volgen de instellingen voor de standaardlatentiedimensie:
 

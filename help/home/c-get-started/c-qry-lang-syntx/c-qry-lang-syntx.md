@@ -3,14 +3,16 @@ description: De taalsyntaxis van de vraag voor het creëren en het uitgeven metr
 title: Syntaxis querytaal
 uuid: 446df540-b3e5-4c21-a0a7-766abddff43d
 exl-id: 8beb2745-1452-4373-87d2-ada705de90b1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
 
 ---
 
-# Syntaxis van de taal van de vraag{#query-language-syntax}
+# Syntaxis querytaal{#query-language-syntax}
+
+{{eol}}
 
 De taalsyntaxis van de vraag voor het creëren en het uitgeven metrische, afmeting, en filteruitdrukkingen.
 

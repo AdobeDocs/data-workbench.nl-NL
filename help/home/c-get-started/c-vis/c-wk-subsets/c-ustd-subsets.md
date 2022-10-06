@@ -3,29 +3,31 @@ description: Conceptuele informatie over subsets.
 title: Subsets begrijpen
 uuid: ed185b63-dbb3-4ed4-9403-cf4dc8be2ff1
 exl-id: a75b36f9-d34d-4a4a-8a2c-15ae5461823c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
 
 ---
 
-# Subsets{#understanding-subsets}
+# Subsets begrijpen{#understanding-subsets}
+
+{{eol}}
 
 Conceptuele informatie over subsets.
 
 Houd rekening met het volgende wanneer u een subset gebruikt:
 
-* Al uw benchmarks hebben nu betrekking op uw subset, niet op de gehele dataset, die veel nuttiger is wanneer het analyseren van een specifieke subset. Zie [Benchmarks](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914) begrijpen.
+* Al uw benchmarks hebben nu betrekking op uw subset, niet op de gehele dataset, die veel nuttiger is wanneer het analyseren van een specifieke subset. Zie [Benchmarks begrijpen](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914).
 * Het gebruik van een subset is van invloed op al uw werkruimten, omdat de subset globaal wordt toegepast op de Data Workbench.
 * Subsets hebben alleen invloed op metrieke en denormale afmetingen, niet op normale afmetingen.
-* Als u [!DNL Report] gebruikt, hebben subsets geen invloed op de gegevens in rapporten die worden gepubliceerd voor anderen om deze te bekijken.
+* Wanneer u [!DNL Report], hebben subsets geen invloed op de gegevens in rapporten die voor anderen worden gepubliceerd.
 * Nadat de subset is toegepast, geldt deze voor alle volgende bewerkingen in het profiel, inclusief de volgende keer dat u deze instantie van Data Workbench opent, totdat u deze verwijdert.
 * De enige plaats die erop wijst dat een ondergroep is toegepast is het contextmenu dat u door binnen een werkruimte met de rechtermuisknop te klikken bereikt.
 
    ![](assets/mnu_Subset.png)
 
-* U moet online werken om een subset te wijzigen of te verwijderen. Als u offline werkt en een subset hebt toegepast, kunt u de resultaten van de gehele gegevensset niet weergeven. Zie [Offline werken en Online](../../../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
+* U moet online werken om een subset te wijzigen of te verwijderen. Als u offline werkt en een subset hebt toegepast, kunt u de resultaten van de gehele gegevensset niet weergeven. Zie [Offline werken en online werken](../../../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
 
    >[!NOTE]
    >

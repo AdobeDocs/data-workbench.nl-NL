@@ -3,14 +3,16 @@ description: Voer de volgende stappen uit om een nieuwe trechter-visualisatie te
 title: Een trechter bouwen
 uuid: 88afa09d-42ff-4e3b-b5cc-d74e01f4fc39
 exl-id: 24b63998-3aad-4ddf-b2d2-78dd0df9a510
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
 
 ---
 
-# Een trechter opbouwen{#building-a-funnel}
+# Een trechter bouwen{#building-a-funnel}
+
+{{eol}}
 
 Voer de volgende stappen uit om een nieuwe trechter-visualisatie te maken
 
@@ -28,9 +30,9 @@ Voer de volgende stappen uit om een nieuwe trechter-visualisatie te maken
 
    ![](assets/step2-funnel.png)
 
-1. Voeg een dimensie toe door het element te selecteren, dan belemmering terwijl dan het houden **[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**.
+1. Een dimensie toevoegen door het element te selecteren en vervolgens te slepen terwijl u het ingedrukt houdt **[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**.
 
-1. Sleep het element naar de gewenste positie over de doelzone, **[!UICONTROL Drag Dimension Element Here]**.
+1. Sleep het element naar de gewenste positie over de doelzone. **[!UICONTROL Drag Dimension Element Here]**.
 
    ![](assets/step4-funnel.png)
 
@@ -46,6 +48,6 @@ Voer de volgende stappen uit om een nieuwe trechter-visualisatie te maken
 
    ![](assets/last-image-funnel.png)
 
-Vanuit het Kanaal kunt u uw uitval identificeren en door tarieven en het percentage klanten vallen die verkoop en volgende campagnes of inhoudspaden omzetten. Voor extra informatie, kunt u [Wadbrowser](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) openen om een gedetailleerde lijst van de pagina&#39;s te zien die alvorens bij de geselecteerde pagina, en de wegen worden genomen nadat zij verlaten.
+Vanuit het Kanaal kunt u uw uitval identificeren en door tarieven en het percentage klanten vallen die verkoop en volgende campagnes of inhoudspaden omzetten. Voor meer informatie kunt u een [Padbrowser](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) om een gedetailleerde lijst weer te geven van de pagina&#39;s die zijn gemaakt voordat de geselecteerde pagina is aangekomen, en van de paden die zijn gebruikt nadat deze zijn verlaten.
 
-Zie extra [Functies van de trechter](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3).
+Zie extra [Functies in trechter](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3).

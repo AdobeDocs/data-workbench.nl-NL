@@ -3,14 +3,16 @@ description: Het dashboard voor de gegevenswerkbank bevat een zijbalk en werkbal
 title: Gebruikersinterface dashboard
 uuid: cfa6c553-e223-4b0e-8b4a-255afa85c999
 exl-id: f80da6c7-02cb-4916-b139-617703cf27b6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 1%
 
 ---
 
-# Dashboard User Interface{#dashboard-user-interface}
+# Gebruikersinterface dashboard{#dashboard-user-interface}
+
+{{eol}}
 
 Het dashboard voor de gegevenswerkbank bevat een zijbalk en werkbalk met functiemenu&#39;s en een dashboardcanvas waar u gegevensvisualisatie kunt weergeven.
 
@@ -43,6 +45,6 @@ De bovenste werkbalk biedt toegang tot deze specifieke menu&#39;s. Ook wordt de 
 | Menu Dashboard | Een vervolgkeuzemenu voor het openen, maken, opslaan en exporteren van dashboards. |
 | Menu Visualisatie toevoegen | Een vervolgkeuzemenu voor het toevoegen van visualisaties aan het dashboard. |
 | Dashboardtitel | Hiermee geeft u de titel van het huidige dashboard weer. |
-| Menu Bijwerken | Als u op de indicator **[!UICONTROL Update]** klikt, wordt het huidige dashboard bijgewerkt, rekening houdend met nieuwe selecties en/of configuratiewijzigingen. Het menu biedt de mogelijkheid om de parameter **[!UICONTROL Query-to]** aan te passen, samen met enkele geavanceerde functies voor beheerders. |
+| Menu Bijwerken | Klik op de knop **[!UICONTROL Update]** de indicator zal het huidige dashboard bijwerken, rekening houdend met nieuwe selecties en/of configuratieveranderingen. Het menu biedt de mogelijkheid om de **[!UICONTROL Query-to]** parameter, samen met sommige geavanceerde functies voor beheerders. |
 | Menu Help | Dit vervolgkeuzemenu wordt gebruikt voor toegang tot de sectie Gebruikershandleiding, Veelgestelde vragen en Over van de toepassing. |
 | Menu Gebruiker | Een vervolgkeuzemenu voor het afmelden, het openen van accountinstellingen en het openen van het beheergebied (alleen voor beheerders). |

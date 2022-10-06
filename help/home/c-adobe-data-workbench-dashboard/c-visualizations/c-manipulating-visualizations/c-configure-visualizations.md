@@ -1,16 +1,18 @@
 ---
 description: Visualisaties kunnen eenvoudig worden geconfigureerd en opnieuw worden geconfigureerd.
-title: Visualisaties configureren
+title: Visualisaties configureren en opnieuw configureren
 uuid: d918f45b-2e4d-499f-902f-bcc661fe12f3
 exl-id: d70869ee-fb75-47a3-92fe-518f69f5fe73
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 90b9fff995cb37a62024f454f009e9e0d7b927cd
 workflow-type: tm+mt
-source-wordcount: '61'
+source-wordcount: '65'
 ht-degree: 0%
 
 ---
 
-# Visualisaties configureren{#configuring-visualizations}
+# Visualisaties configureren en opnieuw configureren{#configuring-reconfiguring-visualizations}
+
+{{eol}}
 
 Visualisaties kunnen eenvoudig worden geconfigureerd en opnieuw worden geconfigureerd.
 

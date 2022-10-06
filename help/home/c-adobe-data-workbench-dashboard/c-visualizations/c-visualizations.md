@@ -3,7 +3,7 @@ description: Visualisaties zijn elementen die aan het dashboardcanvas worden toe
 title: Visualisaties
 uuid: 1e15de30-7761-422a-a836-7a1b49b58daf
 exl-id: 7e8b23cd-5e95-4cd5-b07e-3aa53f26fac7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Visualisaties{#visualizations}
+
+{{eol}}
 
 Visualisaties zijn elementen die aan het dashboardcanvas worden toegevoegd en worden geconfigureerd om verschillende op metrische en dimensies gebaseerde gegevens weer te geven.
 
@@ -31,7 +33,7 @@ De acht beschikbare visualisatietypen zijn:
 * Spreidingsplokken
 * RTF
 
-## Gebruikersinterface {#section-54a73865f00742268340cf9123d6c590} visualiseren
+## Gebruikersinterface visualisatie {#section-54a73865f00742268340cf9123d6c590}
 
 Het koptekstgedeelte van de visualisatie bevat de visualisatietitel en de visualisatiegereedschappen, die afhankelijk van het type en de staat van de visualisatie variëren. De hoofdtekst van de visualisatie bevat de inhoud en is afhankelijk van het type en de configuratie van de visualisatie die wordt weergegeven. De visualisatiegereedschappen worden alleen weergegeven wanneer de muis het visualisatievenster binnengaat. Anders worden ze verborgen.
 

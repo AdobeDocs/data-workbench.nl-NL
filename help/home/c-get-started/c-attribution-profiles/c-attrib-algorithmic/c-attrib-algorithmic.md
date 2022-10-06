@@ -1,113 +1,118 @@
 ---
-description: Best Fit Attribution is een machine-leert benadering om attributiewaarden over de verschillende kanalen van een succesvolle omzettingsgebeurtenis toe te wijzen. De Werkbank van gegevens evalueert automatisch bijdragen aan succes over een venster van tijd per kanaal, en bouwt dan een attributiemodel dat op de daadwerkelijke de interactiepatronen van uw klanten wordt gebaseerd.
-title: Best Fit Attribution
+description: Best Fit Attribution is een machine-leert benadering om attributiewaarden over de verschillende kanalen van een succesvolle omzettingsgebeurtenis toe te wijzen. Data Workbench evalueert automatisch bijdragen aan succes over een periode per kanaal, en bouwt dan een attributiemodel dat op de daadwerkelijke interactiepatronen van uw klanten wordt gebaseerd.
+title: Kenmerk best passend
 uuid: 0c51beb3-8f74-4f8e-9722-0c885140c8ce
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 225a54d0-370c-4274-8a87-dc287bbb8201
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 0%
 
 ---
 
+# Kenmerk best passend{#best-fit-attribution}
 
-# Best Fit Attribution{#best-fit-attribution}
+{{eol}}
 
-Best Fit Attribution is een machine-leert benadering om attributiewaarden over de verschillende kanalen van een succesvolle omzettingsgebeurtenis toe te wijzen. De Werkbank van gegevens evalueert automatisch bijdragen aan succes over een venster van tijd per kanaal, en bouwt dan een attributiemodel dat op de daadwerkelijke de interactiepatronen van uw klanten wordt gebaseerd.
+Best Fit Attribution is een machine-leert benadering om attributiewaarden over de verschillende kanalen van een succesvolle omzettingsgebeurtenis toe te wijzen. Data Workbench evalueert automatisch bijdragen aan succes over een periode per kanaal, en bouwt dan een attributiemodel dat op de daadwerkelijke interactiepatronen van uw klanten wordt gebaseerd.
 
-**[!UICONTROL Best Fit Attribution]** laat u de interacties, of de aanrakingen vergelijken, die tot een succesvolle verkoop, e-mailaanmelding, of andere prestatiesindicatoren hebben bijgedragen. De attributieanalyse wijst automatisch gewicht aan de belangrijkste aanrakingen toe en verstrekt een toewijzingsmodel per kanaal dat op uw gegevens wordt gebaseerd en ontvankelijk aan uw markt en interne protocollen.
+**[!UICONTROL Best Fit Attribution]** Hiermee kunt u de interacties (of aanrakingen) vergelijken die hebben bijgedragen tot een geslaagde verkoop, e-mailaanmelding of andere prestatie-indicatoren. De attributieanalyse wijst automatisch gewicht aan de belangrijkste aanrakingen toe en verstrekt een attributiemodel per kanaal dat op uw gegevens wordt gebaseerd en aan uw markt en interne protocollen reageert.
 
 ![](assets/attrib_windows_5.png)
 
-Bijvoorbeeld, als een klant uw plaats door een organisch onderzoek bezoekt, dan begint met een campagne, en dan ondertekent voor een e-mail, zou de op [regel-gebaseerde Attributie](/help/home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md) de eerste aanraking of laatste aanraking identificeren, of gelijkmatig succesattributie over alle aanrakingspunten verdelen gebruikend vooraf ingestelde attributiemodellen. Wanneer de op regels gebaseerde attributie door de gebruiker wordt bepaald, bepaalt de attributen Best Fit waarden door een algoritme door de waarschijnlijkheid van een omzetting als functie van de waargenomen aanrakingspunten te berekenen.
+Als een klant bijvoorbeeld uw site bezoekt via een organische zoekopdracht, voert u een campagne en meldt u zich vervolgens aan voor een e-mail, [Op regels gebaseerde Attributie](/help/home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md) zou de eerste aanraking of laatste aanraking identificeren, of zou succesattributie gelijkmatig over alle aanraakpunten verdelen gebruikend vooraf ingestelde attributiemodellen. Wanneer op regels gebaseerde attributie door de gebruiker wordt bepaald, plaatst de attributen Best Fit waarden door een algoritme door de waarschijnlijkheid van een omzetting als functie van de waargenomen aanrakingspunten te berekenen.
 
 >[!NOTE]
 >
->Om de **Beste Toewijzing** van de Geschikte in de Werkbank van Gegevens in werking te stellen, moet u uw servercertificaat ( [!DNL .pem file]) bijwerken om de Premie van de Analyse van Adobe te steunen. U moet ook **Premium** aan uw douane [!DNL Profile.cfg] voor de cliënt toevoegen en nieuwe certificaten van Adobe ClientCare voor de Server en de Server van het Rapport ontvangen.
+>Uitvoeren **Kenmerk best passend** in Data Workbench, moet u uw servercertificaat bijwerken ( [!DNL .pem file]) ter ondersteuning van Adobe Analytics Premium. U moet ook toevoegen **Premium** naar uw aangepaste [!DNL Profile.cfg] voor de cliënt en ontvangt nieuwe certificaten van Adobe ClientCare voor Server en de Server van het Rapport.
 
-## Basisinstallatie {#section-db597eaee462412ea7280d1426366c61}
+## Basisinstelling {#section-db597eaee462412ea7280d1426366c61}
 
-Zie [Bouwen een Beste Passende Attributie](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-building.md#concept-fede6fc4f592475fa8b351b1765a522d) voor geleidelijke instructies.
+Zie [Een kenmerk best passend maken maken](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-building.md#concept-fede6fc4f592475fa8b351b1765a522d) voor stapsgewijze instructies.
 
-**Plaats metrisch** Bepaal van het Succes metrisch het vertegenwoordigen van een succesgebeurtenis.
+**Metrische waarde voor succes instellen**
+Bepaal metrisch die een succesgebeurtenis vertegenwoordigen.
 
 ![](assets/attrib_windows_1.png)
 
-Metrisch van het Succes is vaak *Orden*, hoewel u de Werkbank van hefboomwerkingenGegevens kunt om een zeer gecompliceerd succes te bepalen metrisch samen met het Venster van het Succes.
+De succesmetrische waarde is vaak *Orders*, hoewel u Data Workbench kunt gebruiken om een zeer gecompliceerde succesmetrische waarde samen met het Venster van het Succes te bepalen.
 
-**Plaats metrisch** Aanraakvlak (facultatief)
+**De aanraakmeting instellen** (optioneel)
 
-Identificeer interacties om te volgen die tot een succesvolle omzetting leidden, dan plaats metrische Aanraking waarover de attributen zullen worden berekend.
+Identificeer interacties om bij te houden die tot een succesvolle omzetting leidden, dan plaats metrisch van de Aanraking waarover de attributie zal worden berekend.
 
 >[!NOTE]
 >
->Het plaatsen van metrische Aanraking wordt slechts vereist als u het gebruikt om de Metriek van het Kanaal van belemmering af te leiden en de elementen van de Dimensie te laten vallen in plaats van het gebruiken van bestaande metriek van het Kanaal.
+>Het instellen van een aanraakmeting is alleen vereist als u deze gebruikt om Kanaalmetriek af te leiden van het slepen en neerzetten van Dimension-elementen in plaats van bestaande kanaalmetriek te gebruiken.
 
-Als u geen metrisch hebt die voor campagnes of kanalen wordt bepaald, maar afmetingen hebben die kanalen vertegenwoordigen, kan de Beste Geschikte Attributie hen voor u bouwen automatisch gebaseerd op metrische Aanraking.
+Als u geen metrische definitie voor campagnes of kanalen hebt, maar afmetingen die kanalen vertegenwoordigen hebben, kan Beste Aanpasbare Attributie hen voor u automatisch bouwen die op metrisch van de Aanraking wordt gebaseerd.
 
-Bijvoorbeeld, met de metrische reeks van de Aanraking als *Hits*, en gegeven een dimensie genoemd het Type *van* Media met elementen die *E-mail*, de Versie *van de* Pers, de *Druk Ad***[!DNL Hits where Media Type = Email] , en  Media omvatten, zal de visualisatie de metriek van het Kanaal van de vorm produceren wanneer u sleept en de elementen op de visualisatie laat vallen.
+Met de set Touch Metric bijvoorbeeld als *Hits* en een dimensie krijgen die *Mediatype* met elementen die *E-mail*, *Persbericht*, *Ad afdrukken*, en *Sociale media* resulteert de visualisatie in Kanaalwaarden van het formulier [!DNL Hits where Media Type = Email] wanneer u het element of de elementen naar de visualisatie sleept.
 
 ![](assets/attrib_windows_2.png)
 
-De metrisch Touch bepaalt dan de toewijzing van toewijzingsscores om marketing interactie te identificeren die voor succes wordt beschouwd, die u toestaan om marketing te kwalificeren tochten voor de bevolking die in het venster van het Succes wordt geïdentificeerd. U kunt metrisch zoals de Meningen *van de* Pagina of de *Hits* plaatsen, of de aangepaste aanrakingsmetriek gebruiken specifiek voor uw behoeften.
+De Touch-parameter bepaalt vervolgens de toewijzing van toewijzingsscores om marketinginteracties te identificeren die van invloed zijn op succes, zodat u marketingtips kunt kwalificeren voor de populatie die in het venster Succes is geïdentificeerd. U kunt metrisch instellen, zoals *Paginaweergaven* of *Hits* of gebruik aangepaste aanraakmetriek die specifiek is voor uw behoeften.
 
-In veel gevallen, zou het venster van de Aanraking het venster van het Succes moeten omvatten om een lange aanlooptijd in de verkoopcyclus te evalueren.
+In veel gevallen moet het venster Touch het venster Success bevatten om een lange aanlooptijd in de verkoopcyclus te evalueren.
 
-**Plaats metrisch de Opbrengst.**
+**Stel de maatstaf voor inkomsten in.**
 
-U kunt verkiezen om opbrengst over aanrakingspunten te identificeren door aangewezen opbrengst metrisch te plaatsen. Indien gespecificeerd, zal het model de distributie van opbrengst over de inputkanalen tonen. ![](assets/attrib_windows_6.png)
+U kunt ervoor kiezen om inkomsten te identificeren tussen aanraakpunten door een geschikte inkomstenmaatstaf in te stellen. Indien gespecificeerd, zal het model de verdeling van opbrengst over de inputkanalen tonen. ![](assets/attrib_windows_6.png)
 
-U kunt opbrengst metrisch met de types van muntgegevens plaatsen om succes over alle hoogste die aanrakingspunten toe te wijzen en worden bepaald en worden geanalyseerd. Deze metrische verdeling onderverdeeld de definitieve verkoopopbrengst en wijst gebaseerd op de weging toe die door het algoritme wordt toegewezen.
+U kunt een opbrengstmetrische met muntgegevenstypes plaatsen om succes over alle hoogste vastgestelde en geanalyseerde aanraakpunten toe te wijzen. Deze maatstaf verdeelt de eindverkoopopbrengst en verdeelt deze op basis van de door het algoritme toegewezen weging.
 
-**Stel het succes in en tik op Windows.**
+**Stel de opties Succesvol en Touch Windows in.**
 
-Het venster van het Succes bepaalt de te onderzoeken bevolking en de periode voor succesvolle gebeurtenissen, die u toestaan om op de vensters van tijd en breedte van bevolking te wijzen om voor de analyse door een werkruimteselectie te overwegen. Het venster van het **Succes** bepaalt de periode en de populatie om voor succesgebeurtenissen te onderzoeken. Het venster **Touch** specificeert de historische tijdspanne om voor kanaalinteractie te onderzoeken die tot de succesgebeurtenissen leiden.
+Het venster van het Succes bepaalt de bevolking te onderzoeken en de periode voor succesvolle gebeurtenissen, die u toestaan om op de vensters van tijd en breedte van bevolking te wijzen om voor de analyse door een werkruimteselectie te overwegen. De **Succes** window bepaalt de periode en de bevolking om op succesgebeurtenissen te onderzoeken. De **Aanraken** window specificeert de historische tijdspanne om voor kanaalinteractie te onderzoeken die tot de succesgebeurtenissen leiden.
 
 >[!NOTE]
 >
->Het plaatsen van een Metrisch van de Aanraking wordt slechts vereist als u probeert om de metriek van het Succes automatisch te bouwen door afmetingselementen op de visualisatie te slepen.
+>Het instellen van een aanraakmetrisch is alleen vereist als u cijfers voor succes automatisch probeert te maken door dimensie-elementen naar de visualisatie te slepen.
 
-U kunt een dag, maand, jaar, of om het even welk beschikbaar tijdkader plaatsen om uw evaluatie van succes te beperken en gebeurtenissen over de verkoopcyclus of voor specifiek publiek te raken dat uw plaats ingaat. Het creëren van vensters om attributie te beperken staat u toe om uw analyse op de relevante periodes van tijd voor uw specifieke behoeften te concentreren.
+U kunt een dag, maand, jaar, of om het even welk beschikbaar tijdkader plaatsen om uw evaluatie van succes te beperken en gebeurtenissen over de verkoopcyclus te raken of voor specifieke publiek dat uw plaats ingaat. Door vensters te maken om de toewijzing te beperken, kunt u uw analyse toespitsen op de relevante tijdsperiodes voor uw specifieke behoeften.
 
 ![](assets/attrib_windows_4.png)
 
-In veel gevallen, zult u het venster van de Aanraking willen om het venster van het Succes te omvatten om u te laten uw analyse over een lange aanlooptijd uitbreiden die op uw verkoopvenster wordt gebaseerd. Of u kunt aanrakingen van de succesgebeurtenis volgen en analyseren afzonderlijk.
+In veel gevallen wilt u dat het venster Touch het venster Success bevat, zodat u de analyse kunt uitbreiden over een lange doorlooptijd die is gebaseerd op uw verkoopvenster. Of u kunt aanrakingen afzonderlijk van de succesgebeurtenis volgen en analyseren.
 
-**Selecteer de Kanalen.**
+**Selecteer de kanalen.**
 
-Wanneer het ingaan van kanalen hebt u twee keuzen.
+Bij het invoeren van kanalen hebt u twee mogelijkheden.
 
-**Voeg de Metrische Aanraking toe en voeg de Elementen van de Dimensie aan de Kanalen toe**
+**Voeg de optie Metrisch aanraken toe en voeg Dimension-elementen toe aan de kanalen**
 
-In veel gevallen, zult u de hoogste aanrakingspunten door afmetingselementen willen onderverdelen om specifieke kanalen te bepalen. Gebaseerd op de elementenwaarden, zal de Beste Passende Attributie automatisch de hoogste uitvoerders selecteren en hen rangschikken volgens percentage en hen tonen in een grafiekvisualisatie.
+In veel gevallen zult u de bovenste aanraakpunten willen splitsen op dimensie-elementen om specifieke kanalen te definiëren. Gebaseerd op de elementwaarden, zal Best Fit Attribution automatisch de hoogste uitvoerders selecteren en zal hen op percentage rangschikken en hen in een grafiekvisualisatie tonen.
 
 ![](assets/attrib_windows_7.png)
 
-Een attributiemodel wordt gemaakt door gebruik te maken van de bezoekers die tijdens het venster Succes hebben gecommuniceerd en door de kanaalaanraakacties tijdens het aanraakvenster te bekijken, wat al dan niet heeft geleid tot een geslaagde gebeurtenis.
+Een attributiemodel wordt samengesteld door te tekenen op de bezoekers die tijdens het venster Succes met elkaar hebben gewerkt en de kanaalaanrakingen te bekijken tijdens het aanraakvenster die al dan niet tot een geslaagde gebeurtenis hebben geleid.
 
-## Onderbrekend door Kanalen {#section-a30592b84bc84f57bd2b988824e852d4}
+## Omlaag splitsen op kanalen {#section-a30592b84bc84f57bd2b988824e852d4}
 
-Wanneer u kanalen invoert, hebt u twee opties:
+Bij het invoeren van kanalen hebt u twee opties:
 
-* Voeg een Metrische **** Aanraking toe en voeg dan de Elementen **van de** Dimensie voor de Kanalen toe.
+* Voeg een **Touch Metric** en vervolgens toevoegen **Dimension Elements** voor de Kanalen.
 
    **of**
 
 * Creeer metriek die filter voor de kanaalelementen die u wilt evalueren.
 
-**Optie 1: Voeg een Metrische Aanraking toe en voeg de Elementen van de Dimensie voor Kanalen** toe.
+**Optie 1: Een touch-metrisch toevoegen en Dimension-elementen toevoegen voor kanalen**.
 
-Dat is de gemakkelijkste aanpak. Beste Geschikte Attributie leidt tot de metriek automatisch om voor attributie te evalueren. In het voorbeeld hieronder is de Metrische Aanraking ***Hits*** en de Kanalen zijn: De ***Campagnes*** van de vertoning, ***E-mailCampagnes***, en ***SEM campagnes***.
+Dit is de gemakkelijkere aanpak. Met kenmerk Aanpassen aan maakt u de meetgegevens automatisch om de kenmerken te evalueren. In het onderstaande voorbeeld is de Touch Metric ***Hits*** en Kanalen zijn: ***Campagnes weergeven***, ***E-mailcampagnes***, en ***SEM-campagnes***.
 
-Gebruikend deze methode, leidt de Beste Geschikte Attributie tot metrisch op de achtergrond voor de evaluatie van de attributen over de kanalen (maar u ziet nooit auto-geproduceerde metrisch en zij worden niet bewaard). In het voorbeeld hieronder, worden drie metriek gecreeerd waar de Hits voor elk van de drie kanalen (b.v., de Campagnes *van de* Vertoning, *E-mailCampaigns*, en *SEM Campaigns*) wordt gefiltreerd. Dit is het gemakkelijkst omdat u de Beste Geschikte Attributie laat tot de metriek voor u leiden.
+Met deze methode maakt u een maateenheid op de achtergrond voor het evalueren van de toewijzing via de kanalen (maar u ziet nooit de automatisch gegenereerde metrische waarde en deze wordt niet opgeslagen). In het onderstaande voorbeeld worden drie metriek gemaakt waarbij Hits voor elk van de drie kanalen wordt gefilterd (bijvoorbeeld *Campagnes weergeven*, *E-mailcampagnes*, en *SEM-campagnes*). Dit is het gemakkelijkst omdat u de maatstaven voor u laat maken met kenmerk Best Fit.
 
 ![](assets/attrib_touch_add_dims.png)
 
-**Optie 2: Maak een metrisch**.
+**Optie 2: Een metrisch object maken**.
 
-In de tweede optie, creeert u en bewaart de metriek voor de kanalen die u wilt evalueren door een specifiek kanaal te filtreren. Een voorbeeld van zulk metrisch wordt getoond hieronder.
+In de tweede optie, creeert en bewaart u de metriek voor de kanalen die u door een specifiek kanaal wilt evalueren te filtreren. Een voorbeeld van zo metrisch wordt getoond hieronder.
 
 ![](assets/attrib_create_metric.png)
 
-Dan, in plaats van het ingaan van een Elementen van de Metrisch van de Aanraking en van de Dimensie voor de Kanalen kunt u op de menubar in de visualisatie klikken en **Ingangen** > **toevoegen Kanaal** selecteren en dan de metriek selecteren die u creeerde.
+Vervolgens kunt u in plaats van een aanraakmetrisch element en Dimension-element voor de kanalen in te voeren op de menubalk in de visualisatie klikken en **Invoer** > **Kanaal toevoegen** en selecteer vervolgens de maatstaven die u hebt gemaakt.
 
 ![](assets/attrib_results_2.png)
 
-Zie het voorbeeld van de tweede hieronder methode. U kunt zien dat de resultaten van beide opties identiek zijn.
+Zie het voorbeeld van de tweede methode hieronder. U ziet dat de resultaten van beide opties identiek zijn.

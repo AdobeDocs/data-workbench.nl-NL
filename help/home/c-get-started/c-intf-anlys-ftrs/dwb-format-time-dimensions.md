@@ -1,32 +1,36 @@
 ---
-description: Vorm de tijddimensies aan vertoning correct voor de scène.
-title: Afmetingen lokalisatietijd
+description: Configureer de tijdafmetingen voor een correcte weergave voor de landinstelling.
+title: Dimension voor tijd lokaliseren
 uuid: a2098522-bf05-4680-9b78-6fb284695a0a
-translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+exl-id: 950fe70b-a687-4b9c-b29f-555139740809
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 0%
 
 ---
 
+# Dimension voor tijd lokaliseren{#localizing-time-dimensions}
 
-# Afmetingen lokalisatietijd{#localizing-time-dimensions}
+{{eol}}
 
-Vorm de tijddimensies aan vertoning correct voor de scène.
+Configureer de tijdafmetingen voor een correcte weergave voor de landinstelling.
 
-U kunt het getoonde formaat van tijdafmetingen vormen die op scène in het **[!DNL Standard Time Dimensions.cfg]** dossier worden gebaseerd (die door gebrek bij **[!DNL Server/Profiles/`<my profile>`/Dataset/Transformation/Tijd/StandaardAfmetingen van de Tijd/Standaard]** wordt gevestigd).
+U kunt de weergegeven tijdnotatie configureren op basis van de landinstelling in het dialoogvenster **[!DNL Standard Time Dimensions.cfg]** bestand (standaard aanwezig op **[!DNL Server/Profiles/`<my profile>`/Dataset/Transformation/Time/Standard Time Dimension.cfg]**).
 
-Bijvoorbeeld, in Noord-Amerika kunt u de datum van 3 Mei, 2015 als 5/3/15 uitdrukken, of **`%m/%d/%y`**. In andere delen van de wereld zou dit echter kunnen worden geïnterpreteerd als `%d/%m/%y`, of 5 maart 2015, vanwege een dubbelzinnigheid in de waarden. Om deze situatie te vermijden, zou een beheerder het getoonde formaat kunnen willen veranderen om de verwachtingen van de gebruikers in een scène aan te passen.
+In Noord-Amerika kunt u bijvoorbeeld de datum 3 mei 2015 uitdrukken als 3/5/15, of **`%m/%d/%y`**. In andere delen van de wereld kan dit echter worden geïnterpreteerd als `%d/%m/%y`, of 5 maart 2015 vanwege een dubbelzinnigheid in de waarden. Om deze situatie te vermijden, zou een beheerder het getoonde formaat kunnen willen veranderen om de verwachtingen van de gebruikers in een scène aan te passen.
 
-## 1. Standaardafmetingen van de Tijd van de opheffing in StandaardAfmetingen van de Tijd.cfg {#section-7d0b24657bef4b15abb3cbea66cb617f}
+## 1. Dimension voor standaardtijd overschrijven in Dimension voor standaardtijd.cfg {#section-7d0b24657bef4b15abb3cbea66cb617f}
 
 Om deze eigenschap toe te laten, moet de beheerder de gebreken met voeten treden door of de bestaande tijddimensies uit te geven of door nieuwe tijddimensies met extra parameters te creëren.
 
-Een voorbeeld van een gewijzigde tijddimensie volgt.
+Hierna volgt een voorbeeld van een gewijzigde tijddimensie.
 
-De waarden van het **Formaat** voor Week, Uur, Dag, Maand, en Uur van Dag worden geplaatst aan de gebreken in het voorbeeld.
+De **Indeling** De waarden voor Week, Uur, Dag, Maand, en Uur van Dag worden geplaatst aan de gebreken in het voorbeeld.
 
 >[!NOTE]
 >
->Als deze lijnen worden weggelaten, zal het gedrag van de Werkbank van Gegevens niet veranderen en de afmeting zal worden gecompileerd gebruikend de gebreken.
+>Als deze lijnen worden weggelaten, zal het gedrag van de Data Workbench niet veranderen en de afmeting zal worden gecompileerd gebruikend de gebreken.
 
 ```
 Transformation Include = TransformationInclude:  
@@ -60,11 +64,11 @@ Transformation Include = TransformationInclude:
 
 ![](assets/6_4_time_format.png)
 
-## 2. Vorm het meta.cfg- dossier {#section-5e077d3298dd48fda7f7bb16af9ea00c}
+## 2. Het bestand meta.cfg configureren {#section-5e077d3298dd48fda7f7bb16af9ea00c}
 
-Bovendien, is het noodzakelijk voor de pakketbeheerder om deze parameters en hun gebreken aan het **[!DNL meta.cfg]** dossier van het profiel toe te voegen. Dit staat het uitgeven van het werkstation toe.
+Bovendien, is het noodzakelijk voor de pakketbeheerder om deze parameters en hun gebreken aan profiel toe te voegen **[!DNL meta.cfg]** bestand. Op deze manier kunt u bestanden vanaf het werkstation bewerken.
 
-Hier is een uittreksel van een gevormd **[!DNL meta.cfg]** dossier.
+Hier is een uittreksel van gevormd **[!DNL meta.cfg]** bestand.
 
 ```
 dimensions = vector: 6 items 
@@ -95,8 +99,8 @@ dimensions = vector: 6 items
         Month = string: Month
 ```
 
-Hier is een voorbeeld van een **[!DNL meta.cfg]** dossier in het werkstation:
+Hier is een voorbeeld van een **[!DNL meta.cfg]** bestand op het werkstation:
 
 ![](assets/dwb_time_format.png)
 
-De beheerder kan dan in de **Bestandsbeheerder** gaan, de bestanden openen waar de tijddimensies zijn geconfigureerd (bijv. **[!DNL Standard Time Dimensions.cfg]**) en ze bewerken met behulp van het werkstation.
+De beheerder kan dan in de **Bestandsbeheer** opent u het bestand of de bestanden waarin de tijdafmetingen zijn geconfigureerd (bijvoorbeeld **[!DNL Standard Time Dimensions.cfg]**) en bewerkt u deze in het werkstation.
