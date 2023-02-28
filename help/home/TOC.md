@@ -5,11 +5,11 @@ audience: end-user
 feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Help bij Data Workbench
-user-guide-description: Meer informatie over de mogelijkheden van Data Workbench met meerdere kanalen. Omvat de Cliënt van de Data Workbench, Installatie, gidsen van de Configuratie van de Dataset, en meer.
+user-guide-description: Meer informatie over de mogelijkheden via meerdere kanalen van Data Workbench. Omvat de Data Workbench Client, installatie, richtlijnen voor Dataset-configuratie en meer.
 source-git-commit: 90b9fff995cb37a62024f454f009e9e0d7b927cd
 workflow-type: tm+mt
 source-wordcount: '3498'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
