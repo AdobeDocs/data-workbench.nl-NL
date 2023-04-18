@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 3c3a0289ae50d407a83ca8878af59ecde5e86e8d
+source-git-commit: c92c1e5688ca867caf1f3d4a6a3e44dafb5b3734
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Syntaxisvoorbeelden
 
 Het Workfront-team heeft gevraagd gele markering te kunnen gebruiken om de voorvertoning van aanstaande functies aan te geven. Zo werkt het.
 
-Voorbeeld:
+Voorbeeld 1:
 
 ```
 This entire paragraph should NOT be highlighted. <span class="preview"> This word is **bold** inside a highlighted sentence.</span> And this is just the last sentence.
@@ -107,6 +107,42 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 Gerenderd:
 
 Deze hele alinea mag NIET worden gemarkeerd. <span class="preview"> Dit woord is **vet** in een gemarkeerde zin.</span> Dit is slechts de laatste zin.
+
+Voorbeeld 2:
+
+```
+Highlighting should start after this paragraph.
+
+<div class="preview">
+
+**This is a test**
+
+>[!TIP]
+>
+>Drink 6 cups of water a day.
+
+Last highlighted paragraph
+
+<\div>
+
+Not highlighted
+```
+
+Gerenderd: De markering moet na deze alinea beginnen.
+
+<div class="preview">
+
+**Dit is een test**
+
+>[!TIP]
+>
+>Drink 6 bekers water per dag.
+
+Laatste gemarkeerde alinea
+
+&lt;\div>
+
+Niet gemarkeerd
 
 Als algemene regel geldt dat `<span class="preview">` om een alinea of tekst in een alinea te markeren en te gebruiken `<div class="preview">` voor meerdere alinea&#39;s en componenten.
 
