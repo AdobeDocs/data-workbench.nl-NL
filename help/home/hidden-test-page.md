@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 73c7ad435917ab17022494f6f73d2c626363dcc2
+source-git-commit: 87af4ae77f71701b52247f996b89edfb93794dd7
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Voorbeeld 2:
 ```
 Highlighting should start after this paragraph.
 
-<div class="preview">
+<span class="preview">
 
 **This is a test**
 
@@ -123,14 +123,16 @@ Highlighting should start after this paragraph.
 
 Last highlighted paragraph
 
-</div>
+</span>
 
 Not highlighted
 ```
 
-Gerenderd: De markering moet na deze alinea beginnen.
+Gerenderd:
 
-<div class="preview">
+De markering moet na deze alinea beginnen.
+
+<span class="preview">
 
 **Dit is een test**
 
@@ -140,11 +142,9 @@ Gerenderd: De markering moet na deze alinea beginnen.
 
 Laatste gemarkeerde alinea
 
-</div>
+</span>
 
 Niet gemarkeerd
-
-Als algemene regel geldt dat `<span class="preview">` om een alinea of tekst in een alinea te markeren en te gebruiken `<div class="preview">` voor meerdere alinea&#39;s en componenten.
 
 ## Syntaxis markeren voor codeblokken
 
