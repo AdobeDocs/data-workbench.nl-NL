@@ -5,7 +5,8 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 0cd0a201aa10e519fa9760a64ab95fa1a10a3799
+exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
+source-git-commit: a3625867de6b7b8f8b7f71b3b124f028356dabad
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -13,6 +14,61 @@ ht-degree: 0%
 ---
 
 # Verborgen testpagina
+
+## Typen notities
+
+
+Alle ondersteunde typen notities.
+
+>[!NOTE]
+>
+>Dit is een standaardblok van de NOOT.
+
+>[!TIP]
+>
+>Dit is een standaardtip.
+
+>[!IMPORTANT]
+>
+>Dit is een belangrijke opmerking.
+
+>[!WARNING]
+>
+>Dit is een waarschuwing.
+
+>[!CAUTION]
+>
+>Dit is een waarschuwing.
+
+>[!ADMIN]
+>
+>Dit is een beheernotitie. Alleen EXL.
+
+>[!AVAILABILITY]
+>
+>Dit is een beschikbaarheidsnota. Alleen EXL.
+
+>[!PREREQUISITES]
+>
+>Dit is een notitie met voorwaarden. Alleen EXL.
+
+>[!INFO]
+>
+>Dit is een Info-notitie. Alleen EXL.
+
+>[!ERROR]
+>
+>Dit is een foutbericht. Alleen EXL.
+
+>[!SUCCESS]
+>
+>Dit is een succesopmerking. Alleen EXL.
+
+>[!MORELIKETHIS]
+>
+>* Pagina 1
+>* Pagina 2
+
 
 ## Badges
 
