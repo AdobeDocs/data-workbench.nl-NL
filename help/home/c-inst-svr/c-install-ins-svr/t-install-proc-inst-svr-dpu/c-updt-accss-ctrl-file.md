@@ -3,9 +3,9 @@ description: Het bestand Access Control.cfg beheert de toegang tot bepaalde func
 title: Het Access Control-bestand bijwerken
 uuid: f73651e5-6a8b-45fc-8f36-6751304dc53c
 exl-id: 551758c1-f24b-49e6-ab6e-09979511e4f4
-source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+source-git-commit: 5ce5b8f8b35d2d4f319076f54347e300e5f133df
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '472'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Het bepaalt entiteiten genoemd Accessgroups. Een AccessGroup identificeert een g
 
 Voordat u verbinding kunt maken met [!DNL Insight Server] with [!DNL Insight], moet u de Beheerders AccessGroup bijwerken om een van de [!DNL Insight] licenties die Adobe aan uw organisatie heeft uitgegeven. Deze AccessGroup identificeert gebruikers die beheerfuncties mogen uitvoeren via [!DNL Insight].
 
-De volgende procedure beschrijft hoe te om een vergunning aan de Beheerders AccessGroup toe te voegen. Om deze taak te voltooien, moet u bepalen welke [!DNL Insight] licentie heeft beheerdersrechten voor uw organisatie. (Voor de eerste configuratie en configuratie volstaat het verlenen van administratieve bevoegdheden aan één licentie. U kunt later beheerrechten toekennen aan extra licenties.) U moet ook de &quot;algemene naam&quot; weten die aan deze licentie is toegewezen. Om deze waarde te verkrijgen, kunt u de licentiecertificaten voor uw account bekijken op [https://aap.adobe.com](https://aap.adobe.com).
+De volgende procedure beschrijft hoe te om een vergunning aan de Beheerders AccessGroup toe te voegen. Om deze taak te voltooien, moet u bepalen welke [!DNL Insight] licentie heeft beheerdersrechten voor uw organisatie. (Voor de eerste configuratie en configuratie volstaat het verlenen van administratieve bevoegdheden aan één licentie. U kunt later beheerrechten toekennen aan extra licenties.) U moet ook de &quot;algemene naam&quot; weten die aan deze licentie is toegewezen.
 
 Het doel van deze procedure is simpelweg een gelicentieerde kopie van [!DNL Insight] die u kunt gebruiken aanvankelijk opstelling en vormen [!DNL Insight Server]. Zodra u deze vergunning identificeert, kunt u alle verdere serverconfiguratie (met inbegrip van extra configuratie AccessGroup) uitvoeren gebruikend het vergunning gegeven exemplaar van [!DNL Insight]. Voor extra informatie over het controleren van toegang tot de server gebruikend AccessGroup, zie [Toegangsbeheer configureren](../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md#concept-ac385e870dbe4b57a72bf7266b60f93d).
 

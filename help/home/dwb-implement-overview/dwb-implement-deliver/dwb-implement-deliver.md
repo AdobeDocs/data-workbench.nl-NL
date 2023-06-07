@@ -3,9 +3,9 @@ description: Nadat u DWB hebt ingesteld, kunt u deze functies implementeren.
 title: Implementatie van functies voor Data Workbench
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+source-git-commit: 5ce5b8f8b35d2d4f319076f54347e300e5f133df
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -39,5 +39,3 @@ Nadat u DWB hebt ingesteld, kunt u deze functies implementeren.
 * Om **Voorspelende inlichtingen met binomiale correlatie**, zie [Binomiale correlatie](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html).
 
 * Om **Voorspelende inlichtingen met binomiale correlatie**, zie [Correlatiematrix](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html).
-
-* Ga naar het [Licentieportal voor Adobe Data Workbench](https://license.visualsciences.com/License/#documentation). Zie ook de [Basisinstructies aan boord](../../../home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md#concept-e93aba41b26a410f959c5ca7f8e33355).
