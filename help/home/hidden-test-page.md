@@ -6,9 +6,9 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: a3625867de6b7b8f8b7f71b3b124f028356dabad
+source-git-commit: 62b03629815f33344189c2562bc486301878a146
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 0%
 # Verborgen testpagina
 
 ## Typen notities
-
 
 Alle ondersteunde typen notities.
 
@@ -42,7 +41,7 @@ Alle ondersteunde typen notities.
 
 >[!ADMIN]
 >
->Dit is een beheernotitie. Alleen EXL.
+>Dit is een beheernotitie die wordt weergegeven als BEHEER. Alleen EXL.
 
 >[!AVAILABILITY]
 >
@@ -68,7 +67,6 @@ Alle ondersteunde typen notities.
 >
 >* Pagina 1
 >* Pagina 2
-
 
 ## Badges
 
@@ -142,13 +140,13 @@ Syntaxisvoorbeelden
 * Als er meerdere metagegevensbadges zijn opgegeven, worden badges in alfabetische volgorde weergegeven op basis van de badge-naam, zoals `badge1:` of `badgeWeb`.
 * Als u de URL op een nieuw tabblad wilt openen, gebruikt u deze syntaxis:
 
-   ```
-   [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
-   ```
+  ```
+  [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
+  ```
 
-   Gerenderd:
+  Gerenderd:
 
-   [!BADGE Openen op nieuw tabblad]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Adobe.com openen op nieuw tabblad"}
+  [!BADGE Openen op nieuw tabblad]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Adobe.com openen op nieuw tabblad"}
 
 ## Tekstmarkering
 
