@@ -6,14 +6,16 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Premium downloaden"
 badgeExam: label="Examen ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
+source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # Verborgen testpagina
+
+Activeren?
 
 ## Voorvertoning van probleem
 
@@ -117,7 +119,7 @@ Badges gebruiken kleuren die zijn gedefinieerd in Adobe-spectrum:
 | Type | Badge |
 |---|---|
 | Informatief (standaard) | [!BADGE Beta]{type=Informative url="https://www.example.com"} |
-| Positief | [!BADGE Nieuwe functie]{type=Positive url="https://www.example.com" tooltip="Ga naar voorbeeld.com"} |
+| Positief | [!BADGE Nieuwe functie]{type=Positive url="https://www.example.com" tooltip="Ga naar example.com"} |
 | Negatief | [!BADGE Stopzetten]{type=negative tooltip="Deze functie is nu levenseinde"} |
 | Neutraal | [!BADGE Misschien]{type=Neutral tooltip="Een rider viel van het paard..."} |
 | Waarschuwing | [!BADGE Opgelet]{type=Caution tooltip="Gele status"} |
@@ -141,7 +143,7 @@ Syntaxisvoorbeelden
 * Een badge toevoegen aan de `TOC.md` het bestand geeft de badge op elk artikel in de handleiding weer. Als u een URL opgeeft om naar een artikel te gaan, moet u een hoofdkoppeling gebruiken (bijvoorbeeld `/help/guide/article.md`) geen relatieve koppeling (bijvoorbeeld `article.md`) voor artikelen in verschillende mappen.
 * Een badge toevoegen aan `metadata-new.md` geeft de badge op elk artikel in een repo weer.
 * Voor meta-gegevensbadges, zorg ervoor dat alle waarden in citaten worden verpakt. Voor inline badges moet u ervoor zorgen dat `url` en `tooltip` worden tussen aanhalingstekens geplaatst.
-* Geldige tekstwaarden zijn *Informatief* (standaard, blauw), *Positief* (groen), *Negatief* (rood), *Neutraal* (donkergrijs), en *Waarschuwing* (geel).
+* Geldige tekstwaarden zijn *Informatief* (standaard, blauw), *Positief* (groen) *Negatief* (rood), *Neutraal* (donkergrijs), en *Waarschuwing* (geel).
 * Badge-labels worden gelokaliseerd.
 * Als er meerdere metagegevensbadges zijn opgegeven, worden badges in alfabetische volgorde weergegeven op basis van de badge-naam, zoals `badge1:` of `badgeWeb`.
 * Als u de URL op een nieuw tabblad wilt openen, gebruikt u deze syntaxis:
@@ -152,7 +154,7 @@ Syntaxisvoorbeelden
 
   Gerenderd:
 
-  [!BADGE Openen op nieuw tabblad]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Adobe.com openen op nieuw tabblad"}
+  [!BADGE Openen op nieuw tabblad]{type=Negative url="https://www.adobe.com newtab=true" tooltip="adobe.com openen op nieuw tabblad"}
 
 ## Tekstmarkering
 
@@ -208,7 +210,7 @@ Niet gemarkeerd
 
 ## Syntaxis markeren voor codeblokken
 
-Experience League ondersteunt syntaxismarkering voor codeblokken. Zorg ervoor dat u een taal opgeeft, zoals `java` na de openingsreeks tikken om ervoor te zorgen dat de syntaxis behoorlijk wordt benadrukt. Voor een lijst met geldige talen raadpleegt u [https://prismjs.com](https://prismjs.com/#supported-languages). Als er talen ontbreken, registreert u een jira-ticket.
+Experience League ondersteunt syntaxismarkering voor codeblokken. Zorg ervoor dat u een taal opgeeft, zoals `java` na de openingsreeks tikken om ervoor te zorgen dat de syntaxis behoorlijk wordt benadrukt. Zie voor een lijst met geldige talen [https://prismjs.com](https://prismjs.com/#supported-languages). Als er talen ontbreken, registreert u een jira-ticket.
 
 ### Regelnummering in codeblokken
 
