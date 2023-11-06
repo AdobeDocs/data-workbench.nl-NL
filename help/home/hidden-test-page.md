@@ -5,17 +5,17 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Premium downloaden"
 badgeExam: label="Examen ADO-E903" type="neutral"
-exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
+exl-id: 02245655-511e-4e89-8846-dac85681ea91
+source-git-commit: 6df7ed2c80f04416a48db8d4bc52ede2e87bf372
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
 
 # Verborgen testpagina
 
-Activeren?
+Activeren? Herhaal, is deze automatische activering om 11:30 uur PT uitgevoerd?
 
 ## Voorvertoning van probleem
 
@@ -82,7 +82,7 @@ Een badge is een gekleurd label dat wordt gebruikt als inhoudsindicator. U kunt 
 
 [!BADGE Badge-voorbeeld]
 
-Er zijn twee typen badges, elk met een verschillende syntaxis:
+Er zijn twee typen of badges, elk met verschillende syntaxis:
 
 * **Metagegevens** - Geeft het symbool boven aan een pagina weer
 * **Inline** - Geeft de badge weer waar de syntaxis zich bevindt
@@ -114,7 +114,7 @@ Hier volgt de syntaxis voor een inline badge met een bètalabel, blauwe kleur, U
 
 ### Beschikbare badkleuren
 
-Badges gebruiken kleuren die zijn gedefinieerd in Adobe-spectrum:
+Badges gebruiken kleuren die zijn gedefinieerd in Adobe Spectrum:
 
 | Type | Badge |
 |---|---|
